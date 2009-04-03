@@ -2163,14 +2163,14 @@
 
     <font>
       <name>Font_Welcome</name>
-      <filename>arualuni.ttf</filename>
+      <filename>DroidSans.ttf</filename>
       <size>22</size>
 	  <linespacing>0.9</linespacing>
     </font>
 	
     <font>
       <name>Font_WelcomeSelect</name>
-      <filename>arualuni.ttf</filename>
+      <filename>DroidSans.ttf</filename>
       <size>18</size>
     </font>
 
