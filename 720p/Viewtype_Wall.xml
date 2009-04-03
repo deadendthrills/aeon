@@ -401,6 +401,14 @@
 				<include>WallLabelVars</include>
 				<animation effect="slide" start="0,0" end="0,-7" time="200" easing="out" tween="cubic" condition="!IsEmpty(Control.GetLabel(72))">Conditional</animation>
 			</control>
+
+			<control type="label" id="72">
+				<posy>19</posy>
+				<label>$INFO[ListItem.Label2]</label>
+				<include>Colour_DarkGrey</include>
+				<include>WallLabelVars</include>
+				<visible>![Window.IsActive(2) | Window.IsActive(24) | Window.IsActive(25)]</visible>				
+			</control>
 			
 			<control type="label" id="72">
 				<posy>19</posy>
@@ -436,6 +444,15 @@
 				<animation effect="slide" start="0,0" end="0,-7" time="200" easing="out" tween="cubic" condition="!IsEmpty(Control.GetLabel(72))">Conditional</animation>			
 			</control>
 
+			<control type="label" id="72">
+				<posy>19</posy>
+				<align>right</align>
+				<label>$INFO[ListItem.Label2]</label>
+				<include>Colour_DarkGrey</include>
+				<include>WallLabelVars</include>
+				<visible>![Window.IsActive(2) | Window.IsActive(24) | Window.IsActive(25)]</visible>				
+			</control>
+			
 			<control type="label" id="72">
 				<posy>19</posy>
 				<align>right</align>
