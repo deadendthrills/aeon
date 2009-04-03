@@ -87,7 +87,7 @@
 				<label>31013</label>
 				<onclick>Skin.SetBool(videomovies)</onclick>
 				<onclick>Skin.Reset(videotv)</onclick>
-				<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles,return)</onclick>
+				<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles)</onclick>
 				<visible>!Skin.HasSetting(nomovies)</visible>
 			</item>
 			<item id="7">
@@ -95,7 +95,7 @@
 				<label>31014</label>
 				<onclick>Skin.SetBool(videotv)</onclick>
 				<onclick>Skin.Reset(videomovies)</onclick>
-				<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
+				<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick>
 				<visible>!Skin.HasSetting(notvshows)</visible>
 			</item>
 			<item id="8">
