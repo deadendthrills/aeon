@@ -1,0 +1,2294 @@
+<fonts>
+
+  <fontset id="Aeon_Standard" unicode="true">
+
+<!-- Common -->
+
+	<font>
+	  <name>Font_RSS</name>
+	  <filename>rss.ttf</filename>
+	  <size>14</size>
+	</font>
+	
+	<font>
+	  <name>Font_Time</name>
+	  <filename>rss.ttf</filename>
+	  <size>16</size>
+	</font>
+	
+	<font>
+	  <name>Font_BigRSS</name>
+	  <filename>rss.ttf</filename>
+	  <size>21</size>
+	</font>
+	
+	<font>
+	  <name>Font_BigTime</name>
+	  <filename>rss.ttf</filename>
+	  <size>21</size>
+	</font>
+	
+    <font>
+      <name>Font_Debug</name>
+      <filename>dinbold.ttf</filename>
+      <size>18</size>
+      <shadow>FF000000</shadow>
+    </font>
+	
+<!-- Home -->
+
+	<font>
+		<name>Font_MainMenu</name>
+		<filename>univers.ttf</filename>
+		<size>78</size>
+	</font>
+	
+	<font>
+	  <name>Font_HomeNowPlayingTrack</name>
+	  <filename>universcon.ttf</filename>
+	  <size>22</size>
+	</font>
+
+	<font>
+	  <name>Font_HomeNowPlayingArtist</name>
+	  <filename>universcon.ttf</filename>
+	  <size>21</size>
+	</font>
+	
+	<font>
+	  <name>Font_HomeNowPlayingAlbum</name>
+	  <filename>universcon.ttf</filename>
+	  <size>16</size>
+	</font>
+	
+	<font>
+	  <name>Font_WeatherTitle</name>
+	  <filename>universconcaps.ttf</filename>
+	  <size>24</size>
+	</font>
+	
+	<font>
+	  <name>Font_WeatherLabel</name>
+	  <filename>universconcaps.ttf</filename>
+	  <size>18</size>
+	  <linespacing>1.6</linespacing>
+	</font>
+
+	<font>
+	  <name>Font_WeatherTemp</name>
+	  <filename>universconcaps.ttf</filename>
+	  <size>55</size>
+	</font>		
+
+<!-- Media windows -->
+
+	<font>
+	  <name>Font_MediaWindowTitle</name>
+	  <filename>universconcaps.ttf</filename>
+	  <size>24</size>
+	</font>
+
+	<font>
+		<name>Font_MediaWindowMenu</name>
+		<filename>universconcaps.ttf</filename>
+		<size>18</size>
+	</font>
+	
+	<font>
+		<name>Font_List</name>
+		<filename>universreg.ttf</filename>
+		<size>16</size>
+	</font>
+	
+	<font>
+		<name>font13</name>
+		<filename>universreg.ttf</filename>
+		<size>16</size>
+	</font>	
+
+	<font>
+		<name>Font_ListDetail</name>
+		<filename>universreg.ttf</filename>
+		<size>13</size>
+	</font>
+	
+<!-- Settings screens -->
+
+	<font>
+	  <name>Font_SettingsSectionTitle</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>36</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsSectionMenuButton</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>27</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsSectionMenuButtonSubtitle</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>16</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsOptions</name>
+	  <filename>universconcaps.ttf</filename>
+	  <size>18</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsMainLabelBig</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>40</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsMainLabelSmall</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>22</size>
+	  <linespacing>0.9</linespacing>
+	</font>
+	
+<!-- Virtual Home page -->
+
+	<font>
+	  <name>Font_VirtualRSS</name>
+	  <filename>rss.ttf</filename>
+	  <size>10</size>
+	</font>
+	
+	<font>
+		<name>Font_VirtualMainMenu</name>
+		<filename>univers.ttf</filename>
+		<size>47</size>
+	</font>
+
+<!-- Context menus and dialogs -->
+
+    <font>
+      <name>Font_ContextMenuButton</name>
+      <filename>AkzidenzCond.ttf</filename>
+      <size>20</size>
+    </font>
+
+    <font>
+      <name>Font_SetContentList</name>
+      <filename>din.ttf</filename>
+      <size>16</size>
+    </font>
+
+	<font>
+	  <name>Font_SetContentMenu</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>20</size>
+	</font>
+	
+	<font>
+	  <name>Font_ProgressLabelSmall</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>20</size>
+	</font>
+	
+	<font>
+	  <name>Font_ProgressLabelMid</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>27</size>
+	</font>	
+
+	<font>
+	  <name>Font_ProgressLabelBig</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>35</size>
+	</font>
+	
+	<font>
+	  <name>Font_ProgressLabelYesNo</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>46</size>
+	</font>	
+	
+	<font>
+		<name>Font_AddSourceEdit</name>
+		<filename>dinbold.ttf</filename>
+		<size>20</size>
+	</font>		
+	
+<!-- File Browser -->
+
+	<font>
+	  <name>Font_FileBrowserTile</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>20</size>
+	</font>
+	
+	<font>
+	  <name>Font_FileBrowserPath</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>19</size>
+	</font>
+
+<!-- Flow view type -->
+	
+	<font>
+      <name>Font_FlowMainLabel</name>
+      <filename>universreg.ttf</filename>
+      <size>20</size>
+    </font>
+	
+    <font>
+      <name>Font_FlowSubLabel</name>
+      <filename>universreg.ttf</filename>
+      <size>16</size>
+    </font>
+
+<!-- Showcase -->
+	
+    <font>
+      <name>Font_ShowcaseMainLabel</name>
+      <filename>universreg.ttf</filename>
+      <size>22</size>
+    </font>
+	
+    <font>
+      <name>Font_ShowcaseDetailLabel</name>
+      <filename>universreg.ttf</filename>
+      <size>16</size>
+    </font>
+	
+<!-- Fullscreen Info pages -->
+
+    <font>
+      <name>Font_FSInfoTitle</name>
+      <filename>AkzidenzCond.ttf</filename>
+      <size>55</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoArtist</name>
+      <filename>AkzidenzCond.ttf</filename>
+      <size>30</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoYear</name>
+      <filename>dinbold.ttf</filename>
+      <size>37</size>
+    </font>
+
+    <font>
+      <name>Font_FSInfoGenre</name>
+      <filename>dinbold.ttf</filename>
+      <size>20</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoNoPoster</name>
+      <filename>dinbold.ttf</filename>
+      <size>17</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoLabel</name>
+      <filename>dinbold.ttf</filename>
+      <size>16</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoData</name>
+      <filename>dinbold.ttf</filename>
+      <size>19</size>
+	  <linespacing>1.1</linespacing>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoPlot</name>
+      <filename>universcon.ttf</filename>
+      <size>21</size>
+	  <linespacing>0.9</linespacing>
+    </font>
+
+    <font>
+      <name>Font_FSIMDB</name>
+      <filename>AkzidenzCond.ttf</filename>
+      <size>30</size>
+    </font>
+	
+    <font>
+      <name>Font_BookmarksAvailable</name>
+      <filename>AkzidenzCond.ttf</filename>
+      <size>20</size>
+    </font>	
+	
+    <font>
+      <name>Font_FSIMDBData</name>
+      <filename>dinbold.ttf</filename>
+      <size>40</size>
+    </font>
+	
+<!-- Welcome page -->
+
+    <font>
+      <name>Font_Welcome</name>
+      <filename>shruti.ttf</filename>
+      <size>22</size>
+	  <linespacing>0.9</linespacing>
+    </font>
+	
+    <font>
+      <name>Font_WelcomeSelect</name>
+      <filename>shruti.ttf</filename>
+      <size>18</size>
+    </font>
+
+    <font>
+      <name>Font_Vitals</name>
+      <filename>AkzidenzCond.ttf</filename>
+      <size>21</size>
+	  <linespacing>1.9</linespacing>
+    </font>
+
+<!-- Wall -->
+
+    <font>
+      <name>Font_WallLabelMain</name>
+      <filename>dinbold.ttf</filename>
+      <size>17</size>
+    </font>
+
+<!-- OSD -->
+
+    <font>
+      <name>Font_OSDSeek</name>
+      <filename>AkzidenzCond.ttf</filename>
+      <size>18</size>
+    </font>
+
+	<font>
+	  <name>Font_OSDOptions</name>
+	  <filename>universconcaps.ttf</filename>
+	  <size>16</size>
+	</font>
+
+	<font>
+		<name>Font_OSDCodecInfo</name>
+		<filename>AkzidenzCond.ttf</filename>
+		<size>22</size>
+	</font>
+	
+	<font>
+		<name>Font_OSDMusicArtist</name>
+		<filename>AkzidenzCond.ttf</filename>
+		<size>24</size>
+	</font>
+
+	<font>
+		<name>Font_OSDMusicTitle</name>
+		<filename>AkzidenzCond.ttf</filename>
+		<size>38</size>
+	</font>		
+
+<!-- VirtualOSD -->
+
+	<font>
+		<name>Font_OSDCodecInfo_Virtual</name>
+		<filename>AkzidenzCond.ttf</filename>
+		<size>14</size>
+	</font>
+	
+	<font>
+		<name>Font_OSDMusicArtist_Virtual</name>
+		<filename>AkzidenzCond.ttf</filename>
+		<size>16</size>
+	</font>
+
+	<font>
+		<name>Font_OSDMusicTitle_Virtual</name>
+		<filename>AkzidenzCond.ttf</filename>
+		<size>25</size>
+	</font>		
+	
+<!-- View Change -->
+
+	<font>
+		<name>Font_ViewChangeLabel</name>
+		<filename>universconcaps.ttf</filename>
+		<size>16</size>
+	</font>	
+
+	<font>
+		<name>Font_ViewChangeSelect</name>
+		<filename>universconcaps.ttf</filename>
+		<size>30</size>
+	</font>		
+
+<!-- Keyboard -->
+
+	<font>
+		<name>Font_KeyboardKeys</name>
+		<filename>dinbold.ttf</filename>
+		<size>17</size>
+	</font>
+
+	<font>
+		<name>Font_KeyboardShapes</name>
+		<filename>shapes.ttf</filename>
+		<size>19</size>
+	</font>	
+
+	<font>
+		<name>Font_KeyboardEdit</name>
+		<filename>dinbold.ttf</filename>
+		<size>19</size>
+	</font>	
+
+<!-- OSD -->
+
+	<font>
+	  <name>Font_OSDTime</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>19</size>
+	</font>
+	
+
+
+    <font>
+      <name>objects</name>
+      <filename>din.ttf</filename>
+      <size>18</size>
+    </font>
+	
+  </fontset>
+
+				<!-- Fonts With Diacritical Signs-->
+
+
+
+
+
+  <fontset id="Aeon_Diacritical" unicode="true">
+
+<!-- Common -->
+
+	<font>
+	  <name>Font_RSS</name>
+	  <filename>rss.ttf</filename>
+	  <size>14</size>
+	</font>
+	
+	<font>
+	  <name>Font_Time</name>
+	  <filename>rss.ttf</filename>
+	  <size>16</size>
+	</font>
+	
+	<font>
+	  <name>Font_BigRSS</name>
+	  <filename>rss.ttf</filename>
+	  <size>21</size>
+	</font>
+	
+	<font>
+	  <name>Font_BigTime</name>
+	  <filename>rss.ttf</filename>
+	  <size>21</size>
+	</font>
+	
+    <font>
+      <name>Font_Debug</name>
+      <filename>dinbold.ttf</filename>
+      <size>18</size>
+      <shadow>FF000000</shadow>
+    </font>
+	
+<!-- Home -->
+
+	<font>
+		<name>Font_MainMenu</name>
+		<filename>univers.ttf</filename>
+		<size>52</size>
+	</font>
+	
+	<font>
+	  <name>Font_HomeNowPlayingTrack</name>
+	  <filename>universcon.ttf</filename>
+	  <size>22</size>
+	</font>
+
+	<font>
+	  <name>Font_HomeNowPlayingArtist</name>
+	  <filename>universcon.ttf</filename>
+	  <size>21</size>
+	</font>
+	
+	<font>
+	  <name>Font_HomeNowPlayingAlbum</name>
+	  <filename>universcon.ttf</filename>
+	  <size>16</size>
+	</font>
+	
+	<font>
+	  <name>Font_WeatherTitle</name>
+	  <filename>universconcaps.ttf</filename>
+	  <size>24</size>
+	</font>
+	
+	<font>
+	  <name>Font_WeatherLabel</name>
+	  <filename>universconcaps.ttf</filename>
+	  <size>18</size>
+	  <linespacing>1.6</linespacing>
+	</font>
+
+	<font>
+	  <name>Font_WeatherTemp</name>
+	  <filename>universconcaps.ttf</filename>
+	  <size>55</size>
+	</font>		
+
+<!-- Media windows -->
+
+	<font>
+	  <name>Font_MediaWindowTitle</name>
+	  <filename>universconcaps.ttf</filename>
+	  <size>24</size>
+	</font>
+
+	<font>
+		<name>Font_MediaWindowMenu</name>
+		<filename>universconcaps.ttf</filename>
+		<size>18</size>
+	</font>
+	
+	<font>
+		<name>Font_List</name>
+		<filename>universreg.ttf</filename>
+		<size>16</size>
+	</font>
+	
+	<font>
+		<name>font13</name>
+		<filename>universreg.ttf</filename>
+		<size>16</size>
+	</font>	
+
+	<font>
+		<name>Font_ListDetail</name>
+		<filename>universreg.ttf</filename>
+		<size>13</size>
+	</font>
+	
+<!-- Settings screens -->
+
+	<font>
+	  <name>Font_SettingsSectionTitle</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>36</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsSectionMenuButton</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>27</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsSectionMenuButtonSubtitle</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>16</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsOptions</name>
+	  <filename>universconcaps.ttf</filename>
+	  <size>18</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsMainLabelBig</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>40</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsMainLabelSmall</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>22</size>
+	  <linespacing>0.9</linespacing>
+	</font>
+	
+<!-- Virtual Home page -->
+
+	<font>
+	  <name>Font_VirtualRSS</name>
+	  <filename>rss.ttf</filename>
+	  <size>10</size>
+	</font>
+	
+	<font>
+		<name>Font_VirtualMainMenu</name>
+		<filename>univers.ttf</filename>
+		<size>47</size>
+	</font>
+
+<!-- Context menus and dialogs -->
+
+    <font>
+      <name>Font_ContextMenuButton</name>
+      <filename>AkzidenzCond.ttf</filename>
+      <size>20</size>
+    </font>
+
+    <font>
+      <name>Font_SetContentList</name>
+      <filename>din.ttf</filename>
+      <size>16</size>
+    </font>
+
+	<font>
+	  <name>Font_SetContentMenu</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>20</size>
+	</font>
+	
+	<font>
+	  <name>Font_ProgressLabelSmall</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>20</size>
+	</font>
+
+	<font>
+	  <name>Font_ProgressLabelBig</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>35</size>
+	</font>
+	
+	<font>
+	  <name>Font_ProgressLabelYesNo</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>46</size>
+	</font>	
+	
+	<font>
+		<name>Font_AddSourceEdit</name>
+		<filename>dinbold.ttf</filename>
+		<size>20</size>
+	</font>		
+	
+<!-- File Browser -->
+
+	<font>
+	  <name>Font_FileBrowserTile</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>20</size>
+	</font>
+	
+	<font>
+	  <name>Font_FileBrowserPath</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>19</size>
+	</font>
+
+<!-- Flow view type -->
+	
+	<font>
+      <name>Font_FlowMainLabel</name>
+      <filename>universreg.ttf</filename>
+      <size>20</size>
+    </font>
+	
+    <font>
+      <name>Font_FlowSubLabel</name>
+      <filename>universreg.ttf</filename>
+      <size>16</size>
+    </font>
+
+<!-- Showcase -->
+	
+    <font>
+      <name>Font_ShowcaseMainLabel</name>
+      <filename>universreg.ttf</filename>
+      <size>22</size>
+    </font>
+	
+    <font>
+      <name>Font_ShowcaseDetailLabel</name>
+      <filename>universreg.ttf</filename>
+      <size>16</size>
+    </font>
+	
+<!-- Fullscreen Info pages -->
+
+    <font>
+      <name>Font_FSInfoTitle</name>
+      <filename>AkzidenzCond.ttf</filename>
+      <size>55</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoArtist</name>
+      <filename>AkzidenzCond.ttf</filename>
+      <size>30</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoYear</name>
+      <filename>dinbold.ttf</filename>
+      <size>37</size>
+    </font>
+
+    <font>
+      <name>Font_FSInfoGenre</name>
+      <filename>dinbold.ttf</filename>
+      <size>20</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoNoPoster</name>
+      <filename>dinbold.ttf</filename>
+      <size>17</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoLabel</name>
+      <filename>dinbold.ttf</filename>
+      <size>16</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoData</name>
+      <filename>dinbold.ttf</filename>
+      <size>16</size>
+	  <linespacing>1.1</linespacing>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoPlot</name>
+      <filename>universcon.ttf</filename>
+      <size>21</size>
+	  <linespacing>0.9</linespacing>
+    </font>
+
+    <font>
+      <name>Font_FSIMDB</name>
+      <filename>AkzidenzCond.ttf</filename>
+      <size>30</size>
+    </font>
+	
+    <font>
+      <name>Font_FSIMDBData</name>
+      <filename>dinbold.ttf</filename>
+      <size>40</size>
+    </font>
+	
+<!-- Welcome page -->
+
+    <font>
+      <name>Font_Welcome</name>
+      <filename>interstatelc.ttf</filename>
+      <size>22</size>
+	  <linespacing>1.3</linespacing>
+    </font>
+	
+    <font>
+      <name>Font_WelcomeSelect</name>
+      <filename>interstate.ttf</filename>
+      <size>18</size>
+    </font>
+
+    <font>
+      <name>Font_Vitals</name>
+      <filename>AkzidenzCond.ttf</filename>
+      <size>21</size>
+	  <linespacing>1.9</linespacing>
+    </font>
+
+<!-- Wall -->
+
+    <font>
+      <name>Font_WallLabelMain</name>
+      <filename>dinbold.ttf</filename>
+      <size>17</size>
+    </font>
+
+<!-- OSD -->
+
+    <font>
+      <name>Font_OSDSeek</name>
+      <filename>AkzidenzCond.ttf</filename>
+      <size>18</size>
+    </font>
+
+	<font>
+	  <name>Font_OSDOptions</name>
+	  <filename>universconcaps.ttf</filename>
+	  <size>16</size>
+	</font>
+
+	<font>
+		<name>Font_OSDCodecInfo</name>
+		<filename>AkzidenzCond.ttf</filename>
+		<size>22</size>
+	</font>
+	
+	<font>
+		<name>Font_OSDMusicArtist</name>
+		<filename>AkzidenzCond.ttf</filename>
+		<size>24</size>
+	</font>
+
+	<font>
+		<name>Font_OSDMusicTitle</name>
+		<filename>AkzidenzCond.ttf</filename>
+		<size>38</size>
+	</font>	
+
+<!-- VirtualOSD -->
+
+	<font>
+		<name>Font_OSDCodecInfo_Virtual</name>
+		<filename>AkzidenzCond.ttf</filename>
+		<size>14</size>
+	</font>
+	
+	<font>
+		<name>Font_OSDMusicArtist_Virtual</name>
+		<filename>AkzidenzCond.ttf</filename>
+		<size>16</size>
+	</font>
+
+	<font>
+		<name>Font_OSDMusicTitle_Virtual</name>
+		<filename>AkzidenzCond.ttf</filename>
+		<size>25</size>
+	</font>		
+
+<!-- View Change -->
+
+	<font>
+		<name>Font_ViewChangeLabel</name>
+		<filename>universconcaps.ttf</filename>
+		<size>16</size>
+	</font>	
+
+	<font>
+		<name>Font_ViewChangeSelect</name>
+		<filename>universconcaps.ttf</filename>
+		<size>30</size>
+	</font>		
+
+<!-- Keyboard -->
+
+	<font>
+		<name>Font_KeyboardKeys</name>
+		<filename>dinbold.ttf</filename>
+		<size>17</size>
+	</font>
+
+	<font>
+		<name>Font_KeyboardShapes</name>
+		<filename>shapes.ttf</filename>
+		<size>19</size>
+	</font>	
+
+	<font>
+		<name>Font_KeyboardEdit</name>
+		<filename>dinbold.ttf</filename>
+		<size>19</size>
+	</font>	
+
+<!-- OSD -->
+
+	<font>
+	  <name>Font_OSDTime</name>
+	  <filename>AkzidenzCond.ttf</filename>
+	  <size>19</size>
+	</font>
+	
+
+
+    <font>
+      <name>objects</name>
+      <filename>din.ttf</filename>
+      <size>18</size>
+    </font>
+	
+  </fontset>
+
+<fontset id="Korean" unicode="true">
+
+<!-- Common -->
+
+	<font>
+	  <name>Font_RSS</name>
+	  <filename>SeoulNamsanM.ttf</filename>
+	  <size>18</size>
+	</font>
+	
+	<font>
+	  <name>Font_Time</name>
+	  <filename>NanumGothicBold.ttf</filename>
+	  <size>18</size>
+	</font>
+	
+	<font>
+	  <name>Font_BigRSS</name>
+	  <filename>SeoulNamsanM.ttf</filename>
+	  <size>24</size>
+	</font>
+	
+	<font>
+	  <name>Font_BigTime</name>
+	  <filename>NanumGothicBold.ttf</filename>
+	  <size>24</size>
+	</font>
+	
+    <font>
+      <name>Font_Debug</name>
+      <filename>NanumGothicBold.ttf</filename>
+      <size>18</size>
+      <shadow>FF000000</shadow>
+    </font>
+	
+<!-- Home -->
+
+	<font>
+		<name>Font_MainMenu</name>
+		<filename>NanumGothicBold.ttf</filename>
+		<size>54</size>
+	</font>
+	
+	<font>
+	  <name>Font_HomeNowPlayingTrack</name>
+	  <filename>SeoulNamsanM.ttf</filename>
+	  <size>18</size>
+	</font>
+
+	<font>
+	  <name>Font_HomeNowPlayingArtist</name>
+	  <filename>SeoulNamsanM.ttf</filename>
+	  <size>21</size>
+	</font>
+	
+	<font>
+	  <name>Font_HomeNowPlayingAlbum</name>
+	  <filename>SeoulNamsanM.ttf</filename>
+	  <size>14</size>
+	</font>
+	
+	<font>
+	  <name>Font_WeatherTitle</name>
+	  <filename>NanumGothicBold.ttf</filename>
+	  <size>24</size>
+	</font>
+	
+	<font>
+	  <name>Font_WeatherLabel</name>
+	  <filename>NanumGothicBold.ttf</filename>
+	  <size>18</size>
+	  <linespacing>1.6</linespacing>
+	</font>
+
+	<font>
+	  <name>Font_WeatherTemp</name>
+	  <filename>NanumGothicBold.ttf</filename>
+	  <size>55</size>
+	</font>		
+
+<!-- Media windows -->
+
+	<font>
+	  <name>Font_MediaWindowTitle</name>
+	  <filename>NanumGothicBold.ttf</filename>
+	  <size>24</size>
+	</font>
+
+	<font>
+		<name>Font_MediaWindowMenu</name>
+		<filename>NanumGothicBold.ttf</filename>
+		<size>18</size>
+	</font>
+	
+	<font>
+		<name>Font_List</name>
+		<filename>SeoulNamsanM.ttf</filename>
+		<size>16</size>
+	</font>
+	
+	<font>
+		<name>font13</name>
+		<filename>SeoulNamsanM.ttf</filename>
+		<size>16</size>
+	</font>	
+
+	<font>
+		<name>Font_ListDetail</name>
+		<filename>NanumGothicBold.ttf</filename>
+		<size>13</size>
+	</font>
+	
+<!-- Settings screens -->
+
+	<font>
+	  <name>Font_SettingsSectionTitle</name>
+	  <filename>NanumGothicBold.ttf</filename>
+	  <size>32</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsSectionMenuButton</name>
+	  <filename>NanumGothicBold.ttf</filename>
+	  <size>22</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsSectionMenuButtonSubtitle</name>
+	  <filename>NanumGothicBold.ttf</filename>
+	  <size>14</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsOptions</name>
+	  <filename>NanumGothicBold.ttf</filename>
+	  <size>18</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsMainLabelBig</name>
+	  <filename>NanumGothicBold.ttf</filename>
+	  <size>30</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsMainLabelSmall</name>
+	  <filename>NanumGothicBold.ttf</filename>
+	  <size>18</size>
+	  <linespacing>0.9</linespacing>
+	</font>
+	
+<!-- Virtual Home page -->
+
+	<font>
+	  <name>Font_VirtualRSS</name>
+	  <filename>SeoulNamsanM.ttf</filename>
+	  <size>10</size>
+	</font>
+	
+	<font>
+		<name>Font_VirtualMainMenu</name>
+		<filename>NanumGothicBold.ttf</filename>
+		<size>34</size>
+	</font>
+
+<!-- Context menus and dialogs -->
+
+    <font>
+      <name>Font_ContextMenuButton</name>
+      <filename>NanumGothicBold.ttf</filename>
+      <size>18</size>
+    </font>
+
+    <font>
+      <name>Font_SetContentList</name>
+      <filename>NanumGothicBold.ttf</filename>
+      <size>16</size>
+    </font>
+
+	<font>
+	  <name>Font_SetContentMenu</name>
+	  <filename>NanumGothicBold.ttf</filename>
+	  <size>18</size>
+	</font>
+	
+	<font>
+	  <name>Font_ProgressLabelSmall</name>
+	  <filename>NanumGothicBold.ttf</filename>
+	  <size>16</size>
+	</font>
+
+	<font>
+	  <name>Font_ProgressLabelBig</name>
+	  <filename>SeoulNamsanM.ttf</filename>
+	  <size>22</size>
+	</font>
+	
+	<font>
+	  <name>Font_ProgressLabelYesNo</name>
+	  <filename>NanumGothicBold.ttf</filename>
+	  <size>32</size>
+	</font>	
+	
+	<font>
+		<name>Font_AddSourceEdit</name>
+		<filename>NanumGothicBold.ttf</filename>
+		<size>20</size>
+	</font>		
+	
+<!-- File Browser -->
+
+	<font>
+	  <name>Font_FileBrowserTile</name>
+	  <filename>NanumGothicBold.ttf</filename>
+	  <size>18</size>
+	</font>
+	
+	<font>
+	  <name>Font_FileBrowserPath</name>
+	  <filename>SeoulNamsanM.ttf</filename>
+	  <size>17</size>
+	</font>
+
+<!-- Flow view type -->
+	
+	<font>
+      <name>Font_FlowMainLabel</name>
+      <filename>SeoulNamsanM.ttf</filename>
+      <size>20</size>
+    </font>
+	
+    <font>
+      <name>Font_FlowSubLabel</name>
+      <filename>NanumGothicBold.ttf</filename>
+      <size>16</size>
+    </font>
+
+<!-- Showcase -->
+	
+    <font>
+      <name>Font_ShowcaseMainLabel</name>
+      <filename>SeoulNamsanM.ttf</filename>
+      <size>22</size>
+    </font>
+	
+    <font>
+      <name>Font_ShowcaseDetailLabel</name>
+      <filename>NanumGothicBold.ttf</filename>
+      <size>16</size>
+    </font>
+	
+<!-- Fullscreen Info pages -->
+
+    <font>
+      <name>Font_FSInfoTitle</name>
+      <filename>NanumGothicBold.ttf</filename>
+      <size>45</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoArtist</name>
+      <filename>NanumGothicBold.ttf</filename>
+      <size>26</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoYear</name>
+      <filename>NanumGothicBoldd.ttf</filename>
+      <size>37</size>
+    </font>
+
+    <font>
+      <name>Font_FSInfoGenre</name>
+      <filename>NanumGothicBold.ttf</filename>
+      <size>20</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoNoPoster</name>
+      <filename>NanumGothicBold.ttf</filename>
+      <size>17</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoLabel</name>
+      <filename>NanumGothicBold.ttf</filename>
+      <size>16</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoData</name>
+      <filename>NanumGothicBold.ttf</filename>
+      <size>19</size>
+	  <linespacing>1.1</linespacing>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoPlot</name>
+      <filename>NanumGothicBold.ttf</filename>
+      <size>18</size>
+	  <linespacing>0.9</linespacing>
+    </font>
+
+    <font>
+      <name>Font_FSIMDB</name>
+      <filename>AkzidenzCond.ttf</filename>
+      <size>30</size>
+    </font>
+
+    <font>
+      <name>Font_BookmarksAvailable</name>
+      <filename>NanumGothicBold.ttf</filename>
+      <size>20</size>
+    </font>
+	
+    <font>
+      <name>Font_FSIMDBData</name>
+      <filename>dinbold.ttf</filename>
+      <size>40</size>
+    </font>
+	
+<!-- Welcome page -->
+
+    <font>
+      <name>Font_Welcome</name>
+      <filename>NanumGothicBold.ttf</filename>
+      <size>22</size>
+	  <linespacing>1.3</linespacing>
+    </font>
+	
+    <font>
+      <name>Font_WelcomeSelect</name>
+      <filename>NanumGothicBold.ttf</filename>
+      <size>18</size>
+    </font>
+
+    <font>
+      <name>Font_Vitals</name>
+      <filename>NanumGothicBold.ttf</filename>
+      <size>19</size>
+	  <linespacing>1.9</linespacing>
+    </font>
+
+<!-- Wall -->
+
+    <font>
+      <name>Font_WallLabelMain</name>
+      <filename>SeoulNamsanM.ttf</filename>
+      <size>17</size>
+    </font>
+
+<!-- OSD -->
+
+    <font>
+      <name>Font_OSDSeek</name>
+      <filename>NanumGothicBold.ttf</filename>
+      <size>16</size>
+    </font>
+
+	<font>
+	  <name>Font_OSDOptions</name>
+	  <filename>NanumGothicBold.ttf</filename>
+	  <size>16</size>
+	</font>
+
+	<font>
+		<name>Font_OSDCodecInfo</name>
+		<filename>NanumGothicBold.ttf</filename>
+		<size>20</size>
+	</font>
+	
+	<font>
+		<name>Font_OSDMusicArtist</name>
+		<filename>NanumGothicBold.ttf</filename>
+		<size>22</size>
+	</font>
+
+	<font>
+		<name>Font_OSDMusicTitle</name>
+		<filename>NanumGothicBold.ttf</filename>
+		<size>30</size>
+	</font>		
+
+<!-- VirtualOSD -->
+
+	<font>
+		<name>Font_OSDCodecInfo_Virtual</name>
+		<filename>NanumGothicBold.ttf</filename>
+		<size>12</size>
+	</font>
+	
+	<font>
+		<name>Font_OSDMusicArtist_Virtual</name>
+		<filename>NanumGothicBold.ttf</filename>
+		<size>12</size>
+	</font>
+
+	<font>
+		<name>Font_OSDMusicTitle_Virtual</name>
+		<filename>NanumGothicBold.ttf</filename>
+		<size>20</size>
+	</font>	
+
+<!-- View Change -->
+
+	<font>
+		<name>Font_ViewChangeLabel</name>
+		<filename>NanumGothicBold.ttf</filename>
+		<size>16</size>
+	</font>	
+
+	<font>
+		<name>Font_ViewChangeSelect</name>
+		<filename>NanumGothicBold.ttf</filename>
+		<size>30</size>
+	</font>		
+
+<!-- Keyboard -->
+
+	<font>
+		<name>Font_KeyboardKeys</name>
+		<filename>NanumGothicBold.ttf</filename>
+		<size>17</size>
+	</font>
+
+	<font>
+		<name>Font_KeyboardShapes</name>
+		<filename>NanumGothicBold.ttf</filename>
+		<size>19</size>
+	</font>	
+
+	<font>
+		<name>Font_KeyboardEdit</name>
+		<filename>NanumGothicBold.ttf</filename>
+		<size>19</size>
+	</font>	
+
+<!-- OSD -->
+
+	<font>
+	  <name>Font_OSDTime</name>
+	  <filename>NanumGothicBold.ttf</filename>
+	  <size>17</size>
+	</font>
+	
+
+
+    <font>
+      <name>objects</name>
+      <filename>NanumGothicBold.ttf</filename>
+      <size>18</size>
+    </font>
+	
+  </fontset>
+  
+  <fontset id="Aeon_Cyrilic" unicode="true">
+
+<!-- Common -->
+
+	<font>
+	  <name>Font_RSS</name>
+	  <filename>rssC.ttf</filename>
+	  <size>14</size>
+	</font>
+	
+	<font>
+	  <name>Font_Time</name>
+	  <filename>rssC.ttf</filename>
+	  <size>16</size>
+	</font>
+	
+	<font>
+	  <name>Font_BigRSS</name>
+	  <filename>rssC.ttf</filename>
+	  <size>21</size>
+	</font>
+	
+	<font>
+	  <name>Font_BigTime</name>
+	  <filename>rssC.ttf</filename>
+	  <size>21</size>
+	</font>
+	
+    <font>
+      <name>Font_Debug</name>
+      <filename>dinboldCy.ttf</filename>
+      <size>18</size>
+      <shadow>FF000000</shadow>
+    </font>
+	
+<!-- Home -->
+
+	<font>
+		<name>Font_MainMenu</name>
+		<filename>universCy.ttf</filename>
+		<size>78</size>
+	</font>
+	
+	<font>
+	  <name>Font_HomeNowPlayingTrack</name>
+	  <filename>universconCy.ttf</filename>
+	  <size>22</size>
+	</font>
+
+	<font>
+	  <name>Font_HomeNowPlayingArtist</name>
+	  <filename>universconCy.ttf</filename>
+	  <size>21</size>
+	</font>
+	
+	<font>
+	  <name>Font_HomeNowPlayingAlbum</name>
+	  <filename>universconCy.ttf</filename>
+	  <size>16</size>
+	</font>
+	
+	<font>
+	  <name>Font_WeatherTitle</name>
+	  <filename>universconcapsCy.ttf</filename>
+	  <size>24</size>
+	</font>
+	
+	<font>
+	  <name>Font_WeatherLabel</name>
+	  <filename>universconcapsCy.ttf</filename>
+	  <size>18</size>
+	  <linespacing>1.6</linespacing>
+	</font>
+
+	<font>
+	  <name>Font_WeatherTemp</name>
+	  <filename>universconcapsCy.ttf</filename>
+	  <size>55</size>
+	</font>		
+
+<!-- Media windows -->
+
+	<font>
+	  <name>Font_MediaWindowTitle</name>
+	  <filename>universconcapsCy.ttf</filename>
+	  <size>24</size>
+	</font>
+
+	<font>
+		<name>Font_MediaWindowMenu</name>
+		<filename>universconcapsCy.ttf</filename>
+		<size>18</size>
+	</font>
+	
+	<font>
+		<name>Font_List</name>
+		<filename>universregCy.ttf</filename>
+		<size>16</size>
+	</font>
+	
+	<font>
+		<name>font13</name>
+		<filename>universregCy.ttf</filename>
+		<size>16</size>
+	</font>	
+
+	<font>
+		<name>Font_ListDetail</name>
+		<filename>universregCy.ttf</filename>
+		<size>13</size>
+	</font>
+	
+<!-- Settings screens -->
+
+	<font>
+	  <name>Font_SettingsSectionTitle</name>
+	  <filename>AkzidenzCondCy.ttf</filename>
+	  <size>36</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsSectionMenuButton</name>
+	  <filename>AkzidenzCondCy.ttf</filename>
+	  <size>27</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsSectionMenuButtonSubtitle</name>
+	  <filename>AkzidenzCondCy.ttf</filename>
+	  <size>16</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsOptions</name>
+	  <filename>universconcapsCy.ttf</filename>
+	  <size>18</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsMainLabelBig</name>
+	  <filename>AkzidenzCondCy.ttf</filename>
+	  <size>40</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsMainLabelSmall</name>
+	  <filename>AkzidenzCondCy.ttf</filename>
+	  <size>22</size>
+	  <linespacing>0.9</linespacing>
+	</font>
+	
+<!-- Virtual Home page -->
+
+	<font>
+	  <name>Font_VirtualRSS</name>
+	  <filename>rssC.ttf</filename>
+	  <size>10</size>
+	</font>
+	
+	<font>
+		<name>Font_VirtualMainMenu</name>
+		<filename>universCy.ttf</filename>
+		<size>47</size>
+	</font>
+
+<!-- Context menus and dialogs -->
+
+    <font>
+      <name>Font_ContextMenuButton</name>
+      <filename>AkzidenzCondCy.ttf</filename>
+      <size>20</size>
+    </font>
+
+    <font>
+      <name>Font_SetContentList</name>
+      <filename>dinCy.ttf</filename>
+      <size>16</size>
+    </font>
+
+	<font>
+	  <name>Font_SetContentMenu</name>
+	  <filename>AkzidenzCondCy.ttf</filename>
+	  <size>20</size>
+	</font>
+	
+	<font>
+	  <name>Font_ProgressLabelSmall</name>
+	  <filename>AkzidenzCondCy.ttf</filename>
+	  <size>20</size>
+	</font>
+	
+	<font>
+	  <name>Font_ProgressLabelMid</name>
+	  <filename>AkzidenzCondCy.ttf</filename>
+	  <size>27</size>
+	</font>	
+
+	<font>
+	  <name>Font_ProgressLabelBig</name>
+	  <filename>AkzidenzCondCy.ttf</filename>
+	  <size>35</size>
+	</font>
+	
+	<font>
+	  <name>Font_ProgressLabelYesNo</name>
+	  <filename>AkzidenzCondCy.ttf</filename>
+	  <size>46</size>
+	</font>	
+	
+	<font>
+		<name>Font_AddSourceEdit</name>
+		<filename>dinboldCy.ttf</filename>
+		<size>20</size>
+	</font>		
+	
+<!-- File Browser -->
+
+	<font>
+	  <name>Font_FileBrowserTile</name>
+	  <filename>AkzidenzCondCy.ttf</filename>
+	  <size>20</size>
+	</font>
+	
+	<font>
+	  <name>Font_FileBrowserPath</name>
+	  <filename>AkzidenzCondCy.ttf</filename>
+	  <size>19</size>
+	</font>
+
+<!-- Flow view type -->
+	
+	<font>
+      <name>Font_FlowMainLabel</name>
+      <filename>universregCy.ttf</filename>
+      <size>20</size>
+    </font>
+	
+    <font>
+      <name>Font_FlowSubLabel</name>
+      <filename>universregCy.ttf</filename>
+      <size>16</size>
+    </font>
+
+<!-- Showcase -->
+	
+    <font>
+      <name>Font_ShowcaseMainLabel</name>
+      <filename>universregCy.ttf</filename>
+      <size>22</size>
+    </font>
+	
+    <font>
+      <name>Font_ShowcaseDetailLabel</name>
+      <filename>universregCy.ttf</filename>
+      <size>16</size>
+    </font>
+	
+<!-- Fullscreen Info pages -->
+
+    <font>
+      <name>Font_FSInfoTitle</name>
+      <filename>AkzidenzCondCy.ttf</filename>
+      <size>55</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoArtist</name>
+      <filename>AkzidenzCondCy.ttf</filename>
+      <size>30</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoYear</name>
+      <filename>dinboldCy.ttf</filename>
+      <size>37</size>
+    </font>
+
+    <font>
+      <name>Font_FSInfoGenre</name>
+      <filename>dinboldCy.ttf</filename>
+      <size>20</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoNoPoster</name>
+      <filename>dinboldCy.ttf</filename>
+      <size>17</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoLabel</name>
+      <filename>dinboldCy.ttf</filename>
+      <size>16</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoData</name>
+      <filename>dinboldCy.ttf</filename>
+      <size>19</size>
+	  <linespacing>1.1</linespacing>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoPlot</name>
+      <filename>universconCy.ttf</filename>
+      <size>21</size>
+	  <linespacing>0.9</linespacing>
+    </font>
+
+    <font>
+      <name>Font_FSIMDB</name>
+      <filename>AkzidenzCondCy.ttf</filename>
+      <size>30</size>
+    </font>
+	
+    <font>
+      <name>Font_BookmarksAvailable</name>
+      <filename>AkzidenzCondCy.ttf</filename>
+      <size>20</size>
+    </font>	
+	
+    <font>
+      <name>Font_FSIMDBData</name>
+      <filename>dinboldCy.ttf</filename>
+      <size>40</size>
+    </font>
+	
+<!-- Welcome page -->
+
+    <font>
+      <name>Font_Welcome</name>
+      <filename>shruti.ttf</filename>
+      <size>22</size>
+	  <linespacing>0.9</linespacing>
+    </font>
+	
+    <font>
+      <name>Font_WelcomeSelect</name>
+      <filename>shruti.ttf</filename>
+      <size>18</size>
+    </font>
+
+    <font>
+      <name>Font_Vitals</name>
+      <filename>AkzidenzCondCy.ttf</filename>
+      <size>21</size>
+	  <linespacing>1.9</linespacing>
+    </font>
+
+<!-- Wall -->
+
+    <font>
+      <name>Font_WallLabelMain</name>
+      <filename>dinboldCy.ttf</filename>
+      <size>17</size>
+    </font>
+
+<!-- OSD -->
+
+    <font>
+      <name>Font_OSDSeek</name>
+      <filename>AkzidenzCondCy.ttf</filename>
+      <size>18</size>
+    </font>
+
+	<font>
+	  <name>Font_OSDOptions</name>
+	  <filename>universconcapsCy.ttf</filename>
+	  <size>16</size>
+	</font>
+
+	<font>
+		<name>Font_OSDCodecInfo</name>
+		<filename>AkzidenzCondCy.ttf</filename>
+		<size>22</size>
+	</font>
+	
+	<font>
+		<name>Font_OSDMusicArtist</name>
+		<filename>AkzidenzCondCy.ttf</filename>
+		<size>24</size>
+	</font>
+
+	<font>
+		<name>Font_OSDMusicTitle</name>
+		<filename>AkzidenzCondCy.ttf</filename>
+		<size>38</size>
+	</font>		
+
+<!-- VirtualOSD -->
+
+	<font>
+		<name>Font_OSDCodecInfo_Virtual</name>
+		<filename>AkzidenzCondCy.ttf</filename>
+		<size>14</size>
+	</font>
+	
+	<font>
+		<name>Font_OSDMusicArtist_Virtual</name>
+		<filename>AkzidenzCondCy.ttf</filename>
+		<size>16</size>
+	</font>
+
+	<font>
+		<name>Font_OSDMusicTitle_Virtual</name>
+		<filename>AkzidenzCondCy.ttf</filename>
+		<size>25</size>
+	</font>		
+	
+<!-- View Change -->
+
+	<font>
+		<name>Font_ViewChangeLabel</name>
+		<filename>universconcapsCy.ttf</filename>
+		<size>16</size>
+	</font>	
+
+	<font>
+		<name>Font_ViewChangeSelect</name>
+		<filename>universconcapsCy.ttf</filename>
+		<size>30</size>
+	</font>		
+
+<!-- Keyboard -->
+
+	<font>
+		<name>Font_KeyboardKeys</name>
+		<filename>dinboldCy.ttf</filename>
+		<size>17</size>
+	</font>
+
+	<font>
+		<name>Font_KeyboardShapes</name>
+		<filename>shapes.ttf</filename>
+		<size>19</size>
+	</font>	
+
+	<font>
+		<name>Font_KeyboardEdit</name>
+		<filename>dinboldCy.ttf</filename>
+		<size>19</size>
+	</font>	
+
+<!-- OSD -->
+
+	<font>
+	  <name>Font_OSDTime</name>
+	  <filename>AkzidenzCondCy.ttf</filename>
+	  <size>19</size>
+	</font>
+	
+
+
+    <font>
+      <name>objects</name>
+      <filename>dinCy.ttf</filename>
+      <size>18</size>
+    </font>
+	
+  </fontset>  
+
+  <fontset id="Aeon_Polish" unicode="true">
+
+<!-- Common -->
+
+	<font>
+	  <name>Font_RSS</name>
+	  <filename>rss CE.ttf</filename>
+	  <size>14</size>
+	</font>
+	
+	<font>
+	  <name>Font_Time</name>
+	  <filename>rss CE.ttf</filename>
+	  <size>16</size>
+	</font>
+	
+	<font>
+	  <name>Font_BigRSS</name>
+	  <filename>rss CE.ttf</filename>
+	  <size>21</size>
+	</font>
+	
+	<font>
+	  <name>Font_BigTime</name>
+	  <filename>rss CE.ttf</filename>
+	  <size>21</size>
+	</font>
+	
+    <font>
+      <name>Font_Debug</name>
+      <filename>dinbold CE.ttf</filename>
+      <size>18</size>
+      <shadow>FF000000</shadow>
+    </font>
+	
+<!-- Home -->
+
+	<font>
+		<name>Font_MainMenu</name>
+		<filename>univers CE.ttf</filename>
+		<size>55</size>
+	</font>
+	
+	<font>
+	  <name>Font_HomeNowPlayingTrack</name>
+	  <filename>universcon CE.ttf</filename>
+	  <size>22</size>
+	</font>
+
+	<font>
+	  <name>Font_HomeNowPlayingArtist</name>
+	  <filename>universcon CE.ttf</filename>
+	  <size>21</size>
+	</font>
+	
+	<font>
+	  <name>Font_HomeNowPlayingAlbum</name>
+	  <filename>universcon CE.ttf</filename>
+	  <size>16</size>
+	</font>
+	
+	<font>
+	  <name>Font_WeatherTitle</name>
+	  <filename>universconcaps CE.ttf</filename>
+	  <size>24</size>
+	</font>
+	
+	<font>
+	  <name>Font_WeatherLabel</name>
+	  <filename>universconcaps CE.ttf</filename>
+	  <size>18</size>
+	  <linespacing>1.6</linespacing>
+	</font>
+
+	<font>
+	  <name>Font_WeatherTemp</name>
+	  <filename>universconcaps CE.ttf</filename>
+	  <size>55</size>
+	</font>		
+
+<!-- Media windows -->
+
+	<font>
+	  <name>Font_MediaWindowTitle</name>
+	  <filename>universconcaps CE.ttf</filename>
+	  <size>24</size>
+	</font>
+
+	<font>
+		<name>Font_MediaWindowMenu</name>
+		<filename>universconcaps CE.ttf</filename>
+		<size>18</size>
+	</font>
+	
+	<font>
+		<name>Font_List</name>
+		<filename>universreg CE.ttf</filename>
+		<size>16</size>
+	</font>
+	
+	<font>
+		<name>font13</name>
+		<filename>universreg CE.ttf</filename>
+		<size>16</size>
+	</font>	
+
+	<font>
+		<name>Font_ListDetail</name>
+		<filename>universreg CE.ttf</filename>
+		<size>13</size>
+	</font>
+	
+<!-- Settings screens -->
+
+	<font>
+	  <name>Font_SettingsSectionTitle</name>
+	  <filename>GnuolaneFreeCap.ttf</filename>
+	  <size>36</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsSectionMenuButton</name>
+	  <filename>GnuolaneFreeCap.ttf</filename>
+	  <size>25</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsSectionMenuButtonSubtitle</name>
+	  <filename>GnuolaneFreeCap.ttf</filename>
+	  <size>17</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsOptions</name>
+	  <filename>GnuolaneFreeCap.ttf</filename>
+	  <size>19</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsMainLabelBig</name>
+	  <filename>GnuolaneFreeCap.ttf</filename>
+	  <size>40</size>
+	</font>
+	
+	<font>
+	  <name>Font_SettingsMainLabelSmall</name>
+	  <filename>GnuolaneFreeCap.ttf</filename>
+	  <size>22</size>
+	  <linespacing>0.9</linespacing>
+	</font>
+	
+<!-- Virtual Home page -->
+
+	<font>
+	  <name>Font_VirtualRSS</name>
+	  <filename>rss CE.ttf</filename>
+	  <size>10</size>
+	</font>
+	
+	<font>
+		<name>Font_VirtualMainMenu</name>
+		<filename>univers CE.ttf</filename>
+		<size>47</size>
+	</font>
+
+<!-- Context menus and dialogs -->
+
+    <font>
+      <name>Font_ContextMenuButton</name>
+      <filename>GnuolaneFreeCap.ttf</filename>
+      <size>20</size>
+    </font>
+
+    <font>
+      <name>Font_SetContentList</name>
+      <filename>din CE.ttf</filename>
+      <size>16</size>
+    </font>
+
+	<font>
+	  <name>Font_SetContentMenu</name>
+	  <filename>GnuolaneFreeCap.ttf</filename>
+	  <size>20</size>
+	</font>
+	
+	<font>
+	  <name>Font_ProgressLabelSmall</name>
+	  <filename>GnuolaneFreeCap.ttf</filename>
+	  <size>20</size>
+	</font>
+
+	<font>
+	  <name>Font_ProgressLabelMid</name>
+	  <filename>GnuolaneFreeCap.ttf</filename>
+	  <size>27</size>
+	</font>	
+
+	<font>
+	  <name>Font_ProgressLabelBig</name>
+	  <filename>GnuolaneFreeCap.ttf</filename>
+	  <size>35</size>
+	</font>
+	
+	<font>
+	  <name>Font_ProgressLabelYesNo</name>
+	  <filename>GnuolaneFreeCap.ttf</filename>
+	  <size>46</size>
+	</font>	
+	
+	<font>
+		<name>Font_AddSourceEdit</name>
+		<filename>GnuolaneFreeCap.ttf</filename>
+		<size>20</size>
+	</font>		
+	
+<!-- File Browser -->
+
+	<font>
+	  <name>Font_FileBrowserTile</name>
+	  <filename>GnuolaneFreeCap.ttf</filename>
+	  <size>20</size>
+	</font>
+	
+	<font>
+	  <name>Font_FileBrowserPath</name>
+	  <filename>GnuolaneFreeCap.ttf</filename>
+	  <size>19</size>
+	</font>
+
+<!-- Flow view type -->
+	
+	<font>
+      <name>Font_FlowMainLabel</name>
+      <filename>universreg CE.ttf</filename>
+      <size>20</size>
+    </font>
+	
+    <font>
+      <name>Font_FlowSubLabel</name>
+      <filename>universreg CE.ttf</filename>
+      <size>16</size>
+    </font>
+
+<!-- Showcase -->
+	
+    <font>
+      <name>Font_ShowcaseMainLabel</name>
+      <filename>universreg CE.ttf</filename>
+      <size>22</size>
+    </font>
+	
+    <font>
+      <name>Font_ShowcaseDetailLabel</name>
+      <filename>universreg CE.ttf</filename>
+      <size>16</size>
+    </font>
+	
+<!-- Fullscreen Info pages -->
+
+    <font>
+      <name>Font_FSInfoTitle</name>
+      <filename>GnuolaneFreeCap.ttf</filename>
+      <size>55</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoArtist</name>
+      <filename>GnuolaneFreeCap.ttf</filename>
+      <size>30</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoYear</name>
+      <filename>dinbold CE.ttf</filename>
+      <size>37</size>
+    </font>
+
+    <font>
+      <name>Font_FSInfoGenre</name>
+      <filename>dinbold CE.ttf</filename>
+      <size>20</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoNoPoster</name>
+      <filename>dinbold CE.ttf</filename>
+      <size>17</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoLabel</name>
+      <filename>dinbold CE.ttf</filename>
+      <size>16</size>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoData</name>
+      <filename>dinbold CE.ttf</filename>
+      <size>19</size>
+	  <linespacing>1.1</linespacing>
+    </font>
+	
+    <font>
+      <name>Font_FSInfoPlot</name>
+      <filename>universcon CE.ttf</filename>
+      <size>21</size>
+	  <linespacing>0.9</linespacing>
+    </font>
+
+    <font>
+      <name>Font_FSIMDB</name>
+      <filename>GnuolaneFreeCap.ttf</filename>
+      <size>20</size>
+    </font>
+	
+    <font>
+      <name>Font_BookmarksAvailable</name>
+      <filename>GnuolaneFreeCap.ttf</filename>
+      <size>20</size>
+    </font>	
+	
+    <font>
+      <name>Font_FSIMDBData</name>
+      <filename>dinbold CE.ttf</filename>
+      <size>40</size>
+    </font>
+	
+<!-- Welcome page -->
+
+    <font>
+      <name>Font_Welcome</name>
+      <filename>arualuni.ttf</filename>
+      <size>22</size>
+	  <linespacing>0.9</linespacing>
+    </font>
+	
+    <font>
+      <name>Font_WelcomeSelect</name>
+      <filename>arualuni.ttf</filename>
+      <size>18</size>
+    </font>
+
+    <font>
+      <name>Font_Vitals</name>
+      <filename>GnuolaneFreeCap.ttf</filename>
+      <size>21</size>
+	  <linespacing>1.9</linespacing>
+    </font>
+
+<!-- Wall -->
+
+    <font>
+      <name>Font_WallLabelMain</name>
+      <filename>dinbold CE.ttf</filename>
+      <size>17</size>
+    </font>
+
+<!-- OSD -->
+
+    <font>
+      <name>Font_OSDSeek</name>
+      <filename>GnuolaneFreeCap.ttf</filename>
+      <size>19</size>
+    </font>
+
+	<font>
+	  <name>Font_OSDOptions</name>
+	  <filename>universconcaps CE.ttf</filename>
+	  <size>16</size>
+	</font>
+
+	<font>
+		<name>Font_OSDCodecInfo</name>
+		<filename>GnuolaneFreeCap.ttf</filename>
+		<size>22</size>
+	</font>
+	
+	<font>
+		<name>Font_OSDMusicArtist</name>
+		<filename>GnuolaneFreeCap.ttf</filename>
+		<size>24</size>
+	</font>
+
+	<font>
+		<name>Font_OSDMusicTitle</name>
+		<filename>GnuolaneFreeCap.ttf</filename>
+		<size>38</size>
+	</font>		
+
+<!-- VirtualOSD -->
+
+	<font>
+		<name>Font_OSDCodecInfo_Virtual</name>
+		<filename>GnuolaneFreeCap.ttf</filename>
+		<size>15</size>
+	</font>
+	
+	<font>
+		<name>Font_OSDMusicArtist_Virtual</name>
+		<filename>GnuolaneFreeCap.ttf</filename>
+		<size>17</size>
+	</font>
+
+	<font>
+		<name>Font_OSDMusicTitle_Virtual</name>
+		<filename>GnuolaneFreeCap.ttf</filename>
+		<size>25</size>
+	</font>			
+	
+<!-- View Change -->
+
+	<font>
+		<name>Font_ViewChangeLabel</name>
+		<filename>universconcaps CE.ttf</filename>
+		<size>16</size>
+	</font>	
+
+	<font>
+		<name>Font_ViewChangeSelect</name>
+		<filename>universconcaps CE.ttf</filename>
+		<size>30</size>
+	</font>		
+
+<!-- Keyboard -->
+
+	<font>
+		<name>Font_KeyboardKeys</name>
+		<filename>dinbold CE.ttf</filename>
+		<size>17</size>
+	</font>
+
+	<font>
+		<name>Font_KeyboardShapes</name>
+		<filename>shapes.ttf</filename>
+		<size>19</size>
+	</font>	
+
+	<font>
+		<name>Font_KeyboardEdit</name>
+		<filename>dinbold CE.ttf</filename>
+		<size>19</size>
+	</font>	
+
+<!-- OSD -->
+
+	<font>
+	  <name>Font_OSDTime</name>
+	  <filename>GnuolaneFreeCap.ttf</filename>
+	  <size>18</size>
+	</font>
+	
+    <font>
+      <name>objects</name>
+      <filename>din CE.ttf</filename>
+      <size>18</size>
+    </font>
+	
+  </fontset>
+  
+</fonts>

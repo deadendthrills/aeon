@@ -1,0 +1,194 @@
+<includes>
+
+	<include name="Assistant_CommonButtons">
+		<control type="button" id="6">
+			<description>News</description>
+			<posy>0</posy>
+			<label>31500</label>
+			<include>Objects_SettingsSectionMenuButton</include>
+			<onup>9</onup>
+			<ondown>7</ondown>
+			<onfocus>Skin.Reset(bmtransitassistant)</onfocus>
+			<visible allowhiddenfocus="true">![Control.HasFocus(6) | Control.HasFocus(300)]</visible>
+		</control>
+		<control type="button" id="6">
+			<description>News</description>
+			<posy>0</posy>
+			<label>31500</label>
+			<include>Objects_SettingsSectionMenuButtonFocused</include>
+			<onup>12</onup>
+			<ondown>7</ondown>
+			<visible>Control.HasFocus(6) | Control.HasFocus(300)</visible>
+		</control>
+		<control type="label">
+			<description>News Unfocused</description>
+			<posy>32</posy>
+			<label>31501</label>
+			<textcolor>FFf5f5f5</textcolor>
+			<include>Objects_SettingsSectionMenuButtonSubtitle</include>
+			<visible>![Control.HasFocus(6) | Control.HasFocus(300)]</visible>
+		</control>
+		<control type="label">
+			<description>News Focused</description>
+			<posy>32</posy>
+			<label>31501</label>
+			<textcolor>FF262728</textcolor>
+			<include>Objects_SettingsSectionMenuButtonSubtitle</include>
+			<visible>Control.HasFocus(6) | Control.HasFocus(300)</visible>
+		</control>
+		<control type="button" id="7">
+			<description>Vitals</description>
+			<posy>58</posy>
+			<label>31502</label>
+			<include>Objects_SettingsSectionMenuButton</include>
+			<onup>6</onup>
+			<ondown>8</ondown>
+			<visible allowhiddenfocus="true">![Control.HasFocus(7) | Control.HasFocus(301)]</visible>
+		</control>
+		<control type="button" id="7">
+			<description>Vitals</description>
+			<posy>58</posy>
+			<label>31502</label>
+			<include>Objects_SettingsSectionMenuButtonFocused</include>
+			<onup>6</onup>
+			<ondown>8</ondown>
+			<visible>Control.HasFocus(7) | Control.HasFocus(301)</visible>
+		</control>
+		<control type="label">
+			<description>Vitals Unfocused</description>
+			<posy>90</posy>
+			<label>31503</label>
+			<textcolor>FFf5f5f5</textcolor>
+			<include>Objects_SettingsSectionMenuButtonSubtitle</include>
+			<visible>![Control.HasFocus(7) | Control.HasFocus(301)]</visible>
+		</control>
+		<control type="label">
+			<description>Vitals Sub Unfocused</description>
+			<posy>90</posy>
+			<label>31503</label>
+			<textcolor>FF262728</textcolor>
+			<include>Objects_SettingsSectionMenuButtonSubtitle</include>
+			<visible>Control.HasFocus(7) | Control.HasFocus(301)</visible>
+		</control>
+		<control type="button" id="8">
+			<description>Credits</description>
+			<posy>116</posy>
+			<label>31504</label>
+			<include>Objects_SettingsSectionMenuButton</include>
+			<onup>7</onup>
+			<ondown>9</ondown>
+			<visible allowhiddenfocus="true">!Control.HasFocus(30) + !Control.HasFocus(31) + !Control.HasFocus(32)</visible>
+		</control>
+		<control type="button" id="8">
+			<description>Credits</description>
+			<posy>116</posy>
+			<label>31504</label>
+			<include>Objects_SettingsSectionMenuButtonFocused</include>
+			<onup>7</onup>
+			<ondown>9</ondown>
+			<visible>Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(32)</visible>
+		</control>
+		<control type="label">
+			<description>Credits Unfocused</description>
+			<posy>148</posy>
+			<label>31505</label>
+			<textcolor>FFf5f5f5</textcolor>
+			<include>Objects_SettingsSectionMenuButtonSubtitle</include>
+			<visible>!Control.HasFocus(8) + !Control.HasFocus(30) + !Control.HasFocus(31) + !Control.HasFocus(32)</visible>
+		</control>
+		<control type="label">
+			<description>Credits Sub Unfocused</description>
+			<posy>148</posy>
+			<label>31505</label>
+			<textcolor>FF262728</textcolor>
+			<include>Objects_SettingsSectionMenuButtonSubtitle</include>
+			<visible>Control.HasFocus(8) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(32)</visible>
+		</control>	
+	</include>
+
+	<include name="Assistant_TourButton">
+		<control type="button" id="9">
+			<description>Start tour</description>
+			<posy>174</posy>
+			<label>31520</label>
+			<include>Objects_SettingsSectionMenuButton</include>
+			<onup>8</onup>
+			<ondown>6</ondown>
+			<onclick>Dialog.Close(605)</onclick>
+			<onclick>XBMC.ReplaceWindow(AppearanceSettings)</onclick>
+			<visible allowhiddenfocus="true">!Control.HasFocus(9)</visible>
+		</control>
+		<control type="button">
+			<description>Start tour</description>
+			<posy>174</posy>
+			<label>31520</label>
+			<include>Objects_SettingsSectionMenuButtonFocused</include>
+			<onup>8</onup>
+			<ondown>6</ondown>
+			<onclick>Dialog.Close(605)</onclick>
+			<onclick>XBMC.ReplaceWindow(AppearanceSettings)</onclick>
+			<visible>Control.HasFocus(9)</visible>
+		</control>
+		<control type="label">
+			<description>Start tour subtitle</description>
+			<posy>206</posy>
+			<label>31521</label>
+			<textcolor>FFf5f5f5</textcolor>
+			<include>Objects_SettingsSectionMenuButtonSubtitle</include>
+			<visible>!Control.HasFocus(9) + !Control.HasFocus(40)</visible>
+		</control>
+		<control type="label">
+			<description>Start tour subtitle</description>
+			<posy>206</posy>
+			<label>31521</label>
+			<textcolor>FF262728</textcolor>
+			<include>Objects_SettingsSectionMenuButtonSubtitle</include>
+			<visible>Control.HasFocus(9) | Control.HasFocus(40)</visible>
+		</control>	
+	</include>
+
+	<include name="Assistant_Buttons">
+	
+<!-- Buttons for Home page -->
+	
+		<control type="group">
+			<include>Settings_ButtonGroupDimensionsXBMC</include>
+			<include>Animation_CommonFade</include>
+
+			<include>Assistant_CommonButtons</include>
+
+			<include>Assistant_TourButton</include>
+			<include>Assistant_COTDButton</include>
+			
+		</control>
+		
+	</include>
+	
+	<include name="Assistant_WelcomeLabel">
+		<control type="group">
+			<description>Labels: Start tour</description>
+			<include>Labels_MainLabelGroup</include>
+			<visible>Control.HasFocus(9)</visible>
+
+			<control type="label">
+				<include>Labels_MainLabelBigVars</include>
+				<label>31522</label>
+			</control>
+
+			<control type="label">
+				<include>Labels_MainLabelSmallVars</include>
+				<label>31523</label>
+			</control>
+
+		</control>
+	</include>
+	
+	<include name="Assistant_Labels">
+
+<!-- Labels: Home Page -->
+
+		<include>Assistant_WelcomeLabel</include>	
+
+	</include>
+
+</includes>

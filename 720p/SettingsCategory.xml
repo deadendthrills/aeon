@@ -1,0 +1,151 @@
+<window id="12">
+	<defaultcontrol always="true">3</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+
+	<control type="multiimage">
+		<include>FullscreenDimensions</include>
+		<imagepath>backdrops/default_settings</imagepath>
+		<info>Skin.String(CustomSettings)</info>
+		<animation effect="fade" start="0" end="100" time="200" condition="!Window.Previous(4)">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="200" condition="!Window.Next(4)">WindowClose</animation>		
+	</control>
+
+	<control type="group">
+		<include>FullScreenDimensions</include>
+		<animation type="WindowOpen" reversible="false" condition="!Window.Previous(4)">
+			<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+			<effect type="fade" start="0" end="100" time="300" />
+		</animation>		
+		<animation type="WindowClose" reversible="false" condition="!Window.Next(4)">
+			<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+			<effect type="fade" start="100" end="0" time="300" />
+		</animation>
+		<include>Furniture_SettingsBackPanel</include>
+	
+		<include>Settings_XBMCSettingsHeadings</include>
+
+		<control type="grouplist" id="3">
+			<description>button area</description>
+			<include>Settings_ButtonGroupDimensionsXBMC</include>
+			<orientation>vertical</orientation>
+			<itemgap>0</itemgap>
+			<onleft>5</onleft>
+			<onright>5</onright>
+			<onup>3</onup>
+			<ondown>3</ondown>
+			<include>Animation_CommonFade</include>
+		</control>
+	
+		<control type="grouplist" id="5">
+			<description>control area</description>
+			<include>Objects_SettingsControlAreaVars</include>
+			<onup>-</onup>
+			<ondown>5</ondown>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<visible>Window.Previous(4) | Window.Previous(10) | Window.Previous(24) | Window.Previous(25) | Window.Previous(1) | Window.Previous(2) | Window.Previous(500) | Window.Previous(501) | Window.Previous(502) | Window.Previous(VideosSettings)</visible>
+		</control>
+	
+		<include>Settings_XBMCSettingsSubheadings</include>
+
+		<control type="button" id="10">
+			<description>Default Category Button</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>216</width>
+			<height>58</height>
+			<texturefocus>settings/settings_leftmenufocus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<font>Font_SettingsSectionMenuButton</font>
+			<textcolor>FFf5f5f5</textcolor>
+			<focusedcolor>FF262728</focusedcolor>
+			<selectedcolor>FF262728</selectedcolor>
+			<textoffsety>7</textoffsety>
+			<textoffsetx>30</textoffsetx>
+			<aligny>top</aligny>
+			<pulseonselect>no</pulseonselect>
+			<include>Animations_SettingsButtonFade</include>
+			<onclick>SetFocus(800)</onclick>
+		</control>
+
+		<control type="image">
+			<description>background image</description>
+			<posx>42</posx>
+			<posy>28</posy>
+			<width>1196</width>
+			<height>651</height>
+			<texture>settings/settings_panelfront.png</texture>
+		</control>
+	</control>
+
+	<control type="button" id="7">
+		<description>Default Button</description>
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>936</width>
+		<height>49</height>
+		<font>Font_SettingsOptions</font>
+		<texturefocus>settings/settings_radiobuttonofffocus.png</texturefocus>
+		<texturenofocus>settings/settings_radiobuttonoff.png</texturenofocus>
+		<textcolor>FFbbbbbb</textcolor>
+		<focusedcolor>FFFFFFFF</focusedcolor>
+		<pulseonselect>false</pulseonselect>
+		<textoffsetx>50</textoffsetx>
+		<aligny>center</aligny>
+		<include>Animations_SettingsButtonFade</include>
+	</control>
+
+	<control type="radiobutton" id="8">
+		<description>Default RadioButton</description>
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>936</width>
+		<height>49</height>
+		<font>Font_SettingsOptions</font>
+		<texturefocus>settings/settings_radiobuttonofffocus.png</texturefocus>
+		<texturenofocus>settings/settings_radiobuttonoff.png</texturenofocus>
+		<textcolor>FFbbbbbb</textcolor>
+		<focusedcolor>FFFFFFFF</focusedcolor>
+		<pulseonselect>false</pulseonselect>
+		<radiowidth>94</radiowidth>
+		<radioposx>850</radioposx>
+		<radioheight>65</radioheight>
+		<textoffsetx>50</textoffsetx>
+		<aligny>center</aligny>
+		<textureradiofocus>settings/settings_radiobuttononfocus.png</textureradiofocus>
+		<textureradionofocus>settings/settings_radiobuttonon.png</textureradionofocus>
+		<include>Animations_SettingsButtonFade</include>
+	</control>
+
+	<control type="spincontrolex" id="9">
+		<description>Default SpinControlex</description>
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>936</width>
+		<height>49</height>
+		<texturefocus>settings/settings_radiobuttonofffocus.png</texturefocus>
+		<texturenofocus>settings/settings_radiobuttonoff.png</texturenofocus>
+		<textcolor>FFbbbbbb</textcolor>
+		<focusedcolor>FFFFFFFF</focusedcolor>
+		<textureup>settings/spin-up.png</textureup>
+		<texturedown>settings/spin-down.png</texturedown>
+		<textureupfocus>settings/spin-up-focus.png</textureupfocus>
+		<texturedownfocus>settings/spin-down-focus.png</texturedownfocus>
+		<font>Font_SettingsOptions</font>
+		<disabledcolor>60d0d0d0</disabledcolor>
+		<aligny>center</aligny>
+		<spinposx>-2</spinposx>
+		<spinwidth>40</spinwidth>
+		<spinheight>65</spinheight>
+		<textoffsetx>50</textoffsetx>
+		<include>Animations_SettingsButtonFade</include>
+		<onright>SetFocus(1)</onright>
+	</control>
+
+	<include>Background_ContextBlack</include>
+
+	<include>Settings_Welcome</include>
+	
+	</controls>
+</window>

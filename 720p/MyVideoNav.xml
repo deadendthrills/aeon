@@ -1,0 +1,181 @@
+<window id="25">
+	<defaultcontrol always="true">50</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+
+	<control type="multiimage">
+		<include>Background_SingleImage</include>
+		<imagepath>backdrops/default_movies</imagepath>
+		<info>Skin.String(CustomMovies)</info>
+		<visible>!Skin.String(CustomMoviesFolder)</visible>
+		<visible>Skin.HasSetting(videomovies)</visible>
+		<visible>Skin.HasSetting(nomoviefanart)|IsEmpty(listitem.property(fanart_image))</visible> 
+		<visible>[IsEmpty(Fanart.Image)+IsEmpty(listitem.property(fanart_image))] | Skin.HasSetting(notvfanart)</visible> 		
+	</control>
+
+	<control type="multiimage">
+		<include>Background_ImageFolder</include>
+		<info>Skin.String(CustomMoviesFolder)</info>
+		<visible>Skin.String(CustomMoviesFolder)</visible>
+		<visible>Skin.HasSetting(videomovies)</visible>
+		<animation effect="fade" start="0" end="100" time="300" condition="Skin.HasSetting(nomoviefanart)|IsEmpty(listitem.property(fanart_image))">Conditional</animation>		
+	</control>
+
+	<control type="multiimage">
+		<include>Background_SingleImage</include>
+		<imagepath>backdrops/default_tvshows</imagepath>
+		<info>Skin.String(CustomTV)</info>
+		<visible>!Skin.String(CustomTVFolder)</visible>
+		<visible>Skin.HasSetting(videotv)</visible>
+	</control>
+
+	<control type="multiimage">
+		<include>Background_ImageFolder</include>
+		<info>Skin.String(CustomTVFolder)</info>
+		<visible>Skin.String(CustomTVFolder)</visible>
+		<visible>Skin.HasSetting(videotv)</visible>
+	</control>
+
+	<control type="largeimage" id="102">
+		<include>FullscreenDimensions</include>
+        <visible>Control.IsVisible(57) + [[Container.Content(movies) + !Skin.HasSetting(nomoviefanart)] | [Container.Content(tvshows) + !Skin.HasSetting(notvfanart)]] + !IsEmpty(listitem.property(fanart_image))</visible>
+		<fadetime>400</fadetime>
+		<texture>$INFO[listitem.property(fanart_image)]</texture>
+		<include>Animation_FanartFade</include>
+	</control>
+	
+	<control type="image">
+		<include>FullscreenDimensions</include>
+        <visible>[Container.Content(seasons) | Container.Content(episodes)] + !IsEmpty(Fanart.Image) + !Skin.HasSetting(notvfanart)</visible>
+		<animation effect="fade" end="0" time="200">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="600">VisibleChange</animation>
+		<texture>$INFO[Fanart.Image]</texture>
+	</control>
+
+	<include>Furniture_WallBackground</include>
+	
+	<control type="group">
+		<include>FullscreenDimensions</include>
+		<include>Animation_OpenCloseZoom</include>
+		<include>Furniture_Time</include>		
+		<include>Conditions_HiddenByInfoPages</include>
+		<include>Furniture_WindowRSS</include>
+		<include>Furniture_MediaPanel</include>
+		<include>Objects_ShowcaseMenuPanel</include>
+
+		<include>Viewtype_Wall</include>
+		<include>Furniture_WallTime</include>
+		<include>Furniture_WallRSS</include>		
+		
+		<control type="group">
+			<include>Animation_MediaMenuPosition</include>
+	
+			<control type="image">
+				<include>Objects_MediaLogo</include>
+				<texture>windows/logo_movies.png</texture>
+			</control>	
+		
+			<control type="label">
+				<label>31033</label>
+				<visible>Skin.HasSetting(videotv)</visible>
+				<include>Objects_MediaLabel</include>
+			</control>
+			
+			<control type="label">
+				<label>31032</label>
+				<visible>Skin.HasSetting(videomovies)</visible>
+				<include>Objects_MediaLabel</include>
+			</control>
+
+			<control type="grouplist" id="7000">
+				<include>Animation_MediaMenuSlide</include>
+				<include>Objects_MediaMenuGroup</include>
+
+				<control type="button" id="900">
+					<label>$LOCALIZE[31050] $INFO[Container.ViewMode]</label>
+					<include>Objects_MediaMenuButton</include>
+					<onclick>SetFocus(69)</onclick>
+					<visible>!Container.Content(episodes)</visible>
+				</control>
+				
+				<control type="button" id="930">
+					<label>$LOCALIZE[31050] $INFO[Container.ViewMode]</label>
+					<include>Objects_MediaMenuButton</include>
+					<visible>Container.Content(episodes)</visible>
+					<onclick>Notification(,$LOCALIZE[31756],15,)</onclick>
+				</control>				
+
+				<include>Objects_FlattenFlowButton</include>
+				
+				<control type="button" id="3">
+					<label>103</label>
+					<include>Objects_MediaMenuButton</include>
+				</control>
+
+				<control type="togglebutton" id="901">
+					<include>Objects_MediaMenuButton</include>				
+					<label>31065</label>
+					<altlabel>31064</altlabel>
+					<usealttexture>Skin.HasSetting(nomoviefanart)</usealttexture>
+					<onclick>Skin.SetBool(nomoviefanart)</onclick>
+					<altclick>Skin.Reset(nomoviefanart)</altclick>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(57)</visible>
+				</control>
+				
+				<control type="togglebutton" id="902">
+					<include>Objects_MediaMenuButton</include>				
+					<label>31065</label>
+					<altlabel>31064</altlabel>
+					<usealttexture>Skin.HasSetting(notvfanart)</usealttexture>
+					<onclick>Skin.SetBool(notvfanart)</onclick>
+					<altclick>Skin.Reset(notvfanart)</altclick>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + Control.IsVisible(57)</visible>
+				</control>
+				
+				<include>Objects_FlagsButton</include>
+				
+				<include>Objects_ThumbsButton</include>				
+
+				<include>Objects_WallGridButton</include>
+				
+				<include>Objects_WallBackdropButton</include>
+
+				<control type="togglebutton" id="14">
+					<description>Watched Toggle Button</description>
+					<label>31059</label>
+					<altlabel>31058</altlabel>
+					<include>Objects_MediaMenuButton</include>
+					<visible>[Skin.HasSetting(videomovies) + !Skin.HasSetting(nomenumoviewatched)] | [Skin.HasSetting(videotv) + !Skin.HasSetting(nomenutvwatched)]</visible>
+				</control>
+
+				<control type="button" id="8">
+					<label>137</label>
+					<include>Objects_MediaMenuButton</include>
+					<visible>[Skin.HasSetting(videomovies) + !Skin.HasSetting(nomenumoviesearch)] | [Skin.HasSetting(videotv) + !Skin.HasSetting(nomenutvsearch)]</visible>					
+				</control>
+
+				<control type="button" id="11">
+					<label>31057</label>
+					<include>Objects_MediaMenuButton</include>
+					<onclick>XBMC.ReplaceWindow(MyVideoFiles)</onclick>
+					<visible>!Skin.HasSetting(nomenufiles)</visible>
+				</control>
+				
+				<include>Objects_VideoSetupButton</include>				
+				
+				<include>Objects_MediaDebugButtons</include>			
+			</control>
+		</control>
+		
+		<include>Viewtype_Showcase</include>
+		<include>Viewtype_Coverflow</include>
+		<include>Viewtype_List</include>
+		
+	</control>
+
+	<include>ViewChange</include>
+	<include>Background_ContextBlack</include>
+	<include>Furniture_Debug</include>
+	
+</controls>	
+</window>

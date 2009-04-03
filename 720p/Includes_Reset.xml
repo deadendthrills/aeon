@@ -1,0 +1,62 @@
+<includes>
+
+<include name="resetsettings">
+		<onclick>Skin.ResetSettings</onclick>
+		<onclick>Skin.SetBool(iconsxbmc01)</onclick>
+		<onclick>Skin.Reset(iconsxbmc01remix)</onclick>
+		<onclick>Skin.SetString(moviepath,Movies)</onclick>
+		<onclick>Skin.SetString(tvpath,TV Shows)</onclick>
+		<onclick>Skin.SetString(clipspath,Clips)</onclick>
+		<onclick>Skin.SetString(gamespath,Games)</onclick>
+		<onclick>Skin.SetString(arcadepath,Arcade)</onclick>
+		<onclick>Skin.SetString(adultpath,asource)</onclick>
+		<onclick>Skin.SetString(gametrailerpath,Gametrailers)</onclick>
+		<onclick>Skin.SetString(movietrailerpath,Movietrailers)</onclick>
+		<onclick>Skin.SetString(comicspath,Comics)</onclick>
+</include>
+
+<include name="keepusersettings">
+		<onclick>Skin.Reset(visualisation)</onclick>
+		<onclick>Skin.Reset(mediapanel)</onclick>
+		<onclick>Skin.Reset(timepanel)</onclick>
+		<onclick>Skin.Reset(weatherpanel)</onclick>
+		<onclick>Skin.Reset(tutorials)</onclick>
+		<onclick>Skin.Reset(visualisation)</onclick>
+		<onclick>Skin.Reset(nomusic)</onclick>
+		<onclick>Skin.Reset(nogames)</onclick>
+		<onclick>Skin.Reset(arcade)</onclick>
+		<onclick>Skin.Reset(apps)</onclick>
+		<onclick>Skin.Reset(nomovies)</onclick>
+		<onclick>Skin.Reset(movielibrary)</onclick>
+		<onclick>Skin.Reset(notvshows)</onclick>
+		<onclick>Skin.Reset(tvlibrary)</onclick>
+		<onclick>Skin.Reset(clips)</onclick>
+		<onclick>Skin.Reset(nopictures)</onclick>
+		<onclick>Skin.Reset(weather)</onclick>
+		<onclick>Skin.Reset(adult)</onclick>
+		<onclick>Skin.Reset(keepiconaspect)</onclick>
+		<onclick>Skin.Reset(keepposteraspect)</onclick>
+		<onclick>Skin.Reset(keeppreviewaspect)</onclick>
+		<onclick>Skin.Reset(keepepisodeaspect)</onclick>
+		<onclick>Skin.Reset(keepphotoaspect)</onclick>
+		<onclick>Skin.Reset(vignette)</onclick>
+		<onclick>Skin.Reset(vignettehome)</onclick>
+		<onclick>Skin.Reset(videoadult)</onclick>
+		<onclick>Skin.Reset(videomovies)</onclick>
+		<onclick>Skin.Reset(videotv)</onclick>
+		<onclick>Skin.Reset(videoclips)</onclick>
+		<onclick>Skin.Reset(adultpics)</onclick>
+		<onclick>Skin.Reset(programgames)</onclick>
+		<onclick>Skin.Reset(programarcade)</onclick>
+		<onclick>Skin.Reset(programapps)</onclick>
+		<onclick>Skin.SetString(moviepath,Movies)</onclick>
+		<onclick>Skin.SetString(tvpath,TV Shows)</onclick>
+		<onclick>Skin.SetString(clipspath,Clips)</onclick>
+		<onclick>Skin.SetString(gamespath,Games)</onclick>
+		<onclick>Skin.SetString(arcadepath,Arcade)</onclick>
+		<onclick>Skin.SetString(adultpath,asource)</onclick>
+		<onclick>Skin.SetString(gametrailerpath,Gametrailers)</onclick>
+		<onclick>Skin.SetString(movietrailerpath,Movietrailers)</onclick>
+</include>
+
+</includes>

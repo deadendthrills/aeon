@@ -1,0 +1,231 @@
+<window id="503">
+	<defaultcontrol>50</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+	<control type="multiimage">
+		<include>Background_SingleImage</include>
+		<imagepath>backdrops/default_music</imagepath>
+		<info>Skin.String(CustomMusic)</info>
+		<visible>!Skin.String(CustomMusicFolder)</visible>
+	</control>
+
+	<control type="multiimage">
+		<include>Background_ImageFolder</include>
+		<info>Skin.String(CustomMusicFolder)</info>
+		<visible>Skin.String(CustomMusicFolder)</visible>
+	</control>
+
+	<control type="group">
+		<include>FullscreenDimensions</include>
+		<include>Animation_OpenCloseZoom</include>
+		<include>Furniture_Time</include>
+		<include>Furniture_WindowRSS</include>
+		<include>Furniture_MediaPanel</include>
+		<include>Objects_ShowcaseMenuPanel</include>
+
+		<control type="group">
+			<include>Animation_MediaMenuPosition</include>
+	
+			<control type="image">
+				<include>Objects_MediaLogo</include>
+				<texture>windows/logo_music.png</texture>
+			</control>	
+	
+			<control type="label">
+				<include>Objects_MediaLabel</include>
+				<label>EDITOR</label>
+			</control>
+
+			<control type="grouplist" id="7000">
+				<include>Animation_MediaMenuSlide</include>
+				<include>Objects_MediaMenuGroup</include>
+
+				<control type="button" id="6">
+					<label>21385</label>
+					<include>Objects_MediaMenuButton</include>
+				</control>
+
+				<control type="button" id="7">
+					<label>190</label>
+					<include>Objects_MediaMenuButton</include>
+				</control>
+
+				<control type="button" id="8">
+					<label>192</label>
+					<include>Objects_MediaMenuButton</include>
+				</control>
+				
+				<include>Objects_MediaDebugButtons</include>				
+			</control>
+
+		</control>
+
+		<control type="group">
+
+			<control type="list" id="50">
+				<viewtype label="List">list</viewtype>
+				<posx>0</posx>
+				<posy>198</posy>
+				<width>1280</width>
+				<height>387</height>
+				<pagecontrol>61</pagecontrol>
+				<onleft>6</onleft>
+				<onright>61</onright>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<animation effect="fade" time="200">Hidden</animation>
+				<animation effect="fade" time="200">WindowOpen</animation>
+				<animation effect="fade" time="200">WindowClose</animation>
+				<animation effect="fade" start="100" end="50" time="200" condition="!Control.HasFocus(50)">Conditional</animation>
+				<itemlayout height="43">
+					<control type="image">
+						<posx>0</posx>
+						<posy>43</posy>
+						<height>2</height>
+						<width>646</width>
+						<texture>windows/list_divider.png</texture>
+					</control>
+					<control type="label">
+						<include>ListLabel_Main_Playlist</include>
+						<include>listcolornofocus</include>	
+						<info>ListItem.Label</info>
+					</control>
+				</itemlayout>
+				<focusedlayout height="43">
+					<control type="image">
+						<posx>0</posx>
+						<posy>36</posy>
+						<height>2</height>
+						<width>646</width>
+						<texture>windows/list_dividerbar.png</texture>
+					</control>
+					<control type="image">
+						<posx>-210</posx>
+						<posy>-22</posy>
+						<width>773</width>
+						<height>87</height>
+						<texture>windows/listselectbar.png</texture>
+						<include>Animation_ButtonFocusFade</include>
+					</control>
+					<control type="label">
+						<include>ListLabel_Main_Playlist</include>
+						<include>listcolornofocus</include>
+						<info>ListItem.Label</info>
+					</control>			
+					<control type="label">
+						<include>ListLabel_Main_Playlist</include>
+						<include>listcolorfocus</include>
+						<info>ListItem.Label</info>
+						<include>Animation_ButtonFocusFade</include>
+					</control>
+				</focusedlayout>
+			</control>
+
+			<control type="scrollbar" id="61">
+			  <description>My first scroll bar control</description>
+			  <posx>540</posx>
+			  <posy>195</posy>
+			  <width>67</width>
+			  <height>392</height>
+			  <texturesliderbackground>windows/scrollbarback_playlist.png</texturesliderbackground>
+			  <texturesliderbar>-</texturesliderbar>
+			  <texturesliderbarfocus>-</texturesliderbarfocus>
+			  <textureslidernib>windows/scrollbarnub-nofocus.png</textureslidernib>
+			  <textureslidernibfocus>windows/scrollbarnub-focus.png</textureslidernibfocus>
+			  <pulseonselect></pulseonselect>
+			  <orientation>vertical</orientation>
+			  <showonepage>true</showonepage>
+			  <onup>61</onup>
+			  <ondown>61</ondown>
+			  <onleft>50</onleft>
+			  <onright>62</onright>
+			  <include>Animation_CommonFade</include>
+			</control>
+			
+			<control type="scrollbar" id="62">
+			  <description>My first scroll bar control</description>
+			  <posx>673</posx>
+			  <posy>195</posy>
+			  <width>67</width>
+			  <height>392</height>
+			  <texturesliderbackground>windows/scrollbarback_playlist.png</texturesliderbackground>
+			  <texturesliderbar>-</texturesliderbar>
+			  <texturesliderbarfocus>-</texturesliderbarfocus>
+			  <textureslidernib>windows/scrollbarnub-nofocus.png</textureslidernib>
+			  <textureslidernibfocus>windows/scrollbarnub-focus.png</textureslidernibfocus>
+			  <pulseonselect></pulseonselect>
+			  <orientation>vertical</orientation>
+			  <showonepage>true</showonepage>
+			  <onup>62</onup>
+			  <ondown>62</ondown>
+			  <onleft>61</onleft>
+			  <onright>100</onright>
+			  <include>Animation_CommonFade</include>
+			</control>		
+			
+			<control type="list" id="100">
+				<viewtype label="List">list</viewtype>
+				<posx>717</posx>
+				<posy>198</posy>
+				<width>577</width>
+				<height>387</height>
+				<pagecontrol>62</pagecontrol>
+				<onleft>62</onleft>
+				<onright>6</onright>
+				<onup>100</onup>
+				<ondown>100</ondown>
+				<animation effect="fade" time="200">Hidden</animation>
+				<animation effect="fade" time="200">WindowOpen</animation>
+				<animation effect="fade" time="200">WindowClose</animation>
+				<animation effect="fade" start="100" end="50" time="200" condition="!Control.HasFocus(100)">Conditional</animation>
+				<itemlayout height="43">
+					<control type="image">
+						<posx>0</posx>
+						<posy>43</posy>
+						<height>2</height>
+						<width>646</width>
+						<texture>windows/list_divider.png</texture>
+					</control>
+					<control type="label">
+						<include>ListLabel_Main_Playlist</include>
+						<include>listcolornofocus</include>	
+						<info>ListItem.Label</info>
+					</control>
+				</itemlayout>
+				<focusedlayout height="43">
+					<control type="image">
+						<posx>0</posx>
+						<posy>36</posy>
+						<height>2</height>
+						<width>646</width>
+						<texture>windows/list_dividerbar.png</texture>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>-22</posy>
+						<width>773</width>
+						<height>87</height>
+						<texture flipx="true">windows/listselectbar.png</texture>
+						<include>Animation_ButtonFocusFade</include>
+					</control>
+					<control type="label">
+						<include>ListLabel_Main_Playlist</include>
+						<include>listcolornofocus</include>
+						<info>ListItem.Label</info>
+					</control>			
+					<control type="label">
+						<include>ListLabel_Main_Playlist</include>
+						<include>listcolorfocus</include>
+						<info>ListItem.Label</info>
+						<include>Animation_ButtonFocusFade</include>
+					</control>
+				</focusedlayout>
+			</control>
+		</control>	
+	</control>
+	
+	<include>Background_ContextBlack</include>
+	<include>Furniture_Debug</include>
+	
+	</controls>
+</window>

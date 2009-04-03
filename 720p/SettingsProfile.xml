@@ -1,0 +1,143 @@
+<window id="56">
+	<defaultcontrol>6</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+
+	<control type="multiimage">
+		<include>FullscreenDimensions</include>
+		<imagepath>backdrops/default_settings</imagepath>
+		<info>Skin.String(CustomSettings)</info>
+	</control>
+
+	<include>Furniture_SettingsBackPanel</include>
+
+	<control type="label">
+		<description>sectiontitle</description>
+		<label>31160</label>
+		<include>Objects_SettingsSectionTitle</include>
+	</control>
+	
+	<control type="label">
+		<description>sectiontitle</description>
+		<posx>308</posx>
+		<posy>70</posy>
+		<width>936</width>
+		<height>49</height>
+		<label>31231</label>
+		<textcolor>FFbec0c2</textcolor>
+		<include>Animation_CommonFadeOpenClose</include>
+		<font>Font_SettingsSectionTitle</font>
+	</control>
+
+	<include>Settings_ProfileSettingsButtons</include>
+	
+	<control type="grouplist" id="9000">
+		<include>Objects_SettingsControlAreaVars</include>
+		<visible>Control.HasFocus(6) | Control.HasFocus(4)</visible>
+		<onup>2</onup>
+		<ondown>2</ondown>
+		<onleft>6</onleft>
+		<onright>6</onright>			
+
+		<control type="radiobutton" id="4">
+			<include>Objects_SettingsDefaultRadioButton</include>
+			<label>31162</label>
+		</control>
+
+	</control>
+
+	<control type="list" id="2">
+		<posx>258</posx>
+		<posy>120</posy>
+		<width>936</width>
+		<height>523</height>
+		<onleft>7</onleft>
+		<onright>7</onright>
+		<animation effect="fade" start="0" end="100" time="125">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="125">WindowClose</animation>		
+		<onup>4</onup>
+		<ondown>4</ondown>
+		<scrolltime>0</scrolltime>
+		<viewtype label="$LOCALIZE[535] 2">list</viewtype>
+		<pagecontrol>60</pagecontrol>
+		<visible>Control.HasFocus(7) | Control.HasFocus(2)</visible>
+		<itemlayout height="49">
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>936</width>
+				<height>49</height>
+				<texture>settings/settings_radiobuttonoff.png</texture>				
+			</control>
+			<control type="label">
+				<posx>50</posx>
+				<posy>0</posy>
+				<width>936</width>
+				<height>49</height>
+				<font>Font_SettingsOptions</font>
+				<aligny>center</aligny>
+				<textcolor>FF939597</textcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label] ($INFO[ListItem.Label2])</label>
+				<visible>!IsEmpty(ListItem.Label2)</visible>
+			</control>
+			<control type="label">
+				<posx>50</posx>
+				<posy>0</posy>
+				<width>936</width>
+				<height>49</height>
+				<font>Font_SettingsOptions</font>
+				<aligny>center</aligny>
+				<textcolor>FF939597</textcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>IsEmpty(ListItem.Label2)</visible>				
+			</control>			
+		</itemlayout>
+		<focusedlayout height="49">
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>936</width>
+				<height>49</height>
+				<texture>settings/settings_radiobuttonofffocus.png</texture>
+				<visible>!Control.HasFocus(4)</visible>
+			</control>
+			<control type="label">
+				<posx>50</posx>
+				<posy>0</posy>
+				<width>936</width>
+				<height>49</height>
+				<font>Font_SettingsOptions</font>
+				<aligny>center</aligny>
+				<textcolor>FFFFFFFF</textcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label] ($INFO[ListItem.Label2])</label>
+				<visible>!IsEmpty(ListItem.Label2)</visible>
+			</control>
+			<control type="label">
+				<posx>50</posx>
+				<posy>0</posy>
+				<width>936</width>
+				<height>49</height>
+				<font>Font_SettingsOptions</font>
+				<aligny>center</aligny>
+				<textcolor>FFFFFFFF</textcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>IsEmpty(ListItem.Label2)</visible>
+			</control>
+		</focusedlayout>
+	</control>
+	
+	<include>Furniture_SettingsFrontPanel</include>
+	
+	<include>Background_ContextBlack</include>
+	<include>Furniture_Debug</include>
+	
+	</controls>
+</window>

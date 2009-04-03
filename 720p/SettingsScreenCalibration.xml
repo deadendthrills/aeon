@@ -1,0 +1,70 @@
+﻿<window id="11">
+	<defaultcontrol>8</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+
+	<control type="videowindow" id="20">
+		<description>videowindow</description>
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>720</width>
+		<height>576</height>
+	</control>
+
+	<control type="mover" id="8">
+		<description>top left mover</description>
+		<posx>0</posx>
+		<posy>0</posy>
+		<texturefocus>Calibrate-TopLeft-Focus.png</texturefocus>
+		<texturenofocus>Calibrate-TopLeft.png</texturenofocus>
+	</control>
+
+	<control type="mover" id="9">
+		<description>right bottom mover</description>
+		<posx>700</posx>
+		<posy>500</posy>
+		<texturefocus>Calibrate-BottomRight-Focus.png</texturefocus>
+		<texturenofocus>Calibrate-BottomRight.png</texturenofocus>
+	</control>
+
+	<control type="mover" id="10">
+		<description>subtitle position mover</description>
+		<posx>200</posx>
+		<posy>500</posy>
+		<texturefocus>Calibrate-SubTitles-Focus.png</texturefocus>
+		<texturenofocus>Calibrate-SubTitles.png</texturenofocus>
+	</control>
+
+	<control type="resize" id="11">
+		<description>pixel aspect ratio box</description>
+		<posx>0</posx>
+		<posy>270</posy>
+		<width>288</width>
+		<height>288</height>
+		<texturefocus>Calibrate-PixelRatio-Focus.png</texturefocus>
+		<texturenofocus>Calibrate-PixelRatio.png</texturenofocus>
+	</control>
+
+	<control type="label" id="2">
+		<description>coordinates label</description>
+		<posx>0</posx>
+		<posy>260</posy>
+		<width>720</width>
+		<align>center</align>
+		<label>-</label>
+		<font>font14</font>
+		<shadowcolor>FF000000</shadowcolor>
+	</control>
+
+	<control type="label" id="3">
+		<description>help information</description>
+		<posx>0</posx>
+		<posy>280</posy>
+		<width>720</width>
+		<align>center</align>
+		<label>-</label>
+		<font>font14</font>
+		<shadowcolor>FF000000</shadowcolor>
+	</control>
+	</controls>
+</window>

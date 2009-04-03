@@ -1,0 +1,82 @@
+<window type="dialog" id="2000">
+	<defaultcontrol>3</defaultcontrol>
+	<coordinates>
+	<system>1</system>
+	<posx>0</posx>
+	<posy>0</posy>
+	</coordinates>
+	<include>Animation_DialogPopup</include>	
+	<controls>
+
+	<control type="image">
+		<description>Panel</description>
+		<posx>200</posx>
+		<posy>120</posy>
+		<width>881</width>
+		<height>481</height>
+		<texture>osd/osd_settings_back.png</texture>
+	</control>
+
+	<control type="label" id="2">
+		<description>Number of Files Label</description>
+		<posx>350</posx>
+		<posy>475</posy>
+		<label>-</label>
+		<font>fruity17</font>
+		<textcolor>FF818181</textcolor>
+		<include>common-fade</include>
+	</control>
+
+	<control type="list" id="3">
+		<posx>250</posx>
+		<posy>155</posy>
+		<width>781</width>
+		<height>400</height>
+		<onleft>-</onleft>
+		<onright>-</onright>
+		<onup>3</onup>
+		<ondown>3</ondown>
+		<pagecontrol>90</pagecontrol>
+		<scrolltime>0</scrolltime>
+		<itemlayout height="40">
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>781</width>
+				<height>40</height>
+				<texture>osd/osd_settings_buttonnf.png</texture>
+			</control>
+			<control type="label">
+				<posx>30</posx>
+				<posy>0</posy>
+				<width>721</width>
+				<height>40</height>
+				<textcolor>FF929191</textcolor>
+				<aligny>center</aligny>
+				<font>Font_OSDOptions</font>				
+				<info>ListItem.Label</info>
+			</control>
+		</itemlayout>
+		<focusedlayout height="40">
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>781</width>
+				<height>40</height>
+				<texture>osd/osd_settings_buttonf.png</texture>
+			</control>		
+			<control type="label">
+				<posx>30</posx>
+				<posy>0</posy>
+				<width>721</width>
+				<height>40</height>
+				<textcolor>FFFFFFFF</textcolor>
+				<aligny>center</aligny>
+				<font>Font_OSDOptions</font>				
+				<info>ListItem.Label</info>
+			</control>
+ 		</focusedlayout>
+	</control>
+
+	</controls>
+</window>

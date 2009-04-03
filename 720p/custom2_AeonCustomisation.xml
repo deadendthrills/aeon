@@ -1,0 +1,372 @@
+<window id="604">
+	<defaultcontrol always="true">6</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+		<control type="multiimage">
+			<description>Settings Backdrop</description>
+			<include>FullscreenDimensions</include>
+			<imagepath>backdrops/default_settings</imagepath>
+			<info>Skin.String(CustomSettings)</info>
+			<animation effect="fade" start="0" end="100" time="200" condition="Window.Previous(Home) | Skin.HasSetting(bmtransit)">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="200" condition="Window.Next(Home) | Window.Next(25) | Window.Next(24) | Window.Next(1) | Window.Next(2) | Window.Next(500) | Window.Next(501) | Window.Next(502)">WindowClose</animation>
+		</control>
+		
+		<control type="group">
+			<include>FullscreenDimensions</include>
+			<animation type="WindowOpen" reversible="false" condition="Window.Previous(Home) | Skin.HasSetting(bmtransit)">
+				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+				<effect type="fade" start="0" end="100" time="300" />
+			</animation>
+			<animation type="WindowClose" reversible="false" condition="Window.Next(Home) | Window.Next(25) | Window.Next(24) | Window.Next(1) | Window.Next(2) | Window.Next(500) | Window.Next(501) | Window.Next(502)">
+				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+				<effect type="fade" start="100" end="0" time="300" />
+			</animation>
+		
+			<include>Furniture_SettingsBackPanel</include>
+			
+			<include>Settings_CustomiseButtons</include>
+
+			<control type="image">
+				<description>Internal Panel (rear texture)</description>
+				<include>Furniture_SettingsInternalBackPanel</include>
+				<include>Animation_SettingsInternalPanel</include>
+			</control>
+
+<!-- Virtual Home page environment starts -->
+			
+			<control type="group">
+				<posx>332</posx>
+				<posy>58</posy>
+				<include>Furniture_SettingsVHPVars</include>
+				<include>Animation_CommonFade</include>
+
+				<control type="image" id="87">
+					<visible>[Container(300).OnNext | Container(300).OnPrevious] | [Container(301).OnNext | Container(301).OnPrevious]</visible>
+					<animation effect="fade" time="300">Hidden</animation>
+				</control>
+	
+				<control type="image" id="88">
+					<visible>Control.IsVisible(300) | Control.IsVisible(301)</visible>
+					<animation effect="fade" time="300">Hidden</animation>
+				</control>
+		
+				<include>Background_VirtualWallpaper</include>
+
+				<include>Furniture_VirtualTime</include>
+				<include>Furniture_VirtualRSS</include>
+
+				<control type="image">
+					<description>Darken screen for Backdrop type select</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>840</width>
+					<height>471</height>
+					<texture>settings/backselect.png</texture>
+					<visible>Control.HasFocus(92)</visible>
+					<include>Animation_VisibleChange400</include>
+				</control>
+								
+				<control type="group">
+					<posx>0</posx>
+					<posy>-13</posy>
+					<include>Furniture_SettingsVHPVars</include>
+					<animation effect="slide" start="0,0" end="0,150" time="200" easing="inout" tween="circle" condition="Skin.HasSetting(lowermainmenu) + !Control.HasFocus(92)">Conditional</animation>
+					<include>Animation_CommonFade</include>
+
+					<control type="image">
+						<posx>0</posx>
+						<posy>211</posy>
+						<width>840</width>
+						<height>99</height>
+						<texture>home/homemenu_back.png</texture>
+						<include>Animation_CommonFade</include>
+					</control>
+
+					<control type="group">
+						<posx>0</posx>
+						<posy>239</posy>
+						<width>840</width>
+						<height>40</height>
+						<defaultcontrol>300</defaultcontrol>
+						
+						<include>VirtualMainMenu</include>
+						<include>VirtualMainMenuOptions</include>
+						
+					</control>
+
+				</control>
+			</control>
+			
+<!-- Virtual OSD environment starts -->
+
+			<control type="image" id="213">
+				<texture>-</texture>
+				<visible>![Control.HasFocus(10) | Control.HasFocus(60) | Control.HasFocus(61) | Control.HasFocus(62)]</visible>
+				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+			</control>
+			
+			<control type="group">
+				<posx>332</posx>
+				<posy>58</posy>
+				<include>Furniture_SettingsVHPVars</include>
+				<include>Animation_CommonFade</include>
+				<visible>Control.HasFocus(10) | Control.HasFocus(60) | Control.HasFocus(61) | Control.HasFocus(62)</visible>
+
+				<control type="multiimage">
+					<include>Background_VirtualImageFolder</include>
+					<imagepath>backdrops/virtualosd</imagepath>
+				</control>
+				
+				<include>Furniture_VirtualOSD</include>				
+
+			</control>			
+
+			<control type="button" id="30">
+				<description>Home Menu furniture select button</description>
+				<posx>307</posx>
+				<posy>261</posy>
+				<width>890</width>
+				<height>94</height>
+				<onclick>Skin.ToggleSetting(lowermainmenu)</onclick>
+				<onup>8</onup>
+				<ondown>8</ondown>
+				<onleft>32</onleft>
+				<onright>31</onright>
+				<texturefocus>settings/settings_furniture_mainmenu.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<pulseonselect>true</pulseonselect>
+				<animation effect="slide" start="0,0" end="0,150" time="200" easing="inout" tween="circle" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+				<include>Animation_CommonFadeFocus</include>
+			</control> 
+
+			<control type="button" id="31">
+				<description>Time panel furniture select button - Normal version</description>
+				<posx>863</posx>
+				<posy>257</posy>
+				<width>334</width>
+				<height>37</height>
+				<onclick>Skin.ToggleSetting(highertime)</onclick>
+				<onup>8</onup>
+				<ondown>8</ondown>
+				<onleft>30</onleft>
+				<onright>32</onright>
+				<texturefocus>settings/settings_furniture_timepanel.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<pulseonselect>true</pulseonselect>
+				<visible>!Skin.HasSetting(lowermainmenu)</visible>
+				<animation effect="slide" start="0,0" end="0,-210" time="200" easing="inout" tween="circle" condition="Skin.HasSetting(highertime)">Conditional</animation>
+				<include>Animation_CommonFadeFocus</include>
+			</control>
+		
+			<control type="button" id="31">
+				<description>Time panel furniture select button - Lower version</description>
+				<posx>863</posx>
+				<posy>407</posy>
+				<width>334</width>
+				<height>37</height>
+				<onclick>Skin.ToggleSetting(highertime)</onclick>
+				<onup>8</onup>
+				<ondown>8</ondown>
+				<onleft>30</onleft>
+				<onright>32</onright>
+				<texturefocus>settings/settings_furniture_timepanel.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<pulseonselect>true</pulseonselect>
+				<visible>Skin.HasSetting(lowermainmenu)</visible>
+				<animation effect="slide" start="0,0" end="0,-362" time="200" easing="inout" tween="circle" condition="Skin.HasSetting(highertime)">Conditional</animation>
+				<include>Animation_CommonFadeFocus</include>
+			</control>		
+			
+			<control type="button" id="32">
+				<description>RSS furniture select button - Normal version</description>
+				<posx>357</posx>
+				<posy>316</posy>
+				<width>840</width>
+				<height>35</height>
+				<onclick>Skin.ToggleSetting(lowerrss)</onclick>
+				<onup>8</onup>
+				<ondown>8</ondown>
+				<onleft>31</onleft>
+				<onright>30</onright>
+				<texturefocus>settings/settings_furniture_rss.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<pulseonselect>true</pulseonselect>
+				<visible>!Skin.HasSetting(lowermainmenu)</visible>
+				<animation effect="slide" start="0,0" end="0,188" time="200" easing="inout" tween="circle" condition="Skin.HasSetting(lowerrss)">Conditional</animation>
+				<include>Animation_CommonFadeFocus</include>
+			</control>
+		
+			<control type="button" id="32">
+				<description>RSS furniture select button - Lower version</description>
+				<posx>357</posx>
+				<posy>468</posy>
+				<width>840</width>
+				<height>35</height>
+				<onclick>Skin.ToggleSetting(lowerrss)</onclick>
+				<onup>8</onup>
+				<ondown>8</ondown>
+				<onleft>31</onleft>
+				<onright>30</onright>
+				<texturefocus>settings/settings_furniture_rss.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<pulseonselect>true</pulseonselect>
+				<visible>Skin.HasSetting(lowermainmenu)</visible>
+				<animation effect="slide" start="0,0" end="0,36" time="200" easing="inout" tween="circle" condition="Skin.HasSetting(lowerrss)">Conditional</animation>
+				<include>Animation_CommonFadeFocus</include>
+			</control>
+
+<!-- Furniture select buttons end -->
+
+			<control type="button" id="60">
+				<description>Home Menu furniture select button</description>
+				<posx>307</posx>
+				<posy>40</posy>
+				<width>890</width>
+				<height>127</height>
+				<onclick>Skin.ToggleSetting(osdbigtop)</onclick>
+				<onup>10</onup>
+				<ondown>10</ondown>
+				<onleft>62</onleft>
+				<onright>61</onright>
+				<texturefocus>settings/settings_osd_progress.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<pulseonselect>true</pulseonselect>
+				<include>Animation_CommonFadeFocus</include>
+			</control> 
+
+			<control type="button" id="61">
+				<description>Home Menu furniture select button</description>
+				<posx>307</posx>
+				<posy>415</posy>
+				<width>890</width>
+				<height>127</height>
+				<onclick>Skin.ToggleSetting(noosdprogress)</onclick>
+				<onup>10</onup>
+				<ondown>10</ondown>
+				<onleft>60</onleft>
+				<onright>62</onright>
+				<texturefocus>settings/settings_osd_progress.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<pulseonselect>true</pulseonselect>
+				<include>Animation_CommonFadeFocus</include>
+			</control>
+		
+			<control type="button" id="62">
+				<description>Home Menu furniture select button</description>
+				<posx>307</posx>
+				<posy>440</posy>
+				<width>890</width>
+				<height>80</height>
+				<onclick>Skin.ToggleSetting(osdshowtime)</onclick>
+				<onup>10</onup>
+				<ondown>10</ondown>
+				<onleft>61</onleft>
+				<onright>60</onright>
+				<texturefocus>settings/settings_osd_titletime.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<pulseonselect>true</pulseonselect>
+				<include>Animation_CommonFadeFocus</include>
+			</control>
+		
+			<control type="button" id="40">
+				<description>The Big Red Purge Button</description>
+				<posx>332</posx>
+				<posy>58</posy>
+				<include>Furniture_SettingsVHPVars</include>
+				<onup>9</onup>
+				<ondown>9</ondown>
+				<onleft>9</onleft>
+				<onright>9</onright>
+				<texturefocus>settings/settings_resetalert.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<pulseonselect>true</pulseonselect>
+				<include>Animation_CommonFadeFocus</include>
+				<onclick>Skin.Reset(CustomMusic)</onclick>
+				<onclick>Skin.Reset(CustomMusicFolder)</onclick>
+				<onclick>Skin.Reset(CustomGames)</onclick>
+				<onclick>Skin.Reset(CustomGamesFolder)</onclick>					
+				<onclick>Skin.Reset(CustomPictures)</onclick>
+				<onclick>Skin.Reset(CustomPicturesFolder)</onclick>					
+				<onclick>Skin.Reset(CustomMovies)</onclick>
+				<onclick>Skin.Reset(CustomMoviesFolder)</onclick>					
+				<onclick>Skin.Reset(CustomTV)</onclick>
+				<onclick>Skin.Reset(CustomTVFolder)</onclick>
+				<onclick>Skin.Reset(CustomVideo)</onclick>
+				<onclick>Skin.Reset(CustomVideoFolder)</onclick>					
+			</control>
+
+			<include>Furniture_SettingsFrontPanel</include>
+
+			<control type="image">
+				<posx>331</posx>
+				<posy>43</posy>
+				<width>842</width>
+				<height>634</height>
+				<texture>settings/settings_intframe_top.png</texture>
+				<include>Animation_SettingsInternalPanel</include>
+			</control>
+
+			<control type="group">
+				<description>Main instruction labels</description>
+				<include>FullscreenDimensions</include>
+				<include>Animation_CommonFade</include>
+				<include>Labels_AeonScreenLabels</include>
+			</control>
+
+			<control type="button" id="92">
+				<description>Backdrop type select button / Single backdrop icon</description>
+				<posx>674</posx>
+				<posy>123</posy>
+				<width>157</width>
+				<height>96</height>
+				<texturenofocus>-</texturenofocus>
+				<texturefocus>-</texturefocus>
+				<visible allowhiddenfocus="true">Control.HasFocus(92)</visible>
+				<onup>Skin.Reset($INFO[Skin.String(customslideshow)])</onup>
+				<onup>Skin.SetImage($INFO[Skin.String(customsingle)])</onup>
+				<onup>SetFocus(300)</onup>
+				<ondown>Skin.Reset($INFO[Skin.String(customsingle)])</ondown>
+				<ondown>Skin.SetPath($INFO[Skin.String(customslideshow)])</ondown>
+				<ondown>SetFocus(300)</ondown>
+				<onleft>300</onleft>
+				<onright>300</onright>
+				<animation type="Visible" reversible="false">
+					<effect type="slide" start="0,100" end="0,0" time="600" tween="circle" easing="out" />
+					<effect type="fade" start="0" end="100" time="600" />
+				</animation>
+			</control>
+			
+			<control type="image">
+				<posx>685</posx>
+				<posy>400</posy>
+				<width>135</width>
+				<height>52</height>
+				<texture>settings/backselect_arrow.png</texture>
+				<visible>Control.HasFocus(92)</visible>
+				<animation type="Visible">
+					<effect type="fade" start="0" end="100" time="600" />
+					<effect type="slide" start="0,-100" end="0,0" time="600" tween="back" easing="out" />
+				</animation>
+			</control>
+			
+			<control type="image">
+				<posx>685</posx>
+				<posy>155</posy>
+				<width>135</width>
+				<height>52</height>
+				<texture flipy="true">settings/backselect_arrow.png</texture>
+				<visible>Control.HasFocus(92)</visible>
+				<animation type="Visible">
+					<effect type="fade" start="0" end="100" time="600" />
+					<effect type="slide" start="0,100" end="0,0" time="600" tween="back" easing="out" />
+				</animation>			
+			</control>	
+			
+		</control>
+
+	<include>Background_ContextBlack</include>
+	<include>Furniture_Debug</include>
+	
+</controls>
+
+</window>

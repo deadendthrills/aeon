@@ -1,0 +1,110 @@
+<window id="500">
+	<defaultcontrol always="true">900</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+
+	<control type="multiimage">
+		<include>Background_SingleImage</include>
+		<imagepath>backdrops/default_music</imagepath>
+		<info>Skin.String(CustomMusic)</info>
+		<visible>!Skin.String(CustomMusicFolder)</visible>
+	</control>
+
+	<control type="multiimage">
+		<include>Background_ImageFolder</include>
+		<info>Skin.String(CustomMusicFolder)</info>
+		<visible>Skin.String(CustomMusicFolder)</visible>
+	</control>
+
+	<control type="group">
+		<include>FullscreenDimensions</include>
+		<include>Animation_OpenCloseZoom</include>
+		<include>Conditions_HiddenByInfoPages</include>
+		<include>Furniture_Time</include>
+		<include>Furniture_WindowRSS</include>
+		<include>Furniture_MediaPanel</include>
+		<include>Objects_ShowcaseMenuPanel</include>
+
+		<control type="group">
+			<include>Animation_MediaMenuPosition</include>
+	
+			<control type="image">
+				<include>Objects_MediaLogo</include>
+				<texture>windows/logo_music.png</texture>
+			</control>	
+	
+			<control type="label">
+				<include>Objects_MediaLabel</include>
+				<label>PLAYLIST</label>
+			</control>
+
+			<control type="grouplist" id="7000">
+				<include>Animation_MediaMenuSlide</include>
+				<include>Objects_MediaMenuGroup</include>
+
+				<control type="button" id="900">
+					<label>View: $INFO[Container.ViewMode]</label>
+					<include>Objects_MediaMenuButton</include>
+					<onfocus>Skin.Reset(bmtransitnowplaying)</onfocus>
+					<onclick>SetFocus(69)</onclick>
+				</control>
+
+				<include>Objects_FlattenFlowButton</include>
+				
+				<control type="togglebutton" id="20">
+					<label>ORDER: NORMAL</label>
+					<altlabel>ORDER: RANDOM</altlabel>
+					<include>Objects_MediaMenuButton</include>
+				</control>
+
+				<control type="button" id="26">
+					<label>REPEAT</label>
+					<include>Objects_MediaMenuButton</include>
+				</control>
+
+				<control type="button" id="21">
+					<label>190</label>
+					<include>Objects_MediaMenuButton</include>
+				</control>
+
+				<control type="button" id="22">
+					<label>192</label>
+					<include>Objects_MediaMenuButton</include>
+				</control>
+
+				<include>Objects_WallGridButton</include>
+				
+				<include>Objects_ThumbsButton</include>	
+				
+				<control type="togglebutton" id="901">
+					<include>Objects_MediaMenuButton</include>				
+					<label>31065</label>
+					<altlabel>31064</altlabel>
+					<usealttexture>Skin.HasSetting(nomusicfanart)</usealttexture>
+					<onclick>Skin.SetBool(nomusicfanart)</onclick>
+					<altclick>Skin.Reset(nomusicfanart)</altclick>
+					<visible>Window.IsActive(502) + Control.IsVisible(57)</visible>
+				</control>
+				
+				<control type="button" id="902">
+					<label>31054</label>
+					<include>Objects_MediaMenuButton</include>
+					<onclick>XBMC.ActivateWindow(mymusicsettings)</onclick>
+				</control>
+				
+				<include>Objects_MediaDebugButtons</include>
+			</control>
+		</control>
+		<include>Viewtype_List</include>
+		<include>Viewtype_Showcase</include>
+		<include>Viewtype_Coverflow</include>
+
+	</control>
+
+	<include>ViewChange</include>
+	<include>Background_ContextBlack</include>
+	<include>Furniture_Debug</include>
+	
+	</controls>
+
+</window>

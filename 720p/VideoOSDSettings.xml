@@ -1,0 +1,75 @@
+<window>
+	<id>123</id>
+	<defaultcontrol>2</defaultcontrol>
+	<coordinates>
+	<system>1</system>
+	<posx>0</posx>
+	<posy>0</posy>
+	</coordinates>
+	<include>Animation_DialogPopup</include>		
+	<controls>
+
+	<control type="image">
+		<description>Panel</description>
+		<posx>200</posx>
+		<posy>40</posy>
+		<width>881</width>
+		<height>481</height>
+		<texture>osd/osd_settings_back.png</texture>
+	</control>
+
+	<control type="grouplist" id="5">
+		<description>control area</description>
+		<posx>250</posx>
+		<posy>75</posy>
+		<width>781</width>
+		<height>440</height>
+		<texture>-</texture>
+		<itemgap>0</itemgap>
+	</control>
+
+	<control type="button" id="7">
+		<description>default button</description>
+		<include>Objects_OSDSettingsButton</include>
+	</control>
+
+	<control type="radiobutton" id="8">
+		<description>default radiobutton</description>
+		<include>Objects_OSDSettingsButton</include>
+		<radiowidth>94</radiowidth>
+		<radioposx>663</radioposx>
+		<radioheight>65</radioheight>
+		<textoffsetx>50</textoffsetx>		
+		<texturefocus>settings/settings_radiobuttonofffocus.png</texturefocus>
+		<texturenofocus>settings/settings_radiobuttonoff.png</texturenofocus>
+		<textureradiofocus>settings/settings_radiobuttononfocus.png</textureradiofocus>
+		<textureradionofocus>settings/settings_radiobuttonon.png</textureradionofocus>		
+	</control>
+
+	<control type="spincontrolex" id="9">
+		<description>default spincontrolex</description>
+		<include>Objects_OSDSettingsButton</include>
+		<textureup>settings/spin-up.png</textureup>
+		<texturedown>settings/spin-down.png</texturedown>
+		<textureupfocus>settings/spin-up-focus.png</textureupfocus>
+		<texturedownfocus>settings/spin-down-focus.png</texturedownfocus>
+		<spinposx>0</spinposx>
+		<spinposy>-5</spinposy>		
+		<spinwidth>40</spinwidth>
+		<spinheight>65</spinheight>
+		<reverse>yes</reverse>
+		<aligny>center</aligny>
+	</control>
+
+	<control type="sliderex" id="10">
+		<description>default slider</description>
+		<include>Objects_OSDSettingsButton</include>
+		<sliderwidth>211</sliderwidth>
+		<sliderheight>65</sliderheight>
+		<texturesliderbar>osd/osd_sliderback.png</texturesliderbar>
+		<textureslidernib>osd/osd_slidernub.png</textureslidernib>
+		<textureslidernibfocus>osd/osd_slidernubf.png</textureslidernibfocus>
+	</control>
+
+	</controls>
+</window>

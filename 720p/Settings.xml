@@ -1,0 +1,124 @@
+<window id="4">
+	<defaultcontrol always="true">6</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+		<control type="multiimage">
+			<include>FullscreenDimensions</include>
+			<imagepath>backdrops/default_settings</imagepath>
+			<info>Skin.String(CustomSettings)</info>
+			<animation effect="fade" start="0" end="100" time="200" condition="[Skin.HasSetting(settingsfade) + Window.Previous(Home)] | Skin.HasSetting(bmtransit)">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="200" condition="[[Skin.HasSetting(settingsfade) | Skin.HasSetting(nosettings)] + Window.Next(Home)] | [Window.Next(25) | Window.Next(24) | Window.Next(1) | Window.Next(2) | Window.Next(500) | Window.Next(501) | Window.Next(502)]">WindowClose</animation>
+		</control>
+
+		<control type="group">
+			<include>FullscreenDimensions</include>
+			<animation type="WindowOpen" reversible="false" condition="!Window.Previous(12) + !Window.Previous(13) + !Window.Previous(14) + !Window.Previous(15) + !Window.Previous(16) + !Window.Previous(18) + !Window.Previous(19) + !Window.Previous(17) + !Window.Previous(604) + !Window.Previous(56) + !Window.Previous(34)">
+				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+				<effect type="fade" start="0" end="100" time="300" />
+			</animation>
+			<animation type="WindowClose" reversible="false" condition="Window.Next(Home) | Window.Next(25) | Window.Next(24) | Window.Next(1) | Window.Next(2) | Window.Next(500) | Window.Next(501) | Window.Next(502)">
+				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+				<effect type="fade" start="100" end="0" time="300" />
+			</animation>			
+			<include>Furniture_SettingsBackPanel</include>
+
+			<control type="image">
+				<include>Furniture_SettingsInternalBackPanel</include>
+				<include>Animation_SettingsInternalPanel</include>
+			</control>
+		
+			<include>Settings_XBMCSettingsButtons</include>
+
+			<control type="group">
+				<posx>332</posx>
+				<posy>58</posy>
+				<width>840</width>
+				<height>580</height>
+				
+				<control type="multiimage">
+					<include>Furniture_SettingsTutorialSlide</include>
+					<imagepath>tutorials/tut_pictures</imagepath>
+					<visible>Control.HasFocus(9)</visible>
+				</control>
+				
+				<control type="multiimage">
+					<include>Furniture_SettingsTutorialSlide</include>
+					<imagepath>tutorials/tut_movies</imagepath>
+					<visible>Control.HasFocus(6)</visible>
+				</control>
+				
+				<control type="multiimage">
+					<include>Furniture_SettingsTutorialSlide</include>
+					<imagepath>tutorials/tut_apps</imagepath>
+					<visible>Control.HasFocus(8)</visible>
+				</control>
+				
+				<control type="multiimage">
+					<include>Furniture_SettingsTutorialSlide</include>
+					<imagepath>tutorials/tut_music</imagepath>
+					<visible>Control.HasFocus(7)</visible>
+				</control>
+				
+				<control type="multiimage">
+					<include>Furniture_SettingsTutorialSlide</include>
+					<imagepath>tutorials/tut_system</imagepath>
+					<visible>Control.HasFocus(4)</visible>
+				</control>
+				
+				<control type="multiimage">
+					<include>Furniture_SettingsTutorialSlide</include>
+					<imagepath>tutorials/tut_aeon</imagepath>
+					<visible>Control.HasFocus(11)</visible>
+				</control>
+
+				<control type="multiimage">
+					<include>Furniture_SettingsTutorialSlide</include>
+					<imagepath>tutorials/tut_profiles</imagepath>
+					<visible>Control.HasFocus(12)</visible>
+				</control>
+				
+				<control type="multiimage">
+					<include>Furniture_SettingsTutorialSlide</include>
+					<imagepath>tutorials/tut_network</imagepath>
+					<visible>Control.HasFocus(2)</visible>
+				</control>
+				
+				<control type="multiimage">
+					<include>Furniture_SettingsTutorialSlide</include>
+					<imagepath>tutorials/tut_appearance</imagepath>
+					<visible>Control.HasFocus(3)</visible>
+				</control>
+				
+				<control type="multiimage">
+					<include>Furniture_SettingsTutorialSlide</include>
+					<imagepath>tutorials/tut_weather</imagepath>
+					<visible>Control.HasFocus(10)</visible>
+				</control>
+			
+			</control>
+
+			<include>Labels_AeonMainLabels</include>
+			
+			<control type="image">
+				<description>background image</description>
+				<posx>42</posx>
+				<posy>28</posy>
+				<width>1196</width>
+				<height>651</height>
+				<texture>settings/settings_panelfront.png</texture>
+			</control>
+
+			<control type="image">
+				<posx>331</posx>
+				<posy>43</posy>
+				<width>842</width>
+				<height>634</height>
+				<texture>settings/settings_intframe_top.png</texture>
+				<include>Animation_SettingsInternalPanel</include>
+			</control>
+		</control>
+		
+	<include>Background_ContextBlack</include>		
+		
+	</controls>
+</window>

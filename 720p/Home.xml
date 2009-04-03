@@ -1,0 +1,80 @@
+<window id="0">
+	<defaultcontrol always="true">300</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+
+	<control type="multiimage">
+		<include>FullscreenDimensions</include>
+		<imagepath>backdrops/default</imagepath>
+		<info>Skin.String(CustomSettings)</info>
+		<visible>!Control.IsVisible(300) + Window.Previous(4)</visible>
+	</control>
+
+	<control type="label">
+		<description>Force Weather update on load</description>
+		<posx>0</posx>
+		<posy>-100</posy>
+		<label>$INFO[Weather.Conditions]</label>
+		<font>-</font>
+	</control>
+	
+	<control type="image" id="87">
+			<texture>-</texture>
+			<visible>Container(300).OnNext | Container(300).OnPrevious</visible>
+			<animation effect="fade" time="200">Hidden</animation>
+	</control>
+	
+	<control type="image" id="88">
+			<texture>-</texture>
+			<visible>Control.IsVisible(300)</visible>
+			<animation effect="fade" time="300">Hidden</animation>
+	</control>
+
+	<control type="image" id="89">
+			<texture>-</texture>
+			<visible>Window.Previous(4)</visible>
+			<animation effect="fade" time="300">Hidden</animation>
+	</control>
+
+	<include>Background_Wallpaper</include>
+	<include>Furniture_HomeNowPlaying</include>
+	<include>Objects_WeatherPopup</include>
+	<include>Furniture_Time</include>
+	<include>Furniture_HomeRSS</include>
+
+	<control type="group">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>1280</width>
+		<height>720</height>
+		<include>Conditions_HiddenByAeonAssistant</include>
+		<animation effect="slide" start="0,0" end="0,225" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+		<include>Animation_OpenCloseZoom</include>
+		<include>Animation_CommonFade</include>
+		
+		<control type="image">
+			<posx>0</posx>
+			<posy>302</posy>
+			<width>1280</width>
+			<height>150</height>
+			<texture>home/homemenu_back.png</texture>
+			<include>Animation_CommonFade</include>
+		</control>
+
+		<control type="group">
+			<posx>0</posx>
+			<posy>343</posy>
+			<width>1280</width>
+			<height>61</height>
+			<defaultcontrol>300</defaultcontrol>
+			<include>MainMenu</include>
+		</control>
+
+	</control>
+
+	<include>Background_ContextBlack</include>
+	<include>Furniture_Debug</include>
+	
+	</controls>
+
+</window>

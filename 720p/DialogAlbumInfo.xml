@@ -1,0 +1,333 @@
+<window type="dialog" id="2001">
+	<defaultcontrol>6</defaultcontrol>
+	<zorder>2</zorder>
+	<coordinates>
+	<system>1</system>
+	<posx>0</posx>
+	<posy>0</posy>
+	</coordinates>
+	<include>Animation_CommonFade</include>
+	<controls>
+
+	<control type="image">
+		<include>FullscreenDimensions</include>
+		<texture>common/darkgrey.png</texture>
+	</control>
+
+	<control type="image">
+		<posx>0</posx>
+		<posy>83</posy>
+		<width>580</width>
+		<height>637</height>
+		<texture>info/musicinfogradient.png</texture>
+	</control>
+	
+	<control type="group">
+		<posx>55</posx>
+		<animation effect="rotatey" time="0" start="-20" end="-20" center="20,0" condition="true">Conditional</animation>
+		<animation effect="slide" start="430" end="0" time="700" tween="cubic" easing="out" delay="400">WindowOpen</animation>
+		<control type="image">
+			<description>Cover image</description>
+			<width>370</width>
+			<height>400</height>
+			<posy>160</posy>
+			<texture>$INFO[listitem.thumb]</texture>
+			<bordertexture border="-77">info/musicinfoshadow.png</bordertexture>
+			<aspectratio>stretch</aspectratio>
+		</control>
+		<control type="image">
+			<description>Cover image</description>
+			<posy>560</posy>
+			<width>370</width>
+			<height>400</height>
+			<texture flipy="true" diffuse="common/Thumb_Mask6.png">$INFO[listitem.thumb]</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>
+	</control>
+
+	<control type="image">
+		<description>background image</description>
+		<posx>508</posx>
+		<posy>0</posy>
+		<width>772</width>
+		<height>720</height>
+		<texture>info/info_rightpanelbottom.png</texture>
+		<visible>IsEmpty(listitem.property(fanart_image))</visible>
+	</control>
+	
+	<control type="image">
+		<description>background image</description>
+		<posx>508</posx>
+		<posy>0</posy>
+		<width>772</width>
+		<height>720</height>
+		<texture>info/info_rightpaneltop.png</texture>
+	</control>
+
+	<control type="group">
+		<posx>550</posx>
+		<posy>45</posy>
+		<width>695</width>
+		<height>569</height>
+		<visible>Container.Content(albums)</visible>
+	
+		<control type="image">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>60</posy>
+			<width>695</width>
+			<height>560</height>
+			<texture>info/info_music_panellines.png</texture>
+		</control>
+		
+		<control type="label">
+			<description>Movie title</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>700</width>
+			<font>Font_FSInfoTitle</font>
+			<label>$INFO[ListItem.Album]</label>
+			<include>Colour_OffWhite</include>
+		</control>
+		
+		<control type="label">
+			<description>Artist</description>
+			<posx>0</posx>
+			<posy>64</posy>
+			<width>700</width>
+			<font>Font_FSInfoArtist</font>
+			<label>$INFO[ListItem.Artist]</label>
+			<include>Colour_OffWhite</include>
+		</control>
+		
+		<control type="label">
+			<description>Year</description>
+			<posx>0</posx>
+			<posy>99</posy>
+			<width>96</width>
+			<include>Objects_FSInfoYear</include>
+			<animation effect="slide" start="40,0" end="40,0" time="0" condition="IsEmpty(ListItem.Year)">Conditional</animation>			
+		</control>
+		
+		<control type="label">
+			<description>Genre</description>
+			<posx>113</posx>
+			<posy>99</posy>
+			<width>370</width>
+			<include>Objects_FSInfoGenre</include>
+		</control>
+		
+		<control type="label">
+			<description>Label:</description>
+			<posy>154</posy>
+			<label>31423</label>
+			<include>Objects_FSInfoLabel</include>
+		</control>
+		
+		<control type="label">
+			<description>Notes:</description>
+			<posy>183</posy>
+			<label>31422</label>
+			<include>Objects_FSInfoLabel</include>
+		</control>
+		
+		<control type="label">
+			<description>Label</description>
+			<posy>154</posy>
+			<label fallback="31425">$INFO[ListItem.Property(AlbumLabel)]</label>
+			<include>Objects_FSInfoValue</include>
+		</control>
+		
+		<control type="label">
+			<description>Notes</description>
+			<posy>183</posy>
+			<label fallback="31425">$INFO[ListItem.Property(AlbumType)]</label>
+			<include>Objects_FSInfoValue</include>
+		</control>
+	
+		<control type="grouplist" id="9000">
+			<include>Objects_FSInfoMenuMusic</include>
+
+			<control type="button" id="6">
+			<label>31410</label>
+			<include>Objects_FSInfoButton</include>
+			</control>
+
+			<control type="button" id="10">
+			<label>31418</label>
+			<include>Objects_FSInfoButton</include>
+			</control>
+			
+			<control type="button" id="12">
+			<label>31412</label>
+			<include>Objects_FSInfoButton</include>
+			</control>	
+			
+		</control>
+	
+		<control type="textbox">
+			<description>Plot</description>
+			<posx>3</posx>
+			<posy>264</posy>
+			<width>630</width>
+			<height>262</height>
+			<align>left</align>
+			<font>Font_FSInfoPlot</font>
+			<autoscroll delay="3000" time="1000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>			
+			<label fallback="31424">$INFO[ListItem.Property(AlbumReview)]</label>
+			<include>Colour_OffWhite</include>
+		</control>
+		
+		<control type="label">
+			<description>Rating:</description>
+			<posx>3</posx>
+			<posy>576</posy>
+			<width>110</width>
+			<height>29</height>
+			<align>left</align>
+			<font>Font_FSIMDB</font>
+			<label>31417</label>
+			<include>Colour_Grey</include>
+		</control>
+
+		<control type="label">
+			<description>IMDB rating</description>
+			<posx>76</posx>
+			<posy>563</posy>
+			<width>110</width>
+			<height>29</height>
+			<align>left</align>
+			<font>Font_FSIMDBData</font>
+			<label>[UPPERCASE]$INFO[ListItem.Rating][/UPPERCASE]</label>
+			<include>Colour_OffWhite</include>
+			<visible>Skin.HasSetting(albumratingtext)</visible>			
+		</control>
+		
+		<control type="image">
+			<description>IMDB rating</description>
+			<posx>76</posx>
+			<posy>566</posy>
+			<width>201</width>
+			<height>43</height>
+			<info>ListItem.StarRating</info>
+			<visible>!Skin.HasSetting(albumratingtext)</visible>
+		</control>
+	
+	</control>
+
+<!-- Artist Info -->			
+
+	<control type="group">
+		<posx>550</posx>
+		<posy>45</posy>
+		<width>695</width>
+		<height>569</height>
+		<visible>Container.Content(artists)</visible>
+		
+		<control type="image">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>60</posy>
+			<width>695</width>
+			<height>569</height>
+			<texture>info/info_artist_panellines.png</texture>
+		</control>
+		
+		<control type="label">
+			<description>Movie title</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>700</width>
+			<font>Font_FSInfoTitle</font>
+			<label>$INFO[ListItem.Artist]</label>
+			<include>Colour_OffWhite</include>
+		</control>
+		
+		<control type="label">
+			<description>Year</description>
+			<posx>0</posx>
+			<posy>58</posy>
+			<width>109</width>
+			<height>53</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>Font_FSInfoYear</font>
+			<label fallback="-">$INFO[ListItem.Property(Formed)]$INFO[ListItem.Property(Born)]</label>
+			<include>Colour_Grey</include>
+			<animation effect="slide" start="47,0" end="47,0" time="0" condition="IsEmpty(ListItem.Property(Born)) + IsEmpty(ListItem.Property(Formed))">Conditional</animation>
+		</control>
+		
+		<control type="label">
+			<description>Genre</description>
+			<posx>120</posx>
+			<posy>58</posy>
+			<width>370</width>
+			<include>Objects_FSInfoGenre</include>
+		</control>
+		
+		<control type="label">
+			<description>Styles:</description>
+			<posy>112</posy>
+			<label>31416</label>
+			<include>Objects_FSInfoLabel</include>
+		</control>
+		
+		<control type="label">
+			<description>Moods:</description>
+			<posy>141</posy>
+			<label>31413</label>
+			<include>Objects_FSInfoLabel</include>
+		</control>
+		
+		<control type="label">
+			<description>Styles value</description>
+			<posy>112</posy>
+			<label fallback="31425">$INFO[ListItem.Property(Styles)]</label>
+			<include>Objects_FSInfoValue</include>
+		</control>
+		
+		<control type="label">
+			<description>Moods value</description>
+			<posy>141</posy>
+			<label fallback="31425">$INFO[ListItem.Property(Moods)]</label>
+			<include>Objects_FSInfoValue</include>
+		</control>
+		
+		<control type="grouplist" id="9000">
+			<include>Objects_FSInfoMenu</include>
+
+			<control type="button" id="6">
+			<label>31419</label>
+			<include>Objects_FSInfoButton</include>
+			</control>
+
+			<control type="button" id="10">
+			<label>31418</label>
+			<include>Objects_FSInfoButton</include>
+			</control>
+
+			<control type="button" id="12">
+			<label>31412</label>
+			<include>Objects_FSInfoButton</include>
+			</control>
+		</control>
+
+		<control type="textbox" id="4">
+			<description>Bio</description>
+			<posx>3</posx>
+			<posy>225</posy>
+			<width>630</width>
+			<height>380</height>
+			<align>left</align>
+			<font>Font_FSInfoPlot</font>
+			<autoscroll delay="3000" time="1000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>			
+			<label fallback="31415">$INFO[ListItem.Biography]</label>
+			<include>Colour_OffWhite</include>
+		</control>
+	
+	</control>
+
+	<include>Background_ContextBlack</include>
+	
+	</controls>
+</window>

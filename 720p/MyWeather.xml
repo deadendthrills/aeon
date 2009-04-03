@@ -1,0 +1,162 @@
+<window type="dialog" id="2600">
+	<defaultcontrol>3</defaultcontrol>
+	<zorder>1</zorder>
+	<coordinates>
+	<system>1</system>
+	<posx>0</posx>
+	<posy>0</posy>
+	</coordinates>
+
+	<controls>
+
+	<!-- Background_Wallpaper -->
+		<control type="multiimage">
+			<include>FullscreenDimensions</include>
+			<imagepath>backdrops/winter</imagepath>
+			<info>Skin.String(CustomWeather)</info>
+			<visible>!Skin.String(CustomWeatherFolder)</visible>
+			<visible>System.Date(12-21,03-21)</visible>
+		</control>
+		
+		<control type="multiimage">
+			<include>FullscreenDimensions</include>
+			<imagepath>backdrops/spring</imagepath>
+			<info>Skin.String(CustomWeather)</info>
+			<visible>!Skin.String(CustomWeatherFolder)</visible>
+			<visible>System.Date(03-21,06-21)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>FullscreenDimensions</include>
+			<imagepath>backdrops/summer</imagepath>
+			<info>Skin.String(CustomWeather)</info>
+			<visible>!Skin.String(CustomWeatherFolder)</visible>
+			<visible>System.Date(06-21,09-23)</visible>
+		</control>		
+		
+		<control type="multiimage">
+			<include>FullscreenDimensions</include>
+			<imagepath>backdrops/autumn</imagepath>
+			<info>Skin.String(CustomWeather)</info>
+			<visible>!Skin.String(CustomWeatherFolder)</visible>
+			<visible>System.Date(09-23,12-21)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<info>Skin.String(CustomWeatherFolder)</info>
+			<visible>Skin.String(CustomWeatherFolder)</visible>
+			<visible>!Skin.HasSetting(CustomWeatherConditions)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<imagepath>$INFO[Skin.String(CustomWeatherFolder)]$INFO[Weather.FanartCode]</imagepath>
+			<visible>Skin.String(CustomWeatherFolder)</visible>
+			<visible>Skin.HasSetting(CustomWeatherConditions)</visible>
+		</control>
+
+		<!-- Background_Wallpaper end -->	
+
+
+	<control type="group">
+	<posx>496</posx>
+	<posy>283</posy>
+	<width>289</width>
+	<height>155</height>
+	<animation type="WindowOpen" reversible="false">
+		<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+		<effect type="fade" start="0" end="100" time="300" />
+	</animation>
+	<animation type="WindowClose" reversible="false">
+		<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+		<effect type="fade" start="100" end="0" time="200" />
+	</animation>	
+		<control type="image">
+			<description>background top image</description>
+			<posx>0</posx>
+			<posy>-20</posy>
+			<width>275</width>
+			<height>20</height>
+			<texture>dialogs/context_top.png</texture>
+		</control>
+		<control type="image">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>275</width>
+			<height>90</height>
+			<texture>dialogs/context_middle.png</texture>
+		</control>
+		<control type="image">
+			<description>background bottom image</description>
+			<posx>0</posx>
+			<posy>90</posy>
+			<width>275</width>
+			<height>18</height>
+			<texture>dialogs/context_bottom.png</texture>
+		</control>
+		
+		<control type="group">
+			<posx>3</posx>
+			<posy>0</posy>
+			<width>273</width>
+			<height>90</height>
+			<include>common-fade-quick</include>
+		
+			<control type="label">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>270</width>
+				<height>40</height>
+				<label>396</label>
+				<textcolor>FF8f8f8f</textcolor>
+				<aligny>center</aligny>
+				<align>center</align>
+				<font>Font_SettingsSectionTitle</font>
+			</control>
+
+			<control type="label">
+				<posx>5</posx>
+				<posy>30</posy>
+				<width>260</width>
+				<height>40</height>
+				<info>Weather.Location</info>
+				<textcolor>FF8f8f8f</textcolor>
+				<aligny>center</aligny>
+				<align>center</align>
+				<font>Font_SettingsOptions</font>
+			</control>
+
+
+			<control type="spincontrolex" id="3">
+				<description>change location button</description>
+				<posx>135</posx>
+				<posy>60</posy>
+
+				<width>40</width>
+				<textcolor>00bbbbbb</textcolor>
+				<focusedcolor>00FFFFFF</focusedcolor>
+
+				<textureup>settings/spin-up.png</textureup>
+				<texturedown>settings/spin-down.png</texturedown>
+				<textureupfocus>settings/spin-up-focus.png</textureupfocus>
+				<texturedownfocus>settings/spin-down-focus.png</texturedownfocus>
+	
+				<font>Font_SettingsOptions</font>
+				<disabledcolor>00d0d0d0</disabledcolor>
+
+				<aligny>center</aligny>
+				<align>-</align>
+				<textoffsetx>130</textoffsetx>
+				<spinposx>-2</spinposx>
+				<spinwidth>40</spinwidth>
+				<spinheight>65</spinheight>
+				<include>Animations_SettingsButtonFade</include>
+				
+			</control>
+		</control>
+	</control>
+
+	</controls>
+</window>

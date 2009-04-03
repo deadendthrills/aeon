@@ -1,0 +1,17 @@
+<window>
+	<defaultcontrol always="true">1</defaultcontrol>
+	<controls>
+
+	<control type="button" id="1">
+		<description>ReplaceWindow Trigger</description>
+		<posx>35</posx>
+		<posy>235</posy>
+		<font>special15</font>
+		<onfocus>ReplaceWindow(Home)</onfocus>
+		<texturefocus>-</texturefocus>
+		<texturenofocus>-</texturenofocus>
+		<animation effect="fade" time="1000">Focus</animation>
+	</control>
+
+	</controls>
+</window>

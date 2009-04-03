@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes" ?>
+<!-- $Revision: 204$ -->
+<!--  strings 31000 thru 31999 reserved for skins  -->
+
+ <strings>
+	<string id="31000">1.0 (STARK)</string> <!-- DO NOT CHANGE -->
+	<string id="31001"></string> <!-- RESERVED FOR CREDITS -->
+	<string id="31002"></string> <!-- RESERVED FOR CREDITS -->
+	<string id="31003"></string> <!-- RESERVED FOR CREDITS -->
+	<string id="31004">NULLSTILL BAKGRUNN</string>
+	<string id="31005">ELEMENTER</string>
+	<string id="31006">SPILLER NÅ</string>
+	<string id="31007">PAUSE</string>
+	<string id="31008">MIDLERTIDIG</string>
+	<string id="31009">ENHETER</string>
+  
+<!-- Main Menu -->
+  
+	<string id="31010">MUSIKK</string>
+	<string id="31011">SPILL</string>
+	<string id="31012">BILDER</string>
+	<string id="31013">FILMER</string>
+	<string id="31014">TV SERIER</string>
+	<string id="31015">VIDEOER</string>
+	<string id="31016">INNST</string>
+	<string id="31017">VÆR</string>
+	<string id="31018">SPILL DISK</string>
+	<string id="31019">SLÅ AV</string>
+	<string id="31020">SKRIPT</string>
+	<string id="31021">ASSISTENT</string>
+
+<!-- Media Window titles -->
+ 
+	<string id="31030">SPILL</string> 
+	<string id="31031">BILDER</string>
+	<string id="31032">FILMER</string> 
+	<string id="31033">TV</string>
+	<string id="31034">VIDEOER</string>
+	<string id="31035">VÆR</string>
+	<string id="31036">SKRIPT</string>
+	<string id="31037">MUSIKK</string>
+	<string id="31038">SPILLELISTE</string>
+	<string id="31039">EDITOR</string>
+	<string id="31040">SPILLER:</string>
+	<string id="31041">AV:</string>
+
+<!-- Media Window options -->
+  
+	<string id="31050">VISNING:</string> 
+	<string id="31051">TILFELDIG: AV</string>
+	<string id="31052">TILFELDIG: PÅ</string> 
+	<string id="31053">BIBLIOTEK: AV</string> 
+	<string id="31054">OPPSETT</string> 
+	<string id="31055">STABLE: PÅ</string> 
+	<string id="31056">STABLE: AV</string>
+	<string id="31057">FILER</string>
+	<string id="31058">SKJUL AVSPILTE: PÅ</string>
+	<string id="31059">SKJUL AVSPILTE: AV</string>
+	<string id="31060">OPPSETT: FLAT</string>
+	<string id="31061">OPPSETT: FLYT</string>
+	<string id="31062">SESONG</string>
+	<string id="31063">EPISODE</string>
+	<string id="31064">FANART: AV</string>
+	<string id="31065">FANART: PÅ</string>
+	<string id="31066">BAKGRUNN: PÅ</string>
+	<string id="31067">BAKGRUNN: AV</string>
+	<string id="31068">BIBLIOTEK: PÅ</string>
+	<string id="31069">FLAGG: PÅ</string>
+	<string id="31070">FLAGG: AV</string>
+	<string id="31071">MINIATYRBILDER: ENKEL</string>
+	<string id="31072">MINIATYRBILDER: MULTI</string>
+	<string id="31073">RUTENETT: STANDARD</string>
+	<string id="31074">RUTENETT: MAKS</string>
+  
+<!-- Aeon Customisation Virtual Home page labels -->
+  
+	<string id="31080">BAKGRUNNER</string>
+	<string id="31081">BYTTE BAKGRUNNER</string>
+	<string id="31082">FLYTT TIL VENSTRE/HØYRE FOR Å BLA IGJENNOM, VELG FOR Å BYTTE</string>
+	<string id="31083">TILPASSEDE BAKGRUNNER</string>
+	<string id="31084">VELG TYPE BAKGRUNN</string>
+	<string id="31085">FLYTT OPP FOR ENKEL BAKGRUNN, NED FOR BILDE-FREMVISNINGS MAPPE</string>
+	<string id="31086">SNARVEIER</string>
+	<string id="31087">SKRU AV/PÅ HOVED MENY SNARVEIER</string>
+	<string id="31088">FLYTT TIL VENSTRE/HØYRE FOR Å BLA IGJENNOM, VELG FOR Å BYTTE</string>
+	<string id="31089">MØBLER</string>
+	<string id="31090">ARRANGER HOVED MENY OBJEKTER</string>
+	<string id="31091">FLYTT TIL VENSTRE/HØYRE FOR Å BLA IGJENNOM, VELG FOR Å FORFLYTTE</string>
+	<string id="31092">VELG FOR Å FORFLYTTE HOVED MENY</string>
+	<string id="31093">VELG FOR Å TILKOBLE TIDS PANEL</string>
+	<string id="31094">VELG FOR Å FRAKOBLE TIDS PANEL</string>
+	<string id="31095">VELG FOR Å TILKOBLE RSS STRØM</string>
+	<string id="31096">VELG FOR Å FRAKOBLE RSS STRØM</string>
+	<string id="31097">NULLSTILL INNST</string>
+	<string id="31098">NULSTILL HJEMME INNST</string>
+	<string id="31099">FLYTT VENSTRE/HØYRE FOR Å KLARGJØRE KNAPP</string>
+	<string id="31100">ADVARSEL: DENNE PROSESSEN KAN IKKE REVERSERES</string>
+	<string id="31101">FLYTT HVOR SOM HELST FOR Å AVBRYTE, VELG FOR Å FORTSETTE</string>
+	<string id="31102">VELG</string>
+	<string id="31103">BAKGRUNNS TYPE</string>
+	<string id="31104">SKRU AV/PÅ</string>
+	<string id="31105">SNARVEI</string>
+  
+<!-- Aeon Customisation Menu labels -->
+  
+	<string id="31120">BAKGRUNNER</string>
+	<string id="31121">TILPASS AEON</string>
+	<string id="31122">SNARVEIER</string>
+	<string id="31123">KOMPLEMENTERE HJEMME MENY</string>
+	<string id="31124">MØBLER</string> 
+	<string id="31125">TIME AND FEEDS</string>
+	<string id="31126">NULLSTILL</string> 
+	<string id="31127">FJERN PERSONLIGE INNST</string>
+
+<!-- XBMC INNSTILLINGER Menu labels -->
+  
+	<string id="31140">VIDEO</string>
+	<string id="31141">AVSPILLING OG BIBLIOTEK</string>
+	<string id="31142">MUSIKK</string>
+	<string id="31143">AVSPILLING OG BIBLIOTEK</string>
+	<string id="31144">PROGRAMMER</string>
+	<string id="31145">SPILL OG APPLIKASJONER</string>
+	<string id="31146">BILDER</string>
+	<string id="31147">UTFORSKER OG BILDE-FREMVISNING</string>
+	<string id="31148">VÆR</string>
+	<string id="31149">STED OG UTSEENDE</string>
+	<string id="31150">NETTVERK</string>
+	<string id="31151">LOKALISERING OG INTERNETT</string>
+	<string id="31152">SYSTEM</string>
+	<string id="31153">CACHE OG HARDWARE</string>
+	<string id="31154">UTSEENDE</string>
+	<string id="31155">INTERFACE OG SKJERM</string>
+	<string id="31156">TILPASS</string>
+	<string id="31157">TILPASS AEON</string>
+	<string id="31158">AVANSERT</string>
+	<string id="31159">UTVIDETE AEON INNST</string>
+	<string id="31160">PROFILER</string>
+	<string id="31161">BRUKER KONTOER</string>
+	<string id="31162">INNLOGGINGS SKJERM</string>
+	<string id="31163">ALTERNATIVER</string>
+	<string id="31164">INNLOGGINGS SKJERM</string>
+	<string id="31165">BRUKERE</string>
+	<string id="31166">BEHANDLE PROFILER</string>
+
+<!--  Button / Shutdown Menu  --> 
+
+	<string id="31200">INNST</string> 
+	<string id="31201">TILPASS</string>
+	<string id="31202">ASSISTENT</string> 
+	<string id="31203">HJEMME VISUALISERER: AV</string>
+	<string id="31204">HOME VISUALISERER: PÅ</string> 
+	<string id="31205">SPILLES NÅ</string>
+	<string id="31206">AVSLÅINGS TELLER</string> 
+	<string id="31207">OMSTART</string> 
+	<string id="31208">SLÅ AV</string>
+	<string id="31209">LOGGE UT</string>
+
+<!--  Set Content / Add Source dialogs  --> 
+  
+	<string id="31220">MAPPE INNEHOLDER:</string>
+	<string id="31221">SKRIV INN BANER ELLER BLA IGJENNOM ETTER MEDIA OMRÅDER</string>
+	<string id="31222">VELG ET NAVN FOR DENNE DELINGEN</string>
+	<string id="31223">LISTE</string>
+	<string id="31224">SIDE OM SIDE</string>
+
+<!-- Aeon Advanced Menu labels -->
+  
+	<string id="31230">AEON</string> 
+	<string id="31231">EGENSKAPER</string>
+	<string id="31232">GENERELT</string>
+	<string id="31233">GLOBALE INNST</string>
+	<string id="31234">HJEM</string>
+	<string id="31235">FORSIDE EGENSKAPER</string>
+	<string id="31236">VISNINGER</string>
+	<string id="31237">MEDIA UTFORSKERE</string>
+	<string id="31238">FORHÅNDSVALG</string>
+	<string id="31239">RASKE KONFIGURASJONER</string>
+	<string id="31240">FANART</string>
+	<string id="31241">CONTEXTUAL ARTWORK</string>
+	<string id="31242">AKTIVER ALT</string>
+	<string id="31243">DEAKTIVER ALT</string>
+	<string id="31244">MENYER</string>
+	<string id="31245">BLA IGJENNOM UTSEENDE</string>
+  
+<!-- Aeon Advanced options -->
+  
+	<string id="31260">VIS TIDS PANEL</string>
+	<string id="31261">HJEMMESIDE VÆR POP-UP</string>
+	<string id="31262">CONTEXTUAL ARTWORK (FANART) FOR MUSIKK</string>
+	<string id="31264">CONTEXTUAL ARTWORK (FANART) FOR FILMER</string>
+	<string id="31265">CONTEXTUAL ARTWORK (FANART) FOR TV</string>
+	<string id="31266">CONTEXTUAL ARTWORK FOR BILDER</string>
+	<string id="31268">REDUSER PANEL/LISTE VISNINGS GJENNOMSIKTLIGHET</string>
+	<string id="31270">ZOOM ANIMASJONER</string>
+	<string id="31271">TONE UT PANEL/LISTE VISNINGS MENYER NÅR INNAKTIVE</string>
+	<string id="31278">VIS BAKGRUNNER I VEGG VISNING</string>
+	<string id="31279">CONTEXTUAL ARTWORK (FANART) FOR FULLSKJERM INFO SIDER</string>
+	<string id="31280">UTVIKLER MODUS</string>
+	<string id="31281">MEDIA FLAGG (STUDIO IKONER, KILDE INFO, ETC)</string>
+	<string id="31284">HJEMMESIDE VISUALISERING</string>
+	<string id="31285">BRUK TEKST FOR FILM INFO VURDERING (BRUKER STJERNER HVIS DEAKTIVERT)</string>
+	<string id="31286">BRUK TEKST FOR MUSIKK INFO VURDERING (BRUKER STJERNER HVIS DEAKTIVERT)</string>	
+	<string id="31287">KIOSK MODUS (FJERNER MENYER FRA MEDIA VINDUER)</string>
+	<string id="31288">FILM SØK (FILM BIBLIOTEK)</string>
+	<string id="31289">TV SØK (TV BIBLIOTEK)</string>
+	<string id="31290">INNST SNARVEI (ALLE MEDIA)</string>
+	<string id="31291">SETT/USETT FILMER AV/PÅ(FILM BIBLIOTEK)</string>
+	<string id="31292">SETT/USETT TV AV/PÅ (TV BIBLIOTEK)</string>
+	<string id="31293">FIL VISNING SNARVEI(FILM OG TV BIBLIOTEK)</string>
+	<string id="31294">STØRRE TASTATUR / NUMERISKE TASTER</string>
+	<string id="31295">FORBEDRET VISNING (STØRRE TID OG RSS)</string>
+	<string id="31296">ENKEL/MULTI MINIATYRBILDE AV/PÅ</string>
+	<string id="31297">BRUK ENKEL MINIATYRBILDE FOR MUSIKK LISTE</string>
+	<string id="31298">BRUK ENKEL MINIATYRBILDE FOR FILM LISTE</string>
+	<string id="31299">VIS RSS / SPILLER NÅ I SHOWCASE VISNING</string>
+	
+<!-- XBMC INNST Menu headings -->
+	
+	<string id="31300">VIDEO</string>
+	<string id="31301">BILDER</string>
+	<string id="31302">UTSEENDE</string>
+	<string id="31303">NETTVERK</string>
+	<string id="31304">SYSTEM</string>
+	<string id="31305">MUSIKK</string>
+	<string id="31306">VÆR</string>
+	<string id="31307">PROGRAMMER</string>
+	<string id="31308">EGENSKAPER</string>
+	
+<!-- XBMC INNST Subtitles -->
+	
+	<string id="31320">VIS STANDARD</string>
+	<string id="31321">DATABASE KONTROLL</string>
+	<string id="31322">KVALITET OG KALIBRERING</string>
+	<string id="31323">TYPE OG FARGE</string>
+	<string id="31324">TAGGER OG SKJERM</string>
+	<string id="31325">TIMING AND EFFEKTER</string>
+	<string id="31326">SKINS OG RSS STRØMMER</string>
+	<string id="31327">SPRÅK OG STED</string>
+	<string id="31328">OPPLØSNING OG KALIBRERING</string>
+	<string id="31329">GJENSTANDER OG SLETTING</string>
+	<string id="31330">TIMING AND INNHOLD</string>
+	<string id="31331">PROXIES OG OPPSLAG</string>
+	<string id="31332">HTTP INTERFACE</string>
+	<string id="31333">ARBEIDSGRUPPE OG INNLOGGING</string>
+	<string id="31334">KLIENT OG DELINGER</string>
+	<string id="31335">PORTER OG TIMINGS</string>
+	<string id="31336">LOGGING OG TIMEOUTS</string>
+	<string id="31337">INPUT OG FORSINKELSER</string>
+	<string id="31338">MEDIA TYPER</string>
+	<string id="31339">LOKAL OG NETTVERK</string>
+	<string id="31340">ANALOG / DIGITAL</string>
+	<string id="31341">INNHOLDS RESTRIKSJONER</string>
+	<string id="31342">OPPTAK OG VISUALISERING</string> 
+	<string id="31343">DATABASE KONTROLL</string> 
+	<string id="31344">HARDWARE AND NIVÅER</string> 
+	<string id="31345">ID TAGGER OG OPPSLAG</string> 
+	<string id="31346">BEKREFTELSER OG PROFIL</string> 
+	<string id="31347">MAPPER OG OPPSETT</string>
+	<string id="31348">VOLUM OG STEMME MASKER</string> 
+	<string id="31349">OMRÅDE KODER OG REGION</string>
+	<string id="31350">UTFORSKER STANDARDER</string>
+	<string id="31351">ONLINE KILDER</string>
+
+<!--  Fullscreen info panel  -->
+
+	<string id="31400">INGEN PLAKAT?[CR][CR]KONTROLLER AT DU HAR EN SEPARAT "BIG" THUMB [CR]SAMMEN MED FILM FILEN OG AT[CR] NAVNE STANDARD ER ETTERFULGT[CR](BARBARELLA.MKV-BIG.PNG)[CR][CR]SE I AEON MANUALEN FOR FLERE DETALJER</string>
+	<string id="31401">SKREVET AV</string>
+	<string id="31402">REGISSØR</string>
+	<string id="31403">EPISODER:</string>
+	<string id="31404">STUDIO:</string>
+	<string id="31405">MEDVIRKER</string>
+	<string id="31406">EPISODER</string>
+	<string id="31407">PREMIERE</string>
+	<string id="31408">IMDB</string>
+	<string id="31409">TRAILER</string>
+	<string id="31410">OPPDTR</string>
+	<string id="31411">SE PÅ</string>
+	<string id="31412">FANART</string>
+	<string id="31413">STEMNINGER</string>
+	<string id="31414">HANDLINGS DETALJER UTILGJENGELIG</string>
+	<string id="31415">BIOGRAFI UTILGJENGELIG</string>
+	<string id="31416">STILER</string>
+	<string id="31417">KARKTR</string>
+	<string id="31418">THUMB</string>
+	<string id="31419">OPPDATER</string>
+	<string id="31420">FORTSETT</string>
+	<string id="31421">SPILL</string>
+	<string id="31422">NOTATER</string>
+	<string id="31423">MERKE</string>
+	<string id="31424">ALBUM KARAKTER UTILGJENGELIG</string>
+	<string id="31425">INFO UTILGJENGELIG</string>
+	<string id="31426">SPOR</string>
+	<string id="31427">VARIGHET</string>
+	<string id="31428">INGEN KOMMENTARER</string>
+	<string id="31429">ALBUM INFO</string>
+	<string id="31430">UTFØR</string>
+	<string id="31431">TRYKK OPP ELLER NED FOR Å ENDRE KARAKTER</string>
+	<string id="31432">SESONG</string>
+	<string id="31433">EPISODE</string>
+
+<!--  Aeon Assistant  -->
+
+	<string id="31500">NYHETER</string>
+	<string id="31501">ONLINE AEON OPPDATERINGER</string>
+	<string id="31502">VITALE</string>
+	<string id="31503">XBMC STATISTIKK</string>
+	<string id="31504">KREDITTERINGER</string>
+	<string id="31505">SKAPER OG TAKKER</string>
+	<string id="31510">ASSISTENT</string>
+	<string id="31511">SISTE NYHETER</string>
+	<string id="31512">SJEKK TILBAKE HER FOR PERIODISKE OPPDATERINGER FRA AEON SERVEREN</string>
+	<string id="31520">START OMVISNING</string>
+	<string id="31521">AEON VELKOMMER SIDE</string>
+	<string id="31522">TILBAKE TIL DET GRUNNLEGGENDE</string>
+	<string id="31523">TRYKK VELG FOR Å STARTE AEON INTRODUSERINGS-OMVISNINGEN PÅ NYTT</string>
+	<string id="31524">KONTAKTER AEON SERVER</string>
+	
+<!--  Aeon Assistant Tutorials  -->
+
+	<!-- 31550-31590 RESERVED -->
+	
+<!-- Aeon Assistant vitals -->
+
+	<string id="31598">XBMC BYGG DATO[CR]AEON VERSJON[CR]GJELDENDE TEMA[CR]SPRÅK[CR]SKJERM OPPLØSNING[CR]TILGJENGELIG MINNE[CR]SYSTEM DISK PLASS[CR]CPU TEMPERATUR[CR]GPU TEMPERATUR[CR]SYSTEM OPPETID[CR]ONLINE STATUS[CR]IP ADDRESSE[CR]OPTISK ENHET</string>
+	
+<!-- Debug mode -->
+
+	<string id="31600">AEON VERSJON: 1.0</string>
+	<string id="31601">LEDIG SYSTEM MINNE:</string>
+	<string id="31602">XBMC BYGG DATO:</string>
+	<string id="31603">FPS:</string>
+	<string id="31604">GJELDENDE VINDU ID:</string>
+	<string id="31605">GJELDENDE FOKUS:</string>
+	<string id="31606">AKTIV VISNINGS TYPE:</string>
+	<string id="31607">OPPDATER</string>
+	<string id="31608">INFO PÅ/AV</string>
+
+<!-- Welcome screen / Aeon Tour -->
+<!-- ENSURE LOWER/UPPER CASE IS OBEYED --> 
+
+	<string id="31650">Velkommer til AEON, det nye hjemmet til hjemme underholdning.[CR]Måten du gleder deg over dine filmer, TV serier, musikk og bilder er[CR]iferd med å endres. Men først bør du se denne korte visuelle[CR]introduksjonen. Interessert? Trykk VELG. Hvis ikke, Trykk Tilbake.</string>
+	<string id="31651">Sentralt i AEON er den horrisontale rulle menyen som gir øyeblikkelig tillgang til[CR]AEON'S forskjellige miljøer. Bakgrunner kan tilknyttes til hver sin egenskap som enten[CR]et enkelt bilde eller en bilde-fremvisning. Menyen kan byttes mellom posisjoner[CR]med et enkelt knappetrykk. Tid og RSS kan også flyttes og frakobles.</string>
+	<string id="31652">Film og musikk nytes i AEON gjennom fire distinkte visninger.[CR]Hver egen visning er utformet for å møte spesielle krav. Showcase tilbyr maksimal[CR]artwork synlighet; Panel tilbyr en mer konvensjonell miniatyr visning; Liste[CR]forklarer seg selv; Vegg visning tilbyr maksimal utnyttelse av skjerm område for store samlinger.</string>
+	<string id="31653">Aeon elsker artwork. Dens visuelle filosfi kretser kun rundt hver[CR]brukers smak og innhold. Liker du action filmer? Fantasi videospill?[CR]Sitrende periode drama? Pynt ditt miljø tilsvarende.[CR]Plakater og cover art, er derimot vist i nydelig høy oppløsning.</string>
+	<string id="31654">Å bygge et bibliotek av filmer, TV serier eller musikk lar Aeon utnytte[CR]XBMC sitt fulle potensiale, tilføre en rik og informativ utforsknings opplevelse.[CR]Handlings summeringer og album anmeldelser er bare toppen på isfjellet takkket være[CR]informasjon hentet fra IMDb, Allmusic, eller en av mange bruker-valgte kilder.</string>	
+	<string id="31655">TRYKK VELG FOR Å BEGYNNE OMVISNING. TRYKK TILBAKE FOR Å HOPPE OVER</string>
+	<string id="31656">TRYKK NED FOR NESTE SIDE, VELG FOR Å HOPPE OVER</string>
+	<string id="31657">TRYKK NED FOR NESTE SIDE, OPP FOR FORRIGE SIDE, ELLER VELG FOR Å HOPPE OVER</string>
+	<string id="31659">Å navigere mellom Aeons visninger og vinduer kan ikke bli lettere.[CR]Den globale menyen kan aksesseres når som helst fra hvor som helst å tilbyr[CR]Snarveier til innstillinger, tilpasninger og Aeon assistenten. En fire-veis[CR]"kompass" meny gir øyeblikkelig tilgang til hvilken som helst visnings type.</string>
+	<string id="31660">Et hvert aspekt av Aeon og XBMC kan tilpasses "bak scenen".[CR]Et multi-fassetert innstillings miljø er tilgjengelig fra hvert skjermbilde,[CR]inndelt i seksjoner for enkelt bruk. Den virituelle hjemme siden tilbyr en[CR]inutiv visuell referanse for alle dine personlige tilpassnings behov.</string>
+	<string id="31661">Det er ingen begrensing for hvor mange bakgrunner du kan spre rundt i Aeon[CR] Mapper som inneholder tusenvis av bilder kan bli tilknyttet til[CR]seksjoner som Filmer og Bilder. Alt som er over den gjeldende skjerm[CR]oppløsningen vil bli nedskalert, alt under oppskalert.</string>
+	<string id="31662">Kontroller hvert aspekt av XBMC's media avspillning uten å gå glipp av et sekund.[CR]On-screen visninger for video og musikk lar deg justere alt fra[CR]undertekster og bilde forhold til audiovisuell synk. Permanente bokmerker[CR]kan settes for rask tilgang til dine favoritt scener.</string>
+	<string id="31663">Glem tidene hvor bruker tilpasninger kom til en pris, og[CR]høy-oppløselig grafikk var ikke-eksisterende. Aeon Prosjektet's web sider tilbyr hundrevis[CR]av de beste bakgrunner for alle Aeon's vinduer, gratis og fri for plagsom[CR]reklame. Sjekk Aeon's assistent for direkte oppgraderinger og nytt innhold.</string>
+
+<!-- OSD -->
+
+	<string id="31700">CODEC</string>
+	<string id="31701">BITRATE</string>
+	<string id="31702">SAMPLERATE</string>
+	<string id="31703">KANALER</string>
+	<string id="31704">NESTE:</string>
+	<string id="31705">REWIND</string>
+	<string id="31706">FORWARD</string>
+	<string id="31707">VOLUM</string>
+	<string id="31708">POSISJON</string>
+	<string id="31709">SPILLETID</string>
+	<string id="31710">SLUTT-TID</string>
+	<string id="31711">BOKMERKER TILGJENGELIG</string>
+	<string id="31712">OPP/NED: MENY/BOKMERKER[CR]VENSTRE/HØYRE: MENY EGENSKAPER</string>
+	
+<!-- View VELG -->
+
+	<string id="31750">VEGG</string>
+	<string id="31751">SHOWCASE</string>
+	<string id="31752">LISTE</string>
+	<string id="31753">PANEL</string>	
+	<string id="31754">VELG</string>	
+	<string id="31755">RETNINGER VELG VISNINGER[CR]KLIKK FOR Å GÅ TILBAKE</string>
+	<string id="31756">KUN LISTE VISNING ER TILGJENGELIG FOR EPISODER</string>	
+
+<!-- Aeon INNSTILLINGER panel labels -->
+  
+	<string id="31800">FRITTSTÅENDE UNDERTEKSTER</string>
+	<string id="31801">FOR Å BENYTTE FRITTSTÅENDE UNDERTEKSTER MÅ UNDERTEKSTEN OG VIDEO FILEN HA SAMME NAVN.[CR]FOR EKSEMPEL, VEXILLE.AVI VIL KREVE UNDERTEKST FILEN VEXILE.SRT (ETTERNAVN KAN VARIERE)</string>
+	<string id="31802">MUSIKK VIDEOER</string>
+	<string id="31803">XBMC HÅNDTERER MUSIKK VIDEOER MYE PÅ SAMME MÅTE SOM VIDEOER. I BIBLIOTEK MODUS, BARE SPESIFISER[CR]EN MAPPES INNHOLD SOM 'MUSIKK VIDEOER', VELG EN ONLINE INFO KILDE OG LA XBMC GJØRE RESTEN</string>
+	<string id="31804">EMULERING</string>
+	<string id="31805">XBMC KAN BRUKES TIL Å KJØRE EMULATORER PÅ ALLE PLATTFORMER, METODENE KAN VARIERE.[CR]SJEKK XBMC FORUM (WWW.XBMC.ORG) FOR SUPPORTERT PROGRAMVARE OG ANDRE TIPS</string>
+	<string id="31806">ROTER VED HJELP AV EXIF INFORMASJON</string>
+	<string id="31807">MODERNE KAMERAER LAGRER MYE INFORMASJON OM HVERT BILDE SOM TAS. MED DENNE EGENSKAPEN[CR]AKTIVERT VIL BILDER ROTERES AUTOMATISK OG VISES I HENHOLD TIL HVORDAN BILDET BLE TATT</string>
+	<string id="31808">LIVE VÆR MELDINGER</string>
+	<string id="31809">XBMC VISER VÆRMELDINGER FOR OPPTIL TRE LOKASJONER, TAKKET VÆRE WEATHER.COM.[CR]SAMMEN MED DINE STEDER, KAN DU OGSÅ VELGE MELLOM METRISKE ELLER AMERIKANSE ENHETER</string>
+	<string id="31810">FÅ ET KLARERE BILDE</string>
+	<string id="31811">ET-TRYKKS RE-KOMPONERING GJØR DET Å FLYTTE AEON'S MENY RASKT OG SMERTEFRITT. BARE TRYKK OPP[CR]ELLER NED FOR Å SKIFTE POSISJONER OG ALT SKJERM-INNHOLD RE-ARRANGERER SEG SELV AUTOMATISK</string>
+	<string id="31812">HØY-KAPASITETS EKSTERN LAGRING</string>
+	<string id="31813">FLYTTBARE LAGRINGSMEDIA GIR EN IDEAL LAGRINGSPLASS FOR HD[CR]FILM SAMLINGER. XBMC HÅNDTERER TUSENVIS AV FILER FOR HVER KILDE DU DEFINERER</string>
+	<string id="31814">ET "EKTE" HIGH DEFINITION MEDIA MILJØ</string>
+	<string id="31815">AEON VISER MESTEPARTEN AV SIN GRAFIKK I EKTE 1080P, NEDSKALERER DET FOR Å PASSE[CR]HVILKEN SOM HELST HD SKJERM. DEN STÅR FOR DET ABSOLUTT BESTE I DIGITAL UNDERHOLDNING</string>
+	<string id="31816">KAN DIN HARDWARE HÅNDTERE DET?</string>
+	<string id="31817">XBMC HAR BESKJEDENE KRAV FOR ALLE SYSTEMER, MEN ER AVHENGIG AV CPU KRAFT[CR]BETYDELIG FOR HD VIDEO. "PIXEL SHADER 3" KAPABLE SKJERMKORT ER OGSÅ HØYT REKOMMANDERT</string>
+	<string id="31818">MINIMALE FORSTYRRELSER</string>	
+	<string id="31819">AEON'S HJEMMESIDE KAN SKALERES HELT TILBAKE FOR Å LA DINE BAKGRUNNER SKINNE GJENNOM, ELLLER[CR]SPESIFIKT FORSTØRRET FOR Å FORBEDRE LESBARHETEN FOR DE MED NEDSATT SYN</string>	
+	<string id="31820">ALLE FOR SEG SELV</string>
+	<string id="31821">XBMC STØTTER FLERE BRUKER PROFILER, DETTE MULIGJØR AT HVER ENKELT BRUKER KAN LAGRE[CR]SINE EGNE TILPASNINGER. RSS STRØMMER, UTSEENDE OG MEDIA BIBLIOTEK KAN LAGRES FOR HVER ENKELT BRUKER</string>
+<!-- Credits -->
+
+	<string id="31900">TEKSTURER</string>
+	<string id="31901">STANDARD BAKGRUNNER</string>
+	<string id="31902">STANDARD IKONER INNHEOLDER ELEMENTER FRA</string>
+	<string id="31903">LOKALISERING</string>
+	<string id="31904">TESTING</string>
+	<string id="31905">AEONPROJECT WEBSIDE</string>
+	<string id="31906">TAKK TIL</string>
+	<string id="31907">ALLE PÅ XBMC FORUMET</string>
+	<string id="31908">...OG DEG</string>
+	<string id="31909">AEON KOMMER TILABKE I</string>
+	
+</strings>

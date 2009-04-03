@@ -1,0 +1,510 @@
+<includes>
+
+	<include name="FullscreenDimensions">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>1280</width>
+		<height>720</height>
+	</include>
+
+	<include name="Background_SingleImage">
+		<include>FullscreenDimensions</include>
+        <visible>![Control.IsVisible(87) | [Skin.HasSetting(homevis) + Player.HasAudio + Window.IsActive(Home)]]</visible>
+		<include>Animation_BackgroundFade</include>
+	</include>
+
+	<include name="Background_ImageFolder">
+		<include>FullscreenDimensions</include>
+		<imagepath>-</imagepath>
+		<timeperimage>20000</timeperimage>
+		<fadetime>2000</fadetime>
+		<randomize>true</randomize>
+        <visible>![Control.IsVisible(87) | [Skin.HasSetting(homevis) + Player.HasAudio + Window.IsActive(Home)]]</visible>
+		<include>Animation_BackgroundFade</include>
+	</include>
+	
+	<include name="Background_VirtualSingleImage">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>840</width>
+		<height>471</height>
+        <visible>!Control.IsVisible(87)</visible>
+		<include>Animation_BackgroundFade</include>		
+	</include>
+
+	<include name="Background_VirtualImageFolder">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>840</width>
+		<height>471</height>
+		<imagepath>-</imagepath>
+		<timeperimage>20000</timeperimage>
+		<fadetime>2000</fadetime>
+		<randomize>true</randomize>
+        <visible>!Control.IsVisible(87)</visible>
+		<include>Animation_BackgroundFade</include>			
+	</include>
+	
+	<include name="Background_SettingsSingleImage">
+		<include>FullscreenDimensions</include>
+		<imagepath>backdrops/default_settings</imagepath>
+        <visible>![Control.IsVisible(87) | [Skin.HasSetting(homevis) + Player.HasAudio + Window.IsActive(Home)]]</visible>
+        <animation effect="fade" time="500" condition="![Window.Previous(4) | Window.Previous(605) | Window.Previous(AppearanceSettings) | Window.Previous(PicturesSettings)]">WindowOpen</animation>
+        <animation effect="fade" time="200" condition="![Window.Next(4) | Window.Next(605)]">WindowClose</animation>
+        <animation effect="fade" time="800" condition="!Control.IsVisible(89)">Visible</animation>
+        <animation effect="fade" delay = "200" time="800">Hidden</animation>		
+	</include>
+	
+	<include name="Background_WeatherSingleImage">
+		<include>FullscreenDimensions</include>
+        <visible>![Control.IsVisible(87) | [Skin.HasSetting(homevis) + Player.HasAudio + Window.IsActive(Home)]]</visible>
+        <animation effect="fade" time="500" condition="![Window.Previous(2600)]">WindowOpen</animation>
+        <animation effect="fade" time="200" condition="![Window.Next(2600)]">WindowClose</animation>
+        <animation effect="fade" time="800" condition="!Control.IsVisible(89)">Visible</animation>
+        <animation effect="fade" delay = "200" time="800">Hidden</animation>		
+	</include>	
+	
+	<include name="Background_ContextBlack">
+		<control type="image" id="909">
+			<description>Darken screen for Context Menu etc.</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>common/black.png</texture>
+			<colordiffuse>d7FFFFFF</colordiffuse>
+			<include>Animation_CommonFade</include>
+			<visible>Control.IsVisible(218) | Window.IsVisible(130) | Window.IsVisible(109) | Window.IsVisible(111) | Window.IsVisible(600) | Window.IsVisible(402) | Window.IsVisible(2000) | Window.IsVisible(601) | Window.IsVisible(602) | Window.IsVisible(601) | Window.IsVisible(132) | Window.IsVisible(106) | Window.IsVisible(103) | Window.IsVisible(129) | Window.IsVisible(126)</visible>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>329</posy>
+			<width>1280</width>
+			<height>391</height>
+			<texture>common/progressshade.png</texture>
+			<include>Animation_CommonFade</include>
+			<visible>[Window.IsActive(100) | Window.IsActive(136) | Window.IsActive(107) | Window.IsActive(2002) | Window.IsActive(104) | Window.IsVisible(133) | Window.IsVisible(101) | Window.IsActive(112)] + ![Control.IsVisible(57) | Control.IsVisible(54)] + ![Window.IsActive(Home) + Skin.HasSetting(lowermainmenu)]</visible>
+		</control>
+	</include>
+
+	<include name="Background_Wallpaper">
+
+		<control type="visualisation">
+			<include>FullscreenDimensions</include>
+			<visible>Skin.HasSetting(homevis) + Player.HasMedia</visible>
+		</control>
+		
+		<control type="videowindow">
+			<include>FullscreenDimensions</include>
+			<visible>Skin.HasSetting(videohome) + Player.HasVideo</visible>
+		</control> 
+
+		<control type="multiimage">
+			<include>Background_SettingsSingleImage</include>
+			<imagepath>backdrops/default_settings</imagepath>
+			<info>Skin.String(CustomSettings)</info>
+			<visible>[Container(300).HasFocus(9) | Container(300).HasFocus(20)] + Control.IsVisible(300)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_WeatherSingleImage</include>
+			<imagepath>backdrops/winter</imagepath>
+			<info>Skin.String(CustomWeather)</info>
+			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
+			<visible>!Skin.String(CustomWeatherFolder)</visible>
+			<visible>System.Date(12-21,03-21)</visible>
+		</control>
+		
+		<control type="multiimage">
+			<include>Background_WeatherSingleImage</include>
+			<imagepath>backdrops/spring</imagepath>
+			<info>Skin.String(CustomWeather)</info>
+			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
+			<visible>!Skin.String(CustomWeatherFolder)</visible>
+			<visible>System.Date(03-21,06-21)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_WeatherSingleImage</include>
+			<imagepath>backdrops/summer</imagepath>
+			<info>Skin.String(CustomWeather)</info>
+			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
+			<visible>!Skin.String(CustomWeatherFolder)</visible>
+			<visible>System.Date(06-21,09-23)</visible>
+		</control>		
+		
+		<control type="multiimage">
+			<include>Background_WeatherSingleImage</include>
+			<imagepath>backdrops/autumn</imagepath>
+			<info>Skin.String(CustomWeather)</info>
+			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
+			<visible>!Skin.String(CustomWeatherFolder)</visible>
+			<visible>System.Date(09-23,12-21)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<info>Skin.String(CustomWeatherFolder)</info>
+			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
+			<visible>Skin.String(CustomWeatherFolder)</visible>
+		</control>
+		
+		<control type="multiimage">
+			<include>Background_SingleImage</include>
+			<imagepath>backdrops/default_pictures</imagepath>
+			<info>Skin.String(CustomPictures)</info>
+			<visible>Container(300).HasFocus(5) + Control.IsVisible(300)</visible>
+			<visible>!Skin.String(CustomPicturesFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<info>Skin.String(CustomPicturesFolder)</info>
+			<visible>Container(300).HasFocus(5) + Control.IsVisible(300)</visible>
+			<visible>Skin.String(CustomPicturesFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_SingleImage</include>
+			<imagepath>backdrops/default_games</imagepath>
+			<info>Skin.String(CustomGames)</info>
+			<visible>Container(300).HasFocus(2) + Control.IsVisible(300)</visible>
+			<visible>!Skin.String(CustomGamesFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<info>Skin.String(CustomGamesFolder)</info>
+			<visible>Container(300).HasFocus(2) + Control.IsVisible(300)</visible>
+			<visible>Skin.String(CustomGamesFolder)</visible>
+		</control>
+		
+		<control type="multiimage">
+			<include>Background_SingleImage</include>
+			<imagepath>backdrops/default_movies</imagepath>
+			<info>Skin.String(CustomVideo)</info>
+			<visible>Container(300).HasFocus(8) + Control.IsVisible(300)</visible>
+			<visible>!Skin.String(CustomVideoFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<info>Skin.String(CustomVideoFolder)</info>
+			<visible>Container(300).HasFocus(8) + Control.IsVisible(300)</visible>
+			<visible>Skin.String(CustomVideoFolder)</visible>
+		</control>		
+
+		<control type="multiimage">
+			<include>Background_SingleImage</include>
+			<imagepath>backdrops/default_movies</imagepath>
+			<info>Skin.String(CustomMovies)</info>
+			<visible>[Container(300).HasFocus(6) + Control.IsVisible(300)]</visible>
+			<visible>!Skin.String(CustomMoviesFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<info>Skin.String(CustomMoviesFolder)</info>
+			<visible>[Container(300).HasFocus(6) + Control.IsVisible(300)]</visible>
+			<visible>Skin.String(CustomMoviesFolder)</visible>			
+		</control>
+
+		<control type="multiimage">
+			<include>Background_SingleImage</include>
+			<imagepath>backdrops/default_music</imagepath>
+			<info>Skin.String(CustomMusic)</info>
+			<visible>Container(300).HasFocus(1) + Control.IsVisible(300)</visible>
+			<visible>!Skin.String(CustomMusicFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<info>Skin.String(CustomMusicFolder)</info>
+			<visible>Container(300).HasFocus(1) + Control.IsVisible(300)</visible>
+			<visible>Skin.String(CustomMusicFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_SingleImage</include>
+			<imagepath>backdrops/default_tvshows</imagepath>
+			<info>Skin.String(CustomTV)</info>
+			<visible>Container(300).HasFocus(7) + Control.IsVisible(300)</visible>
+			<visible>!Skin.String(CustomTVFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<info>Skin.String(CustomTVFolder)</info>
+			<visible>Container(300).HasFocus(7) + Control.IsVisible(300)</visible>
+			<visible>Skin.String(CustomTVFolder)</visible>
+		</control>
+		
+		<control type="multiimage">
+			<include>Background_SingleImage</include>
+			<imagepath>backdrops/default_scripts</imagepath>
+			<info>Skin.String(CustomScripts)</info>
+			<visible>Container(300).HasFocus(24) + Control.IsVisible(300)</visible>
+			<visible>!Skin.String(CustomScriptsFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<info>Skin.String(CustomScriptsFolder)</info>
+			<visible>Container(300).HasFocus(24) + Control.IsVisible(300)</visible>
+			<visible>Skin.String(CustomScriptsFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_SingleImage</include>
+			<imagepath>backdrops/default_movies</imagepath>
+			<info>Skin.String(CustomPlayDVD)</info>
+			<visible>Container(300).HasFocus(13) + Control.IsVisible(300)</visible>
+			<visible>!Skin.String(CustomPlayDVDFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<info>Skin.String(CustomPlayDVDFolder)</info>
+			<visible>Container(300).HasFocus(13) + Control.IsVisible(300)</visible>
+			<visible>Skin.String(CustomPlayDVDFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_SingleImage</include>
+			<imagepath>backdrops/default_assistant</imagepath>
+			<info>Skin.String(CustomAssistant)</info>
+			<visible>Container(300).HasFocus(21) + Control.IsVisible(300)</visible>
+			<visible>!Skin.String(CustomAssistantFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<info>Skin.String(CustomAssistantFolder)</info>
+			<visible>Container(300).HasFocus(21) + Control.IsVisible(300)</visible>
+			<visible>Skin.String(CustomAssistantFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_SingleImage</include>
+			<imagepath>backdrops/default_settings</imagepath>
+			<info>Skin.String(CustomSignOut)</info>
+			<visible>Container(300).HasFocus(23) + Control.IsVisible(300)</visible>
+			<visible>!Skin.String(CustomSignOutFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<info>Skin.String(CustomSignOutFolder)</info>
+			<visible>Container(300).HasFocus(23) + Control.IsVisible(300)</visible>
+			<visible>Skin.String(CustomSignOutFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_SingleImage</include>
+			<imagepath>backdrops/default_settings</imagepath>
+			<info>Skin.String(CustomShutdown)</info>
+			<visible>Container(300).HasFocus(22) + Control.IsVisible(300)</visible>
+			<visible>!Skin.String(CustomShutdownFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<info>Skin.String(CustomShutdownFolder)</info>
+			<visible>Container(300).HasFocus(22) + Control.IsVisible(300)</visible>
+			<visible>Skin.String(CustomShutdownFolder)</visible>
+		</control>			
+		
+	</include>
+	
+	<include name="Background_VirtualWallpaper">
+
+		<control type="multiimage">
+			<include>Background_VirtualSingleImage</include>
+			<imagepath>backdrops/default_settings</imagepath>
+			<info>Skin.String(CustomSettings)</info>			
+			<visible>[Container(300).HasFocus(9) + Control.IsVisible(300)] | [Container(301).HasFocus(9) + Control.IsVisible(301)]</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_VirtualSingleImage</include>
+			<imagepath>backdrops/default_pictures</imagepath>
+			<info>Skin.String(CustomPictures)</info>
+			<visible>[Container(301).HasFocus(5) + Control.IsVisible(301)] | [Container(300).HasFocus(5) + Control.IsVisible(300)]</visible>
+			<visible>!Skin.String(CustomPicturesFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_VirtualImageFolder</include>
+			<info>Skin.String(CustomPicturesFolder)</info>
+			<visible>[Container(301).HasFocus(5) + Control.IsVisible(301)] | [Container(300).HasFocus(5) + Control.IsVisible(300)]</visible>
+			<visible>Skin.String(CustomPicturesFolder)</visible>			
+		</control>
+
+		<control type="multiimage">
+			<include>Background_VirtualSingleImage</include>
+			<imagepath>backdrops/winter</imagepath>
+			<info>Skin.String(CustomWeather)</info>
+			<visible>[Container(301).HasFocus(10) + Control.IsVisible(301)] | [Container(300).HasFocus(10) + Control.IsVisible(300)]</visible>
+			<visible>!Skin.String(CustomWeatherFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_VirtualImageFolder</include>
+			<info>Skin.String(CustomWeatherFolder)</info>
+			<visible>[Container(301).HasFocus(10) + Control.IsVisible(301)] | [Container(300).HasFocus(10) + Control.IsVisible(300)]</visible>
+			<visible>Skin.String(CustomWeatherFolder)</visible>			
+		</control>
+
+		<control type="multiimage">
+			<include>Background_VirtualSingleImage</include>
+			<imagepath>backdrops/default_games</imagepath>
+			<info>Skin.String(CustomGames)</info>
+			<visible>[Container(301).HasFocus(2) + Control.IsVisible(301)] | [Container(300).HasFocus(2) + Control.IsVisible(300)]</visible>
+			<visible>!Skin.String(CustomGamesFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_VirtualImageFolder</include>
+			<info>Skin.String(CustomGamesFolder)</info>
+			<visible>[Container(301).HasFocus(2) + Control.IsVisible(301)] | [Container(300).HasFocus(2) + Control.IsVisible(300)]</visible>
+			<visible>Skin.String(CustomGamesFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_VirtualSingleImage</include>
+			<imagepath>backdrops/default_movies</imagepath>
+			<info>Skin.String(CustomMovies)</info>
+			<visible>[Container(300).HasFocus(6) + Control.IsVisible(300)] | [Container(301).HasFocus(6) + Control.IsVisible(301)]</visible>
+			<visible>!Skin.String(CustomMoviesFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_VirtualImageFolder</include>
+			<info>Skin.String(CustomMoviesFolder)</info>
+			<visible>[Container(300).HasFocus(6) + Control.IsVisible(300)] | [Container(301).HasFocus(6) + Control.IsVisible(301)]</visible>
+			<visible>Skin.String(CustomMoviesFolder)</visible>
+		</control>
+		
+		<control type="multiimage">
+			<include>Background_VirtualSingleImage</include>
+			<imagepath>backdrops/default_movies</imagepath>
+			<info>Skin.String(CustomVideo)</info>
+			<visible>[Container(300).HasFocus(8) + Control.IsVisible(300)] | [Container(301).HasFocus(8) + Control.IsVisible(301)]</visible>
+			<visible>!Skin.String(CustomVideoFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_VirtualImageFolder</include>
+			<info>Skin.String(CustomVideoFolder)</info>
+			<visible>[Container(300).HasFocus(8) + Control.IsVisible(300)] | [Container(301).HasFocus(8) + Control.IsVisible(301)]</visible>
+			<visible>Skin.String(CustomVideoFolder)</visible>
+		</control>		
+
+		<control type="multiimage">
+			<include>Background_VirtualSingleImage</include>
+			<imagepath>backdrops/default_music</imagepath>
+			<info>Skin.String(CustomMusic)</info>
+			<visible>[Container(301).HasFocus(1) + Control.IsVisible(301)] | [Container(300).HasFocus(1) + Control.IsVisible(300)]</visible>
+			<visible>!Skin.String(CustomMusicFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_VirtualImageFolder</include>
+			<info>Skin.String(CustomMusicFolder)</info>
+			<visible>[Container(301).HasFocus(1) + Control.IsVisible(301)] | [Container(300).HasFocus(1) + Control.IsVisible(300)]</visible>
+			<visible>Skin.String(CustomMusicFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_VirtualSingleImage</include>
+			<imagepath>backdrops/default_tvshows</imagepath>
+			<info>Skin.String(CustomTV)</info>
+			<visible>[Container(301).HasFocus(7) + Control.IsVisible(301)] | [Container(300).HasFocus(7) + Control.IsVisible(300)]</visible>
+			<visible>!Skin.String(CustomTVFolder)</visible>
+		</control>
+		
+		<control type="multiimage">
+			<include>Background_VirtualImageFolder</include>
+			<info>Skin.String(CustomTVFolder)</info>
+			<visible>[Container(301).HasFocus(7) + Control.IsVisible(301)] | [Container(300).HasFocus(7) + Control.IsVisible(300)]</visible>
+			<visible>Skin.String(CustomTVFolder)</visible>
+		</control>
+		
+		<control type="multiimage">
+			<include>Background_VirtualSingleImage</include>
+			<imagepath>backdrops/default_scripts</imagepath>
+			<info>Skin.String(CustomScripts)</info>
+			<visible>[Container(301).HasFocus(24) + Control.IsVisible(301)] | [Container(300).HasFocus(24) + Control.IsVisible(300)]</visible>
+			<visible>!Skin.String(CustomScriptsFolder)</visible>
+		</control>
+		
+		<control type="multiimage">
+			<include>Background_VirtualImageFolder</include>
+			<info>Skin.String(CustomScriptsFolder)</info>
+			<visible>[Container(301).HasFocus(24) + Control.IsVisible(301)] | [Container(300).HasFocus(24) + Control.IsVisible(300)]</visible>
+			<visible>Skin.String(CustomScriptsFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_VirtualSingleImage</include>
+			<imagepath>backdrops/default_movies</imagepath>
+			<info>Skin.String(CustomPlayDVD)</info>
+			<visible>[Container(300).HasFocus(13) + Control.IsVisible(300)]</visible>
+			<visible>!Skin.String(CustomPlayDVDFolder)</visible>
+		</control>
+		
+		<control type="multiimage">
+			<include>Background_VirtualImageFolder</include>
+			<info>Skin.String(CustomPlayDVDFolder)</info>
+			<visible>[Container(300).HasFocus(13) + Control.IsVisible(300)]</visible>
+			<visible>Skin.String(CustomPlayDVDFolder)</visible>
+		</control>	
+
+		<control type="multiimage">
+			<include>Background_VirtualSingleImage</include>
+			<imagepath>backdrops/default_assistant</imagepath>
+			<info>Skin.String(CustomAssistant)</info>
+			<visible>[Container(301).HasFocus(21) + Control.IsVisible(301)] | [Container(300).HasFocus(21) + Control.IsVisible(300)]</visible>
+			<visible>!Skin.String(CustomAssistantFolder)</visible>
+		</control>
+		
+		<control type="multiimage">
+			<include>Background_VirtualImageFolder</include>
+			<info>Skin.String(CustomAssistantFolder)</info>
+			<visible>[Container(301).HasFocus(21) + Control.IsVisible(301)] | [Container(300).HasFocus(21) + Control.IsVisible(300)]</visible>
+			<visible>Skin.String(CustomAssistantFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_VirtualSingleImage</include>
+			<imagepath>backdrops/default_settings</imagepath>
+			<info>Skin.String(CustomSignOut)</info>
+			<visible>[Container(301).HasFocus(23) + Control.IsVisible(301)] | [Container(300).HasFocus(23) + Control.IsVisible(300)]</visible>
+			<visible>!Skin.String(CustomSignOutFolder)</visible>
+		</control>
+		
+		<control type="multiimage">
+			<include>Background_VirtualImageFolder</include>
+			<info>Skin.String(CustomSignOutFolder)</info>
+			<visible>[Container(301).HasFocus(23) + Control.IsVisible(301)] | [Container(300).HasFocus(23) + Control.IsVisible(300)]</visible>
+			<visible>Skin.String(CustomSignOutFolder)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_VirtualSingleImage</include>
+			<imagepath>backdrops/default_settings</imagepath>
+			<info>Skin.String(CustomShutdown)</info>
+			<visible>[Container(301).HasFocus(22) + Control.IsVisible(301)] | [Container(300).HasFocus(22) + Control.IsVisible(300)]</visible>
+			<visible>!Skin.String(CustomShutdownFolder)</visible>
+		</control>
+		
+		<control type="multiimage">
+			<include>Background_VirtualImageFolder</include>
+			<info>Skin.String(CustomShutdownFolder)</info>
+			<visible>[Container(301).HasFocus(22) + Control.IsVisible(301)] | [Container(300).HasFocus(22) + Control.IsVisible(300)]</visible>
+			<visible>Skin.String(CustomShutdownFolder)</visible>
+		</control>		
+
+	</include>
+
+</includes>

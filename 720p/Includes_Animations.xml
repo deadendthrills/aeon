@@ -1,0 +1,267 @@
+<includes>
+
+<!-- Common -->
+
+	<include name="Animation_CommonFade">
+		<animation effect="fade" time="200">Visible</animation>
+		<animation effect="fade" time="200">Hidden</animation>
+		<animation effect="fade" time="500">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</include>
+	
+	<include name="Animation_CommonFadeIn">
+		<animation effect="fade" time="200">Visible</animation>
+		<animation effect="fade" time="500">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</include>	
+	
+	<include name="Animation_CommonFadeFocus">
+		<animation effect="fade" time="200">Visible</animation>
+		<animation effect="fade" time="200">Hidden</animation>
+		<animation effect="fade" time="500">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+		<animation effect="fade" time="200" start="0" end="100">Focus</animation>
+	</include>
+	
+	<include name="Animation_ButtonFocusFade">
+		<animation effect="fade" start="0" end="100" time="200">Focus</animation>
+		<animation effect="fade" start="100" end="0" time="200">Unfocus</animation>
+	</include>
+
+	<include name="Animation_ButtonFocusFade_fix">
+		<animation effect="fade" start="100" end="0" time="200">Focus</animation>
+		<animation effect="fade" start="0" end="100" time="200">Unfocus</animation>
+	</include>	
+	
+	<include name="Animation_CommonFade200">
+		<animation effect="fade" time="200">Visible</animation>
+		<animation effect="fade" time="200">Hidden</animation>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</include>
+	
+	<include name="Animation_FanartFade">
+		<animation effect="fade" time="400">Visible</animation>
+		<animation effect="fade" time="400">Hidden</animation>
+		<animation effect="fade" time="400">WindowOpen</animation>
+		<animation effect="fade" time="400">WindowClose</animation>
+	</include>	
+
+	<include name="Animation_VisibleChange200">
+		<animation effect="fade" time="200">Visible</animation>
+		<animation effect="fade" time="200">Hidden</animation>
+	</include>
+	
+	<include name="Animation_VisibleChange400">
+		<animation effect="fade" time="400">Visible</animation>
+		<animation effect="fade" time="400">Hidden</animation>
+	</include>	
+	
+	<include name="Animation_WindowFade600">
+		<animation effect="fade" time="600">WindowOpen</animation>
+		<animation effect="fade" time="600">WindowClose</animation>
+	</include>
+	
+	<include name="Animation_WindowFade200">
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</include>
+	
+	<include name="Animation_OSDFade">
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+		<animation effect="fade" delay="200" time="200">Visible</animation>
+		<animation effect="fade" time="200">Hidden</animation>		
+	</include>
+	
+	<include name="Animation_WelcomeFade">
+		<animation effect="fade" time="600">Visible</animation>
+		<animation effect="fade" time="600">Hidden</animation>
+		<animation effect="fade" time="600">WindowOpen</animation>
+		<animation effect="fade" time="600">WindowClose</animation>
+	</include>
+
+	<include name="Animation_KeyboardFade">
+		<animation effect="fade" time="200">Visible</animation>
+		<animation effect="fade" time="200">Hidden</animation>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</include>
+	
+	<!-- Home page -->
+	
+
+<!-- Dialogs -->
+
+	<include name="Animation_DialogPopup">
+		<animation type="WindowOpen" reversible="false">
+			<effect type="zoom" start="80" end="100" center="640,360" delay="200" easing="out" tween="back" time="300" />
+			<effect type="fade" delay="200" start="0" end="100" time="300" />
+		</animation>
+		<animation type="WindowClose" reversible="false">
+			<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+			<effect type="fade" start="100" end="0" time="300" />
+		</animation>
+		<animation type="Visible" reversible="false">
+			<effect type="zoom" start="80" end="100" center="640,360" delay="200" easing="out" tween="back" time="300" />
+			<effect type="fade" delay="200" start="0" end="100" time="300" />
+		</animation>
+		<animation type="Hidden" reversible="false">
+			<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+			<effect type="fade" start="100" end="0" time="300" />
+		</animation>		
+	</include>
+	
+	<include name="Animation_KeyboardPopup">
+		<animation type="WindowOpen" reversible="false" condition="Skin.HasSetting(keyboardzoom)">
+			<effect type="zoom" start="80" end="130" center="640,360" delay="200" easing="out" tween="back" time="300" />
+			<effect type="fade" delay="200" start="0" end="100" time="300" />
+		</animation>
+		<animation type="WindowClose" reversible="false" condition="Skin.HasSetting(keyboardzoom)">
+			<effect type="zoom" start="130" end="80" center="640,360" easing="in" tween="back" time="300" />
+			<effect type="fade" start="100" end="0" time="300" />
+		</animation>
+		<animation type="Visible" reversible="false" condition="Skin.HasSetting(keyboardzoom)">
+			<effect type="zoom" start="80" end="130" center="640,360" delay="200" easing="out" tween="back" time="300" />
+			<effect type="fade" delay="200" start="0" end="100" time="300" />
+		</animation>
+		<animation type="Hidden" reversible="false" condition="Skin.HasSetting(keyboardzoom)">
+			<effect type="zoom" start="130" end="80" center="640,360" easing="in" tween="back" time="300" />
+			<effect type="fade" start="100" end="0" time="300" />
+		</animation>
+
+		<animation type="WindowOpen" reversible="false" condition="!Skin.HasSetting(keyboardzoom)">
+			<effect type="zoom" start="80" end="100" center="640,360" delay="200" easing="out" tween="back" time="300" />
+			<effect type="fade" delay="200" start="0" end="100" time="300" />
+		</animation>
+		<animation type="WindowClose" reversible="false" condition="!Skin.HasSetting(keyboardzoom)">
+			<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+			<effect type="fade" start="100" end="0" time="300" />
+		</animation>
+		<animation type="Visible" reversible="false" condition="!Skin.HasSetting(keyboardzoom)">
+			<effect type="zoom" start="80" end="100" center="640,360" delay="200" easing="out" tween="back" time="300" />
+			<effect type="fade" delay="200" start="0" end="100" time="300" />
+		</animation>
+		<animation type="Hidden" reversible="false" condition="!Skin.HasSetting(keyboardzoom)">
+			<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+			<effect type="fade" start="100" end="0" time="300" />
+		</animation>		
+	</include>	
+	
+	<!-- Media windows -->
+
+	<include name="Animation_ViewChangeFade">
+		<animation effect="fade" start="100" end="0" time="400" condition="Window.IsActive(603)">Conditional</animation>	
+	</include>
+	
+	<include name="Animation_MediaMenuPosition">
+		<animation effect="slide" time="0" end="0,85" condition="![Control.IsVisible(57) | Control.IsVisible(53)]">Conditional</animation>
+	</include>
+
+	<include name="Animation_MediaMenuSlide">
+		<animation type="Conditional" condition="[Control.IsVisible(51) + Control.HasFocus(51)] | [Control.IsVisible(58) + Control.HasFocus(58)] | [Control.IsVisible(57) + [Control.HasFocus(57) | Control.HasFocus(94) | Control.HasFocus(71) | Control.HasFocus(85) | Control.HasFocus(60)]] | [Control.IsVisible(53) + [Control.HasFocus(53) | Control.HasFocus(71) | Control.HasFocus(85)]] | [Control.IsVisible(59) + Control.HasFocus(59)]">
+			<effect type="slide" end="0,-57" time="400" easing="in" tween="cubic" />
+			<effect type="fade" start="100" end="0" time="400" />
+		</animation>
+	</include>
+
+	<include name="Animation_WindowRSS">
+		<animation type="visible" reversible="false">
+			<effect type="slide" start="1100,0" end="0,0" time="200" delay="600" easing="out" tween="quadratic" />
+			<effect type="fade" start="0" end="100" time="200" delay="600" />
+		</animation>
+		<animation type="hidden" reversible="false">
+			<effect type="fade" start="100" end="0" time="200" />
+		</animation>
+		<include>Animation_CommonFade</include>
+	</include>
+
+	<include name="Animation_OpenCloseZoom">
+		<animation type="WindowOpen" condition="!Skin.HasSetting(nozooms)" reversible="false">
+			<effect type="zoom" start="150" end="100" center="640,360" time="400" tween="quadratic" easing="out" />
+			<effect type="fade" start="0" end="100" time="400" />
+		</animation>
+		<animation type="WindowClose" condition="!Skin.HasSetting(nozooms)" reversible="false">
+			<effect type="fade" start="100" end="0" time="300" />
+		</animation>
+		<animation effect="fade" condition="Skin.HasSetting(nozooms)" time="500">WindowOpen</animation>
+		<animation effect="fade" condition="Skin.HasSetting(nozooms)" time="200">WindowClose</animation>
+	</include>
+
+<include name="Animation_SettingsButtonFade">
+	<animation effect="fade" time="125">Visible</animation>
+	<animation effect="fade" time="125">Hidden</animation>
+	<animation effect="fade" time="125">WindowOpen</animation>
+	<animation effect="fade" time="125">WindowClose</animation>
+</include>
+
+<include name="common-fade-quick">
+	<animation effect="fade" time="0">Visible</animation>
+	<animation effect="fade" time="0">Hidden</animation>
+	<animation effect="fade" time="500">WindowOpen</animation>
+	<animation effect="fade" time="200">WindowClose</animation>
+</include>
+
+<include name="Animation_CommonFadeOpenClose">
+	<animation effect="fade" time="0">Visible</animation>
+	<animation effect="fade" time="0">Hidden</animation>
+	<animation effect="fade" time="500">WindowOpen</animation>
+	<animation effect="fade" time="200">WindowClose</animation>
+</include>
+
+<include name="Animation_BackgroundFade">
+    <animation effect="fade" time="500">WindowOpen</animation>
+    <animation effect="fade" time="300">WindowClose</animation>
+    <animation effect="fade" time="800">Visible</animation>
+    <animation effect="fade" delay = "300" time="800" condition="![Window.IsActive(2001) | Window.IsActive(2003)]">Hidden</animation>
+</include>
+
+<include name="Animation_WelcomeFade">
+    <animation effect="fade" time="2000">WindowOpen</animation>
+    <animation effect="fade" time="2000">WindowClose</animation>
+</include>
+
+<include name="Animation_WindowBackgroundFade">
+	<animation effect="fade" time="200">Hidden</animation>
+	<animation effect="fade" time="500">WindowOpen</animation>
+	<animation effect="fade" time="300">WindowClose</animation>
+</include>
+
+<include name="Animation_FanartFade">
+		<animation effect="fade" end="0" time="200">WindowClose</animation>
+		<animation effect="fade" start="0" delay="4000" end="100" time="800">WindowOpen</animation>
+		<animation effect="fade" start="0" end="100" time="800">Visible</animation>
+</include>
+
+
+
+<include name="Animation_HideShowcase">
+	<animation type="Conditional" reversible="true" condition="Control.HasFocus(94)">
+		<effect type="slide" start="0,0" end="0,400" time="400" tween="cubic" easing="in" />
+	</animation>
+</include>
+
+<!-- Settings and Assistant -->
+
+<include name="Animation_SettingsInternalPanel">
+	<animation effect="fade" time="125">Visible</animation>
+	<animation effect="fade" time="125">Hidden</animation>
+	<animation effect="fade" time="200">WindowOpen</animation>
+	<animation effect="fade" time="200">WindowClose</animation>
+</include>
+
+<include name="Animation_SettingsSlide">
+	<animation effect="fade" time="500">Visible</animation>
+	<animation effect="fade" time="200">Hidden</animation>
+	<animation effect="fade" time="500">WindowOpen</animation>
+	<animation effect="fade" time="200">WindowClose</animation>	
+</include>
+
+<include name="Animation_TutorialFade">
+    <animation effect="fade" time="200">WindowOpen</animation>
+    <animation effect="fade" time="200">WindowClose</animation>
+    <animation effect="fade" time="200">Visible</animation>
+    <animation effect="fade" time="200">Hidden</animation>
+</include>
+	
+</includes>

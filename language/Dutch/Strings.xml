@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes" ?>
+<!-- $Revision: 204$ -->
+<!--  strings 31000 thru 31999 reserved for skins  -->
+
+ <strings>
+	<string id="31000">1.0 (STARK)</string> <!-- DO NOT CHANGE -->
+	<string id="31001"></string> <!-- RESERVED FOR CREDITS -->
+	<string id="31002"></string> <!-- RESERVED FOR CREDITS -->
+	<string id="31003"></string> <!-- RESERVED FOR CREDITS -->
+	<string id="31004">HERSTEL ACHTERGROND</string>
+	<string id="31005">ITEMS</string>
+	<string id="31006">SPEELT NU</string>
+	<string id="31007">PAUSE</string>
+	<string id="31008">TEMP</string>
+	<string id="31009">EENHEDEN</string>
+  
+<!-- Main Menu -->
+  
+	<string id="31010">MUZIEK</string>
+	<string id="31011">GAMES</string>
+	<string id="31012">FOTO'S</string>
+	<string id="31013">FILMS</string>
+	<string id="31014">TV SERIES</string>
+	<string id="31015">VIDEOS</string>
+	<string id="31016">SETTINGS</string>
+	<string id="31017">WEER</string>
+	<string id="31018">SPEEL DISC</string>
+	<string id="31019">AFSLUITEN</string>
+	<string id="31020">SCRIPTS</string>
+	<string id="31021">ASSISTENT</string>
+
+<!-- Media Window titles -->
+ 
+	<string id="31030">GAMES</string> 
+	<string id="31031">AFBEELDINGEN</string>
+	<string id="31032">FILMS</string> 
+	<string id="31033">TV</string>
+	<string id="31034">VIDEOS</string>
+	<string id="31035">WEER</string>
+	<string id="31036">SCRIPTS</string>
+	<string id="31037">MUZIEK</string>
+	<string id="31038">AFSPEELLIJST</string>
+	<string id="31039">EDITOR</string>
+	<string id="31040">SPEELT:</string>
+	<string id="31041">DOOR:</string>
+
+<!-- Media Window options -->
+  
+	<string id="31050">BEKIJK:</string> 
+	<string id="31051">WILLEKEURIG: UIT</string>
+	<string id="31052">WILLEKEURIG: AAN</string> 
+	<string id="31053">BIBLIOTHEEK: UIT</string> 
+	<string id="31054">CONFIGURATIE</string> 
+	<string id="31055">STAPEL: AAN</string> 
+	<string id="31056">STAPEL: UIT</string>
+	<string id="31057">BESTANDEN</string>
+	<string id="31058">VERBERG BEKEKEN: AAN</string>
+	<string id="31059">VERBERG BEKEKEN: UIT</string>
+	<string id="31060">INDELING: VLAK</string>
+	<string id="31061">INDELING: FLOW</string>
+	<string id="31062">SEIZOEN</string>
+	<string id="31063">AFLEVERING</string>
+	<string id="31064">FANART: UIT</string>
+	<string id="31065">FANART: AAN</string>
+	<string id="31066">ACHTERGROND: AAN</string>
+	<string id="31067">ACHTERGROND: UIT</string>
+	<string id="31068">BIBLIOTHEEK: AAN</string>
+	<string id="31069">LABELS: AAN</string>
+	<string id="31070">LABELS: UIT</string>
+	<string id="31071">THUMBS: ENKEL</string>
+	<string id="31072">THUMBS: MULTI</string>
+	<string id="31073">RASTER: STANDAARD</string>
+	<string id="31074">RASTER: MAX</string>
+  
+<!-- Aeon Customisation Virtual Home page labels -->
+  
+	<string id="31080">ACHTERGRONDEN</string>
+	<string id="31081">VERANDER ACHTERGRONDEN</string>
+	<string id="31082">GA LINKS/RECHTS OM TE ZOEKEN, SELECTEER OM TE VERANDEREN</string>
+	<string id="31083">EIGEN ACHTERGRONDEN</string>
+	<string id="31084">KIES ACHTERGROND TYPE</string>
+	<string id="31085">NAAR BOVEN VOOR ENKELE ACHTERGROND, NAAR BENEDEN VOOR DIAVOORSTELLING MAP</string>
+	<string id="31086">SNELKOPPELINGEN</string>
+	<string id="31087">VERANDER HOME MENU SNELKOPPELINGEN</string>
+	<string id="31088">GA LINKS/RECHTS OM TE ZOEKEN, SELECTEER OM TE VERANDEREN</string>
+	<string id="31089">AANKLEDING</string>
+	<string id="31090">ORDEN HOME PAGINA OBJECTEN</string>
+	<string id="31091">GA LINKS/RECHTS OM TE ZOEKEN, SELECTEER OM NIEUWE PLAATS TE BEPALEN</string>
+	<string id="31092">SELECTEER OM PAATS HOOFDMENU TE BEPALEN</string>
+	<string id="31093">SELECTEER OM TIJDPANEEL TE KOPPELEN</string>
+	<string id="31094">SELECTEER OM TIJDPANEEL TE ONTKOPPELEN</string>
+	<string id="31095">SELECTEER OM RSS FEED TE KOPPELEN</string>
+	<string id="31096">SELECTEER OM RSS FEED TE ONTKOPPELEN</string>
+	<string id="31097">VERWIJDER INSTELLINGEN</string>
+	<string id="31098">VERWIJDER HOME INSTELLINGEN</string>
+	<string id="31099">GA LINKS/RECHTS OM BUTTON IN OORSPRONKELIJKE TOESTAND TERUG TE ZETTEN</string>
+	<string id="31100">WAARSCHUWING: DIT PROCES IS ONOMKEERBAAR</string>
+	<string id="31101">BEWEEG CURSOR OM TE ANNULEREN, SELECTEER OM DOOR TE GAAN</string>
+	<string id="31102">KIES</string>
+	<string id="31103">ACHTERGROND TYPE</string>
+	<string id="31104">VERANDER</string>
+	<string id="31105">SNELKOPPELING</string>
+  
+<!-- Aeon Customisation Menu labels -->
+  
+	<string id="31120">ACHTERGRONDEN</string>
+	<string id="31121">PERSONALISEER AEON</string>
+	<string id="31122">SNELKOPPELINGEN</string>
+	<string id="31123">BEWERK HOME MENU</string>
+	<string id="31124">AANKLEDING</string> 
+	<string id="31125">TIJD EN FEEDS</string>
+	<string id="31126">VERWIJDEREN</string> 
+	<string id="31127">VERWIJDER EIGEN INSTELLINGEN</string>
+
+<!-- XBMC Settings Menu labels -->
+  
+	<string id="31140">VIDEO</string>
+	<string id="31141">AFSPELEN EN BIBLIOTHEEK</string>
+	<string id="31142">MUZIEK</string>
+	<string id="31143">AFSPELEN EN BIBLIOTHEEK</string>
+	<string id="31144">PROGRAMMA'S</string>
+	<string id="31145">GAMES EN APPLICATIES</string>
+	<string id="31146">AFBEELDINGEN</string>
+	<string id="31147">VERKKENNER EN DIAVOORSTELLING</string>
+	<string id="31148">WEER</string>
+	<string id="31149">LOCATIE EN UITERLIJK</string>
+	<string id="31150">NETWERK</string>
+	<string id="31151">LOKAAL EN INTERNET</string>
+	<string id="31152">SYSTEEM</string>
+	<string id="31153">CACHE EN HARDWARE</string>
+	<string id="31154">UITERLIJK</string>
+	<string id="31155">INTERFACE EN WEERGAVE</string>
+	<string id="31156">AANPASSEN</string>
+	<string id="31157">PERSONALISEER AEON</string>
+	<string id="31158">GEAVANCEERD</string>
+	<string id="31159">UITGEBREIDE AEON OPTIES</string>
+	<string id="31160">PROFIELEN</string>
+	<string id="31161">GEBRUIKERS ACCOUNTS</string>
+	<string id="31162">INLOG SCHERM</string>
+	<string id="31163">OPTIES</string>
+	<string id="31164">INLOG SCHERM</string>
+	<string id="31165">USERS</string>
+	<string id="31166">BEHEER PROFIELEN</string>
+
+<!--  Button / Shutdown Menu  --> 
+
+	<string id="31200">SETTINGS</string> 
+	<string id="31201">AANPASSEN</string>
+	<string id="31202">ASSISTENT</string> 
+	<string id="31203">HOME VISUALISATIE: UIT</string>
+	<string id="31204">HOME VISUALISATIE: AAN</string> 
+	<string id="31205">SPEELT NU</string>
+	<string id="31206">AFSLUIT TIMER</string> 
+	<string id="31207">HERSTART</string> 
+	<string id="31208">AFSLUITEN</string>
+	<string id="31209">UITLOGGEN</string> 
+
+<!--  Set Content / Add Source dialogs  --> 
+  
+	<string id="31220">MAP BEVAT:</string>
+	<string id="31221">GEEF MAPPEN OP OF VERKEN MEDIA LOCATIES</string>
+	<string id="31222">KIES EEN NAAM VOOR DEZE SHARE</string>
+	<string id="31223">LIJST</string>
+	<string id="31224">TEGELS</string>
+
+<!-- Aeon Advanced Menu labels -->
+  
+	<string id="31230">AEON</string> 
+	<string id="31231">OPTIES</string>
+	<string id="31232">ALGEMEEN</string>
+	<string id="31233">ALGEMENE SETTINGS</string>
+	<string id="31234">HOME</string>
+	<string id="31235">HOOFDPAGINA OPTIES</string>
+	<string id="31236">WEERGAVES</string>
+	<string id="31237">MEDIA VERKENNERS</string>
+	<string id="31238">PRESETS</string>
+	<string id="31239">SNELLE CONFIGURATIES</string>
+	<string id="31240">FANART</string>
+	<string id="31241">CONTEXTUEEL ARTWORK</string>
+	<string id="31242">ALLES AAN</string>
+	<string id="31243">ALLES UIT</string>
+	<string id="31244">MENUS</string>
+	<string id="31245">INDELING VERKENNER</string>
+  
+<!-- Aeon Advanced options -->
+  
+	<string id="31260">GEEF TIJDPANEEL WEER</string>
+	<string id="31261">HOME PAGINA WEER POP-UP</string>
+	<string id="31262">CONTEXTUEEL ARTWORK (FANART) VOOR MUZIEK</string>
+	<string id="31264">CONTEXTUEEL ARTWORK (FANART) VOOR FILMS</string>
+	<string id="31265">CONTEXTUEEL ARTWORK (FANART) VOOR TV</string>
+	<string id="31266">CONTEXTUEEL ARTWORK VOOR AFBEELDINGEN</string>
+	<string id="31268">REDUCEER PANEEL/LIJST WEERGAVE TRANSPARANTIE</string>
+	<string id="31270">ZOOM ANTIMATIES</string>
+	<string id="31271">VERVAAG PANEEL/LIJST VERGAVE MENUS WANNEER INACTIEF</string>
+	<string id="31278">LAAT ACHTERGRONDEN ZIEN IN MUUR WEERGAVE</string>
+	<string id="31279">CONTEXTUEEL ARTWORK (FANART) VOOR VOLLEDIG SCHERM INFO PAGINA'S</string>
+	<string id="31280">ONTWIKKELAAR MODUS</string>
+	<string id="31281">MEDIALABELS (STUDIO ICONEN, BRON INFO, ETC.)</string>
+	<string id="31284">HOME PAGINA VISUALISATIE</string>
+	<string id="31285">GEBRUIK TEKST VOOR FILM INFO WAARDERING (GEBRUIK STERREN ALS NIET ACTIEF)</string>
+	<string id="31286">GEBRUIK TEKST VOOR MUZIEK INFO WAARDERING (GEBRUIK STERREN ALS NIET ACTIEF)</string>	
+	<string id="31287">KIOSK MODUS (VERWIJDERD MENU VAN MEDIA VENSTERS)</string>
+	<string id="31288">FILM ZOEKEN (FILM BIBLIOTHEEK)</string>
+	<string id="31289">TV ZOEKEN (TV BIBLIOTHEEK)</string>
+	<string id="31290">SETTINGS SNELKOPPELING (ALLE MEDIA)</string>
+	<string id="31291">BEKEKEN/NIET BEKEKEN FILM (FILM BIBLIOTHEEK)</string>
+	<string id="31292">BEKEKEN/NIET BEKEKEN TV (TV BIBLIOTHEEK)</string>
+	<string id="31293">BESTANDEN WEERGAVE SNELKOPPELING (FILM EN TV BIBLIOTHEKEN)</string>
+	<string id="31294">GROTER TOETSENBORD / NUMERIEK TOESTENBORD</string>
+	<string id="31295">VERBETERDE LEESBAARHEID (GROTERE TIJD EN RSS)</string>
+	<string id="31296">ENKEL/MULTI THUMBNAILS TOGGLE</string>
+	<string id="31297">GEBRUIK ENKELE THUMBNAIL VOOR MUZIEKLIJST</string>
+	<string id="31298">GEBRUIK ENKELE THUMBNAIL VOOR FILMLIJST</string>
+	<string id="31299">GEEF RSS / SPEELT NU WEER IN SHOWCASE WEERGAVE</string>
+	
+<!-- XBMC Settings Menu headings -->
+	
+	<string id="31300">VIDEO</string>
+	<string id="31301">AAFBEELDINGEN</string>
+	<string id="31302">WEERGAVE</string>
+	<string id="31303">NETWERK</string>
+	<string id="31304">SYSTEEM</string>
+	<string id="31305">MUZIEK</string>
+	<string id="31306">WEER</string>
+	<string id="31307">PROGRAMMA'S</string>
+	<string id="31308">OPTIES</string>
+	
+<!-- XBMC Settings Subtitles -->
+	
+	<string id="31320">BEKIJK BASIS</string>
+	<string id="31321">DATABASE TOEZICHT</string>
+	<string id="31322">KWALITEIT EN CALIBRATIE</string>
+	<string id="31323">TYPE EN KLEUR</string>
+	<string id="31324">lABELS EN BEELDSCHERM</string>
+	<string id="31325">TIMING EN EFFECTEN</string>
+	<string id="31326">SKINS EN RSS FEEDS</string>
+	<string id="31327">TAAL EN LOCATIE</string>
+	<string id="31328">RESOLUTIE EN CALIBRATIE</string>
+	<string id="31329">ITEMS EN VERWIJDERING</string>
+	<string id="31330">TIMING EN INHOUD</string>
+	<string id="31331">PROXIES EN LOOKUPS</string>
+	<string id="31332">HTTP INTERFACE</string>
+	<string id="31333">WERKGROEP EN LOGIN</string>
+	<string id="31334">CLIENT EN SHARES</string>
+	<string id="31335">POORTEN EN TIMINGS</string>
+	<string id="31336">LOGGING EN TIMEOUTS</string>
+	<string id="31337">INPUT END VERTRAGINGEN</string>
+	<string id="31338">MEDIA TYPES</string>
+	<string id="31339">LOKAAL EN NETWERK</string>
+	<string id="31340">ANALOOG / DIGITAAL</string>
+	<string id="31341">INHOUD RESTRICTIE</string>
+	<string id="31342">OPNAMES EN VISUALISATIE</string> 
+	<string id="31343">DATABASE TOEZICHT</string> 
+	<string id="31344">HARDWARE EN NIVEAUS</string> 
+	<string id="31345">ID LABELS EN LOOKUPS</string> 
+	<string id="31346">MIDDELEN EN PROFIEL</string> 
+	<string id="31347">MAPPEN EN SETUP</string>
+	<string id="31348">VOLUME EN VOICE MASKS</string> 
+	<string id="31349">AREA CODES EN REGIO</string>
+	<string id="31350">VERKENNER DEFAULTS</string>
+	<string id="31351">ONLINE BRONNEN</string>
+
+<!--  Fullscreen info panel  -->
+
+	<string id="31400">GEEN POSTER?[CR][CR]CONTROLEER OF JE EEN APARTE "BIG" THUMB HEBT[CR]NAAST JE FILM BESTAND EN DAT[CR]DEZE MET ELKAAR OVEREENKOMEN [CR](BARBARELLA.MKV-BIG.PNG)[CR][CR]CONTROLEER DE AEON HANDLEIDING VOOR MEER DETAILS</string>
+	<string id="31401">SCHRIJVER</string>
+	<string id="31402">REGISSEUR</string>
+	<string id="31403">AFLEVERINGEN:</string>
+	<string id="31404">STUDIO:</string>
+	<string id="31405">ACTEURS</string>
+	<string id="31406">AFLEVERINGEN</string>
+	<string id="31407">PREMIERE</string>
+	<string id="31408">IMDB</string>
+	<string id="31409">TRAILER</string>
+	<string id="31410">VERVERS</string>
+	<string id="31411">BEKIJK</string>
+	<string id="31412">FANART</string>
+	<string id="31413">STEMMING</string>
+	<string id="31414">PLOT DETAILS NIET BESCHIKBAAR</string>
+	<string id="31415">BIOGRAFIE NIET BESCHIKBAAR</string>
+	<string id="31416">GENRES</string>
+	<string id="31417">RATING</string>
+	<string id="31418">THUMB</string>
+	<string id="31419">VERVERS</string>
+	<string id="31420">HERVAT</string>
+	<string id="31421">SPEEL</string>
+	<string id="31422">NOTITIES</string>
+	<string id="31423">LABEL</string>
+	<string id="31424">ALBUM REVIEW NIET BESCHIKBAAR</string>
+	<string id="31425">INFO NIET BESCHIKBAAR</string>
+	<string id="31426">NUMMER</string>
+	<string id="31427">DUUR</string>
+	<string id="31428">GEEN COMMENTAAR</string>
+	<string id="31429">ALBUM INFO</string>
+	<string id="31430">TOEPASSEN</string>
+	<string id="31431">DRUK NAAR BOVEN OF BENEDEN OM BEOORDELING AAN TE PASSEN</string>
+	<string id="31432">SEIZOEN</string>
+	<string id="31433">AFLEVERING</string>
+
+<!--  Aeon Assistant  -->
+
+	<string id="31500">NIEUWS</string>
+	<string id="31501">ONLINE AEON UPDATES</string>
+	<string id="31502">BELANGRIJKE ONDERDELEN</string>
+	<string id="31503">XBMC STATISTIEKEN</string>
+	<string id="31504">CREDITS</string>
+	<string id="31505">AUTEUR AND DANKBETUIGINGEN</string>
+	<string id="31510">ASSISTENT</string>
+	<string id="31511">LAATSTE NIEUWS</string>
+	<string id="31512">KEER HIER TERUG VOOR PERIODIEKE UPDATES VAN DE AEON SERVER</string>
+	<string id="31520">START RONDLEIDING</string>
+	<string id="31521">AEON WELKOM PAGINA</string>
+	<string id="31522">TERUG NAAR BASIS</string>
+	<string id="31523">DRUK OP SELECT OM DE AEON INTRODUCTIE RONDLEIDING OPNIEUW AF TE SPELEN</string>
+	<string id="31524">CONTACT ZOEKEN MET AEON SERVER</string>
+	
+<!--  Aeon Assistant Tutorials  -->
+
+	<!-- 31550-31590 RESERVED -->
+	
+<!-- Aeon Assistant vitals -->
+
+	<string id="31598">XBMC BUILD DATUM[CR]AEON VERSIE[CR]HUIDIGE THEMA[CR]TAAL[CR]SCHERM RESOLUTIE[CR]BESCHIKBAAR GEHEUGEN[CR]SYSTEEM SCHIJF RUIMTE[CR]CPU TEMPERATUUR[CR]GPU TEMPERATUUR[CR]SYSTEEM UPTIME[CR]ONLINE STATUS[CR]IP ADRES[CR]OPTISCHE DRIVE</string>
+	
+<!-- Debug mode -->
+
+	<string id="31600">AEON VERSIE: 1.0</string>
+	<string id="31601">SYSTEEM GEHEUGEN VRIJ:</string>
+	<string id="31602">XBMC BUILD DATUM:</string>
+	<string id="31603">FPS:</string>
+	<string id="31604">HUIDIGE VENSTER ID:</string>
+	<string id="31605">HUIDIGE FOCUS:</string>
+	<string id="31606">ACTIEVE WEERGAVE TYPE:</string>
+	<string id="31607">VERVERS</string>
+	<string id="31608">INFORMATIE AAN/UIT</string>
+
+<!-- Welcome screen / Aeon Tour -->
+<!-- ENSURE LOWER/UPPER CASE IS OBEYED --> 
+
+	<string id="31650">Welkom bij Aeon, de nieuwe plaats voor home entertainment.[CR]De wijze waarop je van films, tv series, muziek en foto's geniet staat[CR]op het punt te veranderen. Bekijk allereerst deze korte visuele[CR]introductie. Geïnteresseerd? druk op Select. Zo niet, druk op back.</string>
+	<string id="31651">Centraal in aeon is een horizontaal scrollmenu wat direct toegang geeft[CR]to de verschillende omgevingen. Achtergronden kunnen aan elke optie worden toegevoegd[CR]een losse afbeelding of een diavoorstelling. Het menu kan wisselen van positie[CR]met een druk op de knop. Tijd en RSS kun ook gerangschikt en los gekoppeld worden.</string>
+	<string id="31652">Films en muziek kunnen worden gebruikt in vier verschillende weergaves[CR]Elke weergave is ontworpen voor speciale toepassingen. Showcase geeft[CR]maximale artwork weer; Paneel is een meer conventionele weergave; Lijst[CR]spreekt voor zich;Muur gebruikt maximale schermweergave voor grote collecties.</string>
+	<string id="31653">Aeon houdt van artwork. Haar visuele filosofie is compleet gebaseerd op[CR]smaak en inhoud van elke individuele gebruiker. Houd je van actie films?[CR]Fantasie videogames? Spetterende drama? Richt je omgeving hier naar in.[CR]Posters en cover art worden ondertussen fantastisch weergegeven in high definition.</string>
+	<string id="31654">Door het aanmaken van een bibliotheek voor films, televisie series of muziek kan Aeon volledig[CR]gebruik maken van de kracht van XBMC; weergave van rijke en informatieve zoek beleving.[CR]Plot samenvattingen en album reviews zijn het tipje van de ijsberg dankzij[CR]informatie beschikbaar via IMDb, Allmusic, of een van de vele gebruiker-geselecteerde bronnen.</string>	
+	<string id="31655">DRUK OF SELECT OM DE RONDLEIDING TE BEGINNEN. DRUK OP TERUG OM OVER TE SLAAN</string>
+	<string id="31656">DRUK OP BENEDEN VOOR DE VOLGENDE PAGINA, SELECT OM OVER TE SLAAN</string>
+	<string id="31657">DRUK OM BENEDEN VOOR DE VOLGENDE PAGINA, BOVEN VOOR DE VORIGE PAINGA OF SELECT OM OVER TE SLAAN</string>
+	<string id="31659">Navigeren tussen de verschillende Aeon weergaven en vensters kan niet makkelijker.[CR]Het hoofdmenu kan ten alle tijde geraadpleegd worden vanaf elke plaats met [CR]met snelkoppelingen naar settings, maatwerk en de Aeon assistent. Een 4-weg[CR]"compas" menu geeft direct toegang tot elke weergave.</string>
+	<string id="31660">Elk aspect van Aeon en XBMC kan achter de schermen worden ingesteld.[CR] Een 'Settings' omgeving met verschillende facetten is beschikbaar vanuit elk scherm,[CR]onderverdeeld in secties voor gebruiksgemak. Haar Virtuele Home pagina zorgt voor[CR]een intuïtieve visuele referentie voor al je persoonlijke behoeftes.</string>
+	<string id="31661">Het aantal afbeeldingen als Aeon achtergronden is ongelimiteerd. Mappen met duizenden afbeeldingen kunnen[CR]toegewezen worden aan secties zoals Films en Foto's. Alles groter dan de huidige scherm resolutie[CR]wordt automatisch naar beneden geschaald, alles beneden deze resolutie word naar boven geschaald.</string>
+	<string id="31662">Bedien elk aspect van XBMC's media afspeelmogelijkeheden zonder een seconde te missen[CR]On-screem weergave voor video en muziek laat je alles aanpassen van[CR]ondertitels en beeldverhoudingen tot audiovisuele synchronisatie. Permanante bookmarks[CR]kunnen worden ingesteld voor snelle toegang tot je favoriete scenes.</string>
+	<string id="31663">Voorbij zijn de dagen dat gebruikers maatwerk ten koste ging van... en hoge kwaliteit art alles was behalve... De Aeon Project website bevat honderden[CR]beste achtergronden voor al je Aeon vensters, kosteloos en zonder reclame. Controleer de Aeon Assistent for live updates van nieuwe inhoud.</string>
+
+<!-- OSD -->
+
+	<string id="31700">CODEC</string>
+	<string id="31701">BITRATE</string>
+	<string id="31702">SAMPLERATE</string>
+	<string id="31703">KANALEN</string>
+	<string id="31704">VOLGENDE:</string>
+	<string id="31705">TERUGSPOELEN</string>
+	<string id="31706">DOORSPOELEN</string>
+	<string id="31707">VOLUME</string>
+	<string id="31708">POSITIE</string>
+	<string id="31709">HUIDIGE TIJD</string>
+	<string id="31710">TOTALE TIJD</string>
+	<string id="31711">BLADWIJZERS BESCHIKBAAR</string>
+	<string id="31712">BOVEN/BENEDEN: MENU/BLADWIJZERS[CR]LINKS/RECHTS MENU OPTIES</string>
+	
+<!-- View select -->
+
+	<string id="31750">MUUR</string>
+	<string id="31751">SHOWCASE</string>
+	<string id="31752">LIJST</string>
+	<string id="31753">PANEEL</string>	
+	<string id="31754">SELECTEER</string>	
+	<string id="31755">GEBRUIK CURSOR OM WEERGAVE TE KIEZEN[CR]KLIK OM TERUG TE GAAN</string>
+	<string id="31756">ALLEEN LIJSTWEERGAVE IS BESCHIKBAAR VOOR AFLEVERINGEN</string>
+
+<!-- Aeon Settings panel labels -->
+  
+	<string id="31800">APARTE ONDERTITELS</string>
+	<string id="31801">OM GEBRUIK TE MAKEN VAN APARTE ONDERTITELS MOETEN DE VIDEO EN ONDERTITEL BESTANDEN DEZELFDE[CR]NAAM HEBBEN. BIJVOORBEELD: VEXILLE.AVI MET ONDERTITEL VEXILLE.SRT (EXTENSIES KUNNEN VERSCHILLEN)</string>
+	<string id="31802">MUZIEK VIDEOS</string>
+	<string id="31803">XBMC GEBRUIKT MUZIEK VIDEOS OP DEZELFDE WIJZE ALS FILMS. IN BIBLIOTHEEK MODUS, [CR]MARKEER DE INHOUD VAN DE MAP ALS 'MUZIEK VIDEOS', KIES EEN ONLINE INFO BRON EN XBMC DOET DE REST</string>
+	<string id="31804">EMULATIE</string>
+	<string id="31805">XBMC KAN WORDEN GEBRUIKT OM EMULATORS TE STARTEN OP VERSCHILLENDE PLATFORMS, ALHOEWEL[CR]METHODES KUNNEN VERSCHILLEN.CONTROLEER XBMC FORUMS (WWW.XBMC.ORG) VOOR SOFTWARE EN TIPS</string>
+	<string id="31806">DRAAIEN MET GEBRUIK VAN EXIF INFORMATIE</string>
+	<string id="31807">MODERNE CAMERA'S GEBRUIKEN SUBJECT DATA IN ELKE FOTO DIE ZE MAKEN. MET DEZE OPTIE AANGEZET,[CR]DRAAIEN FOTO'S AUTOMATISCH NAAR DE JUISTE POSITIE WANNEER ZE WORDEN VERTOONT</string>
+	<string id="31808">LIVE WEER VOORSPELLINGEN</string>
+	<string id="31809">XBMC GEEFT VOORSPELLINGEN TOT DRIE LOCATIES VAN WEATHER.COM[CR]NAAST DE LOCATIES KUN JE OOK KIEZEN TUSSEN METRISCH EN ANGELSAKSICH STELSEL</string>
+	<string id="31810">EEN BETERE WEERGAVE</string>
+	<string id="31811">ONE-TOUCH HERORDENING ZORGT ERVOOR DAT AEON'S MENU SNEL EN MAKKELIJK IN TE STELLEN IS. GEBRUIK[CR]DE PIJLTJES OM POSITIES TE WISSELEN EN DE REST VAN HET SCHERM PAST ZICH AUTOMATISCH AAN</string>
+	<string id="31812">EXTERNE MASSA OPSLAG</string>
+	<string id="31813">HIGH CAPACITY (500GB+) EXTERNE SCHIJVEN ZORGEN VOOR DE IDEALE OPSLAG VAN HD[CR]FILM COLLECTIES. XBMC KAN DUIZENDEN BESTANDEN VERWERKEN VAN ELKE BRON DIE JE AANGEEFT</string>
+	<string id="31814">EEN ECHTE HIGH DEFINITION MEDIA OMGEVING</string>
+	<string id="31815">AEON GEEFT DE MEESTE TEXTURES WEER IN NATIVE 1080P EN SCHAALT ZE TERUG NAAR BENEDEN OM [CR]ELK HD DISPLAY TE MATCHEN. DIT IS HET TOPPUNT VAN DIGITAL ENTERTAINMENT</string>
+	<string id="31816">KAN JE HARDWARE HET AAN?</string>
+	<string id="31817">XBMC HEEFT BESCHEIDEN EISEN VOOR ALLE SYSTEMEN, HOEWEL HET AANZIENLIJK AFHANKELIJK IS[CR]VAN CPU KRACHT VOOR HD VIDEO. PIXEL SHADER 3 VIDEO KAARTEN WORDEN STERK AANBEVOLEN</string>
+	<string id="31818">MAXIMALE ACHTERGRONDEN</string>	
+	<string id="31819">AEON'S HOMEPAGINA KAN COMPLEET TERUG GESCHAALD WORDEN OM JE ACHTERGRONDEN VOLLEDIG WEER[CR]TE GEVEN, OF JUIST VERGROOT OM DE LEESBAARHEID TE VERHOGEN VOOR SLECHTZIENDEN</string>	
+	<string id="31820">IEDER VOOR ZICH</string>
+	<string id="31821">XBMC ONDERSTEUNT VERSCHILLENDE GEBRUIKERS PROFIELEN ZODAT ELKE GEBRUIKER HAAR [CR]EIGEN INSTELLINGEN KAN OPSLAAN. RSS FEEDS, WEERGAVEINSTELLINGEN EN MEDIABIBLIOTHEKEN KUNNEN AFZONDERLIJK OPGESLAGEN WORDEN</string>
+
+<!-- Credits -->
+
+	<string id="31900">TEXTURES</string>
+	<string id="31901">STANDAARD ACHTERGRONDEN</string>
+	<string id="31902">STANDAARD ICONEN BEVATTEN ELEMENTEN VAN</string>
+	<string id="31903">LOCALE INSTELLINGEN</string>
+	<string id="31904">TESTEN</string>
+	<string id="31905">AEONPROJECT WEBSITE</string>
+	<string id="31906">BEDANKT</string>
+	<string id="31907">IEDERIEEN VAN HET XBMC FORUM</string>
+	<string id="31908">...EN JIJ</string>
+	<string id="31909">AEON ZAL TERUGKEREN OP</string>
+	
+</strings>

@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes" ?>
+<!-- $Revision: 204$ -->
+<!--  strings 31000 thru 31999 reserved for skins  -->
+
+ <strings>
+	<string id="31000">0.9 (STARK)</string> <!-- DO NOT CHANGE -->
+	<string id="31001"></string>
+	<string id="31002">MUTED</string>
+	<string id="31003">WEATHER SCREEN OPTIONS UNAVAILABLE IN THIS VERSION</string>
+	<string id="31004">RESET BACKDROP</string>
+	<string id="31005">ITEMS</string>
+	<string id="31006">NOW PLAYING</string>
+	<string id="31007">PAUSED</string>
+	<string id="31008">TEMP</string>
+	<string id="31009">UNITS</string>
+  
+<!-- Main Menu -->
+  
+	<string id="31010">MUSIC</string>
+	<string id="31011">GAMES</string>
+	<string id="31012">PICTURES</string>
+	<string id="31013">MOVIES</string>
+	<string id="31014">TV SHOWS</string>
+	<string id="31015">VIDEOS</string>
+	<string id="31016">SETTINGS</string>
+	<string id="31017">WEATHER</string>
+	<string id="31018">PLAY DISC</string>
+	<string id="31019">SHUTDOWN</string>
+	<string id="31020">SCRIPTS</string>
+	<string id="31021">ASSISTANT</string>
+
+<!-- Media Window titles -->
+ 
+	<string id="31030">GAMES</string> 
+	<string id="31031">IMAGES</string>
+	<string id="31032">MOVIES</string> 
+	<string id="31033">TV</string>
+	<string id="31034">VIDEOS</string>
+	<string id="31035">WEATHER</string>
+	<string id="31036">SCRIPTS</string>
+	<string id="31037">MUSIC</string>
+	<string id="31038">PLAYLIST</string>
+	<string id="31039">EDITOR</string>
+	<string id="31040">PLAYING:</string>
+	<string id="31041">BY:</string>
+
+<!-- Media Window options -->
+  
+	<string id="31050">VIEW:</string> 
+	<string id="31051">RANDOM: OFF</string>
+	<string id="31052">RANDOM: ON</string> 
+	<string id="31053">LIBRARY: OFF</string> 
+	<string id="31054">SETUP</string> 
+	<string id="31055">STACK: ON</string> 
+	<string id="31056">STACK: OFF</string>
+	<string id="31057">FILES</string>
+	<string id="31058">HIDE WATCHED: ON</string>
+	<string id="31059">HIDE WATCHED: OFF</string>
+	<string id="31060">LAYOUT: FLAT</string>
+	<string id="31061">LAYOUT: FLOW</string>
+	<string id="31062">SEASON</string>
+	<string id="31063">EPISODE</string>
+	<string id="31064">FANART: OFF</string>
+	<string id="31065">FANART: ON</string>
+	<string id="31066">BACKDROP: ON</string>
+	<string id="31067">BACKDROP: OFF</string>
+	<string id="31068">LIBRARY: ON</string>
+	<string id="31069">FLAGS: ON</string>
+	<string id="31070">FLAGS: OFF</string>
+	<string id="31071">THUMBS: SINGLE</string>
+	<string id="31072">THUMBS: MULTI</string>
+	<string id="31073">GRID: DEFAULT</string>
+	<string id="31074">GRID: MAX</string>
+  
+<!-- Aeon Customisation Virtual Home page labels -->
+  
+	<string id="31080">BACKDROPS</string>
+	<string id="31081">CHANGE BACKDROPS</string>
+	<string id="31082">MOVE LEFT/RIGHT TO BROWSE, SELECT TO CHANGE</string>
+	<string id="31083">CUSTOM BACKGROUNDS</string>
+	<string id="31084">CHOOSE BACKDROP TYPE</string>
+	<string id="31085">MOVE UP FOR SINGLE BACKDROP, DOWN FOR SLIDESHOW FOLDER</string>
+	<string id="31086">SHORTCUTS</string>
+	<string id="31087">TOGGLE HOME MENU SHORTCUTS</string>
+	<string id="31088">MOVE LEFT/RIGHT TO BROWSE, SELECT TO TOGGLE</string>
+	<string id="31089">FURNITURE</string>
+	<string id="31090">ARRANGE HOME PAGE OBJECTS</string>
+	<string id="31091">MOVE LEFT/RIGHT TO BROWSE, SELECT TO RELOCATE</string>
+	<string id="31092">SELECT TO RELOCATE MAIN MENU</string>
+	<string id="31093">SELECT TO COUPLE TIME PANEL</string>
+	<string id="31094">SELECT TO UNCOUPLE TIME PANEL</string>
+	<string id="31095">SELECT TO COUPLE RSS FEED</string>
+	<string id="31096">SELECT TO UNCOUPLE RSS FEED</string>
+	<string id="31097">PURGE SETTINGS</string>
+	<string id="31098">CLEAR HOME SETTINGS</string>
+	<string id="31099">MOVE LEFT/RIGHT TO PRIME BUTTON</string>
+	<string id="31100">CAUTION: THIS PROCESS IS IRREVERSIBLE</string>
+	<string id="31101">MOVE ANYWHERE TO CANCEL, SELECT TO PROCEED</string>
+	<string id="31102">CHOOSE</string>
+	<string id="31103">BACKDROP TYPE</string>
+	<string id="31104">TOGGLE</string>
+	<string id="31105">SHORTCUT</string>
+	<string id="31106">ARRANGE OSD OBJECTS</string>
+	<string id="31107">MOVE LEFT/RIGHT TO BROWSE, SELECT TO TOGGLE</string>
+	<string id="31108">TOGGLE UPPER DETAIL STYLES (CURRENTLY: MINIMAL)</string>
+	<string id="31109">TOGGLE PROGRESS BAR (CURRENTLY: ON)</string>
+	<string id="31110">TOGGLE TIME/DURATION TEXT (CURRENTLY: OFF)</string>
+	<string id="31111">TOGGLE UPPER DETAIL STYLES (CURRENTLY: MAX)</string>
+	<string id="31112">TOGGLE PROGRESS BAR (CURRENTLY: OFF)</string>
+	<string id="31113">TOGGLE TIME/DURATION TEXT (CURRENTLY: ON)</string>	
+  
+<!-- Aeon Customisation Menu labels -->
+  
+	<string id="31120">BACKDROPS</string>
+	<string id="31121">PERSONALISE AEON</string>
+	<string id="31122">SHORTCUTS</string>
+	<string id="31123">POPULATE HOME MENU</string>
+	<string id="31124">FURNITURE</string> 
+	<string id="31125">TIME AND FEEDS</string>
+	<string id="31126">PURGE</string> 
+	<string id="31127">CLEAR PERSONAL SETTINGS</string>
+	<string id="31128">OSD</string>
+	<string id="31129">LIVE MUSIC INFO</string>
+
+<!-- XBMC Settings Menu labels -->
+  
+	<string id="31140">VIDEO</string>
+	<string id="31141">PLAYBACK AND LIBRARY</string>
+	<string id="31142">MUSIC</string>
+	<string id="31143">PLAYBACK AND LIBRARY</string>
+	<string id="31144">PROGRAMS</string>
+	<string id="31145">GAMES AND APPLICATIONS</string>
+	<string id="31146">PICTURES</string>
+	<string id="31147">BROWSER AND SLIDESHOW</string>
+	<string id="31148">WEATHER</string>
+	<string id="31149">LOCATION AND APPEARANCE</string>
+	<string id="31150">NETWORK</string>
+	<string id="31151">LOCAL AND INTERNET</string>
+	<string id="31152">SYSTEM</string>
+	<string id="31153">CACHE AND HARDWARE</string>
+	<string id="31154">APPEARANCE</string>
+	<string id="31155">INTERFACE AND DISPLAY</string>
+	<string id="31156">CUSTOMISE</string>
+	<string id="31157">PERSONALISE AEON</string>
+	<string id="31158">ADVANCED</string>
+	<string id="31159">EXTENDED AEON OPTIONS</string>
+	<string id="31160">PROFILES</string>
+	<string id="31161">USER ACCOUNTS</string>
+	<string id="31162">LOGIN SCREEN</string>
+	<string id="31163">OPTIONS</string>
+	<string id="31164">LOGIN SCREEN</string>
+	<string id="31165">USERS</string>
+	<string id="31166">MANAGE PROFILES</string>
+
+<!--  Button / Shutdown Menu  --> 
+
+	<string id="31200">SETTINGS</string> 
+	<string id="31201">CUSTOMISE</string>
+	<string id="31202">ASSISTANT</string> 
+	<string id="31203">HOME VISUALISER: OFF</string>
+	<string id="31204">HOME VISUALISER: ON</string> 
+	<string id="31205">NOW PLAYING</string>
+	<string id="31206">SHUTDOWN TIMER</string> 
+	<string id="31207">RESTART</string> 
+	<string id="31208">SHUTDOWN</string>
+	<string id="31209">SIGN OUT</string>
+	<string id="31210">EJECT</string>
+
+<!--  Set Content / Add Source dialogs  --> 
+  
+	<string id="31220">DIRECTORY CONTAINS:</string>
+	<string id="31221">ENTER PATHS OR BROWSE FOR MEDIA LOCATIONS</string>
+	<string id="31222">CHOOSE A NAME FOR THIS SHARE</string>
+	<string id="31223">LIST</string>
+	<string id="31224">TILE</string>
+
+<!-- Aeon Advanced Menu labels -->
+  
+	<string id="31230">AEON</string> 
+	<string id="31231">OPTIONS</string>
+	<string id="31232">GENERAL</string>
+	<string id="31233">GLOBAL SETTINGS</string>
+	<string id="31234">HOME</string>
+	<string id="31235">FRONT PAGE OPTIONS</string>
+	<string id="31236">VIEWS</string>
+	<string id="31237">MEDIA BROWSERS</string>
+	<string id="31238">PRESETS</string>
+	<string id="31239">QUICK CONFIGURATIONS</string>
+	<string id="31240">FANART</string>
+	<string id="31241">CONTEXTUAL ARTWORK</string>
+	<string id="31242">ENABLE ALL</string>
+	<string id="31243">DISABLE ALL</string>
+	<string id="31244">MENUS</string>
+	<string id="31245">BROWSING LAYOUT</string>
+  
+<!-- Aeon Advanced options -->
+  
+	<string id="31259">DEFAULT ICONS FOR MEDIA FLAGS (OFF FOR BLANK SPACES)</string>
+	<string id="31260">SHOW TIME PANEL</string>
+	<string id="31261">HOME PAGE WEATHER POP-UP</string>
+	<string id="31262">CONTEXTUAL ARTWORK (FANART) FOR MUSIC</string>
+	<string id="31264">CONTEXTUAL ARTWORK (FANART) FOR MOVIES</string>
+	<string id="31265">CONTEXTUAL ARTWORK (FANART) FOR TV</string>
+	<string id="31266">CONTEXTUAL ARTWORK FOR PICTURES</string>
+	<string id="31268">SHOW RSS / NOW PLAYING IN WALL VIEW</string>
+	<string id="31270">ZOOM ANIMATIONS</string>
+	<string id="31271">FADE PANEL/LIST VIEW MENUS WHEN INACTIVE</string>
+	<string id="31278">ALLOW SCROLLING FOR PLOT/BIO/REVIEW INFO</string>
+	<string id="31279">CONTEXTUAL ARTWORK (FANART) FOR FULLSCREEN INFO PAGES</string>
+	<string id="31280">DEVELOPER MODE</string>
+	<string id="31281">MEDIA FLAGS (STUDIO ICONS, SOURCE INFO, ETC.)</string>
+	<string id="31284">HOME PAGE VISUALISATION</string>
+	<string id="31285">USE TEXT FOR MOVIE INFO RATING (USES STARS IF DISABLED)</string>
+	<string id="31286">USE TEXT FOR MUSIC INFO RATING (USES STARS IF DISABLED)</string>	
+	<string id="31287">KIOSK MODE (REMOVES MENUS FROM MEDIA WINDOWS)</string>
+	<string id="31288">MOVIE SEARCH (MOVIE LIBRARY)</string>
+	<string id="31289">TV SEARCH (TV LIBRARY)</string>
+	<string id="31290">SETTINGS SHORTCUT (ALL MEDIA)</string>
+	<string id="31291">WATCHED/UNWATCHED MOVIES TOGGLE (MOVIE LIBRARY)</string>
+	<string id="31292">WATCHED/UNWATCHED TV TOGGLE (TV LIBRARY)</string>
+	<string id="31293">FILES VIEW SHORTCUT (MOVIE AND TV LIBRARIES)</string>
+	<string id="31294">LARGER KEYBOARD / NUMERIC KEYPAD</string>
+	<string id="31295">IMPROVED LEGIBILITY (LARGER TIME AND RSS)</string>
+	<string id="31296">SINGLE/MULTI THUMBNAILS TOGGLE</string>
+	<string id="31297">USE SINGLE THUMBNAIL FOR MUSIC LIST</string>
+	<string id="31298">USE SINGLE THUMBNAIL FOR MOVIE LIST</string>
+	<string id="31299">SHOW RSS / NOW PLAYING IN SHOWCASE VIEW</string>
+	
+<!-- XBMC Settings Menu headings -->
+	
+	<string id="31300">VIDEO</string>
+	<string id="31301">PICTURES</string>
+	<string id="31302">APPEARANCE</string>
+	<string id="31303">NETWORK</string>
+	<string id="31304">SYSTEM</string>
+	<string id="31305">MUSIC</string>
+	<string id="31306">WEATHER</string>
+	<string id="31307">PROGRAMS</string>
+	<string id="31308">OPTIONS</string>
+	
+<!-- XBMC Settings Subtitles -->
+	
+	<string id="31320">VIEW DEFAULTS</string>
+	<string id="31321">DATABASE CONTROL</string>
+	<string id="31322">QUALITY AND CALIBRATION</string>
+	<string id="31323">TYPE AND COLOUR</string>
+	<string id="31324">TAGS AND DISPLAY</string>
+	<string id="31325">TIMING AND EFFECTS</string>
+	<string id="31326">SKINS AND RSS FEEDS</string>
+	<string id="31327">LANGUAGE AND LOCATION</string>
+	<string id="31328">RESOLUTION AND CALIBRATION</string>
+	<string id="31329">ITEMS AND DELETION</string>
+	<string id="31330">TIMING AND CONTENTS</string>
+	<string id="31331">PROXIES AND LOOKUPS</string>
+	<string id="31332">HTTP INTERFACE</string>
+	<string id="31333">WORKGROUP AND LOGIN</string>
+	<string id="31334">CLIENT AND SHARES</string>
+	<string id="31335">PORTS AND TIMINGS</string>
+	<string id="31336">LOGGING AND TIMEOUTS</string>
+	<string id="31337">INPUT AND DELAYS</string>
+	<string id="31338">MEDIA TYPES</string>
+	<string id="31339">LOCAL AND NETWORK</string>
+	<string id="31340">ANALOGUE / DIGITAL</string>
+	<string id="31341">CONTENT RESTRICTION</string>
+	<string id="31342">RECORDINGS AND VISUALISATION</string> 
+	<string id="31343">DATABASE CONTROL</string> 
+	<string id="31344">HARDWARE AND LEVELS</string> 
+	<string id="31345">ID TAGS AND LOOKUPS</string> 
+	<string id="31346">SUBMISSIONS AND PROFILE</string> 
+	<string id="31347">FOLDERS AND SETUP</string>
+	<string id="31348">VOLUME AND VOICE MASKS</string> 
+	<string id="31349">AREA CODES AND REGION</string>
+	<string id="31350">BROWSING DEFAULTS</string>
+	<string id="31351">ONLINE SOURCES</string>
+
+<!--  Fullscreen info panel  -->
+
+	<string id="31400">NO POSTER?[CR][CR]CHECK YOU HAVE A SEPARATE "BIG" THUMB[CR]ALONGSIDE YOUR MOVIE FILE AND THAT[CR]THE NAMING CONVENTION IS OBEYED[CR](BARBARELLA.MKV-BIG.PNG)[CR][CR]CHECK THE AEON MANUAL FOR MORE DETAILS</string>
+	<string id="31401">WRITTEN BY</string>
+	<string id="31402">DIRECTED BY</string>
+	<string id="31403">EPISODES:</string>
+	<string id="31404">STUDIO:</string>
+	<string id="31405">STARRING</string>
+	<string id="31406">EPISODES</string>
+	<string id="31407">PREMIERED</string>
+	<string id="31408">IMDB</string>
+	<string id="31409">TRAILER</string>
+	<string id="31410">RELOAD</string>
+	<string id="31411">WATCH</string>
+	<string id="31412">FANART</string>
+	<string id="31413">MOODS</string>
+	<string id="31414">PLOT DETAILS UNAVAILABLE</string>
+	<string id="31415">BIOGRAPHY UNAVAILABLE</string>
+	<string id="31416">STYLES</string>
+	<string id="31417">RATING</string>
+	<string id="31418">THUMB</string>
+	<string id="31419">REFRESH</string>
+	<string id="31420">RESUME</string>
+	<string id="31421">PLAY</string>
+	<string id="31422">NOTES</string>
+	<string id="31423">LABEL</string>
+	<string id="31424">ALBUM REVIEW UNAVAILABLE</string>
+	<string id="31425">INFO UNAVAILABLE</string>
+	<string id="31426">TRACK</string>
+	<string id="31427">DURATION</string>
+	<string id="31428">NO COMMENTS</string>
+	<string id="31429">ALBUM INFO</string>
+	<string id="31430">COMMIT</string>
+	<string id="31431">PUSH UP OR DOWN TO CHANGE RATING</string>
+	<string id="31432">SEASON</string>
+	<string id="31433">EPISODE</string>
+	<string id="31434">DURATION</string>
+	<string id="31435">CAST DETAILS UNAVAILABLE</string>
+
+<!--  Aeon Assistant  -->
+
+	<string id="31500">NEWS</string>
+	<string id="31501">ONLINE AEON UPDATES</string>
+	<string id="31502">VITALS</string>
+	<string id="31503">XBMC STATISTICS</string>
+	<string id="31504">CREDITS</string>
+	<string id="31505">AUTHOR AND THANKS</string>
+	<string id="31510">ASSISTANT</string>
+	<string id="31511">LATEST NEWS</string>
+	<string id="31512">RETURN HERE FOR PERIODICAL UPDATES FROM THE AEON SERVER</string>
+	<string id="31520">START TOUR</string>
+	<string id="31521">AEON WELCOME PAGE</string>
+	<string id="31522">BACK TO BASICS</string>
+	<string id="31523">PRESS SELECT TO REPLAY THE INTRODUCTORY AEON TOUR</string>
+	<string id="31524">CONTACTING AEON SERVER</string>
+	
+<!--  Aeon Assistant Tutorials  -->
+
+	<!-- 31550-31590 RESERVED -->
+	
+<!-- Aeon Assistant vitals -->
+
+	<string id="31598">XBMC BUILD DATE[CR]AEON VERSION[CR]CURRENT THEME[CR]LANGUAGE[CR]SCREEN RESOLUTION[CR]AVAILABLE RAM[CR]SYSTEM DRIVE SPACE[CR]CPU TEMPERATURE[CR]GPU TEMPERATURE[CR]SYSTEM UPTIME[CR]ONLINE STATUS[CR]IP ADDRESS[CR]OPTICAL DRIVE</string>
+	
+<!-- Debug mode -->
+
+	<string id="31600">AEON VERSION: 1.0</string>
+	<string id="31601">FREE SYSTEM RAM:</string>
+	<string id="31602">XBMC BUILD DATE:</string>
+	<string id="31603">FPS:</string>
+	<string id="31604">CURRENT WINDOW ID:</string>
+	<string id="31605">CURRENT FOCUS:</string>
+	<string id="31606">ACTIVE VIEW TYPE:</string>
+	<string id="31607">REFRESH</string>
+	<string id="31608">INFO ON/OFF</string>
+	<string id="31609">THIS LIBRARY IS EMPTY</string>
+	<string id="31610">POPULATE IT VIA THE VIDEOS WINDOW</string>
+	<string id="31611">POPULATE IT VIA THE FILES WINDOW</string>
+
+<!-- Welcome screen / Aeon Tour -->
+<!-- ENSURE LOWER/UPPER CASE IS OBEYED --> 
+
+	<string id="31650">Welcome to Aeon, the new home of home entertainment.[CR]The way you enjoy your movies, television shows, music and photos is[CR]about to change. First, though, you may want to watch this short visual[CR]introduction. Interested? Press Select. If not, press Back.</string>
+	<string id="31651">Central to Aeon is a horizontally-scrolling menu which provides instant access to[CR]its various environments. Backdrops can be assigned to each option as either[CR]a single image or slideshow. The menu can be switched between positions[CR]with a single button-press. Time and RSS can also be relocated and detached.</string>
+	<string id="31652">Movies and music are enjoyed in Aeon through four distinct views.[CR]Each is designed to meet specific requirements. Showcase offers maximum[CR]artwork visibilty; Panel offers more conventional thumbnail views; List[CR]speaks for itself; Wall provides maximum screen real estate for large collections.</string>
+	<string id="31653">Aeon loves artwork. Its visual philosophy revolves entirely around the[CR]tastes and content of each individual user. Like action movies? Fantasy[CR]videogames? Rousing period drama? Decorate your environment accordingly.[CR]Posters and cover art, meanwhile, are displayed in beautiful high definition.</string>
+	<string id="31654">Building a library of movies, television shows or music lets Aeon exploit[CR]the full power of XBMC, providing a rich and informative browsing experience.[CR]Plot synopses and album reviews are just the tip of the iceberg thanks to[CR]info pulled from the IMDb, Allmusic, or one of many user-selected sources.</string>	
+	<string id="31655">PRESS SELECT TO BEGIN TOUR. PRESS BACK TO SKIP</string>
+	<string id="31656">PRESS DOWN FOR NEXT SLIDE, SELECT TO SKIP</string>
+	<string id="31657">PRESS DOWN FOR NEXT SLIDE, UP FOR PREVIOUS SLIDE, OR SELECT TO SKIP</string>
+	<string id="31659">Navigating between Aeon's views and windows couldn't be easier.[CR]The Global Menu can be accessed at any time from any place, providing[CR]shortcuts to Settings, Customisation, and the Aeon Assistant. A four-way[CR]"compass" menu provides instant access to any view type.</string>
+	<string id="31660">Every aspect of Aeon and XBMC can be configured behind the scenes.[CR]A multi-faceted Settings environment is available from every screen,[CR]split into sections for ease of use. Its Virtual Home page provides an[CR]intuitive visual reference for all your personalisation needs.</string>
+	<string id="31661">There's no limit to how many wallpapers you can splash across Aeon's[CR]backgrounds. Folders containing thousands of images can be assigned to[CR]sections like Movies and Pictures. Anything above the current screen[CR]resolution will be downscaled, anything below upscaled.</string>
+	<string id="31662">Control every aspect of XBMC's media playback without missing a second.[CR]On-screen displays for video and music let you adjust everything from[CR]subtitles and aspect ratio to audiovisual sync. Permanent bookmarks[CR]can be set for easy access to your favourite scenes.</string>
+	<string id="31663">Gone are the days when user customisation came at a price, and when[CR]high quality art was anything but. The Aeon Project website provides hundreds[CR]of the best wallpapers for all of Aeon's windows, free of charge and annoying[CR]adverts. Check the Aeon Assistant for live updates on new content.</string>
+
+<!-- OSD -->
+
+	<string id="31700">CODEC</string>
+	<string id="31701">BITRATE</string>
+	<string id="31702">SAMPLERATE</string>
+	<string id="31703">CHANNELS</string>
+	<string id="31704">NEXT</string>
+	<string id="31705">REWIND</string>
+	<string id="31706">FORWARD</string>
+	<string id="31707">VOLUME</string>
+	<string id="31708">POSITION</string>
+	<string id="31709">RUNNING TIME</string>
+	<string id="31710">FINISH TIME</string>
+	<string id="31711">BOOKMARKS AVAILABLE</string>
+	<string id="31712">UP/DOWN: MENU/BOOKMARKS[CR]LEFT/RIGHT: MENU OPTIONS</string>
+	<string id="31713">ITEMS IN PLAYLIST</string>
+	<string id="31714">CURRENT POSITION</string>
+	<string id="31715">PREVIOUS</string>
+	<string id="31716">SONG TITLE</string>
+	<string id="31717">ALBUM TITLE</string>
+	<string id="31718">ARTIST NAME</string>
+	<string id="31719">TIME ELAPSED / DURATION</string>
+	
+<!-- View select -->
+
+	<string id="31750">WALL</string>
+	<string id="31751">SHOWCASE</string>
+	<string id="31752">LIST</string>
+	<string id="31753">PANEL</string>	
+	<string id="31754">SELECT</string>	
+	<string id="31755">DIRECTIONS CHOOSE VIEWS[CR]CLICK TO ESCAPE</string>	
+	<string id="31756">ONLY LIST VIEW IS AVAILABLE FOR EPISODES</string>
+
+<!-- Aeon Settings panel labels -->
+  
+	<string id="31800">STANDALONE SUBTITLES</string>
+	<string id="31801">TO USE STANDALONE SUBTITLES, THE SUBTITLE AND VIDEO FILES MUST SHARE THE SAME NAME.[CR]FOR EXAMPLE, VEXILLE.AVI WOULD REQUIRE THE SUBTITLE FILE VEXILE.SRT (EXTENSIONS MAY VARY)</string>
+	<string id="31802">MUSIC VIDEOS</string>
+	<string id="31803">XBMC HANDLES MUSIC VIDEOS IN MUCH THE SAME WAY AS MOVIES. IN LIBRARY MODE, JUST SPECIFY[CR]A FOLDER'S CONTENT AS 'MUSIC VIDEOS', CHOOSE AN ONLINE INFO SOURCE AND LET XBMC DO THE REST</string>
+	<string id="31804">EMULATION</string>
+	<string id="31805">XBMC CAN BE USED TO LAUNCH EMULATORS ON ALL PLATFORMS, THOUGH METHODS MAY DIFFER.[CR]CHECK THE XBMC FORUMS (WWW.XBMC.ORG) FOR SUPPORTED SOFTWARE AND OTHER TIPS</string>
+	<string id="31806">ROTATE USING EXIF INFORMATION</string>
+	<string id="31807">MODERN CAMERAS EMBED SUBJECT DATA IN EVERY PICTURE THEY TAKE. WITH THIS OPTION ENABLED,[CR]PICTURES ROTATE THEMSELVES AUTOMATICALLY TO THE CORRECT POSITION WHEN DISPLAYED</string>
+	<string id="31808">LIVE WEATHER FORECASTS</string>
+	<string id="31809">XBMC DISPLAYS FORECASTS FOR UP TO THREE LOCATIONS, COURTESY OF WEATHER.COM.[CR]ALONG WITH YOUR LOCATIONS, YOU CAN ALSO CHOOSE BETWEEN METRIC AND US READINGS</string>
+	<string id="31810">GET A CLEARER VIEW</string>
+	<string id="31811">ONE-TOUCH RECOMPOSITION MAKES MOVING AEON'S MENU QUICK AND PAINLESS. JUST PUSH UP OR[CR]DOWN TO SWITCH POSITIONS AND ALL SCREEN FURNITURE REARRANGES ITSELF AUTOMATICALLY</string>
+	<string id="31812">MASS EXTERNAL STORAGE</string>
+	<string id="31813">HIGH CAPACITY (500GB+) REMOVABLE HARD DRIVES PROVIDE IDEAL STORAGE FOR LARGE HD[CR]MOVIE COLLECTIONS. XBMC CAN HANDLE THOUSANDS OF FILES FOR EVERY SOURCE YOU DEFINE</string>
+	<string id="31814">A TRUE HIGH DEFINITION MEDIA ENVIRONMENT</string>
+	<string id="31815">AEON RENDERS THE MAJORITY OF ITS TEXTURES IN NATIVE 1080P, DOWNSCALING THEM TO SUIT[CR]ANY HD DISPLAY. IT STANDS AT THE PINNACLE OF DIGITAL ENTERTAINMENT</string>
+	<string id="31816">CAN YOUR HARDWARE HANDLE IT?</string>
+	<string id="31817">XBMC HAS MODEST REQUIREMENTS FOR ALL SYSTEMS, THOUGH IT RELIES ON CPU POWER[CR]SIGNIFICANTLY FOR HD VIDEO. PIXEL SHADER 3 CAPABLE VIDEOCARDS ARE ALSO HIGHLY RECOMMENDED</string>
+	<string id="31818">THE FINEST DETAILS</string>	
+	<string id="31819">CLICK THROUGH TO FURTHER MANAGE THE AEON EXPERIENCE</string>
+	<string id="31820">EACH TO THEIR OWN</string>
+	<string id="31821">XBMC SUPPORTS MULTIPLE USER PROFILES, ALLOWING INDIVIDUAL USERS TO SAVE THEIR OWN[CR]CONFIGURATIONS. RSS FEEDS, VIEW SETTINGS AND MEDIA LIBRARIES CAN BE SEPARATELY STORED</string>
+
+<!-- Credits -->
+
+	<string id="31900">TEXTURES</string>
+	<string id="31901">DEFAULT WALLPAPERS</string>
+	<string id="31902">DEFAULT ICONS CONTAIN ELEMENTS BY</string>
+	<string id="31903">LOCALISATION</string>
+	<string id="31904">TESTING</string>
+	<string id="31905">AEONPROJECT WEBSITE</string>
+	<string id="31906">THANKS</string>
+	<string id="31907">EVERYONE AT THE XBMC FORUMS</string>
+	<string id="31908">...AND YOU</string>
+	<string id="31909">AEON WILL RETURN IN</string>
+	<string id="31910">WEATHER WALLPAPERS</string>
+	
+</strings>

@@ -1,0 +1,711 @@
+<window type="dialog" id="602">
+	<defaultcontrol>4112</defaultcontrol>
+	<zorder>3</zorder>
+	<coordinates>
+	<system>1</system>
+	<posx>0</posx>
+	<posy>0</posy>
+	</coordinates>
+	<animation type="WindowOpen" reversible="false">
+		<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+		<effect type="fade" start="0" end="100" time="300" />
+	</animation>
+	<animation type="WindowClose" reversible="false">
+		<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+		<effect type="fade" start="100" end="0" time="200" />
+	</animation>	
+	<controls>
+
+	<control type="group">
+	<posx>496</posx>
+	<posy>283</posy>
+	<width>289</width>
+	<height>155</height>
+	<visible>Window.IsVisible(25) + Container.Content(movies)</visible>
+		<control type="image">
+			<description>background top image</description>
+			<posx>0</posx>
+			<posy>-20</posy>
+			<width>289</width>
+			<height>20</height>
+			<texture>dialogs/dialogs/context_top.png</texture>
+		</control>
+		<control type="image">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>289</width>
+			<height>117</height>
+			<texture>dialogs/dialogs/context_middle.png</texture>
+		</control>
+		<control type="image">
+			<description>background bottom image</description>
+			<posx>0</posx>
+			<posy>117</posy>
+			<width>289</width>
+			<height>18</height>
+			<texture>dialogs/dialogs/context_bottom.png</texture>
+		</control>
+		
+		<control type="grouplist" id="4112">
+			<posx>10</posx>
+			<posy>0</posy>
+			<width>275</width>
+			<height>117</height>
+			<itemgap>0</itemgap>
+			<orientation>vertical</orientation>
+			<onup>4112</onup>
+			<ondown>4112</ondown>
+			<include>common-fade-quick</include>
+		
+			<control type="radiobutton" id="801">
+				<description>shutdown button</description>
+				<label>List</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(listmovies)</onclick>
+				<selected>!Skin.HasSetting(listmovies)</selected>
+			</control>
+			<control type="radiobutton" id="802">
+				<description>shutdown button</description>
+				<label>Flow</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(flowmovies)</onclick>
+				<selected>!Skin.HasSetting(flowmovies)</selected>
+			</control>
+			<control type="radiobutton" id="803">
+				<description>shutdown button</description>
+				<label>Showcase</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(showcasemovies)</onclick>
+				<selected>!Skin.HasSetting(showcasemovies)</selected>
+			</control>
+
+		</control>
+	</control>
+	
+	<control type="group">
+	<posx>496</posx>
+	<posy>283</posy>
+	<width>289</width>
+	<height>155</height>
+	<visible>Window.IsVisible(25) + !Container.Content(movies) + !Skin.HasSetting(skylineactive)</visible>
+		<control type="image">
+			<description>background top image</description>
+			<posx>0</posx>
+			<posy>-20</posy>
+			<width>289</width>
+			<height>20</height>
+			<texture>dialogs/context_top.png</texture>
+		</control>
+		<control type="image">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>289</width>
+			<height>117</height>
+			<texture>dialogs/context_middle.png</texture>
+		</control>
+		<control type="image">
+			<description>background bottom image</description>
+			<posx>0</posx>
+			<posy>117</posy>
+			<width>289</width>
+			<height>18</height>
+			<texture>dialogs/context_bottom.png</texture>
+		</control>
+		
+		<control type="grouplist" id="4112">
+			<posx>10</posx>
+			<posy>0</posy>
+			<width>275</width>
+			<height>117</height>
+			<itemgap>0</itemgap>
+			<orientation>vertical</orientation>
+			<onup>4112</onup>
+			<ondown>4112</ondown>
+			<include>common-fade-quick</include>
+		
+			<control type="radiobutton" id="801">
+				<description>shutdown button</description>
+				<label>List</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(listtv)</onclick>
+				<selected>!Skin.HasSetting(listtv)</selected>
+			</control>
+			<control type="radiobutton" id="802">
+				<description>shutdown button</description>
+				<label>Flow</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(flowtv)</onclick>
+				<selected>!Skin.HasSetting(flowtv)</selected>
+			</control>
+			<control type="radiobutton" id="803">
+				<description>shutdown button</description>
+				<label>Showcase</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(showcasetv)</onclick>
+				<selected>!Skin.HasSetting(showcasetv)</selected>
+			</control>
+
+		</control>
+	</control>
+
+	<control type="group">
+	<posx>496</posx>
+	<posy>283</posy>
+	<width>289</width>
+	<height>155</height>
+	<visible>Window.IsVisible(24) + !Skin.HasSetting(skylineactive)</visible>
+		<control type="image">
+			<description>background top image</description>
+			<posx>0</posx>
+			<posy>-20</posy>
+			<width>289</width>
+			<height>20</height>
+			<texture>dialogs/context_top.png</texture>
+		</control>
+		<control type="image">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>289</width>
+			<height>117</height>
+			<texture>dialogs/context_middle.png</texture>
+		</control>
+		<control type="image">
+			<description>background bottom image</description>
+			<posx>0</posx>
+			<posy>117</posy>
+			<width>289</width>
+			<height>18</height>
+			<texture>dialogs/context_bottom.png</texture>
+		</control>
+		
+		<control type="grouplist" id="4112">
+			<posx>10</posx>
+			<posy>0</posy>
+			<width>275</width>
+			<height>117</height>
+			<itemgap>0</itemgap>
+			<orientation>vertical</orientation>
+			<onup>4112</onup>
+			<ondown>4112</ondown>
+			<include>common-fade-quick</include>
+		
+			<control type="radiobutton" id="801">
+				<description>shutdown button</description>
+				<label>List</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(listvideos)</onclick>
+				<selected>!Skin.HasSetting(listvideos)</selected>
+			</control>
+			<control type="radiobutton" id="802">
+				<description>shutdown button</description>
+				<label>Flow</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(flowvideos)</onclick>
+				<selected>!Skin.HasSetting(flowvideos)</selected>
+			</control>
+			<control type="radiobutton" id="803">
+				<description>shutdown button</description>
+				<label>Showcase</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(showcasevideos)</onclick>
+				<selected>!Skin.HasSetting(showcasevideos)</selected>
+			</control>
+
+		</control>
+	</control>
+	
+	<control type="group">
+	<posx>496</posx>
+	<posy>263</posy>
+	<width>289</width>
+	<height>194</height>
+	<visible>Window.IsVisible(25) + Container.Content(movies) + Skin.HasSetting(skylineactive)</visible>
+		<control type="image">
+			<description>background top image</description>
+			<posx>0</posx>
+			<posy>-20</posy>
+			<width>289</width>
+			<height>20</height>
+			<texture>dialogs/context_top.png</texture>
+		</control>
+		<control type="image">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>289</width>
+			<height>156</height>
+			<texture>dialogs/context_middle.png</texture>
+		</control>
+		<control type="image">
+			<description>background bottom image</description>
+			<posx>0</posx>
+			<posy>156</posy>
+			<width>289</width>
+			<height>18</height>
+			<texture>dialogs/context_bottom.png</texture>
+		</control>
+		
+		<control type="grouplist" id="4112">
+			<posx>10</posx>
+			<posy>0</posy>
+			<width>275</width>
+			<height>156</height>
+			<itemgap>0</itemgap>
+			<orientation>vertical</orientation>
+			<onup>4112</onup>
+			<ondown>4112</ondown>
+			<include>common-fade-quick</include>
+		
+			<control type="radiobutton" id="801">
+				<description>shutdown button</description>
+				<label>List</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(listmovies)</onclick>
+				<selected>!Skin.HasSetting(listmovies)</selected>
+			</control>
+			<control type="radiobutton" id="802">
+				<description>shutdown button</description>
+				<label>Flow</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(flowmovies)</onclick>
+				<selected>!Skin.HasSetting(flowmovies)</selected>
+			</control>
+			<control type="radiobutton" id="803">
+				<description>shutdown button</description>
+				<label>Showcase</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(showcasemovies)</onclick>
+				<selected>!Skin.HasSetting(showcasemovies)</selected>
+			</control>
+			<control type="radiobutton" id="804">
+				<description>shutdown button</description>
+				<label>Skyline</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(skylinemovies)</onclick>
+				<selected>Skin.HasSetting(skylinemovies)</selected>
+			</control>
+
+		</control>
+	</control>
+	
+	<control type="group">
+	<posx>496</posx>
+	<posy>263</posy>
+	<width>289</width>
+	<height>194</height>
+	<visible>Window.IsVisible(25) + !Container.Content(movies) + Skin.HasSetting(skylineactive)</visible>
+		<control type="image">
+			<description>background top image</description>
+			<posx>0</posx>
+			<posy>-20</posy>
+			<width>289</width>
+			<height>20</height>
+			<texture>dialogs/context_top.png</texture>
+		</control>
+		<control type="image">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>289</width>
+			<height>156</height>
+			<texture>dialogs/context_middle.png</texture>
+		</control>
+		<control type="image">
+			<description>background bottom image</description>
+			<posx>0</posx>
+			<posy>156</posy>
+			<width>289</width>
+			<height>18</height>
+			<texture>dialogs/context_bottom.png</texture>
+		</control>
+		
+		<control type="grouplist" id="4112">
+			<posx>10</posx>
+			<posy>0</posy>
+			<width>275</width>
+			<height>156</height>
+			<itemgap>0</itemgap>
+			<orientation>vertical</orientation>
+			<onup>4112</onup>
+			<ondown>4112</ondown>
+			<include>common-fade-quick</include>
+		
+			<control type="radiobutton" id="801">
+				<description>shutdown button</description>
+				<label>List</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(listtv)</onclick>
+				<selected>!Skin.HasSetting(listtv)</selected>
+			</control>
+			<control type="radiobutton" id="802">
+				<description>shutdown button</description>
+				<label>Flow</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(flowtv)</onclick>
+				<selected>!Skin.HasSetting(flowtv)</selected>
+			</control>
+			<control type="radiobutton" id="803">
+				<description>shutdown button</description>
+				<label>Showcase</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(showcasetv)</onclick>
+				<selected>!Skin.HasSetting(showcasetv)</selected>
+			</control>
+			<control type="radiobutton" id="804">
+				<description>shutdown button</description>
+				<label>Skyline</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(skylinetv)</onclick>
+				<selected>Skin.HasSetting(skylinetv)</selected>
+			</control>
+
+		</control>
+	</control>
+
+	<control type="group">
+	<posx>496</posx>
+	<posy>263</posy>
+	<width>289</width>
+	<height>194</height>
+	<visible>Window.IsVisible(24) + Skin.HasSetting(skylineactive)</visible>
+		<control type="image">
+			<description>background top image</description>
+			<posx>0</posx>
+			<posy>-20</posy>
+			<width>289</width>
+			<height>20</height>
+			<texture>dialogs/context_top.png</texture>
+		</control>
+		<control type="image">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>289</width>
+			<height>156</height>
+			<texture>dialogs/context_middle.png</texture>
+		</control>
+		<control type="image">
+			<description>background bottom image</description>
+			<posx>0</posx>
+			<posy>156</posy>
+			<width>289</width>
+			<height>18</height>
+			<texture>dialogs/context_bottom.png</texture>
+		</control>
+		
+		<control type="grouplist" id="4112">
+			<posx>10</posx>
+			<posy>0</posy>
+			<width>275</width>
+			<height>156</height>
+			<itemgap>0</itemgap>
+			<orientation>vertical</orientation>
+			<onup>4112</onup>
+			<ondown>4112</ondown>
+			<include>common-fade-quick</include>
+		
+			<control type="radiobutton" id="801">
+				<description>shutdown button</description>
+				<label>List</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(listvideos)</onclick>
+				<selected>!Skin.HasSetting(listvideos)</selected>
+			</control>
+			<control type="radiobutton" id="802">
+				<description>shutdown button</description>
+				<label>Flow</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(flowvideos)</onclick>
+				<selected>!Skin.HasSetting(flowvideos)</selected>
+			</control>
+			<control type="radiobutton" id="803">
+				<description>shutdown button</description>
+				<label>Showcase</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(showcasevideos)</onclick>
+				<selected>!Skin.HasSetting(showcasevideos)</selected>
+			</control>
+			<control type="radiobutton" id="804">
+				<description>shutdown button</description>
+				<label>Skyline</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(skylinevideos)</onclick>
+				<selected>Skin.HasSetting(skylinevideos)</selected>
+			</control>
+
+		</control>
+	</control>
+	
+	<control type="group">
+	<posx>496</posx>
+	<posy>283</posy>
+	<width>289</width>
+	<height>155</height>
+	<visible>Window.IsVisible(501)</visible>
+		<control type="image">
+			<description>background top image</description>
+			<posx>0</posx>
+			<posy>-20</posy>
+			<width>289</width>
+			<height>20</height>
+			<texture>dialogs/context_top.png</texture>
+		</control>
+		<control type="image">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>289</width>
+			<height>117</height>
+			<texture>dialogs/context_middle.png</texture>
+		</control>
+		<control type="image">
+			<description>background bottom image</description>
+			<posx>0</posx>
+			<posy>117</posy>
+			<width>289</width>
+			<height>18</height>
+			<texture>dialogs/context_bottom.png</texture>
+		</control>
+		
+		<control type="grouplist" id="4112">
+			<posx>10</posx>
+			<posy>0</posy>
+			<width>275</width>
+			<height>117</height>
+			<itemgap>0</itemgap>
+			<orientation>vertical</orientation>
+			<onup>4112</onup>
+			<ondown>4112</ondown>
+			<include>common-fade-quick</include>
+		
+			<control type="radiobutton" id="801">
+				<description>shutdown button</description>
+				<label>List</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(listmusicfiles)</onclick>
+				<selected>!Skin.HasSetting(listmusicfiles)</selected>
+			</control>
+			<control type="radiobutton" id="802">
+				<description>shutdown button</description>
+				<label>Flow</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(flowmusicfiles)</onclick>
+				<selected>!Skin.HasSetting(flowmusicfiles)</selected>
+			</control>
+			<control type="radiobutton" id="803">
+				<description>shutdown button</description>
+				<label>Showcase</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(showcasemusicfiles)</onclick>
+				<selected>!Skin.HasSetting(showcasemusicfiles)</selected>
+			</control>
+
+		</control>
+	</control>
+	
+	<control type="group">
+	<posx>496</posx>
+	<posy>283</posy>
+	<width>289</width>
+	<height>155</height>
+	<visible>Window.IsVisible(502)</visible>
+		<control type="image">
+			<description>background top image</description>
+			<posx>0</posx>
+			<posy>-20</posy>
+			<width>289</width>
+			<height>20</height>
+			<texture>dialogs/context_top.png</texture>
+		</control>
+		<control type="image">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>289</width>
+			<height>117</height>
+			<texture>dialogs/context_middle.png</texture>
+		</control>
+		<control type="image">
+			<description>background bottom image</description>
+			<posx>0</posx>
+			<posy>117</posy>
+			<width>289</width>
+			<height>18</height>
+			<texture>dialogs/context_bottom.png</texture>
+		</control>
+		
+		<control type="grouplist" id="4112">
+			<posx>10</posx>
+			<posy>0</posy>
+			<width>275</width>
+			<height>117</height>
+			<itemgap>0</itemgap>
+			<orientation>vertical</orientation>
+			<onup>4112</onup>
+			<ondown>4112</ondown>
+			<include>common-fade-quick</include>
+		
+			<control type="radiobutton" id="801">
+				<description>shutdown button</description>
+				<label>List</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(listmusiclibrary)</onclick>
+				<selected>!Skin.HasSetting(listmusiclibrary)</selected>
+			</control>
+			<control type="radiobutton" id="802">
+				<description>shutdown button</description>
+				<label>Flow</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(flowmusiclibrary)</onclick>
+				<selected>!Skin.HasSetting(flowmusiclibrary)</selected>
+			</control>
+			<control type="radiobutton" id="803">
+				<description>shutdown button</description>
+				<label>Showcase</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(showcasemusiclibrary)</onclick>
+				<selected>!Skin.HasSetting(showcasemusiclibrary)</selected>
+			</control>
+
+		</control>
+	</control>
+	
+	<control type="group">
+	<posx>496</posx>
+	<posy>283</posy>
+	<width>289</width>
+	<height>155</height>
+	<visible>Window.IsVisible(2)</visible>
+		<control type="image">
+			<description>background top image</description>
+			<posx>0</posx>
+			<posy>-20</posy>
+			<width>289</width>
+			<height>20</height>
+			<texture>dialogs/context_top.png</texture>
+		</control>
+		<control type="image">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>289</width>
+			<height>117</height>
+			<texture>dialogs/context_middle.png</texture>
+		</control>
+		<control type="image">
+			<description>background bottom image</description>
+			<posx>0</posx>
+			<posy>117</posy>
+			<width>289</width>
+			<height>18</height>
+			<texture>dialogs/context_bottom.png</texture>
+		</control>
+		
+		<control type="grouplist" id="4112">
+			<posx>10</posx>
+			<posy>0</posy>
+			<width>275</width>
+			<height>117</height>
+			<itemgap>0</itemgap>
+			<orientation>vertical</orientation>
+			<onup>4112</onup>
+			<ondown>4112</ondown>
+			<include>common-fade-quick</include>
+		
+			<control type="radiobutton" id="801">
+				<description>shutdown button</description>
+				<label>List</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(listpictures)</onclick>
+				<selected>!Skin.HasSetting(listpictures)</selected>
+			</control>
+			<control type="radiobutton" id="802">
+				<description>shutdown button</description>
+				<label>Flow</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(flowpictures)</onclick>
+				<selected>!Skin.HasSetting(flowpictures)</selected>
+			</control>
+			<control type="radiobutton" id="803">
+				<description>shutdown button</description>
+				<label>Showcase</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(showcasepictures)</onclick>
+				<selected>!Skin.HasSetting(showcasepictures)</selected>
+			</control>
+
+		</control>
+	</control>
+	
+	<control type="group">
+	<posx>496</posx>
+	<posy>283</posy>
+	<width>289</width>
+	<height>155</height>
+	<visible>Window.IsVisible(1)</visible>
+		<control type="image">
+			<description>background top image</description>
+			<posx>0</posx>
+			<posy>-20</posy>
+			<width>289</width>
+			<height>20</height>
+			<texture>dialogs/dialogs/context_top.png</texture>
+		</control>
+		<control type="image">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>289</width>
+			<height>117</height>
+			<texture>dialogs/dialogs/context_middle.png</texture>
+		</control>
+		<control type="image">
+			<description>background bottom image</description>
+			<posx>0</posx>
+			<posy>117</posy>
+			<width>289</width>
+			<height>18</height>
+			<texture>dialogs/dialogs/context_bottom.png</texture>
+		</control>
+		
+		<control type="grouplist" id="4112">
+			<posx>10</posx>
+			<posy>0</posy>
+			<width>275</width>
+			<height>117</height>
+			<itemgap>0</itemgap>
+			<orientation>vertical</orientation>
+			<onup>4112</onup>
+			<ondown>4112</ondown>
+			<include>common-fade-quick</include>
+		
+			<control type="radiobutton" id="801">
+				<description>shutdown button</description>
+				<label>List</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(listgames)</onclick>
+				<selected>!Skin.HasSetting(listgames)</selected>
+			</control>
+			<control type="radiobutton" id="802">
+				<description>shutdown button</description>
+				<label>Flow</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(flowgames)</onclick>
+				<selected>!Skin.HasSetting(flowgames)</selected>
+			</control>
+			<control type="radiobutton" id="803">
+				<description>shutdown button</description>
+				<label>Showcase</label>
+				<include>Objects_ContextMenuRadioButton</include>
+				<onclick>Skin.Togglesetting(showcasegames)</onclick>
+				<selected>!Skin.HasSetting(showcasegames)</selected>
+			</control>
+
+		</control>
+	</control>
+		
+	</controls>
+</window>

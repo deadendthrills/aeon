@@ -1,0 +1,140 @@
+<window id="111" type="dialog">
+	<defaultcontrol>4112</defaultcontrol>
+	<zorder>3</zorder>
+	<coordinates>
+	<system>1</system>
+	<posx>0</posx>
+	<posy>0</posy>
+	</coordinates>
+	<animation type="WindowOpen" reversible="false">
+		<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+		<effect type="fade" start="0" end="100" time="300" />
+	</animation>
+	<animation type="WindowClose" reversible="false">
+		<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+		<effect type="fade" start="100" end="0" time="200" />
+	</animation>	
+	<controls>
+
+	<control type="group">
+	<posx>505</posx>
+	<posy>177</posy>
+	<width>270</width>
+	<height>328</height>
+	<animation effect="slide" start="0,12" end="0,12" time="0" condition="![system.hasloginscreen | System.HasMediaDVD]">Conditional</animation>
+	<animation effect="slide" start="0,-27" end="0,-27" time="0" condition="system.hasloginscreen + System.HasMediaDVD">Conditional</animation>	
+		<control type="image">
+			<description>background top image</description>
+			<posx>0</posx>
+			<posy>-15</posy>
+			<width>270</width>
+			<height>15</height>
+			<texture>dialogs/context_top.png</texture>
+		</control>
+		<control type="image">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>270</width>
+			<include condition="![system.hasloginscreen | System.HasMediaDVD]">Objects_ButtonMenu8Group</include> 
+			<include condition="[system.hasloginscreen + !System.HasMediaDVD] | [!system.hasloginscreen + System.HasMediaDVD]">Objects_ButtonMenu9Group</include>			
+			<include condition="system.hasloginscreen + System.HasMediaDVD">Objects_ButtonMenu10Group</include>		
+			<texture>dialogs/context_middle.png</texture>
+		</control>
+		<control type="image">
+			<description>background bottom image</description>
+			<posx>0</posx>
+			<posy>351</posy>
+			<width>270</width>
+			<height>16</height>
+			<animation effect="slide" start="0,-39" end="0,-39" time="0" condition="![system.hasloginscreen | System.HasMediaDVD]">Conditional</animation>
+			<animation effect="slide" start="0,39" end="0,39" time="0" condition="system.hasloginscreen + System.HasMediaDVD">Conditional</animation>			
+			<texture>dialogs/context_bottom.png</texture>
+		</control>
+		
+		<control type="grouplist" id="4112">
+			<posx>4</posx>
+			<posy>0</posy>
+			<width>263</width>
+			<include condition="![system.hasloginscreen | System.HasMediaDVD]">Objects_ButtonMenu8Group</include> 
+			<include condition="[system.hasloginscreen + !System.HasMediaDVD] | [!system.hasloginscreen + System.HasMediaDVD]">Objects_ButtonMenu9Group</include>			
+			<include condition="system.hasloginscreen + System.HasMediaDVD">Objects_ButtonMenu10Group</include>			
+			<itemgap>0</itemgap>
+			<orientation>vertical</orientation>
+			<onup>4112</onup>
+			<ondown>4112</ondown>
+		
+			<control type="button" id="801">
+				<description>Settings</description>
+				<label>31200</label>
+				<include>Objects_ContextMenuButton</include>
+				<onclick>Skin.SetBool(bmtransit)</onclick>
+				<onclick>XBMC.ActivateWindow(4)</onclick>
+			</control>
+			<control type="button" id="802">
+				<description>Customise</description>
+				<label>31201</label>
+				<include>Objects_ContextMenuButton</include>
+				<onclick>Skin.SetBool(bmtransit)</onclick>				
+				<onclick>XBMC.ActivateWindow(604)</onclick>
+			</control>
+			<control type="button" id="803">
+				<description>Assistant</description>
+				<label>31202</label>
+				<include>Objects_ContextMenuButton</include>
+				<onclick>Skin.SetBool(bmtransit)</onclick>				
+				<onclick>XBMC.ActivateWindow(605)</onclick>
+			</control>
+			<control type="togglebutton" id="804">
+				<description>Home Visualiser</description>
+				<label>31203</label>
+				<altlabel>31204</altlabel>
+				<include>Objects_ContextMenuButton</include>
+				<onclick>Skin.Togglesetting(homevis)</onclick>
+				<usealttexture>Skin.HasSetting(homevis)</usealttexture>
+			</control>
+			<control type="button" id="805">
+				<description>Now Playing</description>
+				<label>31205</label>
+				<include>Objects_ContextMenuButton</include>
+				<onclick>Skin.SetBool(bmtransit)</onclick>
+				<onclick>XBMC.ActivateWindow(500)</onclick>
+			</control>
+			<control type="button" id="806">
+				<description>Shutdown Timer</description>
+				<label>31206</label>
+				<include>Objects_ContextMenuButton</include>
+				<onclick>AlarmClock(,Shutdown,)</onclick>
+			</control>
+			<control type="button" id="807">
+				<description>Log Out</description>
+				<label>31209</label>
+				<include>Objects_ContextMenuButton</include>
+				<onclick>System.LogOff</onclick>
+				<visible>system.hasloginscreen</visible>
+			</control>
+			<control type="button" id="810">
+				<description>Eject Tray</description>
+				<label>31210</label>
+				<include>Objects_ContextMenuButton</include>
+				<onclick>EjectTray()</onclick>
+				<visible>System.HasMediaDVD</visible>
+			</control>				
+			<control type="button" id="808">
+				<description>Restart</description>
+				<label>31207</label>
+				<include>Objects_ContextMenuButton</include>
+				<onclick>RestartApp</onclick>
+			</control>
+			<control type="button" id="809">
+				<description>Shutdown</description>
+				<label>31208</label>
+				<include>Objects_ContextMenuButton</include>
+				<onclick>Shutdown</onclick>
+			</control>				
+
+		</control>
+	</control>
+
+	</controls>
+</window>

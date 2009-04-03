@@ -1,0 +1,547 @@
+<includes>
+
+<include name="Settings_Welcome_TiltedPreviewVars">
+	<posx>1280</posx>
+	<posy>359</posy>
+	<width>339</width>
+	<height>391</height>
+	<include>Animation_WindowFade600</include>
+</include>
+
+<include name="Settings_Welcome_PosterVars">
+	<posx>524</posx>
+	<posy>316</posy>
+	<width>231</width>
+	<height>402</height>
+	<include>Animation_WindowFade600</include>
+</include>
+
+<include name="Settings_Welcome_Button">
+	<posx>0</posx>
+	<posy>50</posy>
+	<width>1280</width>
+	<font>Font_WelcomeSelect</font>
+	<texture>-</texture>
+	<align>center</align>
+	<include>Colour_DarkGrey</include>
+	<include>Animation_WelcomeFade</include>
+</include>
+
+<include name="Settings_Welcome_Text">
+	<posx>0</posx>
+	<posy>130</posy>
+	<height>200</height>
+	<width>1280</width>
+	<font>Font_Welcome</font>
+	<align>center</align>
+	<include>Animation_WelcomeFade</include>
+</include>
+
+<include name="Settings_Welcome_TiltedPreview1">
+	<include>Settings_Welcome_TiltedPreviewVars</include>
+	<animation type="Visible" reversible="false">
+		<effect type="fade" start="0" end="100" time="1200" />
+		<effect type="slide" start="0,0" end="-1212,0" time="1200" tween="cubic" easing="out" />
+	</animation>
+	<animation type="Hidden" reversible="false">
+		<effect type="fade" start="100" end="0" time="600" />
+		<effect type="slide" start="-1212,0" end="-1780,0" time="600" tween="cubic" easing="in" />
+	</animation>	
+</include>
+
+<include name="Settings_Welcome_TiltedPreview2">
+	<include>Settings_Welcome_TiltedPreviewVars</include>
+	<animation type="Visible" reversible="false">
+		<effect type="fade" start="0" end="100" time="1200" delay="350" />
+		<effect type="slide" start="0,0" end="-820,0" time="1200" tween="cubic" easing="out" delay="350" />
+	</animation>
+	<animation type="Hidden" reversible="false">
+		<effect type="fade" start="100" end="0" time="600" delay="350" />
+		<effect type="slide" start="-820,0" end="-1780,0" time="600" tween="cubic" easing="in" delay="350" />
+	</animation>	
+</include>
+
+<include name="Settings_Welcome_TiltedPreview3">
+	<include>Settings_Welcome_TiltedPreviewVars</include>
+	<animation type="Visible" reversible="false">
+		<effect type="fade" start="0" end="100" time="1200" delay="700" />
+		<effect type="slide" start="0,0" end="-428,0" time="1200" tween="cubic" easing="out" delay="700" />
+	</animation>
+	<animation type="Hidden" reversible="false">
+		<effect type="fade" start="100" end="0" time="600" delay="700" />
+		<effect type="slide" start="-428,0" end="-1780,0" time="600" tween="cubic" easing="in" delay="700" />
+	</animation>	
+</include>
+
+<include name="Settings_Welcome">
+
+	<control type="group" id="909">
+		<visible>![Window.Previous(4) | Window.Previous(11) | Window.Previous(24) | Window.Previous(25) | Window.Previous(1) | Window.Previous(2) | Window.Previous(500) | Window.Previous(501) | Window.Previous(502)]</visible>
+
+		<control type="image">
+			<include>FullscreenDimensions</include>
+			<texture>common/black.png</texture>
+		</control>
+		
+		<control type="image">
+			<include>FullscreenDimensions</include>
+			<texture>welcome/welcome_backdrop.png</texture>
+			<include>Animation_WindowFade600</include>
+		</control>
+
+<!-- Screen One: Opening screen -->
+		
+		<control type="image" id="601">
+			<posx>1280</posx>
+			<posy>559</posy>
+			<width>189</width>
+			<height>161</height>
+			<texture>welcome/welcome_xbmclogo.png</texture>
+			<animation type="WindowOpen" reversible="false">
+				<effect type="fade" start="0" end="100" time="1200" />
+				<effect type="slide" start="0,0" end="-280,0" time="1200" tween="cubic" easing="out" />
+			</animation>
+			<animation type="Visible" reversible="false">
+				<effect type="fade" start="0" end="100" time="1200" />
+				<effect type="slide" start="0,0" end="-280,0" time="1200" tween="cubic" easing="out" />
+			</animation>
+			<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>			
+			<visible>Control.IsVisible(600)</visible>
+		</control>
+		
+		<control type="image" id="601">
+			<posx>-135</posx>
+			<posy>531</posy>
+			<width>134</width>
+			<height>187</height>
+			<texture>welcome/welcome_aeonlogo.png</texture>
+			<animation type="WindowOpen" reversible="false">
+				<effect type="fade" start="0" end="100" time="1200" />
+				<effect type="slide" start="0,0" end="230,0" time="1200" tween="cubic" easing="out" />
+			</animation>
+			<animation type="Visible" reversible="false">
+				<effect type="fade" start="0" end="100" time="1200" />
+				<effect type="slide" start="0,0" end="230,0" time="1200" tween="cubic" easing="out" />
+			</animation>
+			<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>			
+			<visible>Control.IsVisible(600)</visible>
+		</control>		
+		
+		<control type="label" id="601">
+			<include>Settings_Welcome_Text</include>
+			<visible>Control.IsVisible(600)</visible>
+			<label>31650</label>
+		</control>
+		
+		<control type="button" id="600">
+			<include>Settings_Welcome_Button</include>
+			<visible>![Control.HasFocus(800) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(805) | Control.HasFocus(806) | Control.HasFocus(807) | Control.HasFocus(808) | Control.HasFocus(809)]</visible>
+			<label>31655</label>
+		</control>
+
+<!-- Screen Two: Main Menu -->
+		
+		<control type="image" id="700">
+			<texture>welcome/home/welcome_home_1.png</texture>
+			<visible>Control.HasFocus(800) + ![Control.IsVisible(601) | Control.IsVisible(701) | Control.IsVisible(708)]</visible>
+			<include>Settings_Welcome_TiltedPreview1</include>
+		</control>
+		
+		<control type="image" id="700">
+			<texture>welcome/home/welcome_home_2.png</texture>
+			<visible>Control.HasFocus(800) + ![Control.IsVisible(601) | Control.IsVisible(701) | Control.IsVisible(708)]</visible>
+			<include>Settings_Welcome_TiltedPreview2</include>
+		</control>
+		
+		<control type="image" id="700">
+			<texture>welcome/home/welcome_home_3.png</texture>
+			<visible>Control.HasFocus(800) + ![Control.IsVisible(601) | Control.IsVisible(701) | Control.IsVisible(708)]</visible>
+			<include>Settings_Welcome_TiltedPreview3</include>
+		</control>
+
+		<control type="label" id="700">
+			<include>Settings_Welcome_Text</include>
+			<visible>Control.HasFocus(800) + ![Control.IsVisible(601) | Control.IsVisible(701) | Control.IsVisible(708)]</visible>
+			<label>31651</label>
+		</control>
+
+		<control type="button" id="800">
+			<ondown>SetFocus(801)</ondown>
+			<onclick>XBMC.ReplaceWindow(Home)</onclick>
+			<visible>Control.IsVisible(909)</visible>
+		</control>
+		
+		<control type="button">
+			<include>Settings_Welcome_Button</include>
+			<visible>Control.HasFocus(800)</visible>
+			<label>31656</label>
+		</control>
+
+<!-- Screen Two: Movies and Music -->
+		
+		<control type="image" id="701">
+			<texture>welcome/movies/welcome_movies_1.png</texture>
+			<visible>Control.HasFocus(801) + ![Control.IsVisible(700) | Control.IsVisible(702)]</visible>
+			<include>Settings_Welcome_TiltedPreview1</include>
+		</control>
+		
+		<control type="image" id="701">
+			<texture>welcome/movies/welcome_movies_2.png</texture>
+			<visible>Control.HasFocus(801) + ![Control.IsVisible(700) | Control.IsVisible(702)]</visible>
+			<include>Settings_Welcome_TiltedPreview2</include>
+		</control>
+		
+		<control type="image" id="701">
+			<texture>welcome/movies/welcome_movies_3.png</texture>
+			<visible>Control.HasFocus(801) + ![Control.IsVisible(700) | Control.IsVisible(702)]</visible>
+			<include>Settings_Welcome_TiltedPreview3</include>
+		</control>
+
+		<control type="label" id="701">
+			<include>Settings_Welcome_Text</include>
+			<visible>Control.HasFocus(801) + ![Control.IsVisible(700) | Control.IsVisible(702)]</visible>
+			<label>31652</label>
+		</control>
+		
+		<control type="button" id="801">
+			<include>Settings_Welcome_Button</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(801)</visible>
+			<onup>SetFocus(800)</onup>
+			<ondown>SetFocus(802)</ondown>
+			<onclick>XBMC.ReplaceWindow(Home)</onclick>			
+			<label>31657</label>
+		</control>
+		
+<!-- Screen Two: Posters -->
+
+		<control type="image" id="702">
+			<texture>welcome/posters/welcome_poster1.png</texture>
+			<visible>Control.IsVisible(802) + ![Control.IsVisible(701) | Control.IsVisible(703)]</visible>
+			<include>Settings_Welcome_PosterVars</include>
+			<animation type="Visible" reversible="false">
+				<effect type="fade" start="0" end="100" time="300" delay="300" />
+				<effect type="slide" start="0,0" end="-440,0" time="800" delay="1200" tween="cubic" easing="out" />
+			</animation>
+			<animation type="Hidden" reversible="false">
+				<effect type="fade" start="100" end="0" time="300" />
+				<effect type="slide" start="-440,0" end="-440,0" time="0" />
+			</animation>
+		</control>
+		
+		<control type="image" id="702">
+			<texture>welcome/posters/welcome_poster5.png</texture>
+			<visible>Control.IsVisible(802) + ![Control.IsVisible(701) | Control.IsVisible(703)]</visible>
+			<include>Settings_Welcome_PosterVars</include>
+			<animation type="Visible" reversible="false">
+				<effect type="fade" start="0" end="100" time="300" delay="300" />
+				<effect type="slide" start="0,0" end="440,0" time="800" delay="1200" tween="cubic" easing="out" />
+			</animation>
+			<animation type="Hidden" reversible="false">
+				<effect type="fade" start="100" end="0" time="300" />
+				<effect type="slide" start="440,0" end="440,0" time="0" />
+			</animation>
+		</control>
+
+		<control type="image" id="702">
+			<texture>welcome/posters/welcome_poster2.png</texture>
+			<visible>Control.IsVisible(802) + ![Control.IsVisible(701) | Control.IsVisible(703)]</visible>
+			<include>Settings_Welcome_PosterVars</include>
+			<animation type="Visible" reversible="false">
+				<effect type="fade" start="0" end="100" time="300" delay="300" />
+				<effect type="slide" start="0,0" end="-233,0" time="400" delay="1200" tween="cubic" easing="out" />
+			</animation>
+			<animation type="Hidden" reversible="false">
+				<effect type="fade" start="100" end="0" time="300" />
+				<effect type="slide" start="-233,0" end="-233,0" time="0" />
+			</animation>
+		</control>
+		
+		<control type="image" id="702">
+			<texture>welcome/posters/welcome_poster4.png</texture>
+			<visible>Control.IsVisible(802) + ![Control.IsVisible(701) | Control.IsVisible(703)]</visible>
+			<include>Settings_Welcome_PosterVars</include>
+			<animation type="Visible" reversible="false">
+				<effect type="fade" start="0" end="100" time="300" delay="300" />
+				<effect type="slide" start="0,0" end="233,0" time="400" delay="1200" tween="cubic" easing="out" />
+			</animation>
+			<animation type="Hidden" reversible="false">
+				<effect type="fade" start="100" end="0" time="300" />
+				<effect type="slide" start="233,0" end="233,0" time="0" />
+			</animation>
+		</control>
+		
+		<control type="image" id="702">
+			<texture>welcome/posters/welcome_poster3.png</texture>
+			<visible>Control.IsVisible(802) + ![Control.IsVisible(701) | Control.IsVisible(703)]</visible>
+			<include>Settings_Welcome_PosterVars</include>
+			<animation type="Visible" reversible="false">
+				<effect type="fade" start="0" end="100" time="300" />
+			</animation>
+			<animation type="Hidden" reversible="false">
+				<effect type="fade" start="100" end="0" time="300" />
+			</animation>
+		</control>
+		
+		<control type="label" id="702">
+			<include>Settings_Welcome_Text</include>
+			<visible>Control.IsVisible(802) + ![Control.IsVisible(701) | Control.IsVisible(703)]</visible>
+			<label>31653</label>
+		</control>
+		
+		<control type="button" id="802">
+			<include>Settings_Welcome_Button</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(802)</visible>
+			<onup>SetFocus(801)</onup>
+			<ondown>SetFocus(803)</ondown>
+			<onclick>XBMC.ReplaceWindow(Home)</onclick>	
+			<label>31657</label>
+		</control>
+		
+<!-- Screen Four: Info -->
+		
+		<control type="image" id="703">
+			<texture>welcome/info/welcome_info1.png</texture>
+			<visible>Control.IsVisible(803) + ![Control.IsVisible(702) | Control.IsVisible(704)]</visible>
+			<include>Settings_Welcome_TiltedPreview1</include>
+		</control>
+		
+		<control type="image" id="703">
+			<texture>welcome/info/welcome_info2.png</texture>
+			<visible>Control.IsVisible(803) + ![Control.IsVisible(702) | Control.IsVisible(704)]</visible>
+			<include>Settings_Welcome_TiltedPreview2</include>
+		</control>
+		
+		<control type="image" id="703">
+			<texture>welcome/info/welcome_info3.png</texture>
+			<visible>Control.IsVisible(803) + ![Control.IsVisible(702) | Control.IsVisible(704)]</visible>
+			<include>Settings_Welcome_TiltedPreview3</include>
+		</control>
+
+		<control type="label" id="703">
+			<include>Settings_Welcome_Text</include>
+			<visible>Control.IsVisible(803) + ![Control.IsVisible(702) | Control.IsVisible(704)]</visible>
+			<label>31654</label>
+		</control>
+		
+		<control type="button" id="803">
+			<include>Settings_Welcome_Button</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(803)</visible>
+			<onup>802</onup>
+			<ondown>804</ondown>
+			<onclick>XBMC.ReplaceWindow(Home)</onclick>	
+			<label>31657</label>
+		</control>
+		
+<!-- Screen Five: TV -->
+		
+		<control type="image" id="704">
+			<texture>welcome/tv/welcome_tv_1.png</texture>
+			<visible>Control.IsVisible(804) + ![Control.IsVisible(703) | Control.IsVisible(705)]</visible>
+			<include>Settings_Welcome_TiltedPreview1</include>
+		</control>
+		
+		<control type="image" id="704">
+			<texture>welcome/tv/welcome_tv_2.png</texture>
+			<visible>Control.IsVisible(804) + ![Control.IsVisible(703) | Control.IsVisible(705)]</visible>
+			<include>Settings_Welcome_TiltedPreview2</include>
+		</control>
+		
+		<control type="image" id="704">
+			<texture>welcome/tv/welcome_tv_3.png</texture>
+			<visible>Control.IsVisible(804) + ![Control.IsVisible(703) | Control.IsVisible(705)]</visible>
+			<include>Settings_Welcome_TiltedPreview3</include>
+		</control>
+
+		<control type="label" id="704">
+			<include>Settings_Welcome_Text</include>
+			<visible>Control.IsVisible(804) + ![Control.IsVisible(703) | Control.IsVisible(705)]</visible>
+			<label>31659</label>
+		</control>
+		
+		<control type="button" id="804">
+			<include>Settings_Welcome_Button</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(804)</visible>
+			<onup>SetFocus(803)</onup>
+			<ondown>SetFocus(805)</ondown>
+			<onclick>XBMC.ReplaceWindow(Home)</onclick>
+			<label>31657</label>
+		</control>
+		
+<!-- Screen Six: Settings -->
+		
+		<control type="image" id="705">
+			<texture>welcome/settings/welcome_settings_1.png</texture>
+			<visible>Control.IsVisible(805) + ![Control.IsVisible(704) | Control.IsVisible(706)]</visible>
+			<include>Settings_Welcome_TiltedPreview1</include>
+		</control>
+		
+		<control type="image" id="705">
+			<texture>welcome/settings/welcome_settings_2.png</texture>
+			<visible>Control.IsVisible(805) + ![Control.IsVisible(704) | Control.IsVisible(706)]</visible>
+			<include>Settings_Welcome_TiltedPreview2</include>
+		</control>
+		
+		<control type="image" id="705">
+			<texture>welcome/settings/welcome_settings_3.png</texture>
+			<visible>Control.IsVisible(805) + ![Control.IsVisible(704) | Control.IsVisible(706)]</visible>
+			<include>Settings_Welcome_TiltedPreview3</include>
+		</control>
+
+		<control type="label" id="705">
+			<include>Settings_Welcome_Text</include>
+			<visible>Control.IsVisible(805) + ![Control.IsVisible(704) | Control.IsVisible(706)]</visible>
+			<label>31660</label>
+		</control>
+		
+		<control type="button" id="805">
+			<include>Settings_Welcome_Button</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(805)</visible>
+			<onup>SetFocus(804)</onup>
+			<ondown>SetFocus(806)</ondown>
+			<onclick>XBMC.ReplaceWindow(Home)</onclick>
+			<label>31657</label>
+		</control>
+
+<!-- Screen Seven: Backdrops -->
+
+		<control type="image" id="706">
+			<texture>welcome/backdrops/welcome_backdrops_3.png</texture>
+			<visible>Control.IsVisible(806) + ![Control.IsVisible(705) | Control.IsVisible(707)]</visible>
+			<posx>280</posx>
+			<posy>552</posy>
+			<width>720</width>
+			<height>101</height>
+			<animation type="Visible" reversible="false">
+				<effect type="fade" start="0" end="100" time="300" delay="700" />
+				<effect type="slide" start="0,0" end="0,-202" time="1100" delay="1200" tween="cubic" easing="out" />
+			</animation>
+			<animation type="Hidden" reversible="false">
+				<effect type="fade" start="100" end="0" time="300" />
+				<effect type="slide" start="0,-202" end="0,-202" time="0" />
+			</animation>
+		</control>
+
+		<control type="image" id="706">
+			<texture>welcome/backdrops/welcome_backdrops_2.png</texture>
+			<visible>Control.IsVisible(806) + ![Control.IsVisible(705) | Control.IsVisible(707)]</visible>
+			<posx>190</posx>
+			<posy>552</posy>
+			<width>900</width>
+			<height>101</height>
+			<animation type="Visible" reversible="false">
+				<effect type="fade" start="0" end="100" time="300" delay="700" />
+				<effect type="slide" start="0,0" end="0,-101" time="700" delay="1200" tween="cubic" easing="out" />
+			</animation>
+			<animation type="Hidden" reversible="false">
+				<effect type="fade" start="100" end="0" time="300" />
+				<effect type="slide" start="0,-101" end="0,-101" time="0" />
+			</animation>
+		</control>		
+		
+		<control type="image" id="706">
+			<texture>welcome/backdrops/welcome_backdrops_1.png</texture>
+			<visible>Control.IsVisible(806) + ![Control.IsVisible(705) | Control.IsVisible(707)]</visible>
+			<posx>100</posx>
+			<posy>552</posy>
+			<width>1080</width>
+			<height>168</height>
+			<animation type="Visible" reversible="false">
+				<effect type="fade" start="0" end="100" time="700" />
+			</animation>
+			<animation type="Hidden" reversible="false">
+				<effect type="fade" start="100" end="0" time="300" />
+			</animation>
+		</control>
+		
+		<control type="label" id="706">
+			<include>Settings_Welcome_Text</include>
+			<visible>Control.IsVisible(806) + ![Control.IsVisible(705) | Control.IsVisible(707)]</visible>
+			<label>31661</label>
+		</control>
+		
+		<control type="button" id="806">
+			<include>Settings_Welcome_Button</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(806)</visible>
+			<onup>SetFocus(805)</onup>
+			<ondown>SetFocus(807)</ondown>
+			<onclick>XBMC.ReplaceWindow(Home)</onclick>
+			<label>31657</label>
+		</control>
+		
+<!-- Screen Eight: OSD -->
+		
+		<control type="image" id="707">
+			<texture>welcome/osd/welcome_osd_1.png</texture>
+			<visible>Control.IsVisible(807) + ![Control.IsVisible(706) | Control.IsVisible(708)]</visible>
+			<include>Settings_Welcome_TiltedPreview1</include>
+		</control>
+		
+		<control type="image" id="707">
+			<texture>welcome/osd/welcome_osd_2.png</texture>
+			<visible>Control.IsVisible(807) + ![Control.IsVisible(706) | Control.IsVisible(708)]</visible>
+			<include>Settings_Welcome_TiltedPreview2</include>
+		</control>
+		
+		<control type="image" id="707">
+			<texture>welcome/osd/welcome_osd_3.png</texture>
+			<visible>Control.IsVisible(807) + ![Control.IsVisible(706) | Control.IsVisible(708)]</visible>
+			<include>Settings_Welcome_TiltedPreview3</include>
+		</control>
+
+		<control type="label" id="707">
+			<include>Settings_Welcome_Text</include>
+			<visible>Control.IsVisible(807) + ![Control.IsVisible(706) | Control.IsVisible(708)]</visible>
+			<label>31662</label>
+		</control>
+		
+		<control type="button" id="807">
+			<include>Settings_Welcome_Button</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(807)</visible>
+			<onup>SetFocus(806)</onup>
+			<ondown>SetFocus(808)</ondown>
+			<onclick>XBMC.ReplaceWindow(Home)</onclick>
+			<label>31657</label>
+		</control>
+
+<!-- Screen Nine: Website -->
+		
+		<control type="image" id="708">
+			<texture>welcome/aeonproject/welcome_aeonproject_1.png</texture>
+			<visible>Control.IsVisible(808) + ![Control.IsVisible(707) | Control.IsVisible(709)]</visible>
+			<include>Settings_Welcome_TiltedPreview1</include>
+		</control>
+		
+		<control type="image" id="708">
+			<texture>welcome/aeonproject/welcome_aeonproject_2.png</texture>
+			<visible>Control.IsVisible(808) + ![Control.IsVisible(707) | Control.IsVisible(709)]</visible>
+			<include>Settings_Welcome_TiltedPreview2</include>
+		</control>
+		
+		<control type="image" id="708">
+			<texture>welcome/aeonproject/welcome_aeonproject_3.png</texture>
+			<visible>Control.IsVisible(808) + ![Control.IsVisible(707) | Control.IsVisible(709)]</visible>
+			<include>Settings_Welcome_TiltedPreview3</include>
+		</control>
+
+		<control type="label" id="708">
+			<include>Settings_Welcome_Text</include>
+			<visible>Control.IsVisible(808) + ![Control.IsVisible(707) | Control.IsVisible(709)]</visible>
+			<label>31663</label>
+		</control>
+		
+		<control type="button" id="808">
+			<include>Settings_Welcome_Button</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(808)</visible>
+			<onup>SetFocus(807)</onup>
+			<ondown>SetFocus(800)</ondown>
+			<onclick>XBMC.ReplaceWindow(Home)</onclick>
+			<label>31657</label>
+		</control>
+
+	</control>
+		
+</include>
+
+</includes>

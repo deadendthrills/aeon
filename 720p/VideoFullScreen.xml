@@ -1,0 +1,77 @@
+<window id="2005">
+	<controls>
+
+		<!-- codec infos -->
+	<control type="group">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>1280</width>
+		<height>125</height>
+		<visible>Control.IsVisible(10)</visible>
+		<animation type="Visible">
+			<effect type="fade" time="400" start="0" end="100" />
+			<effect type="slide" time="400" start="0,-125" end="0,0" easing="out" tween="cubic" />
+		</animation>
+		<animation type="Hidden">
+			<effect type="fade" time="400" start="100" end="0" />
+			<effect type="slide" time="400" start="0,0" end="0,-125" easing="in" tween="cubic" />
+		</animation>
+		<animation type="WindowOpen">
+			<effect type="fade" time="400" start="0" end="100" />
+			<effect type="slide" time="400" start="0,-125" end="0,0" easing="out" tween="cubic" />
+		</animation>
+		<animation type="WindowClose">
+			<effect type="fade" time="400" start="100" end="0" />
+			<effect type="slide" time="400" start="0,0" end="0,-125" easing="in" tween="cubic" />
+		</animation>		
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>			
+			<height>125</height>
+			<texture>osd/codec_top.png</texture>
+		</control>
+		<control type="label" id="10">
+			<description>row 1 label</description>
+			<posx>0</posx>
+			<posy>12</posy>
+			<label>-</label>
+			<align>center</align>
+			<width>1280</width>			
+			<font>Font_OSDCodecInfo</font>
+		</control>
+		<control type="label" id="11">
+			<description>row 2 label</description>
+			<posx>0</posx>
+			<posy>37</posy>
+			<label>-</label>
+			<align>center</align>
+			<width>1280</width>						
+			<font>Font_OSDCodecInfo</font>
+		</control>
+		<control type="label" id="12">
+			<description>row 3 label</description>
+			<posx>0</posx>
+			<posy>62</posy>
+			<label>-</label>
+			<align>center</align>
+			<width>1280</width>						
+			<font>Font_OSDCodecInfo</font>
+		</control>
+	</control>
+	
+	<!-- === Buffering Dialog ===================== -->
+
+	<control type="label" id="24">
+		<description>buffering label</description>
+		<posx>210</posx>
+		<posy>520</posy>
+		<label>15107</label>
+		<width>291</width>
+		<align>center</align>
+		<font>font12</font>
+		<include>textcolorwhite</include>
+	</control>
+
+	</controls>
+</window>

@@ -1,0 +1,186 @@
+<includes>
+
+	<include name="ViewChangeLabel">
+		<width>427</width>
+		<height>40</height>
+		<align>center</align>
+		<aligny>center</aligny>
+		<font>Font_ViewChangeLabel</font>
+		<include>Colour_OffWhite</include>
+	</include>
+	
+	<include name="ViewChangeAnimTop">
+		<visible>Control.HasFocus(69)</visible>	
+		<animation type="Visible">
+			<effect type="fade" delay="400" start="0" end="100" time="400" />
+			<effect type="slide" delay="400" start="0,-240" end="0,0" time="400" easing="out" tween="cubic" />
+		</animation>
+		<animation effect="fade" delay="500" start="100" end="0" time="400">Hidden</animation>		
+	</include>
+	
+	<include name="ViewChangeAnimBottom">
+		<visible>Control.HasFocus(69)</visible>		
+		<animation type="Visible">
+			<effect type="fade" delay="400" start="0" end="100" time="400" />
+			<effect type="slide" delay="400" start="0,240" end="0,0" time="400" easing="out" tween="cubic" />
+		</animation>
+		<animation effect="fade" delay="500"start="100" end="0" time="400">Hidden</animation>		
+	</include>
+
+	<include name="ViewChangeAnimLeft">
+		<visible>Control.HasFocus(69)</visible>		
+		<animation type="Visible">
+			<effect type="fade" delay="400" start="0" end="100" time="400" />
+			<effect type="slide" delay="400" start="-427,0" end="0,0" time="400" easing="out" tween="cubic" />
+		</animation>
+		<animation effect="fade" delay="500" start="100" end="0" time="400">Hidden</animation>		
+	</include>
+
+	<include name="ViewChangeAnimRight">
+		<visible>Control.HasFocus(69)</visible>		
+		<animation type="Visible">
+			<effect type="fade" delay="400" start="0" end="100" time="400" />
+			<effect type="slide" delay="400" start="427,0" end="0,0" time="400" easing="out" tween="cubic" />
+		</animation>
+		<animation effect="fade" delay="500" start="100" end="0" time="400">Hidden</animation>		
+	</include>	
+
+	<include name="ViewChange">
+		<control type="image">
+			<include>FullscreenDimensions</include>
+			<visible>Control.HasFocus(69)</visible>
+			<texture>viewselect/vs_background.png</texture>
+			<animation effect="fade" start="0" end="100" time="400">Visible</animation>
+			<animation effect="fade" delay="500" start="100" end="0" time="400">Hidden</animation>
+		</control>
+		<control type="button" id="69">
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<visible allowhiddenfocus="true">Control.HasFocus(69)</visible>
+			<onclick>SetFocus(900)</onclick>
+			<onup>Container.SetViewMode(50)</onup>
+			<onup>SetFocus(900)</onup>
+			<onright>Container.SetViewMode(57)</onright>
+			<onright>SetFocus(900)</onright>
+			<ondown>Container.SetViewMode(55)</ondown>
+			<ondown>SetFocus(900)</ondown>
+			<onleft>Container.SetViewMode(53)</onleft>
+			<onleft>SetFocus(900)</onleft>		
+		</control>
+
+		<control type="image">
+			<include>FullscreenDimensions</include>
+			<visible>Control.HasFocus(69)</visible>
+			<texture>viewselect/vs_vignette.png</texture>
+			<animation effect="fade" start="0" end="100" time="400">Visible</animation>
+			<animation effect="fade" delay="500"start="100" end="0" time="400">Hidden</animation>
+		</control>
+		
+		<control type="group">
+			<include>ViewChangeAnimTop</include>
+			<control type="image">
+				<posx>536</posx>
+				<posy>41</posy>
+				<width>209</width>
+				<height>118</height>
+				<texture>viewselect/vs_icon_list.png</texture>
+			</control>
+			<control type="label">
+				<include>ViewChangeLabel</include>
+				<posx>427</posx>
+				<posy>160</posy>
+				<label>31752</label>			
+			</control>			
+		</control>
+		<control type="group">
+			<include>ViewChangeAnimBottom</include>		
+			<control type="image">
+				<posx>519</posx>
+				<posy>513</posy>
+				<width>242</width>
+				<height>135</height>
+				<texture>viewselect/vs_icon_panel.png</texture>				
+			</control>
+			<control type="label">
+				<include>ViewChangeLabel</include>
+				<posx>427</posx>
+				<posy>640</posy>
+				<label>31753</label>				
+			</control>			
+		</control>
+		<control type="group">
+			<include>ViewChangeAnimLeft</include>			
+			<control type="image">
+				<posx>96</posx>
+				<posy>263</posy>
+				<width>235</width>
+				<height>154</height>
+				<texture>viewselect/vs_icon_wall.png</texture>			
+			</control>
+			<control type="label">
+				<include>ViewChangeLabel</include>
+				<posx>0</posx>
+				<posy>400</posy>
+				<label>31750</label>			
+			</control>
+		</control>
+		<control type="group">
+			<include>ViewChangeAnimRight</include>		
+			<control type="image">
+				<posx>975</posx>
+				<posy>277</posy>
+				<width>186</width>
+				<height>126</height>
+				<texture>viewselect/vs_icon_showcase.png</texture>				
+			</control>
+			<control type="label">
+				<include>ViewChangeLabel</include>
+				<posx>854</posx>
+				<posy>400</posy>
+				<label>31751</label>
+			</control>			
+		</control>		
+		
+		<control type="button">
+			<visible>Control.HasFocus(69)</visible>		
+			<include>FullscreenDimensions</include>
+			<align>center</align>
+			<aligny>top</aligny>
+			<textoffsety>320</textoffsety>
+			<font>Font_ViewChangeSelect</font>
+			<textcolor>33FFFFFF</textcolor>
+			<label>31754</label>
+			<animation type="Visible">
+				<effect type="fade" delay="400" start="0" end="100" time="400" />
+			</animation>
+			<animation effect="fade" start="100" delay="500" end="0" time="400">Hidden</animation>				
+		</control>
+		
+		<control type="button">
+			<visible>Control.HasFocus(69)</visible>		
+			<include>FullscreenDimensions</include>
+			<align>center</align>
+			<aligny>top</aligny>
+			<textoffsety>355</textoffsety>
+			<font>Font_ViewChangeLabel</font>
+			<textcolor>33FFFFFF</textcolor>
+			<label>31755</label>
+			<animation type="Visible">
+				<effect type="fade" delay="400" start="0" end="100" time="400" />
+			</animation>
+			<animation effect="fade" start="100" delay="500" end="0" time="400">Hidden</animation>				
+		</control>
+
+		<control type="image">
+			<visible>Control.HasFocus(69)</visible>			
+			<include>FullscreenDimensions</include>
+			<texture>viewselect/vs_overlay.png</texture>
+			<animation type="Visible">
+				<effect type="fade" delay="400" start="0" end="100" time="400" />
+			</animation>
+			<animation effect="fade" start="100" delay="500" end="0" time="400">Hidden</animation>					
+		</control>
+		
+	</include>
+
+</includes>

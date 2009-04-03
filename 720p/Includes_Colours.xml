@@ -1,0 +1,49 @@
+<includes>
+
+<include name="Colour_BlackAlpha80">
+	<textcolor>dc000000</textcolor>
+</include>
+
+<include name="Colour_WhiteAlpha80">
+	<textcolor>dcFFFFFF</textcolor>
+</include>
+
+<include name="Colour_RSS">
+	<textcolor>a9000000</textcolor>
+	<headlinecolor>a9000000</headlinecolor>
+	<highlightcolor>a9000000</highlightcolor>
+	<titlecolor>a9000000</titlecolor>
+</include>
+
+<include name="Colour_RSSLight">
+	<textcolor>bcFFFFFF</textcolor>
+	<headlinecolor>bcFFFFFF</headlinecolor>
+	<highlightcolor>bcFFFFFF</highlightcolor>
+	<titlecolor>bcFFFFFF</titlecolor>
+</include>
+
+<include name="Colour_ListItemUnfocused">
+	<textcolor>9bFFFFFF</textcolor>
+	<selectedcolor>9b3cd2fd</selectedcolor>
+</include>
+
+<include name="Colour_ListItemFocused">
+	<textcolor>FFFFFFFF</textcolor>
+	<selectedcolor>9b3cd2fd</selectedcolor>
+</include>
+
+<include name="Colour_OffWhite">
+	<textcolor>FFececec</textcolor>
+</include>
+
+<include name="Colour_Grey">
+	<textcolor>FF868686</textcolor>
+	<focusedcolor>FFececec</focusedcolor>
+	<disabledcolor>d0202020</disabledcolor>
+</include>
+
+<include name="Colour_DarkGrey">
+	<textcolor>FF5b6366</textcolor>
+</include>
+
+</includes>

@@ -1,0 +1,137 @@
+<window id="2">
+	<defaultcontrol>50</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+	
+    <control type="image" id="101">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>0</width>
+		<height>0</height>
+		<texture>-</texture>
+		<visible>!Skin.HasSetting(nopicturefanart) + [Control.HasFocus(57) | Control.HasFocus(60) | Control.HasFocus(94)] + [!Container(57).OnNext + !Container(57).OnPrevious]</visible>
+		<animation effect="fade" start="0" end="100" time="150" delay="3000">Visible</animation>
+	</control>
+
+	<control type="multiimage">
+		<include>Background_SingleImage</include>
+		<imagepath>backdrops/default_pictures</imagepath>
+		<info>Skin.String(CustomPictures)</info>
+		<visible>!Skin.String(CustomPicturesFolder)</visible>
+	</control>
+
+	<control type="multiimage">
+		<include>Background_ImageFolder</include>
+		<info>Skin.String(CustomPicturesFolder)</info>
+		<visible>Skin.String(CustomPicturesFolder)</visible>
+	</control>
+	
+	<control type="image">
+		<include>FullscreenDimensions</include>
+		<texture>windows/fanart_back.png</texture>
+        <visible>!Skin.HasSetting(nopicturefanart) + !Control.IsVisible(53) + !IsEmpty(listitem.filenameandpath)</visible>
+		<visible>substring(listitem.filenameandpath,jpg) | substring(listitem.filenameandpath,bmp) | substring(listitem.filenameandpath,png) | substring(listitem.filenameandpath,tif)</visible>		
+		<animation effect="fade" end="0" time="200">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>		
+	</control>
+
+	<control type="largeimage" id="71">
+		<include>FullscreenDimensions</include>
+        <visible>!Skin.HasSetting(nopicturefanart) + !Control.IsVisible(53) + !IsEmpty(listitem.filenameandpath)</visible>
+		<visible>substring(listitem.filenameandpath,jpg) | substring(listitem.filenameandpath,bmp) | substring(listitem.filenameandpath,png) | substring(listitem.filenameandpath,tif)</visible>		
+		<animation effect="fade" end="0" time="200">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
+		<texture>$INFO[listitem.filenameandpath]</texture>
+		<fadetime>400</fadetime>
+		<aspectratio align="top">keep</aspectratio>	
+	</control>
+	
+	<include>Furniture_WallBackground</include>
+	
+	<control type="group">
+		<include>FullscreenDimensions</include>
+		<include>Animation_OpenCloseZoom</include>
+		<include>Furniture_Time</include>
+		<include>Furniture_WindowRSS</include>
+		<include>Furniture_MediaPanel</include>
+		<include>Objects_ShowcaseMenuPanel</include>
+
+		<include>Viewtype_List</include>
+		<include>Viewtype_Showcase</include>
+		<include>Viewtype_Coverflow</include>
+		<include>Viewtype_Wall</include>		
+
+		<include>Furniture_WallTime</include>
+		<include>Furniture_WallRSS</include>		
+		
+		<control type="group" id="7000">
+			<include>Animation_MediaMenuPosition</include>
+
+			<control type="label">
+				<label>31031</label>
+				<include>Objects_MediaLabel</include>
+			</control>
+
+			<control type="image">
+				<include>Objects_MediaLogo</include>
+				<texture>windows/logo_pics.png</texture>
+			</control>	
+
+			<control type="grouplist" id="77">
+				<include>Animation_MediaMenuSlide</include>
+				<include>Objects_MediaMenuGroup</include>
+
+				<control type="button" id="900">
+					<label>$LOCALIZE[31050] $INFO[Container.ViewMode]</label>
+					<include>Objects_MediaMenuButton</include>
+					<onclick>SetFocus(69)</onclick>
+				</control>
+
+				<include>Objects_FlattenFlowButton</include>	
+				
+				<control type="button" id="3">
+					<label>103</label>
+					<include>Objects_MediaMenuButton</include>
+				</control>
+
+				<control type="togglebutton" id="901">
+					<include>Objects_MediaMenuButton</include>				
+					<label>31065</label>
+					<altlabel>31064</altlabel>
+					<usealttexture>Skin.HasSetting(nopicturefanart)</usealttexture>
+					<onclick>Skin.SetBool(nopicturefanart)</onclick>
+					<altclick>Skin.Reset(nopicturefanart)</altclick>
+					<visible>Window.IsActive(2) + Control.IsVisible(57)</visible>
+				</control>
+
+				<include>Objects_ThumbsButton</include>	
+
+				<include>Objects_WallGridButton</include>
+				
+				<include>Objects_WallBackdropButton</include>				
+				
+				<control type="button" id="6">
+					<label>108</label>
+					<include>Objects_MediaMenuButton</include>
+				</control>
+
+				<control type="togglebutton" id="9">
+					<label>31051</label>
+					<altlabel>31052</altlabel>
+					<include>Objects_MediaMenuButton</include>
+				</control>
+
+				<include>Objects_PicturesSetupButton</include>
+				
+				<include>Objects_MediaDebugButtons</include>
+			</control>
+		</control>
+
+	</control>
+
+	<include>ViewChange</include>	
+	<include>Background_ContextBlack</include>
+	<include>Furniture_Debug</include>
+	
+	</controls>
+</window>

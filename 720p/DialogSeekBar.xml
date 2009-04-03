@@ -1,0 +1,188 @@
+<window id="115">
+	<defaultcontrol>23</defaultcontrol>
+	<visible>Window.IsActive(2005) + !Window.IsActive(2901) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
+	<controls>
+
+	<control type="group">
+		<posx>0</posx>
+		<posy>620</posy>
+		<width>1280</width>
+		<height>159</height>
+		<include>Animation_CommonFade</include>	
+	
+	<control type="image">
+		<description>Panel</description>
+		<posx>0</posx>
+		<posy>0</posy>
+		<height>159</height>
+		<width>1280</width>
+		<colordiffuse>cdffffff</colordiffuse>
+		<texture>osd/osd_back.png</texture>
+	</control>
+
+	<control type="progress" id="23">
+		<description>Progressbar</description>
+		<posx>112</posx>
+		<posy>40</posy>
+		<width>1057</width>
+		<height>15</height>
+		<info>Player.Progress</info>
+		<texturebg>osd/osd_progress_back.png</texturebg>
+		<lefttexture>osd/osd_progress_left.png</lefttexture>
+		<midtexture>osd/osd_progress_mid.png</midtexture>
+		<righttexture>osd/osd_progress_right.png</righttexture>
+		<overlaytexture>-</overlaytexture>
+		<visible>true</visible>
+	</control>
+
+	<control type="image">
+		<posx>499</posx>
+		<posy>-20</posy>
+		<width>281</width>
+		<height>28</height>
+		<texture>osd/osd_button_paused.png</texture>
+		<include>Animation_CommonFade</include>
+		<visible>Player.Paused</visible>
+	</control>
+	
+	<control type="label">
+		<posx>499</posx>
+		<posy>-20</posy>
+		<width>281</width>
+		<height>28</height>
+		<aligny>center</aligny>
+		<align>center</align>
+		<font>Font_OSDSeek</font>
+		<textcolor>FF363636</textcolor>
+		<include>Animation_CommonFade</include>	
+		<label>PAUSED</label>
+		<visible>Player.Paused</visible>
+	</control>	
+	
+	<control type="group">
+		<posx>-500</posx>
+		<posy>-20</posy>
+		<width>499</width>
+		<height>28</height>
+		<animation effect="slide" end="200,0" time="200" condition="Player.Forwarding2x">Conditional</animation>
+		<animation effect="slide" end="275,0" time="200" condition="Player.Forwarding4x">Conditional</animation>
+		<animation effect="slide" end="350,0" time="200" condition="Player.Forwarding8x">Conditional</animation>
+		<animation effect="slide" end="425,0" time="200" condition="Player.Forwarding16x">Conditional</animation>
+		<animation effect="slide" end="499,0" time="200" condition="Player.Forwarding32x">Conditional</animation>
+		
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>499</width>
+			<height>28</height>
+			<texture>osd/osd_button_reverse.png</texture>
+		</control>
+		
+		<control type="label">
+			<include>Objects_OSDSeekForward</include>
+			<label>$LOCALIZE[31706] 2X</label>
+			<visible>Player.Forwarding2x</visible>
+		</control>
+		
+		<control type="label">
+			<include>Objects_OSDSeekForward</include>
+			<label>$LOCALIZE[31706] 4X</label>
+			<visible>Player.Forwarding4x</visible>
+		</control>
+		
+		<control type="label">
+			<include>Objects_OSDSeekForward</include>
+			<label>$LOCALIZE[31706] 8X</label>
+			<visible>Player.Forwarding8x</visible>
+		</control>
+		
+		<control type="label">
+			<include>Objects_OSDSeekForward</include>
+			<label>$LOCALIZE[31706] 16X</label>
+			<visible>Player.Forwarding16x</visible>
+		</control>
+		
+		<control type="label">
+			<include>Objects_OSDSeekForward</include>
+			<label>$LOCALIZE[31706] 32X</label>
+			<visible>Player.Forwarding32x</visible>
+		</control>
+		
+	</control>
+	
+	<control type="group">
+		<posx>1280</posx>
+		<posy>-20</posy>
+		<width>499</width>
+		<height>28</height>
+		<animation effect="slide" end="-200,0" time="200" condition="Player.Rewinding2x">Conditional</animation>
+		<animation effect="slide" end="-275,0" time="200" condition="Player.Rewinding4x">Conditional</animation>
+		<animation effect="slide" end="-350,0" time="200" condition="Player.Rewinding8x">Conditional</animation>
+		<animation effect="slide" end="-425,0" time="200" condition="Player.Rewinding16x">Conditional</animation>
+		<animation effect="slide" end="-499,0" time="200" condition="Player.Rewinding32x">Conditional</animation>
+		
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>499</width>
+			<height>28</height>
+			<texture>osd/osd_button_advance.png</texture>
+		</control>
+		
+		<control type="label">
+			<include>Objects_OSDSeekReverse</include>
+			<label>$LOCALIZE[31705] 2X</label>
+			<visible>Player.Rewinding2x</visible>
+		</control>
+		
+		<control type="label">
+			<include>Objects_OSDSeekReverse</include>
+			<label>$LOCALIZE[31705] 4X</label>
+			<visible>Player.Rewinding4x</visible>
+		</control>
+		
+		<control type="label">
+			<include>Objects_OSDSeekReverse</include>
+			<label>$LOCALIZE[31705] 8X</label>
+			<visible>Player.Rewinding8x</visible>
+		</control>
+		
+		<control type="label">
+			<include>Objects_OSDSeekReverse</include>
+			<label>$LOCALIZE[31705] 16X</label>
+			<visible>Player.Rewinding16x</visible>
+		</control>
+		
+		<control type="label">
+			<include>Objects_OSDSeekReverse</include>
+			<label>$LOCALIZE[31705] 32X</label>
+			<visible>Player.Rewinding32x</visible>
+		</control>
+		
+	</control>
+	
+	<control type="label">
+		<posx>112</posx>
+		<posy>60</posy>
+		<width>300</width>
+		<height>25</height>
+		<font>Font_OSDTime</font>
+		<colordiffuse>d0FFFFFF</colordiffuse>
+		<label>$INFO[VideoPlayer.Time]</label>
+	</control>
+	
+	<control type="label">
+		<posx>1168</posx>
+		<posy>60</posy>
+		<width>300</width>
+		<height>25</height>
+		<font>Font_OSDTime</font>
+		<align>right</align>
+		<colordiffuse>d0FFFFFF</colordiffuse>
+		<label>$INFO[VideoPlayer.Duration]</label>
+	</control>
+	
+	</control>
+	
+	</controls>
+</window>

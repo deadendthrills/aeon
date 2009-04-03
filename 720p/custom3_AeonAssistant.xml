@@ -1,0 +1,173 @@
+<window id="605">
+	<defaultcontrol always="true">6</defaultcontrol>
+	<controls>
+
+		<control type="multiimage">
+			<include>FullscreenDimensions</include>
+			<imagepath>backdrops/default_settings</imagepath>
+			<info>Skin.String(CustomSettings)</info>
+			<animation effect="fade" start="0" end="100" time="200" condition="[Skin.HasSetting(settingsfade) + Window.Previous(Home)] | Skin.HasSetting(bmtransit)">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="200" condition="[Window.Next(AppearanceSettings) | Window.Next(Home) | Window.Next(25) | Window.Next(24) | Window.Next(1) | Window.Next(2) | Window.Next(500) | Window.Next(501) | Window.Next(502)]">WindowClose</animation>
+		</control>
+
+		<control type="group">
+			<include>FullscreenDimensions</include>
+			<animation type="WindowOpen" reversible="false" condition="!Window.Previous(12) + !Window.Previous(13) + !Window.Previous(14) + !Window.Previous(15) + !Window.Previous(16) + !Window.Previous(18) + !Window.Previous(19) + !Window.Previous(17) + !Window.Previous(604) + !Window.Previous(56) | Skin.HasSetting(bmtransit)">
+				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+				<effect type="fade" start="0" end="100" time="300" />
+			</animation>
+			<animation type="WindowClose" reversible="false" condition="Window.Next(AppearanceSettings) | Window.Next(Home) | Window.Next(25) | Window.Next(24) | Window.Next(1) | Window.Next(2) | Window.Next(500) | Window.Next(501) | Window.Next(502)">
+				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+				<effect type="fade" start="100" end="0" time="300" />
+			</animation>
+
+			<include>Furniture_SettingsBackPanel</include>
+
+			<control type="label">
+				<description>sectiontitle</description>
+				<label>31510</label>
+				<include>Objects_SettingsSectionTitle</include>
+			</control>
+			
+			<include>Assistant_Buttons</include>
+
+			<control type="image">
+				<include>Furniture_SettingsInternalBackPanel</include>
+				<include>Animation_SettingsInternalPanel</include>
+			</control>
+
+			<control type="group">
+				<posx>332</posx>
+				<posy>58</posy>
+				<width>840</width>
+				<height>580</height>
+
+				<control type="image">
+					<include>Furniture_SettingsNewsSlideBig</include>
+					<texture>assistant/assistant_transmit.png</texture>
+					<visible>Control.HasFocus(6)</visible>
+				</control>
+				
+				<control type="label">
+					<posx>0</posx>
+					<posy>300</posy>
+					<width>840</width>
+					<label>31524</label>
+					<align>center</align>
+					<include>Colour_Grey</include>
+					<font>Font_ProgressLabelMid</font>					
+					<visible>Control.HasFocus(6)</visible>
+				</control>
+				
+				<control type="largeimage">
+					<include>Furniture_SettingsNewsSlideBig</include>
+					<texture>http://www.aeonproject.com/dropbin/latestnews.jpg</texture>
+					<visible>Control.HasFocus(6)</visible>
+					<fadetime>400</fadetime>
+				</control>
+
+				<control type="image">
+					<include>Furniture_SettingsNewsSlideBig</include>
+					<texture>assistant/assistant_vitalsback.png</texture>
+					<visible>Control.HasFocus(7)</visible>
+				</control>
+				
+				<control type="label">
+					<posx>20</posx>
+					<width>285</width>
+					<include>Furniture_SettingsVitals</include>
+					<textcolor>ff888888</textcolor>
+					<visible>Control.HasFocus(7)</visible>
+					<label>31598</label>
+				</control>
+				
+				<control type="label">
+					<posx>305</posx>
+					<width>553</width>
+					<include>Furniture_SettingsVitals</include>
+					<include>OffWhite</include>
+					<visible>Control.HasFocus(7)</visible>
+					<label>$INFO[System.BuildDate][CR]$LOCALIZE[31000][CR]$INFO[Skin.CurrentTheme][CR]$INFO[System.Language][CR]$INFO[System.ScreenResolution][CR]$INFO[System.FreeMemory][CR]$INFO[System.UsedspacePercent][CR]$INFO[System.CPUTemperature][CR]$INFO[System.GPUTemperature][CR]$INFO[System.Uptime][CR]$INFO[System.Internetstate][CR]$INFO[Network.IPAddress][CR]$INFO[System.DVDLabel]</label>
+				</control>
+				
+				<control type="image">
+					<width>840</width>
+					<height>602</height>
+					<texture>assistant/credits.jpg</texture>
+					<visible>Control.HasFocus(8)</visible>
+					<animation type="Visible" reversible="false">
+						<effect type="fade" start="0" end="100" time="200" />
+						<effect type="fade" start="100" end="0" time="200" delay="10000" />
+					</animation>
+				</control>
+
+				<control type="image">
+					<width>840</width>
+					<height>602</height>
+					<texture>assistant/credits2.jpg</texture>
+					<visible>Control.HasFocus(8)</visible>
+					<animation type="Visible">
+						<effect type="fade" start="0" end="100" time="200" delay="6000" />
+					</animation>
+				</control>
+
+				<control type="textbox">
+					<posx>420</posx>
+					<posy>0</posy>
+					<width>420</width>
+					<height>601</height>
+					<label>[CR][CR][CR][CR][CR][CR][CR][CR][COLOR ff6a6a6a]$LOCALIZE[31900][/COLOR][CR]DUNCAN HARRIS[CR]EMILIO AYALA[CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][COLOR ff6a6a6a]$LOCALIZE[31901][/COLOR][CR]BIDE CUI[CR](PETERCUI.DEVIANTART.COM)[CR][CR][COLOR ff6a6a6a]$LOCALIZE[31910][/COLOR][CR]JAVIER OCASIO[CR](STUDIOTWENTYEIGHT.COM)[CR][CR][COLOR ff6a6a6a]$LOCALIZE[31902][/COLOR][CR]JORDAN MICHAEL[CR](JORDAN-MICHAEL.COM)[CR]ROBERTO ABRIL[CR](TESKOSTUDIO.COM)[CR][CR][COLOR ff6a6a6a]$LOCALIZE[31903][/COLOR][CR]THE BOXHEAD (NORWEGIAN)[CR]JULIEN CINGOZ (FRENCH)[CR]LEANDRO DISCACIATE (B. PORTUGUESE)[CR]MARKUS KAHLE (GERMAN)[CR]MELY (ITALIAN)[CR]CARLOS NABB (SWEDISH)[CR]ALBERT PI (SPANISH)[CR]CRISTIANO SILVA (E. PORTUGUESE)[CR]JOHN T (TRAD. CHINESE)[CR]SANDER VAN DER VEER (DUTCH)[CR]KWANGHO YUN (KOREAN)[CR][CR][COLOR ff6a6a6a]$LOCALIZE[31904][/COLOR][CR]KEVIN GOFFE[CR]MATT GRIMES[CR]PETER HARTMAN[CR]STEVE LOFTUS[CR]GIULIANO MACIOCCI[CR]NATHAN MARCONI[CR]SEBASTIAN NIEROP[CR]SKUNKM0NKEE[CR]STEVE MCNALLY[CR]STEVE SAUNDERS[CR]MARCO SCHACHE[CR][CR][COLOR ff6a6a6a]$LOCALIZE[31905][/COLOR][CR]DUNCAN HARRIS[CR][CR][COLOR ff6a6a6a]$LOCALIZE[31906][/COLOR][CR]JMARSHALL[CR]JEZZ X[CR]TEAM XBMC[CR]SMOKEHEAD[CR]MIKE BEECHAM[CR]TEAM RAZORFISH[CR]PARTHIBAN MOHANRAJ[CR]JOHAN ABADIE (NEUROS)[CR]DAVID MCLEOD (ELISA)[CR]ELAN FEINGOLD (PLEX)[CR]CS GOH (SELECT-TV)[CR]$LOCALIZE[31907][CR][CR]$LOCALIZE[31908][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][COLOR ff6a6a6a]$LOCALIZE[31909][/COLOR][CR]"FROM CHIPPENHAM WITH LOVE"[CR][CR][CR][CR][CR][CR][CR][CR]</label>
+					<visible>Control.HasFocus(8)</visible>
+					<font>Font_ProgressLabelMid</font>
+					<autoscroll delay="3000" time="1000" repeat="10000">true</autoscroll>
+					<align>center</align>
+					<animation type="Visible">
+						<effect type="fade" start="0" end="100" time="1000" delay="7000" />
+					</animation>
+				</control>				
+			
+				<control type="multiimage">
+					<include>Furniture_AssistantTutorialBox</include>
+					<imagepath>assistant/assistant_welcome.jpg</imagepath>
+					<visible>Control.HasFocus(9)</visible>
+				</control>
+			
+			</control>
+
+			<include>Furniture_SettingsFrontPanel</include>
+
+			<control type="image">
+				<posx>331</posx>
+				<posy>43</posy>
+				<width>842</width>
+				<height>634</height>
+				<texture>settings/settings_intframe_top.png</texture>
+				<include>Animation_SettingsInternalPanel</include>
+				<visible>![Control.HasFocus(6) | Control.HasFocus(7) | Control.HasFocus(8) | Control.HasFocus(13)]</visible>
+			</control>
+		
+			<control type="image">
+				<posx>331</posx>
+				<posy>43</posy>
+				<width>842</width>
+				<height>634</height>
+				<texture>settings/settings_intframebig_top.png</texture>
+				<include>Animation_SettingsInternalPanel</include>
+				<visible>Control.HasFocus(6) | Control.HasFocus(7) | Control.HasFocus(8) | Control.HasFocus(13)</visible>
+			</control>
+
+			<control type="group">
+				<description>Main instruction labels</description>
+				<include>FullscreenDimensions</include>
+				<include>Animation_CommonFade</include>
+				<include>Assistant_Labels</include>
+			</control>
+
+	</control>
+
+	<include>Background_ContextBlack</include>
+	<include>Furniture_Debug</include>
+
+</controls>
+
+</window>

@@ -1,0 +1,50 @@
+<window id="35">
+	<defaultcontrol>50</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+
+	<control type="multiimage">
+		<include>mediabackground</include>
+		<imagepath>Games</imagepath>
+		<info>Skin.String(CustomGames)</info>
+		<visible>!Skin.HasSetting(CustomMoviesFoldOn)</visible>
+	</control>
+
+	<control type="multiimage">
+		<include>mediabackgroundfolder</include>
+		<info>Skin.String(CustomGamesFolder)</info>
+		<visible>!Skin.HasSetting(CustomMoviesFolder)</visible>
+	</control>
+
+
+	<include>mediaglass</include>
+	<include>Window-Files</include>
+	<include>tutorial</include>
+
+	<control type="label">
+
+		<label>SAVES</label>
+		<include>medialabel</include>
+	</control>
+
+	<control type="grouplist">
+		<include>mediamenugroup</include>
+		<visible>Skin.HasSetting(videomovies)</visible>
+
+		<control type="button" id="2">
+		<label>100</label>
+		<include>mediamenu</include>
+		</control>
+
+		<control type="button" id="3">
+		<label>103</label>
+		<include>mediamenu</include>
+		</control>
+
+	</control>
+
+	<include>Common_List</include>
+	<include>Common_Icon</include>
+
+	</controls>
+</window>

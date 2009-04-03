@@ -1,0 +1,150 @@
+<window id="100">
+	<defaultcontrol>10</defaultcontrol>
+	<zorder>4</zorder>
+	<coordinates>
+	<system>1</system>
+	<posx>0</posx>
+	<posy>0</posy>
+	</coordinates>
+	<animation type="WindowOpen" reversible="false">
+		<effect type="zoom" start="80" end="100" center="640,360" delay="200" easing="out" tween="back" time="300" />
+		<effect type="fade" delay="200" start="0" end="100" time="300" />
+	</animation>
+	<animation type="WindowClose" reversible="false">
+		<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+		<effect type="fade" start="100" end="0" time="300" />
+	</animation>
+	<controls>
+
+	<control type="group">
+	<posx>287</posx>
+	<posy>520</posy>
+	<width>707</width>
+	<height>183</height>
+	<animation effect="slide" end="0,-225" time="400" easing="inout" tween="cubic" condition="Window.IsActive(Home) + Skin.HasSetting(lowermainmenu)">Conditional</animation>
+	<animation effect="slide" end="0,-400" time="200" easing="inout" tween="circle" condition="Control.IsVisible(57)">Conditional</animation>
+
+		<control type="image">
+			<posx>10</posx>
+			<posy>10</posy>
+			<width>688</width>
+			<height>163</height>
+			<texture>dialogs/progress_backg.png</texture>		
+		</control>
+	
+		<control type="label" id="2">
+			<posx>40</posx>
+			<posy>38</posy>
+			<width>627</width>
+			<height>51</height>
+			<textcolor>a7ffffff</textcolor>
+			<align>center</align>
+			<font>Font_ProgressLabelSmall</font>
+			<animation effect="slide" start="0,15" end="0,15" time="0" condition="IsEmpty(Control.GetLabel(3)) + IsEmpty(Control.GetLabel(4))">Conditional</animation>			
+			<animation effect="slide" start="0,0" end="0,0" time="0" condition="!IsEmpty(Control.GetLabel(3)) + IsEmpty(Control.GetLabel(4))">Conditional</animation>			
+		</control>
+
+		<control type="label" id="3">
+			<posx>40</posx>
+			<posy>61</posy>
+			<width>627</width>
+			<height>51</height>
+			<textcolor>a7ffffff</textcolor>
+			<align>center</align>
+			<font>Font_ProgressLabelSmall</font>
+			<animation effect="slide" start="0,10" end="0,10" time="0" condition="IsEmpty(Control.GetLabel(4))">Conditional</animation>				
+		</control>
+
+		<control type="label" id="4">
+			<posx>40</posx>
+			<posy>81</posy>
+			<width>627</width>
+			<height>51</height>
+			<textcolor>a7ffffff</textcolor>
+			<align>center</align>
+			<font>Font_ProgressLabelSmall</font>
+		</control>
+		
+		<control type="button" id="10">
+			<posx>40</posx>
+			<posy>101</posy>
+			<width>627</width>
+			<height>51</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<align>center</align>
+			<font>Font_ProgressLabelYesNo</font>
+			<textcolor>d0ffffff</textcolor>
+			<label>106</label>
+			<include>DialogInfo</include>
+			<scroll>true</scroll>
+			<onleft>11</onleft>
+			<onright>11</onright>
+			<onup>11</onup>
+			<ondown>11</ondown>
+			<include>Animation_CommonFade</include>
+			<animation effect="slide" start="0,-15" end="0,-15" time="0" condition="IsEmpty(Control.GetLabel(3)) + IsEmpty(Control.GetLabel(4))">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,0" time="0" condition="!IsEmpty(Control.GetLabel(3)) + IsEmpty(Control.GetLabel(4))">Conditional</animation>			
+			<visible allowhiddenfocus="true">Control.HasFocus(10)</visible>
+		</control>
+		
+		<control type="button" id="11">
+			<posx>40</posx>
+			<posy>101</posy>
+			<width>627</width>
+			<height>51</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<align>center</align>
+			<font>Font_ProgressLabelYesNo</font>
+			<textcolor>d0ffffff</textcolor>
+			<label>107</label>
+			<include>DialogInfo</include>
+			<scroll>true</scroll>
+			<onleft>10</onleft>
+			<onright>10</onright>
+			<onup>10</onup>
+			<ondown>10</ondown>
+			<include>Animation_CommonFade</include>
+			<animation effect="slide" start="0,-15" end="0,-15" time="0" condition="IsEmpty(Control.GetLabel(3)) + IsEmpty(Control.GetLabel(4))">Conditional</animation>	
+			<animation effect="slide" start="0,0" end="0,0" time="0" condition="!IsEmpty(Control.GetLabel(3)) + IsEmpty(Control.GetLabel(4))">Conditional</animation>			
+			<visible allowhiddenfocus="true">Control.HasFocus(11)</visible>			
+		</control>	
+
+		<control type="label">
+			<posx>10</posx>
+			<posy>10</posy>
+			<height>163</height>
+			<width>65</width>
+			<align>center</align>
+			<aligny>center</aligny>
+			<label>Y</label>
+			<font>Font_KeyboardShapes</font>				
+		</control>
+
+		<control type="label">
+			<posx>638</posx>
+			<posy>10</posy>
+			<height>163</height>
+			<width>50</width>
+			<align>center</align>
+			<aligny>center</aligny>
+			<label>Z</label>
+			<font>Font_KeyboardShapes</font>				
+		</control>	
+		
+		<control type="label" id="1">
+			<description>Heading Label</description>
+			<posx>40</posx>
+			<posy>50</posy>
+			<width>627</width>
+			<height>51</height>
+			<textcolor>a7ffffff</textcolor>
+			<align>center</align>
+			<font>-</font>
+		</control>
+		
+	</control>
+
+	</controls>
+</window>

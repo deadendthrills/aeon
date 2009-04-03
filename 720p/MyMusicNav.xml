@@ -1,0 +1,118 @@
+<window id="502">
+	<defaultcontrol>50</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+
+	<control type="multiimage">
+		<include>Background_SingleImage</include>
+		<imagepath>backdrops/default_music</imagepath>
+		<info>Skin.String(CustomMusic)</info>
+		<visible>!Skin.String(CustomMusicFolder)</visible>
+	</control>
+
+	<control type="multiimage">
+		<include>Background_ImageFolder</include>
+		<info>Skin.String(CustomMusicFolder)</info>
+		<visible>Skin.String(CustomMusicFolder)</visible>
+	</control>
+
+	<control type="largeimage" id="102">
+		<include>FullscreenDimensions</include>
+        <visible>!Control.IsVisible(103) + Control.IsVisible(57) + !IsEmpty(listitem.property(fanart_image)) + !Skin.HasSetting(nomusicfanart)</visible>
+		<fadetime>400</fadetime>
+		<texture>$INFO[listitem.property(fanart_image)]</texture>
+		<include>Animation_FanartFade</include>
+	</control>
+
+	<control type="largeimage" id="103">
+		<include>FullscreenDimensions</include>
+        <visible>Control.IsVisible(57) + !IsEmpty(container.property(fanart_image)) + !Skin.HasSetting(nomusicfanart)</visible>
+		<fadetime>400</fadetime>
+		<texture>$INFO[container.property(fanart_image)]</texture>
+		<include>Animation_FanartFade</include>
+	</control>
+	
+	<include>Furniture_WallBackground</include>	
+
+	<control type="group">
+		<include>FullscreenDimensions</include>
+		<include>Animation_OpenCloseZoom</include>
+		<include>Furniture_Time</include>
+		<include>Furniture_WindowRSS</include>
+		<include>Furniture_MediaPanel</include>
+		<include>Objects_ShowcaseMenuPanel</include>
+
+		<include>Viewtype_Wall</include>
+		<include>Furniture_WallTime</include>
+		<include>Furniture_WallRSS</include>
+		
+		<control type="group">
+			<include>Animation_MediaMenuPosition</include>
+	
+			<control type="image">
+				<include>Objects_MediaLogo</include>
+				<texture>windows/logo_music.png</texture>
+			</control>	
+	
+			<control type="label">
+				<include>Objects_MediaLabel</include>
+				<label>31037</label>
+			</control>
+
+			<control type="grouplist" id="7000">
+				<include>Animation_MediaMenuSlide</include>
+				<include>Objects_MediaMenuGroup</include>
+
+				<control type="button" id="900">
+					<label>$LOCALIZE[31050] $INFO[Container.ViewMode]</label>
+					<include>Objects_MediaMenuButton</include>
+					<onclick>SetFocus(69)</onclick>
+				</control>
+
+				<include>Objects_FlattenFlowButton</include>
+				
+				<control type="button" id="3">
+					<label>103</label>
+					<include>Objects_MediaMenuButton</include>
+				</control>
+
+				<control type="togglebutton" id="901">
+					<include>Objects_MediaMenuButton</include>				
+					<label>31065</label>
+					<altlabel>31064</altlabel>
+					<usealttexture>Skin.HasSetting(nomusicfanart)</usealttexture>
+					<onclick>Skin.SetBool(nomusicfanart)</onclick>
+					<altclick>Skin.Reset(nomusicfanart)</altclick>
+					<visible>Control.IsVisible(57)</visible>
+				</control>
+
+				<include>Objects_ThumbsButton</include>	
+
+				<include>Objects_WallGridButton</include>
+				
+				<include>Objects_WallBackdropButton</include>				
+				
+				<control type="button" id="5">
+					<label>31068</label>
+					<include>Objects_MediaMenuButton</include>
+					<onclick>XBMC.ReplaceWindow(MyMusicFiles)</onclick>
+				</control>
+				
+				<include>Objects_MusicSetupButton</include>
+				
+				<include>Objects_MediaDebugButtons</include>
+			</control>
+		</control>
+	
+		<include>Viewtype_List</include>
+		<include>Viewtype_Showcase</include>
+		<include>Viewtype_Coverflow</include>
+
+	</control>
+
+	<include>ViewChange</include>
+	<include>Background_ContextBlack</include>
+	<include>Furniture_Debug</include>
+	
+	</controls>
+</window>

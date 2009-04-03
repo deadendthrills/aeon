@@ -1,0 +1,201 @@
+<includes>
+
+<include name="Settings_PresetHighArt">
+	<onclick>Skin.Reset(listmovies)</onclick>
+	<onclick>Skin.SetBool(flowmovies)</onclick>
+	<onclick>Skin.Reset(showcasemovies)</onclick>
+	<onclick>Skin.Reset(listtv)</onclick>
+	<onclick>Skin.SetBool(flowtv)</onclick>
+	<onclick>Skin.Reset(showcasetv)</onclick>
+	<onclick>Skin.Reset(listvideos)</onclick>
+	<onclick>Skin.SetBool(flowvideos)</onclick>
+	<onclick>Skin.Reset(showcasevideos)</onclick>
+	<onclick>Skin.Reset(listmusicfiles)</onclick>
+	<onclick>Skin.SetBool(flowmusicfiles)</onclick>
+	<onclick>Skin.Reset(showcasemusicfiles)</onclick>
+	<onclick>Skin.Reset(listmusiclibrary)</onclick>
+	<onclick>Skin.SetBool(flowmusiclibrary)</onclick>
+	<onclick>Skin.Reset(showcasemusiclibrary)</onclick>
+	<onclick>Skin.Reset(listpictures)</onclick>
+	<onclick>Skin.SetBool(flowpictures)</onclick>
+	<onclick>Skin.Reset(showcasepictures)</onclick>
+	<onclick>Skin.Reset(listgames)</onclick>
+	<onclick>Skin.SetBool(flowgames)</onclick>
+	<onclick>Skin.Reset(showcasegames)</onclick>
+	<onclick>Skin.Reset(nomoviefanart)</onclick>
+	<onclick>Skin.Reset(nopicturefanart)</onclick>
+	<onclick>Skin.Reset(notvfanart)</onclick>
+	<selected>![Skin.HasSetting(listmovies) | Skin.HasSetting(showcasemovies) | Skin.HasSetting(listtv) | Skin.HasSetting(showcasetv) | Skin.HasSetting(listvideos)
+			| Skin.HasSetting(showcasevideos) | Skin.HasSetting(listmusicfiles) | Skin.HasSetting(showcasemusicfiles) | Skin.HasSetting(listmusiclibrary)
+			| Skin.HasSetting(showcasemusiclibrary) | Skin.HasSetting(listpictures) | Skin.HasSetting(showcasepictures) | Skin.HasSetting(listgames)
+			| Skin.HasSetting(showcasegames)] + Skin.HasSetting(flowmovies) + Skin.HasSetting(flowtv) + Skin.HasSetting(flowvideos)
+			+ Skin.HasSetting(flowmusicfiles) + Skin.HasSetting(flowmusiclibrary) + Skin.HasSetting(flowpictures) + Skin.HasSetting(flowgames)
+			+ ![Skin.HasSetting(nomoviefanart) | Skin.HasSetting(nopicturefanart) | Skin.HasSetting(notvfanart)]</selected>
+</include>
+
+<include name="Settings_PresetElegant">
+	<onclick>Skin.Reset(listmovies)</onclick>
+	<onclick>Skin.Reset(flowmovies)</onclick>
+	<onclick>Skin.SetBool(showcasemovies)</onclick>
+	<onclick>Skin.Reset(listtv)</onclick>
+	<onclick>Skin.Reset(flowtv)</onclick>
+	<onclick>Skin.SetBool(showcasetv)</onclick>
+	<onclick>Skin.Reset(listvideos)</onclick>
+	<onclick>Skin.Reset(flowvideos)</onclick>
+	<onclick>Skin.SetBool(showcasevideos)</onclick>
+	<onclick>Skin.Reset(listmusicfiles)</onclick>
+	<onclick>Skin.Reset(flowmusicfiles)</onclick>
+	<onclick>Skin.SetBool(showcasemusicfiles)</onclick>
+	<onclick>Skin.Reset(listmusiclibrary)</onclick>
+	<onclick>Skin.Reset(flowmusiclibrary)</onclick>
+	<onclick>Skin.SetBool(showcasemusiclibrary)</onclick>
+	<onclick>Skin.Reset(listpictures)</onclick>
+	<onclick>Skin.Reset(flowpictures)</onclick>
+	<onclick>Skin.SetBool(showcasepictures)</onclick>
+	<onclick>Skin.Reset(listgames)</onclick>
+	<onclick>Skin.Reset(flowgames)</onclick>
+	<onclick>Skin.SetBool(showcasegames)</onclick>
+	<onclick>Skin.SetBool(nomoviefanart)</onclick>
+	<onclick>Skin.SetBool(nopicturefanart)</onclick>
+	<onclick>Skin.SetBool(notvfanart)</onclick>
+	<selected>![Skin.HasSetting(listmovies) | Skin.HasSetting(flowmovies) | Skin.HasSetting(listtv) | Skin.HasSetting(flowtv) | Skin.HasSetting(listvideos)
+			| Skin.HasSetting(flowvideos) | Skin.HasSetting(listmusicfiles) | Skin.HasSetting(flowmusicfiles) | Skin.HasSetting(listmusiclibrary)
+			| Skin.HasSetting(flowmusiclibrary) | Skin.HasSetting(listpictures) | Skin.HasSetting(flowpictures) | Skin.HasSetting(listgames)
+			| Skin.HasSetting(flowgames)] + Skin.HasSetting(showcasemovies) + Skin.HasSetting(showcasetv) + Skin.HasSetting(showcasevideos)
+			+ Skin.HasSetting(showcasemusicfiles) + Skin.HasSetting(showcasemusiclibrary) + Skin.HasSetting(showcasepictures) + Skin.HasSetting(showcasegames)
+			+ Skin.HasSetting(nomoviefanart) + Skin.HasSetting(nopicturefanart) + Skin.HasSetting(notvfanart)</selected>
+</include>
+
+<include name="Settings_PresetMultiplex">
+	<onclick>Skin.Reset(listmovies)</onclick>
+	<onclick>Skin.Reset(flowmovies)</onclick>
+	<onclick>Skin.Reset(showcasemovies)</onclick>
+	<onclick>Skin.Reset(listtv)</onclick>
+	<onclick>Skin.Reset(flowtv)</onclick>
+	<onclick>Skin.SetBool(showcasetv)</onclick>
+	<onclick>Skin.Reset(listvideos)</onclick>
+	<onclick>Skin.Reset(flowvideos)</onclick>
+	<onclick>Skin.SetBool(showcasevideos)</onclick>
+	<onclick>Skin.Reset(listmusicfiles)</onclick>
+	<onclick>Skin.Reset(flowmusicfiles)</onclick>
+	<onclick>Skin.SetBool(showcasemusicfiles)</onclick>
+	<onclick>Skin.Reset(listmusiclibrary)</onclick>
+	<onclick>Skin.Reset(flowmusiclibrary)</onclick>
+	<onclick>Skin.SetBool(showcasemusiclibrary)</onclick>
+	<onclick>Skin.Reset(listpictures)</onclick>
+	<onclick>Skin.Reset(flowpictures)</onclick>
+	<onclick>Skin.SetBool(showcasepictures)</onclick>
+	<onclick>Skin.Reset(listgames)</onclick>
+	<onclick>Skin.Reset(flowgames)</onclick>
+	<onclick>Skin.SetBool(showcasegames)</onclick>
+	<onclick>Skin.Reset(nomoviefanart)</onclick>
+	<onclick>Skin.SetBool(nopicturefanart)</onclick>
+	<onclick>Skin.SetBool(notvfanart)</onclick>
+	<selected>![Skin.HasSetting(listmovies) | Skin.HasSetting(flowmovies) | Skin.HasSetting(showcasemovies) | Skin.HasSetting(listtv) | Skin.HasSetting(flowtv) | Skin.HasSetting(listvideos)
+			| Skin.HasSetting(flowvideos) | Skin.HasSetting(listmusicfiles) | Skin.HasSetting(flowmusicfiles) | Skin.HasSetting(listmusiclibrary)
+			| Skin.HasSetting(flowmusiclibrary) | Skin.HasSetting(listpictures) | Skin.HasSetting(flowpictures) | Skin.HasSetting(listgames)
+			| Skin.HasSetting(flowgames) | Skin.HasSetting(nomoviefanart)] + Skin.HasSetting(showcasetv) + Skin.HasSetting(showcasevideos)
+			+ Skin.HasSetting(showcasemusicfiles) + Skin.HasSetting(showcasemusiclibrary) + Skin.HasSetting(showcasepictures) + Skin.HasSetting(showcasegames)
+			+ Skin.HasSetting(nopicturefanart) + Skin.HasSetting(notvfanart)</selected>
+</include>
+
+<include name="Settings_PresetGoggleBox">
+	<onclick>Skin.Reset(listmovies)</onclick>
+	<onclick>Skin.Reset(flowmovies)</onclick>
+	<onclick>Skin.SetBool(showcasemovies)</onclick>
+	<onclick>Skin.Reset(listtv)</onclick>
+	<onclick>Skin.Reset(flowtv)</onclick>
+	<onclick>Skin.Reset(showcasetv)</onclick>
+	<onclick>Skin.Reset(listvideos)</onclick>
+	<onclick>Skin.Reset(flowvideos)</onclick>
+	<onclick>Skin.SetBool(showcasevideos)</onclick>
+	<onclick>Skin.Reset(listmusicfiles)</onclick>
+	<onclick>Skin.Reset(flowmusicfiles)</onclick>
+	<onclick>Skin.SetBool(showcasemusicfiles)</onclick>
+	<onclick>Skin.Reset(listmusiclibrary)</onclick>
+	<onclick>Skin.Reset(flowmusiclibrary)</onclick>
+	<onclick>Skin.SetBool(showcasemusiclibrary)</onclick>
+	<onclick>Skin.Reset(listpictures)</onclick>
+	<onclick>Skin.Reset(flowpictures)</onclick>
+	<onclick>Skin.SetBool(showcasepictures)</onclick>
+	<onclick>Skin.Reset(listgames)</onclick>
+	<onclick>Skin.Reset(flowgames)</onclick>
+	<onclick>Skin.SetBool(showcasegames)</onclick>
+	<onclick>Skin.SetBool(nomoviefanart)</onclick>
+	<onclick>Skin.SetBool(nopicturefanart)</onclick>
+	<onclick>Skin.Reset(notvfanart)</onclick>
+	<selected>![Skin.HasSetting(listmovies) | Skin.HasSetting(flowmovies) | Skin.HasSetting(showcasetv) | Skin.HasSetting(listtv) | Skin.HasSetting(flowtv) | Skin.HasSetting(listvideos)
+			| Skin.HasSetting(flowvideos) | Skin.HasSetting(listmusicfiles) | Skin.HasSetting(flowmusicfiles) | Skin.HasSetting(listmusiclibrary)
+			| Skin.HasSetting(flowmusiclibrary) | Skin.HasSetting(listpictures) | Skin.HasSetting(flowpictures) | Skin.HasSetting(listgames)
+			| Skin.HasSetting(flowgames) | Skin.HasSetting(notvfanart)] + Skin.HasSetting(showcasemovies) + Skin.HasSetting(showcasevideos)
+			+ Skin.HasSetting(showcasemusicfiles) + Skin.HasSetting(showcasemusiclibrary) + Skin.HasSetting(showcasepictures) + Skin.HasSetting(showcasegames)
+			+ Skin.HasSetting(nopicturefanart) + Skin.HasSetting(nomoviefanart)</selected>
+</include>
+
+<include name="Settings_PresetComplete">
+	<onclick>Skin.Reset(listmovies)</onclick>
+	<onclick>Skin.Reset(flowmovies)</onclick>
+	<onclick>Skin.Reset(showcasemovies)</onclick>
+	<onclick>Skin.Reset(listtv)</onclick>
+	<onclick>Skin.Reset(flowtv)</onclick>
+	<onclick>Skin.Reset(showcasetv)</onclick>
+	<onclick>Skin.Reset(listvideos)</onclick>
+	<onclick>Skin.Reset(flowvideos)</onclick>
+	<onclick>Skin.Reset(showcasevideos)</onclick>
+	<onclick>Skin.Reset(listmusicfiles)</onclick>
+	<onclick>Skin.Reset(flowmusicfiles)</onclick>
+	<onclick>Skin.Reset(showcasemusicfiles)</onclick>
+	<onclick>Skin.Reset(listmusiclibrary)</onclick>
+	<onclick>Skin.Reset(flowmusiclibrary)</onclick>
+	<onclick>Skin.Reset(showcasemusiclibrary)</onclick>
+	<onclick>Skin.Reset(listpictures)</onclick>
+	<onclick>Skin.Reset(flowpictures)</onclick>
+	<onclick>Skin.Reset(showcasepictures)</onclick>
+	<onclick>Skin.Reset(listgames)</onclick>
+	<onclick>Skin.Reset(flowgames)</onclick>
+	<onclick>Skin.Reset(showcasegames)</onclick>
+	<onclick>Skin.Reset(nomoviefanart)</onclick>
+	<onclick>Skin.Reset(nopicturefanart)</onclick>
+	<onclick>Skin.Reset(notvfanart)</onclick>
+	<selected>![Skin.HasSetting(listmovies) | Skin.HasSetting(flowmovies) | Skin.HasSetting(listtv) | Skin.HasSetting(flowtv) | Skin.HasSetting(listvideos)
+			| Skin.HasSetting(flowvideos) | Skin.HasSetting(listmusicfiles) | Skin.HasSetting(flowmusicfiles) | Skin.HasSetting(listmusiclibrary)
+			| Skin.HasSetting(flowmusiclibrary) | Skin.HasSetting(listpictures) | Skin.HasSetting(flowpictures) | Skin.HasSetting(listgames)
+			| Skin.HasSetting(flowgames) | Skin.HasSetting(showcasemovies) | Skin.HasSetting(showcasetv) | Skin.HasSetting(showcasevideos)
+			| Skin.HasSetting(showcasemusicfiles) | Skin.HasSetting(showcasemusiclibrary) | Skin.HasSetting(showcasepictures) | Skin.HasSetting(showcasegames)
+			| Skin.HasSetting(nomoviefanart) | Skin.HasSetting(nopicturefanart) | Skin.HasSetting(notvfanart)]</selected>
+</include>
+
+<include name="Settings_PresetMicro">
+	<onclick>Skin.Reset(listmovies)</onclick>
+	<onclick>Skin.SetBool(flowmovies)</onclick>
+	<onclick>Skin.SetBool(showcasemovies)</onclick>
+	<onclick>Skin.Reset(listtv)</onclick>
+	<onclick>Skin.SetBool(flowtv)</onclick>
+	<onclick>Skin.SetBool(showcasetv)</onclick>
+	<onclick>Skin.Reset(listvideos)</onclick>
+	<onclick>Skin.SetBool(flowvideos)</onclick>
+	<onclick>Skin.SetBool(showcasevideos)</onclick>
+	<onclick>Skin.Reset(listmusicfiles)</onclick>
+	<onclick>Skin.SetBool(flowmusicfiles)</onclick>
+	<onclick>Skin.SetBool(showcasemusicfiles)</onclick>
+	<onclick>Skin.Reset(listmusiclibrary)</onclick>
+	<onclick>Skin.SetBool(flowmusiclibrary)</onclick>
+	<onclick>Skin.SetBool(showcasemusiclibrary)</onclick>
+	<onclick>Skin.Reset(listpictures)</onclick>
+	<onclick>Skin.SetBool(flowpictures)</onclick>
+	<onclick>Skin.SetBool(showcasepictures)</onclick>
+	<onclick>Skin.Reset(listgames)</onclick>
+	<onclick>Skin.SetBool(flowgames)</onclick>
+	<onclick>Skin.SetBool(showcasegames)</onclick>
+	<onclick>Skin.SetBool(nomoviefanart)</onclick>
+	<onclick>Skin.SetBool(nopicturefanart)</onclick>
+	<onclick>Skin.SetBool(notvfanart)</onclick>
+	<selected>![Skin.HasSetting(listmovies) | Skin.HasSetting(listtv) | Skin.HasSetting(listvideos)	| Skin.HasSetting(listmusicfiles)
+			| Skin.HasSetting(listmusiclibrary)	| Skin.HasSetting(listpictures) | Skin.HasSetting(listgames)] + Skin.HasSetting(flowmovies)
+			+ Skin.HasSetting(flowtv) + Skin.HasSetting(flowvideos) + Skin.HasSetting(flowmusicfiles) + Skin.HasSetting(flowmusiclibrary)
+			+ Skin.HasSetting(flowpictures) + Skin.HasSetting(flowgames) + Skin.HasSetting(showcasemovies) + Skin.HasSetting(showcasetv) 
+			+ Skin.HasSetting(showcasevideos) + Skin.HasSetting(showcasemusicfiles) + Skin.HasSetting(showcasemusiclibrary) + Skin.HasSetting(showcasepictures)
+			+ Skin.HasSetting(showcasegames) + Skin.HasSetting(nomoviefanart) + Skin.HasSetting(nopicturefanart) + Skin.HasSetting(notvfanart)]</selected>
+</include>
+
+</includes>

@@ -1,0 +1,263 @@
+<includes>
+	<default type="image">
+		<description>default image</description>
+		<posx>0</posx>
+		<posy>0</posy>
+		<texture></texture>
+	</default>
+
+	<default type="label">
+		<description>default label</description>
+		<posx>80</posx>
+		<posy>60</posy>
+		<label></label>
+		<font>font13</font>
+		<textcolor>d0FFFFFF</textcolor>
+	</default>
+
+	<default type="button">
+		<description>default button</description>
+		<posx>300</posx>
+		<posy>200</posy>
+		<width>140</width>
+		<height>33</height>
+		<texturenofocus>-</texturenofocus>
+		<font>font13</font>
+		<textcolor>d0ffffff</textcolor>
+		<colordiffuse>FFffffff</colordiffuse>
+		<pulseonselect>false</pulseonselect>
+		<disabledcolor>60ffffff</disabledcolor>
+		<textoffsetx>7</textoffsetx>
+		<aligny>center</aligny>
+	</default>
+
+	<default type="buttonM">
+		<description>default buttonm</description>
+		<posx>430</posx>
+		<posy>460</posy>
+		<width>120</width>
+		<height>35</height>
+		<texturefocus>button-powerdown.png</texturefocus>
+		<texturenofocus>button-powerdownNF.png</texturenofocus>
+		<label>-</label>
+		<bitmaps>2</bitmaps>
+		<font>font14</font>
+		<textcolor>d0ffffff</textcolor>
+		<colordiffuse>FFffffff</colordiffuse>
+		<disabledcolor>60ffffff</disabledcolor>
+	</default>
+
+	<default type="togglebutton">
+		<description>default togglebutton</description>
+		<posx>185</posx>
+		<posy>167</posy>
+		<width>10</width>
+		<height>12</height>
+		<label>-</label>
+		<font>font13</font>
+		<textcolor>d0ffffff</textcolor>
+		<colordiffuse>FFffffff</colordiffuse>
+		<disabledcolor>60ffffff</disabledcolor>
+		<textoffsetx>7</textoffsetx>
+		<aligny>center</aligny>
+	</default>
+
+	<default type="radiobutton">
+		<description>default radio button</description>
+		<posx>50</posx>
+		<posy>268</posy>
+		<width>140</width>
+		<height>35</height>
+		<textureradiofocus>check-box.png</textureradiofocus>
+		<textureradionofocus>check-boxNF.png</textureradionofocus>
+		<texturefocus>Button-Home.png</texturefocus>
+		<texturenofocus>-</texturenofocus>
+		<label>215</label>
+		<font>font13</font>
+		<textcolor>d0ffffff</textcolor>
+		<colordiffuse>ffffffff</colordiffuse>
+		<disabledcolor>60ffffff</disabledcolor>
+		<textoffsetx>7</textoffsetx>
+		<aligny>center</aligny>
+	</default>
+
+	<default type="selectbutton">
+		<description>default select button</description>
+		<posx>60</posx>
+		<posy>192</posy>
+		<width>140</width>
+		<height>35</height>
+		<label>132</label>
+		<font>font13</font>
+		<texturefocus>Button-Home.png</texturefocus>
+		<texturenofocus>-</texturenofocus>
+		<texturebg>button-focus.png</texturebg>
+		<textureleft>scroll-left.gif</textureleft>
+		<textureleftfocus>scroll-left-focus.png</textureleftfocus>
+		<textureright>scroll-right.gif</textureright>
+		<texturerightfocus>scroll-right-focus.png</texturerightfocus>
+		<font>font13</font>
+		<textcolor>d0ffffff</textcolor>
+		<colordiffuse>ffffffff</colordiffuse>
+		<disabledcolor>60ffffff</disabledcolor>
+		<onleft>50</onleft>
+		<onright>50</onright>
+		<onup>3</onup>
+		<ondown>7</ondown>
+		<textoffsetx>7</textoffsetx>
+		<aligny>center</aligny>
+	</default>
+
+	<default type="listcontrolex">
+		<description>default listcontrolex</description>
+		<posx>274</posx>
+		<posy>220</posy>
+		<width>440</width>
+		<height>260</height>
+		<spinwidth>12</spinwidth>
+		<spinheight>16</spinheight>
+		<spinposx>718</spinposx>
+		<spinposy>237</spinposy>
+		<spinfont>font13</spinfont>
+		<spincolor>FFB2D4F5</spincolor>
+		<textureup>scroll-up.png</textureup>
+		<texturedown>scroll-down.png</texturedown>
+		<textureupfocus>scroll-up-focus.gif</textureupfocus>
+		<texturedownfocus>scroll-down-focus.gif</texturedownfocus>
+		<texturefocus>Button-List.png</texturefocus>
+		<texturenofocus>-</texturenofocus>
+		<textureheight>26</textureheight>
+		<image>defaultFolderBig.png</image>
+		<font>font12</font>
+		<include>selectedcolor</include>
+		<textcolor>d0ffffff</textcolor>
+		<colordiffuse>FFffffff</colordiffuse>
+		<suffix> |</suffix>
+		<aligny>center</aligny>
+	</default>
+
+	<default type="fadelabel">
+		<description>default fadelabel</description>
+		<posx>55</posx>
+		<posY>530</posY>
+		<width>180</width>
+		<align>left</align>
+		<font>font13</font>
+		<textcolor>d0ffffff</textcolor>
+	</default>
+
+	<default type="textbox">
+		<description>default textarea</description>
+		<posx>220</posx>
+		<posy>220</posy>
+		<width>410</width>
+		<height>270</height>
+		<spinwidth>16</spinwidth>
+		<spinheight>16</spinheight>
+		<spinposx>640</spinposx>
+		<spinposy>520</spinposy>
+		<spinfont></spinfont>
+		<spincolor>d0ffffff</spincolor>
+		<textureup>scroll-up.png</textureup>
+		<texturedown>scroll-down.png</texturedown>
+		<textureupfocus>scroll-up-focus.gif</textureupfocus>
+		<texturedownfocus>scroll-down-focus.gif</texturedownfocus>
+		<image>icon-folder.png</image>
+		<font>font13</font>
+		<textcolor>d0ffffff</textcolor>
+		<colordiffuse>ffffffff</colordiffuse>
+	</default>
+
+	<default type="progress">
+		<description>default progress control </description>
+		<posx>100</posx>
+		<posy>325</posy>
+		<texturebg>Progress-Back.png</texturebg>
+		<lefttexture>Progress-Left.png</lefttexture>
+		<midtexture>Progress-Mid.png</midtexture>
+		<righttexture>Progress-Right.png</righttexture>
+		<overlaytexture>-</overlaytexture>
+	</default>
+
+	<default type="spincontrol">
+		<description>default spin control</description>
+		<posx>330</posx>
+		<posy>126</posy>
+		<textureup>scroll-up.png</textureup>
+		<texturedown>scroll-down.png</texturedown>
+		<textureupfocus>scroll-up-focus.gif</textureupfocus>
+		<texturedownfocus>scroll-down-focus.gif</texturedownfocus>
+		<align>right</align>
+		<width>15</width>
+		<height>20</height>
+		<font>font14</font>
+		<reverse>yes</reverse>
+		<textcolor>d0ffffff</textcolor>
+		<disabledcolor>60ffffff</disabledcolor>
+		<subtype>text</subtype>
+		<textoffsetx>-5</textoffsetx>
+		<textoffsety>0</textoffsety>
+		<aligny>-</aligny>
+	</default>
+
+	<default type="spincontrolex">
+		<description>default spincontrolex</description>
+		<posx>530</posx>
+		<posy>150</posy>
+		<width>300</width>
+		<height>33</height>
+		<spinwidth>15</spinwidth>
+		<spinheight>20</spinheight>
+		<texturefocus>list-focus.png</texturefocus>
+		<texturenofocus>-</texturenofocus>
+		<textureup>scroll-up.png</textureup>
+		<texturedown>scroll-down.png</texturedown>
+		<textureupfocus>scroll-up-focus.gif</textureupfocus>
+		<texturedownfocus>scroll-down-focus.gif</texturedownfocus>
+		<font>font13</font>
+		<textcolor>ddffffff</textcolor>
+		<colordiffuse>ffffffff</colordiffuse>
+		<disabledcolor>60d0d0d0</disabledcolor>
+		<textoffsetx>7</textoffsetx>
+		<aligny>center</aligny>
+		<reverse>yes</reverse>
+	</default>
+
+	<default type="checkmark">
+		<description>default checkmark</description>
+		<posx>208</posx>
+		<posy>166</posy>
+		<textcolor>d0FFFFFF</textcolor>
+		<disabledcolor>60ffffff</disabledcolor>
+		<font>font13</font>
+		<label>167</label>
+		<texturecheckmark>check-box.png</texturecheckmark>
+		<texturecheckmarknofocus>check-boxNF.png</texturecheckmarknofocus>
+		<markwidth>15</markwidth>
+		<markheight>20</markheight>
+		<align>left</align>
+		<shadow>no</shadow>
+	</default>
+
+	<default type="slider">
+		<description>default slider control</description>
+		<controloffsetx>75</controloffsetx>
+		<controloffsety>0</controloffsety>
+	</default>
+
+	<default type="mover">
+		<description>default mover control</description>
+		<posx>60</posx>
+		<posy>192</posy>
+		<texturefocus>-</texturefocus>
+		<texturenofocus>-</texturenofocus>
+	</default>
+
+	<default type="resize">
+		<description>default resize control</description>
+		<posx>60</posx>
+		<posy>192</posy>
+		<texturefocus>-</texturefocus>
+		<texturenofocus>-</texturenofocus>
+	</default>
+</includes>

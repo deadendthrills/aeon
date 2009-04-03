@@ -1,0 +1,992 @@
+<includes>
+
+<!-- Home page -->
+
+	<include name="Objects_WeatherBack">
+		<posy>0</posy>
+		<width>196</width>
+		<height>287</height>
+		<texture>home/home_weather_small.png</texture>	
+	</include>
+	
+	<include name="Objects_WeatherDay">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>196</width>
+		<height>63</height>
+		<align>center</align>
+		<aligny>center</aligny>
+		<font>Font_WeatherTitle</font>
+		<textcolor>c0FFFFFF</textcolor>
+	</include>
+
+	<include name="Objects_WeatherTemp">
+		<posy>67</posy>
+		<width>96</width>
+		<height>89</height>
+		<align>center</align>
+		<aligny>center</aligny>
+		<font>Font_WeatherTemp</font>
+		<textcolor>FFFFFFFF</textcolor>
+	</include>
+
+	<include name="Objects_WeatherIcon">
+		<posx>44</posx>
+		<posy>169</posy>
+		<width>108</width>
+		<height>108</height>
+	</include>		
+
+	<include name="Objects_WeatherPopup">
+		<control type="group">
+			<posx>0</posx>
+			<posy>40</posy>
+			<width>1280</width>
+			<height>287</height>
+			<animation effect="slide" start="0,-20" end="0,-20" time="0" condition="!Skin.HasSetting(highertime)">Conditional</animation>
+			<animation effect="zoom" start="100" end="90" time="200" center="640,80" condition="Player.HasAudio + Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="500">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+			<control type="group">
+				<posx>67</posx>
+				<animation effect="fade" start="0" end="100" delay="1500" time="400">Visible</animation>
+				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+				<include>Conditions_Weather</include>				
+				<control type="image">
+					<posy>0</posy>
+					<width>283</width>
+					<height>287</height>
+					<texture>home/home_weather_big.png</texture>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>0</posy>
+					<width>263</width>
+					<height>63</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Font_WeatherTitle</font>
+					<textcolor>c0FFFFFF</textcolor>
+					<scroll>true</scroll>
+					<label>$INFO[Window(Weather).Property(Location)]</label>
+				</control>	
+				<control type="label">
+					<posx>20</posx>
+					<posy>67</posy>
+					<width>141</width>
+					<height>220</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>Font_WeatherLabel</font>
+					<textcolor>c0FFFFFF</textcolor>					
+					<label>$LOCALIZE[31008][CR]$LOCALIZE[31009][CR]$LOCALIZE[406][CR]$LOCALIZE[403][CR]$LOCALIZE[405]</label>
+				</control>
+				<control type="label">
+					<posx>263</posx>
+					<posy>67</posy>
+					<width>141</width>
+					<height>220</height>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>Font_WeatherLabel</font>
+					<textcolor>FFFFFFFF</textcolor>					
+					<label>$INFO[Window(Weather).Property(Current.Temperature)][CR]$INFO[System.TemperatureUnits][CR]$INFO[Window(Weather).Property(Current.Humidity)][CR]$INFO[Window(Weather).Property(Current.UVIndex)][CR]$INFO[Window(Weather).Property(Current.DewPoint)]</label>
+				</control>						
+			</control>
+			<control type="group">
+				<posx>370</posx>
+				<include>Conditions_Weather</include>				
+				<animation effect="fade" start="0" end="100" delay="1600" time="400">Visible</animation>				
+				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+				<control type="image">
+					<include>Objects_WeatherBack</include>
+				</control>
+				<control type="label">
+					<include>Objects_WeatherDay</include>
+					<label fallback="-">$INFO[Window(Weather).Property(Day0.Title)]</label>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<include>Objects_WeatherTemp</include>
+					<label fallback="-">$INFO[Window(Weather).Property(Day0.HighTemp)]</label>
+				</control>
+				<control type="label">
+					<posx>99</posx>
+					<include>Objects_WeatherTemp</include>
+					<label fallback="-">$INFO[Window(Weather).Property(Day0.LowTemp)]</label>
+				</control>
+				<control type="image">
+					<include>Objects_WeatherIcon</include>
+					<texture>$INFO[Window(Weather).Property(Day0.OutlookIcon)]</texture>				
+				</control>
+			</control>
+			<control type="group">
+				<posx>586</posx>
+				<include>Conditions_Weather</include>				
+				<animation effect="fade" start="0" end="100" delay="1700" time="400">Visible</animation>	
+				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+				<control type="image">
+					<include>Objects_WeatherBack</include>
+				</control>
+				<control type="label">
+					<include>Objects_WeatherDay</include>
+					<label fallback="-">$INFO[Window(Weather).Property(Day1.Title)]</label>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<include>Objects_WeatherTemp</include>
+					<label fallback="-">$INFO[Window(Weather).Property(Day1.HighTemp)]</label>
+				</control>
+				<control type="label">
+					<posx>99</posx>
+					<include>Objects_WeatherTemp</include>
+					<label fallback="-">$INFO[Window(Weather).Property(Day1.LowTemp)]</label>
+				</control>
+				<control type="image">
+					<include>Objects_WeatherIcon</include>
+					<texture>$INFO[Window(Weather).Property(Day1.OutlookIcon)]</texture>				
+				</control>
+			</control>
+			<control type="group">
+				<posx>802</posx>
+				<include>Conditions_Weather</include>				
+				<animation effect="fade" start="0" end="100" delay="1800" time="400">Visible</animation>					
+				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+				<control type="image">
+					<include>Objects_WeatherBack</include>
+				</control>
+				<control type="label">
+					<include>Objects_WeatherDay</include>
+					<label fallback="-">$INFO[Window(Weather).Property(Day2.Title)]</label>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<include>Objects_WeatherTemp</include>
+					<label fallback="-">$INFO[Window(Weather).Property(Day2.HighTemp)]</label>
+				</control>
+				<control type="label">
+					<posx>99</posx>
+					<include>Objects_WeatherTemp</include>
+					<label fallback="-">$INFO[Window(Weather).Property(Day2.LowTemp)]</label>
+				</control>
+				<control type="image">
+					<include>Objects_WeatherIcon</include>
+					<texture>$INFO[Window(Weather).Property(Day2.OutlookIcon)]</texture>				
+				</control>
+			</control>
+			<control type="group">
+				<posx>1018</posx>
+				<include>Conditions_Weather</include>				
+				<animation effect="fade" start="0" end="100" delay="1900" time="400">Visible</animation>					
+				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+				<control type="image">
+					<include>Objects_WeatherBack</include>
+				</control>
+				<control type="label">
+					<include>Objects_WeatherDay</include>
+					<label fallback="-">$INFO[Window(Weather).Property(Day3.Title)]</label>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<include>Objects_WeatherTemp</include>
+					<label fallback="-">$INFO[Window(Weather).Property(Day3.HighTemp)]</label>
+				</control>
+				<control type="label">
+					<posx>99</posx>
+					<include>Objects_WeatherTemp</include>
+					<label fallback="-">$INFO[Window(Weather).Property(Day3.LowTemp)]</label>
+				</control>
+				<control type="image">
+					<include>Objects_WeatherIcon</include>
+					<texture>$INFO[Window(Weather).Property(Day3.OutlookIcon)]</texture>				
+				</control>
+			</control>
+		</control>
+	</include>
+
+<!-- Media windows -->
+
+	<include name="Objects_MediaLogo">
+		<posx>49</posx> 
+		<posy>13</posy>
+		<width>44</width>
+		<height>30</height>
+		<include>Animation_MediaMenuSlide</include>
+		<include>common-fade-quick</include>
+	</include>
+
+	<include name="Objects_MediaLabel">
+		<posx>111</posx> 
+		<posy>14</posy>
+		<height>25</height>
+		<font>Font_MediaWindowTitle</font>
+		<textcolor>d0FFFFFF</textcolor>
+		<visible allowhiddenfocus="true">!Control.HasFocus(88)</visible>
+		<align>left</align> 
+		<aligny>center</aligny>
+		<include>common-fade-quick</include>
+		<include>Animation_MediaMenuSlide</include>
+	</include>
+	
+	<include name="Objects_MediaMenuGroup">	
+		<posx>230</posx>
+		<posy>9</posy>
+		<width>990</width>
+		<height>34</height>
+		<itemgap>0</itemgap>
+		<orientation>horizontal</orientation>
+		<scroll>false</scroll>
+		<onup>50</onup>
+		<ondown>50</ondown>
+		<include>Animation_CommonFade</include>
+		<visible>!Skin.HasSetting(kiosk)</visible>
+		<animation effect="fade" start="100" end="50" time="200" condition="!ControlGroup(7000).HasFocus() + !Skin.HasSetting(fademenus)">Conditional</animation>
+	</include>
+
+	<include name="Objects_MediaMenuButton">
+		<height>34</height>
+		<width>195</width>
+		<texturenofocus>windows/menudivider.png</texturenofocus>
+		<texturefocus>windows/menudivider.png</texturefocus>
+		<alttexturenofocus>windows/menudivider.png</alttexturenofocus>
+		<alttexturefocus>windows/menudivider.png</alttexturefocus>
+		<pulseonselect>false</pulseonselect>
+		<textcolor>60FFFFFF</textcolor>
+		<focusedcolor>d0ffffff</focusedcolor>
+		<disabledcolor>3cFFFFFF</disabledcolor>
+		<textoffsetx>0</textoffsetx>
+		<align>center</align>
+		<font>Font_MediaWindowMenu</font>
+		<include>Animation_CommonFade</include>
+	</include>
+
+	<include name="Objects_WallBackdropButton">
+		<control type="togglebutton" id="907">
+			<label>31067</label>
+			<altlabel>31066</altlabel>
+			<usealttexture>Skin.HasSetting(transparentwall)</usealttexture>
+			<include>Objects_MediaMenuButton</include>
+			<onclick>Skin.ToggleSetting(transparentwall)</onclick>
+			<visible>Control.IsVisible(53)</visible>
+		</control>
+	</include>
+	
+	<include name="Objects_FlagsButton">
+		<control type="togglebutton" id="916">
+			<label>31069</label>
+			<altlabel>31070</altlabel>
+			<usealttexture>Skin.HasSetting(nomediaflags)</usealttexture>
+			<include>Objects_MediaMenuButton</include>
+			<onclick>Skin.ToggleSetting(nomediaflags)</onclick>
+			<visible>Control.IsVisible(57) | Control.IsVisible(55) + Container.Content(movies)</visible>
+		</control>
+	</include>
+
+	<include name="Objects_ThumbsButton">
+		<control type="togglebutton" id="920">
+			<label>31071</label>
+			<altlabel>31072</altlabel>
+			<usealttexture>!Skin.HasSetting(singlemovielisticon)</usealttexture>
+			<include>Objects_MediaMenuButton</include>
+			<onclick>Skin.ToggleSetting(singlemovielisticon)</onclick>
+			<visible>!Skin.HasSetting(nomenuthumbs) + Control.IsVisible(50) + [!Container.Content(episodes) + [Window.IsActive(28) | Window.IsActive(24) | Window.IsActive(25) | Window.IsActive(1)]]</visible>
+		</control>
+		<control type="togglebutton" id="921">
+			<label>31071</label>
+			<altlabel>31072</altlabel>
+			<usealttexture>!Skin.HasSetting(singlemusiclisticon)</usealttexture>
+			<include>Objects_MediaMenuButton</include>
+			<onclick>Skin.ToggleSetting(singlemusiclisticon)</onclick>
+			<visible>!Skin.HasSetting(nomenuthumbs) + Control.IsVisible(50) + [Window.IsActive(20) | Window.IsActive(2) | Window.IsActive(501) | Window.IsActive(500) | Window.IsActive(502) | Container.Content(episodes)]</visible>
+		</control>		
+	</include>		
+	
+	<include name="Objects_VideoSetupButton">
+		<control type="button" id="915">
+			<label>31016</label>
+			<include>Objects_MediaMenuButton</include>
+			<onclick>XBMC.ActivateWindow(VideosSettings)</onclick>
+			<visible>!Skin.HasSetting(nomenusettings)</visible>			
+		</control>
+	</include>
+
+	<include name="Objects_PicturesSetupButton">
+		<control type="button" id="915">
+			<label>31016</label>
+			<include>Objects_MediaMenuButton</include>
+			<onclick>XBMC.ActivateWindow(PicturesSettings)</onclick>
+			<visible>!Skin.HasSetting(nomenusettings)</visible>			
+		</control>
+	</include>
+
+	<include name="Objects_ProgramsSetupButton">
+		<control type="button" id="915">
+			<label>31016</label>
+			<include>Objects_MediaMenuButton</include>
+			<onclick>XBMC.ActivateWindow(ProgramsSettings)</onclick>
+			<visible>!Skin.HasSetting(nomenusettings)</visible>			
+		</control>
+	</include>
+
+	<include name="Objects_MusicSetupButton">
+		<control type="button" id="915">
+			<label>31016</label>
+			<include>Objects_MediaMenuButton</include>
+			<onclick>XBMC.ActivateWindow(MusicSettings)</onclick>
+			<visible>!Skin.HasSetting(nomenusettings)</visible>
+		</control>
+	</include>		
+	
+	<include name="Objects_FlattenFlowButton">
+		<control type="togglebutton" id="908">
+			<label>31061</label>
+			<altlabel>31060</altlabel>
+			<usealttexture>Skin.HasSetting(flattenshowcase)</usealttexture>
+			<include>Objects_MediaMenuButton</include>
+			<onclick>Skin.ToggleSetting(flattenshowcase)</onclick>
+			<visible>Control.IsVisible(57) + !Container.Content(episodes)</visible>
+		</control>		
+		
+		<control type="togglebutton" id="909">
+			<label>31061</label>
+			<altlabel>31060</altlabel>
+			<usealttexture>Skin.HasSetting(flattenflow)</usealttexture>					
+			<include>Objects_MediaMenuButton</include>
+			<onclick>Skin.ToggleSetting(flattenflow)</onclick>
+			<visible>Control.IsVisible(55) + !Container.Content(episodes)</visible>
+		</control>
+	</include>
+	
+	<include name="Objects_MediaDebugButtons">
+		<control type="button" id="910">
+			<label>31607</label>
+			<include>Objects_MediaMenuButton</include>
+			<onclick>XBMC.ReloadSkin</onclick>
+			<visible>Skin.HasSetting(debug)</visible>
+		</control>
+		
+		<control type="button" id="911">
+			<label>31608</label>
+			<onclick>Skin.ToggleSetting(debuginfo)</onclick>
+			<include>Objects_MediaMenuButton</include>
+			<visible>Skin.HasSetting(debug)</visible>
+		</control>
+	</include>
+
+	<include name="Objects_ViewtypeClick">
+		<onclick>SetFocus(69)</onclick>	
+	</include>
+	
+	<include name="Objects_WallGridButton">
+		<control type="togglebutton" id="922">
+			<include>Objects_MediaMenuButton</include>				
+			<label>31074</label>
+			<altlabel>31073</altlabel>
+			<usealttexture>!Skin.HasSetting(smallmoviewall)</usealttexture>
+			<onclick>Skin.ToggleSetting(smallmoviewall)</onclick>
+			<onclick>XBMC.ReloadSkin</onclick>
+			<visible>Control.IsVisible(53)</visible>
+			<visible>[Window.IsActive(1) | Window.IsActive(24) | Window.IsActive(25)] + !Container.Content(episodes)</visible>
+		</control>
+		<control type="togglebutton" id="923">
+			<include>Objects_MediaMenuButton</include>				
+			<label>31074</label>
+			<altlabel>31073</altlabel>
+			<usealttexture>!Skin.HasSetting(smallmusicwall)</usealttexture>
+			<onclick>Skin.ToggleSetting(smallmusicwall)</onclick>
+			<onclick>XBMC.ReloadSkin</onclick>
+			<visible>Control.IsVisible(53)</visible>
+			<visible>[Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | Window.IsActive(2) | [Window.IsActive(25) + Container.Content(episodes)]]</visible>
+		</control>		
+	</include>
+
+<!-- Fullscreen Info -->
+
+	<include name="Objects_FSInfoMenu">
+		<posx>3</posx>
+		<posy>297</posy>
+		<width>570</width>
+		<height>29</height>
+		<texturenofocus>-</texturenofocus>
+		<texturefocus>-</texturefocus>
+		<alttexturenofocus>-</alttexturenofocus>
+		<alttexturefocus>-</alttexturefocus>
+		<pulseonselect>false</pulseonselect>
+		<include>Colour_Grey</include>
+		<disabledcolor>3cFFFFFF</disabledcolor>
+		<textoffsetx>0</textoffsetx>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<font>Font_FSInfoData</font>
+		<animation effect="slide" start="0,-110" end="0,-110" time="0" condition="Container.Content(artists)">Conditional</animation>
+	</include>
+	
+	<include name="Objects_FSInfoMenuMusic">
+		<posx>3</posx>
+		<posy>222</posy>
+		<width>570</width>
+		<height>29</height>
+		<texturenofocus>-</texturenofocus>
+		<texturefocus>-</texturefocus>
+		<alttexturenofocus>-</alttexturenofocus>
+		<alttexturefocus>-</alttexturefocus>
+		<pulseonselect>false</pulseonselect>
+		<include>Colour_Grey</include>
+		<disabledcolor>3cFFFFFF</disabledcolor>
+		<textoffsetx>0</textoffsetx>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<font>Font_FSInfoData</font>
+	</include>
+
+	<include name="FSInfoButtonWidth">
+		<width>90</width>	
+	</include>
+	
+	<include name="FSInfoButtonWidth_French">
+		<width>90</width>	
+	</include>	
+	
+	<include name="Objects_FSInfoButton">
+		<include>Colour_Grey</include>
+		<texturenofocus>-</texturenofocus>
+		<texturefocus>-</texturefocus>
+		<textoffsetx>0</textoffsetx>
+		<align>left</align>
+		<aligny>center</aligny>
+		<include condition="!stringcompare(system.language,French)">FSInfoButtonWidth</include>
+		<include condition="stringcompare(system.language,French)">FSInfoButtonWidth_French</include>
+		<height>29</height>
+		<font>Font_FSInfoData</font>
+	</include>
+	
+	<include name="Objects_FSInfoButtonWide">
+		<include>Colour_Grey</include>
+		<texturenofocus>-</texturenofocus>
+		<texturefocus>-</texturefocus>
+		<textoffsetx>0</textoffsetx>
+		<align>left</align>
+		<aligny>center</aligny>
+		<width>140</width>
+		<height>29</height>
+		<font>Font_FSInfoData</font>
+	</include>
+
+	<include name="Objects_FSInfoCertificate">
+		<posx>7</posx>
+		<posy>68</posy>
+		<width>166</width>
+		<height>38</height>	
+	</include>
+	
+	<include name="Objects_FSInfoYear">
+		<width>109</width>
+		<height>53</height>
+		<aligny>center</aligny>
+		<font>Font_FSInfoYear</font>
+		<label fallback="-">$INFO[ListItem.Year]</label>
+		<include>Colour_Grey</include>	
+	</include>
+	
+	<include name="Objects_FSInfoGenre">
+		<align>left</align>
+		<aligny>center</aligny>
+		<font>Font_FSInfoGenre</font>
+		<label fallback="31425">[UPPERCASE]$INFO[ListItem.Genre][/UPPERCASE]</label>
+		<include>Colour_Grey</include>
+		<height>56</height>		
+	</include>
+	
+	<include name="Objects_FSInfoLabel">
+		<posx>3</posx>
+		<width>110</width>
+		<height>29</height>
+		<align>left</align>
+		<aligny>center</aligny>
+		<font>Font_FSInfoLabel</font>
+		<include>Colour_Grey</include>		
+	</include>
+
+	<include name="Objects_FSInfoValue">
+		<posx>120</posx>
+		<width>500</width>
+		<height>29</height>
+		<align>left</align>
+		<aligny>center</aligny>
+		<font>Font_FSInfoData</font>
+		<include>Colour_OffWhite</include>	
+	</include>
+	
+	<include name="Objects_BookmarkMenu">
+		<posx>3</posx>
+		<posy>159</posy>
+		<width>570</width>
+		<height>29</height>
+		<texturenofocus>-</texturenofocus>
+		<texturefocus>-</texturefocus>
+		<alttexturenofocus>-</alttexturenofocus>
+		<alttexturefocus>-</alttexturefocus>
+		<pulseonselect>false</pulseonselect>
+		<include>Colour_Grey</include>
+		<disabledcolor>3cFFFFFF</disabledcolor>
+		<textoffsetx>0</textoffsetx>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<font>Font_FSInfoData</font>
+		<include>Animation_CommonFade</include>
+	</include>
+
+	<include name="Objects_BookmarkButton">
+		<include>Colour_Grey</include>
+		<texturenofocus>-</texturenofocus>
+		<texturefocus>-</texturefocus>
+		<textoffsetx>0</textoffsetx>
+		<align>left</align>
+		<aligny>center</aligny>
+		<width>205</width>
+		<height>29</height>
+		<font>Font_FSInfoData</font>
+	</include>	
+	
+<!-- Showcase viewtype -->
+	
+	<include name="Objects_ShowcaseMenuPanel">
+		<control type="image" id="74">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>57</height>
+			<texture>showcase/showcase_menupanel.png</texture>
+			<include>Animation_MediaMenuSlide</include>
+			<visible>Control.IsVisible(57) | Control.IsVisible(53)</visible>
+		</control>
+	</include>
+	
+<!-- Context menus -->
+	
+	<include name="Objects_ContextMenuButton">
+		<description>button template</description>
+		<posx>1</posx>
+		<posy>0</posy>
+		<height>39</height>
+		<width>265</width>
+		<textcolor>FF8f8f8f</textcolor>
+		<focusedcolor>FFFFFFFF</focusedcolor>
+		<texturenofocus>dialogs/context_nofocus.png</texturenofocus>
+		<texturefocus>dialogs/context_highlight.png</texturefocus>
+		<align>center</align>
+		<font>Font_ContextMenuButton</font>
+	</include>
+	
+	<include name="Objects_ContextMenuRadioButton">
+		<textcolor>FF8f8f8f</textcolor>
+		<focusedcolor>FFFFFFFF</focusedcolor>
+		<radiowidth>94</radiowidth>
+		<radioposx>190</radioposx>
+		<radioheight>65</radioheight>
+		<aligny>center</aligny>
+		<texturenofocus>dialogs/context_nofocus.png</texturenofocus>
+		<texturefocus>dialogs/context_highlight.png</texturefocus>
+		<textureradiofocus>settings/settings_radiobuttononfocus.png</textureradiofocus>
+		<textureradionofocus>settings/settings_radiobuttonon.png</textureradionofocus>
+		<width>269</width>
+		<height>39</height>
+		<align>left</align>
+		<font>Font_ContextMenuButton</font>
+		<textoffsetx>10</textoffsetx>
+	</include>
+	
+<!-- Settings screens -->
+
+	<include name="Objects_SettingsSectionTitle">
+		<posx>72</posx>
+		<posy>70</posy>
+		<width>936</width>
+		<height>49</height>
+		<textcolor>FFbec0c2</textcolor>
+		<font>Font_SettingsSectionTitle</font>
+		<include>Animation_CommonFadeOpenClose</include>	
+	</include>
+
+	<include name="Objects_SettingsSectionMenuButtonVars">
+		<posx>0</posx>
+		<width>216</width>
+		<height>58</height>
+		<font>Font_SettingsSectionMenuButton</font>
+		<focusedcolor>FF262728</focusedcolor>
+		<selectedcolor>FF262728</selectedcolor>
+		<textoffsety>7</textoffsety>
+		<textoffsetx>30</textoffsetx>
+		<aligny>top</aligny>
+		<pulseonselect>no</pulseonselect>
+		<include>Animation_CommonFadeOpenClose</include>
+	</include>
+
+	<include name="Objects_SettingsSectionMenuButton">
+		<include>Objects_SettingsSectionMenuButtonVars</include>
+		<textcolor>FFf5f5f5</textcolor>
+		<texturefocus>settings/settings_leftmenufocus.png</texturefocus>
+		<texturenofocus>-</texturenofocus>
+	</include>
+
+	<include name="Objects_SettingsSectionMenuButtonFocused">
+		<include>Objects_SettingsSectionMenuButtonVars</include>
+		<textcolor>FF262728</textcolor>
+		<texturenofocus>settings/settings_leftmenufocus.png</texturenofocus>
+		<texturefocus>-</texturefocus>
+	</include>
+	
+	<include name="Objects_SettingsSectionMenuButtonSubtitle">
+		<posx>30</posx>
+		<width>216</width>
+		<height>58</height>
+		<font>Font_SettingsSectionMenuButtonSubtitle</font>
+		<aligny>top</aligny>
+		<include>Animation_CommonFadeOpenClose</include>		
+	</include>
+	
+	<include name="Objects_SettingsDefaultRadioButton">
+		<description>Default RadioButton</description>
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>936</width>
+		<height>49</height>
+		<font>Font_SettingsOptions</font>
+		<texturefocus>settings/settings_radiobuttonofffocus.png</texturefocus>
+		<texturenofocus>settings/settings_radiobuttonoff.png</texturenofocus>
+		<textcolor>FF939597</textcolor>
+		<focusedcolor>FFFFFFFF</focusedcolor>
+		<pulseonselect>false</pulseonselect>
+		<radiowidth>94</radiowidth>
+		<radioposx>850</radioposx>
+		<radioheight>65</radioheight>
+		<textoffsetx>50</textoffsetx>
+		<aligny>center</aligny>
+		<textureradiofocus>settings/settings_radiobuttononfocus.png</textureradiofocus>
+		<textureradionofocus>settings/settings_radiobuttonon.png</textureradionofocus>
+	</include>
+	
+	<include name="Objects_SettingsControlAreaVars">
+		<posx>258</posx>
+		<posy>120</posy>
+		<width>936</width>
+		<height>494</height>
+		<itemgap>0</itemgap>
+		<animation effect="fade" start="0" end="100" time="125">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="125">WindowClose</animation>		
+	</include>
+
+<!-- OSD -->
+
+	<include name="Objects_OSDButtonGroup10">
+		<width>790</width>
+		<posx>249</posx>
+	</include>
+	
+	<include name="Objects_OSDButtonGroup9">
+		<width>712</width>
+		<posx>284</posx>
+	</include>
+
+	<include name="Objects_OSDButton">
+		<width>88</width>
+		<height>88</height>
+		<texturefocus>osd/osd_button_focus.png</texturefocus>
+		<texturenofocus>osd/osd_button_nofocus.png</texturenofocus>
+	</include>
+	
+	<include name="Objects_OSDButtonTop">
+		<width>88</width>
+		<height>88</height>
+	</include>
+
+	<include name="Objects_OSDSeekForward">
+		<posx>470</posx>
+		<posy>0</posy>
+		<width>499</width>
+		<height>28</height>
+		<aligny>center</aligny>
+		<align>right</align>
+		<font>Font_OSDSeek</font>
+		<textcolor>FF363636</textcolor>
+		<include>Animation_CommonFade</include>		
+	</include>
+	
+	<include name="Objects_OSDSeekReverse">
+		<posx>29</posx>
+		<posy>0</posy>
+		<width>499</width>
+		<height>28</height>
+		<aligny>center</aligny>
+		<align>left</align>
+		<font>Font_OSDSeek</font>
+		<include>Colour_OffWhite</include>
+		<include>Animation_CommonFade</include>
+	</include>
+
+	<include name="Objects_OSDVisSettingsButton">
+		<posx>0</posx>
+		<posy>0</posy>		
+		<height>40</height>
+		<width>781</width>
+		<height>40</height>
+		<focusedcolor>FFFFFFFF</focusedcolor>
+		<textoffsetx>30</textoffsetx>
+		<textoffsety>9</textoffsety>
+		<aligny>top</aligny>
+		<font>Font_OSDOptions</font>
+		<info>ListItem.Label</info>		
+	</include>
+	
+	<include name="Objects_OSDSettingsButton">
+		<posx>0</posx>
+		<height>40</height>
+		<textcolor>FF929191</textcolor>
+		<focusedcolor>FFFFFFFF</focusedcolor>
+		<textoffsetx>30</textoffsetx>
+		<textoffsety>9</textoffsety>
+		<aligny>top</aligny>
+		<font>Font_OSDOptions</font>
+		<texturefocus>osd/osd_settings_buttonf.png</texturefocus>
+		<texturenofocus>osd/osd_settings_buttonnf.png</texturenofocus>		
+	</include>
+	
+<!-- Keyboard -->
+
+	<include name="Objects_KeyOffVars">
+		<textcolor>77FFFFFF</textcolor>
+		<focusedcolor>77FFFFFF</focusedcolor>
+		<selectedcolor>77FFFFFF</selectedcolor>
+		<align>center</align>
+		<aligny>top</aligny>
+		<textoffsety>21</textoffsety>
+		<font>Font_KeyboardKeys</font>		
+	</include>
+	
+	<include name="Objects_KeyOnVars">
+		<textcolor>FFFFFFFF</textcolor>
+		<focusedcolor>FFFFFFFF</focusedcolor>
+		<selectedcolor>FFFFFFFF</selectedcolor>
+		<align>center</align>
+		<aligny>top</aligny>
+		<textoffsety>21</textoffsety>
+		<include>Animation_KeyboardFade</include>
+		<font>Font_KeyboardKeys</font>
+	</include>
+
+	<include name="Objects_KeyOffSymbolVars">
+		<textcolor>77FFFFFF</textcolor>
+		<focusedcolor>77FFFFFF</focusedcolor>
+		<selectedcolor>77FFFFFF</selectedcolor>
+		<align>center</align>
+		<aligny>top</aligny>
+		<textoffsety>21</textoffsety>
+		<font>Font_KeyboardShapes</font>		
+	</include>
+	
+	<include name="Objects_KeyOnSymbolVars">
+		<textcolor>FFFFFFFF</textcolor>
+		<focusedcolor>FFFFFFFF</focusedcolor>
+		<selectedcolor>FFFFFFFF</selectedcolor>
+		<align>center</align>
+		<aligny>top</aligny>
+		<textoffsety>21</textoffsety>
+		<include>Animation_KeyboardFade</include>
+		<font>Font_KeyboardShapes</font>
+	</include>
+	
+	<include name="Objects_DoubleKeyOff">
+		<posy>0</posy>		
+		<width>110</width>
+		<height>68</height>
+		<texturefocus>keyboard/keyboard_doublenf.png</texturefocus>		
+		<texturenofocus>keyboard/keyboard_doublenf.png</texturenofocus>
+		<include>Objects_KeyOffVars</include>
+	</include>
+	
+	<include name="Objects_DoubleKeyOffSymbol">
+		<posy>0</posy>		
+		<width>110</width>
+		<height>68</height>
+		<texturefocus>keyboard/keyboard_doublenf.png</texturefocus>		
+		<texturenofocus>keyboard/keyboard_doublenf.png</texturenofocus>
+		<include>Objects_KeyOffSymbolVars</include>
+	</include>	
+	
+	<include name="Objects_SingleKeyOff">
+		<posy>0</posy>			
+		<width>68</width>
+		<height>68</height>
+		<texturefocus>keyboard/keyboard_singlenf.png</texturefocus>		
+		<texturenofocus>keyboard/keyboard_singlenf.png</texturenofocus>
+		<include>Objects_KeyOffVars</include>
+	</include>
+
+	<include name="Objects_TripleKeyOff">
+		<posy>0</posy>			
+		<width>152</width>
+		<height>68</height>
+		<texturefocus>keyboard/keyboard_triplenf.png</texturefocus>		
+		<texturenofocus>keyboard/keyboard_triplenf.png</texturenofocus>
+		<include>Objects_KeyOffVars</include>
+	</include>
+	
+	<include name="Objects_SpaceBarOff">
+		<posy>0</posy>			
+		<width>278</width>
+		<height>68</height>
+		<texturefocus>keyboard/keyboard_spacef.png</texturefocus>		
+		<texturenofocus>keyboard/keyboard_spacenf.png</texturenofocus>
+		<include>Objects_KeyOffVars</include>
+	</include>
+
+	<include name="Objects_DoubleKeyOn">
+		<posy>0</posy>			
+		<width>110</width>
+		<height>68</height>
+		<texturefocus>keyboard/keyboard_doublef.png</texturefocus>		
+		<texturenofocus>keyboard/keyboard_doublef.png</texturenofocus>
+		<include>Objects_KeyOnVars</include>
+	</include>
+	
+	<include name="Objects_DoubleKeyOnSymbol">
+		<posy>0</posy>			
+		<width>110</width>
+		<height>68</height>
+		<texturefocus>keyboard/keyboard_doublef.png</texturefocus>		
+		<texturenofocus>keyboard/keyboard_doublef.png</texturenofocus>
+		<include>Objects_KeyOnSymbolVars</include>
+	</include>	
+	
+	<include name="Objects_SingleKeyOn">
+		<posy>0</posy>			
+		<width>68</width>
+		<height>68</height>
+		<texturefocus>keyboard/keyboard_singlef.png</texturefocus>		
+		<texturenofocus>keyboard/keyboard_singlef.png</texturenofocus>
+		<include>Objects_KeyOnVars</include>
+	</include>
+
+	<include name="Objects_TripleKeyOn">
+		<posy>0</posy>			
+		<width>152</width>
+		<height>68</height>
+		<texturefocus>keyboard/keyboard_triplef.png</texturefocus>		
+		<texturenofocus>keyboard/keyboard_triplef.png</texturenofocus>
+		<include>Objects_KeyOnVars</include>
+	</include>
+	
+	<include name="Objects_SpaceBarOn">
+		<posy>0</posy>			
+		<width>278</width>
+		<height>68</height>
+		<texturefocus>keyboard/keyboard_spacef.png</texturefocus>		
+		<texturenofocus>keyboard/keyboard_spacef.png</texturenofocus>
+		<include>Objects_KeyOnVars</include>		
+	</include>	
+
+<!-- Button menu -->
+
+	<include name="Objects_ButtonMenuLabel">
+		<width>320</width>
+		<height>120</height>
+		<posx>0</posx>
+		<posy>230</posy>
+		<align>center</align>
+		<aligny>center</aligny>
+		<font>Font_ViewChangeLabel</font>
+		<textcolor>61FFFFFF</textcolor>
+	</include>
+
+	<include name="Objects_ButtonMenuButton">
+		<posx>24</posx>	
+		<posy>30</posy>
+		<width>273</width>
+		<height>273</height>
+		<colordiffuse>abFFFFFF</colordiffuse>
+	</include>
+	
+	<include name="Objects_ButtonMenuLabelFocused">
+		<width>320</width>
+		<height>120</height>
+		<posx>0</posx>
+		<posy>230</posy>
+		<align>center</align>
+		<aligny>center</aligny>
+		<font>Font_ViewChangeLabel</font>
+		<include>Colour_OffWhite</include>
+		<include>Animation_VisibleChange400</include>
+	</include>
+
+	<include name="Objects_ButtonMenuButtonFocused">
+		<posx>24</posx>	
+		<posy>30</posy>
+		<width>273</width>
+		<height>273</height>
+		<include>Animation_VisibleChange400</include>
+	</include>	
+
+	<include name="Objects_ButtonMenu10Group">
+			<height>390</height>	
+	</include>
+	
+	<include name="Objects_ButtonMenu9Group">
+			<height>351</height>	
+	</include>
+	
+	<include name="Objects_ButtonMenu8Group">
+			<height>312</height>	
+	</include>
+
+<!-- Login Screen -->
+	
+	<include name="LoginThumbDimensions">
+	    <posx>18</posx>
+	    <posy>18</posy>
+	    <width>234</width>
+	    <height>234</height>
+	</include>
+	
+	<include name="LoginThumbReflectionDimensions">
+	    <posx>18</posx>
+	    <posy>254</posy>
+	    <width>234</width>
+	    <height>234</height>
+	</include>	
+	
+	<include name="LoginThumb">
+	    <include>LoginThumbDimensions</include>
+		<texture diffuse="thumbs/cdcover_mask.png">defaultaudiobig.png</texture>
+	    <aspectratio scalediffuse="false">scale</aspectratio>
+	</include>
+
+	<include name="LoginGlassOverlayDimensions">
+	    <posx>-14</posx>
+	    <posy>-14</posy>
+	    <width>298</width>
+	    <height>298</height>
+	</include>
+	
+	<include name="LoginGlassOverlay">
+	    <include>LoginThumbDimensions</include>
+	    <bordertexture border="-18">thumbs/cd_shadow.png</bordertexture>
+	    <texture>thumbs/cd_glass_noedge.png</texture>
+	    <texture>cdcover_frame.png</texture>
+	</include>
+
+    <include name="LoginThumbReflection">
+        <include>LoginThumbReflectionDimensions</include>
+        <colordiffuse>d0FFFFFF</colordiffuse>
+        <texture flipy="true" diffuse="thumbs/cdcover_mask_reflect.png">defaultmusic.png</texture>
+        <aspectratio scalediffuse="false">scale</aspectratio>
+    </include>
+
+	<include name="EmptyLibraryLabelMovies">
+		<label>$LOCALIZE[31609][CR]$LOCALIZE[31610]</label>	
+	</include>
+	
+	<include name="EmptyLibraryLabelMusic">
+		<label>$LOCALIZE[31609][CR]$LOCALIZE[31611]</label>	
+	</include>	
+	
+</includes>

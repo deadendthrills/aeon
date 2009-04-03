@@ -1,0 +1,117 @@
+<window>
+	<id>123</id>
+	<defaultcontrol>2</defaultcontrol>
+	<coordinates>
+	<system>1</system>
+	<posx>0</posx>
+	<posy>0</posy>
+	</coordinates>
+	<animation type="WindowOpen" reversible="false">
+		<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+		<effect type="fade" start="0" end="100" time="300" />
+	</animation>
+	<animation type="WindowClose" reversible="false">
+		<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+		<effect type="fade" start="100" end="0" time="300" />
+	</animation>		
+	<controls>
+	
+	<control type="image">
+		<description>Panel</description>
+		<posx>200</posx>
+		<posy>40</posy>
+		<width>881</width>
+		<height>481</height>
+		<texture>osd/osd_settings_back.png</texture>
+	</control>
+
+	<control type="label" id="4">
+		<description>No Presets Label</description>
+		<posx>250</posx>
+		<posy>75</posy>
+		<width>781</width>
+		<height>400</height>
+		<align>center</align>
+		<aligny>center</aligny>
+		<label>13390</label>
+		<font>Font_OSDOptions</font>
+	</control>
+	
+	<control type="grouplist" id="5">
+		<description>control area</description>
+		<posx>250</posx>
+		<posy>75</posy>
+		<width>781</width>
+		<height>440</height>
+		<texture>-</texture>
+		<itemgap>0</itemgap>
+	</control>
+
+	<control type="list" id="2">
+		<posx>250</posx>
+		<posy>75</posy>
+		<width>781</width>
+		<height>365</height>
+		<onleft>-</onleft>
+		<onright>-</onright>
+		<onup>2</onup>
+		<ondown>2</ondown>
+		<pagecontrol>60</pagecontrol>
+		<scrolltime>0</scrolltime>
+		<itemlayout height="40">
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>781</width>
+				<height>40</height>
+				<texture>osd/osd_settings_buttonnf.png</texture>
+			</control>
+			<control type="label">
+				<posx>30</posx>
+				<posy>0</posy>
+				<width>721</width>
+				<height>40</height>
+				<textcolor>FF929191</textcolor>
+				<selectedcolor>9b3cd2fd</selectedcolor>						
+				<aligny>center</aligny>
+				<font>Font_OSDOptions</font>				
+				<info>ListItem.Label</info>
+			</control>
+		</itemlayout>
+		<focusedlayout height="40">
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>781</width>
+				<height>40</height>
+				<texture>osd/osd_settings_buttonf.png</texture>
+			</control>		
+			<control type="label">
+				<posx>30</posx>
+				<posy>0</posy>
+				<width>721</width>
+				<height>40</height>
+				<textcolor>FFFFFFFF</textcolor>
+				<selectedcolor>9b3cd2fd</selectedcolor>				
+				<aligny>center</aligny>
+				<font>Font_OSDOptions</font>				
+				<info>ListItem.Label</info>
+			</control>
+ 		</focusedlayout>
+	</control>
+	
+	<control type="label">
+		<description>No Presets Label</description>
+		<posx>280</posx>
+		<posy>450</posy>
+		<width>721</width>
+		<height>40</height>
+		<align>center</align>
+		<aligny>center</aligny>
+		<textcolor>FF161616</textcolor>		
+		<label>$LOCALIZE[31005] $INFO[Container(2).NumItems]</label>
+		<font>Font_OSDOptions</font>
+	</control>	
+	
+	</controls>
+</window>

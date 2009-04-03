@@ -1,0 +1,50 @@
+<window id="113">
+	<zorder>1</zorder>
+	<coordinates>
+	<system>1</system>
+	<posx>0</posx>
+	<posy>0</posy>
+	</coordinates>
+	<animation type="WindowOpen" reversible="false">
+		<effect type="zoom" start="80" end="100" center="640,360" delay="200" easing="out" tween="back" time="300" />
+		<effect type="fade" delay="200" start="0" end="100" time="300" />
+	</animation>
+	<animation type="WindowClose" reversible="false">
+		<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+		<effect type="fade" start="100" end="0" time="300" />
+	</animation>	
+	<controls>
+
+	<control type="group" id="901">
+	<posx>287</posx>
+	<posy>520</posy>
+	<width>707</width>
+	<height>183</height>
+	<animation effect="slide" end="0,-225" time="400" easing="inout" tween="cubic" condition="Window.IsActive(Home) + Skin.HasSetting(lowermainmenu)">Conditional</animation>
+	<animation effect="slide" end="0,-400" time="200" easing="inout" tween="circle" condition="Control.IsVisible(57)">Conditional</animation>
+
+		<control type="image">
+			<posx>10</posx>
+			<posy>10</posy>
+			<width>688</width>
+			<height>163</height>
+			<texture>dialogs/progress_backg.png</texture>		
+		</control>
+	
+		<control type="label">
+			<posx>10</posx>
+			<posy>10</posy>
+			<width>688</width>
+			<height>51</height>
+			<textcolor>a7ffffff</textcolor>
+			<align>center</align>
+			<font>Font_ProgressLabelBig</font>
+			<label>31002</label>
+			<animation effect="slide" start="0,15" end="0,15" time="0" condition="IsEmpty(Control.GetLabel(3)) + IsEmpty(Control.GetLabel(4))">Conditional</animation>			
+			<animation effect="slide" start="0,0" end="0,0" time="0" condition="!IsEmpty(Control.GetLabel(3)) + IsEmpty(Control.GetLabel(4))">Conditional</animation>			
+		</control>
+
+	</control>
+
+	</controls>
+</window>

@@ -1,0 +1,84 @@
+<window id="20">
+	<defaultcontrol>50</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+	
+	<control type="multiimage">
+		<include>Background_SingleImage</include>
+		<imagepath>backdrops/default_movies</imagepath>
+		<info>Skin.String(CustomScripts)</info>
+		<visible>!Skin.String(CustomScriptsFolder)</visible>
+	</control>
+
+	<control type="multiimage">
+		<include>Background_ImageFolder</include>
+		<info>Skin.String(CustomScriptsFolder)</info>
+		<visible>Skin.String(CustomScriptsFolder)</visible>
+	</control>
+
+	<include>Furniture_WallBackground</include>
+	
+	<control type="group">
+		<include>FullscreenDimensions</include>
+		<include>Animation_OpenCloseZoom</include>
+		
+		<include>Furniture_Time</include>	
+		<include>Furniture_WindowRSS</include>
+		<include>Furniture_MediaPanel</include>
+		<include>Objects_ShowcaseMenuPanel</include>
+
+		<include>Viewtype_Wall</include>
+		<include>Furniture_WallTime</include>
+		<include>Furniture_WallRSS</include>		
+
+		<control type="group" id="7000">
+			<include>Animation_MediaMenuPosition</include>
+
+			<control type="image">
+				<include>Objects_MediaLogo</include>
+				<texture>-</texture>
+			</control>	
+		
+			<control type="label">
+				<label>31020</label>
+				<include>Objects_MediaLabel</include>
+			</control>
+
+			<control type="grouplist" id="7000">
+				<include>Animation_MediaMenuSlide</include>
+				<include>Objects_MediaMenuGroup</include>
+
+				<control type="button" id="900">
+					<label>$LOCALIZE[31050] $INFO[Container.ViewMode]</label>
+					<include>Objects_MediaMenuButton</include>
+					<onclick>SetFocus(69)</onclick>
+				</control>
+
+				<include>Objects_FlattenFlowButton</include>	
+
+				<control type="button" id="3">
+					<label>103</label>
+					<include>Objects_MediaMenuButton</include>
+				</control>
+
+				<include>Objects_ThumbsButton</include>	
+
+				<include>Objects_WallGridButton</include>
+				
+				<include>Objects_WallBackdropButton</include>
+				
+				<include>Objects_MediaDebugButtons</include>
+			</control>
+		</control>
+
+		<include>Viewtype_Showcase</include>
+		<include>Viewtype_Coverflow</include>
+		<include>Viewtype_List</include>
+
+	</control>
+
+	<include>ViewChange</include>
+	<include>Background_ContextBlack</include>
+	<include>Furniture_Debug</include>
+</controls>
+</window>

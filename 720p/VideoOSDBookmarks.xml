@@ -1,0 +1,288 @@
+<window id="125">
+	<defaultcontrol>2</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	<controls>
+	
+	<control type="image">
+		<description>background image</description>
+		<posx>638</posx>
+		<posy>0</posy>
+		<width>772</width>
+		<height>720</height>
+		<texture>info/info_rightpanelbottom.png</texture>
+		<visible>Skin.HasSetting(solidbookmarks)</visible>
+		<animation effect="slide" start="565,0" end="0,0" delay="200" time="400" easing="out" tween="cubic">WindowOpen</animation>		
+		<animation effect="fade" time="200" delay="200" start="100" end="0">WindowClose</animation>
+	</control>
+	
+	<control type="image">
+		<description>background image</description>
+		<posx>638</posx>
+		<posy>0</posy>
+		<width>772</width>
+		<height>720</height>
+		<texture>info/info_rightpaneltop.png</texture>
+		<animation effect="slide" start="565,0" end="0,0" delay="200" time="400" easing="out" tween="cubic">WindowOpen</animation>		
+		<animation effect="fade" time="200" delay="200" start="100" end="0">WindowClose</animation>
+	</control>
+	
+	<control type="group">
+		<posx>670</posx>
+		<posy>45</posy>
+		<width>695</width>
+		<height>569</height>
+		<animation effect="slide" start="565,0" end="0,0" delay="200" time="400" easing="out" tween="cubic">WindowOpen</animation>
+		<include>Animation_CommonFade</include>
+		
+		<control type="image">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>60</posy>
+			<width>645</width>
+			<height>568</height>
+			<texture>osd/bookmark_lines.png</texture>
+		</control>
+
+		<control type="label">
+			<description>Movie title</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>700</width>
+			<font>Font_FSInfoTitle</font>
+			<label>$INFO[Videoplayer.Title]</label>
+			<include>Colour_OffWhite</include>
+		</control>
+
+		<control type="label">
+			<description>Directed by:</description>
+			<posx>3</posx>
+			<posy>60</posy>
+			<width>110</width>
+			<height>29</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>Font_FSInfoLabel</font>
+			<label>31708</label>
+			<include>Colour_Grey</include>
+		</control>
+		
+		<control type="label">
+			<description>Written by:</description>
+			<posx>3</posx>
+			<posy>87</posy>
+			<width>110</width>
+			<height>29</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>Font_FSInfoLabel</font>
+			<label>31709</label>
+			<include>Colour_Grey</include>
+		</control>
+
+		<control type="label">
+			<description>Starring:</description>
+			<posx>3</posx>
+			<posy>114</posy>
+			<width>110</width>
+			<height>29</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>Font_FSInfoLabel</font>
+			<label>31710</label>
+			<include>Colour_Grey</include>
+		</control>
+
+		<control type="label">
+			<description>Director</description>
+			<posx>135</posx>
+			<posy>60</posy>
+			<width>500</width>
+			<height>29</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>Font_FSInfoData</font>
+			<label fallback="31005">$INFO[Videoplayer.Time]</label>
+			<include>Colour_OffWhite</include>
+		</control>
+		
+		<control type="label">
+			<description>Writer</description>
+			<posx>135</posx>
+			<posy>87</posy>
+			<width>500</width>
+			<height>29</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>Font_FSInfoData</font>
+			<label fallback="31005">$INFO[Videoplayer.Duration]</label>
+			<include>Colour_OffWhite</include>
+		</control>
+		
+		<control type="label">
+			<description>Writer</description>
+			<posx>135</posx>
+			<posy>114</posy>
+			<width>500</width>
+			<height>29</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>Font_FSInfoData</font>
+			<label fallback="31005">$INFO[Player.FinishTime]</label>
+			<include>Colour_OffWhite</include>
+		</control>
+		
+		<control type="grouplist" id="9000">
+			<include>Objects_BookmarkMenu</include>
+			<ondown>11</ondown>
+			<onup>11</onup>
+			<control type="button" id="2">
+			<label>294</label>
+			<include>Objects_BookmarkButton</include>
+			</control>
+
+			<control type="button" id="3">
+			<label>296</label>
+			<include>Objects_BookmarkButton</include>
+			</control>
+
+		</control>
+
+		<control type="image">
+		   <posx>0</posx>
+		   <posy>208</posy>
+		   <width>577</width>
+		   <height>323</height>
+		   <texture>osd/bookmark_frame.png</texture>
+		</control>
+		
+		<control type="wraplist" id="11">
+			<viewtype label="Wide">wrap</viewtype>
+			<posx>13</posx>
+			<posy>220</posy>
+			<height>299</height>
+			<width>552</width>
+			<onleft>11</onleft>
+			<onright>11</onright>
+			<onup>2</onup>
+			<ondown>2</ondown>
+			<scrolltime>0</scrolltime>
+			<focusposition>0</focusposition>
+			<orientation>horizontal</orientation>
+			<include>Animation_CommonFade</include>
+			<visible>!Window.IsVisible(129)</visible>
+			<itemlayout height="299" width="552">
+				<control type="image">
+				   <posx>0</posx>
+				   <posy>0</posy>
+				   <width>552</width>
+				   <height>299</height>
+				   <texture>$INFO[ListItem.Thumb]</texture>
+				   <aspectratio scalediffuse="false" aligny="center">scale</aspectratio>
+				   <colordiffuse>91FFFFFF</colordiffuse>
+				</control>				
+			</itemlayout>
+			<focusedlayout height="299" width="552">
+				<control type="image">
+				   <posx>0</posx>
+				   <posy>0</posy>
+				   <width>552</width>
+				   <height>299</height>
+				   <texture>$INFO[ListItem.Thumb]</texture>
+				   <aspectratio scalediffuse="false" aligny="center">scale</aspectratio>
+				   <animation effect="fade" start="100" end="60" time="200">Unfocus</animation>
+				   <animation effect="fade" start="60" end="100" time="200">Focus</animation>				   
+				</control>		
+			</focusedlayout>
+		 </control>
+
+		<control type="label">
+			<posx>13</posx>
+			<posy>220</posy>
+			<height>299</height>
+			<width>552</width>
+			<font>Font_FSInfoLabel</font>
+			<align>center</align>
+			<aligny>center</aligny>
+			<label>31712</label>
+			<include>Animation_CommonFade</include>
+			<visible>IsEmpty(Control.GetLabel(11))</visible>
+		</control>
+		 
+		<control type="group">
+			<visible>![stringcompare(container(11).numitems,1) | stringcompare(container(11).numitems,0)]</visible>		
+			<animation effect="fade" start="0" end="100" time="200">Visible</animation>			
+			<control type="image">
+				<posx>13</posx>
+				<posy>470</posy>
+				<height>49</height>
+				<width>552</width>
+				<texture>common/black.png</texture>
+				<colordiffuse>abFFFFFF</colordiffuse>
+			</control>
+			 
+			<control type="label">
+				<posx>13</posx>
+				<posy>470</posy>
+				<height>49</height>
+				<width>552</width>
+				<font>Font_BookmarksAvailable</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[container(11).numitems] BOOKMARKS AVAILABLE</label>
+			</control>
+			
+			<control type="label">
+				<posx>13</posx>
+				<posy>470</posy>
+				<height>49</height>
+				<width>50</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>Y</label>
+				<font>Font_KeyboardShapes</font>				
+			</control>
+
+			<control type="label">
+				<posx>522</posx>
+				<posy>470</posy>
+				<height>49</height>
+				<width>30</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>Z</label>
+				<font>Font_KeyboardShapes</font>				
+			</control>				
+		</control>
+		 
+		<control type="label">
+			<description>IMDB:</description>
+			<posx>3</posx>
+			<posy>581</posy>
+			<width>110</width>
+			<height>29</height>
+			<align>left</align>
+			<font>Font_FSIMDB</font>
+			<label>[UPPERCASE]SELECTED[/UPPERCASE]</label>
+			<include>Colour_Grey</include>
+		</control>
+		
+		<control type="label">
+			<description>IMDB rating</description>
+			<posx>105</posx>
+			<posy>568</posy>
+			<width>500</width>
+			<height>29</height>
+			<align>left</align>
+			<font>Font_FSIMDBData</font>
+			<label>[UPPERCASE]$INFO[Control.GetLabel(11)][/UPPERCASE]</label>
+			<include>Colour_OffWhite</include>
+		</control>
+		 
+	</control>
+		 
+	</controls>
+</window>
