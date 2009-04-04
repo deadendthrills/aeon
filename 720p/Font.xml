@@ -305,7 +305,6 @@
       <name>Font_FSInfoPlot</name>
       <filename>aeon_player.ttf</filename>
       <size>21</size>
-	  <linespacing>0.9</linespacing>
     </font>
 
     <font>
