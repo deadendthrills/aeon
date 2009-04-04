@@ -115,18 +115,6 @@
 		<visible>Control.IsVisible(52)</visible>
 	</control>
 
-	<control type="label" id="3">
-		<description>Profile Count Label</description>
-		<posx>630</posx>
-		<posy>120</posy>
-		<width>420</width>
-		<align>right</align>
-		<font>special13</font>
-		<textcolor>90cbcbcb</textcolor>
-		<include>common-fade</include>
-		<visible>!Window.IsActive(130) + !Window.IsActive(131)</visible>
-	</control>
-
 	<control type="button" id="98">
 		<description>ShutDown Button</description>
 		<posx>625</posx>
