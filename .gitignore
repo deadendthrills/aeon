@@ -1,0 +1,7 @@
+# .gitignore for Aeon 
+
+# generated files 
+thumbs.db 
+
+# fonts 
+/fonts
