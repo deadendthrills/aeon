@@ -2612,10 +2612,39 @@
             <texturefocus>-</texturefocus>
             <texturenofocus>-</texturenofocus>
             <onleft>57</onleft>
+            <onright>320</onright>
+            <onup>57</onup>
+            <ondown>57</ondown>
+        </control>
+		
+        <control type="button" id="320">
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <onleft>57</onleft>
+            <onright>57</onright>
+            <onup>57</onup>
+            <ondown>321</ondown>
+			<visible>Skin.HasSetting(nosettings)</visible>
+        </control>
+
+        <control type="button" id="321">
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <onleft>322</onleft>
             <onright>57</onright>
             <onup>57</onup>
             <ondown>57</ondown>
         </control>
+
+        <control type="button" id="322">
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <onleft>57</onleft>
+            <onright>57</onright>
+			<onup>Skin.Reset(nosettings)</onup>			
+            <onup>SetFocus(57)</onup>
+            <ondown>57</ondown>
+        </control>		
 		
         <control type="group">
             <include>ShowcaseVisible</include>
