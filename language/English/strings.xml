@@ -194,7 +194,8 @@
 	<string id="31245">BROWSING LAYOUT</string>
   
 <!-- Aeon Advanced options -->
-  
+ 
+	<string id="31258">SHOW RATINGS (IMDB, ETC.) IN MOVIE INFO PAGE</string>
 	<string id="31259">DEFAULT ICONS FOR MEDIA FLAGS (OFF FOR BLANK SPACES)</string>
 	<string id="31260">SHOW TIME PANEL</string>
 	<string id="31261">HOME PAGE WEATHER POP-UP</string>

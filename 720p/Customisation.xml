@@ -135,43 +135,50 @@
 			<onclick>Skin.ToggleSetting(nodefaultflags)</onclick>
 			<selected>!Skin.HasSetting(nodefaultflags)</selected>
 		</control>
-
+		
 		<control type="radiobutton" id="604">
+			<include>Objects_SettingsDefaultRadioButton</include>
+			<label>31258</label>
+			<onclick>Skin.ToggleSetting(inforatings)</onclick>
+			<selected>Skin.HasSetting(inforatings)</selected>
+		</control>		
+
+		<control type="radiobutton" id="605">
 			<include>Objects_SettingsDefaultRadioButton</include>
 			<label>31285</label>
 			<onclick>Skin.ToggleSetting(movieratingtext)</onclick>
 			<selected>Skin.HasSetting(movieratingtext)</selected>
 		</control>
 		
-		<control type="radiobutton" id="605">
+		<control type="radiobutton" id="606">
 			<include>Objects_SettingsDefaultRadioButton</include>
 			<label>31286</label>
 			<onclick>Skin.ToggleSetting(albumratingtext)</onclick>
 			<selected>Skin.HasSetting(albumratingtext)</selected>
 		</control>
 
-		<control type="radiobutton" id="606">
+		<control type="radiobutton" id="607">
 			<include>Objects_SettingsDefaultRadioButton</include>
 			<label>31297</label>
 			<onclick>Skin.ToggleSetting(singlemusiclisticon)</onclick>
 			<selected>Skin.HasSetting(singlemusiclisticon)</selected>
 		</control>
 
-		<control type="radiobutton" id="607">
+		<control type="radiobutton" id="608">
 			<include>Objects_SettingsDefaultRadioButton</include>
 			<label>31298</label>
 			<onclick>Skin.ToggleSetting(singlemovielisticon)</onclick>
 			<selected>Skin.HasSetting(singlemovielisticon)</selected>
 		</control>
 
-		<control type="radiobutton" id="608">
+		<control type="radiobutton" id="609">
 			<include>Objects_SettingsDefaultRadioButton</include>
 			<label>31299</label>
 			<onclick>Skin.ToggleSetting(showcaserss)</onclick>
 			<selected>Skin.HasSetting(showcaserss)</selected>
 		</control>
 
-		<control type="radiobutton" id="609">
+		<control type="radiobutton" id="610">
 			<include>Objects_SettingsDefaultRadioButton</include>
 			<label>31268</label>
 			<onclick>Skin.ToggleSetting(wallrss)</onclick>

@@ -43,6 +43,8 @@
 		<width>131</width>
 		<height>30</height>
 		<colordiffuse>FF7c7c7c</colordiffuse>
+		<animation effect="slide" start="-148,0" end="-148,0" time="0" condition="Control.IsVisible(91) + !Control.IsVisible(92)">Conditional</animation>
+		<animation effect="slide" start="-111,0" end="-111,0" time="0" condition="!Control.IsVisible(91)">Conditional</animation>			
 	</include>
 
 	<include name="Furniture_MovieInfoFlagSubs">
@@ -51,6 +53,9 @@
 		<width>39</width>
 		<height>30</height>
 		<colordiffuse>FF7c7c7c</colordiffuse>
+		<animation effect="slide" start="-111,0" end="-111,0" time="0" condition="!Control.IsVisible(91) + Control.IsVisible(92)">Conditional</animation>		
+		<animation effect="slide" start="-259,0" end="-259,0" time="0" condition="!Control.IsVisible(91) + !Control.IsVisible(92)">Conditional</animation>		
+		<animation effect="slide" start="-148,0" end="-148,0" time="0" condition="Control.IsVisible(91) + !Control.IsVisible(92)">Conditional</animation>
 	</include>
 
 	<include name="Furniture_MovieInfoFlagRes">
@@ -59,125 +64,174 @@
 		<width>67</width>
 		<height>30</height>
 		<colordiffuse>FF7c7c7c</colordiffuse>
-		<animation effect="slide" start="-62,0" end="-62,0" time="0" condition="!substring(listitem.studio,sub)">Conditional</animation>			
+		<animation effect="slide" start="-210,0" end="-210,0" time="0" condition="Control.IsVisible(91) + !Control.IsVisible(92) + !Control.IsVisible(93)">Conditional</animation>		
+		<animation effect="slide" start="-147,0" end="-147,0" time="0" condition="Control.IsVisible(91) + !Control.IsVisible(92) + Control.IsVisible(93)">Conditional</animation>
+		<animation effect="slide" start="-260,0" end="-260,0" time="0" condition="!Control.IsVisible(91) + !Control.IsVisible(92) + Control.IsVisible(93)">Conditional</animation>			
+		<animation effect="slide" start="-110,0" end="-110,0" time="0" condition="!Control.IsVisible(91) + Control.IsVisible(92) + Control.IsVisible(93)">Conditional</animation>		
+		<animation effect="slide" start="-173,0" end="-173,0" time="0" condition="!Control.IsVisible(91) + Control.IsVisible(92) + !Control.IsVisible(93)">Conditional</animation>			
+		<animation effect="slide" start="-59,0" end="-59,0" time="0" condition="Control.IsVisible(91) + Control.IsVisible(92) + !Control.IsVisible(93)">Conditional</animation>		
+		<animation effect="slide" start="-321,0" end="-321,0" time="0" condition="!Control.IsVisible(91) + !Control.IsVisible(92) + !Control.IsVisible(93) + Control.IsVisible(94)">Conditional</animation>		
 	</include>	
 
+	<include name="Furniture_FlagUpright">
+		<posy>581</posy>		
+		<width>1</width>
+		<height>47</height>
+		<texture>info/info_flagupright.png</texture>	
+	</include>
+	
 	<include name="Furniture_MovieInfoMediaFlags">
+	
 		<control type="image">
+			<posx>104</posx>
+			<include>Furniture_FlagUpright</include>
+			<visible>Control.IsVisible(91) + [Control.IsVisible(92) | Control.IsVisible(93) | Control.IsVisible(94) | Skin.HasSetting(inforatings)]</visible>
+		</control>
+		
+		<control type="image">
+			<posx>253</posx>
+			<include>Furniture_FlagUpright</include>
+			<visible>Control.IsVisible(92) + [Control.IsVisible(93) | Control.IsVisible(94) | Skin.HasSetting(inforatings)]</visible>
+			<animation effect="slide" start="-111,0" end="-111,0" time="0" condition="!Control.IsVisible(91)">Conditional</animation>			
+		</control>	
+
+		<control type="image">
+			<posx>313</posx>
+			<include>Furniture_FlagUpright</include>
+			<visible>Control.IsVisible(93) + [Control.IsVisible(94) | Skin.HasSetting(inforatings)]</visible>
+			<animation effect="slide" start="-110,0" end="-110,0" time="0" condition="!Control.IsVisible(91) + Control.IsVisible(92) + Control.IsVisible(93)">Conditional</animation>			
+			<animation effect="slide" start="-259,0" end="-259,0" time="0" condition="!Control.IsVisible(91) + !Control.IsVisible(92)">Conditional</animation>				
+			<animation effect="slide" start="-148,0" end="-148,0" time="0" condition="Control.IsVisible(91) + !Control.IsVisible(92)">Conditional</animation>			
+		</control>
+
+		<control type="image">
+			<posx>403</posx>
+			<include>Furniture_FlagUpright</include>
+			<visible>Control.IsVisible(94) + Skin.HasSetting(inforatings)</visible>
+			<animation effect="slide" start="-110,0" end="-110,0" time="0" condition="!Control.IsVisible(91) + Control.IsVisible(92) + Control.IsVisible(93)">Conditional</animation>			
+			<animation effect="slide" start="-259,0" end="-259,0" time="0" condition="!Control.IsVisible(91) + !Control.IsVisible(92)">Conditional</animation>				
+			<animation effect="slide" start="-148,0" end="-148,0" time="0" condition="Control.IsVisible(91) + !Control.IsVisible(92) + Control.IsVisible(93)">Conditional</animation>			
+			<animation effect="slide" start="-58,0" end="-58,0" time="0" condition="Control.IsVisible(91) + Control.IsVisible(92) + !Control.IsVisible(93)">Conditional</animation>			
+			<animation effect="slide" start="-64,0" end="-64,0" time="0" condition="!Control.IsVisible(91) + !Control.IsVisible(92) + !Control.IsVisible(93)">Conditional</animation>			
+			<animation effect="slide" start="-212,0" end="-212,0" time="0" condition="Control.IsVisible(91) + !Control.IsVisible(92) + !Control.IsVisible(93)">Conditional</animation>			
+			<animation effect="slide" start="-175,0" end="-175,0" time="0" condition="!Control.IsVisible(91) + Control.IsVisible(92) + !Control.IsVisible(93)">Conditional</animation>				
+		</control>		
+	
+		<control type="image" id="91">
 			<include>Furniture_MovieInfoFlagSource</include>
 			<texture>flags/info/bluray.png</texture>
 			<visible>substring(listitem.filename,bluray)</visible>
 		</control>
 		
-		<control type="image">
+		<control type="image" id="91">
 			<include>Furniture_MovieInfoFlagSource</include>
 			<texture>flags/info/dvd.png</texture>
 			<visible>substring(listitem.filename,sddvd)</visible>
 		</control>
 
-		<control type="image">
+		<control type="image" id="91">
 			<include>Furniture_MovieInfoFlagSource</include>
 			<texture>flags/info/hdtv.png</texture>
 			<visible>substring(listitem.filename,hdtv)</visible>
 		</control>
 
-		<control type="image">
+		<control type="image" id="91">
 			<include>Furniture_MovieInfoFlagSource</include>
 			<texture>flags/info/hddvd.png</texture>
 			<visible>substring(listitem.filename,hddvd)</visible>
 		</control>		
 
-		<control type="image">
+		<control type="image" id="92">
 			<include>Furniture_MovieInfoFlagSound</include>
 			<texture>flags/info/dd51.png</texture>
 			<visible>substring(listitem.studio,6ch) + substring(listitem.studio,ac-3)</visible>
 		</control>
 
-		<control type="image">
+		<control type="image" id="92">
 			<include>Furniture_MovieInfoFlagSound</include>
 			<texture>flags/info/dd71.png</texture>
 			<visible>substring(listitem.studio,8ch) + substring(listitem.studio,ac-3)</visible>
 		</control>
 
-		<control type="image">
+		<control type="image" id="92">
 			<include>Furniture_MovieInfoFlagSound</include>
 			<texture>flags/info/dts51.png</texture>
 			<visible>substring(listitem.studio,6ch) + substring(listitem.studio,dts)</visible>
 		</control>
 
-		<control type="image">
+		<control type="image" id="92">
 			<include>Furniture_MovieInfoFlagSound</include>
 			<texture>flags/info/dts71.png</texture>
 			<visible>substring(listitem.studio,8ch) + substring(listitem.studio,dts)</visible>
 		</control>
 
-		<control type="image">
+		<control type="image" id="92">
 			<include>Furniture_MovieInfoFlagSound</include>
 			<texture>flags/info/dolby20.png</texture>
 			<visible>substring(listitem.studio,2ch)</visible>
 		</control>
 
-		<control type="image">
+		<control type="image" id="92">
 			<include>Furniture_MovieInfoFlagSound</include>
 			<texture>flags/info/mono.png</texture>
 			<visible>substring(listitem.studio,mono)</visible>
 		</control>
 
-		<control type="image">
+		<control type="image" id="93">
 			<include>Furniture_MovieInfoFlagSubs</include>
 			<texture>flags/info/cc.png</texture>
 			<visible>substring(listitem.studio,sub)</visible>
 		</control>
 
-		<control type="image">
+		<control type="image" id="94">
 			<include>Furniture_MovieInfoFlagRes</include>
 			<texture>flags/info/sd.png</texture>
 			<visible>substring(listitem.studio,sd)</visible>
 		</control>
 
-		<control type="image">
+		<control type="image" id="94">
 			<include>Furniture_MovieInfoFlagRes</include>
 			<texture>flags/info/480i.png</texture>
 			<visible>substring(listitem.studio,480i)</visible>
 		</control>
 
-		<control type="image">
+		<control type="image" id="94">
 			<include>Furniture_MovieInfoFlagRes</include>
 			<texture>flags/info/576i.png</texture>
 			<visible>substring(listitem.studio,576i)</visible>
 		</control>	
 
-		<control type="image">
+		<control type="image" id="94">
 			<include>Furniture_MovieInfoFlagRes</include>
 			<texture>flags/info/720i.png</texture>
 			<visible>substring(listitem.studio,720i)</visible>
 		</control>
 
-		<control type="image">
+		<control type="image" id="94">
 			<include>Furniture_MovieInfoFlagRes</include>
 			<texture>flags/info/1080i.png</texture>
 			<visible>substring(listitem.studio,1080i)</visible>
 		</control>
 
-		<control type="image">
+		<control type="image" id="94">
 			<include>Furniture_MovieInfoFlagRes</include>
 			<texture>flags/info/480p.png</texture>
 			<visible>substring(listitem.studio,480p)</visible>
 		</control>
 
-		<control type="image">
+		<control type="image" id="94">
 			<include>Furniture_MovieInfoFlagRes</include>
 			<texture>flags/info/576p.png</texture>
 			<visible>substring(listitem.studio,576p)</visible>
 		</control>	
 
-		<control type="image">
+		<control type="image" id="94">
 			<include>Furniture_MovieInfoFlagRes</include>
 			<texture>flags/info/720p.png</texture>
 			<visible>substring(listitem.studio,720p)</visible>
 		</control>
 
-		<control type="image">
+		<control type="image" id="94">
 			<include>Furniture_MovieInfoFlagRes</include>
 			<texture>flags/info/1080p.png</texture>
 			<visible>substring(listitem.studio,1080p)</visible>
