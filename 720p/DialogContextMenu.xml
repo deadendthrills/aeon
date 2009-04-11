@@ -7,45 +7,45 @@
 	</coordinates>
 	<animation type="WindowOpen" reversible="false">
 		<effect type="zoom" start="80" end="100" center="144,214" easing="out" tween="back" time="300" />
-		<effect type="fade" start="0" end="100" time="300" />
+		<effect type="fade" start="0" end="90" time="300" />
 	</animation>
 	<animation type="WindowClose" reversible="false">
 		<effect type="zoom" start="100" end="80" center="144,214" easing="in" tween="back" time="300" />
-		<effect type="fade" start="100" end="0" time="300" />
+		<effect type="fade" start="90" end="0" time="300" />
 	</animation>
 	<controls>
 			<control type="image" id="997">
 				<description>background top image</description>
 				<posx>0</posx>
-				<posy>-15</posy>
-				<width>270</width>
-				<height>15</height>
+				<posy>-31</posy>
+				<width>280</width>
+				<height>31</height>
 				<texture>dialogs/context_top.png</texture>
 			</control>
 			<control type="image" id="999">
 				<description>background image</description>
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>270</width>
+				<width>280</width>
 				<texture>dialogs/context_middle.png</texture>
 			</control>
 			<control type="image" id="998">
 				<description>background bottom image</description>
 				<posx>0</posx>
 				<posy>390</posy>
-				<width>270</width>
-				<height>16</height>
+				<width>280</width>
+				<height>31</height>
 				<texture>dialogs/context_bottom.png</texture>
 			</control>
 			<control type="button" id="1000">
 				<description>button template</description>
-				<posx>3</posx>
+				<posx>0</posx>
 				<posy>0</posy>
-				<height>39</height>
-				<width>263</width>
-				<textcolor>FF8f8f8f</textcolor>
-				<focusedcolor>FFFFFFFF</focusedcolor>
-				<texturenofocus>dialogs/context_nofocus.png</texturenofocus>
+				<height>37</height>
+				<width>280</width>
+				<textcolor>FFd4d4d4</textcolor>
+				<focusedcolor>FF000000</focusedcolor>
+				<texturenofocus>-</texturenofocus>
 				<texturefocus>dialogs/context_highlight.png</texturefocus>
 				<align>center</align>
 				<font>Font_ContextMenuButton</font>
