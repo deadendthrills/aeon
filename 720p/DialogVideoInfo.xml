@@ -302,7 +302,7 @@
 			<posx>3</posx>
 			<posy>354</posy>
 			<width>630</width>
-			<height>217</height>
+			<height>214</height>
 			<align>left</align>
 			<font>Font_FSInfoPlot</font>
 			<label fallback="31414">$INFO[ListItem.Plot]</label>
