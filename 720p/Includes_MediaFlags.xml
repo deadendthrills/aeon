@@ -10,6 +10,16 @@
 		<colordiffuse>74000000</colordiffuse>
 	</include>
 	
+	<include name="Furniture_ListMediaFlagsVars">
+		<posy>630</posy>
+		<width>90</width>
+		<height>59</height>
+		<include>Animation_CommonFade</include>
+		<include>Animation_HideShowcase</include>
+		<visible>Control.IsVisible(50)</visible>
+		<colordiffuse>74000000</colordiffuse>
+	</include>	
+	
 	<include name="Furniture_PanelMediaFlagsVars">
 		<posy>538</posy>
 		<width>110</width>
@@ -237,6 +247,127 @@
 			<visible>substring(listitem.studio,1080p)</visible>
 		</control>		
 	</include>
+
+	<include name="Furniture_ListMediaFlags">
+		<visible>Control.IsVisible(50) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons)]</visible>
+		<include>Animation_CommonFade</include>
+			<control type="group">
+				<posx>1105</posx>
+				<control type="image">
+					<include>Furniture_ListMediaFlagsVars</include>
+					<texture>flags/defaultscreen.png</texture>
+					<visible>!Control.IsVisible(187) + !Skin.HasSetting(nodefaultflags)</visible>
+				</control>
+				<control type="image" id="187">
+					<include>Furniture_ListMediaFlagsVars</include>
+					<texture>flags/sd.png</texture>
+					<visible>substring(listitem.studio,sd)</visible>
+				</control>
+				<control type="image" id="187">
+					<include>Furniture_ListMediaFlagsVars</include>
+					<texture>flags/480p.png</texture>
+					<visible>substring(listitem.studio,480p)</visible>
+				</control>
+				<control type="image" id="187">
+					<include>Furniture_ListMediaFlagsVars</include>
+					<texture>flags/576p.png</texture>
+					<visible>substring(listitem.studio,576p)</visible>
+				</control>				
+				<control type="image" id="187">
+					<include>Furniture_ListMediaFlagsVars</include>
+					<texture>flags/720p.png</texture>
+					<visible>substring(listitem.studio,720p)</visible>
+				</control>
+				<control type="image" id="187">
+					<include>Furniture_ListMediaFlagsVars</include>
+					<texture>flags/1080p.png</texture>
+					<visible>substring(listitem.studio,1080p)</visible>
+				</control>
+				<control type="image" id="187">
+					<include>Furniture_ListMediaFlagsVars</include>
+					<texture>flags/480i.png</texture>
+					<visible>substring(listitem.studio,480i)</visible>
+				</control>
+				<control type="image" id="187">
+					<include>Furniture_ListMediaFlagsVars</include>
+					<texture>flags/576i.png</texture>
+					<visible>substring(listitem.studio,576i)</visible>
+				</control>				
+				<control type="image" id="187">
+					<include>Furniture_ListMediaFlagsVars</include>
+					<texture>flags/720i.png</texture>
+					<visible>substring(listitem.studio,720i)</visible>
+				</control>
+				<control type="image" id="187">
+					<include>Furniture_ListMediaFlagsVars</include>
+					<texture>flags/1080i.png</texture>
+					<visible>substring(listitem.studio,1080i)</visible>
+				</control>				
+			</control>
+			<control type="group">
+				<posx>981</posx>
+				<control type="image">
+					<include>Furniture_ListMediaFlagsVars</include>
+					<texture>flags/defaultsound.png</texture>
+					<visible>!Control.IsVisible(188) + !Skin.HasSetting(nodefaultflags)</visible>
+				</control>					
+				<control type="image" id="188">
+					<include>Furniture_ListMediaFlagsVars</include>
+					<texture>flags/dts.png</texture>
+					<visible>substring(listitem.studio,dts) + !substring(listitem.studio,ac-3)</visible>
+				</control>			
+				<control type="image" id="188">
+					<include>Furniture_ListMediaFlagsVars</include>
+					<texture>flags/dolbydigital.png</texture>
+					<visible>substring(listitem.studio,ac-3)</visible>
+				</control>	
+			</control>
+			<control type="group">
+				<posx>855</posx>
+				<control type="image">
+					<include>Furniture_ListMediaFlagsVars</include>
+					<texture>flags/defaultsource.png</texture>
+					<visible>!Control.IsVisible(189) + !Skin.HasSetting(nodefaultflags)</visible>
+				</control>				
+				<control type="image" id="189">
+					<include>Furniture_ListMediaFlagsVars</include>
+					<texture>flags/hddvd.png</texture>
+					<visible>substring(listitem.filename,hddvd)</visible>
+				</control>
+				<control type="image" id="189">
+					<include>Furniture_ListMediaFlagsVars</include>
+					<texture>flags/bluray.png</texture>
+					<visible>substring(listitem.filename,bluray)</visible>
+				</control>
+				<control type="image" id="189">
+					<include>Furniture_ListMediaFlagsVars</include>
+					<texture>flags/dvd.png</texture>
+					<visible>substring(listitem.filename,sddvd)</visible>
+				</control>
+				<control type="image" id="189">
+					<include>Furniture_ListMediaFlagsVars</include>
+					<texture>flags/hdtv.png</texture>
+					<visible>substring(listitem.filename,hdtv)</visible>
+				</control>				
+			</control>			
+	</include>
+	
+	<include name="Furniture_ListMediaFlagsTV">
+		<visible>Window.IsActive(25) + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
+			<control type="group">
+				<posx>951</posx>
+				<control type="image">
+					<include>Furniture_ListMediaFlagsVars</include>
+					<texture>flags/default.png</texture>
+					<visible>!Control.IsVisible(288) + !Skin.HasSetting(nodefaultflags)</visible>
+				</control>					
+				<control type="image" id="288">
+					<include>Furniture_ListMediaFlagsVars</include>
+					<texture>flags/tv/hbo.png</texture>
+					<visible>substring(listitem.title,band of brothers) | substring(listitem.title,curb your)</visible>
+				</control>			
+			</control>
+	</include>	
 	
 	<include name="Furniture_ShowcaseMediaFlags">
 		<control type="group">

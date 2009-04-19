@@ -72,7 +72,6 @@
 		</control>
 
 		<include>Viewtype_Showcase</include>
-		<include>Viewtype_Coverflow</include>
 		<include>Viewtype_List</include>
 
 	</control>

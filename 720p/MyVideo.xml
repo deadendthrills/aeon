@@ -70,7 +70,25 @@
 					<include>Objects_MediaMenuButton</include>
 				</control>
 
-				<include>Objects_ThumbsButton</include>	
+				<control type="togglebutton" id="941">
+					<include>Objects_MediaMenuButton</include>				
+					<label>ICON: POSTER</label>
+					<altlabel>ICON: SQUARE</altlabel>
+					<usealttexture>Skin.HasSetting(listvideosquare)</usealttexture>
+					<onclick>Skin.SetBool(listvideosquare)</onclick>
+					<altclick>Skin.Reset(listvideosquare)</altclick>
+					<visible>Control.IsVisible(50)</visible>
+				</control>
+				
+				<control type="togglebutton" id="942">
+					<include>Objects_MediaMenuButton</include>				
+					<label>PANEL: THICK</label>
+					<altlabel>PANEL: THIN</altlabel>
+					<usealttexture>Skin.HasSetting(listpanelthin)</usealttexture>
+					<onclick>Skin.SetBool(listpanelthin)</onclick>
+					<altclick>Skin.Reset(listpanelthin)</altclick>
+					<visible>Control.IsVisible(50)</visible>
+				</control>					
 
 				<include>Objects_WallGridButton</include>
 				
@@ -89,7 +107,6 @@
 		</control>
 
 		<include>Viewtype_Showcase</include>
-		<include>Viewtype_Coverflow</include>
 		<include>Viewtype_List</include>
 
 	</control>

@@ -62,7 +62,6 @@
 			<onup>SetFocus(900)</onup>
 			<onright>Container.SetViewMode(57)</onright>
 			<onright>SetFocus(900)</onright>
-			<ondown>Container.SetViewMode(55)</ondown>
 			<ondown>SetFocus(900)</ondown>
 			<onleft>Container.SetViewMode(53)</onleft>
 			<onleft>SetFocus(900)</onleft>		
@@ -94,18 +93,11 @@
 		</control>
 		<control type="group">
 			<include>ViewChangeAnimBottom</include>		
-			<control type="image">
-				<posx>519</posx>
-				<posy>513</posy>
-				<width>242</width>
-				<height>135</height>
-				<texture>viewselect/vs_icon_panel.png</texture>				
-			</control>
 			<control type="label">
 				<include>ViewChangeLabel</include>
 				<posx>427</posx>
-				<posy>640</posy>
-				<label>31753</label>				
+				<posy>570</posy>
+				<label>UNDER CONSTRUCTION</label>				
 			</control>			
 		</control>
 		<control type="group">

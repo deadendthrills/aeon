@@ -29,7 +29,7 @@
 	<control type="image">
 		<include>FullscreenDimensions</include>
 		<texture>windows/fanart_back.png</texture>
-        <visible>!Skin.HasSetting(nopicturefanart) + !Control.IsVisible(53) + !IsEmpty(listitem.filenameandpath)</visible>
+        <visible>!Skin.HasSetting(nopicturefanart) + !Control.IsVisible(53) + !Control.IsVisible(50) + !IsEmpty(listitem.filenameandpath)</visible>
 		<visible>substring(listitem.filenameandpath,jpg) | substring(listitem.filenameandpath,bmp) | substring(listitem.filenameandpath,png) | substring(listitem.filenameandpath,tif)</visible>		
 		<animation effect="fade" end="0" time="200">WindowClose</animation>
 		<animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>		
@@ -37,7 +37,7 @@
 
 	<control type="largeimage" id="71">
 		<include>FullscreenDimensions</include>
-        <visible>!Skin.HasSetting(nopicturefanart) + !Control.IsVisible(53) + !IsEmpty(listitem.filenameandpath)</visible>
+        <visible>!Skin.HasSetting(nopicturefanart) + !Control.IsVisible(53) + !Control.IsVisible(50) + !IsEmpty(listitem.filenameandpath)</visible>
 		<visible>substring(listitem.filenameandpath,jpg) | substring(listitem.filenameandpath,bmp) | substring(listitem.filenameandpath,png) | substring(listitem.filenameandpath,tif)</visible>		
 		<animation effect="fade" end="0" time="200">WindowClose</animation>
 		<animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
@@ -56,9 +56,8 @@
 		<include>Furniture_MediaPanel</include>
 		<include>Objects_ShowcaseMenuPanel</include>
 
-		<include>Viewtype_List</include>
 		<include>Viewtype_Showcase</include>
-		<include>Viewtype_Coverflow</include>
+		<include>Viewtype_List</include>
 		<include>Viewtype_Wall</include>		
 
 		<include>Furniture_WallTime</include>
@@ -94,6 +93,16 @@
 					<include>Objects_MediaMenuButton</include>
 				</control>
 
+				<control type="togglebutton" id="940">
+					<include>Objects_MediaMenuButton</include>				
+					<label>LAYOUT: SLIM</label>
+					<altlabel>LAYOUT: FULL</altlabel>
+					<usealttexture>Skin.HasSetting(pictureslistfull)</usealttexture>
+					<onclick>Skin.SetBool(pictureslistfull)</onclick>
+					<altclick>Skin.Reset(pictureslistfull)</altclick>
+					<visible>Control.IsVisible(50)</visible>
+				</control>
+				
 				<control type="togglebutton" id="901">
 					<include>Objects_MediaMenuButton</include>				
 					<label>31065</label>
@@ -103,8 +112,6 @@
 					<altclick>Skin.Reset(nopicturefanart)</altclick>
 					<visible>Window.IsActive(2) + Control.IsVisible(57)</visible>
 				</control>
-
-				<include>Objects_ThumbsButton</include>	
 
 				<include>Objects_WallGridButton</include>
 				

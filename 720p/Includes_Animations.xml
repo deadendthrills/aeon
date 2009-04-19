@@ -44,7 +44,7 @@
 		<animation effect="fade" time="400">Visible</animation>
 		<animation effect="fade" time="400">Hidden</animation>
 		<animation effect="fade" time="400">WindowOpen</animation>
-		<animation effect="fade" time="400">WindowClose</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
 	</include>	
 
 	<include name="Animation_VisibleChange200">
@@ -155,11 +155,11 @@
 	</include>
 	
 	<include name="Animation_MediaMenuPosition">
-		<animation effect="slide" time="0" end="0,85" condition="![Control.IsVisible(57) | Control.IsVisible(53)]">Conditional</animation>
+		<animation effect="slide" time="0" end="0,85" condition="![Control.IsVisible(50) | Control.IsVisible(57) | Control.IsVisible(53)]">Conditional</animation>
 	</include>
 
 	<include name="Animation_MediaMenuSlide">
-		<animation type="Conditional" condition="[Control.IsVisible(51) + Control.HasFocus(51)] | [Control.IsVisible(58) + Control.HasFocus(58)] | [Control.IsVisible(57) + [Control.HasFocus(57) | Control.HasFocus(94) | Control.HasFocus(320) | Control.HasFocus(321) | Control.HasFocus(322) | Control.HasFocus(71) | Control.HasFocus(85) | Control.HasFocus(60)]] | [Control.IsVisible(53) + [Control.HasFocus(53) | Control.HasFocus(71) | Control.HasFocus(85)]] | [Control.IsVisible(59) + Control.HasFocus(59)]">
+		<animation type="Conditional" condition="[Control.IsVisible(50) + Control.HasFocus(50)] | [Control.IsVisible(51) + Control.HasFocus(51)] | [Control.IsVisible(58) + Control.HasFocus(58)] | [Control.IsVisible(57) + [Control.HasFocus(57) | Control.HasFocus(94) | Control.HasFocus(320) | Control.HasFocus(321) | Control.HasFocus(322) | Control.HasFocus(71) | Control.HasFocus(85) | Control.HasFocus(60)]] | [Control.IsVisible(53) + [Control.HasFocus(53) | Control.HasFocus(71) | Control.HasFocus(85)]] | [Control.IsVisible(59) + Control.HasFocus(59)]">
 			<effect type="slide" end="0,-57" time="400" easing="in" tween="cubic" />
 			<effect type="fade" start="100" end="0" time="400" />
 		</animation>
@@ -182,7 +182,7 @@
 			<effect type="fade" start="0" end="100" time="400" />
 		</animation>
 		<animation type="WindowClose" condition="!Skin.HasSetting(nozooms)" reversible="false">
-			<effect type="fade" start="100" end="0" time="300" />
+			<effect type="fade" start="100" end="0" time="200" />
 		</animation>
 		<animation effect="fade" condition="Skin.HasSetting(nozooms)" time="500">WindowOpen</animation>
 		<animation effect="fade" condition="Skin.HasSetting(nozooms)" time="200">WindowClose</animation>

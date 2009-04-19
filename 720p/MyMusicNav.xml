@@ -76,6 +76,26 @@
 					<include>Objects_MediaMenuButton</include>
 				</control>
 
+				<control type="togglebutton" id="940">
+					<include>Objects_MediaMenuButton</include>				
+					<label>LAYOUT: SLIM</label>
+					<altlabel>LAYOUT: FULL</altlabel>
+					<usealttexture>Skin.HasSetting(musiclistfull)</usealttexture>
+					<onclick>Skin.SetBool(musiclistfull)</onclick>
+					<altclick>Skin.Reset(musiclistfull)</altclick>
+					<visible>Control.IsVisible(50)</visible>
+				</control>
+
+				<control type="togglebutton" id="942">
+					<include>Objects_MediaMenuButton</include>				
+					<label>PANEL: THICK</label>
+					<altlabel>PANEL: THIN</altlabel>
+					<usealttexture>Skin.HasSetting(listpanelthin)</usealttexture>
+					<onclick>Skin.SetBool(listpanelthin)</onclick>
+					<altclick>Skin.Reset(listpanelthin)</altclick>
+					<visible>Control.IsVisible(50)</visible>
+				</control>	
+				
 				<control type="togglebutton" id="901">
 					<include>Objects_MediaMenuButton</include>				
 					<label>31065</label>
@@ -85,8 +105,6 @@
 					<altclick>Skin.Reset(nomusicfanart)</altclick>
 					<visible>Control.IsVisible(57)</visible>
 				</control>
-
-				<include>Objects_ThumbsButton</include>	
 
 				<include>Objects_WallGridButton</include>
 				
@@ -104,10 +122,9 @@
 			</control>
 		</control>
 	
-		<include>Viewtype_List</include>
 		<include>Viewtype_Showcase</include>
-		<include>Viewtype_Coverflow</include>
-
+		<include>Viewtype_List</include>
+		
 	</control>
 
 	<include>ViewChange</include>

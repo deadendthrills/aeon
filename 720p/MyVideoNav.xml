@@ -33,22 +33,21 @@
 		<include>Background_ImageFolder</include>
 		<info>Skin.String(CustomTVFolder)</info>
 		<visible>Skin.String(CustomTVFolder)</visible>
-		<visible>Skin.HasSetting(videotv)</visible>
+		<visible>Skin.HasSetting(videotv) + !Control.IsVisible(102)</visible>
 	</control>
 
 	<control type="largeimage" id="102">
 		<include>FullscreenDimensions</include>
-        <visible>Control.IsVisible(57) + [[Container.Content(movies) + !Skin.HasSetting(nomoviefanart)] | [Container.Content(tvshows) + !Skin.HasSetting(notvfanart)]] + !IsEmpty(listitem.property(fanart_image))</visible>
+        <visible>[Control.IsVisible(50) | Control.IsVisible(57)] + [[Container.Content(movies) + !Skin.HasSetting(nomoviefanart)] | [Container.Content(tvshows) + !Skin.HasSetting(notvfanart)]] + !IsEmpty(listitem.property(fanart_image))</visible>
 		<fadetime>400</fadetime>
 		<texture>$INFO[listitem.property(fanart_image)]</texture>
 		<include>Animation_FanartFade</include>
 	</control>
 	
-	<control type="image">
+	<control type="image" id="102">
 		<include>FullscreenDimensions</include>
         <visible>[Container.Content(seasons) | Container.Content(episodes)] + !IsEmpty(Fanart.Image) + !Skin.HasSetting(notvfanart)</visible>
 		<animation effect="fade" end="0" time="200">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="600">VisibleChange</animation>
 		<texture>$INFO[Fanart.Image]</texture>
 	</control>
 
@@ -112,6 +111,26 @@
 					<include>Objects_MediaMenuButton</include>
 				</control>
 
+				<control type="togglebutton" id="940">
+					<include>Objects_MediaMenuButton</include>				
+					<label>LAYOUT: SLIM</label>
+					<altlabel>LAYOUT: FULL</altlabel>
+					<usealttexture>Skin.HasSetting(movieslistfull)</usealttexture>
+					<onclick>Skin.SetBool(movieslistfull)</onclick>
+					<altclick>Skin.Reset(movieslistfull)</altclick>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(50)</visible>
+				</control>
+				
+				<control type="togglebutton" id="942">
+					<include>Objects_MediaMenuButton</include>				
+					<label>PANEL: THICK</label>
+					<altlabel>PANEL: THIN</altlabel>
+					<usealttexture>Skin.HasSetting(listpanelthin)</usealttexture>
+					<onclick>Skin.SetBool(listpanelthin)</onclick>
+					<altclick>Skin.Reset(listpanelthin)</altclick>
+					<visible>Window.IsActive(25) + Control.IsVisible(50)</visible>
+				</control>				
+				
 				<control type="togglebutton" id="901">
 					<include>Objects_MediaMenuButton</include>				
 					<label>31065</label>
@@ -129,13 +148,11 @@
 					<usealttexture>Skin.HasSetting(notvfanart)</usealttexture>
 					<onclick>Skin.SetBool(notvfanart)</onclick>
 					<altclick>Skin.Reset(notvfanart)</altclick>
-					<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + Control.IsVisible(57)</visible>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + [Control.IsVisible(57) | Control.IsVisible(50)]</visible>
 				</control>
 				
 				<include>Objects_FlagsButton</include>
 				
-				<include>Objects_ThumbsButton</include>				
-
 				<include>Objects_WallGridButton</include>
 				
 				<include>Objects_WallBackdropButton</include>
@@ -168,7 +185,6 @@
 		</control>
 		
 		<include>Viewtype_Showcase</include>
-		<include>Viewtype_Coverflow</include>
 		<include>Viewtype_List</include>
 		
 	</control>

@@ -178,7 +178,7 @@
         <font>Font_ShowcaseMainLabel</font>
         <textcolor>d01a1a1c</textcolor>
 		<visible>!ControlGroup(7000).HasFocus()</visible>		
-        <animation effect="slide" end="0,-8" time="200" condition="[!Control.IsVisible(72) | IsEmpty(Control.GetLabel(72))] | Window.IsActive(24)">Conditional</animation>
+        <animation effect="slide" end="0,-11" time="200" condition="[!Control.IsVisible(72) | IsEmpty(Control.GetLabel(72))] | Window.IsActive(24)">Conditional</animation>
     </include>
 	
     <include name="ShowcaseMainLabelWide">
@@ -189,7 +189,7 @@
         <font>Font_ShowcaseMainLabel</font>
         <textcolor>d01a1a1c</textcolor>
 		<visible>!ControlGroup(7000).HasFocus()</visible>
-        <animation effect="slide" end="0,-8" time="200" condition="[!Control.IsVisible(72) | IsEmpty(Control.GetLabel(72))] | Window.IsActive(24)">Conditional</animation>
+        <animation effect="slide" end="0,-11" time="200" condition="[!Control.IsVisible(72) | IsEmpty(Control.GetLabel(72))] | Window.IsActive(24)">Conditional</animation>
     </include>
 
     <include name="ShowcaseItemsLabel">
@@ -220,7 +220,7 @@
         <texture>showcase/showcase_spot.png</texture>
         <include>Animation_CommonFade</include>
 		<include>Animation_HideShowcase</include>
-        <visible>Control.IsVisible(57)</visible>
+        <visible>Control.IsVisible(57) | Control.IsVisible(50)</visible>
     </include>
 	
     <control type="image" id="82">

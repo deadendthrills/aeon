@@ -302,7 +302,7 @@
 			<posx>3</posx>
 			<posy>354</posy>
 			<width>630</width>
-			<height>214</height>
+			<height>212</height>
 			<align>left</align>
 			<font>Font_FSInfoPlot</font>
 			<label fallback="31414">$INFO[ListItem.Plot]</label>
@@ -465,11 +465,6 @@
 			<include>Objects_FSInfoButton</include>
 			</control>
 
-			<control type="button" id="9">
-			<label>31420</label>
-			<include>Objects_FSInfoButton</include>
-			</control>
-
 			<control type="button" id="6">
 			<label>31410</label>
 			<include>Objects_FSInfoButton</include>
@@ -496,7 +491,7 @@
 			<posx>3</posx>
 			<posy>330</posy>
 			<width>630</width>
-			<height>217</height>
+			<height>212</height>
 			<align>left</align>
 			<font>Font_FSInfoPlot</font>
 			<autoscroll delay="3000" time="1000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>			
@@ -645,11 +640,6 @@
 			<include>Objects_FSInfoButton</include>
 			</control>
 
-			<control type="button" id="9">
-			<label>31420</label>
-			<include>Objects_FSInfoButton</include>
-			</control>
-
 			<control type="button" id="6">
 			<label>31410</label>
 			<include>Objects_FSInfoButton</include>
@@ -667,7 +657,7 @@
 			<posx>3</posx>
 			<posy>330</posy>
 			<width>630</width>
-			<height>217</height>
+			<height>212</height>
 			<align>left</align>
 			<font>Font_FSInfoPlot</font>
 			<autoscroll delay="3000" time="1000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>			

@@ -62,6 +62,12 @@
 	</font>
 	
 	<font>
+	  <name>Font_ListPlaying</name>
+	  <filename>aeon_player.ttf</filename>
+	  <size>18</size>
+	</font>	
+	
+	<font>
 	  <name>Font_WeatherTitle</name>
 	  <filename>aeon_title.ttf</filename>
 	  <size>24</size>
@@ -96,9 +102,15 @@
 	
 	<font>
 		<name>Font_List</name>
-		<filename>aeon_list.ttf</filename>
-		<size>16</size>
+		<filename>aeon_title.ttf</filename>
+		<size>22</size>
 	</font>
+	
+	<font>
+		<name>Font_ListSmall</name>
+		<filename>aeon_title.ttf</filename>
+		<size>19</size>
+	</font>	
 	
 	<font>
 		<name>font13</name>
@@ -108,9 +120,27 @@
 
 	<font>
 		<name>Font_ListDetail</name>
-		<filename>aeon_list.ttf</filename>
-		<size>13</size>
+		<filename>aeon_title.ttf</filename>
+		<size>18</size>
 	</font>
+	
+	<font>
+		<name>Font_ListDetailTV</name>
+		<filename>aeon_title.ttf</filename>
+		<size>16</size>
+	</font>	
+	
+	<font>
+		<name>Font_ListSub</name>
+		<filename>aeon_title.ttf</filename>
+		<size>18</size>
+	</font>	
+	
+	<font>
+		<name>Font_ListObjects</name>
+		<filename>aeon_title.ttf</filename>
+		<size>17</size>
+	</font>	
 	
 <!-- Settings screens -->
 
@@ -305,6 +335,7 @@
       <name>Font_FSInfoPlot</name>
       <filename>aeon_player.ttf</filename>
       <size>21</size>
+	  <linespacing>1.1</linespacing>	  
     </font>
 
     <font>
@@ -433,6 +464,12 @@
 		<name>Font_KeyboardShapes</name>
 		<filename>aeon_shapes.ttf</filename>
 		<size>19</size>
+	</font>
+
+	<font>
+		<name>Font_ListPlay</name>
+		<filename>aeon_shapes.ttf</filename>
+		<size>60</size>
 	</font>	
 
 	<font>

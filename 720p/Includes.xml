@@ -16,20 +16,48 @@
 <include file="Includes_MediaFlags.xml" />
 <include file="Includes_ViewSelect.xml" />
 <include file="Viewtype_Showcase.xml" />
-<include file="Viewtype_Coverflow.xml" />
 <include file="Viewtype_List.xml" />
 <include file="Viewtype_Wall.xml" />
 
 <!-- Text colours ================================== -->
 
+<include name="subcolornofocus">
+	<textcolor>ff969696</textcolor>
+	<selectedcolor>ff969696</selectedcolor>
+</include>
+
 <include name="listcolornofocus">
-	<textcolor>9bFFFFFF</textcolor>
-	<selectedcolor>9b3cd2fd</selectedcolor>
+	<textcolor>dcffffff</textcolor>
+	<selectedcolor>dcffffff</selectedcolor>
+</include>
+
+<include name="subcolorfocus">
+	<textcolor>ff2e2e2e</textcolor>
+	<selectedcolor>ff2e2e2e</selectedcolor>
 </include>
 
 <include name="listcolorfocus">
-	<textcolor>FFFFFFFF</textcolor>
-	<selectedcolor>9b3cd2fd</selectedcolor>
+	<textcolor>ff2e2e2e</textcolor>
+	<selectedcolor>ff2e2e2e</selectedcolor>
+</include>
+
+<include name="detailcolornofocus">
+	<textcolor>dcbdbdbd</textcolor>
+	<selectedcolor>dcbdbdbd</selectedcolor>
+</include>
+
+<include name="listobjects">
+	<textcolor>ff969696</textcolor>
+</include>
+
+<include name="detailcolorfocus">
+	<textcolor>FF585858</textcolor>
+	<selectedcolor>FF585858</selectedcolor>
+</include>
+
+<include name="playsymbol">
+	<textcolor>00FFFFFF</textcolor>
+	<selectedcolor>10FFFFFF</selectedcolor>
 </include>
 
 <include name="playlistcolor1">
