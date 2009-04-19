@@ -1141,7 +1141,7 @@
 		<control type="group">
 			<animation effect="fade" delay="1500" start="0" end="100" time="400">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="100">Hidden</animation>
-			<visible>Control.IsVisible(50) + Player.HasAudio + !Container.Content(episodes)</visible>
+			<visible>Control.IsVisible(50) + Player.HasAudio</visible>
 			<control type="progress" id="20">
 				<description>Progressbar</description>
 				<posx>855</posx>
