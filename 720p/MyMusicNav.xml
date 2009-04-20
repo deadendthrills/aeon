@@ -78,28 +78,18 @@
 
 				<control type="togglebutton" id="940">
 					<include>Objects_MediaMenuButton</include>				
-					<label>LAYOUT: SLIM</label>
-					<altlabel>LAYOUT: FULL</altlabel>
+					<include>Objects_ListLayoutStrings</include>
 					<usealttexture>Skin.HasSetting(musiclistfull)</usealttexture>
 					<onclick>Skin.SetBool(musiclistfull)</onclick>
 					<altclick>Skin.Reset(musiclistfull)</altclick>
 					<visible>Control.IsVisible(50)</visible>
 				</control>
 
-				<control type="togglebutton" id="942">
-					<include>Objects_MediaMenuButton</include>				
-					<label>PANEL: THICK</label>
-					<altlabel>PANEL: THIN</altlabel>
-					<usealttexture>Skin.HasSetting(listpanelthin)</usealttexture>
-					<onclick>Skin.SetBool(listpanelthin)</onclick>
-					<altclick>Skin.Reset(listpanelthin)</altclick>
-					<visible>Control.IsVisible(50)</visible>
-				</control>	
+				<include>Objects_PanelDensityButton</include>
 				
 				<control type="togglebutton" id="901">
 					<include>Objects_MediaMenuButton</include>				
-					<label>31065</label>
-					<altlabel>31064</altlabel>
+					<include>Objects_FanartToggleStrings</include>
 					<usealttexture>Skin.HasSetting(nomusicfanart)</usealttexture>
 					<onclick>Skin.SetBool(nomusicfanart)</onclick>
 					<altclick>Skin.Reset(nomusicfanart)</altclick>
@@ -111,7 +101,7 @@
 				<include>Objects_WallBackdropButton</include>				
 				
 				<control type="button" id="5">
-					<label>31068</label>
+					<label>31057</label>
 					<include>Objects_MediaMenuButton</include>
 					<onclick>XBMC.ReplaceWindow(MyMusicFiles)</onclick>
 				</control>

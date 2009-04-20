@@ -121,8 +121,7 @@
 
 				<control type="togglebutton" id="940">
 					<include>Objects_MediaMenuButton</include>				
-					<label>LAYOUT: SLIM</label>
-					<altlabel>LAYOUT: FULL</altlabel>
+					<include>Objects_ListLayoutStrings</include>
 					<usealttexture>Skin.HasSetting(pictureslistfull)</usealttexture>
 					<onclick>Skin.SetBool(pictureslistfull)</onclick>
 					<altclick>Skin.Reset(pictureslistfull)</altclick>
@@ -131,8 +130,8 @@
 				
 				<control type="togglebutton" id="941">
 					<include>Objects_MediaMenuButton</include>				
-					<label>GRID: MAX</label>
-					<altlabel>GRID: NORMAL</altlabel>
+					<label>$LOCALIZE[31076]: $LOCALIZE[31074]</label>
+					<altlabel>$LOCALIZE[31076]: $LOCALIZE[31073]</altlabel>
 					<usealttexture>!Skin.HasSetting(stripshowmax)</usealttexture>
 					<onclick>Skin.ToggleSetting(stripshowmax)</onclick>
 					<onclick>XBMC.ReloadSkin</onclick>
@@ -141,8 +140,8 @@
 
 				<control type="togglebutton" id="942">
 					<include>Objects_MediaMenuButton</include>				
-					<label>AUTOHIDE: OFF</label>
-					<altlabel>AUTOHIDE: ON</altlabel>
+					<label>$LOCALIZE[31079]: $LOCALIZE[31078]</label>
+					<altlabel>$LOCALIZE[31079]: $LOCALIZE[31077]</altlabel>
 					<usealttexture>!Skin.HasSetting(nostripshowhide)</usealttexture>
 					<onclick>Skin.ToggleSetting(nostripshowhide)</onclick>
 					<visible>Control.IsVisible(51)</visible>
@@ -150,8 +149,7 @@
 				
 				<control type="togglebutton" id="901">
 					<include>Objects_MediaMenuButton</include>				
-					<label>31065</label>
-					<altlabel>31064</altlabel>
+					<include>Objects_FanartToggleStrings</include>
 					<usealttexture>Skin.HasSetting(nopicturefanart)</usealttexture>
 					<onclick>Skin.SetBool(nopicturefanart)</onclick>
 					<altclick>Skin.Reset(nopicturefanart)</altclick>
@@ -168,8 +166,8 @@
 				</control>
 
 				<control type="togglebutton" id="9">
-					<label>31051</label>
-					<altlabel>31052</altlabel>
+					<label>$LOCALIZE[31051]: $LOCALIZE[31078]</label>
+					<altlabel>$LOCALIZE[31051]: $LOCALIZE[31077]</altlabel>
 					<include>Objects_MediaMenuButton</include>
 				</control>
 

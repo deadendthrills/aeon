@@ -262,8 +262,8 @@
 
 	<include name="Objects_WallBackdropButton">
 		<control type="togglebutton" id="907">
-			<label>31067</label>
-			<altlabel>31066</altlabel>
+			<label>$LOCALIZE[31067]: $LOCALIZE[31078]</label>
+			<altlabel>$LOCALIZE[31067]: $LOCALIZE[31077]</altlabel>
 			<usealttexture>Skin.HasSetting(transparentwall)</usealttexture>
 			<include>Objects_MediaMenuButton</include>
 			<onclick>Skin.ToggleSetting(transparentwall)</onclick>
@@ -273,8 +273,8 @@
 	
 	<include name="Objects_FlagsButton">
 		<control type="togglebutton" id="916">
-			<label>31069</label>
-			<altlabel>31070</altlabel>
+			<label>$LOCALIZE[31069]: $LOCALIZE[31077]</label>
+			<altlabel>$LOCALIZE[31069]: $LOCALIZE[31078]</altlabel>
 			<usealttexture>Skin.HasSetting(nomediaflags)</usealttexture>
 			<include>Objects_MediaMenuButton</include>
 			<onclick>Skin.ToggleSetting(nomediaflags)</onclick>
@@ -282,24 +282,27 @@
 		</control>
 	</include>
 
-	<include name="Objects_ThumbsButton">
-		<control type="togglebutton" id="920">
-			<label>31071</label>
-			<altlabel>31072</altlabel>
-			<usealttexture>!Skin.HasSetting(singlemovielisticon)</usealttexture>
-			<include>Objects_MediaMenuButton</include>
-			<onclick>Skin.ToggleSetting(singlemovielisticon)</onclick>
-			<visible>!Skin.HasSetting(nomenuthumbs) + Control.IsVisible(50) + [!Container.Content(episodes) + [Window.IsActive(28) | Window.IsActive(24) | Window.IsActive(25) | Window.IsActive(1)]]</visible>
-		</control>
-		<control type="togglebutton" id="921">
-			<label>31071</label>
-			<altlabel>31072</altlabel>
-			<usealttexture>!Skin.HasSetting(singlemusiclisticon)</usealttexture>
-			<include>Objects_MediaMenuButton</include>
-			<onclick>Skin.ToggleSetting(singlemusiclisticon)</onclick>
-			<visible>!Skin.HasSetting(nomenuthumbs) + Control.IsVisible(50) + [Window.IsActive(20) | Window.IsActive(2) | Window.IsActive(501) | Window.IsActive(500) | Window.IsActive(502) | Container.Content(episodes)]</visible>
-		</control>		
-	</include>		
+	<include name="Objects_PanelDensityButton">
+		<control type="togglebutton" id="942">
+			<include>Objects_MediaMenuButton</include>				
+			<label>$LOCALIZE[31065]: $LOCALIZE[31052]</label>
+			<altlabel>$LOCALIZE[31065]: $LOCALIZE[31053]</altlabel>
+			<usealttexture>Skin.HasSetting(listpanelthin)</usealttexture>
+			<onclick>Skin.SetBool(listpanelthin)</onclick>
+			<altclick>Skin.Reset(listpanelthin)</altclick>
+			<visible>Control.IsVisible(50)</visible>
+		</control>	
+	</include>
+	
+	<include name="Objects_ListLayoutStrings">
+		<label>$LOCALIZE[31075]: $LOCALIZE[31071]</label>
+		<altlabel>$LOCALIZE[31075]: $LOCALIZE[31072]</altlabel>	
+	</include>
+
+	<include name="Objects_FanartToggleStrings">
+		<label>$LOCALIZE[31064]: $LOCALIZE[31077]</label>
+		<altlabel>$LOCALIZE[31064]: $LOCALIZE[31078]</altlabel>
+	</include>
 	
 	<include name="Objects_VideoSetupButton">
 		<control type="button" id="915">
@@ -380,8 +383,8 @@
 	<include name="Objects_WallGridButton">
 		<control type="togglebutton" id="922">
 			<include>Objects_MediaMenuButton</include>				
-			<label>31074</label>
-			<altlabel>31073</altlabel>
+			<label>$LOCALIZE[31076]: $LOCALIZE[31074]</label>
+			<altlabel>$LOCALIZE[31076]: $LOCALIZE[31073]</altlabel>
 			<usealttexture>!Skin.HasSetting(smallmoviewall)</usealttexture>
 			<onclick>Skin.ToggleSetting(smallmoviewall)</onclick>
 			<onclick>XBMC.ReloadSkin</onclick>
@@ -390,8 +393,8 @@
 		</control>
 		<control type="togglebutton" id="923">
 			<include>Objects_MediaMenuButton</include>				
-			<label>31074</label>
-			<altlabel>31073</altlabel>
+			<label>$LOCALIZE[31076]: $LOCALIZE[31074]</label>
+			<altlabel>$LOCALIZE[31076]: $LOCALIZE[31073]</altlabel>
 			<usealttexture>!Skin.HasSetting(smallmusicwall)</usealttexture>
 			<onclick>Skin.ToggleSetting(smallmusicwall)</onclick>
 			<onclick>XBMC.ReloadSkin</onclick>

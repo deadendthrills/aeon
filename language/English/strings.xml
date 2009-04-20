@@ -47,31 +47,36 @@
 <!-- Media Window options -->
   
 	<string id="31050">VIEW:</string> 
-	<string id="31051">RANDOM: OFF</string>
-	<string id="31052">RANDOM: ON</string> 
-	<string id="31053">LIBRARY: OFF</string> 
+	<string id="31051">RANDOM</string>
+	<string id="31052">THICK</string> 
+	<string id="31053">THIN</string> 
 	<string id="31054">SETUP</string> 
-	<string id="31055">STACK: ON</string> 
-	<string id="31056">STACK: OFF</string>
+	<string id="31055">STACK</string> 
+	<string id="31056">THUMB: SQUARE</string>
 	<string id="31057">FILES</string>
-	<string id="31058">HIDE WATCHED: ON</string>
-	<string id="31059">HIDE WATCHED: OFF</string>
+	<string id="31058">HIDE WATCHED</string>
+	<string id="31059">THUMB: POSTER</string>
 	<string id="31060">LAYOUT: FLAT</string>
 	<string id="31061">LAYOUT: FLOW</string>
 	<string id="31062">SEASON</string>
 	<string id="31063">EPISODE</string>
-	<string id="31064">FANART: OFF</string>
-	<string id="31065">FANART: ON</string>
-	<string id="31066">BACKDROP: ON</string>
-	<string id="31067">BACKDROP: OFF</string>
-	<string id="31068">LIBRARY: ON</string>
-	<string id="31069">FLAGS: ON</string>
-	<string id="31070">FLAGS: OFF</string>
-	<string id="31071">THUMBS: SINGLE</string>
-	<string id="31072">THUMBS: MULTI</string>
-	<string id="31073">GRID: DEFAULT</string>
-	<string id="31074">GRID: MAX</string>
-  
+	<string id="31064">FANART</string>
+	<string id="31065">PANEL</string>
+	<string id="31066">-</string>
+	<string id="31067">BACKDROP</string>
+	<string id="31068">LIBRARY</string>
+	<string id="31069">FLAGS</string>
+	<string id="31070">-</string>
+	<string id="31071">SLIM</string>
+	<string id="31072">FULL</string>
+	<string id="31073">DEFAULT</string>
+	<string id="31074">MAX</string>
+	<string id="31075">LAYOUT</string>
+	<string id="31076">GRID</string>
+	<string id="31077">ON</string>
+	<string id="31078">OFF</string>
+	<string id="31079">AUTOHIDE</string>
+	
 <!-- Aeon Customisation Virtual Home page labels -->
   
 	<string id="31080">BACKDROPS</string>

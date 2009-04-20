@@ -72,31 +72,23 @@
 
 				<control type="togglebutton" id="941">
 					<include>Objects_MediaMenuButton</include>				
-					<label>ICON: POSTER</label>
-					<altlabel>ICON: SQUARE</altlabel>
+					<label>$LOCALIZE[31059]</label>
+					<altlabel>$LOCALIZE[31056]</altlabel>
 					<usealttexture>Skin.HasSetting(listvideosquare)</usealttexture>
 					<onclick>Skin.SetBool(listvideosquare)</onclick>
 					<altclick>Skin.Reset(listvideosquare)</altclick>
 					<visible>Control.IsVisible(50)</visible>
 				</control>
 				
-				<control type="togglebutton" id="942">
-					<include>Objects_MediaMenuButton</include>				
-					<label>PANEL: THICK</label>
-					<altlabel>PANEL: THIN</altlabel>
-					<usealttexture>Skin.HasSetting(listpanelthin)</usealttexture>
-					<onclick>Skin.SetBool(listpanelthin)</onclick>
-					<altclick>Skin.Reset(listpanelthin)</altclick>
-					<visible>Control.IsVisible(50)</visible>
-				</control>					
+				<include>Objects_PanelDensityButton</include>					
 
 				<include>Objects_WallGridButton</include>
 				
 				<include>Objects_WallBackdropButton</include>
 				
 				<control type="togglebutton" id="7">
-					<label>31055</label>
-					<altlabel>31056</altlabel>
+					<label>$LOCALIZE[31055]: $LOCALIZE[31077]</label>
+					<altlabel>$LOCALIZE[31055]: $LOCALIZE[31078]</altlabel>
 					<include>Objects_MediaMenuButton</include>
 				</control>
 
