@@ -285,6 +285,26 @@
       <filename>aeon_list.ttf</filename>
       <size>16</size>
     </font>
+
+<!-- StripShow -->
+
+    <font>
+      <name>Font_StripshowLabel</name>
+      <filename>aeon_settings.ttf</filename>
+      <size>55</size>
+    </font>
+	
+    <font>
+      <name>Font_StripshowLabelSmall</name>
+      <filename>aeon_title.ttf</filename>
+      <size>24</size>
+    </font>	
+	
+    <font>
+      <name>Font_StripshowDetail</name>
+      <filename>aeon_title.ttf</filename>
+      <size>18</size>
+    </font>	
 	
 <!-- Fullscreen Info pages -->
 

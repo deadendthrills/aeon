@@ -2,7 +2,7 @@
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
-	
+
     <control type="image" id="101">
 		<posx>0</posx>
 		<posy>0</posy>
@@ -12,20 +12,38 @@
 		<visible>!Skin.HasSetting(nopicturefanart) + [Control.HasFocus(57) | Control.HasFocus(60) | Control.HasFocus(94)] + [!Container(57).OnNext + !Container(57).OnPrevious]</visible>
 		<animation effect="fade" start="0" end="100" time="150" delay="3000">Visible</animation>
 	</control>
+	
+    <control type="image" id="105">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>0</width>
+		<height>0</height>
+		<texture>-</texture>
+		<visible>Control.HasFocus(51) + !Control.IsVisible(66) + Control.IsVisible(668) + [!Container(51).OnNext + !Container(51).OnPrevious]</visible>
+		<animation effect="fade" start="0" end="100" time="150" delay="3000">Visible</animation>
+	</control>	
 
+	<control type="image">
+		<include>FullscreenDimensions</include>
+		<texture>stripshow/stripshow_bg.png</texture>
+		<visible>Control.IsVisible(51)</visible>
+	</control>
+	
 	<control type="multiimage">
 		<include>Background_SingleImage</include>
 		<imagepath>backdrops/default_pictures</imagepath>
 		<info>Skin.String(CustomPictures)</info>
 		<visible>!Skin.String(CustomPicturesFolder)</visible>
+		<visible>!Control.IsVisible(668)</visible>		
 	</control>
 
 	<control type="multiimage">
 		<include>Background_ImageFolder</include>
 		<info>Skin.String(CustomPicturesFolder)</info>
 		<visible>Skin.String(CustomPicturesFolder)</visible>
+		<visible>!Control.IsVisible(668)</visible>		
 	</control>
-	
+
 	<control type="image">
 		<include>FullscreenDimensions</include>
 		<texture>windows/fanart_back.png</texture>
@@ -45,6 +63,14 @@
 		<fadetime>400</fadetime>
 		<aspectratio align="top">keep</aspectratio>	
 	</control>
+
+	<control type="largeimage" id="668">
+		<include>FullscreenDimensions</include>
+		<texture>$INFO[listitem.filenameandpath]</texture>
+		<fadetime>400</fadetime>
+		<aspectratio align="top">keep</aspectratio>
+		<visible>Control.IsVisible(51) + [substring(listitem.filenameandpath,jpg) | substring(listitem.filenameandpath,bmp) | substring(listitem.filenameandpath,png) | substring(listitem.filenameandpath,tif) | substring(listitem.filenameandpath,ico) | substring(listitem.filenameandpath,pcx) | substring(listitem.filenameandpath,tga)]</visible>
+	</control>
 	
 	<include>Furniture_WallBackground</include>
 	
@@ -52,14 +78,14 @@
 		<include>FullscreenDimensions</include>
 		<include>Animation_OpenCloseZoom</include>
 		<include>Furniture_Time</include>
-		<include>Furniture_WindowRSS</include>
 		<include>Furniture_MediaPanel</include>
-		<include>Objects_ShowcaseMenuPanel</include>
 
 		<include>Viewtype_Showcase</include>
 		<include>Viewtype_List</include>
 		<include>Viewtype_Wall</include>		
+		<include>Viewtype_StripShow</include>			
 
+		<include>Objects_ShowcaseMenuPanel</include>
 		<include>Furniture_WallTime</include>
 		<include>Furniture_WallRSS</include>		
 		
@@ -102,6 +128,16 @@
 					<altclick>Skin.Reset(pictureslistfull)</altclick>
 					<visible>Control.IsVisible(50)</visible>
 				</control>
+				
+				<control type="togglebutton" id="941">
+					<include>Objects_MediaMenuButton</include>				
+					<label>GRID: MAX</label>
+					<altlabel>GRID: NORMAL</altlabel>
+					<usealttexture>!Skin.HasSetting(stripshowmax)</usealttexture>
+					<onclick>Skin.ToggleSetting(stripshowmax)</onclick>
+					<onclick>XBMC.ReloadSkin</onclick>
+					<visible>Control.IsVisible(51)</visible>
+				</control>				
 				
 				<control type="togglebutton" id="901">
 					<include>Objects_MediaMenuButton</include>				

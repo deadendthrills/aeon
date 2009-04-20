@@ -1,0 +1,357 @@
+<includes>
+
+	<include name="StripShowIconDimensionsMax">
+		<posx>20</posx>
+		<posy>20</posy>
+		<width>192</width>
+		<height>192</height>
+		<visible>!Control.IsVisible(105)</visible>
+		<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+	</include>
+	
+	<include name="StripShowIconDimensionsMin">
+		<posx>20</posx>
+		<posy>20</posy>
+		<width>96</width>
+		<height>96</height>	
+		<visible>!Control.IsVisible(105)</visible>
+		<animation effect="fade" start="0" end="100" time="200">Visible</animation>		
+	</include>	
+	
+	<include name="Viewtype_StripShow">
+
+		<control type="group">
+			<posx>0</posx>
+			<posy>454</posy>
+			<width>1280</width>
+			<height>253</height>
+			<visible>Control.IsVisible(51)</visible>
+			<include>Animation_HideStripShow</include>			
+			<control type="image" id="304">
+				<width>1280</width>
+				<height>266</height>
+				<texture>stripshow/stripshow_iconback.png</texture>
+				<visible>!Control.IsVisible(105)</visible>
+				<animation effect="slide" start="0,0" end="0,176" time="600" easing="out" tween="cubic">Hidden</animation>		
+				<animation effect="fade" start="0" end="100" time="200">Visible</animation>	
+			</control>
+			
+			<control type="image">
+				<posy>176</posy>
+				<width>1280</width>
+				<height>266</height>
+				<texture>stripshow/stripshow_iconback.png</texture>
+				<visible>Control.IsVisible(105) + !Control.IsVisible(304)</visible>
+				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>		
+			</control>			
+			
+			<control type="image">
+				<posx>60</posx>
+				<posy>18</posy>
+				<width>1159</width>
+				<height>198</height>
+				<texture>stripshow/stripshow_iconframe.png</texture>
+				<visible>!Control.IsVisible(105)</visible>
+				<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+			</control>
+		</control>
+	
+		<control type="image">
+			<posx>20</posx>
+			<posy>460</posy>
+			<width>19</width>
+			<height>221</height>
+			<texture flipx="true">stripshow/stripshow_arrow.png</texture>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="slide" start="-100" end="0" delay="800" time="400" easing="out" tween="cubic">WindowOpen</animation>
+			<visible>!Control.IsVisible(105)</visible>
+			<include>Animation_CommonFade</include>
+			<include>Animation_HideStripShow</include>			
+		</control>
+		
+		<control type="image">
+			<posx>1241</posx>
+			<posy>460</posy>
+			<width>19</width>
+			<height>221</height>
+			<texture>stripshow/stripshow_arrow.png</texture>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="slide" start="100" end="0" delay="800" time="400" easing="out" tween="cubic">WindowOpen</animation>
+			<visible>!Control.IsVisible(105)</visible>
+			<include>Animation_CommonFade</include>
+			<include>Animation_HideStripShow</include>
+		</control>	
+
+		<control type="panel" id="51">
+			<viewtype label="STRIPSHOW">icon</viewtype>
+			<posx>44</posx>
+			<posy>455</posy>
+			<width>1171</width>
+			<height>252</height>
+			<pagecontrol>60</pagecontrol>
+			<scrolltime>0</scrolltime>
+			<onleft>51</onleft>
+			<onright>51</onright>
+			<onup>900</onup>
+			<ondown>60</ondown>
+			<orientation>horizontal</orientation>
+			<visible>Window.IsActive(2)</visible>
+			<include>Animation_HideStripShow</include>			
+			<itemlayout width="192" height="192" condition="!Skin.HasSetting(stripshowmax)">
+				<control type="image">
+					<include>StripShowIconDimensionsMax</include>
+					<texture>common/black.png</texture>
+				</control>				
+				<control type="image">
+					<include>StripShowIconDimensionsMax</include>
+					<texture>defaultpicturebig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<info>ListItem.Icon</info>
+					<visible>Window.IsActive(2)</visible>
+				</control>
+				<control type="image">
+					<include>StripShowIconDimensionsMax</include>
+					<bordertexture border="-53">stripshow/stripshow_iconborder_max.png</bordertexture>
+					<texture>-</texture>
+				</control>			
+				<control type="image">
+					<include>StripShowIconDimensionsMax</include>
+					<texture>common/black.png</texture>
+					<colordiffuse>58FFFFFF</colordiffuse>
+				</control>					
+			</itemlayout>
+			<focusedlayout width="192" height="192" condition="!Skin.HasSetting(stripshowmax)">
+				<control type="image">
+					<include>StripShowIconDimensionsMax</include>
+					<texture>common/black.png</texture>
+					<animation effect="zoom" center="96,96" start="100" end="110" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
+				</control>			
+				<control type="image">
+					<include>StripShowIconDimensionsMax</include>
+					<texture>defaultpicturebig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<info>ListItem.Icon</info>
+					<visible>Window.IsActive(2)</visible>
+					<animation effect="zoom" center="96,96" start="100" end="110" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
+				</control>
+				<control type="image">
+					<include>StripShowIconDimensionsMax</include>
+					<bordertexture border="-39">stripshow/stripshow_iconborder_max.png</bordertexture>
+					<texture>common/blank.png</texture>
+					<animation effect="zoom" center="96,96" start="100" end="110" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
+					<visible>!Container(51).Column(5) + !Control.IsVisible(105)</visible>					
+				</control>			
+			</focusedlayout>
+			<itemlayout width="96" height="96" condition="Skin.HasSetting(stripshowmax)">
+				<control type="image">
+					<include>StripShowIconDimensionsMin</include>
+					<texture>common/black.png</texture>
+				</control>			
+				<control type="image">
+					<include>StripShowIconDimensionsMin</include>
+					<texture>defaultpicturebig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<info>ListItem.Icon</info>
+					<visible>Window.IsActive(2)</visible>
+				</control>
+				<control type="image">
+					<include>StripShowIconDimensionsMin</include>
+					<texture>common/black.png</texture>
+					<colordiffuse>58FFFFFF</colordiffuse>
+				</control>				
+			</itemlayout>
+			<focusedlayout width="96" height="96" condition="Skin.HasSetting(stripshowmax)">
+				<control type="image">
+					<include>StripShowIconDimensionsMin</include>
+					<texture>common/black.png</texture>
+					<animation effect="zoom" center="68,68" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
+				</control>			
+				<control type="image">
+					<include>StripShowIconDimensionsMin</include>
+					<texture>defaultpicturebig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<info>ListItem.Icon</info>
+					<visible>Window.IsActive(2)</visible>
+					<animation effect="zoom" center="68,68" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
+				</control>
+				<control type="image">
+					<include>StripShowIconDimensionsMin</include>
+					<bordertexture border="-35">stripshow/stripshow_iconborder_min.png</bordertexture>
+					<texture>common/blank.png</texture>
+					<animation effect="zoom" center="68,68" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+					<visible>!Container(51).Column(11) + !Control.IsVisible(105)</visible>
+				</control>			
+			</focusedlayout>			
+		</control>
+
+		<control type="group">
+			<posy>475</posy>
+			<include>Animation_HideStripShow</include>			
+			<control type="image">
+				<posx>1026</posx>
+				<width>192</width>
+				<height>192</height>	
+				<bordertexture border="-39">stripshow/stripshow_iconborder_max.png</bordertexture>
+				<texture>common/blank.png</texture>
+				<animation effect="zoom" center="1128,84" start="100" end="110" time="450" easing="out" tween="cubic" reversible="false">Visible</animation>
+				<visible>Container(51).Column(5) + Control.HasFocus(51) + !Container(51).OnNext + !Control.IsVisible(105)</visible>
+				<visible>!Skin.HasSetting(stripshowmax)</visible>
+			</control>
+
+			<control type="image">
+				<posx>1119</posx>
+				<width>96</width>
+				<height>96</height>	
+				<bordertexture border="-32">stripshow/stripshow_iconborder_min.png</bordertexture>
+				<texture>common/blank.png</texture>
+				<animation effect="zoom" center="1167,48" start="100" end="120" time="450" easing="out" tween="cubic" reversible="false">Visible</animation>
+				<visible>Container(51).Column(11) + Container(51).Row(0) + Control.HasFocus(51) + !Container(51).OnNext + !Control.IsVisible(105)</visible>
+				<visible>Skin.HasSetting(stripshowmax)</visible>			
+			</control>
+
+			<control type="image">
+				<posx>1119</posx>
+				<posy>96</posy>
+				<width>96</width>
+				<height>96</height>	
+				<bordertexture border="-32">stripshow/stripshow_iconborder_min.png</bordertexture>
+				<texture>common/blank.png</texture>
+				<animation effect="zoom" center="1167,144" start="100" end="120" time="450" easing="out" tween="cubic" reversible="false">Visible</animation>
+				<visible>Container(51).Column(11) + Container(51).Row(1) + Control.HasFocus(51) + !Container(51).OnNext + !Control.IsVisible(105)</visible>
+				<visible>Skin.HasSetting(stripshowmax)</visible>
+			</control>
+		</control>
+
+		<control type="group">
+			<visible>Control.IsVisible(51)</visible>
+			<include>Animation_HideStripShow</include>
+			<control type="label" id="108">
+				<posx>64</posx>
+				<posy>678</posy>
+				<font>Font_StripshowLabelSmall</font>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>!Control.IsVisible(105) + !Control.HasFocus(60)</visible>
+				<visible>[Skin.HasSetting(stripshowmax) + [Container(51).Column(6) | Container(51).Column(7) | Container(51).Column(8) | Container(51).Column(9) | Container(51).Column(10) | Container(51).Column(11)]] | [!Skin.HasSetting(stripshowmax) + [Container(51).Column(3) | Container(51).Column(4) | Container(51).Column(5)]]</visible>
+				<animation effect="fade" end="0" time="200">WindowClose</animation>
+				<animation effect="fade" start="0" end="100" time="200">Visible</animation>		
+			</control>
+			
+			<control type="label" id="108">
+				<posx>1216</posx>
+				<posy>678</posy>
+				<align>right</align>
+				<font>Font_StripshowLabelSmall</font>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>!Control.IsVisible(105) + !Control.HasFocus(60)</visible>
+				<visible>[Skin.HasSetting(stripshowmax) + [Container(51).Column(0) | Container(51).Column(1) | Container(51).Column(2) | Container(51).Column(3) | Container(51).Column(4) | Container(51).Column(5)]] | [!Skin.HasSetting(stripshowmax) + [Container(51).Column(0) | Container(51).Column(1) | Container(51).Column(2)]]</visible>
+				<animation effect="fade" end="0" time="200">WindowClose</animation>
+				<animation effect="fade" start="0" end="100" time="200">Visible</animation>		
+			</control>			
+			
+			<control type="label" id="108">
+				<posx>20</posx>
+				<posy>644</posy>
+				<font>Font_StripshowLabel</font>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>Control.IsVisible(105)</visible>
+				<animation effect="fade" end="0" time="200">WindowClose</animation>
+				<animation effect="fade" delay="600" start="0" end="100" time="200">Visible</animation>		
+			</control>
+			
+			<control type="label" id="108">
+				<width>400</width>
+				<posx>1260</posx>
+				<posy>634</posy>
+				<align>right</align>
+				<font>Font_StripshowDetail</font>
+				<label fallback="DATE INFO UNAVAILABLE">$INFO[ListItem.PictureDateTime,TAKEN: ,]</label>
+				<visible>Control.IsVisible(105)</visible>
+				<animation effect="fade" end="0" time="200">WindowClose</animation>
+				<animation effect="fade" delay="600" start="0" end="100" time="200">Visible</animation>
+			</control>
+			
+			<control type="label" id="108">
+				<width>400</width>
+				<posx>1260</posx>
+				<posy>653</posy>
+				<align>right</align>
+				<font>Font_StripshowDetail</font>
+				<label fallback="DATE MODIFIED INFO UNAVAILABLE">$INFO[ListItem.Date,MODIFIED: ,]</label>
+				<visible>Control.IsVisible(105)</visible>
+				<animation effect="fade" end="0" time="200">WindowClose</animation>
+				<animation effect="fade" delay="600" start="0" end="100" time="200">Visible</animation>
+			</control>			
+
+			<control type="label" id="108">
+				<width>400</width>
+				<posx>1260</posx>
+				<posy>672</posy>
+				<align>right</align>
+				<font>Font_StripshowDetail</font>
+				<label fallback="RESOLUTION INFO UNAVAILABLE">$INFO[ListItem.PictureResolution]</label>
+				<visible>Control.IsVisible(105)</visible>
+				<animation effect="fade" end="0" time="200">WindowClose</animation>
+				<animation effect="fade" delay="600" start="0" end="100" time="200">Visible</animation>
+			</control>		
+			
+			<control type="label" id="108">
+				<width>400</width>
+				<posx>1260</posx>
+				<posy>691</posy>
+				<align>right</align>
+				<font>Font_StripshowDetail</font>
+				<label fallback="FILESIZE INFO UNAVAILABLE">$INFO[ListItem.Size]</label>
+				<visible>Control.IsVisible(105)</visible>
+				<animation effect="fade" end="0" time="200">WindowClose</animation>
+				<animation effect="fade" delay="600" start="0" end="100" time="200">Visible</animation>
+			</control>			
+			
+			<control type="image">
+				<posx>0</posx>
+				<posy>645</posy>
+				<width>1280</width>
+				<height>75</height>
+				<animation effect="slide" start="0,15" end="0,15" time="200" condition="!Control.IsVisible(105)">Conditional</animation>
+				<texture>stripshow/stripshow_gradient.png</texture>
+			</control>
+		</control>
+
+        <control type="button" id="195">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>0</width>
+            <height>0</height>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <onleft>51</onleft>
+            <onright>51</onright>
+            <onup>51</onup>
+            <ondown>51</ondown>
+        </control>
+		
+		<control type="scrollbar" id="60">
+			<description>My first scroll bar control</description>
+			<posx>67</posx>
+			<posy>673</posy>
+	        <width>1147</width>
+			<height>41</height>
+			<visible allowhiddenfocus="true">Control.IsVisible(51) + Control.HasFocus(60) + !Control.IsVisible(105)</visible>
+	        <texturesliderbackground>stripshow/stripshow_scrollbar.png</texturesliderbackground>
+			<texturesliderbar>-</texturesliderbar>
+			<texturesliderbarfocus>-</texturesliderbarfocus>
+			<textureslidernib>windows/scrollbarnub-nofocus.png</textureslidernib>
+			<textureslidernibfocus>windows/scrollbarnub-focus.png</textureslidernibfocus>
+			<pulseonselect></pulseonselect>
+			<orientation>horizontal</orientation>
+			<showonepage>false</showonepage>
+			<onup>51</onup>
+			<ondown>195</ondown>
+			<onleft>60</onleft>
+			<onright>60</onright>
+			<include>Animation_HideStripShow</include>
+			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+		</control>		
+		
+	</include>
+
+</includes>

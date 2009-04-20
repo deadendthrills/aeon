@@ -45,6 +45,10 @@
 		<animation effect="fade" delay="500" start="100" end="0" time="400">Hidden</animation>		
 	</include>	
 
+	<include name="StripShowButton">
+		<ondown>Container.SetViewMode(51)</ondown>	
+	</include>
+	
 	<include name="ViewChange">
 		<control type="image">
 			<include>FullscreenDimensions</include>
@@ -62,6 +66,7 @@
 			<onup>SetFocus(900)</onup>
 			<onright>Container.SetViewMode(57)</onright>
 			<onright>SetFocus(900)</onright>
+			<include condition="Window.IsActive(2)">StripShowButton</include>
 			<ondown>SetFocus(900)</ondown>
 			<onleft>Container.SetViewMode(53)</onleft>
 			<onleft>SetFocus(900)</onleft>		
@@ -92,7 +97,8 @@
 			</control>			
 		</control>
 		<control type="group">
-			<include>ViewChangeAnimBottom</include>		
+			<include>ViewChangeAnimBottom</include>
+			<visible>!Window.IsActive(2)</visible>
 			<control type="label">
 				<include>ViewChangeLabel</include>
 				<posx>427</posx>
@@ -100,6 +106,23 @@
 				<label>UNDER CONSTRUCTION</label>				
 			</control>			
 		</control>
+		<control type="group">
+			<include>ViewChangeAnimBottom</include>
+			<visible>Window.IsActive(2)</visible>
+			<control type="image">
+				<posx>519</posx>
+				<posy>513</posy>
+				<width>242</width>
+				<height>135</height>
+				<texture>-</texture>				
+			</control>
+			<control type="label">
+				<include>ViewChangeLabel</include>
+				<posx>427</posx>
+				<posy>640</posy>
+				<label>STRIPSHOW</label>				
+			</control>			
+		</control>		
 		<control type="group">
 			<include>ViewChangeAnimLeft</include>			
 			<control type="image">
