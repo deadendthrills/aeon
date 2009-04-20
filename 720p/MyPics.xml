@@ -27,6 +27,7 @@
 		<include>FullscreenDimensions</include>
 		<texture>stripshow/stripshow_bg.png</texture>
 		<visible>Control.IsVisible(51)</visible>
+		<include>Animation_CommonFade</include>
 	</control>
 	
 	<control type="multiimage">
@@ -61,7 +62,7 @@
 		<animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
 		<texture>$INFO[listitem.filenameandpath]</texture>
 		<fadetime>400</fadetime>
-		<aspectratio align="top">keep</aspectratio>	
+		<aspectratio align="top">keep</aspectratio>
 	</control>
 
 	<control type="largeimage" id="668">
@@ -70,6 +71,7 @@
 		<fadetime>400</fadetime>
 		<aspectratio align="top">keep</aspectratio>
 		<visible>Control.IsVisible(51) + [substring(listitem.filenameandpath,jpg) | substring(listitem.filenameandpath,bmp) | substring(listitem.filenameandpath,png) | substring(listitem.filenameandpath,tif) | substring(listitem.filenameandpath,ico) | substring(listitem.filenameandpath,pcx) | substring(listitem.filenameandpath,tga)]</visible>
+		<include>Animation_CommonFade</include>
 	</control>
 	
 	<include>Furniture_WallBackground</include>
