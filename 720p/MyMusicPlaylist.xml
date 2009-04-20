@@ -21,12 +21,10 @@
 		<include>Animation_OpenCloseZoom</include>
 		<include>Conditions_HiddenByInfoPages</include>
 		<include>Furniture_Time</include>
-		<include>Furniture_WindowRSS</include>
 		<include>Furniture_MediaPanel</include>
 		<include>Objects_ShowcaseMenuPanel</include>
 
 		<control type="group">
-			<include>Animation_MediaMenuPosition</include>
 	
 			<control type="image">
 				<include>Objects_MediaLogo</include>

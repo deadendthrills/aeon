@@ -90,7 +90,6 @@
 		<include>Furniture_WallRSS</include>		
 		
 		<control type="group" id="7000">
-			<include>Animation_MediaMenuPosition</include>
 
 			<control type="label">
 				<label>31031</label>

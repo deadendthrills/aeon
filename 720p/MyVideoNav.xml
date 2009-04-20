@@ -58,7 +58,6 @@
 		<include>Animation_OpenCloseZoom</include>
 		<include>Furniture_Time</include>		
 		<include>Conditions_HiddenByInfoPages</include>
-		<include>Furniture_WindowRSS</include>
 		<include>Furniture_MediaPanel</include>
 		<include>Objects_ShowcaseMenuPanel</include>
 
@@ -67,7 +66,6 @@
 		<include>Furniture_WallRSS</include>		
 		
 		<control type="group">
-			<include>Animation_MediaMenuPosition</include>
 	
 			<control type="image">
 				<include>Objects_MediaLogo</include>
