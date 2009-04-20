@@ -19,7 +19,7 @@
 		<width>0</width>
 		<height>0</height>
 		<texture>-</texture>
-		<visible>Control.HasFocus(51) + !Control.IsVisible(66) + Control.IsVisible(668) + [!Container(51).OnNext + !Container(51).OnPrevious]</visible>
+		<visible>Control.HasFocus(51) + !Skin.HasSetting(nostripshowhide) + !Control.IsVisible(66) + Control.IsVisible(668) + [!Container(51).OnNext + !Container(51).OnPrevious]</visible>
 		<animation effect="fade" start="0" end="100" time="150" delay="3000">Visible</animation>
 	</control>	
 
@@ -136,6 +136,15 @@
 					<usealttexture>!Skin.HasSetting(stripshowmax)</usealttexture>
 					<onclick>Skin.ToggleSetting(stripshowmax)</onclick>
 					<onclick>XBMC.ReloadSkin</onclick>
+					<visible>Control.IsVisible(51)</visible>
+				</control>
+
+				<control type="togglebutton" id="942">
+					<include>Objects_MediaMenuButton</include>				
+					<label>AUTOHIDE: OFF</label>
+					<altlabel>AUTOHIDE: ON</altlabel>
+					<usealttexture>!Skin.HasSetting(nostripshowhide)</usealttexture>
+					<onclick>Skin.ToggleSetting(nostripshowhide)</onclick>
 					<visible>Control.IsVisible(51)</visible>
 				</control>				
 				
