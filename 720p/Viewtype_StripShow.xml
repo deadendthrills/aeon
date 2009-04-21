@@ -43,7 +43,7 @@
 				<texture>stripshow/stripshow_iconback.png</texture>
 				<visible>Control.IsVisible(105) + !Control.IsVisible(304)</visible>
 				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-				<animation effect="slide" start="0,0" end="0,100" time="200" tween="cubic" easing="inout" delay="3000" condition="Control.IsVisible(108)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,100" time="200" tween="cubic" easing="inout" delay="5000" condition="Control.IsVisible(108)">Conditional</animation>
 			</control>			
 			
 			<control type="image">
@@ -226,7 +226,7 @@
 		<control type="group">
 			<visible>Control.IsVisible(51)</visible>
 			<include>Animation_HideStripShow</include>
-			<animation effect="slide" start="0,0" end="0,100" time="200" tween="cubic" easing="inout" delay="3000" condition="Control.IsVisible(108)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,100" time="200" tween="cubic" easing="inout" delay="5000" condition="Control.IsVisible(108)">Conditional</animation>
 			<control type="label">
 				<posx>64</posx>
 				<posy>678</posy>
