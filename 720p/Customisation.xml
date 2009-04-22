@@ -96,6 +96,27 @@
 			<label>31295</label>
 			<onclick>Skin.ToggleSetting(bighome)</onclick>
 			<selected>Skin.HasSetting(bighome)</selected>
+		</control>	
+
+		<control type="radiobutton" id="502">
+			<include>Objects_SettingsDefaultRadioButton</include>
+			<label>31257</label>
+			<onclick>Skin.ToggleSetting(nosubmenumovies)</onclick>
+			<selected>!Skin.HasSetting(nosubmenumovies)</selected>
+		</control>
+
+		<control type="radiobutton" id="503">
+			<include>Objects_SettingsDefaultRadioButton</include>
+			<label>31256</label>
+			<onclick>Skin.ToggleSetting(nosubmenutv)</onclick>
+			<selected>!Skin.HasSetting(nosubmenutv)</selected>
+		</control>
+
+		<control type="radiobutton" id="504">
+			<include>Objects_SettingsDefaultRadioButton</include>
+			<label>31255</label>
+			<onclick>Skin.ToggleSetting(nosubmenumusic)</onclick>
+			<selected>!Skin.HasSetting(nosubmenumusic)</selected>
 		</control>			
 		
 	</control>

@@ -11,6 +11,12 @@
 	</font>
 	
 	<font>
+	  <name>Font_Submenu</name>
+	  <filename>aeon_rss.ttf</filename>
+	  <size>19</size>
+	</font>	
+	
+	<font>
 	  <name>Font_Time</name>
 	  <filename>aeon_rss.ttf</filename>
 	  <size>16</size>

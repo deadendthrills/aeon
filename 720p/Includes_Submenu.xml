@@ -1,0 +1,206 @@
+<includes>
+
+	<include name="Submenu_Button">
+		<width>131</width>
+		<height>30</height>
+		<align>center</align>
+		<aligny>center</aligny>
+		<font>Font_Submenu</font>
+		<textcolor>5fFFFFFF</textcolor>
+		<focusedcolor>FFFFFFFF</focusedcolor>
+	</include>
+	
+	<include name="MovieShortcutBools">
+		<onclick>Skin.SetBool(videomovies)</onclick>
+		<onclick>Skin.Reset(videotv)</onclick>	
+	</include>
+	
+	<include name="TVShortcutBools">
+		<onclick>Skin.SetBool(videotv)</onclick>
+		<onclick>Skin.Reset(videomovies)</onclick>	
+	</include>
+
+	<include name="Submenu">
+		<control type="group">
+			<posx>143</posx>
+			<posy>406</posy>
+			<visible>ControlGroup(940).HasFocus()</visible>
+	    	<animation effect="slide" start="0,0" end="0,225" time="0" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>			
+			<include>Animation_CommonFade</include>			
+			<control type="image">
+				<width>994</width>
+				<height>33</height>
+				<texture>home/submenubar_movies.png</texture>
+			</control>
+			<control type="grouplist" id="940">
+				<posx>39</posx>
+				<width>917</width>
+				<height>33</height>
+				<itemgap>0</itemgap>
+				<onup>300</onup>
+				<ondown>300</ondown>
+				<orientation>horizontal</orientation>
+				<control type="button" id="40">
+					<include>Submenu_Button</include>
+					<include>MovieShortcutBools</include>
+					<label>31920</label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,recentlyaddedmovies,return)</onclick>
+				</control>
+				<control type="button" id="41">
+					<include>Submenu_Button</include>
+					<include>MovieShortcutBools</include>					
+					<label>31921</label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles,return)</onclick>
+				</control>
+				<control type="button" id="42">
+					<include>Submenu_Button</include>
+					<include>MovieShortcutBools</include>					
+					<label>31922</label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviegenres,return)</onclick>
+				</control>
+				<control type="button" id="43">
+					<include>Submenu_Button</include>
+					<include>MovieShortcutBools</include>					
+					<label>31923</label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieyears,return)</onclick>
+				</control>
+				<control type="button" id="44">
+					<include>Submenu_Button</include>
+					<include>MovieShortcutBools</include>					
+					<label>31924</label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieactors,return)</onclick>
+				</control>
+				<control type="button" id="45">
+					<include>Submenu_Button</include>
+					<include>MovieShortcutBools</include>					
+					<label>31925</label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviedirectors,return)</onclick>
+				</control>
+				<control type="button" id="46">
+					<include>Submenu_Button</include>
+					<include>MovieShortcutBools</include>					
+					<label>31926</label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviestudios,return)</onclick>
+				</control>				
+			</control>
+	
+		</control>
+		
+		<control type="group">
+			<posx>79</posx>
+			<posy>406</posy>
+			<visible>ControlGroup(941).HasFocus()</visible>
+	    	<animation effect="slide" start="0,0" end="0,225" time="0" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>			
+			<include>Animation_CommonFade</include>			
+			<control type="image">
+				<width>1123</width>
+				<height>33</height>
+				<texture>home/submenubar_music.png</texture>
+			</control>
+			<control type="grouplist" id="941">
+				<posx>39</posx>
+				<width>1048</width>
+				<height>33</height>
+				<itemgap>0</itemgap>
+				<onup>300</onup>
+				<ondown>300</ondown>
+				<scroll>false</scroll>
+				<orientation>horizontal</orientation>
+				<control type="button" id="40">
+					<include>Submenu_Button</include>
+					<label>31920</label>
+					<onclick>XBMC.ActivateWindow(MyMusicLibrary,recentlyaddedalbums,return)</onclick>
+				</control>
+				<control type="button" id="41">
+					<include>Submenu_Button</include>
+					<label>31927</label>
+					<onclick>XBMC.ActivateWindow(MyMusicLibrary,artists,return)</onclick>
+				</control>
+				<control type="button" id="42">
+					<include>Submenu_Button</include>
+					<label>31928</label>
+					<onclick>XBMC.ActivateWindow(MyMusicLibrary,albums,return)</onclick>
+				</control>
+				<control type="button" id="43">
+					<include>Submenu_Button</include>
+					<label>31922</label>
+					<onclick>XBMC.ActivateWindow(MyMusicLibrary,genres,return)</onclick>
+				</control>
+				<control type="button" id="44">
+					<include>Submenu_Button</include>
+					<label>31929</label>
+					<onclick>XBMC.ActivateWindow(MyMusicLibrary,playlists,return)</onclick>
+				</control>
+				<control type="button" id="45">
+					<include>Submenu_Button</include>
+					<label>31930</label>
+					<onclick>XBMC.ActivateWindow(MyMusicLibrary,top100,return)</onclick>
+				</control>
+				<control type="button" id="46">
+					<include>Submenu_Button</include>
+					<label>31931</label>
+					<onclick>XBMC.ActivateWindow(MyMusicLibrary,musicvideos,return)</onclick>
+				</control>
+				<control type="button" id="47">
+					<include>Submenu_Button</include>
+					<label>31932</label>
+					<onclick>XBMC.ActivateWindow(MyMusicFiles)</onclick>
+				</control>
+			</control>			
+		</control>
+
+		<control type="group">
+			<posx>282</posx>
+			<posy>406</posy>
+			<visible>ControlGroup(942).HasFocus()</visible>
+	    	<animation effect="slide" start="0,0" end="0,225" time="0" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>			
+			<include>Animation_CommonFade</include>			
+			<control type="image">
+				<width>717</width>
+				<height>33</height>
+				<texture>home/submenubar_tv.png</texture>
+			</control>
+			<control type="grouplist" id="942">
+				<posx>39</posx>
+				<width>655</width>
+				<height>33</height>
+				<itemgap>0</itemgap>
+				<onup>300</onup>
+				<ondown>300</ondown>
+				<orientation>horizontal</orientation>
+				<control type="button" id="40">
+					<include>Submenu_Button</include>
+					<include>TVShortcutBools</include>					
+					<label>31920</label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,recentlyaddedepisodes,return)</onclick>
+				</control>
+				<control type="button" id="41">
+					<include>Submenu_Button</include>
+					<include>TVShortcutBools</include>					
+					<label>31933</label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
+				</control>
+				<control type="button" id="42">
+					<include>Submenu_Button</include>
+					<include>TVShortcutBools</include>					
+					<label>31922</label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowgenres,return)</onclick>
+				</control>
+				<control type="button" id="43">
+					<include>Submenu_Button</include>
+					<include>TVShortcutBools</include>					
+					<label>31924</label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowactors,return)</onclick>
+				</control>
+				<control type="button" id="44">
+					<include>Submenu_Button</include>
+					<include>TVShortcutBools</include>					
+					<label>31923</label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowyears,return)</onclick>
+				</control>
+			</control>			
+		</control>			
+		
+	</include>
+	
+</includes>

@@ -15,6 +15,7 @@
 <include file="Includes_Settings_Welcome.xml" />
 <include file="Includes_MediaFlags.xml" />
 <include file="Includes_ViewSelect.xml" />
+<include file="Includes_Submenu.xml" />
 <include file="Viewtype_Showcase.xml" />
 <include file="Viewtype_StripShow.xml" />
 <include file="Viewtype_List.xml" />

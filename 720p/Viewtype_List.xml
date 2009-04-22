@@ -1050,7 +1050,7 @@
 				<width>346</width>
 				<height>511</height>
 				<fadetime>400</fadetime>			
-				<texture diffuse="list/list_movieicon_mask.png">$INFO[listitem.path]movie.tbn</texture>
+				<texture diffuse="list/list_movieicon_mask.png">$INFO[listitem.path,,movie.tbn]</texture>
 				<visible>Container.Content(movies)</visible>
 			</control>
 			
@@ -1058,7 +1058,7 @@
 				<width>346</width>
 				<height>511</height>
 				<fadetime>400</fadetime>			
-				<texture diffuse="list/list_movieicon_mask.png">$INFO[listitem.path]folder.jpg</texture>
+				<texture diffuse="list/list_movieicon_mask.png">$INFO[listitem.path,,folder.jpg]</texture>
 				<visible>Container.Content(tvshows)</visible>
 			</control>			
 
@@ -1074,7 +1074,7 @@
 				<width>346</width>
 				<height>511</height>
 				<fadetime>400</fadetime>			
-				<texture diffuse="list/list_movieicon_mask.png">$INFO[listitem.path]folder.jpg</texture>
+				<texture diffuse="list/list_movieicon_mask.png">$INFO[listitem.path,,folder.jpg]</texture>
 				<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>				
 			</control>
 
