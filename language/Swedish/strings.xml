@@ -1,419 +1,379 @@
-<?xml version="1.0" encoding="ISO-8859-1" standalone="yes" ?>
-<!-- $Revision: 204$ -->
-<!--  strings 31000 thru 31999 reserved for skins  -->
-
- <strings>
-	<string id="31000">0.9 (STARK)</string> <!-- DO NOT CHANGE -->
-	<string id="31001"></string>
-	<string id="31002"></string>
-	<string id="31003"></string>
-	<string id="31004">ÅTERSTÄLL BAKGRUND</string>
-	<string id="31005">OBJEKT</string>
-	<string id="31006">NU SPELAS</string>
-	<string id="31007">PAUSAD</string>
-	<string id="31008">TEMP</string>
-	<string id="31009">ENHETER</string>
-  
-<!-- Main Menu -->
-  
-	<string id="31010">MUSIK</string>
-	<string id="31011">SPEL</string>
-	<string id="31012">BILDER</string>
-	<string id="31013">FILMER</string>
-	<string id="31014">TV SHOWER</string>
-	<string id="31015">VIDEOR</string>
-	<string id="31016">INSTÄLLNINGAR</string>
-	<string id="31017">VÄDER</string>
-	<string id="31018">SPELA SKIVA</string>
-	<string id="31019">STÄNG AV</string>
-	<string id="31020">SCRIPTS</string>
-	<string id="31021">ASSISTENT</string>
-
-<!-- Media Window titles -->
- 
-	<string id="31030">SPEL</string> 
-	<string id="31031">BILDER</string>
-	<string id="31032">FILMER</string> 
-	<string id="31033">TV</string>
-	<string id="31034">VIDEOR</string>
-	<string id="31035">VÄDER</string>
-	<string id="31036">SCRIPTS</string>
-	<string id="31037">MUSIK</string>
-	<string id="31038">SPELLISTA</string>
-	<string id="31039">REDIGERARE</string>
-	<string id="31040">SPELAR:</string>
-	<string id="31041">AV:</string>
-
-<!-- Media Window options -->
-  
-	<string id="31050">VY:</string> 
-	<string id="31051">SLUMPNING: AV</string>
-	<string id="31052">SLUMPNING: PÅ</string> 
-	<string id="31053">BIBLIOTEK: AV</string> 
-	<string id="31054">SETUP</string> 
-	<string id="31055">STAPLING: PÅ</string> 
-	<string id="31056">STAPLING: AV</string>
-	<string id="31057">FILER</string>
-	<string id="31058">DÖLJ SEDDA: PÅ</string>
-	<string id="31059">DÖLJ SEDDA: AV</string>
-	<string id="31060">LAYOUT: FLAT</string>
-	<string id="31061">LAYOUT: FLOW</string>
-	<string id="31062">SÄSONG</string>
-	<string id="31063">AVSNITT</string>
-	<string id="31064">FANART: AV</string>
-	<string id="31065">FANART: PÅ</string>
-	<string id="31066">BAKGRUND: PÅ</string>
-	<string id="31067">BAKGRUND: AV</string>
-	<string id="31068">BIBLIOTEK: PÅ</string>
-	<string id="31069">MEDIA IKONER: PÅ</string>
-	<string id="31070">MEDIA IKONER: AV</string>
-	<string id="31071">BILDER: EN</string>
-	<string id="31072">BILDER: MÅNGA</string>
-	<string id="31073">RUTNÄT: FÖRVALT</string>
-	<string id="31074">RUTNÄT: STÖRSTA</string>
-  
-<!-- Aeon Customisation Virtual Home page labels -->
-  
-	<string id="31080">BAKGRUNDER</string>
-	<string id="31081">BYT BAKGRUNDER</string>
-	<string id="31082">FLYTTA TILL VÄNSTER/HÖGER FÖR ATT BLÄDDRA, VÄLJ FÖR ATT BYTA</string>
-	<string id="31083">EGNA BAKGRUNDER</string>
-	<string id="31084">VÄLJ BAKGRUNDSTYP</string>
-	<string id="31085">FLYTTA UPPÅT FÖR EN BAKGRUNDSBILD, NEDÅT FÖR BILDSPEL</string>
-	<string id="31086">GENVÄGAR</string>
-	<string id="31087">VÄXLA AV/PÅ STARTMENYNS GENVÄGAR</string>
-	<string id="31088">FLYTTA TILL VÄNSTER/HÖGER FÖR ATT BLÄDDRA, VÄLJ FÖR ATT VÄXLA AV/PÅ</string>
-	<string id="31089">UTSMYCKNINGAR</string>
-	<string id="31090">ARRANGERA STARTSIDANS OBJEKT</string>
-	<string id="31091">FLYTTA TILL VÄNSTER/HÖGER FÖR ATT BLÄDDRA, VÄLJ FÖR ATT PLACERA OM</string>
-	<string id="31092">VÄLJ FÖR ATT PLACERA OM STARTMENYN</string>
-	<string id="31093">VÄLJ FÖR ATT FÄSTA TIDSPANELEN</string>
-	<string id="31094">VÄLJ FÖR ATT BEFRIA TIDSPANELEN</string>
-	<string id="31095">VÄLJ FÖR ATT FÄSTA RSS PANELEN</string>
-	<string id="31096">VÄLJ FÖR ATT BEFRIA RSS PANELEN</string>
-	<string id="31097">RENSA INSTÄLLNINGAR</string>
-	<string id="31098">RENSA STARTINSTÄLLNINGAR</string>
-	<string id="31099">FLYTTA TILL VÄNSTER/HÖGER FÖR ATT FÄSTA KNAPP</string>
-	<string id="31100">VARNING: DENNA HANDLING ÄR BESTÅENDE</string>
-	<string id="31101">FLYTTA VART SOM HELST FÖR ATT AVBRYTA, VÄLJ FÖR FORTSÄTTA</string>
-	<string id="31102">VÄLJ</string>
-	<string id="31103">BAKGRUNDSTYP</string>
-	<string id="31104">VÄXLA AV/PÅ</string>
-	<string id="31105">GENVÄG</string>
-  
-<!-- Aeon Customisation Menu labels -->
-  
-	<string id="31120">BAKGRUNDER</string>
-	<string id="31121">ANPASSA AEON</string>
-	<string id="31122">GENVÄGAR</string>
-	<string id="31123">FYLL UT STARTMENYN</string>
-	<string id="31124">UTSMYCKNINGAR</string> 
-	<string id="31125">TID OCH RSS FEEDS</string>
-	<string id="31126">RENSA</string> 
-	<string id="31127">RENSA EGNA INSTÄLLNINGAR</string>
-
-<!-- XBMC Settings Menu labels -->
-  
-	<string id="31140">VIDEO</string>
-	<string id="31141">UPPSPELNING OCH BIBLIOTEK</string>
-	<string id="31142">MUSIK</string>
-	<string id="31143">UPPSPELNING OCH BIBLIOTEK</string>
-	<string id="31144">PROGRAM</string>
-	<string id="31145">SPEL OCH TILLÄMPNINGAR</string>
-	<string id="31146">BILDER</string>
-	<string id="31147">BLÄDDRING OCH BILDSPEL</string>
-	<string id="31148">VÄDER</string>
-	<string id="31149">PLATS OCH UTSEENDE</string>
-	<string id="31150">NÄTVERK</string>
-	<string id="31151">LOKALT OCH INTERNET</string>
-	<string id="31152">SYSTEM</string>
-	<string id="31153">CACHE OCH HÅRDVARA</string>
-	<string id="31154">UTSEENDE</string>
-	<string id="31155">GRÄNSSNITT OCH SKÄRM</string>
-	<string id="31156">ANPASSA</string>
-	<string id="31157">ANPASSA AEON</string>
-	<string id="31158">ADVANCERAT</string>
-	<string id="31159">AEONS UTÖKADE ALTERNATIV</string>
-	<string id="31160">PROFILER</string>
-	<string id="31161">ANVÄNDARKONTON</string>
-	<string id="31162">INLOGGNINGSRUTA</string>
-	<string id="31163">ALTERNATIV</string>
-	<string id="31164">INLOGGNINGSRUTA</string>
-	<string id="31165">ANVÄNDARE</string>
-	<string id="31166">HANTERA PROFILER</string>
-
-<!--  Button / Shutdown Menu  --> 
-
-	<string id="31200">INSTÄLLNINGAR</string> 
-	<string id="31201">ANPASSA</string>
-	<string id="31202">ASSISTENT</string> 
-	<string id="31203">HEM VISUALISERING: AV</string>
-	<string id="31204">HEM VISUALISERING: PÅ</string> 
-	<string id="31205">NU SPELAS</string>
-	<string id="31206">AVSTÄNGNINGSTIMER</string> 
-	<string id="31207">STARTA OM</string> 
-	<string id="31208">STÄNG AV</string>
-	<string id="31209">LOGGA UT</string>
-
-<!--  Set Content / Add Source dialogs  --> 
-  
-	<string id="31220">KATALOGEN INNEHÅLLER:</string>
-	<string id="31221">SKRIV SÖKVÄG ELLER BLÄDDRA TILL PLATSEN</string>
-	<string id="31222">VÄLJ ETT NAMN FÖR DEN DELADE ENHETEN</string>
-	<string id="31223">LISTA</string>
-	<string id="31224">REPETERA</string>
-
-<!-- Aeon Advanced Menu labels -->
-  
-	<string id="31230">AEON</string> 
-	<string id="31231">ALTERNATIV</string>
-	<string id="31232">ALLMÄNNA</string>
-	<string id="31233">GLOBALA INSTÄLLNINGAR</string>
-	<string id="31234">START</string>
-	<string id="31235">STARTSIDANS ALTERNATIV</string>
-	<string id="31236">VYER</string>
-	<string id="31237">MEDIA BLÄDDRARE</string>
-	<string id="31238">FÖRINSTÄLLNINGAR</string>
-	<string id="31239">SNABB KONFIGURATIONER</string>
-	<string id="31240">FANART</string>
-	<string id="31241">KONTEXTKÄNSLIGA BILDER</string>
-	<string id="31242">AKTIVERA ALLA</string>
-	<string id="31243">INAKTIVERA ALLA</string>
-	<string id="31244">MENYER</string>
-	<string id="31245">BLÄDDRINGSLAYOUT</string>
-  
-<!-- Aeon Advanced options -->
-  
-	<string id="31260">VISA TIDSPANEL</string>
-	<string id="31261">STARTSIDANS VÄDER POPUP</string>
-	<string id="31262">KONTEXTKÄNSLIGA BAKGRUNDSBILDER FÖR MUSIK</string>
-	<string id="31264">KONTEXTKÄNSLIGA BAKGRUNDSBILDER FÖR FILMER</string>
-	<string id="31265">KONTEXTKÄNSLIGA BAKGRUNDSBILDER FÖR TV-SERIER</string>
-	<string id="31266">KONTEXTKÄNSLIGA BAKGRUNDSBILDER FÖR BILDER</string>
-	<string id="31268">VISA RSS / NU SPELAS HOS WALL-VYN</string>
-	<string id="31270">ZOOM ANIMATIONER</string>
-	<string id="31271">TONA BORT NÄR PANEL/LIST -VYN BLIR INAKTIV</string>
-	<string id="31278">VISA BAKGRUNDER HOS WALL-VYN</string>
-	<string id="31279">KONTEXTKÄNSLIGA BAKGRUNDSBILDER FÖR INFO-SIDOR I HELSKÄRMSLÄGE</string>
-	<string id="31280">UTVECKLINGSLÄGE</string>
-	<string id="31281">MEDIA IKONER (STUDIO IKONER, KÄLLINFORMATION, ETC.)</string>
-	<string id="31284">STARTSIDANS VISUALISERING</string>
-	<string id="31285">ANVÄND TEXT FÖR FILMBETYG (ANVÄNDER STJÄRNOR OM INAKTIVERAD)</string>
-	<string id="31286">ANVÄND TEXT FÖR MUSIKBETYG (ANVÄNDER STJÄRNOR OM INAKTIVERAD)</string>	
-	<string id="31287">KIOSK LÄGE (TAR BORT MEDIA FÖNSTERNAS MENYER)</string>
-	<string id="31288">SÖK FILM (FILM BIBLIOTEK)</string>
-	<string id="31289">SÖK TV-SERIE (TV BIBLIOTEK)</string>
-	<string id="31290">INSTÄLLNINGSGENVÄG (ALL MEDIA)</string>
-	<string id="31291">SEDDA/OSEDDA FILMERS VÄXLING (FILM BIBLIOTEK)</string>
-	<string id="31292">SEDDA/OSEDDA TV-SERIERS VÄXLING (TV BIBLIOTEK)</string>
-	<string id="31293">FIL-VYNS GENVÄG (FILM OCH TV BIBLIOTEK)</string>
-	<string id="31294">STÖRRE KEYBOARD / NUMERISK KEYPAD</string>
-	<string id="31295">FÖRBÄTTRAD LÄSBARHET (STÖRRE TIDS- OCH RSSTEXT</string>
-	<string id="31296">EN/MÅNGA MINIATYRBILDERS VÄXLING</string>
-	<string id="31297">ANVÄND EN MINIATYRBILD FÖR MUSIKLISTNING</string>
-	<string id="31298">ANVÄND EN MINIATYRBILD FÖR FILMLISTNING</string>
-	<string id="31299">VISA RSS / NU SPELAS HOS SHOWCASE-VYN</string>
-	
-<!-- XBMC Settings Menu headings -->
-	
-	<string id="31300">VIDEO</string>
-	<string id="31301">BILDER</string>
-	<string id="31302">UTSEENDE</string>
-	<string id="31303">NÄTVERK</string>
-	<string id="31304">SYSTEM</string>
-	<string id="31305">MUSIK</string>
-	<string id="31306">VÄDER</string>
-	<string id="31307">PROGRAM</string>
-	<string id="31308">ALTERNATIV</string>
-	
-<!-- XBMC Settings Subtitles -->
-	
-	<string id="31320">FÖRINSTÄLLNINGAR FÖR VISNING</string>
-	<string id="31321">DATABAS KONTROLL</string>
-	<string id="31322">KVALITET OCH KALIBRERING</string>
-	<string id="31323">TEXT OCH FÄRG</string>
-	<string id="31324">TAGS OCH SKÄRM</string>
-	<string id="31325">INTERVALER OCH EFFEKTER</string>
-	<string id="31326">SKINS OCH RSS FEEDS</string>
-	<string id="31327">SPRÅK OCH PLATS</string>
-	<string id="31328">UPPLÖSNING OCH KALIBRERING</string>
-	<string id="31329">OBJEKT OCH RADERING</string>
-	<string id="31330">INTERVALER OCH INNEHÅLL</string>
-	<string id="31331">PROXIES OCH SÖKNINGAR</string>
-	<string id="31332">HTTP GRÄNSSNITT</string>
-	<string id="31333">ARBETSGRUPP OCH INLOGGNING</string>
-	<string id="31334">KLIENT OCH DELADE ENHETER</string>
-	<string id="31335">PORTAR OCH INTERVALER</string>
-	<string id="31336">LOGGNING OCH TIMEOUTS</string>
-	<string id="31337">INMATNING OCH FÖRDRÖJNINGAR</string>
-	<string id="31338">MEDIA TYPER</string>
-	<string id="31339">LOKALT OCH INTERNET</string>
-	<string id="31340">ANALOG / DIGITAL</string>
-	<string id="31341">INNEHÅLLSRESTRIKTION</string>
-	<string id="31342">INSPELNINGAR OCH VISUALISERING</string> 
-	<string id="31343">DATABAS KONTROLL</string> 
-	<string id="31344">HÅRDVARA OCH NIVÅER</string> 
-	<string id="31345">ID TAGS OCH SÖKNINGAR</string> 
-	<string id="31346">ANMÄLNINGAR OCH PROFIL</string> 
-	<string id="31347">MAPPAR OCH INSTÄLLNINGAR</string>
-	<string id="31348">VOLYM OCH RÖSTMASKERINGAR</string> 
-	<string id="31349">RIKTNUMMER OCH REGION</string>
-	<string id="31350">FÖRINSTÄLLNINGAR FÖR BLÄDDRING</string>
-	<string id="31351">ONLINE KÄLLOR</string>
-
-<!--  Fullscreen info panel  -->
-
-	<string id="31400">INGEN AFFISCH?[CR][CR]KONTROLLERA ATT DU HAR EN SKILD "BIG" MINIATYRBILD[CR]BREDVID FILMENS FIL OCH ATT[CR]DESS NAMN STÄMMER ÖVERENS[CR](BARBARELLA.MKV-BIG.PNG)[CR][CR]SE AEON MANUALEN FÖR MER DETALJERAD INFORMATION</string>
-	<string id="31401">SKRIVEN AV</string>
-	<string id="31402">REGISSÖR</string>
-	<string id="31403">AVSNITT:</string>
-	<string id="31404">STUDIO:</string>
-	<string id="31405">MED</string>
-	<string id="31406">AVSNITT</string>
-	<string id="31407">PREMIÄR</string>
-	<string id="31408">IMDB</string>
-	<string id="31409">TRAILER</string>
-	<string id="31410">LADDA IGEN</string>
-	<string id="31411">SE PÅ</string>
-	<string id="31412">FANART</string>
-	<string id="31413">STÄMNINGAR</string>
-	<string id="31414">INGEN HANDLING TILLGÄNGLIG</string>
-	<string id="31415">INGEN BIOGRAFI TILLGÄNGLIG</string>
-	<string id="31416">STILAR</string>
-	<string id="31417">BETYG</string>
-	<string id="31418">BILD</string>
-	<string id="31419">UPPDATERA</string>
-	<string id="31420">ÅTERUPPTA</string>
-	<string id="31421">SPELA</string>
-	<string id="31422">NOTER</string>
-	<string id="31423">SKIVBOLAG</string>
-	<string id="31424">INGEN ALBUM RECENSION TILLGÄNGLIG</string>
-	<string id="31425">INGEN INFO TILLGÄNGLIG</string>
-	<string id="31426">SPÅR</string>
-	<string id="31427">LÄNGD</string>
-	<string id="31428">INGA KOMMENTARER</string>
-	<string id="31429">ALBUM INFO</string>
-	<string id="31430">BEKRÄFTA</string>
-	<string id="31431">TRYCK UPPÅT ELLER NEDÅT FÖR ATT ÄNDRA BETYG</string>
-	<string id="31432">SÄSONG</string>
-	<string id="31433">AVSNITT</string>
-
-<!--  Aeon Assistant  -->
-
-	<string id="31500">NYHETER</string>
-	<string id="31501">AEONS ONLINE UPPDATERINGAR</string>
-	<string id="31502">VÄSENTLIGT</string>
-	<string id="31503">XBMC STATISTIK</string>
-	<string id="31504">CREDITS</string>
-	<string id="31505">UPPHOVSMÄN OCH TACK TILL</string>
-	<string id="31510">ASSISTENT</string>
-	<string id="31511">SENASTE NYHETER</string>
-	<string id="31512">ÅTERVÄND HIT FÖR REGELBUNDNA UPPDATERINGAR FRÅN AEONS SERVER</string>
-	<string id="31520">STARTA GUIDNING</string>
-	<string id="31521">AEONS VÄLKOMSTSIDA</string>
-	<string id="31522">TILLBAKA TILL GRUNDERA</string>
-	<string id="31523">TRYCK VÄLJ FÖR ATT SE AEONS VÄLKOMSTGUIDNING IGEN</string>
-	<string id="31524">KONTAKTAR AEONS SERVER</string>
-	
-<!--  Aeon Assistant Tutorials  -->
-
-	<!-- 31550-31590 RESERVED -->
-	
-<!-- Aeon Assistant vitals -->
-
-	<string id="31598">XBMC BYGGDATUM[CR]AEON VERSION[CR]NUVARANDE TEMA[CR]SPRÅK[CR]SKÄRMUPPLÖSNING[CR]TILLGÄNGLIGT MINNE[CR]HÅRDDISK UTRYMME[CR]CPU TEMPERATUR[CR]GPU TEMPERATUR[CR]SYSTEM UPPTID[CR]ONLINE STATUS[CR]IP ADRESS[CR]OPTISK ENHET</string>
-	
-<!-- Debug mode -->
-
-	<string id="31600">AEON VERSION: 1.0</string>
-	<string id="31601">LEDIGT MINNE:</string>
-	<string id="31602">XBMC BYGGDATUM:</string>
-	<string id="31603">FPS:</string>
-	<string id="31604">NUVARANDE FÖNSTER ID:</string>
-	<string id="31605">NUVARANDE FOKUS:</string>
-	<string id="31606">AKTIV VY-TYP:</string>
-	<string id="31607">UPPDATERA</string>
-	<string id="31608">INFO PÅ/AV</string>
-
-<!-- Welcome screen / Aeon Tour -->
-<!-- ENSURE LOWER/UPPER CASE IS OBEYED --> 
-
-	<string id="31650">Välkommen till Aeon, den nya centralen för hemunderhållning.[CR]Sättet du avnjuter dina filmer, tv-shower, musik och bilder[CR]kommer just att förändras. Men först kanske du vill se denna korta visuella[CR]presentation. Intresserad? Tryck Välj. Om inte, tryck på Tillbaka.</string>
-	<string id="31651">I centrum för Aeon är den horisontellt-scrollande meny som ger omedelbar tillgång till[CR]dess olika miljöer. Bakgrunder kan tilldelas varje alternativ antingen som[CR]en bild eller ett bildspel. Menyn kan flyttas mellan olika positioner[CR]med en enkel knapptryckning. Tid och RSS kan också flyttas och tas loss.</string>
-	<string id="31652">I Aeon kan filmer och musik avnjutas via fyra olika vyer.[CR]Var och en designad för att uppfylla specifika behov. Showcase erbjuder bäst synlighet[CR]för bilder; Panel ger en mer konventionell miniatyrvy; List[CR] är självklart; Wall passar för stora mediasamlingar då den utnyttjar mest av skärmens yta.</string>
-	<string id="31653">Aeon älskar bilder. Dess visuella filosofi kretsar helt kring varje[CR]enskild användares smak och innehåll. Tycker du om Actionfilmer? Fantasy[CR]videospel? Passionerad epok drama? Dekorera din omgivning enligt detta.[CR]Affischer och omslagsbilder visas i sin tur i vacker högupplösning.</string>
-	<string id="31654">Att bygga ett bibliotek av filmer, tv-serier och musik låter Aeon[CR]utnyttja den fulla kraften hos XBMC, för att ge en meningsfull och informativ bläddringsupplevelse.[CR]Filmhandlignar och album recensioner är bara toppen av isberget tack vare den[CR]info som hämtas från IMDB, Allmusic, eller en av de många användartillgängliga källor.</string>	
-	<string id="31655">TRYCK VÄLJ FÖR ATT PÅBÖRJA GUIDNINGEN. TRYCK TILLBAKA FÖR ATT AVSLUTA</string>
-	<string id="31656">TRYCK NEDÅT FÖR NÄSTA BILD, VÄLJ FÖR ATT AVSLUTA</string>
-	<string id="31657">TRYCK NEDÅT FÖR NÄSTA BILD, UPPÅT FÖR FÖREGÅENDE BILD, ELLER VÄLJ FÖR ATT AVSLUTA</string>
-	<string id="31659">Navigering mellan Aeons vyer och fönster kan inte vara enklare.[CR]Den Globala Menyn kan nås när som helst, när som helst , med[CR]genvägar till Inställningar, Anpassning och Aeon Assistenten. En fyrvägs[CR]"kompass"-meny ger omedelbar tillgång till de olika vytyperna.</string>
-	<string id="31660">Varje aspekt av Aeon och XBMC kan konfigureras bakom kulisserna[CR]En mångfasetterad Inställningsmeny finns tillgänglig från vilken ruta som helst,[CR]uppdelad i sektioner för enkel användning. Dess virtuella hemsida ger en[CR]nytänkande visuell referens för alla dina anpassningsbehov.</string>
-	<string id="31661">Det finns inga begränsningar för hur många bakgrundsbilder[CR]du kan placera på Aeons meny-bakgrunder. Mappar som innehåller tusentals bilder kan tilldelas[CR]sektioner som Filmer och Musik. Allting över den aktuella skärmupplösningen[CR]förminkas, allting under förstoras.</string>
-	<string id="31662">Kontrollera varje aspekt av XBMC:s mediauppspelning utan att missa en sekund.[CR]Via On-screen display:en för video och musik kan du anpassa allt från[CR]undertexter och bildformat till den audiovisuella synkroniseringen. Permanenta bokmärken[CR]kan ställas in för enkel tillgång till dina favoritscener.</string>
-	<string id="31663">De dagar då en användares egna anpassningar kom till ett pris[C]och högkvalitets konst var bara en dröm är nu förbi. The Aeon Project webbplatsen erbjuder hundratals[CR]av de bästa bakgrundsbilderna för Aeons alla fönster, kostnadsfritt och utan[CR]irriterande annonser. Använd Aeon Assistenten för uppdateringar och nytt innehåll.</string>
-
-<!-- OSD -->
-
-	<string id="31700">CODEC</string>
-	<string id="31701">DATAFREKVENS</string>
-	<string id="31702">SAMPLINGSFREKVENS</string>
-	<string id="31703">KANALER</string>
-	<string id="31704">NÄSTA:</string>
-	<string id="31705">SPOLA BAKÅT</string>
-	<string id="31706">SPOLA FRAMÅT</string>
-	<string id="31707">VOLYM</string>
-	<string id="31708">POSITION</string>
-	<string id="31709">SPELTID</string>
-	<string id="31710">SLUTTID</string>
-	<string id="31711">TILLGÄNGLIGA BOKMÄRKEN</string>
-	<string id="31712">UPPÅT/NEDÅT: MENY/BOKMÄRKEN[CR]VÄNSTER/HÖGER: MENY ALTERNATIV</string>
-	
-<!-- View select -->
-
-	<string id="31750">WALL</string>
-	<string id="31751">SHOWCASE</string>
-	<string id="31752">LIST</string>
-	<string id="31753">PANEL</string>	
-	<string id="31754">VÄLJ</string>	
-	<string id="31755">VÄLJ RIKTNING FÖR ATT BYTA VY[CR]TRYCK FÖR ATT ÅNGRA</string>	
-	<string id="31756">ENDAST LIST-VYN ÄR TILLGÄNGLIG FÖR AVSNITT</string>
-
-<!-- Aeon Settings panel labels -->
-  
-	<string id="31800">FRISTÅENDE UNDERTEXTER</string>
-	<string id="31801">FÖR ATT ANVÄNDA FRISTÅENDE UNDERTEXTER MÅSTE DEN HA SAMMA NAMN SOM VIDEO FILEN.[CR]T.EX. VEXILLE.AVI KRÄVER ATT UNDERTEXTEN HETER VEXILE.SRT (FILÄNDELSERNA KAN VARIERA)</string>
-	<string id="31802">MUSIKVIDEOR</string>
-	<string id="31803">XBMC KAN HANTERA MUSIKVIDEOR PÅ SAMMA VIS SOM FILMER. I BIBLIOTEKSLÄGET ANGE[CR]ATT EN MAPPS INNEHÅLL ÄR 'MUSIKVIDEOR', VÄLJ EN INFOKÄLLA OCH LÅT XBMC SKÖTA RESTEN</string>
-	<string id="31804">EMULERING</string>
-	<string id="31805">XBMC KAN KÖRA IGÅNG EMULATORER PÅ ALLA PLATTFORMER, MEN METODERNA KAN VARIERA.[CR]KOLLA MED XBMC FORUMET (WWW.XBMC.ORG) FÖR STÖDDA PROGRAMVAROR OCH TIPS</string>
-	<string id="31806">ROTERA MED EXIF INFORMATION</string>
-	<string id="31807">MODERNA KAMEROR INFOGAR INFORMATION OM MOTIVET I ALLA BILDER SOM TAS. MED DENNA FUNKTION[CR]AKTIVERAD, ROTERAS BILDERNA TILL DEN EGENTLIGA POSITIONEN VID UPPVISNING</string>
-	<string id="31808">LIVE VÄDERPROGNOSER</string>
-	<string id="31809">XBMC VISAR VÄDERPROGNOSER FÖR UPP TILL TRE PLATSER, TACK VARE WEATHER.COM.[CR]FÖRUTOM DINA GEOGRAFISKA PLATSER, KAN DU OCKSÅ VÄLJA MELLAN METRISK OCH AMERIKANSK SKALA</string>
-	<string id="31810">FÅ EN KLARARE ÖVERBLICK</string>
-	<string id="31811">ATT FLYTTA OM AEON:S MENYER ÄR LÄTT OCH SMÄRTFRITT MED ONE-TOUCH OMPLACERING. TRYCK UPPÅT ELLER[CR]NEDÅT FÖR ATT VÄXLA MELLAN POSITIONER OCH ALLA UTSMYCKNINGAR FLYTTAR SIG SJÄLVA AUTOMATISKT</string>
-	<string id="31812">EXTERN LAGRINGSKAPACITET</string>
-	<string id="31813">FLYTTBARA HÅRDDISKAR AV STÖRRE KAPACITET (500GB+) LÄMPAR SIG IDEALISKT FÖR[CR]STORA HD FILMSAMLINGAR. XBMC KAN HANTERA TUSENTALS FILER FRÅN DINA DEFINIERADE KÄLLOR</string>
-	<string id="31814">EN ÄKTA HIGH DEFINTION MEDIA OMGIVNING</string>
-	<string id="31815">AEON RENDERAR STÖRSTA DELEN AV SIN GRAFIK I 1080P OCH FÖRMINSKAR DEN FÖR[CR]ATT PASSA VILKEN HD-SKÄRM SOM HELST. AEON STÅR VID TOPPEN AV DIGITAL UNDERHÅLLNING</string>
-	<string id="31816">KLARAR DIN HÅRDVARA AV AEON?</string>
-	<string id="31817">XBMC HAR ANSPRÅKSLÖSA SYSTEMKRAV, MEN DEN FÖRBRUKAR MÄRKBART AV[CR]PROCESSORN FÖR HD VIDEO. PIXEL SHADER 3 KAPABLA GRAFIKKORT REKOMMENDERAS</string>
-	<string id="31818">MINSTA MÖJLIGA OREDA</string>	
-	<string id="31819">AEONS STARTSIDA KAN FÖRMINSKAS FÖR ATT LÅTA DINA BAKGRUNDER LYSA IGENOM ELLER[CR]FÖRSTORAS FÖR ATT FÖRBÄTTRA LÄSBARHETEN HOS DE MED NEDSATT SYN</string>
-	<string id="31820">VAR OCH EN FÖR SIG</string>
-	<string id="31821">XBMC STÖDER FLERA ANVÄNDARKONTON, VILKET LÅTER ENSKILDA ANVÄNDARE SPARA SINA[CR]ANPASSNINGAR. RSS FEEDS, VY-INSTÄLLNINGAR OCH MEDIA BIBLIOTEK KAN SPARAS SKILT</string>
-
-<!-- Credits -->
-
-	<string id="31900">GRAFISKA ELEMENT</string>
-	<string id="31901">FÖRVALDA BAKGRUNDSBILDER</string>
-	<string id="31902">FÖRVALDA IKONER INNEHÅLLER ELEMENT AV</string>
-	<string id="31903">ÖVERSÄTTNING</string>
-	<string id="31904">TESTNING</string>
-	<string id="31905">AEONPROJECT WEBBPLATS</string>
-	<string id="31906">TACK TILL</string>
-	<string id="31907">ALLA VID XBMC:S FORUM</string>
-	<string id="31908">...OCH DU</string>
-	<string id="31909">AEON KOMMER ATT ÅTERVÄNDA OM</string>
-	
+ï»¿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Language file translated with Team XBMC Translator-->
+<!--Translator: blittan-->
+<!--Email: blittan@xbmc.org-->
+<!--Date of translation: 04/06/2009-->
+<!--$Revision$-->
+<!--Based on english strings version 204-->
+<strings>
+  <string id="31000">0.9 (STARK)</string>
+  <string id="31001">
+  </string>
+  <string id="31002">TYSTAD</string>
+  <string id="31003">VÃ„DERSKÃ„RMSINSTÃ„LLNINGAR Ã„R INTE TILLGÃ„NGLIGA I DENNA VERSION</string>
+  <string id="31004">Ã…TERSTÃ„LL BAKGRUND</string>
+  <string id="31005">OBJEKT</string>
+  <string id="31006">NU SPELAS</string>
+  <string id="31007">PAUSAD</string>
+  <string id="31008">TEMP</string>
+  <string id="31009">ENHETER</string>
+  <string id="31010">MUSIK</string>
+  <string id="31011">SPEL</string>
+  <string id="31012">BILDER</string>
+  <string id="31013">FILMER</string>
+  <string id="31014">TV SERIER</string>
+  <string id="31015">VIDEOR</string>
+  <string id="31016">INSTÃ„LLNINGAR</string>
+  <string id="31017">VÃ„DER</string>
+  <string id="31018">SPELA SKIVA</string>
+  <string id="31019">STÃ„NG AV</string>
+  <string id="31020">SKRIPT</string>
+  <string id="31021">ASSISTENT</string>
+  <string id="31030">SPEL</string>
+  <string id="31031">BILDER</string>
+  <string id="31032">FILMER</string>
+  <string id="31033">TV</string>
+  <string id="31034">VIDEOR</string>
+  <string id="31035">VÃ„DER</string>
+  <string id="31036">SKRIPT</string>
+  <string id="31037">MUSIK</string>
+  <string id="31038">SPELLISTA</string>
+  <string id="31039">REDIGERARE</string>
+  <string id="31040">SPELAR:</string>
+  <string id="31041">AV:</string>
+  <string id="31050">VY:</string>
+  <string id="31051">SLUMPVIS: AV</string>
+  <string id="31052">SLUMPVIS: PÃ…</string>
+  <string id="31053">BIBLIOTEK: AV</string>
+  <string id="31054">SETUP</string>
+  <string id="31055">STAPLING: PÃ…</string>
+  <string id="31056">STAPLING: AV</string>
+  <string id="31057">FILER</string>
+  <string id="31058">DÃ–LJ SEDDA: PÃ…</string>
+  <string id="31059">DÃ–LJ SEDDA: AV</string>
+  <string id="31060">LAYOUT: PLATT</string>
+  <string id="31061">LAYOUT: FLÃ–DE</string>
+  <string id="31062">SÃ„SONG</string>
+  <string id="31063">AVSNITT</string>
+  <string id="31064">FANART: AV</string>
+  <string id="31065">FANART: PÃ…</string>
+  <string id="31066">BAKGRUND: PÃ…</string>
+  <string id="31067">BAKGRUND: AV</string>
+  <string id="31068">BIBLIOTEK: PÃ…</string>
+  <string id="31069">MEDIA IKONER: PÃ…</string>
+  <string id="31070">MEDIA IKONER: AV</string>
+  <string id="31071">BILDER: EN</string>
+  <string id="31072">BILDER: MÃ…NGA</string>
+  <string id="31073">RUTNÃ„T: FÃ–RVALT</string>
+  <string id="31074">RUTNÃ„T: STÃ–RSTA</string>
+  <string id="31080">BAKGRUNDER</string>
+  <string id="31081">BYT BAKGRUNDER</string>
+  <string id="31082">FLYTTA TILL VÃ„NSTER/HÃ–GER FÃ–R ATT BLÃ„DDRA, VÃ„LJ FÃ–R ATT BYTA</string>
+  <string id="31083">EGNA BAKGRUNDER</string>
+  <string id="31084">VÃ„LJ BAKGRUNDSTYP</string>
+  <string id="31085">FLYTTA UPPÃ…T FÃ–R EN BAKGRUNDSBILD, NEDÃ…T FÃ–R BILDSPEL</string>
+  <string id="31086">GENVÃ„GAR</string>
+  <string id="31087">VÃ„XLA STARTMENYNS GENVÃ„GAR AV/PÃ…</string>
+  <string id="31088">FLYTTA TILL VÃ„NSTER/HÃ–GER FÃ–R ATT BLÃ„DDRA, VÃ„LJ FÃ–R ATT VÃ„XLA AV/PÃ…</string>
+  <string id="31089">MÃ–BLERA</string>
+  <string id="31090">ARRANGERA STARTSIDANS OBJEKT</string>
+  <string id="31091">FLYTTA TILL VÃ„NSTER/HÃ–GER FÃ–R ATT BLÃ„DDRA, VÃ„LJ FÃ–R ATT OMPLACERA</string>
+  <string id="31092">VÃ„LJ FÃ–R ATT OMLYTTA STARTMENYN</string>
+  <string id="31093">VÃ„LJ FÃ–R ATT FÃ„STA TIDSPANELEN</string>
+  <string id="31094">VÃ„LJ FÃ–R ATT BEFRIA TIDSPANELEN</string>
+  <string id="31095">VÃ„LJ FÃ–R ATT FÃ„STA RSS PANELEN</string>
+  <string id="31096">VÃ„LJ FÃ–R ATT BEFRIA RSS PANELEN</string>
+  <string id="31097">RENSA INSTÃ„LLNINGAR</string>
+  <string id="31098">RENSA STARTINSTÃ„LLNINGAR</string>
+  <string id="31099">FLYTTA TILL VÃ„NSTER/HÃ–GER FÃ–R ATT AKTIVERA KNAPP</string>
+  <string id="31100">VARNING: DENNA HANDLING GÃ…R INTE ATT Ã…TERKALLA</string>
+  <string id="31101">FLYTTA VART SOM HELST FÃ–R ATT AVBRYTA, VÃ„LJ FÃ–R FORTSÃ„TTA</string>
+  <string id="31102">VÃ„LJ</string>
+  <string id="31103">BAKGRUNDSTYP</string>
+  <string id="31104">VÃ„XLA AV/PÃ…</string>
+  <string id="31105">GENVÃ„G</string>
+  <string id="31106">ARRANGERA OSD OBJEKT</string>
+  <string id="31107">FLYTTA TILL VÃ„NSTER/HÃ–GER FÃ–R ATT BLÃ„DDRA, VÃ„LJ FÃ–R ATT VÃ„XLA AV/PÃ…</string>
+  <string id="31108">VÃ„XLA Ã–VRE DETALJSTIL (NUVARANDE: MINIMAL)</string>
+  <string id="31109">VÃ„XLA FRAMSTEGSMÃ„TARE (NUVARANDE: PÃ…)</string>
+  <string id="31110">VÃ„XLA TID/VARAKTIGHET TEXT (NUVARANDE: AV)</string>
+  <string id="31111">VÃ„XLA Ã–VRE DETALJSTIL (NUVARANDE: MAX)</string>
+  <string id="31112">VÃ„XLA FRAMSTEGSMÃ„TARE (NUVARANDE: AV)</string>
+  <string id="31113">VÃ„XLA TID/VARAKTIGHET TEXT (NUVARANDE: PÃ…)</string>
+  <string id="31120">BAKGRUNDER</string>
+  <string id="31121">ANPASSA AEON</string>
+  <string id="31122">GENVÃ„GAR</string>
+  <string id="31123">FYLL UT STARTMENYN</string>
+  <string id="31124">MÃ–BLERA</string>
+  <string id="31125">TID OCH RSS FLÃ–DEN</string>
+  <string id="31126">RENSA</string>
+  <string id="31127">RENSA EGNA INSTÃ„LLNINGAR</string>
+  <string id="31128">OSD</string>
+  <string id="31129">LIVE MUSIK INFO</string>
+  <string id="31140">VIDEO</string>
+  <string id="31141">UPPSPELNING OCH BIBLIOTEK</string>
+  <string id="31142">MUSIK</string>
+  <string id="31143">UPPSPELNING OCH BIBLIOTEK</string>
+  <string id="31144">PROGRAM</string>
+  <string id="31145">SPEL OCH PROGRAM</string>
+  <string id="31146">BILDER</string>
+  <string id="31147">BLÃ„DDRING OCH BILDSPEL</string>
+  <string id="31148">VÃ„DER</string>
+  <string id="31149">PLATS OCH UTSEENDE</string>
+  <string id="31150">NÃ„TVERK</string>
+  <string id="31151">LOKALT OCH INTERNET</string>
+  <string id="31152">SYSTEM</string>
+  <string id="31153">CACHE OCH HÃ…RDVARA</string>
+  <string id="31154">UTSEENDE</string>
+  <string id="31155">GRÃ„NSSNITT OCH SKÃ„RM</string>
+  <string id="31156">ANPASSA</string>
+  <string id="31157">ANPASSA AEON</string>
+  <string id="31158">AVANCERAT</string>
+  <string id="31159">AEONS UTÃ–KADE ALTERNATIV</string>
+  <string id="31160">PROFILER</string>
+  <string id="31161">ANVÃ„NDARKONTON</string>
+  <string id="31162">INLOGGNINGSRUTA</string>
+  <string id="31163">ALTERNATIV</string>
+  <string id="31164">INLOGGNINGSRUTA</string>
+  <string id="31165">ANVÃ„NDARE</string>
+  <string id="31166">HANTERA PROFILER</string>
+  <string id="31200">INSTÃ„LLNINGAR</string>
+  <string id="31201">ANPASSA</string>
+  <string id="31202">ASSISTENT</string>
+  <string id="31203">HEMVISUALISERING: AV</string>
+  <string id="31204">HEMVISUALISERING: PÃ…</string>
+  <string id="31205">NU SPELAS</string>
+  <string id="31206">AVSTÃ„NGNINGSTIMER</string>
+  <string id="31207">STARTA OM</string>
+  <string id="31208">STÃ„NG AV</string>
+  <string id="31209">LOGGA UT</string>
+  <string id="31210">MATA UT</string>
+  <string id="31220">KATALOGEN INNEHÃ…LLER:</string>
+  <string id="31221">SKRIV SÃ–KVÃ„G ELLER BLÃ„DDRA TILL PLATSEN</string>
+  <string id="31222">VÃ„LJ ETT NAMN FÃ–R DEN DELADE ENHETEN</string>
+  <string id="31223">LISTA</string>
+  <string id="31224">REPETERA</string>
+  <string id="31230">AEON</string>
+  <string id="31231">ALTERNATIV</string>
+  <string id="31232">ALLMÃ„NNA</string>
+  <string id="31233">GLOBALA INSTÃ„LLNINGAR</string>
+  <string id="31234">START</string>
+  <string id="31235">STARTSIDANS ALTERNATIV</string>
+  <string id="31236">VYER</string>
+  <string id="31237">MEDIABLÃ„DDRARE</string>
+  <string id="31238">FÃ–RINSTÃ„LLNINGAR</string>
+  <string id="31239">SNABBKONFIGURATIONER</string>
+  <string id="31240">FANART</string>
+  <string id="31241">KONTEXTUELLA BILDER</string>
+  <string id="31242">AKTIVERA ALLA</string>
+  <string id="31243">INAKTIVERA ALLA</string>
+  <string id="31244">MENYER</string>
+  <string id="31245">BLÃ„DDRINGSLAYOUT</string>
+  <string id="31259">STANDARTIKONER FÃ–R MEDIAFLAGGOR (AV FÃ–R TOMT UTRYMME)</string>
+  <string id="31260">VISA TIDSPANEL</string>
+  <string id="31261">STARTSIDANS VÃ„DER POPUP</string>
+  <string id="31262">KONTEXTUELLA BAKGRUNDSBILDER FÃ–R MUSIK</string>
+  <string id="31264">KONTEXTUELLA BAKGRUNDSBILDER FÃ–R FILMER</string>
+  <string id="31265">KONTEXTUELLA BAKGRUNDSBILDER FÃ–R TV-SERIER</string>
+  <string id="31266">KONTEXTUELLA BAKGRUNDSBILDER FÃ–R BILDER</string>
+  <string id="31268">VISA RSS / NU SPELAS HOS VÃ„GG-VYN</string>
+  <string id="31270">ZOOM ANIMATIONER</string>
+  <string id="31271">TONA BORT NÃ„R PANEL/LIST-VYN BLIR INAKTIV</string>
+  <string id="31278">VISA BAKGRUNDER HOS VÃ„GG-VYN</string>
+  <string id="31279">KONTEXTUELLA BAKGRUNDSBILDER FÃ–R INFO-SIDOR I HELSKÃ„RMSLÃ„GE</string>
+  <string id="31280">UTVECKLINGSLÃ„GE</string>
+  <string id="31281">MEDIA IKONER (STUDIO IKONER, KÃ„LLINFORMATION, ETC.)</string>
+  <string id="31284">STARTSIDANS VISUALISERING</string>
+  <string id="31285">ANVÃ„ND TEXT FÃ–R FILMBETYG (ANVÃ„NDER STJÃ„RNOR OM INAKTIVERAD)</string>
+  <string id="31286">ANVÃ„ND TEXT FÃ–R MUSIKBETYG (ANVÃ„NDER STJÃ„RNOR OM INAKTIVERAD)</string>
+  <string id="31287">KIOSKLÃ„GE (TAR BORT MEDIAFÃ–NSTERNAS MENYER)</string>
+  <string id="31288">SÃ–K FILM (FILMBIBLIOTEK)</string>
+  <string id="31289">SÃ–K TV-SERIE (TVBIBLIOTEK)</string>
+  <string id="31290">INSTÃ„LLNINGSGENVÃ„G (ALL MEDIA)</string>
+  <string id="31291">VÃ„XLA SEDDA/OSEDDA FILMER (FILM BIBLIOTEK)</string>
+  <string id="31292">VÃ„XLA SEDDA/OSEDDA TV-SERIER (TV BIBLIOTEK)</string>
+  <string id="31293">FIL-VYNS GENVÃ„G (FILM OCH TV BIBLIOTEK)</string>
+  <string id="31294">STÃ–RRE TANGENTBORD / NUMERISKT BORD</string>
+  <string id="31295">FÃ–RBÃ„TTRAD LÃ„SBARHET (STÃ–RRE TIDS- OCH RSSTEXT)</string>
+  <string id="31296">VÃ„XLA EN/MÃ…NGA MINIATYRBILDER</string>
+  <string id="31297">ANVÃ„ND EN MINIATYRBILD FÃ–R MUSIKLISTNING</string>
+  <string id="31298">ANVÃ„ND EN MINIATYRBILD FÃ–R FILMLISTNING</string>
+  <string id="31299">VISA RSS / NU SPELAS HOS UTSTÃ„LLNINGS-VYN</string>
+  <string id="31300">VIDEO</string>
+  <string id="31301">BILDER</string>
+  <string id="31302">UTSEENDE</string>
+  <string id="31303">NÃ„TVERK</string>
+  <string id="31304">SYSTEM</string>
+  <string id="31305">MUSIK</string>
+  <string id="31306">VÃ„DER</string>
+  <string id="31307">PROGRAM</string>
+  <string id="31308">ALTERNATIV</string>
+  <string id="31320">FÃ–RINSTÃ„LLNINGAR FÃ–R VISNING</string>
+  <string id="31321">DATABASKONTROLL</string>
+  <string id="31322">KVALITET OCH KALIBRERING</string>
+  <string id="31323">TEXT OCH FÃ„RG</string>
+  <string id="31324">TAGS OCH SKÃ„RM</string>
+  <string id="31325">INTERVALLER OCH EFFEKTER</string>
+  <string id="31326">SKAL OCH RSSFLÃ–DEN</string>
+  <string id="31327">SPRÃ…K OCH PLATS</string>
+  <string id="31328">UPPLÃ–SNING OCH KALIBRERING</string>
+  <string id="31329">OBJEKT OCH RADERING</string>
+  <string id="31330">INTERVALLER OCH INNEHÃ…LL</string>
+  <string id="31331">PROXIES OCH SÃ–KNINGAR</string>
+  <string id="31332">HTTP GRÃ„NSSNITT</string>
+  <string id="31333">ARBETSGRUPP OCH INLOGGNING</string>
+  <string id="31334">KLIENT OCH DELNINGAR</string>
+  <string id="31335">PORTAR OCH INTERVALLER</string>
+  <string id="31336">LOGGNING OCH TIMEOUTS</string>
+  <string id="31337">INMATNING OCH FÃ–RDRÃ–JNINGAR</string>
+  <string id="31338">MEDIATYPER</string>
+  <string id="31339">LOKALT OCH INTERNET</string>
+  <string id="31340">ANALOG / DIGITAL</string>
+  <string id="31341">INNEHÃ…LLSRESTRIKTION</string>
+  <string id="31342">INSPELNINGAR OCH VISUALISERING</string>
+  <string id="31343">DATABASKONTROLL</string>
+  <string id="31344">HÃ…RDVARA OCH NIVÃ…ER</string>
+  <string id="31345">ID TAGS OCH SÃ–KNINGAR</string>
+  <string id="31346">ANMÃ„LNINGAR OCH PROFIL</string>
+  <string id="31347">MAPPAR OCH INSTÃ„LLNINGAR</string>
+  <string id="31348">VOLYM OCH RÃ–STMASKERINGAR</string>
+  <string id="31349">RIKTNUMMER OCH REGION</string>
+  <string id="31350">FÃ–RINSTÃ„LLNINGAR FÃ–R BLÃ„DDRING</string>
+  <string id="31351">ONLINE KÃ„LLOR</string>
+  <string id="31400">INGEN AFFISCH?[CR][CR]KONTROLLERA ATT DU HAR EN SEPARAT "BIG" MINIATYRBILD[CR]BREDVID FILMENS FIL OCH ATT[CR]DESS NAMN STÃ„MMER Ã–VERENS[CR](BARBARELLA.MKV-BIG.PNG)[CR][CR]SE AEON MANUALEN FÃ–R MER DETALJERAD INFORMATION</string>
+  <string id="31401">SKRIVEN AV</string>
+  <string id="31402">REGISSÃ–R</string>
+  <string id="31403">AVSNITT:</string>
+  <string id="31404">STUDIO:</string>
+  <string id="31405">MED</string>
+  <string id="31406">AVSNITT</string>
+  <string id="31407">PREMIÃ„R</string>
+  <string id="31408">IMDB</string>
+  <string id="31409">TRAILER</string>
+  <string id="31410">LADDA OM</string>
+  <string id="31411">SE PÃ…</string>
+  <string id="31412">FANART</string>
+  <string id="31413">STÃ„MNINGAR</string>
+  <string id="31414">INGEN HANDLING TILLGÃ„NGLIG</string>
+  <string id="31415">INGEN BIOGRAFI TILLGÃ„NGLIG</string>
+  <string id="31416">STILAR</string>
+  <string id="31417">BETYG</string>
+  <string id="31418">BILD</string>
+  <string id="31419">UPPDATERA</string>
+  <string id="31420">Ã…TERUPPTA</string>
+  <string id="31421">SPELA</string>
+  <string id="31422">NOTER</string>
+  <string id="31423">SKIVBOLAG</string>
+  <string id="31424">INGEN ALBUMRECENSION TILLGÃ„NGLIG</string>
+  <string id="31425">INGEN INFO TILLGÃ„NGLIG</string>
+  <string id="31426">SPÃ…R</string>
+  <string id="31427">LÃ„NGD</string>
+  <string id="31428">INGA KOMMENTARER</string>
+  <string id="31429">ALBUM INFO</string>
+  <string id="31430">BEKRÃ„FTA</string>
+  <string id="31431">TRYCK UPPÃ…T ELLER NEDÃ…T FÃ–R ATT Ã„NDRA BETYG</string>
+  <string id="31432">SÃ„SONG</string>
+  <string id="31433">AVSNITT</string>
+  <string id="31434">LÃ„NGD</string>
+  <string id="31435">INGEN ROLLSÃ„TTNING TILLGÃ„NGLIG</string>
+  <string id="31500">NYHETER</string>
+  <string id="31501">AEONS ONLINE UPPDATERINGAR</string>
+  <string id="31502">VÃ„SENTLIGT</string>
+  <string id="31503">XBMC STATISTIK</string>
+  <string id="31504">CREDITS</string>
+  <string id="31505">UPPHOVSMÃ„N OCH TACK TILL</string>
+  <string id="31510">ASSISTENT</string>
+  <string id="31511">SENASTE NYHETER</string>
+  <string id="31512">Ã…TERVÃ„ND HIT FÃ–R REGELBUNDNA UPPDATERINGAR FRÃ…N AEONS SERVER</string>
+  <string id="31520">STARTA GUIDNING</string>
+  <string id="31521">AEONS VÃ„LKOMSTSIDA</string>
+  <string id="31522">TILLBAKA TILL GRUNDERA</string>
+  <string id="31523">TRYCK VÃ„LJ FÃ–R ATT SE AEONS VÃ„LKOMSTGUIDNING IGEN</string>
+  <string id="31524">KONTAKTAR AEONS SERVER</string>
+  <string id="31598">XBMC BYGGDATUM[CR]AEON VERSION[CR]NUVARANDE TEMA[CR]SPRÃ…K[CR]SKÃ„RMUPPLÃ–SNING[CR]TILLGÃ„NGLIGT MINNE[CR]HÃ…RDDISK UTRYMME[CR]CPU TEMPERATUR[CR]GPU TEMPERATUR[CR]SYSTEM UPPTID[CR]ONLINE STATUS[CR]IP ADRESS[CR]OPTISK ENHET</string>
+  <string id="31600">AEON VERSION: 1.0</string>
+  <string id="31601">LEDIGT MINNE:</string>
+  <string id="31602">XBMC BYGGDATUM:</string>
+  <string id="31603">FPS:</string>
+  <string id="31604">NUVARANDE FÃ–NSTER ID:</string>
+  <string id="31605">NUVARANDE FOKUS:</string>
+  <string id="31606">AKTIV VY-TYP:</string>
+  <string id="31607">UPPDATERA</string>
+  <string id="31608">INFO PÃ…/AV</string>
+  <string id="31609">BIBLIOTEKET Ã„R TOMT</string>
+  <string id="31610">FYLL DET VIA VIDEOFÃ–NSTRET</string>
+  <string id="31611">FYLL DET VIA FILFÃ–NSTRET</string>
+  <string id="31650">VÃ¤lkommen till Aeon, den nya centralen fÃ¶r hemunderhÃ¥llning.[CR]SÃ¤ttet du avnjuter dina filmer, tv-shower, musik och bilder[CR]kommer just att fÃ¶rÃ¤ndras. Men fÃ¶rst kanske du vill se denna korta visuella[CR]presentation. Intresserad? Tryck VÃ¤lj. Om inte, tryck pÃ¥ Tillbaka.</string>
+  <string id="31651">I centrum fÃ¶r Aeon Ã¤r den horisontellt-scrollande meny som ger omedelbar tillgÃ¥ng till[CR]dess olika miljÃ¶er. Bakgrunder kan tilldelas varje alternativ antingen som[CR]en bild eller ett bildspel. Menyn kan flyttas mellan olika positioner[CR]med en enkel knapptryckning. Tid och RSS kan ocksÃ¥ flyttas och tas loss.</string>
+  <string id="31652">I Aeon kan filmer och musik avnjutas via fyra olika vyer.[CR]Var och en designad fÃ¶r att uppfylla specifika behov. UtstÃ¤llning erbjuder bÃ¤st synlighet[CR]fÃ¶r bilder; Panel ger en mer konventionell miniatyrvy; Lista[CR] Ã¤r sjÃ¤lvklart; VÃ¤gg passar fÃ¶r stora mediasamlingar dÃ¥ den utnyttjar mest av skÃ¤rmens yta.</string>
+  <string id="31653">Aeon Ã¤lskar bilder. Dess visuella filosofi kretsar helt kring varje[CR]enskild anvÃ¤ndares smak och innehÃ¥ll. Tycker du om Actionfilmer? Fantasy[CR]videospel? Passionerad epok drama? Dekorera din omgivning enligt detta.[CR]Affischer och omslagsbilder visas i sin tur i vacker hÃ¶gupplÃ¶sning.</string>
+  <string id="31654">Att bygga ett bibliotek av filmer, tv-serier och musik lÃ¥ter Aeon[CR]utnyttja den fulla kraften hos XBMC, fÃ¶r att ge en meningsfull och informativ blÃ¤ddringsupplevelse.[CR]Filmhandlignar och album recensioner Ã¤r bara toppen av isberget tack vare den[CR]info som hÃ¤mtas frÃ¥n IMDB, Allmusic, eller en av de mÃ¥nga anvÃ¤ndartillgÃ¤ngliga kÃ¤llor.</string>
+  <string id="31655">TRYCK VÃ„LJ FÃ–R ATT PÃ…BÃ–RJA GUIDNINGEN. TRYCK TILLBAKA FÃ–R ATT AVSLUTA</string>
+  <string id="31656">TRYCK NEDÃ…T FÃ–R NÃ„STA BILD, VÃ„LJ FÃ–R ATT AVSLUTA</string>
+  <string id="31657">TRYCK NEDÃ…T FÃ–R NÃ„STA BILD, UPPÃ…T FÃ–R FÃ–REGÃ…ENDE BILD, ELLER VÃ„LJ FÃ–R ATT AVSLUTA</string>
+  <string id="31659">Navigering mellan Aeons vyer och fÃ¶nster kan inte vara enklare.[CR]Den Globala Menyn kan nÃ¥s nÃ¤r som helst, nÃ¤r som helst , med[CR]genvÃ¤gar till InstÃ¤llningar, Anpassning och Aeon Assistenten. En fyrvÃ¤gs[CR]"kompass"-meny ger omedelbar tillgÃ¥ng till de olika vytyperna.</string>
+  <string id="31660">Varje aspekt av Aeon och XBMC kan konfigureras bakom kulisserna[CR]En mÃ¥ngfasetterad InstÃ¤llningsmeny finns tillgÃ¤nglig frÃ¥n vilken ruta som helst,[CR]uppdelad i sektioner fÃ¶r enkel anvÃ¤ndning. Dess virtuella hemsida ger en[CR]nytÃ¤nkande visuell referens fÃ¶r alla dina anpassningsbehov.</string>
+  <string id="31661">Det finns inga begrÃ¤nsningar fÃ¶r hur mÃ¥nga bakgrundsbilder[CR]du kan placera pÃ¥ Aeons meny-bakgrunder. Mappar som innehÃ¥ller tusentals bilder kan tilldelas[CR]sektioner som Filmer och Musik. Allting Ã¶ver den aktuella skÃ¤rmupplÃ¶sningen[CR]fÃ¶rminkas, allting under fÃ¶rstoras.</string>
+  <string id="31662">Kontrollera varje aspekt av XBMC:s mediauppspelning utan att missa en sekund.[CR]Via On-screen display:en fÃ¶r video och musik kan du anpassa allt frÃ¥n[CR]undertexter och bildformat till den audiovisuella synkroniseringen. Permanenta bokmÃ¤rken[CR]kan stÃ¤llas in fÃ¶r enkel tillgÃ¥ng till dina favoritscener.</string>
+  <string id="31663">De dagar dÃ¥ en anvÃ¤ndares egna anpassningar kom till ett pris[C]och hÃ¶gkvalitets konst var bara en drÃ¶m Ã¤r nu fÃ¶rbi. The Aeon Project webbplatsen erbjuder hundratals[CR]av de bÃ¤sta bakgrundsbilderna fÃ¶r Aeons alla fÃ¶nster, kostnadsfritt och utan[CR]irriterande annonser. AnvÃ¤nd Aeon Assistenten fÃ¶r uppdateringar och nytt innehÃ¥ll.</string>
+  <string id="31700">CODEC</string>
+  <string id="31701">BITRATE</string>
+  <string id="31702">SAMPLINGSFREKVENS</string>
+  <string id="31703">KANALER</string>
+  <string id="31704">NÃ„STA:</string>
+  <string id="31705">SPOLA BAKÃ…T</string>
+  <string id="31706">SPOLA FRAMÃ…T</string>
+  <string id="31707">VOLYM</string>
+  <string id="31708">POSITION</string>
+  <string id="31709">SPELTID</string>
+  <string id="31710">SLUTTID</string>
+  <string id="31711">TILLGÃ„NGLIGA BOKMÃ„RKEN</string>
+  <string id="31712">UPPÃ…T/NEDÃ…T: MENY/BOKMÃ„RKEN[CR]VÃ„NSTER/HÃ–GER: MENY ALTERNATIV</string>
+  <string id="31713">OBJEKT I SPELLISTA</string>
+  <string id="31714">NUVARANDE POSTION</string>
+  <string id="31715">FÃ–REGÃ…ENDE</string>
+  <string id="31716">LÃ…TTITEL</string>
+  <string id="31717">ALBUMNAMN</string>
+  <string id="31718">ARTISTNAMN</string>
+  <string id="31719">TID FÃ–RFLUTEN / LÃ„NGD</string>
+  <string id="31750">VÃ„GG</string>
+  <string id="31751">UTSTÃ„LLNING</string>
+  <string id="31752">LISTA</string>
+  <string id="31753">PANEL</string>
+  <string id="31754">VÃ„LJ</string>
+  <string id="31755">VÃ„LJ RIKTNING FÃ–R ATT BYTA VY[CR]TRYCK FÃ–R ATT Ã…NGRA</string>
+  <string id="31756">ENDAST LIST-VYN Ã„R TILLGÃ„NGLIG FÃ–R AVSNITT</string>
+  <string id="31800">FRISTÃ…ENDE UNDERTEXTER</string>
+  <string id="31801">FÃ–R ATT ANVÃ„NDA FRISTÃ…ENDE UNDERTEXTER MÃ…STE DEN HA SAMMA NAMN SOM VIDEO FILEN.[CR]T.EX. VEXILLE.AVI KRÃ„VER ATT UNDERTEXTEN HETER VEXILE.SRT (FILÃ„NDELSERNA KAN VARIERA)</string>
+  <string id="31802">MUSIKVIDEOR</string>
+  <string id="31803">XBMC KAN HANTERA MUSIKVIDEOR PÃ… SAMMA VIS SOM FILMER. I BIBLIOTEKSLÃ„GET ANGE[CR]ATT EN MAPPS INNEHÃ…LL Ã„R 'MUSIKVIDEOR', VÃ„LJ EN INFOKÃ„LLA OCH LÃ…T XBMC SKÃ–TA RESTEN</string>
+  <string id="31804">EMULERING</string>
+  <string id="31805">XBMC KAN KÃ–RA IGÃ…NG EMULATORER PÃ… ALLA PLATTFORMAR, MEN METODERNA KAN VARIERA.[CR]KOLLA MED XBMC FORUMET (XBMC.ORG) FÃ–R STÃ–DDA PROGRAMVAROR OCH TIPS</string>
+  <string id="31806">ROTERA MED EXIF INFORMATION</string>
+  <string id="31807">MODERNA KAMEROR INFOGAR INFORMATION OM MOTIVET I ALLA BILDER SOM TAS. MED DENNA FUNKTION[CR]AKTIVERAD, ROTERAS BILDERNA TILL DEN EGENTLIGA POSITIONEN VID UPPVISNING</string>
+  <string id="31808">LIVE VÃ„DERPROGNOSER</string>
+  <string id="31809">XBMC VISAR VÃ„DERPROGNOSER FÃ–R UPP TILL TRE PLATSER, TACK VARE WEATHER.COM.[CR]FÃ–RUTOM DINA GEOGRAFISKA PLATSER, KAN DU OCKSÃ… VÃ„LJA MELLAN METRISK OCH AMERIKANSK SKALA</string>
+  <string id="31810">FÃ… EN KLARARE Ã–VERBLICK</string>
+  <string id="31811">ATT FLYTTA OM AEON:S MENYER Ã„R LÃ„TT OCH SMÃ„RTFRITT MED ONE-TOUCH OMPLACERING. TRYCK UPPÃ…T ELLER[CR]NEDÃ…T FÃ–R ATT VÃ„XLA MELLAN POSITIONER OCH ALLA UTSMYCKNINGAR FLYTTAR SIG SJÃ„LVA AUTOMATISKT</string>
+  <string id="31812">EXTERN LAGRINGSKAPACITET</string>
+  <string id="31813">FLYTTBARA HÃ…RDDISKAR AV STÃ–RRE KAPACITET (500GB+) LÃ„MPAR SIG IDEALISKT FÃ–R[CR]STORA HD FILMSAMLINGAR. XBMC KAN HANTERA TUSENTALS FILER FRÃ…N DINA DEFINIERADE KÃ„LLOR</string>
+  <string id="31814">EN Ã„KTA HIGH DEFINTION MEDIA OMGIVNING</string>
+  <string id="31815">AEON RENDERAR STÃ–RSTA DELEN AV SIN GRAFIK I 1080P OCH FÃ–RMINSKAR DEN FÃ–R[CR]ATT PASSA VILKEN HD-SKÃ„RM SOM HELST. AEON STÃ…R VID TOPPEN AV DIGITAL UNDERHÃ…LLNING</string>
+  <string id="31816">KLARAR DIN HÃ…RDVARA AV AEON?</string>
+  <string id="31817">XBMC HAR ANSPRÃ…KSLÃ–SA SYSTEMKRAV, MEN DEN FÃ–RBRUKAR MÃ„RKBART AV[CR]PROCESSORN FÃ–R HD VIDEO. PIXEL SHADER 3 KAPABLA GRAFIKKORT REKOMMENDERAS</string>
+  <string id="31818">FINASTE DETALJERNA</string>
+  <string id="31819">AEONS STARTSIDA KAN FÃ–RMINSKAS FÃ–R ATT LÃ…TA DINA BAKGRUNDER LYSA IGENOM ELLER[CR]FÃ–RSTORAS FÃ–R ATT FÃ–RBÃ„TTRA LÃ„SBARHETEN HOS DE MED NEDSATT SYN</string>
+  <string id="31820">VAR OCH EN FÃ–R SIG</string>
+  <string id="31821">XBMC STÃ–DER FLERA ANVÃ„NDARKONTON, VILKET LÃ…TER ENSKILDA ANVÃ„NDARE SPARA SINA[CR]ANPASSNINGAR. RSS FLÃ–DEN, VY-INSTÃ„LLNINGAR OCH MEDIABIBLIOTEK KAN SPARAS SKILT</string>
+  <string id="31900">GRAFISKA ELEMENT</string>
+  <string id="31901">FÃ–RVALDA BAKGRUNDSBILDER</string>
+  <string id="31902">FÃ–RVALDA IKONER INNEHÃ…LLER ELEMENT AV</string>
+  <string id="31903">Ã–VERSÃ„TTNING</string>
+  <string id="31904">TESTNING</string>
+  <string id="31905">AEONPROJECT WEBBPLATS</string>
+  <string id="31906">TACK TILL</string>
+  <string id="31907">ALLA VID XBMC:S FORUM</string>
+  <string id="31908">...OCH DU</string>
+  <string id="31909">AEON KOMMER ATT Ã…TERVÃ„NDA OM</string>
+  <string id="31910">VÃ„DERBAKGRUNDER</string>
 </strings>
