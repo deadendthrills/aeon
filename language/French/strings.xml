@@ -47,30 +47,35 @@
 <!-- Media Window options -->
   
 	<string id="31050">VUE: </string> 
-	<string id="31051">TRIE: SÉQUENCE</string>
-	<string id="31052">TRIE: ALÉATOIRE</string>
-	<string id="31053">MODE: FICHIERS</string>
+	<string id="31051">ALÉATOIRE</string>
+	<string id="31052">ÉPAIS</string>
+	<string id="31053">FIN</string>
 	<string id="31054">PARAMÈTRES</string>
-	<string id="31055">EMPILER: OUI</string>
-	<string id="31056">EMPILER: NON</string>
+	<string id="31055">EMPILER</string>
+	<string id="31056">VIGNETTES: CARRÉS</string>
 	<string id="31057">FICHIERS</string>
-	<string id="31058">VIDEOS: NON VUES</string>
-	<string id="31059">VIDEOS: TOUTES</string>
+	<string id="31058">CACHER DÉJÀ VUES</string>
+	<string id="31059">VIGNETTES: POSTERS</string>
 	<string id="31060">ASSEMBLER: NON</string>
 	<string id="31061">ASSEMBLER: OUI</string>
 	<string id="31062">SAISON</string>
 	<string id="31063">ÉPISODE</string>
-	<string id="31064">FANART: NON</string>
-	<string id="31065">FANART: OUI</string>
-	<string id="31066">ARRIÈRE-PLAN: OUI</string>
-	<string id="31067">ARRIÈRE-PLAN: NON</string>
-	<string id="31068">MODE: BIBLIOTHÈQUE</string>
-	<string id="31069">LABELS: OUI</string>
-	<string id="31070">LABELS: NON</string>
-	<string id="31071">VIGNETTES: SEULE</string>
-	<string id="31072">VIGNETTES: MULTI</string>
-	<string id="31073">GRILLE: DEFAUT</string>
-	<string id="31074">GRILLE: MAX</string>
+	<string id="31064">FANART</string>
+	<string id="31065">BANDEAU</string>
+	<string id="31066">-</string>
+	<string id="31067">ARRIÈRE-PLAN</string>
+	<string id="31068">BIBLIOTHÈQUE</string>
+	<string id="31069">LABELS</string>
+	<string id="31070">-</string>
+	<string id="31071">MINCE</string>
+	<string id="31072">COMPLET</string>
+	<string id="31073">DÉFAUT</string>
+	<string id="31074">MAX</string>
+	<string id="31075">DISPOSITION</string>
+	<string id="31076">GRILLE</string>
+	<string id="31077">ACTIVÉ</string>
+	<string id="31078">DÉSACTIVÉ</string>
+	<string id="31079">INVISIB. AUTO</string>
   
 <!-- Aeon Customisation Virtual Home page labels -->
   
@@ -184,7 +189,7 @@
 	<string id="31235">OPTIONS PAGE PRINCIPALE</string>
 	<string id="31236">AFFICHAGE</string>
 	<string id="31237">FENÊTRE MEDIA</string>
-	<string id="31238">PRESELECTIONS</string>
+	<string id="31238">PRÉSELECTIONS</string>
 	<string id="31239">CONFIGURATION RAPIDE</string>
 	<string id="31240">FANART</string>
 	<string id="31241">IMAGE CONTEXTUELLE</string>
@@ -195,6 +200,9 @@
   
 <!-- Aeon Advanced options -->
   
+	<string id="31255">RACCOURCIS DU SOUS-MENU MUSIQUE</string>
+	<string id="31256">RACCOURCIS DU SOUS-MENU SÉRIES TV</string>
+	<string id="31257">RACCOURCIS DU SOUS-MENU FILMS</string>
 	<string id="31258">AFFICHER LES NOTES (IMDB, ETC.) SUR LA PAGE INFO DES FILMS</string>
 	<string id="31259">ICONS PAR DÉFAUT POUR LES MEDIA FLAGS (OFF POUR ESPACES VIDES)</string>
 	<string id="31260">AFFICHER PANNEAU HEURE</string>
@@ -358,7 +366,7 @@
 
 	<string id="31650">Bienvenue dans Aeon, le renouveau du divertissement à domicile.[CR]Votre façon de profiter de vos films, séries TV, musiques et photos[CR]va être révolutionné. Pour commencer, vous pouvez regarder une vidéo de présentation.[CR]Intéressé ? Appuyez sur Entrée. Sinon, appuyez sur la touche Retour.</string>
 	<string id="31651">Au centre d'Aeon, la barre de défilement horizontale du menu permet un acces immédiat[CR]aux différentes sections. Assignez des arrière-plans (images fixes ou diaporamas)[CR]pour chaque zone. Le menu peut changer de position d'une simple pression de bouton.[CR]L'heure et le défilement RSS peuvent aussi être déplacés.</string>
-	<string id="31652">Profitez de vos films et musiques grâce aux différentes vues d'Aeon.[CR]Chacune répond à des fonctions spécifiques. La vue "Showcase" offre un affichage optimal de[CR]vignettes visibles; la "Panel" présente des vues plus conventionnelles; la "Liste" parle d'elle-même;[CR]"Wall" enfin, fournit un affichage maximal pour les grosses collections.</string>
+	<string id="31652">Profitez de vos films et musiques grâce aux différentes vues d'Aeon.[CR]Chacune répond à des fonctions spécifiques. La vue "Showcase" offre un affichage optimal de[CR]vignettes visibles; la "Bandeau" ("panel") présente des vues plus conventionnelles; la "Liste" parle d'elle-même;[CR]"Wall" enfin, fournit un affichage maximal pour les grosses collections.</string>
 	<string id="31653">Aeon rime avec artwork! La philosophie visuelle repose intégralement sur les goûts[CR]et les contenus de chaque utilisateur. Vous aimez les films d'action, fantastiques[CR]les jeux vidéos? Accroc aux séries TV? Redécorez l'environnement en conséquence![CR]C'est aussi pour ça que les affiches et couvertures sont affichés en haute définition.</string>
 	<string id="31654">En construisant vos bibliothèques vidéos, TV et musicales, Aeon exploite[CR]le plein potentiel d'XBMC, fournissant une expérience de navigation riche et complète.[CR]Les résumés de vidéos et critiques d'albums ne sont que le sommet de l'iceberg grâce aux informations provenant[CR]de sources telles qu'IMDB, Allmusic, ou celles qui sont développées par la communauté.</string>	
 	<string id="31655">APPUYEZ SUR SELECT POUR COMMENCER LE TOUR. TOUCHE RETOUR POUR PASSER</string>
@@ -427,7 +435,8 @@
 	<string id="31819">L'ACCUEIL D'AEON PEUT S'ADAPTER POUR METTRE EN VALEUR VOS FONDS, MAIS AUSSI[CR]S'AGGRANDIR POUR AMÉLIORER L'ACCESSIBILITÉ VISUELLE</string>	
 	<string id="31820">À CHACUN LE SIEN</string>
 	<string id="31821">XBMC EST MULTI-UTILISATEURS, PERMETTANT À CHACUN DE SAUVEGARDER SON PROFIL[CR]FLUX RSS, VUES, PARAMÈTRES ET BIBLIOTHEQUES SONT PRIS EN COMPTE</string>
-<!-- Credits -->
+
+	<!-- Credits -->
 
 	<string id="31900">TEXTURES</string>
 	<string id="31901">FONDS D'ÉCRAN PAR DÉFAUT</string>
@@ -440,5 +449,22 @@
 	<string id="31908">...ET VOUS</string>
 	<string id="31909">AEON REVIENT DANS</string>
 	<string id="31910">ARRIÈRE-PLANS MÉTÉO</string>
+	
+<!-- Submenu / Objects -->
+
+	<string id="31920">RÉCENT</string>
+	<string id="31921">TITRES</string>
+	<string id="31922">GENRES</string>
+	<string id="31923">ANNÉES</string>
+	<string id="31924">ACTEURS</string>
+	<string id="31925">RÉALISATEURS</string>
+	<string id="31926">STUDIOS</string>
+	<string id="31927">ARTISTES</string>
+	<string id="31928">ALBUMS</string>
+	<string id="31929">PLAYLISTS</string>
+	<string id="31930">TOP 100</string>
+	<string id="31931">VIDÉOS</string>
+	<string id="31932">FICHIERS</string>
+	<string id="31933">SÉRIES</string>
 	
 </strings>
