@@ -201,10 +201,6 @@
 <!-- Aeon Advanced options -->
 
 	<string id="31253">LINK GAMES SHORTCUT TO 'LAUNCHER' PLUGIN</string>
-	<string id="31254">ONE-TOUCH MENU MOVEMENT (PRESS SELECT FOR SUBMENU WHEN ENABLED)</string>
-	<string id="31255">SHORTCUT SUBMENU FOR MUSIC</string>
-	<string id="31256">SHORTCUT SUBMENU FOR TV SHOWS</string>
-	<string id="31257">SHORTCUT SUBMENU FOR MOVIES</string>
 	<string id="31258">SHOW RATINGS (IMDB, ETC.) IN MOVIE INFO PAGE</string>
 	<string id="31259">DEFAULT ICONS FOR MEDIA FLAGS (OFF FOR BLANK SPACES)</string>
 	<string id="31260">SHOW TIME PANEL</string>

@@ -35,6 +35,7 @@
 </include>
 
 <include name="DownForSub">
+	<onup>Skin.Reset(lowermainmenu)</onup>
 	<ondown>351</ondown>
 </include>
 

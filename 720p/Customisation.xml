@@ -105,37 +105,6 @@
 			<selected>Skin.HasSetting(launcherforgames)</selected>
 		</control>
 		
-		<control type="radiobutton" id="503">
-			<include>Objects_SettingsDefaultRadioButton</include>
-			<label>31254</label>
-			<onclick>Skin.ToggleSetting(onetouch)</onclick>
-			<selected>Skin.HasSetting(onetouch)</selected>
-		</control>
-		
-		<control type="radiobutton" id="504">
-			<include>Objects_SettingsDefaultRadioButton</include>
-			<label>31257</label>
-			<onclick>Skin.ToggleSetting(nosubmenumovies)</onclick>
-			<selected>!Skin.HasSetting(nosubmenumovies)</selected>
-			<visible>Skin.HasSetting(onetouch)</visible>
-		</control>
-
-		<control type="radiobutton" id="505">
-			<include>Objects_SettingsDefaultRadioButton</include>
-			<label>31256</label>
-			<onclick>Skin.ToggleSetting(nosubmenutv)</onclick>
-			<selected>!Skin.HasSetting(nosubmenutv)</selected>
-			<visible>Skin.HasSetting(onetouch)</visible>			
-		</control>
-
-		<control type="radiobutton" id="506">
-			<include>Objects_SettingsDefaultRadioButton</include>
-			<label>31255</label>
-			<onclick>Skin.ToggleSetting(nosubmenumusic)</onclick>
-			<selected>!Skin.HasSetting(nosubmenumusic)</selected>
-			<visible>Skin.HasSetting(onetouch)</visible>			
-		</control>
-
 	</control>
 	
 	<control type="grouplist" id="12">
