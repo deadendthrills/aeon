@@ -17,16 +17,6 @@
 		<texture>osd/osd_settings_back.png</texture>
 	</control>
 
-	<control type="label" id="2">
-		<description>Number of Files Label</description>
-		<posx>350</posx>
-		<posy>475</posy>
-		<label>-</label>
-		<font>fruity17</font>
-		<textcolor>FF818181</textcolor>
-		<include>common-fade</include>
-	</control>
-
 	<control type="list" id="3">
 		<posx>250</posx>
 		<posy>155</posy>
