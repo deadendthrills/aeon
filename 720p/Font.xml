@@ -204,8 +204,8 @@
 
     <font>
       <name>Font_ContextMenuButton</name>
-      <filename>aeon_settings.ttf</filename>
-      <size>20</size>
+      <filename>aeon_title.ttf</filename>
+      <size>17</size>
     </font>
 
     <font>
