@@ -100,12 +100,19 @@
 
 		<control type="radiobutton" id="502">
 			<include>Objects_SettingsDefaultRadioButton</include>
+			<label>31253</label>
+			<onclick>Skin.ToggleSetting(launcherforgames)</onclick>
+			<selected>Skin.HasSetting(launcherforgames)</selected>
+		</control>
+		
+		<control type="radiobutton" id="503">
+			<include>Objects_SettingsDefaultRadioButton</include>
 			<label>31254</label>
 			<onclick>Skin.ToggleSetting(onetouch)</onclick>
 			<selected>Skin.HasSetting(onetouch)</selected>
 		</control>
 		
-		<control type="radiobutton" id="503">
+		<control type="radiobutton" id="504">
 			<include>Objects_SettingsDefaultRadioButton</include>
 			<label>31257</label>
 			<onclick>Skin.ToggleSetting(nosubmenumovies)</onclick>
@@ -113,7 +120,7 @@
 			<visible>Skin.HasSetting(onetouch)</visible>
 		</control>
 
-		<control type="radiobutton" id="504">
+		<control type="radiobutton" id="505">
 			<include>Objects_SettingsDefaultRadioButton</include>
 			<label>31256</label>
 			<onclick>Skin.ToggleSetting(nosubmenutv)</onclick>
@@ -121,7 +128,7 @@
 			<visible>Skin.HasSetting(onetouch)</visible>			
 		</control>
 
-		<control type="radiobutton" id="505">
+		<control type="radiobutton" id="506">
 			<include>Objects_SettingsDefaultRadioButton</include>
 			<label>31255</label>
 			<onclick>Skin.ToggleSetting(nosubmenumusic)</onclick>

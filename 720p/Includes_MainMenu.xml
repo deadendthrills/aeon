@@ -108,7 +108,14 @@
 				<label>31011</label>
 				<onclick>XBMC.ActivateWindow(MyPrograms)</onclick>
 				<visible>!Skin.HasSetting(nogames)</visible>
+				<visible>!Skin.HasSetting(launcherforgames)</visible>
 			</item>
+			<item id="2">
+				<label>31011</label>
+				<onclick>XBMC.ActivateWindow(1,plugin://programs/Launcher/)</onclick>
+				<visible>!Skin.HasSetting(nogames)</visible>
+				<visible>Skin.HasSetting(launcherforgames)</visible>
+			</item>			
 			<item id="5">
 				<label>31012</label>
 				<onclick>XBMC.ActivateWindow(MyPictures)</onclick>
