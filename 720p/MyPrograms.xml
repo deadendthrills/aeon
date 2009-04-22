@@ -62,6 +62,16 @@
 					<label>103</label>
 					<include>Objects_MediaMenuButton</include>
 				</control>
+				
+				<control type="togglebutton" id="941">
+					<include>Objects_MediaMenuButton</include>				
+					<label>$LOCALIZE[31059]</label>
+					<altlabel>$LOCALIZE[31056]</altlabel>
+					<usealttexture>Skin.HasSetting(listgamessquare)</usealttexture>
+					<onclick>Skin.SetBool(listgamessquare)</onclick>
+					<altclick>Skin.Reset(listgamessquare)</altclick>
+					<visible>Control.IsVisible(50)</visible>
+				</control>				
 
 				<include>Objects_ThumbsButton</include>					
 
