@@ -29,7 +29,31 @@
 		<aligny>center</aligny>
 </include>
 
+<include name="PushForSub">
+	<ondown>Skin.SetBool(lowermainmenu)</ondown>
+	<onup>Skin.Reset(lowermainmenu)</onup>
+</include>
+
+<include name="DownForSub">
+	<ondown>351</ondown>
+</include>
+
 <include name="MainMenu">
+
+	<control type="button" id="351">
+		<onfocus>SetFocus(940)</onfocus>
+		<visible>Container(300).HasFocus(6)</visible>
+	</control>
+	
+	<control type="button" id="351">
+		<onfocus>SetFocus(942)</onfocus>
+		<visible>Container(300).HasFocus(7)</visible>
+	</control>	
+	
+	<control type="button" id="351">
+		<onfocus>SetFocus(941)</onfocus>
+		<visible>Container(300).HasFocus(1)</visible>
+	</control>		
 
 	<control type="wraplist" id="300">
 		<posx>0</posx>
@@ -42,8 +66,8 @@
 		<orientation>horizontal</orientation>
 		<focusposition>2</focusposition>
 		<scrolltime>200</scrolltime>
-		<ondown>Skin.SetBool(lowermainmenu)</ondown>
-		<onup>Skin.Reset(lowermainmenu)</onup>
+		<include condition="!Skin.HasSetting(onetouch)">DownForSub</include>
+		<include condition="Skin.HasSetting(onetouch)">PushForSub</include>		
 		<onfocus>SetFocus(299)</onfocus>
 		<animation type="WindowOpen" condition="!Skin.HasSetting(nozooms)" reversible="false">
 			<effect type="slide" start="-1280" end="0" time="400" tween="quadratic" easing="out" />
@@ -72,13 +96,13 @@
 				<label>31010</label>
 				<onclick>XBMC.ActivateWindow(MyMusic)</onclick>
 				<visible>!Skin.HasSetting(nomusic)</visible>
-				<visible>Skin.HasSetting(nosubmenumusic)</visible>
+				<visible>[Skin.HasSetting(onetouch) + Skin.HasSetting(nosubmenumusic)] | !Skin.HasSetting(onetouch)</visible>
 			</item>
 			<item id="1">
 				<label>31010</label>
 				<onclick>SetFocus(941)</onclick>
 				<visible>!Skin.HasSetting(nomusic)</visible>
-				<visible>!Skin.HasSetting(nosubmenumusic)</visible>
+				<visible>Skin.HasSetting(onetouch) + !Skin.HasSetting(nosubmenumusic)</visible>
 			</item>
 			<item id="2">
 				<label>31011</label>
@@ -96,13 +120,13 @@
 				<onclick>Skin.Reset(videotv)</onclick>
 				<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles)</onclick>
 				<visible>!Skin.HasSetting(nomovies)</visible>
-				<visible>Skin.HasSetting(nosubmenumovies)</visible>
+				<visible>[Skin.HasSetting(onetouch) + Skin.HasSetting(nosubmenumovies)] | !Skin.HasSetting(onetouch)</visible>
 			</item>
 			<item id="6">
 				<label>31013</label>
 				<onclick>SetFocus(940)</onclick>
 				<visible>!Skin.HasSetting(nomovies)</visible>
-				<visible>!Skin.HasSetting(nosubmenumovies)</visible>
+				<visible>Skin.HasSetting(onetouch) + !Skin.HasSetting(nosubmenumovies)</visible>
 			</item>			
 			<item id="7">
 				<description>My Videos</description>
@@ -111,13 +135,13 @@
 				<onclick>Skin.Reset(videomovies)</onclick>
 				<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick>
 				<visible>!Skin.HasSetting(notvshows)</visible>
-				<visible>Skin.HasSetting(nosubmenutv)</visible>
+				<visible>[Skin.HasSetting(onetouch) + Skin.HasSetting(nosubmenutv)] | !Skin.HasSetting(onetouch)</visible>
 			</item>
 			<item id="7">
 				<label>31014</label>
 				<onclick>SetFocus(942)</onclick>
 				<visible>!Skin.HasSetting(notvshows)</visible>
-				<visible>!Skin.HasSetting(nosubmenutv)</visible>
+				<visible>Skin.HasSetting(onetouch) + !Skin.HasSetting(nosubmenutv)</visible>
 			</item>					
 			<item id="8">
 				<label>31015</label>
