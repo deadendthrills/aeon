@@ -195,12 +195,6 @@
 
 		<control type="image" id="94">
 			<include>Furniture_MovieInfoFlagRes</include>
-			<texture>flags/info/sd.png</texture>
-			<visible>substring(listitem.studio,sd)</visible>
-		</control>
-
-		<control type="image" id="94">
-			<include>Furniture_MovieInfoFlagRes</include>
 			<texture>flags/info/480i.png</texture>
 			<visible>substring(listitem.studio,480i)</visible>
 		</control>
