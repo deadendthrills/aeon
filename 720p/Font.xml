@@ -202,10 +202,28 @@
 
 <!-- Context menus and dialogs -->
 
+	<font>
+	  <name>Font_FileBrowserButton</name>
+	  <filename>aeon_settings.ttf</filename>
+	  <size>22</size>
+	</font>
+	
+	<font>
+	  <name>Font_FileBrowserDetail</name>
+	  <filename>aeon_title.ttf</filename>
+	  <size>15</size>
+	</font>
+
+	<font>
+	  <name>Font_FileBrowserHeading</name>
+	  <filename>aeon_settings.ttf</filename>
+	  <size>31</size>
+	</font>	
+
     <font>
       <name>Font_ContextMenuButton</name>
       <filename>aeon_title.ttf</filename>
-      <size>17</size>
+      <size>18</size>
     </font>
 
     <font>

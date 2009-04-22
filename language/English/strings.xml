@@ -4,10 +4,10 @@
 
  <strings>
 	<string id="31000">0.9 (STARK)</string> <!-- DO NOT CHANGE -->
-	<string id="31001"></string>
+	<string id="31001">N/A</string>
 	<string id="31002">MUTED</string>
 	<string id="31003">WEATHER SCREEN OPTIONS UNAVAILABLE IN THIS VERSION</string>
-	<string id="31004">RESET BACKDROP</string>
+	<string id="31004">RESET[CR]BACKDROP</string>
 	<string id="31005">ITEMS</string>
 	<string id="31006">NOW PLAYING</string>
 	<string id="31007">PAUSED</string>

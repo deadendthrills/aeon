@@ -72,7 +72,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<texture>common/black.png</texture>
-			<colordiffuse>d7FFFFFF</colordiffuse>
+			<colordiffuse>c3FFFFFF</colordiffuse>
 			<include>Animation_CommonFade</include>
 			<visible>Control.IsVisible(218) | Window.IsVisible(130) | Window.IsVisible(109) | Window.IsVisible(111) | Window.IsVisible(600) | Window.IsVisible(402) | Window.IsVisible(2000) | Window.IsVisible(601) | Window.IsVisible(602) | Window.IsVisible(601) | Window.IsVisible(132) | Window.IsVisible(106) | Window.IsVisible(103) | Window.IsVisible(129) | Window.IsVisible(126)</visible>
 		</control>

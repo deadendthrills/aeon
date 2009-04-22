@@ -16,6 +16,322 @@
 	</animation>	
 	<controls>
 
+		<control type="group">
+			<width>406</width>
+			<height>556</height>
+			<animation effect="slide" start="-410,0" end="0,0" time="400" delay="500" tween="cubic" easing="out">WindowOpen</animation>
+			<control type="image">
+				<posx>809</posx>
+				<posy>103</posy>
+				<width>406</width>
+				<height>556</height>
+				<texture>list/filebrowser_sidecar.png</texture>
+			</control>
+			<control type="image">
+				<width>286</width>
+				<height>286</height>
+				<posx>867</posx>
+				<posy>167</posy>
+				<fadetime>400</fadetime>
+				<texture>$INFO[ListItem.Icon]</texture>
+				<aspectratio aligny="bottom">keep</aspectratio>
+			</control>
+			<control type="image">
+				<width>286</width>
+				<height>286</height>
+				<posx>867</posx>
+				<posy>453</posy>
+				<fadetime>400</fadetime>				
+				<texture flipy="true" diffuse="common/Thumb_Mask6.png">$INFO[ListItem.Icon]</texture>
+				<aspectratio aligny="top">keep</aspectratio>
+			</control>	
+			
+			<control type="label">
+				<posx>867</posx>
+				<posy>540</posy>
+				<width>100</width>
+				<font>Font_FileBrowserDetail</font>
+				<label>MODIFIED:</label>
+			</control>
+			
+			<control type="label">
+				<posx>867</posx>
+				<posy>570</posy>
+				<width>100</width>
+				<font>Font_FileBrowserDetail</font>				
+				<label>TAKEN:</label>
+			</control>
+
+			<control type="label">
+				<posx>867</posx>
+				<posy>600</posy>
+				<width>100</width>
+				<font>Font_FileBrowserDetail</font>				
+				<label>RESOLUTION:</label>
+			</control>
+
+			<control type="label">
+				<posx>1153</posx>
+				<posy>540</posy>
+				<width>100</width>
+				<align>right</align>				
+				<font>Font_FileBrowserDetail</font>
+				<label fallback="31001">$INFO[ListItem.Date]</label>
+			</control>
+			
+			<control type="label">
+				<posx>1153</posx>
+				<posy>570</posy>
+				<width>100</width>
+				<align>right</align>				
+				<font>Font_FileBrowserDetail</font>				
+				<label fallback="31001">$INFO[ListItem.PictureDateTime]</label>
+			</control>
+
+			<control type="label">
+				<posx>1153</posx>
+				<posy>600</posy>
+				<width>100</width>
+				<align>right</align>				
+				<font>Font_FileBrowserDetail</font>				
+				<label fallback="31001">$INFO[ListItem.PictureResolution]</label>
+			</control>			
+			
+		</control>
+	
+		<control type="image">
+			<posx>60</posx>
+			<posy>73</posy>
+			<width>759</width>
+			<height>647</height>
+			<texture>list/listpanel_black.png</texture>
+		</control>
+		
+		<control type="image">
+			<posx>60</posx>
+			<posy>73</posy>
+			<width>759</width>
+			<height>647</height>
+			<texture>list/listpanel_back_noreflect.png</texture>
+		</control>	
+	
+		<control type="image">
+			<posx>669</posx>
+			<posy>137</posy>
+			<width>97</width>
+			<height>450</height>
+			<texture>list/listpanel_detailwide.png</texture>
+		</control>
+		
+		<control type="image">
+			<posx>60</posx>
+			<posy>600</posy>
+			<width>759</width>
+			<height>88</height>
+			<texture>list/list_filebrowser_buttons.png</texture>
+		</control>
+
+		<control type="label" id="411">
+			<posx>105</posx>
+			<posy>94</posy>
+			<width>771</width>
+			<font>Font_FileBrowserHeading</font>
+			<textcolor>1dFFFFFF</textcolor>
+		</control>
+		
+		<control type="list" id="451">
+			<viewtype label="31752">list</viewtype>
+			<posx>60</posx>
+			<posy>147</posy>
+			<width>771</width>
+			<height>440</height>
+			<pagecontrol>61</pagecontrol>
+			<scrolltime>0</scrolltime>
+			<onleft>413</onleft>
+			<onright>413</onright>
+			<onup>451</onup>
+			<ondown>451</ondown>
+			<animation effect="fade" start="100" end="50" time="200" condition="!Control.HasFocus(451)">Conditional</animation>
+			<itemlayout height="40">
+				<control type="image">
+					<posx>12</posx>
+					<posy>41</posy>
+					<height>1</height>
+					<width>739</width>
+					<texture>list/listpanel_line.png</texture>
+				</control>
+				<control type="label">
+					<include>ListLabel_MainSmall</include>
+					<include>listcolornofocus</include>
+					<info>ListItem.Label</info>
+				</control>
+				<control type="label">
+					<include>ListLabel_DetailFull</include>
+					<include>detailcolornofocus</include>
+					<label>[UPPERCASE]$INFO[ListItem.Size][/UPPERCASE]</label>
+				</control>
+			</itemlayout>					
+			<focusedlayout height="40">
+				<control type="image">
+					<posx>12</posx>
+					<posy>41</posy>
+					<height>1</height>
+					<width>739</width>
+					<texture>list/listpanel_line.png</texture>
+				</control>
+				<control type="image">
+					<posx>8</posx>
+					<posy>-5</posy>
+					<width>743</width>
+					<height>50</height>
+					<texture>list/listpanel_selectbar.png</texture>
+				</control>
+				<control type="label">
+					<include>ListLabel_MainSmall</include>
+					<include>listcolorfocus</include>
+					<info>ListItem.Label</info>
+				</control>
+				<control type="label">
+					<include>ListLabel_DetailFull</include>
+					<include>detailcolorfocus</include>
+					<label fallback="-">[UPPERCASE]$INFO[ListItem.Size][/UPPERCASE]</label>				
+				</control>
+			</focusedlayout>
+		</control>
+		
+		<control type="label">
+			<include>List_Objects</include>
+			<label>$INFO[Container(451).NumItems] ITEMS</label>
+		</control>
+
+		<control type="button" id="413">
+			<posx>68</posx>
+			<posy>601</posy>
+			<width>132</width>
+			<height>77</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<font>Font_FileBrowserButton</font>
+			<label>186</label>
+			<align>center</align>
+			<textcolor>FFb3b3b3</textcolor>
+			<focusedcolor>FFFFFFFF</focusedcolor>
+			<selectedcolor>FF262728</selectedcolor>
+			<disabledcolor>FF5a5a5a</disabledcolor>
+			<onleft>451</onleft>
+			<onright>414</onright>
+			<onup>451</onup>
+			<ondown>451</ondown>			
+		</control>
+		
+		<control type="image">
+			<posx>68</posx>
+			<posy>601</posy>
+			<width>132</width>
+			<height>77</height>
+			<visible>Control.HasFocus(413)</visible>
+			<texture>list/filebrowser_button1down.png</texture>			
+			<include>Animation_VisibleChange400</include>
+		</control>
+
+		<control type="button" id="414">
+			<posx>201</posx>
+			<posy>601</posy>
+			<width>133</width>
+			<height>77</height>
+			<texturefocus>list/filebrowser_button2down.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<font>Font_FileBrowserButton</font>
+			<label>222</label>
+			<align>center</align>
+			<textcolor>FFb3b3b3</textcolor>
+			<focusedcolor>FFFFFFFF</focusedcolor>
+			<selectedcolor>FF262728</selectedcolor>
+			<disabledcolor>FF5a5a5a</disabledcolor>			
+			<onleft>413</onleft>
+			<onright>415</onright>
+			<onup>451</onup>
+			<ondown>451</ondown>			
+		</control>
+		
+		<control type="image">
+			<posx>201</posx>
+			<posy>601</posy>
+			<width>133</width>
+			<height>77</height>
+			<visible>Control.HasFocus(414)</visible>
+			<texture>list/filebrowser_button2down.png</texture>			
+			<include>Animation_VisibleChange400</include>
+		</control>		
+
+		<control type="button" id="415">
+			<posx>335</posx>
+			<posy>601</posy>
+			<width>133</width>
+			<height>77</height>
+			<texturefocus>list/filebrowser_button2down.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<font>Font_FileBrowserButton</font>
+			<label>119</label>
+			<align>center</align>
+			<textcolor>FFb3b3b3</textcolor>
+			<focusedcolor>FFFFFFFF</focusedcolor>
+			<selectedcolor>FF262728</selectedcolor>
+			<disabledcolor>FF5a5a5a</disabledcolor>			
+			<onleft>414</onleft>
+			<onright>499</onright>
+			<onup>451</onup>
+			<ondown>451</ondown>			
+		</control>
+		
+		<control type="image">
+			<posx>335</posx>
+			<posy>601</posy>
+			<width>133</width>
+			<height>77</height>
+			<visible>Control.HasFocus(415)</visible>
+			<texture>list/filebrowser_button2down.png</texture>			
+			<include>Animation_VisibleChange400</include>
+		</control>				
+
+		<control type="button" id="499">
+			<posx>469</posx>
+			<posy>601</posy>
+			<width>133</width>
+			<height>77</height>
+			<texturefocus>list/filebrowser_button2down.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<font>Font_FileBrowserButton</font>
+			<label>31004</label>
+			<align>center</align>
+			<textcolor>FFb3b3b3</textcolor>
+			<focusedcolor>FFFFFFFF</focusedcolor>
+			<selectedcolor>FF7b7b7b</selectedcolor>
+			<disabledcolor>FF5a5a5a</disabledcolor>			
+			<onleft>415</onleft>
+			<onright>451</onright>
+			<onup>451</onup>
+			<ondown>451</ondown>
+			<visible>Window.IsActive(604)</visible>
+			<onclick>Skin.Reset($INFO[Skin.String(customslideshow)])</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(customsingle)])</onclick>
+			<onclick>Dialog.Close(126)</onclick>
+		</control>
+		
+		<control type="image">
+			<posx>469</posx>
+			<posy>601</posy>
+			<width>133</width>
+			<height>77</height>
+			<visible>Control.HasFocus(499)</visible>
+			<texture>list/filebrowser_button2down.png</texture>			
+			<include>Animation_VisibleChange400</include>
+		</control>		
+		
+
+				
+<!-- OLD
+	
 	<control type="group">
 		<posx>108</posx>
 		<posy>85</posy>
@@ -360,6 +676,8 @@
 	</control>
 
 	</control>
+	
+	-->
 	
 	</controls>
 </window>
