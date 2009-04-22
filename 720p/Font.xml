@@ -482,8 +482,14 @@
 
 	<font>
 		<name>Font_KeyboardKeys</name>
-		<filename>aeon_edit.ttf</filename>
-		<size>17</size>
+		<filename>aeon_player.ttf</filename>
+		<size>19</size>
+	</font>
+	
+	<font>
+		<name>Font_KeyboardTitle</name>
+		<filename>aeon_title.ttf</filename>
+		<size>19</size>
 	</font>
 
 	<font>
@@ -500,7 +506,7 @@
 
 	<font>
 		<name>Font_KeyboardEdit</name>
-		<filename>aeon_edit.ttf</filename>
+		<filename>aeon_player.ttf</filename>
 		<size>19</size>
 	</font>	
 

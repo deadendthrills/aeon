@@ -3,6 +3,17 @@
 	<include>Animation_KeyboardPopup</include>	
 	<controls>
 
+	<control type="label" id="311">
+		<description>Dialog heading</description>
+		<posx>0</posx>
+		<posy>186</posy>
+		<width>1280</width>
+		<height>22</height>
+		<font>Font_KeyboardTitle</font>
+		<align>center</align>
+		<include>dialogheadingcolor</include>
+	</control>
+	
 	<control type="group">
 		<posx>368</posx>
 		<posy>216</posy>
@@ -20,7 +31,7 @@
 		<control type="label" id="310">
 			<description>Edit Text</description>
 			<posx>7</posx>
-			<posy>239</posy>
+			<posy>243</posy>
 			<width>531</width>
 			<height>22</height>
 			<font>Font_KeyboardEdit</font>
