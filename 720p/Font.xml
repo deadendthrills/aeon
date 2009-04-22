@@ -507,7 +507,7 @@
 	<font>
 		<name>Font_KeyboardEdit</name>
 		<filename>aeon_player.ttf</filename>
-		<size>19</size>
+		<size>21</size>
 	</font>	
 
 <!-- OSD -->
