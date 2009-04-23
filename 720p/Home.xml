@@ -70,6 +70,16 @@
 			<defaultcontrol>300</defaultcontrol>
 			<include>MainMenu</include>
 		</control>
+		
+		<control type="image">
+			<posx>0</posx>
+			<posy>302</posy>
+			<width>1280</width>
+			<height>150</height>
+			<texture>home/homemenu_gradient.png</texture>
+			<include>Animation_CommonFade</include>
+			<visible>Skin.HasSetting(homegradient)</visible>
+		</control>		
 
 	</control>
 
