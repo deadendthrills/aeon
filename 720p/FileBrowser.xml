@@ -129,7 +129,17 @@
 			<width>759</width>
 			<height>88</height>
 			<texture>list/list_filebrowser_buttons.png</texture>
+			<visible>Window.IsActive(604)</visible>
 		</control>
+		
+		<control type="image">
+			<posx>60</posx>
+			<posy>600</posy>
+			<width>759</width>
+			<height>88</height>
+			<texture>list/list_filebrowser_3buttons.png</texture>
+			<visible>!Window.IsActive(604)</visible>
+		</control>		
 
 		<control type="label" id="411">
 			<posx>105</posx>
