@@ -108,8 +108,8 @@
 		<control type="radiobutton" id="503">
 			<include>Objects_SettingsDefaultRadioButton</include>
 			<label>31252</label>
-			<onclick>Skin.ToggleSetting(homegradient)</onclick>
-			<selected>Skin.HasSetting(homegradient)</selected>
+			<onclick>Skin.ToggleSetting(nohomegradient)</onclick>
+			<selected>!Skin.HasSetting(nohomegradient)</selected>
 		</control>		
 		
 	</control>

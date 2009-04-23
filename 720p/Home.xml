@@ -78,7 +78,8 @@
 			<height>150</height>
 			<texture>home/homemenu_gradient.png</texture>
 			<include>Animation_CommonFade</include>
-			<visible>Skin.HasSetting(homegradient)</visible>
+			<visible>!Skin.HasSetting(nohomegradient)</visible>
+			<colordiffuse>d0FFFFFF</colordiffuse>
 		</control>		
 
 	</control>

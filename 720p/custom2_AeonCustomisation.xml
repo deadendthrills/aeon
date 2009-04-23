@@ -94,6 +94,17 @@
 						
 					</control>
 
+					<control type="image">
+						<posx>0</posx>
+						<posy>211</posy>
+						<width>840</width>
+						<height>99</height>
+						<texture>home/homemenu_gradient.png</texture>
+						<include>Animation_CommonFade</include>
+						<visible>!Skin.HasSetting(nohomegradient)</visible>
+						<colordiffuse>d0FFFFFF</colordiffuse>						
+					</control>	
+					
 				</control>
 			</control>
 			
