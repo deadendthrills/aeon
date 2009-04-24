@@ -89,7 +89,7 @@
 	
     <include name="MusicShowcaseThumbReflectionDimensions">
         <posx>18</posx>
-        <posy>250</posy>
+        <posy>245</posy>
         <width>234</width>
         <height>234</height>
     </include>
@@ -110,14 +110,14 @@
         <include>MusicShowcaseThumbReflectionDimensions</include>
         <colordiffuse>d0FFFFFF</colordiffuse>
         <texture flipy="true" diffuse="thumbs/cdcover_mask_reflect.png">defaultaudiobig.png</texture>
-        <aspectratio scalediffuse="false">scale</aspectratio>
+        <aspectratio>scale</aspectratio>
     </include>
 	
     <include name="MusicShowcaseThumbReflectionMain">
         <include>MusicShowcaseThumbReflectionDimensions</include>
         <colordiffuse>52FFFFFF</colordiffuse>
         <texture flipy="true" diffuse="thumbs/cdcover_mask_reflect.png">defaultaudiobig.png</texture>
-        <aspectratio scalediffuse="false">scale</aspectratio>
+        <aspectratio>scale</aspectratio>
     </include>
 	
 <!-- Music Showcase Variables: Thumb glass overlays -->
