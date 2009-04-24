@@ -1172,16 +1172,16 @@
 	
 	<control type="scrollbar" id="61">
       <description>My first scroll bar control</description>
-      <posx>786</posx>
-      <posy>188</posy>
-      <width>67</width>
-      <height>416</height>
+      <posx>778</posx>
+      <posy>108</posy>
+      <width>45</width>
+      <height>545</height>
       <visible>Control.IsVisible(50)</visible>
-      <texturesliderbackground>windows/scrollbarback_nofocus.png</texturesliderbackground>
+      <texturesliderbackground>-</texturesliderbackground>
       <texturesliderbar>-</texturesliderbar>
       <texturesliderbarfocus>-</texturesliderbarfocus>
-      <textureslidernib>windows/scrollbarnub-nofocus.png</textureslidernib>
-      <textureslidernibfocus>windows/scrollbarnub-focus.png</textureslidernibfocus>
+      <textureslidernib>-</textureslidernib>
+      <textureslidernibfocus>list/list_scrollclip.png</textureslidernibfocus>
       <pulseonselect></pulseonselect>
       <orientation>vertical</orientation>
       <showonepage>true</showonepage>
@@ -1190,7 +1190,7 @@
       <onleft>50</onleft>
       <onright>2</onright>
 	  <include>Animation_CommonFade</include>
-	  <visible>false</visible>
+	  <animation effect="fade" start="0" end="100" time="200">Focus</animation>
 	</control>
 	
 	<control type="label" id="217">
