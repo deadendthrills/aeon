@@ -714,7 +714,7 @@
 					<control type="label">
 						<include>ListLabel_Track</include>
 						<include>listcolornofocus</include>
-						<label>$INFO[ListItem.Episode]</label>
+						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
 						<visible>Container.Content(episodes)</visible>
 					</control>						
 					<control type="label">
@@ -806,7 +806,7 @@
 						<include>ListLabel_Track</include>
 						<include>listcolornofocus</include>
 						<include>Animation_ButtonFocusFade_fix</include>						
-						<label>$INFO[ListItem.Episode]</label>
+						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
 						<visible>Container.Content(episodes)</visible>
 					</control>						
 					<control type="label">
@@ -890,7 +890,7 @@
 						<include>ListLabel_Track</include>
 						<include>listcolorfocus</include>
 						<include>Animation_ButtonFocusFade</include>						
-						<label>$INFO[ListItem.Episode]</label>
+						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
 						<visible>Container.Content(episodes)</visible>
 					</control>						
 					<control type="label">
