@@ -1160,6 +1160,7 @@
 				<include>List_NowPlaying</include>
 				<posy>655</posy>
 				<textcolor>8f000000</textcolor>
+				<scroll>true</scroll>
 				<label>[UPPERCASE]$INFO[MusicPlayer.Artist] - "$INFO[MusicPlayer.Title]"[/UPPERCASE]</label>
 			</control>
 		</control>
