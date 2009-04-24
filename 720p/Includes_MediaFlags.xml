@@ -318,7 +318,7 @@
 				<control type="image" id="188">
 					<include>Furniture_ListMediaFlagsVars</include>
 					<texture>flags/mp3.png</texture>
-					<visible>substring(listitem.studio,mp3)</visible>
+					<visible>substring(listitem.studio,mp3) | substring(listitem.studio,MPEG Audio)</visible>
 				</control>				
 			</control>
 			<control type="group">
@@ -591,7 +591,7 @@
 				<control type="image" id="84">
 					<include>Furniture_ShowcaseMediaFlagsVars</include>
 					<texture>flags/mp3.png</texture>
-					<visible>substring(listitem.studio,mp3)</visible>
+					<visible>substring(listitem.studio,mp3) | substring(listitem.studio,MPEG Audio)</visible>
 				</control>				
 			</control>
 			<control type="group">
