@@ -153,7 +153,7 @@
 	
 	<include name="List_NowPlaying">
 		<posx>860</posx>
-		<width>346</width>
+		<width>336</width>
 		<height>18</height>
 		<font>Font_ListPlaying</font>
 	</include>
