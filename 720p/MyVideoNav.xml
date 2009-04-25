@@ -155,14 +155,31 @@
 					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + Skin.HasSetting(multiplexinfoon)</visible>
 				</control>				
 				
-				<control type="togglebutton" id="954">
+				<control type="button" id="954">
 					<include>Objects_MediaMenuButton</include>				
 					<label>LAYOUT: PLOT</label>
-					<altlabel>LAYOUT: THUMB</altlabel>
-					<usealttexture>Skin.HasSetting(multiplexnoplot)</usealttexture>
-					<onclick>Skin.ToggleSetting(multiplexnoplot)</onclick>
+					<onclick>Skin.SetBool(multiplexbigthumb)</onclick>
+					<onclick>Skin.Reset(multiplexplot)</onclick>
 					<onclick>XBMC.ReloadSkin</onclick>
-					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52)</visible>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + ![Skin.HasSetting(multiplexbigthumb) | Skin.HasSetting(multiplexfanart)]</visible>
+				</control>
+				
+				<control type="button" id="955">
+					<include>Objects_MediaMenuButton</include>				
+					<label>LAYOUT: THUMB</label>
+					<onclick>Skin.SetBool(multiplexfanart)</onclick>
+					<onclick>Skin.Reset(multiplexbigthumb)</onclick>
+					<onclick>XBMC.ReloadSkin</onclick>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + Skin.HasSetting(multiplexbigthumb)</visible>
+				</control>
+
+				<control type="button" id="956">
+					<include>Objects_MediaMenuButton</include>				
+					<label>LAYOUT: ART</label>
+					<onclick>Skin.SetBool(multiplexplot)</onclick>
+					<onclick>Skin.Reset(multiplexfanart)</onclick>
+					<onclick>XBMC.ReloadSkin</onclick>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + Skin.HasSetting(multiplexfanart)</visible>
 				</control>
 				
 				<control type="togglebutton" id="940">
