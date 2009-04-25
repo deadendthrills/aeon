@@ -18,17 +18,14 @@
 		<imagepath>backdrops/default_movies</imagepath>
 		<info>Skin.String(CustomMovies)</info>
 		<visible>!Skin.String(CustomMoviesFolder)</visible>
-		<visible>Skin.HasSetting(videomovies)</visible>
-		<visible>Skin.HasSetting(nomoviefanart)|IsEmpty(listitem.property(fanart_image))</visible> 
-		<visible>[IsEmpty(Fanart.Image)+IsEmpty(listitem.property(fanart_image))] | Skin.HasSetting(notvfanart)</visible> 		
+		<visible>Skin.HasSetting(videomovies) | [!Skin.HasSetting(nomoviefanart] + IsEmpty(listitem.property(fanart))]</visible> 		
 	</control>
 
 	<control type="multiimage">
 		<include>Background_ImageFolder</include>
 		<info>Skin.String(CustomMoviesFolder)</info>
 		<visible>Skin.String(CustomMoviesFolder)</visible>
-		<visible>Skin.HasSetting(videomovies)</visible>
-		<animation effect="fade" start="0" end="100" time="300" condition="Skin.HasSetting(nomoviefanart)|IsEmpty(listitem.property(fanart_image))">Conditional</animation>		
+		<visible>Skin.HasSetting(videomovies) | [!Skin.HasSetting(nomoviefanart] + IsEmpty(listitem.property(fanart))]</visible>
 	</control>
 
 	<control type="multiimage">
