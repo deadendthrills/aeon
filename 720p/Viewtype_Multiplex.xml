@@ -436,7 +436,8 @@
 			<width>1280</width>
 			<height>56</height>
 			<texture>multiplex/multiplex_gradient.png</texture>
-			<include>Animation_HideMultiplex</include>			
+			<include>Animation_HideMultiplex</include>
+			<visible>Control.IsVisible(52)</visible>
 		</control>
 		
 		<control type="scrollbar" id="60">
