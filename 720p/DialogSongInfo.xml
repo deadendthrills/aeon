@@ -163,7 +163,8 @@
 			<label>31418</label>
 			<include>Objects_FSInfoButton</include>
 			<onup>IncreaseRating</onup>
-			<ondown>DecreaseRating</ondown>			
+			<ondown>DecreaseRating</ondown>
+			<visible>!Skin.HasSetting(kiosk)</visible>			
 			</control>
 
 			<control type="button" id="10">

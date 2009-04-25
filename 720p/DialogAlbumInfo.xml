@@ -151,16 +151,19 @@
 			<control type="button" id="6">
 			<label>31410</label>
 			<include>Objects_FSInfoButton</include>
+			<visible>!Skin.HasSetting(kiosk)</visible>			
 			</control>
 
 			<control type="button" id="10">
 			<label>31418</label>
 			<include>Objects_FSInfoButton</include>
+			<visible>!Skin.HasSetting(kiosk)</visible>			
 			</control>
 			
 			<control type="button" id="12">
 			<label>31412</label>
 			<include>Objects_FSInfoButton</include>
+			<visible>!Skin.HasSetting(kiosk)</visible>			
 			</control>	
 			
 		</control>
@@ -299,16 +302,19 @@
 			<control type="button" id="6">
 			<label>31419</label>
 			<include>Objects_FSInfoButton</include>
+			<visible>!Skin.HasSetting(kiosk)</visible>			
 			</control>
 
 			<control type="button" id="10">
 			<label>31418</label>
 			<include>Objects_FSInfoButton</include>
+			<visible>!Skin.HasSetting(kiosk)</visible>			
 			</control>
 
 			<control type="button" id="12">
 			<label>31412</label>
 			<include>Objects_FSInfoButton</include>
+			<visible>!Skin.HasSetting(kiosk)</visible>			
 			</control>
 		</control>
 
