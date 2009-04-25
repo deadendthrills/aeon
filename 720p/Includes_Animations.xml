@@ -238,7 +238,7 @@
 </include>
 
 <include name="Animation_HideStripShow">
-	<animation type="Conditional" reversible="true" condition="Control.HasFocus(195)">
+	<animation type="Conditional" reversible="true" condition="Control.HasFocus(195)">	
 		<effect type="slide" start="0,0" end="0,300" time="400" tween="cubic" easing="in" />
 	</animation>
 </include>
