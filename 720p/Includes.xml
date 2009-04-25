@@ -18,6 +18,7 @@
 <include file="Includes_Submenu.xml" />
 <include file="Viewtype_Showcase.xml" />
 <include file="Viewtype_StripShow.xml" />
+<include file="Viewtype_Multiplex.xml" />
 <include file="Viewtype_List.xml" />
 <include file="Viewtype_Wall.xml" />
 

@@ -330,6 +330,33 @@
       <size>18</size>
     </font>	
 	
+<!-- Multiplex -->
+
+    <font>
+      <name>Font_MultiplexMainLabel</name>
+      <filename>aeon_settings.ttf</filename>
+      <size>55</size>
+    </font>
+
+    <font>
+      <name>Font_MultiplexPlot</name>
+      <filename>aeon_sublist_cy.ttf</filename>
+      <size>19</size>
+	  <linespacing>1</linespacing>	  
+    </font>
+	
+    <font>
+      <name>Font_MultiplexInfoLabel</name>
+      <filename>aeon_sublist_cy.ttf</filename>
+      <size>16</size>
+    </font>	
+	
+    <font>
+      <name>Font_MultiplexInfoValue</name>
+      <filename>aeon_sublist_cy.ttf</filename>
+      <size>17</size>
+    </font>	
+	
 <!-- Fullscreen Info pages -->
 
     <font>

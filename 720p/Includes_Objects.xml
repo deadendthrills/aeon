@@ -278,7 +278,7 @@
 			<usealttexture>Skin.HasSetting(nomediaflags)</usealttexture>
 			<include>Objects_MediaMenuButton</include>
 			<onclick>Skin.ToggleSetting(nomediaflags)</onclick>
-			<visible>Control.IsVisible(57) | Control.IsVisible(55) + Container.Content(movies)</visible>
+			<visible>Control.IsVisible(57) | Control.IsVisible(52) + Container.Content(movies)</visible>
 		</control>
 	</include>
 
@@ -561,7 +561,7 @@
 			<height>57</height>
 			<texture>showcase/showcase_menupanel.png</texture>
 			<include>Animation_MediaMenuSlide</include>
-			<visible>Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(57) | Control.IsVisible(53)</visible>
+			<visible>Control.IsVisible(50) | Control.IsVisible(52) | Control.IsVisible(51) | Control.IsVisible(57) | Control.IsVisible(53)</visible>
 		</control>
 	</include>
 	

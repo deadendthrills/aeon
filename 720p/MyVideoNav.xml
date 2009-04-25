@@ -3,6 +3,16 @@
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 
+    <control type="image" id="109">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>0</width>
+		<height>0</height>
+		<texture>-</texture>
+		<visible>!Skin.HasSetting(nomultiplexpopup) + ![Skin.HasSetting(multiplexinfooff) | Skin.HasSetting(multiplexinfotrigger)] + [Control.HasFocus(52) | Control.HasFocus(61) | Control.HasFocus(94) | ControlGroup(7000).HasFocus()] + [!Container(52).OnNext + !Container(52).OnPrevious]</visible>
+		<animation effect="fade" start="0" end="100" time="150" delay="3000">Visible</animation>
+	</control>
+	
 	<control type="multiimage">
 		<include>Background_SingleImage</include>
 		<imagepath>backdrops/default_movies</imagepath>
@@ -38,7 +48,7 @@
 
 	<control type="largeimage" id="102">
 		<include>FullscreenDimensions</include>
-        <visible>[Control.IsVisible(50) | Control.IsVisible(57)] + [[Container.Content(movies) + !Skin.HasSetting(nomoviefanart)] | [Container.Content(tvshows) + !Skin.HasSetting(notvfanart)]] + !IsEmpty(listitem.property(fanart_image))</visible>
+        <visible>[Control.IsVisible(50) | Control.IsVisible(57) | Control.IsVisible(52)] + [[Container.Content(movies) + !Skin.HasSetting(nomoviefanart)] | [Container.Content(tvshows) + !Skin.HasSetting(notvfanart)]] + !IsEmpty(listitem.property(fanart_image))</visible>
 		<fadetime>400</fadetime>
 		<texture>$INFO[listitem.property(fanart_image)]</texture>
 		<include>Animation_FanartFade</include>
@@ -109,6 +119,52 @@
 					<include>Objects_MediaMenuButton</include>
 				</control>
 
+				<control type="button" id="950">
+					<include>Objects_MediaMenuButton</include>				
+					<label>INFO: OFF</label>
+					<onclick>Skin.SetBool(multiplexinfoauto)</onclick>
+					<onclick>Skin.Reset(multiplexinfooff)</onclick>
+					<onclick>XBMC.ReloadSkin</onclick>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + Skin.HasSetting(multiplexinfooff)</visible>
+				</control>
+				
+				<control type="button" id="951">
+					<include>Objects_MediaMenuButton</include>				
+					<label>INFO: AUTO</label>
+					<onclick>Skin.SetBool(multiplexinfotrigger)</onclick>
+					<onclick>Skin.Reset(multiplexinfoauto)</onclick>
+					<onclick>XBMC.ReloadSkin</onclick>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + ![Skin.HasSetting(multiplexinfotrigger) | Skin.HasSetting(multiplexinfooff) | Skin.HasSetting(multiplexinfoon)]</visible>
+				</control>
+
+				<control type="button" id="952">
+					<include>Objects_MediaMenuButton</include>				
+					<label>INFO: TRIGGER</label>
+					<onclick>Skin.SetBool(multiplexinfoon)</onclick>
+					<onclick>Skin.Reset(multiplexinfotrigger)</onclick>
+					<onclick>XBMC.ReloadSkin</onclick>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + Skin.HasSetting(multiplexinfotrigger)</visible>
+				</control>	
+
+				<control type="button" id="953">
+					<include>Objects_MediaMenuButton</include>				
+					<label>INFO: ON</label>
+					<onclick>Skin.SetBool(multiplexinfooff)</onclick>
+					<onclick>Skin.Reset(multiplexinfoon)</onclick>
+					<onclick>XBMC.ReloadSkin</onclick>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + Skin.HasSetting(multiplexinfoon)</visible>
+				</control>				
+				
+				<control type="togglebutton" id="954">
+					<include>Objects_MediaMenuButton</include>				
+					<label>LAYOUT: PLOT</label>
+					<altlabel>LAYOUT: THUMB</altlabel>
+					<usealttexture>Skin.HasSetting(multiplexnoplot)</usealttexture>
+					<onclick>Skin.ToggleSetting(multiplexnoplot)</onclick>
+					<onclick>XBMC.ReloadSkin</onclick>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52)</visible>
+				</control>
+				
 				<control type="togglebutton" id="940">
 					<include>Objects_MediaMenuButton</include>				
 					<include>Objects_ListLayoutStrings</include>
@@ -126,7 +182,7 @@
 					<usealttexture>Skin.HasSetting(nomoviefanart)</usealttexture>
 					<onclick>Skin.SetBool(nomoviefanart)</onclick>
 					<altclick>Skin.Reset(nomoviefanart)</altclick>
-					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(57)</visible>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + [Control.IsVisible(57) | Control.IsVisible(52)]</visible>
 				</control>
 				
 				<control type="togglebutton" id="902">
@@ -173,6 +229,7 @@
 		
 		<include>Viewtype_Showcase</include>
 		<include>Viewtype_List</include>
+		<include>Viewtype_Multiplex</include>		
 		
 	</control>
 

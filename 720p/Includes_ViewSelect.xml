@@ -49,6 +49,10 @@
 		<ondown>Container.SetViewMode(51)</ondown>	
 	</include>
 	
+	<include name="MultiplexButton">
+		<ondown>Container.SetViewMode(52)</ondown>	
+	</include>	
+	
 	<include name="ViewChange">
 		<control type="image">
 			<include>FullscreenDimensions</include>
@@ -67,6 +71,7 @@
 			<onright>Container.SetViewMode(57)</onright>
 			<onright>SetFocus(900)</onright>
 			<include condition="Window.IsActive(2)">StripShowButton</include>
+			<include condition="Window.IsActive(25)">MultiplexButton</include>			
 			<ondown>SetFocus(900)</ondown>
 			<onleft>Container.SetViewMode(53)</onleft>
 			<onleft>SetFocus(900)</onleft>		
@@ -121,6 +126,23 @@
 				<posx>427</posx>
 				<posy>640</posy>
 				<label>STRIPSHOW</label>				
+			</control>			
+		</control>
+		<control type="group">
+			<include>ViewChangeAnimBottom</include>
+			<visible>Window.IsActive(25)</visible>
+			<control type="image">
+				<posx>519</posx>
+				<posy>513</posy>
+				<width>242</width>
+				<height>135</height>
+				<texture>-</texture>				
+			</control>
+			<control type="label">
+				<include>ViewChangeLabel</include>
+				<posx>427</posx>
+				<posy>640</posy>
+				<label>MULTIPLEX</label>				
 			</control>			
 		</control>		
 		<control type="group">

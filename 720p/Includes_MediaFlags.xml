@@ -21,13 +21,11 @@
 	</include>	
 	
 	<include name="Furniture_PanelMediaFlagsVars">
-		<posy>538</posy>
-		<width>110</width>
-		<height>72</height>
+		<posy>454</posy>
+		<width>90</width>
+		<height>59</height>
 		<include>Animation_CommonFade</include>
-		<include>Animation_HideShowcase</include>
-		<visible>Control.IsVisible(55)</visible>
-		<colordiffuse>30FFFFFF</colordiffuse>		
+		<visible>Control.IsVisible(52)</visible>		
 	</include>	
 	
 	<include name="Furniture_ShowcaseMediaFlagsBlack">
@@ -628,6 +626,252 @@
 				</control>				
 			</control>
 		</control>
+	</include>
+	
+
+	<include name="Furniture_MultiplexMediaFlags">		
+		<control type="group">
+			<visible>Window.IsActive(25) + Control.IsVisible(52) + !Skin.HasSetting(nomediaflags) + Container.Content(movies)</visible>
+			<include>Animation_CommonFade</include>
+			<include>Animation_HideMultiplex</include>			
+			<control type="group">
+				<posx>60</posx>
+				<control type="image">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/default.png</texture>
+					<visible>!Control.IsVisible(81) + !Skin.HasSetting(nodefaultflags)</visible>
+				</control>				
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/20thcenturyfox.png</texture>
+					<visible>substring(listitem.studio,Fox)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/universal.png</texture>
+					<visible>substring(listitem.studio,Universal)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/filmfour.png</texture>
+					<visible>substring(listitem.studio,FilmFour) | substring(listitem.studio,Channel Four)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/disney.png</texture>
+					<visible>substring(listitem.studio,Disney) | substring(listitem.studio,Pixar)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/gaumont.png</texture>
+					<visible>substring(listitem.studio,Gaumont)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/unitedartists.png</texture>
+					<visible>substring(listitem.studio,Artists)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/newlinecinema.png</texture>
+					<visible>substring(listitem.studio,New Line)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/dimension.png</texture>
+					<visible>substring(listitem.studio,Dimension)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/touchstone.png</texture>
+					<visible>substring(listitem.studio,Touchstone)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/hollywood.png</texture>
+					<visible>substring(listitem.studio,Hollywood)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/carolco.png</texture>
+					<visible>substring(listitem.studio,Carolco)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/revolution.png</texture>
+					<visible>substring(listitem.studio,Revolution)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/lucasfilm.png</texture>
+					<visible>substring(listitem.studio,Lucasfilm)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/screengems.png</texture>
+					<visible>substring(listitem.studio,Screen Gems)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/warner.png</texture>
+					<visible>substring(listitem.studio,Warner)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/tristar.png</texture>
+					<visible>substring(listitem.studio,TriStar)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/castlerock.png</texture>
+					<visible>substring(listitem.studio,Castle Rock)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/studiocanal.png</texture>
+					<visible>substring(listitem.studio,Studio Canal)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/paramount.png</texture>
+					<visible>substring(listitem.studio,Paramount) | substring(listitem.studio,Comedy Central)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/dreamworks.png</texture>
+					<visible>substring(listitem.studio,DreamWorks)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/columbia.png</texture>
+					<visible>substring(listitem.studio,Columbia)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/mgm.png</texture>
+					<visible>substring(listitem.studio,Mayer) | substring(listitem.studio,MGM)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/sonypictures.png</texture>
+					<visible>substring(listitem.studio,Sony)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/artisan.png</texture>
+					<visible>substring(listitem.studio,Artisan)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/lionsgate.png</texture>
+					<visible>substring(listitem.studio,Lionsgate)</visible>
+				</control>
+				<control type="image" id="81">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/miramax.png</texture>
+					<visible>substring(listitem.studio,Miramax) + !substring(listitem.studio,Universal)</visible>
+				</control>
+			</control>
+			<control type="group">
+				<posx>1005</posx>
+				<control type="image">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/defaultscreen.png</texture>
+					<visible>!Control.IsVisible(83) + !Skin.HasSetting(nodefaultflags)</visible>
+				</control>
+				<control type="image" id="83">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/sd.png</texture>
+					<visible>substring(listitem.studio,sd)</visible>
+				</control>
+				<control type="image" id="83">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/480p.png</texture>
+					<visible>substring(listitem.studio,480p)</visible>
+				</control>
+				<control type="image" id="83">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/576p.png</texture>
+					<visible>substring(listitem.studio,576p)</visible>
+				</control>				
+				<control type="image" id="83">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/720p.png</texture>
+					<visible>substring(listitem.studio,720p)</visible>
+				</control>
+				<control type="image" id="83">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/1080p.png</texture>
+					<visible>substring(listitem.studio,1080p)</visible>
+				</control>
+				<control type="image" id="83">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/480i.png</texture>
+					<visible>substring(listitem.studio,480i)</visible>
+				</control>
+				<control type="image" id="83">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/576i.png</texture>
+					<visible>substring(listitem.studio,576i)</visible>
+				</control>				
+				<control type="image" id="83">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/720i.png</texture>
+					<visible>substring(listitem.studio,720i)</visible>
+				</control>
+				<control type="image" id="83">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/1080i.png</texture>
+					<visible>substring(listitem.studio,1080i)</visible>
+				</control>				
+			</control>
+			<control type="group">
+				<posx>1115</posx>
+				<control type="image">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/defaultsound.png</texture>
+					<visible>!Control.IsVisible(84) + !Skin.HasSetting(nodefaultflags)</visible>
+				</control>					
+				<control type="image" id="84">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/dts.png</texture>
+					<visible>substring(listitem.studio,dts) + !substring(listitem.studio,ac-3)</visible>
+				</control>			
+				<control type="image" id="84">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/dolbydigital.png</texture>
+					<visible>substring(listitem.studio,ac-3)</visible>
+				</control>	
+			</control>
+			<control type="group">
+				<posx>170</posx>
+				<control type="image">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/defaultsource.png</texture>
+					<visible>!Control.IsVisible(82) + !Skin.HasSetting(nodefaultflags)</visible>
+				</control>				
+				<control type="image" id="82">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/hddvd.png</texture>
+					<visible>substring(listitem.filename,hddvd)</visible>
+				</control>
+				<control type="image" id="82">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/bluray.png</texture>
+					<visible>substring(listitem.filename,bluray)</visible>
+				</control>
+				<control type="image" id="82">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/dvd.png</texture>
+					<visible>substring(listitem.filename,sddvd)</visible>
+				</control>
+				<control type="image" id="82">
+					<include>Furniture_PanelMediaFlagsVars</include>
+					<texture>flags/hdtv.png</texture>
+					<visible>substring(listitem.filename,hdtv)</visible>
+				</control>				
+			</control>
+		</control>		
 	</include>
 
 </includes>
