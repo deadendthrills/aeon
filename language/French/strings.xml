@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <!-- $Revision: 204$ -->
+<!-- Date of translation : 2009-04-25 (00h06 UMT) -->
 <!--  strings 31000 thru 31999 reserved for skins  -->
 
  <strings>
-	<string id="31000">0.91 (STARK)</string>
-	<string id="31001"></string>
+	<string id="31000">0.9 (STARK)</string>
+	<string id="31001">N/A</string>
 	<string id="31002">SILENCE</string>
-	<string id="31003">PAS D'OPTION METEO DANS CETTE VERSION</string>
-	<string id="31004">REINITIALISER BACKDROP</string>
+	<string id="31003">PAS D'OPTION MÉTÉO DANS CETTE VERSION</string>
+	<string id="31004">RÉINITIALISER [CR] BACKDROP</string>
 	<string id="31005">OBJETS</string>
 	<string id="31006">LECTURE EN COURS</string>
 	<string id="31007">PAUSE</string>
@@ -200,9 +201,8 @@
   
 <!-- Aeon Advanced options -->
   
-	<string id="31255">RACCOURCIS DU SOUS-MENU MUSIQUE</string>
-	<string id="31256">RACCOURCIS DU SOUS-MENU SÉRIES TV</string>
-	<string id="31257">RACCOURCIS DU SOUS-MENU FILMS</string>
+	<string id="31252">EFFET GRADIENT POUR LE MENU D'ACCUEIL</string>
+	<string id="31253">LIER LE RACCOURCI JEUX AU LANCEUR DE PLUGINS</string>
 	<string id="31258">AFFICHER LES NOTES (IMDB, ETC.) SUR LA PAGE INFO DES FILMS</string>
 	<string id="31259">ICONS PAR DÉFAUT POUR LES MEDIA FLAGS (OFF POUR ESPACES VIDES)</string>
 	<string id="31260">AFFICHER PANNEAU HEURE</string>
@@ -285,7 +285,7 @@
 <!--  Fullscreen info panel  -->
 
 	<string id="31400">AUCUN POSTER?[CR][CR]VÉRIFIEZ QUE VOUS DISPOSEZ D'UN FICHIER IMAGE "BIG"[CR]AU COTÉ DE VOTRE FICHIER FILM ET QUE[CR]LA NOMENCLATURE SOIT RESPECTÉE[CR](BARBARELLA.MKV-BIG.PNG)[CR][CR]CONSULTEZ LE MANUEL AEON POUR PLUS DE DÉTAILS</string>
-	<string id="31401">ÉCRIS PAR</string>
+	<string id="31401">ÉCRIT PAR</string>
 	<string id="31402">RÉALISÉ PAR</string>
 	<string id="31403">ÉPISODES:</string>
 	<string id="31404">STUDIO:</string>
@@ -452,7 +452,7 @@
 	
 <!-- Submenu / Objects -->
 
-	<string id="31920">RÉCENT</string>
+	<string id="31920">RÉCENTS</string>
 	<string id="31921">TITRES</string>
 	<string id="31922">GENRES</string>
 	<string id="31923">ANNÉES</string>
@@ -466,5 +466,5 @@
 	<string id="31931">VIDÉOS</string>
 	<string id="31932">FICHIERS</string>
 	<string id="31933">SÉRIES</string>
-	
+
 </strings>
