@@ -18,8 +18,8 @@
 	<include name="MultiplexInfoLabel">
 		<posx>0</posx>
 		<posy>0</posy>
-		<include condition="!Skin.HasSetting(multiplexnoplot)">MultiplexPlotWidth</include>		
-		<include condition="Skin.HasSetting(multiplexnoplot)">MultiplexNoPlotWidth</include>
+		<include condition="![Skin.HasSetting(multiplexbigthumb) | Skin.HasSetting(multiplexfanart)]">MultiplexPlotWidth</include>		
+		<include condition="Skin.HasSetting(multiplexbigthumb) | Skin.HasSetting(multiplexfanart)">MultiplexNoPlotWidth</include>
 		<height>13</height>
 		<font>Font_MultiplexInfoLabel</font>	
 		<textcolor>abFFFFFF</textcolor>
@@ -28,8 +28,8 @@
 	<include name="MultiplexInfoValue">
 		<posx>0</posx>	
 		<posy>17</posy>
-		<include condition="!Skin.HasSetting(multiplexnoplot)">MultiplexPlotWidth</include>		
-		<include condition="Skin.HasSetting(multiplexnoplot)">MultiplexNoPlotWidth</include>
+		<include condition="![Skin.HasSetting(multiplexbigthumb) | Skin.HasSetting(multiplexfanart)]">MultiplexPlotWidth</include>		
+		<include condition="Skin.HasSetting(multiplexbigthumb) | Skin.HasSetting(multiplexfanart)">MultiplexNoPlotWidth</include>
 		<height>13</height>
 		<font>Font_MultiplexInfoValue</font>
 		<textcolor>FFFFFFFF</textcolor>		
