@@ -250,7 +250,7 @@
 				<animation effect="fade" start="0" end="100" time="200">Visible</animation>		
 			</control>			
 			
-			<control type="label" id="108">
+			<control type="label">
 				<posx>20</posx>
 				<posy>644</posy>
 				<font>Font_StripshowLabel</font>
@@ -260,49 +260,49 @@
 				<animation effect="fade" delay="600" start="0" end="100" time="200">Visible</animation>		
 			</control>
 			
-			<control type="label" id="108">
+			<control type="label">
 				<width>400</width>
 				<posx>1260</posx>
 				<posy>634</posy>
 				<align>right</align>
 				<font>Font_StripshowDetail</font>
-				<label fallback="DATE INFO UNAVAILABLE">$INFO[ListItem.PictureDateTime,TAKEN: ,]</label>
+				<label fallback="31441">$INFO[ListItem.PictureDateTime,TAKEN: ,]</label>
 				<visible>Control.IsVisible(105)</visible>
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
 				<animation effect="fade" delay="600" start="0" end="100" time="200">Visible</animation>
 			</control>
 			
-			<control type="label" id="108">
+			<control type="label">
 				<width>400</width>
 				<posx>1260</posx>
 				<posy>653</posy>
 				<align>right</align>
 				<font>Font_StripshowDetail</font>
-				<label fallback="DATE MODIFIED INFO UNAVAILABLE">$INFO[ListItem.Date,MODIFIED: ,]</label>
+				<label fallback="31442">$INFO[ListItem.Date,MODIFIED: ,]</label>
 				<visible>Control.IsVisible(105)</visible>
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
 				<animation effect="fade" delay="600" start="0" end="100" time="200">Visible</animation>
 			</control>			
 
-			<control type="label" id="108">
+			<control type="label">
 				<width>400</width>
 				<posx>1260</posx>
 				<posy>672</posy>
 				<align>right</align>
 				<font>Font_StripshowDetail</font>
-				<label fallback="RESOLUTION INFO UNAVAILABLE">$INFO[ListItem.PictureResolution]</label>
+				<label fallback="31443">$INFO[ListItem.PictureResolution]</label>
 				<visible>Control.IsVisible(105)</visible>
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
 				<animation effect="fade" delay="600" start="0" end="100" time="200">Visible</animation>
 			</control>		
 			
-			<control type="label" id="108">
+			<control type="label">
 				<width>400</width>
 				<posx>1260</posx>
 				<posy>691</posy>
 				<align>right</align>
 				<font>Font_StripshowDetail</font>
-				<label fallback="FILESIZE INFO UNAVAILABLE">$INFO[ListItem.Size]</label>
+				<label fallback="31444">$INFO[ListItem.Size]</label>
 				<visible>Control.IsVisible(105)</visible>
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
 				<animation effect="fade" delay="600" start="0" end="100" time="200">Visible</animation>

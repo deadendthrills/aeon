@@ -1,12 +1,48 @@
 <includes>
 
+	<include name="MultiplexMovieVars">
+		<posx>40</posx>
+		<posy>534</posy>
+		<width>1177</width>
+		<height>169</height>	
+	</include>
+	
+	<include name="MultiplexTVVars">
+		<posx>47</posx>
+		<posy>534</posy>
+		<width>1165</width>
+		<height>169</height>	
+	</include>	
+
 	<include name="MultiplexIconDimensions">
 		<posx>20</posx>
 		<posy>20</posy>
 		<width>89</width>
 		<height>129</height>	
 	</include>
+	
+	<include name="MultiplexIconDimensionsTV">
+		<posx>20</posx>
+		<posy>20</posy>
+		<width>229</width>
+		<height>129</height>	
+	</include>
 
+	<include name="MultiplexSeasonOverlay">
+		<posx>20</posx>
+		<posy>119</posy>
+		<width>229</width>
+		<height>30</height>	
+	</include>	
+
+	<include name="MultiplexTVLabel">
+		<posx>60</posx>
+		<posy>2</posy>
+		<height>85</height>
+		<aligny>center</aligny>
+		<font>Font_MultiplexTVLabel</font>
+	</include>
+	
 	<include name="MultiplexPlotWidth">
 		<width>305</width>	
 	</include>
@@ -18,8 +54,8 @@
 	<include name="MultiplexInfoLabel">
 		<posx>0</posx>
 		<posy>0</posy>
-		<include condition="![Skin.HasSetting(multiplexbigthumb) | Skin.HasSetting(multiplexfanart)]">MultiplexPlotWidth</include>		
-		<include condition="Skin.HasSetting(multiplexbigthumb) | Skin.HasSetting(multiplexfanart)">MultiplexNoPlotWidth</include>
+		<include condition="![Skin.HasSetting(multiplexbigthumb) | Skin.HasSetting(multiplexfanart)] + !Skin.HasSetting(videotv)">MultiplexPlotWidth</include>		
+		<include condition="Skin.HasSetting(multiplexbigthumb) | Skin.HasSetting(multiplexfanart) | Skin.HasSetting(videotv)">MultiplexNoPlotWidth</include>
 		<height>13</height>
 		<font>Font_MultiplexInfoLabel</font>	
 		<textcolor>abFFFFFF</textcolor>
@@ -28,15 +64,15 @@
 	<include name="MultiplexInfoValue">
 		<posx>0</posx>	
 		<posy>17</posy>
-		<include condition="![Skin.HasSetting(multiplexbigthumb) | Skin.HasSetting(multiplexfanart)]">MultiplexPlotWidth</include>		
-		<include condition="Skin.HasSetting(multiplexbigthumb) | Skin.HasSetting(multiplexfanart)">MultiplexNoPlotWidth</include>
+		<include condition="![Skin.HasSetting(multiplexbigthumb) | Skin.HasSetting(multiplexfanart)] + !Skin.HasSetting(videotv)">MultiplexPlotWidth</include>		
+		<include condition="Skin.HasSetting(multiplexbigthumb) | Skin.HasSetting(multiplexfanart) | Skin.HasSetting(videotv)">MultiplexNoPlotWidth</include>
 		<height>13</height>
 		<font>Font_MultiplexInfoValue</font>
 		<textcolor>FFFFFFFF</textcolor>		
 	</include>	
 	
 	<include name="MultiplexInfoAutoUp">
-		<onup>900</onup>
+		<onup>7000</onup>
 	</include>
 	
 	<include name="MultiplexInfoTriggerUp">
@@ -54,7 +90,7 @@
             <texturenofocus>-</texturenofocus>
             <onleft>52</onleft>
             <onright>52</onright>
-            <onup>900</onup>
+            <onup>7000</onup>
             <ondown>52</ondown>
         </control>
 	
@@ -63,7 +99,7 @@
 			<posy>65</posy>
 			<width>1280</width>
 			<height>381</height>
-			<visible>Control.IsVisible(52) + !Control.HasFocus(197) + [Control.IsVisible(109) | Control.HasFocus(110) | Skin.HasSetting(multiplexinfoon) | [ControlGroup(7000).HasFocus() + Skin.HasSetting(multiplexinfotrigger)]]</visible>
+			<visible>Container.Content(movies) + Control.IsVisible(52) + !Control.HasFocus(197) + [Control.IsVisible(109) | Control.HasFocus(110) | Skin.HasSetting(multiplexinfoon) | [ControlGroup(7000).HasFocus() + Skin.HasSetting(multiplexinfotrigger)]]</visible>
 			<animation effect="fade"  start="0" end="100" time="400" delay="3000" condition="!Skin.HasSetting(multiplexinfoon)">WindowOpen</animation>			
 			<animation effect="fade" end="0" time="200">WindowClose</animation>
 			<animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>			
@@ -93,7 +129,7 @@
 					
 					<control type="label">
 						<include>MultiplexInfoValue</include>				
-						<label>[UPPERCASE]$INFO[Container(52).ListItem.Director][/UPPERCASE]</label>
+						<label fallback="31425">$INFO[Container(52).ListItem.Director]</label>
 					</control>			
 				</control>
 				
@@ -106,7 +142,7 @@
 					
 					<control type="label">
 						<include>MultiplexInfoValue</include>				
-						<label>[UPPERCASE]$INFO[Container(52).ListItem.Writer][/UPPERCASE]</label>
+						<label fallback="31425">$INFO[Container(52).ListItem.Writer]</label>
 					</control>			
 				</control>
 
@@ -119,7 +155,7 @@
 					
 					<control type="label">
 						<include>MultiplexInfoValue</include>				
-						<label>[UPPERCASE]$INFO[Container(52).ListItem.Year][/UPPERCASE]</label>
+						<label fallback="31425">$INFO[Container(52).ListItem.Year]</label>
 					</control>			
 				</control>
 
@@ -132,7 +168,7 @@
 					
 					<control type="label">
 						<include>MultiplexInfoValue</include>				
-						<label>[UPPERCASE]$INFO[Container(52).ListItem.Duration][/UPPERCASE]</label>
+						<label fallback="31425">$INFO[Container(52).ListItem.Duration]</label>
 					</control>			
 				</control>
 
@@ -145,7 +181,7 @@
 					
 					<control type="label">
 						<include>MultiplexInfoValue</include>				
-						<label>[UPPERCASE]$INFO[Container(52).ListItem.Genre][/UPPERCASE]</label>
+						<label fallback="31425">$INFO[Container(52).ListItem.Genre]</label>
 					</control>			
 				</control>
 
@@ -158,7 +194,7 @@
 					
 					<control type="label">
 						<include>MultiplexInfoValue</include>				
-						<label>[UPPERCASE]$INFO[Container(52).ListItem.MPAA][/UPPERCASE]</label>
+						<label fallback="31425">$INFO[Container(52).ListItem.MPAA]</label>
 					</control>			
 				</control>
 
@@ -171,7 +207,7 @@
 					
 					<control type="label">
 						<include>MultiplexInfoValue</include>				
-						<label>[UPPERCASE]$INFO[Container(52).ListItem.RatingAndVotes][/UPPERCASE]</label>
+						<label fallback="31425">$INFO[Container(52).ListItem.RatingAndVotes]</label>
 					</control>			
 				</control>
 			</control>
@@ -297,13 +333,262 @@
 				</control>			
 			</control>					
 		</control>
+		
+		<control type="group">
+			<posx>0</posx>
+			<posy>65</posy>
+			<width>1280</width>
+			<height>453</height>
+			<visible>Skin.HasSetting(videotv) + Control.IsVisible(52) + !Control.HasFocus(197) + [Control.IsVisible(109) | Control.HasFocus(110) | Skin.HasSetting(multiplextvinfoon) | [ControlGroup(7000).HasFocus() + Skin.HasSetting(multiplextvinfotrigger)]]</visible>
+			<animation effect="fade"  start="0" end="100" time="400" delay="3000" condition="!Skin.HasSetting(multiplextvinfoon)">WindowOpen</animation>			
+			<animation effect="fade" end="0" time="200">WindowClose</animation>
+			<animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>			
+			<control type="image">
+				<width>1280</width>
+				<height>453</height>
+				<texture>multiplex/multiplex_full_infotv.png</texture>
+			</control>
+
+			<control type="group">
+				<posx>60</posx>
+				<posy>21</posy>
+				<visible>Container.Content(episodes)</visible>
+				<control type="group">
+					<posy>72</posy>
+					<control type="label">
+						<include>MultiplexInfoLabel</include>
+						<label>$LOCALIZE[31402]:</label>
+					</control>
+					
+					<control type="label">
+						<include>MultiplexInfoValue</include>				
+						<label fallback="31425">$INFO[Container(52).ListItem.Director]</label>
+					</control>			
+				</control>
+				
+				<control type="group">
+					<posy>122</posy>
+					<control type="label">
+						<include>MultiplexInfoLabel</include>
+						<label>$LOCALIZE[31401]:</label>
+					</control>
+					
+					<control type="label">
+						<include>MultiplexInfoValue</include>				
+						<label fallback="31425">$INFO[Container(52).ListItem.Writer]</label>
+					</control>			
+				</control>
+
+				<control type="group">
+					<posy>172</posy>
+					<control type="label">
+						<include>MultiplexInfoLabel</include>
+						<label>$LOCALIZE[31407]:</label>
+					</control>
+					
+					<control type="label">
+						<include>MultiplexInfoValue</include>				
+						<label fallback="31425">$INFO[Container(52).ListItem.Date]</label>
+					</control>			
+				</control>
+
+			</control>
+			
+			<control type="group">
+				<posx>60</posx>
+				<posy>21</posy>
+				<visible>Container.Content(tvshows)</visible>
+				<control type="group">
+					<posy>72</posy>
+					<control type="label">
+						<include>MultiplexInfoLabel</include>
+						<label>$LOCALIZE[31438]:</label>
+					</control>
+					
+					<control type="label">
+						<include>MultiplexInfoValue</include>				
+						<label fallback="31425">$INFO[Container(52).ListItem.Genre]</label>
+					</control>			
+				</control>
+				
+				<control type="group">
+					<posy>122</posy>
+					<control type="label">
+						<include>MultiplexInfoLabel</include>
+						<label>$LOCALIZE[31406]:</label>
+					</control>
+					
+					<control type="label">
+						<include>MultiplexInfoValue</include>				
+						<label fallback="31425">$INFO[Container(52).ListItem.Episode]</label>
+					</control>			
+				</control>
+
+				<control type="group">
+					<posy>172</posy>
+					<control type="label">
+						<include>MultiplexInfoLabel</include>
+						<label>$LOCALIZE[31407]:</label>
+					</control>
+					
+					<control type="label">
+						<include>MultiplexInfoValue</include>				
+						<label fallback="31425">$INFO[Container(52).ListItem.Date]</label>
+					</control>			
+				</control>
+
+			</control>
+
+			<control type="group">
+				<posx>60</posx>
+				<posy>21</posy>
+				<visible>Container.Content(seasons)</visible>
+				<control type="group">
+					<posy>72</posy>
+					<control type="label">
+						<include>MultiplexInfoLabel</include>
+						<label>31403</label>
+					</control>
+					
+					<control type="label">
+						<include>MultiplexInfoValue</include>				
+						<label fallback="31425">$INFO[Container(52).ListItem.Episode]</label>
+					</control>			
+				</control>
+				
+				<control type="group">
+					<posy>122</posy>
+					<control type="label">
+						<include>MultiplexInfoLabel</include>
+						<label>$LOCALIZE[31439]:</label>
+					</control>
+					
+					<control type="label">
+						<include>MultiplexInfoValue</include>				
+						<label fallback="31425">$INFO[Container(52).ListItem.Property(WatchedEpisodes)]</label>
+					</control>			
+				</control>
+
+				<control type="group">
+					<posy>172</posy>
+					<control type="label">
+						<include>MultiplexInfoLabel</include>
+						<label>$LOCALIZE[31440]:</label>
+					</control>
+					
+					<control type="label">
+						<include>MultiplexInfoValue</include>				
+						<label fallback="31425">$INFO[Container(52).ListItem.Property(UnwatchedEpisodes)]</label>
+					</control>			
+				</control>
+
+			</control>				
+			
+			<control type="textbox">
+				<posx>60</posx>
+				<posy>245</posy>
+				<width>570</width>
+				<height>197</height>
+				<font>Font_MultiplexPlot</font>
+				<info fallback="31414">Container(52).ListItem.Plot</info>
+				<textcolor>d0FFFFFF</textcolor>
+				<visible>!Container.Content(seasons)</visible>
+			</control>
+			
+			<control type="textbox">
+				<posx>60</posx>
+				<posy>245</posy>
+				<width>570</width>
+				<height>197</height>
+				<font>Font_MultiplexPlot</font>
+				<info fallback="31414">Container(52).ShowPlot</info>
+				<textcolor>d0FFFFFF</textcolor>
+				<visible>Container.Content(seasons)</visible>
+			</control>			
+			
+			<control type="group">
+				<posx>670</posx>
+				<posy>97</posy>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>545</width>
+					<height>342</height>
+					<texture>common/black.png</texture>
+					<colordiffuse>d0FFFFFF</colordiffuse>
+				</control>				
+				<control type="largeimage">
+					<posx>2</posx>
+					<posy>2</posy>
+					<width>541</width>
+					<height>338</height>
+					<fadetime>400</fadetime>
+					<aspectratio>scale</aspectratio>
+					<texture>$INFO[Container(52).listitem.property(fanart_image)]</texture>
+				</control>
+				<control type="largeimage">
+					<posx>2</posx>
+					<posy>2</posy>
+					<width>541</width>
+					<height>338</height>
+					<fadetime>400</fadetime>
+					<aspectratio>scale</aspectratio>
+					<texture>$INFO[Fanart.Image]</texture>
+				</control>					
+			</control>
+			
+			<control type="group">
+				<control type="label">
+					<width>300</width>
+					<include>MultiplexTVLabel</include>
+					<visible>Container.Content(seasons)</visible>
+					<label>$INFO[Container(52).ListItem.Label]</label>					
+				</control>
+				
+				<control type="label">
+					<width>800</width>
+					<include>MultiplexTVLabel</include>
+					<visible>Container.Content(tvshows)</visible>
+					<label>$INFO[Container(52).ListItem.Label]</label>					
+				</control>
+
+				<control type="label">
+					<width>1000</width>
+					<include>MultiplexTVLabel</include>
+					<visible>Container.Content(episodes)</visible>
+					<label>$INFO[Container(52).ListItem.Season].$INFO[Container(52).ListItem.Episode] $INFO[Container(52).ListItem.Title]</label>					
+				</control>				
+				
+				<control type="label">
+					<posx>1216</posx>
+					<posy>2</posy>
+					<width>550</width>
+					<height>85</height>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>Font_MultiplexTVLabel</font>
+					<label>$INFO[Container(52).ListItem.TVShowTitle]</label>
+					<visible>Container.Content(seasons)</visible>
+				</control>			
+				
+				<control type="image">
+					<posx>0</posx>
+					<posy>1</posy>
+					<width>1280</width>
+					<height>35</height>
+					<texture>multiplex/multiplex_gradienttv.png</texture>
+					<visible>Control.IsVisible(52)</visible>
+				</control>
+			</control>	
+			
+		</control>		
 	
 		<control type="group">
 			<posx>0</posx>
 			<posy>446</posy>
 			<width>1280</width>
 			<height>253</height>
-			<visible>Control.IsVisible(52)</visible>
+			<visible>Container.Content(movies) + Control.IsVisible(52)</visible>
 			<include>Animation_HideMultiplex</include>
 
 			<control type="image" id="304">
@@ -346,26 +631,73 @@
 			</control>				
 		</control>
 		
+		<control type="group">
+			<posx>0</posx>
+			<posy>518</posy>
+			<width>1280</width>
+			<height>202</height>
+			<visible>Skin.HasSetting(videotv) + Control.IsVisible(52)</visible>
+			<include>Animation_HideMultiplex</include>
+
+			<control type="image" id="304">
+				<width>1280</width>
+				<height>202</height>
+				<texture>multiplex/multiplex_full_basetv.png</texture>
+			</control>
+			
+			<control type="image">
+				<posx>63</posx>
+				<posy>33</posy>
+				<width>1154</width>
+				<height>136</height>
+				<texture>multiplex/multiplex_frame.png</texture>
+				<animation effect="slide" start="0,0" end="0,-15" time="400" easing="inout" tween="cubic" condition="Control.HasFocus(60)">Conditional</animation>
+				<visible>!Control.IsVisible(775)</visible>
+			</control>
+			
+			<control type="image">
+				<posx>20</posx>
+				<posy>-10</posy>
+				<width>19</width>
+				<height>221</height>
+				<texture flipx="true">multiplex/multiplex_arrow.png</texture>
+				<visible>Control.IsVisible(52)</visible>
+				<animation effect="slide" start="-100" end="0" delay="800" time="400" easing="out" tween="cubic">WindowOpen</animation>
+				<visible>!Control.IsVisible(105)</visible>
+				<include>Animation_CommonFade</include>
+			</control>
+			
+			<control type="image">
+				<posx>1241</posx>
+				<posy>-10</posy>
+				<width>19</width>
+				<height>221</height>
+				<texture>multiplex/multiplex_arrow.png</texture>
+				<visible>Control.IsVisible(52)</visible>
+				<animation effect="slide" start="100" end="0" delay="800" time="400" easing="out" tween="cubic">WindowOpen</animation>
+				<visible>!Control.IsVisible(105)</visible>
+				<include>Animation_CommonFade</include>
+			</control>				
+		</control>		
+		
 		<include>Furniture_MultiplexMediaFlags</include>
 	
 		<control type="panel" id="52">
 			<viewtype label="31757">icon</viewtype>
-			<posx>40</posx>
-			<posy>534</posy>
-			<width>1177</width>
-			<height>169</height>
+			<include condition="Skin.HasSetting(videomovies)">MultiplexMovieVars</include>
+			<include condition="Skin.HasSetting(videotv)">MultiplexTVVars</include>			
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>0</scrolltime>
 			<onleft>52</onleft>
 			<onright>52</onright>
-			<include condition="!Skin.HasSetting(multiplexinfotrigger)">MultiplexInfoAutoUp</include>
-			<include condition="Skin.HasSetting(multiplexinfotrigger)">MultiplexInfoTriggerUp</include>
+			<include condition="[Skin.HasSetting(videomovies) + !Skin.HasSetting(multiplexinfotrigger)] | [Skin.HasSetting(videotv) + !Skin.HasSetting(multiplextvinfotrigger)]">MultiplexInfoAutoUp</include>
+			<include condition="[Skin.HasSetting(videomovies) + Skin.HasSetting(multiplexinfotrigger)] | [Skin.HasSetting(videotv) + Skin.HasSetting(multiplextvinfotrigger)]">MultiplexInfoTriggerUp</include>
 			<ondown>60</ondown>
 			<orientation>horizontal</orientation>
 			<visible>Window.IsActive(25)</visible>
-			<include>Animation_HideMultiplex</include>			
+			<include>Animation_HideMultiplex</include>
 			<animation effect="slide" start="0,0" end="0,-15" time="400" easing="inout" tween="cubic" condition="Control.HasFocus(60) | Control.HasFocus(197)">Conditional</animation>
-			<itemlayout width="89" height="129">
+			<itemlayout width="89" height="129" condition="Container.Content(movies)">
 				<control type="image">
 					<include>MultiplexIconDimensions</include>
 					<texture>common/black.png</texture>
@@ -375,7 +707,6 @@
 					<texture>defaultvideobig.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<info>ListItem.Icon</info>
-					<visible>Window.IsActive(25)</visible>
 				</control>
 				<control type="image">
 					<include>MultiplexIconDimensions</include>
@@ -388,7 +719,7 @@
 					<colordiffuse>58FFFFFF</colordiffuse>
 				</control>					
 			</itemlayout>
-			<focusedlayout width="89" height="129">
+			<focusedlayout width="89" height="129" condition="Container.Content(movies)">
 				<control type="image">
 					<include>MultiplexIconDimensions</include>
 					<texture>common/black.png</texture>
@@ -399,7 +730,6 @@
 					<texture>defaultvideobig.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<info>ListItem.Icon</info>
-					<visible>Window.IsActive(25)</visible>
 					<animation effect="zoom" center="45,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
 				</control>
 				<control type="image">
@@ -410,6 +740,116 @@
 					<visible>!Container(52).Column(12)</visible>					
 				</control>			
 			</focusedlayout>
+			
+			<itemlayout width="229" height="129" condition="Skin.HasSetting(videotv)">
+				<control type="image">
+					<include>MultiplexIconDimensionsTV</include>
+					<texture>common/black.png</texture>
+				</control>				
+				<control type="image">
+					<include>MultiplexIconDimensionsTV</include>
+					<texture>defaultvideobig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<info>ListItem.Icon</info>
+				</control>
+				<control type="image">
+					<include>MultiplexSeasonOverlay</include>
+					<texture>common/black.png</texture>
+					<colordiffuse>b6FFFFFF</colordiffuse>	
+					<visible>Container.Content(seasons)</visible>					
+				</control>
+				<control type="label">
+					<posx>135</posx>
+					<posy>119</posy>
+					<width>229</width>
+					<height>30</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Font_MultiplexSeasonLabel</font>
+					<label>$INFO[ListItem.Label]</label>
+					<visible>Container.Content(seasons)</visible>					
+				</control>		
+				<control type="image">
+					<include>MultiplexSeasonOverlay</include>
+					<texture>multiplex/multiplex_seasongradient.png</texture>			
+					<visible>Container.Content(seasons)</visible>					
+				</control>							
+				<control type="image">
+					<include>MultiplexIconDimensionsTV</include>
+					<bordertexture border="-53">multiplex/multiplex_iconframetv.png</bordertexture>
+					<texture>-</texture>
+				</control>			
+				<control type="image">
+					<include>MultiplexIconDimensionsTV</include>
+					<texture>common/black.png</texture>
+					<colordiffuse>58FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>109</posx>
+					<posy>101</posy>
+					<width>52</width>
+					<height>48</height>
+					<info>ListItem.Overlay</info>
+					<visible>!Skin.HasSetting(nooverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<include>Animation_VisibleChange200</include>
+				</control>
+			</itemlayout>
+			<focusedlayout width="229" height="129" condition="Skin.HasSetting(videotv)">
+				<control type="image">
+					<include>MultiplexIconDimensionsTV</include>
+					<texture>common/black.png</texture>
+					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
+				</control>			
+				<control type="image">
+					<include>MultiplexIconDimensionsTV</include>
+					<texture>defaultvideobig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<info>ListItem.Icon</info>
+					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
+				</control>
+				<control type="image">
+					<include>MultiplexSeasonOverlay</include>
+					<texture>common/black.png</texture>
+					<colordiffuse>b6FFFFFF</colordiffuse>
+					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>						
+					<visible>Container.Content(seasons)</visible>					
+				</control>
+				<control type="label">
+					<posx>135</posx>
+					<posy>119</posy>
+					<width>229</width>
+					<height>30</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Font_MultiplexSeasonLabel</font>
+					<label>$INFO[ListItem.Label]</label>
+					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>						
+					<visible>Container.Content(seasons)</visible>					
+				</control>
+				<control type="image">
+					<include>MultiplexSeasonOverlay</include>
+					<texture>multiplex/multiplex_seasongradient.png</texture>
+					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>						
+					<visible>Container.Content(seasons)</visible>					
+				</control>				
+				<control type="image">
+					<include>MultiplexIconDimensionsTV</include>
+					<bordertexture border="-30">multiplex/multiplex_iconframetv.png</bordertexture>
+					<texture>common/blank.png</texture>
+					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
+					<visible>!Container(52).Column(4)</visible>					
+				</control>
+				<control type="image">
+					<posx>109</posx>
+					<posy>101</posy>
+					<width>52</width>
+					<height>48</height>
+					<info>ListItem.Overlay</info>
+					<visible>!Skin.HasSetting(nooverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<include>Animation_VisibleChange200</include>
+					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
+				</control>				
+			</focusedlayout>			
 		</control>
 
 		<control type="group">
@@ -422,46 +862,65 @@
 				<texture>common/blank.png</texture>
 				<include>Animation_HideMultiplex</include>				
 				<animation effect="zoom" center="1173,65" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Visible</animation>
-				<visible>Container(52).Column(12) + Control.HasFocus(52) + !Container(52).OnNext + !Control.IsVisible(105)</visible>
+				<visible>Container.Content(movies) + Container(52).Column(12) + Control.HasFocus(52) + !Container(52).OnNext + !Control.IsVisible(105)</visible>
+				<animation effect="slide" start="0,0" end="0,-15" time="400" easing="inout" tween="cubic" condition="Control.HasFocus(60) | Control.HasFocus(197)">Conditional</animation>				
+			</control>
+
+		</control>
+		
+		<control type="group">
+			<posy>556</posy>
+			<control type="image">
+				<posx>986</posx>
+				<width>229</width>
+				<height>129</height>	
+				<bordertexture border="-30">multiplex/multiplex_iconframetv.png</bordertexture>
+				<texture>common/blank.png</texture>
+				<include>Animation_HideMultiplex</include>				
+				<animation effect="zoom" center="1097,65" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Visible</animation>
+				<visible>Skin.HasSetting(videotv) + Container(52).Column(4) + Control.HasFocus(52) + !Container(52).OnNext + !Control.IsVisible(105)</visible>
 				<animation effect="slide" start="0,0" end="0,-15" time="400" easing="inout" tween="cubic" condition="Control.HasFocus(60) | Control.HasFocus(197)">Conditional</animation>				
 			</control>
 
 		</control>
 
-		<control type="label">
-			<posx>275</posx>
-			<posy>447</posy>
-			<width>730</width>
-			<height>71</height>
-			<aligny>center</aligny>
-			<align>center</align>
-			<font>Font_MultiplexMainLabel</font>
-			<label>$INFO[Container(52).ListItem.Label]</label>
-			<visible>!Skin.HasSetting(nomediaflags)</visible>
-			<include>Animation_HideMultiplex</include>			
-		</control>
-		
-		<control type="label">
-			<posx>50</posx>
-			<posy>447</posy>
-			<width>1180</width>
-			<height>71</height>
-			<aligny>center</aligny>
-			<align>center</align>
-			<font>Font_MultiplexMainLabel</font>
-			<label>$INFO[Container(52).ListItem.Label]</label>
-			<visible>Skin.HasSetting(nomediaflags)</visible>
-			<include>Animation_HideMultiplex</include>			
-		</control>		
-		
-		<control type="image">
-			<posx>0</posx>
-			<posy>462</posy>
-			<width>1280</width>
-			<height>56</height>
-			<texture>multiplex/multiplex_gradient.png</texture>
-			<include>Animation_HideMultiplex</include>
-			<visible>Control.IsVisible(52)</visible>
+		<control type="group">
+			<visible>Container.Content(movies)</visible>
+			<control type="label">
+				<posx>275</posx>
+				<posy>447</posy>
+				<width>730</width>
+				<height>71</height>
+				<aligny>center</aligny>
+				<align>center</align>
+				<font>Font_MultiplexMainLabel</font>
+				<label>$INFO[Container(52).ListItem.Label]</label>
+				<visible>!Skin.HasSetting(nomediaflags)</visible>
+				<include>Animation_HideMultiplex</include>			
+			</control>
+			
+			<control type="label">
+				<posx>50</posx>
+				<posy>447</posy>
+				<width>1180</width>
+				<height>71</height>
+				<aligny>center</aligny>
+				<align>center</align>
+				<font>Font_MultiplexMainLabel</font>
+				<label>$INFO[Container(52).ListItem.Label]</label>
+				<visible>Skin.HasSetting(nomediaflags)</visible>
+				<include>Animation_HideMultiplex</include>			
+			</control>		
+			
+			<control type="image">
+				<posx>0</posx>
+				<posy>462</posy>
+				<width>1280</width>
+				<height>56</height>
+				<texture>multiplex/multiplex_gradient.png</texture>
+				<include>Animation_HideMultiplex</include>
+				<visible>Control.IsVisible(52)</visible>
+			</control>
 		</control>
 		
 		<control type="scrollbar" id="60">

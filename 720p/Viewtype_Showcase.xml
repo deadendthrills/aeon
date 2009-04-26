@@ -2661,7 +2661,7 @@
                 <scrolltime>250</scrolltime>
 				<include>Animation_HideShowcase</include>
                 <focusposition>3</focusposition>
-				<visible>!Container.Content(episodes)</visible>
+				<visible>![Window.IsActive(25) + Skin.HasSetting(videotv)]</visible>
                 <itemlayout height="350" width="196" condition="Window.IsActive(28) | Window.IsActive(24) | [Window.IsActive(25) + !Container.Content(episodes)] | Window.IsActive(1)">
                     <control type="image">
                         <include>MovieShowcaseThumbMain</include>

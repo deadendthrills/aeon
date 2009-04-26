@@ -337,6 +337,18 @@
       <filename>aeon_settings.ttf</filename>
       <size>55</size>
     </font>
+	
+    <font>
+      <name>Font_MultiplexTVLabel</name>
+      <filename>aeon_settings.ttf</filename>
+      <size>55</size>
+    </font>	
+	
+    <font>
+      <name>Font_MultiplexSeasonLabel</name>
+      <filename>aeon_settings.ttf</filename>
+      <size>26</size>
+    </font>		
 
     <font>
       <name>Font_MultiplexPlot</name>
@@ -347,13 +359,13 @@
 	
     <font>
       <name>Font_MultiplexInfoLabel</name>
-      <filename>aeon_sublist_cy.ttf</filename>
+      <filename>aeon_multiplex.ttf</filename>
       <size>16</size>
     </font>	
 	
     <font>
       <name>Font_MultiplexInfoValue</name>
-      <filename>aeon_sublist_cy.ttf</filename>
+      <filename>aeon_multiplex.ttf</filename>
       <size>17</size>
     </font>	
 	

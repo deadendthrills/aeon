@@ -507,4 +507,48 @@
 
 	</include>
 
+<!-- Media window backdrops -->
+
+	<include name="MediaBackdropsMovies">
+		<control type="multiimage">
+			<include>Background_SingleImage</include>
+			<imagepath>backdrops/default_movies</imagepath>
+			<info>Skin.String(CustomMovies)</info>
+			<visible>!Skin.String(CustomMoviesFolder)</visible>
+			<visible>![Skin.HasSetting(nomoviefanart] | IsEmpty(listitem.property(fanart))]</visible> 		
+		</control>
+
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<info>Skin.String(CustomMoviesFolder)</info>
+			<visible>Skin.String(CustomMoviesFolder) + ![Skin.HasSetting(nomoviefanart] | IsEmpty(listitem.property(fanart))]</visible>
+		</control>
+	</include>
+	
+	<include name="MediaBackdropsTV">
+		<control type="multiimage">
+			<include>Background_SingleImage</include>
+			<imagepath>backdrops/default_tvshows</imagepath>
+			<info>Skin.String(CustomTV)</info>
+			<visible>!Skin.String(CustomTVFolder)</visible>
+			<visible>Skin.HasSetting(videotv)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<info>Skin.String(CustomTVFolder)</info>
+			<visible>Skin.String(CustomTVFolder)</visible>
+			<visible>Skin.HasSetting(videotv) + !Control.IsVisible(102)</visible>
+		</control>
+	</include>
+
+	<include name="MediaBackdropsTVFanart">
+		<control type="image" id="102">
+			<include>FullscreenDimensions</include>
+			<visible>[Container.Content(seasons) | Container.Content(episodes)] + !IsEmpty(Fanart.Image) + !Skin.HasSetting(notvfanart)</visible>
+			<animation effect="fade" end="0" time="200">WindowClose</animation>
+			<texture>$INFO[Fanart.Image]</texture>
+		</control>
+	</include>
+	
 </includes>

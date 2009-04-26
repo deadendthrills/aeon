@@ -130,12 +130,6 @@
 				<visible>!Skin.HasSetting(nomovies)</visible>
 				<visible>[Skin.HasSetting(onetouch) + Skin.HasSetting(nosubmenumovies)] | !Skin.HasSetting(onetouch)</visible>
 			</item>
-			<item id="6">
-				<label>31013</label>
-				<onclick>SetFocus(940)</onclick>
-				<visible>!Skin.HasSetting(nomovies)</visible>
-				<visible>Skin.HasSetting(onetouch) + !Skin.HasSetting(nosubmenumovies)</visible>
-			</item>			
 			<item id="7">
 				<description>My Videos</description>
 				<label>31014</label>
@@ -145,12 +139,6 @@
 				<visible>!Skin.HasSetting(notvshows)</visible>
 				<visible>[Skin.HasSetting(onetouch) + Skin.HasSetting(nosubmenutv)] | !Skin.HasSetting(onetouch)</visible>
 			</item>
-			<item id="7">
-				<label>31014</label>
-				<onclick>SetFocus(942)</onclick>
-				<visible>!Skin.HasSetting(notvshows)</visible>
-				<visible>Skin.HasSetting(onetouch) + !Skin.HasSetting(nosubmenutv)</visible>
-			</item>					
 			<item id="8">
 				<label>31015</label>
 				<onclick>XBMC.ActivateWindow(MyVideoFiles)</onclick>

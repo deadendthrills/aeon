@@ -9,39 +9,12 @@
 		<width>0</width>
 		<height>0</height>
 		<texture>-</texture>
-		<visible>!Skin.HasSetting(nomultiplexpopup) + ![Skin.HasSetting(multiplexinfooff) | Skin.HasSetting(multiplexinfotrigger)] + [Control.HasFocus(52) | Control.HasFocus(61) | Control.HasFocus(94) | ControlGroup(7000).HasFocus()] + [!Container(52).OnNext + !Container(52).OnPrevious]</visible>
+		<visible>[Skin.HasSetting(videomovies) + !Skin.HasSetting(nomultiplexpopup) + ![Skin.HasSetting(multiplexinfooff) | Skin.HasSetting(multiplexinfotrigger)] + [Control.HasFocus(52) | Control.HasFocus(61) | Control.HasFocus(94) | ControlGroup(7000).HasFocus()] + [!Container(52).OnNext + !Container(52).OnPrevious]] | [Skin.HasSetting(videotv) + !Skin.HasSetting(nomultiplextvpopup) + ![Skin.HasSetting(multiplextvinfooff) | Skin.HasSetting(multiplextvinfotrigger)] + [Control.HasFocus(52) | Control.HasFocus(61) | Control.HasFocus(94) | ControlGroup(7000).HasFocus()] + [!Container(52).OnNext + !Container(52).OnPrevious]]</visible>
 		<animation effect="fade" start="0" end="100" time="150" delay="3000">Visible</animation>
 	</control>
 	
-	<control type="multiimage">
-		<include>Background_SingleImage</include>
-		<imagepath>backdrops/default_movies</imagepath>
-		<info>Skin.String(CustomMovies)</info>
-		<visible>!Skin.String(CustomMoviesFolder)</visible>
-		<visible>Skin.HasSetting(videomovies) | [!Skin.HasSetting(nomoviefanart] + IsEmpty(listitem.property(fanart))]</visible> 		
-	</control>
-
-	<control type="multiimage">
-		<include>Background_ImageFolder</include>
-		<info>Skin.String(CustomMoviesFolder)</info>
-		<visible>Skin.String(CustomMoviesFolder)</visible>
-		<visible>Skin.HasSetting(videomovies) | [!Skin.HasSetting(nomoviefanart] + IsEmpty(listitem.property(fanart))]</visible>
-	</control>
-
-	<control type="multiimage">
-		<include>Background_SingleImage</include>
-		<imagepath>backdrops/default_tvshows</imagepath>
-		<info>Skin.String(CustomTV)</info>
-		<visible>!Skin.String(CustomTVFolder)</visible>
-		<visible>Skin.HasSetting(videotv)</visible>
-	</control>
-
-	<control type="multiimage">
-		<include>Background_ImageFolder</include>
-		<info>Skin.String(CustomTVFolder)</info>
-		<visible>Skin.String(CustomTVFolder)</visible>
-		<visible>Skin.HasSetting(videotv) + !Control.IsVisible(102)</visible>
-	</control>
+	<include condition="Skin.HasSetting(videotv)">MediaBackdropsTV</include>
+	<include condition="Skin.HasSetting(videomovies)">MediaBackdropsMovies</include>
 
 	<control type="largeimage" id="102">
 		<include>FullscreenDimensions</include>
@@ -51,12 +24,7 @@
 		<include>Animation_FanartFade</include>
 	</control>
 	
-	<control type="image" id="102">
-		<include>FullscreenDimensions</include>
-        <visible>[Container.Content(seasons) | Container.Content(episodes)] + !IsEmpty(Fanart.Image) + !Skin.HasSetting(notvfanart)</visible>
-		<animation effect="fade" end="0" time="200">WindowClose</animation>
-		<texture>$INFO[Fanart.Image]</texture>
-	</control>
+	<include condition="Skin.HasSetting(videotv)">MediaBackdropsTVFanart</include>
 
 	<include>Furniture_WallBackground</include>
 	
@@ -99,15 +67,8 @@
 					<label>$LOCALIZE[31050] $INFO[Container.ViewMode]</label>
 					<include>Objects_MediaMenuButton</include>
 					<onclick>SetFocus(69)</onclick>
-					<visible>!Container.Content(episodes)</visible>
+					<visible>!Skin.HasSetting(videotv)</visible>
 				</control>
-				
-				<control type="button" id="930">
-					<label>$LOCALIZE[31050] $INFO[Container.ViewMode]</label>
-					<include>Objects_MediaMenuButton</include>
-					<visible>Container.Content(episodes)</visible>
-					<onclick>Notification(,$LOCALIZE[31756],15,)</onclick>
-				</control>				
 
 				<include>Objects_FlattenFlowButton</include>
 				
@@ -116,63 +77,99 @@
 					<include>Objects_MediaMenuButton</include>
 				</control>
 
-				<control type="button" id="950">
+				<control type="button" id="980">
 					<include>Objects_MediaMenuButton</include>				
-					<label>INFO: OFF</label>
+					<label>$LOCALIZE[31070]: $LOCALIZE[31078]</label>
 					<onclick>Skin.SetBool(multiplexinfoauto)</onclick>
 					<onclick>Skin.Reset(multiplexinfooff)</onclick>
 					<onclick>XBMC.ReloadSkin</onclick>
 					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + Skin.HasSetting(multiplexinfooff)</visible>
 				</control>
 				
-				<control type="button" id="951">
+				<control type="button" id="981">
 					<include>Objects_MediaMenuButton</include>				
-					<label>INFO: AUTO</label>
+					<label>$LOCALIZE[31070]: $LOCALIZE[31049]</label>
 					<onclick>Skin.SetBool(multiplexinfotrigger)</onclick>
 					<onclick>Skin.Reset(multiplexinfoauto)</onclick>
 					<onclick>XBMC.ReloadSkin</onclick>
 					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + ![Skin.HasSetting(multiplexinfotrigger) | Skin.HasSetting(multiplexinfooff) | Skin.HasSetting(multiplexinfoon)]</visible>
 				</control>
 
-				<control type="button" id="952">
+				<control type="button" id="982">
 					<include>Objects_MediaMenuButton</include>				
-					<label>INFO: TRIGGER</label>
+					<label>$LOCALIZE[31070]: $LOCALIZE[31048]</label>
 					<onclick>Skin.SetBool(multiplexinfoon)</onclick>
 					<onclick>Skin.Reset(multiplexinfotrigger)</onclick>
 					<onclick>XBMC.ReloadSkin</onclick>
 					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + Skin.HasSetting(multiplexinfotrigger)</visible>
 				</control>	
 
-				<control type="button" id="953">
+				<control type="button" id="983">
 					<include>Objects_MediaMenuButton</include>				
-					<label>INFO: ON</label>
+					<label>$LOCALIZE[31070]: $LOCALIZE[31077]</label>
 					<onclick>Skin.SetBool(multiplexinfooff)</onclick>
 					<onclick>Skin.Reset(multiplexinfoon)</onclick>
 					<onclick>XBMC.ReloadSkin</onclick>
 					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + Skin.HasSetting(multiplexinfoon)</visible>
+				</control>
+
+				<control type="button" id="984">
+					<include>Objects_MediaMenuButton</include>				
+					<label>$LOCALIZE[31070]: $LOCALIZE[31078]</label>
+					<onclick>Skin.SetBool(multiplextvinfoauto)</onclick>
+					<onclick>Skin.Reset(multiplextvinfooff)</onclick>
+					<onclick>XBMC.ReloadSkin</onclick>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + Control.IsVisible(52) + Skin.HasSetting(multiplextvinfooff)</visible>
+				</control>
+				
+				<control type="button" id="985">
+					<include>Objects_MediaMenuButton</include>				
+					<label>$LOCALIZE[31070]: $LOCALIZE[31049]</label>
+					<onclick>Skin.SetBool(multiplextvinfotrigger)</onclick>
+					<onclick>Skin.Reset(multiplextvinfoauto)</onclick>
+					<onclick>XBMC.ReloadSkin</onclick>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + Control.IsVisible(52) + ![Skin.HasSetting(multiplextvinfotrigger) | Skin.HasSetting(multiplextvinfooff) | Skin.HasSetting(multiplextvinfoon)]</visible>
+				</control>
+
+				<control type="button" id="986">
+					<include>Objects_MediaMenuButton</include>				
+					<label>$LOCALIZE[31070]: $LOCALIZE[31048]</label>
+					<onclick>Skin.SetBool(multiplextvinfoon)</onclick>
+					<onclick>Skin.Reset(multiplextvinfotrigger)</onclick>
+					<onclick>XBMC.ReloadSkin</onclick>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + Control.IsVisible(52) + Skin.HasSetting(multiplextvinfotrigger)</visible>
+				</control>	
+
+				<control type="button" id="987">
+					<include>Objects_MediaMenuButton</include>				
+					<label>$LOCALIZE[31070]: $LOCALIZE[31077]</label>
+					<onclick>Skin.SetBool(multiplextvinfooff)</onclick>
+					<onclick>Skin.Reset(multiplextvinfoon)</onclick>
+					<onclick>XBMC.ReloadSkin</onclick>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + Control.IsVisible(52) + Skin.HasSetting(multiplextvinfoon)</visible>
 				</control>				
 				
-				<control type="button" id="954">
+				<control type="button" id="988">
 					<include>Objects_MediaMenuButton</include>				
-					<label>LAYOUT: PLOT</label>
+					<label>$LOCALIZE[31047]: $LOCALIZE[31046]</label>
 					<onclick>Skin.SetBool(multiplexbigthumb)</onclick>
 					<onclick>Skin.Reset(multiplexplot)</onclick>
 					<onclick>XBMC.ReloadSkin</onclick>
 					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + ![Skin.HasSetting(multiplexbigthumb) | Skin.HasSetting(multiplexfanart)]</visible>
 				</control>
 				
-				<control type="button" id="955">
+				<control type="button" id="989">
 					<include>Objects_MediaMenuButton</include>				
-					<label>LAYOUT: THUMB</label>
+					<label>$LOCALIZE[31047]: $LOCALIZE[31045]</label>
 					<onclick>Skin.SetBool(multiplexfanart)</onclick>
 					<onclick>Skin.Reset(multiplexbigthumb)</onclick>
 					<onclick>XBMC.ReloadSkin</onclick>
 					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + Skin.HasSetting(multiplexbigthumb)</visible>
 				</control>
 
-				<control type="button" id="956">
+				<control type="button" id="990">
 					<include>Objects_MediaMenuButton</include>				
-					<label>LAYOUT: ART</label>
+					<label>$LOCALIZE[31047]: $LOCALIZE[31044]</label>
 					<onclick>Skin.SetBool(multiplexplot)</onclick>
 					<onclick>Skin.Reset(multiplexfanart)</onclick>
 					<onclick>XBMC.ReloadSkin</onclick>
@@ -205,7 +202,7 @@
 					<usealttexture>Skin.HasSetting(notvfanart)</usealttexture>
 					<onclick>Skin.SetBool(notvfanart)</onclick>
 					<altclick>Skin.Reset(notvfanart)</altclick>
-					<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + [Control.IsVisible(57) | Control.IsVisible(50)]</visible>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videotv)</visible>
 				</control>
 				
 				<include>Objects_FlagsButton</include>
@@ -216,11 +213,20 @@
 
 				<control type="togglebutton" id="14">
 					<description>Watched Toggle Button</description>
-					<label>$LOCALIZE[31058]: $LOCALIZE[31077]</label>
-					<altlabel>$LOCALIZE[31058]: $LOCALIZE[31078]</altlabel>
+					<label>$LOCALIZE[31058]: $LOCALIZE[31078]</label>
+					<altlabel>$LOCALIZE[31058]: $LOCALIZE[31077]</altlabel>
 					<include>Objects_MediaMenuButton</include>
 					<visible>[Skin.HasSetting(videomovies) + !Skin.HasSetting(nomenumoviewatched)] | [Skin.HasSetting(videotv) + !Skin.HasSetting(nomenutvwatched)]</visible>
 				</control>
+				
+				<control type="togglebutton" id="991">
+					<include>Objects_MediaMenuButton</include>				
+					<label>$LOCALIZE[31066]: $LOCALIZE[31077]</label>
+					<altlabel>$LOCALIZE[31066]: $LOCALIZE[31078]</altlabel>
+					<usealttexture>Skin.HasSetting(nooverlays)</usealttexture>
+					<onclick>Skin.ToggleSetting(nooverlays)</onclick>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videotv)</visible>
+				</control>				
 
 				<control type="button" id="8">
 					<label>137</label>

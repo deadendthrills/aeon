@@ -45,7 +45,13 @@
 	<string id="31041">BY:</string>
 
 <!-- Media Window options -->
-  
+
+	<string id="31044">ART</string>
+	<string id="31045">THUMB</string>
+	<string id="31046">PLOT</string>
+	<string id="31047">LAYOUT</string>
+	<string id="31048">TRIGGER</string>
+	<string id="31049">AUTO</string>
 	<string id="31050">VIEW:</string> 
 	<string id="31051">RANDOM</string>
 	<string id="31052">THICK</string> 
@@ -62,11 +68,11 @@
 	<string id="31063">EPISODE</string>
 	<string id="31064">FANART</string>
 	<string id="31065">PANEL</string>
-	<string id="31066">-</string>
+	<string id="31066">OVERLAY</string>
 	<string id="31067">BACKDROP</string>
 	<string id="31068">LIBRARY</string>
 	<string id="31069">FLAGS</string>
-	<string id="31070">-</string>
+	<string id="31070">INFO</string>
 	<string id="31071">SLIM</string>
 	<string id="31072">FULL</string>
 	<string id="31073">DEFAULT</string>
@@ -321,7 +327,13 @@
 	<string id="31435">CAST DETAILS UNAVAILABLE</string>
 	<string id="31436">YEAR</string>
 	<string id="31438">GENRE</string>
-
+	<string id="31439">WATCHED</string>
+	<string id="31440">UNWATCHED</string>
+	<string id="31441">DATE INFO UNAVAILABLE</string>
+	<string id="31442">DATE MODIFIED INFO UNAVAILABLE</string>
+	<string id="31443">RESOLUTION INFO UNAVAILABLE</string>
+	<string id="31444">FILESIZE INFO UNAVAILABLE</string>
+	
 <!--  Aeon Assistant  -->
 
 	<string id="31500">NEWS</string>
@@ -468,5 +480,8 @@
 	<string id="31931">VIDEOS</string>
 	<string id="31932">FILES</string>
 	<string id="31933">SHOWS</string>
+	<string id="31934">MOVIES</string>
+	<string id="31935">ITEMS</string>
+	<string id="31936">TRACKS</string>
 	
 </strings>

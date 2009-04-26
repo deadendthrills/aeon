@@ -155,7 +155,7 @@
 	</include>
 	
 	<include name="Animation_MediaMenuSlide">
-		<animation type="Conditional" condition="[Control.IsVisible(52) + [Control.HasFocus(52) | Control.HasFocus(60) | Control.HasFocus(197)]] | [Control.IsVisible(50) + [Control.HasFocus(50) | Control.HasFocus(61)]] | [Control.IsVisible(51) + [Control.HasFocus(51) | Control.HasFocus(195) | Control.HasFocus(60)]] | [Control.IsVisible(58) + Control.HasFocus(58)] | [Control.IsVisible(57) + [Control.HasFocus(57) | Control.HasFocus(94) | Control.HasFocus(320) | Control.HasFocus(321) | Control.HasFocus(322) | Control.HasFocus(71) | Control.HasFocus(85) | Control.HasFocus(60)]] | [Control.IsVisible(53) + [Control.HasFocus(53) | Control.HasFocus(71) | Control.HasFocus(85)]] | [Control.IsVisible(59) + Control.HasFocus(59)]">
+		<animation type="Conditional" condition="[Control.IsVisible(52) + [Control.HasFocus(52) | Control.HasFocus(60) | Control.HasFocus(197) | Control.HasFocus(110)]] | [Control.IsVisible(50) + [Control.HasFocus(50) | Control.HasFocus(61)]] | [Control.IsVisible(51) + [Control.HasFocus(51) | Control.HasFocus(195) | Control.HasFocus(60)]] | [Control.IsVisible(58) + Control.HasFocus(58)] | [Control.IsVisible(57) + [Control.HasFocus(57) | Control.HasFocus(94) | Control.HasFocus(320) | Control.HasFocus(321) | Control.HasFocus(322) | Control.HasFocus(71) | Control.HasFocus(85) | Control.HasFocus(60)]] | [Control.IsVisible(53) + [Control.HasFocus(53) | Control.HasFocus(71) | Control.HasFocus(85)]] | [Control.IsVisible(59) + Control.HasFocus(59)]">
 			<effect type="slide" end="0,-57" time="400" easing="in" tween="cubic" />
 			<effect type="fade" start="100" end="0" time="400" />
 		</animation>
@@ -245,7 +245,7 @@
 
 <include name="Animation_HideMultiplex">
 	<animation type="Conditional" reversible="true" condition="Control.HasFocus(197)">
-		<effect type="slide" start="0,0" end="0,253" time="400" tween="cubic" easing="in" />
+		<effect type="slide" start="0,0" end="0,283" time="400" tween="cubic" easing="in" />
 	</animation>
 </include>
 
