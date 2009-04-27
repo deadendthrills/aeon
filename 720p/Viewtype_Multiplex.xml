@@ -813,10 +813,10 @@
 					<colordiffuse>58FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>89</posx>
-					<posy>101</posy>
-					<width>52</width>
-					<height>48</height>
+					<posx>181</posx>
+					<posy>39</posy>
+					<width>48</width>
+					<height>52</height>
 					<info>ListItem.Overlay</info>
 					<visible>!Skin.HasSetting(nooverlays) + !IsEmpty(ListItem.Overlay)</visible>
 					<include>Animation_VisibleChange200</include>
@@ -868,10 +868,10 @@
 					<visible>!Container(52).Column(4)</visible>					
 				</control>
 				<control type="image">
-					<posx>89</posx>
-					<posy>101</posy>
-					<width>52</width>
-					<height>48</height>
+					<posx>181</posx>
+					<posy>39</posy>
+					<width>48</width>
+					<height>52</height>
 					<info>ListItem.Overlay</info>
 					<visible>!Skin.HasSetting(nooverlays) + !IsEmpty(ListItem.Overlay)</visible>
 					<include>Animation_VisibleChange200</include>
