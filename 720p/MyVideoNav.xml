@@ -182,7 +182,7 @@
 					<altlabel>$LOCALIZE[31045]: $LOCALIZE[31064]</altlabel>
 					<usealttexture>!Skin.HasSetting(multiplextvbigthumb)</usealttexture>
 					<onclick>Skin.ToggleSetting(multiplextvbigthumb)</onclick>
-					<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + Control.IsVisible(52)</visible>
+					<visible>Container.Content(episodes) + Window.IsActive(25) + Skin.HasSetting(videotv) + Control.IsVisible(52)</visible>
 				</control>				
 				
 				<control type="togglebutton" id="940">
