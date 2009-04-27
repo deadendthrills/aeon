@@ -12,7 +12,21 @@
 		<posy>534</posy>
 		<width>1165</width>
 		<height>169</height>	
-	</include>	
+	</include>
+
+	<include name="MultiplexMovieVarsWrap">
+		<posx>60</posx>
+		<posy>534</posy>
+		<width>1157</width>
+		<height>169</height>	
+	</include>
+	
+	<include name="MultiplexTVVarsWrap">
+		<posx>67</posx>
+		<posy>534</posy>
+		<width>1145</width>
+		<height>169</height>	
+	</include>		
 
 	<include name="MultiplexIconDimensions">
 		<posx>20</posx>
@@ -27,13 +41,34 @@
 		<width>229</width>
 		<height>129</height>	
 	</include>
+	
+	<include name="MultiplexIconDimensionsWrap">
+		<posx>0</posx>
+		<posy>20</posy>
+		<width>89</width>
+		<height>129</height>	
+	</include>
+	
+	<include name="MultiplexIconDimensionsTVWrap">
+		<posx>0</posx>
+		<posy>20</posy>
+		<width>229</width>
+		<height>129</height>	
+	</include>	
 
 	<include name="MultiplexSeasonOverlay">
 		<posx>20</posx>
 		<posy>119</posy>
 		<width>229</width>
 		<height>30</height>	
-	</include>	
+	</include>
+
+	<include name="MultiplexSeasonOverlayWrap">
+		<posx>0</posx>
+		<posy>119</posy>
+		<width>229</width>
+		<height>30</height>	
+	</include>		
 
 	<include name="MultiplexTVLabel">
 		<posx>60</posx>
@@ -77,6 +112,360 @@
 	
 	<include name="MultiplexInfoTriggerUp">
 		<onup>110</onup>
+	</include>
+
+	<include name="MultiplexFocusMovies">
+		<focusposition>6</focusposition>	
+	</include>
+	
+	<include name="MultiplexFocusTV">
+		<focusposition>2</focusposition>	
+	</include>	
+
+	<include name="MultiplexPanel">
+		<control type="panel" id="52">
+			<viewtype label="31757">icon</viewtype>
+			<include condition="Skin.HasSetting(videomovies)">MultiplexMovieVars</include>
+			<include condition="Skin.HasSetting(videotv)">MultiplexTVVars</include>			
+			<pagecontrol>60</pagecontrol>
+			<scrolltime>0</scrolltime>
+			<onleft>52</onleft>
+			<onright>52</onright>
+			<include condition="[Skin.HasSetting(videomovies) + !Skin.HasSetting(multiplexinfotrigger)] | [Skin.HasSetting(videotv) + !Skin.HasSetting(multiplextvinfotrigger)]">MultiplexInfoAutoUp</include>
+			<include condition="[Skin.HasSetting(videomovies) + Skin.HasSetting(multiplexinfotrigger)] | [Skin.HasSetting(videotv) + Skin.HasSetting(multiplextvinfotrigger)]">MultiplexInfoTriggerUp</include>
+			<ondown>60</ondown>
+			<orientation>horizontal</orientation>
+			<visible>Window.IsActive(25)</visible>
+			<include>Animation_HideMultiplex</include>
+			<animation effect="slide" start="0,0" end="0,-15" time="400" easing="inout" tween="cubic" condition="Control.HasFocus(60) | Control.HasFocus(197)">Conditional</animation>
+			<itemlayout width="89" height="129" condition="Container.Content(movies)">
+				<control type="image">
+					<include>MultiplexIconDimensions</include>
+					<texture>common/black.png</texture>
+				</control>				
+				<control type="image">
+					<include>MultiplexIconDimensions</include>
+					<texture>defaultvideobig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<info>ListItem.Icon</info>
+				</control>
+				<control type="image">
+					<include>MultiplexIconDimensions</include>
+					<bordertexture border="-53">multiplex/multiplex_iconframe.png</bordertexture>
+					<texture>-</texture>
+				</control>			
+				<control type="image">
+					<include>MultiplexIconDimensions</include>
+					<texture>common/black.png</texture>
+					<colordiffuse>58FFFFFF</colordiffuse>
+				</control>					
+			</itemlayout>
+			<focusedlayout width="89" height="129" condition="Container.Content(movies)">
+				<control type="image">
+					<include>MultiplexIconDimensions</include>
+					<texture>common/black.png</texture>
+					<animation effect="zoom" center="45,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
+				</control>			
+				<control type="image">
+					<include>MultiplexIconDimensions</include>
+					<texture>defaultvideobig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<info>ListItem.Icon</info>
+					<animation effect="zoom" center="45,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
+				</control>
+				<control type="image">
+					<include>MultiplexIconDimensions</include>
+					<bordertexture border="-30">multiplex/multiplex_iconframe.png</bordertexture>
+					<texture>common/blank.png</texture>
+					<animation effect="zoom" center="45,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
+					<visible>!Container(52).Column(12)</visible>					
+				</control>			
+			</focusedlayout>
+			
+			<itemlayout width="229" height="129" condition="Skin.HasSetting(videotv)">
+				<control type="image">
+					<include>MultiplexIconDimensionsTV</include>
+					<texture>common/black.png</texture>
+				</control>				
+				<control type="image">
+					<include>MultiplexIconDimensionsTV</include>
+					<texture>defaultvideobig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<info>ListItem.Icon</info>
+				</control>
+				<control type="image">
+					<include>MultiplexSeasonOverlay</include>
+					<texture>common/black.png</texture>
+					<colordiffuse>b6FFFFFF</colordiffuse>	
+					<visible>Container.Content(seasons)</visible>					
+				</control>
+				<control type="label">
+					<posx>135</posx>
+					<posy>119</posy>
+					<width>229</width>
+					<height>30</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Font_MultiplexSeasonLabel</font>
+					<label>$INFO[ListItem.Label]</label>
+					<visible>Container.Content(seasons)</visible>					
+				</control>		
+				<control type="image">
+					<include>MultiplexSeasonOverlay</include>
+					<texture>multiplex/multiplex_seasongradient.png</texture>			
+					<visible>Container.Content(seasons)</visible>					
+				</control>							
+				<control type="image">
+					<include>MultiplexIconDimensionsTV</include>
+					<bordertexture border="-53">multiplex/multiplex_iconframetv.png</bordertexture>
+					<texture>-</texture>
+				</control>			
+				<control type="image">
+					<include>MultiplexIconDimensionsTV</include>
+					<texture>common/black.png</texture>
+					<colordiffuse>58FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>109</posx>
+					<posy>101</posy>
+					<width>52</width>
+					<height>48</height>
+					<info>ListItem.Overlay</info>
+					<visible>!Skin.HasSetting(nooverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<include>Animation_VisibleChange200</include>
+				</control>
+			</itemlayout>
+			<focusedlayout width="229" height="129" condition="Skin.HasSetting(videotv)">
+				<control type="image">
+					<include>MultiplexIconDimensionsTV</include>
+					<texture>common/black.png</texture>
+					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
+				</control>			
+				<control type="image">
+					<include>MultiplexIconDimensionsTV</include>
+					<texture>defaultvideobig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<info>ListItem.Icon</info>
+					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
+				</control>
+				<control type="image">
+					<include>MultiplexSeasonOverlay</include>
+					<texture>common/black.png</texture>
+					<colordiffuse>b6FFFFFF</colordiffuse>
+					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>						
+					<visible>Container.Content(seasons)</visible>					
+				</control>
+				<control type="label">
+					<posx>135</posx>
+					<posy>119</posy>
+					<width>229</width>
+					<height>30</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Font_MultiplexSeasonLabel</font>
+					<label>$INFO[ListItem.Label]</label>
+					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>						
+					<visible>Container.Content(seasons)</visible>					
+				</control>
+				<control type="image">
+					<include>MultiplexSeasonOverlay</include>
+					<texture>multiplex/multiplex_seasongradient.png</texture>
+					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>						
+					<visible>Container.Content(seasons)</visible>					
+				</control>				
+				<control type="image">
+					<include>MultiplexIconDimensionsTV</include>
+					<bordertexture border="-30">multiplex/multiplex_iconframetv.png</bordertexture>
+					<texture>common/blank.png</texture>
+					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
+					<visible>!Container(52).Column(4)</visible>					
+				</control>
+				<control type="image">
+					<posx>109</posx>
+					<posy>101</posy>
+					<width>52</width>
+					<height>48</height>
+					<info>ListItem.Overlay</info>
+					<visible>!Skin.HasSetting(nooverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<include>Animation_VisibleChange200</include>
+					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
+				</control>				
+			</focusedlayout>			
+		</control>	
+	</include>
+	
+	<include name="MultiplexWrap">
+		<control type="wraplist" id="52">
+			<viewtype label="31757">wrap</viewtype>
+			<include condition="Skin.HasSetting(videomovies)">MultiplexMovieVarsWrap</include>
+			<include condition="Skin.HasSetting(videotv)">MultiplexTVVarsWrap</include>			
+			<pagecontrol>60</pagecontrol>
+			<onleft>52</onleft>
+			<onright>52</onright>
+			<include condition="[Skin.HasSetting(videomovies) + !Skin.HasSetting(multiplexinfotrigger)] | [Skin.HasSetting(videotv) + !Skin.HasSetting(multiplextvinfotrigger)]">MultiplexInfoAutoUp</include>
+			<include condition="[Skin.HasSetting(videomovies) + Skin.HasSetting(multiplexinfotrigger)] | [Skin.HasSetting(videotv) + Skin.HasSetting(multiplextvinfotrigger)]">MultiplexInfoTriggerUp</include>
+			<ondown>60</ondown>
+			<orientation>horizontal</orientation>
+			<include condition="Skin.HasSetting(videomovies)">MultiplexFocusMovies</include>
+			<include condition="Skin.HasSetting(videotv)">MultiplexFocusTV</include>
+			<scrolltime>200</scrolltime>
+			<visible>Window.IsActive(25)</visible>
+			<include>Animation_HideMultiplex</include>
+			<animation effect="slide" start="0,0" end="0,-15" time="400" easing="inout" tween="cubic" condition="Control.HasFocus(60) | Control.HasFocus(197)">Conditional</animation>
+			<itemlayout width="89" height="129" condition="Container.Content(movies)">
+				<control type="image">
+					<include>MultiplexIconDimensionsWrap</include>
+					<texture>common/black.png</texture>
+				</control>				
+				<control type="image">
+					<include>MultiplexIconDimensionsWrap</include>
+					<texture>defaultvideobig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<info>ListItem.Icon</info>
+				</control>
+				<control type="image">
+					<include>MultiplexIconDimensionsWrap</include>
+					<bordertexture border="-53">multiplex/multiplex_iconframe.png</bordertexture>
+					<texture>-</texture>
+				</control>			
+				<control type="image">
+					<include>MultiplexIconDimensionsWrap</include>
+					<texture>common/black.png</texture>
+					<colordiffuse>58FFFFFF</colordiffuse>
+				</control>					
+			</itemlayout>
+			<focusedlayout width="89" height="129" condition="Container.Content(movies)">
+				<control type="image">
+					<include>MultiplexIconDimensionsWrap</include>
+					<texture>common/black.png</texture>
+					<animation effect="zoom" center="45,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
+				</control>			
+				<control type="image">
+					<include>MultiplexIconDimensionsWrap</include>
+					<texture>defaultvideobig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<info>ListItem.Icon</info>
+					<animation effect="zoom" center="45,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
+				</control>
+				<control type="image">
+					<include>MultiplexIconDimensionsWrap</include>
+					<bordertexture border="-30">multiplex/multiplex_iconframe.png</bordertexture>
+					<texture>common/blank.png</texture>
+					<animation effect="zoom" center="45,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
+					<visible>!Container(52).Column(12)</visible>					
+				</control>			
+			</focusedlayout>
+			
+			<itemlayout width="229" height="129" condition="Skin.HasSetting(videotv)">
+				<control type="image">
+					<include>MultiplexIconDimensionsTVWrap</include>
+					<texture>common/black.png</texture>
+				</control>				
+				<control type="image">
+					<include>MultiplexIconDimensionsTVWrap</include>
+					<texture>defaultvideobig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<info>ListItem.Icon</info>
+				</control>
+				<control type="image">
+					<include>MultiplexSeasonOverlayWrap</include>
+					<texture>common/black.png</texture>
+					<colordiffuse>b6FFFFFF</colordiffuse>	
+					<visible>Container.Content(seasons)</visible>					
+				</control>
+				<control type="label">
+					<posx>115</posx>
+					<posy>119</posy>
+					<width>229</width>
+					<height>30</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Font_MultiplexSeasonLabel</font>
+					<label>$INFO[ListItem.Label]</label>
+					<visible>Container.Content(seasons)</visible>					
+				</control>		
+				<control type="image">
+					<include>MultiplexSeasonOverlayWrap</include>
+					<texture>multiplex/multiplex_seasongradient.png</texture>			
+					<visible>Container.Content(seasons)</visible>					
+				</control>							
+				<control type="image">
+					<include>MultiplexIconDimensionsTVWrap</include>
+					<bordertexture border="-53">multiplex/multiplex_iconframetv.png</bordertexture>
+					<texture>-</texture>
+				</control>			
+				<control type="image">
+					<include>MultiplexIconDimensionsTVWrap</include>
+					<texture>common/black.png</texture>
+					<colordiffuse>58FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>89</posx>
+					<posy>101</posy>
+					<width>52</width>
+					<height>48</height>
+					<info>ListItem.Overlay</info>
+					<visible>!Skin.HasSetting(nooverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<include>Animation_VisibleChange200</include>
+				</control>
+			</itemlayout>
+			<focusedlayout width="229" height="129" condition="Skin.HasSetting(videotv)">
+				<control type="image">
+					<include>MultiplexIconDimensionsTVWrap</include>
+					<texture>common/black.png</texture>
+					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
+				</control>			
+				<control type="image">
+					<include>MultiplexIconDimensionsTVWrap</include>
+					<texture>defaultvideobig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<info>ListItem.Icon</info>
+					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
+				</control>
+				<control type="image">
+					<include>MultiplexSeasonOverlayWrap</include>
+					<texture>common/black.png</texture>
+					<colordiffuse>b6FFFFFF</colordiffuse>
+					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>						
+					<visible>Container.Content(seasons)</visible>					
+				</control>
+				<control type="label">
+					<posx>115</posx>
+					<posy>119</posy>
+					<width>229</width>
+					<height>30</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Font_MultiplexSeasonLabel</font>
+					<label>$INFO[ListItem.Label]</label>
+					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>						
+					<visible>Container.Content(seasons)</visible>					
+				</control>
+				<control type="image">
+					<include>MultiplexSeasonOverlayWrap</include>
+					<texture>multiplex/multiplex_seasongradient.png</texture>
+					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>						
+					<visible>Container.Content(seasons)</visible>					
+				</control>				
+				<control type="image">
+					<include>MultiplexIconDimensionsTVWrap</include>
+					<bordertexture border="-30">multiplex/multiplex_iconframetv.png</bordertexture>
+					<texture>common/blank.png</texture>
+					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
+					<visible>!Container(52).Column(4)</visible>					
+				</control>
+				<control type="image">
+					<posx>89</posx>
+					<posy>101</posy>
+					<width>52</width>
+					<height>48</height>
+					<info>ListItem.Overlay</info>
+					<visible>!Skin.HasSetting(nooverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<include>Animation_VisibleChange200</include>
+					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
+				</control>				
+			</focusedlayout>			
+		</control>	
 	</include>	
 	
 	<include name="Viewtype_Multiplex">
@@ -582,7 +971,7 @@
 			</control>	
 			
 		</control>		
-	
+
 		<control type="group">
 			<posx>0</posx>
 			<posy>446</posy>
@@ -682,175 +1071,8 @@
 		
 		<include>Furniture_MultiplexMediaFlags</include>
 	
-		<control type="panel" id="52">
-			<viewtype label="31757">icon</viewtype>
-			<include condition="Skin.HasSetting(videomovies)">MultiplexMovieVars</include>
-			<include condition="Skin.HasSetting(videotv)">MultiplexTVVars</include>			
-			<pagecontrol>60</pagecontrol>
-			<scrolltime>0</scrolltime>
-			<onleft>52</onleft>
-			<onright>52</onright>
-			<include condition="[Skin.HasSetting(videomovies) + !Skin.HasSetting(multiplexinfotrigger)] | [Skin.HasSetting(videotv) + !Skin.HasSetting(multiplextvinfotrigger)]">MultiplexInfoAutoUp</include>
-			<include condition="[Skin.HasSetting(videomovies) + Skin.HasSetting(multiplexinfotrigger)] | [Skin.HasSetting(videotv) + Skin.HasSetting(multiplextvinfotrigger)]">MultiplexInfoTriggerUp</include>
-			<ondown>60</ondown>
-			<orientation>horizontal</orientation>
-			<visible>Window.IsActive(25)</visible>
-			<include>Animation_HideMultiplex</include>
-			<animation effect="slide" start="0,0" end="0,-15" time="400" easing="inout" tween="cubic" condition="Control.HasFocus(60) | Control.HasFocus(197)">Conditional</animation>
-			<itemlayout width="89" height="129" condition="Container.Content(movies)">
-				<control type="image">
-					<include>MultiplexIconDimensions</include>
-					<texture>common/black.png</texture>
-				</control>				
-				<control type="image">
-					<include>MultiplexIconDimensions</include>
-					<texture>defaultvideobig.png</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-					<info>ListItem.Icon</info>
-				</control>
-				<control type="image">
-					<include>MultiplexIconDimensions</include>
-					<bordertexture border="-53">multiplex/multiplex_iconframe.png</bordertexture>
-					<texture>-</texture>
-				</control>			
-				<control type="image">
-					<include>MultiplexIconDimensions</include>
-					<texture>common/black.png</texture>
-					<colordiffuse>58FFFFFF</colordiffuse>
-				</control>					
-			</itemlayout>
-			<focusedlayout width="89" height="129" condition="Container.Content(movies)">
-				<control type="image">
-					<include>MultiplexIconDimensions</include>
-					<texture>common/black.png</texture>
-					<animation effect="zoom" center="45,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
-				</control>			
-				<control type="image">
-					<include>MultiplexIconDimensions</include>
-					<texture>defaultvideobig.png</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-					<info>ListItem.Icon</info>
-					<animation effect="zoom" center="45,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
-				</control>
-				<control type="image">
-					<include>MultiplexIconDimensions</include>
-					<bordertexture border="-30">multiplex/multiplex_iconframe.png</bordertexture>
-					<texture>common/blank.png</texture>
-					<animation effect="zoom" center="45,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
-					<visible>!Container(52).Column(12)</visible>					
-				</control>			
-			</focusedlayout>
-			
-			<itemlayout width="229" height="129" condition="Skin.HasSetting(videotv)">
-				<control type="image">
-					<include>MultiplexIconDimensionsTV</include>
-					<texture>common/black.png</texture>
-				</control>				
-				<control type="image">
-					<include>MultiplexIconDimensionsTV</include>
-					<texture>defaultvideobig.png</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-					<info>ListItem.Icon</info>
-				</control>
-				<control type="image">
-					<include>MultiplexSeasonOverlay</include>
-					<texture>common/black.png</texture>
-					<colordiffuse>b6FFFFFF</colordiffuse>	
-					<visible>Container.Content(seasons)</visible>					
-				</control>
-				<control type="label">
-					<posx>135</posx>
-					<posy>119</posy>
-					<width>229</width>
-					<height>30</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>Font_MultiplexSeasonLabel</font>
-					<label>$INFO[ListItem.Label]</label>
-					<visible>Container.Content(seasons)</visible>					
-				</control>		
-				<control type="image">
-					<include>MultiplexSeasonOverlay</include>
-					<texture>multiplex/multiplex_seasongradient.png</texture>			
-					<visible>Container.Content(seasons)</visible>					
-				</control>							
-				<control type="image">
-					<include>MultiplexIconDimensionsTV</include>
-					<bordertexture border="-53">multiplex/multiplex_iconframetv.png</bordertexture>
-					<texture>-</texture>
-				</control>			
-				<control type="image">
-					<include>MultiplexIconDimensionsTV</include>
-					<texture>common/black.png</texture>
-					<colordiffuse>58FFFFFF</colordiffuse>
-				</control>
-				<control type="image">
-					<posx>109</posx>
-					<posy>101</posy>
-					<width>52</width>
-					<height>48</height>
-					<info>ListItem.Overlay</info>
-					<visible>!Skin.HasSetting(nooverlays) + !IsEmpty(ListItem.Overlay)</visible>
-					<include>Animation_VisibleChange200</include>
-				</control>
-			</itemlayout>
-			<focusedlayout width="229" height="129" condition="Skin.HasSetting(videotv)">
-				<control type="image">
-					<include>MultiplexIconDimensionsTV</include>
-					<texture>common/black.png</texture>
-					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
-				</control>			
-				<control type="image">
-					<include>MultiplexIconDimensionsTV</include>
-					<texture>defaultvideobig.png</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-					<info>ListItem.Icon</info>
-					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
-				</control>
-				<control type="image">
-					<include>MultiplexSeasonOverlay</include>
-					<texture>common/black.png</texture>
-					<colordiffuse>b6FFFFFF</colordiffuse>
-					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>						
-					<visible>Container.Content(seasons)</visible>					
-				</control>
-				<control type="label">
-					<posx>135</posx>
-					<posy>119</posy>
-					<width>229</width>
-					<height>30</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>Font_MultiplexSeasonLabel</font>
-					<label>$INFO[ListItem.Label]</label>
-					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>						
-					<visible>Container.Content(seasons)</visible>					
-				</control>
-				<control type="image">
-					<include>MultiplexSeasonOverlay</include>
-					<texture>multiplex/multiplex_seasongradient.png</texture>
-					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>						
-					<visible>Container.Content(seasons)</visible>					
-				</control>				
-				<control type="image">
-					<include>MultiplexIconDimensionsTV</include>
-					<bordertexture border="-30">multiplex/multiplex_iconframetv.png</bordertexture>
-					<texture>common/blank.png</texture>
-					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
-					<visible>!Container(52).Column(4)</visible>					
-				</control>
-				<control type="image">
-					<posx>109</posx>
-					<posy>101</posy>
-					<width>52</width>
-					<height>48</height>
-					<info>ListItem.Overlay</info>
-					<visible>!Skin.HasSetting(nooverlays) + !IsEmpty(ListItem.Overlay)</visible>
-					<include>Animation_VisibleChange200</include>
-					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>					
-				</control>				
-			</focusedlayout>			
-		</control>
+		<include condition="Skin.HasSetting(multiplexpanel)">MultiplexPanel</include>
+		<include condition="!Skin.HasSetting(multiplexpanel)">MultiplexWrap</include>	
 
 		<control type="group">
 			<posy>556</posy>

@@ -46,6 +46,7 @@
 
 <!-- Media Window options -->
 
+	<string id="31043">WRAP</string>
 	<string id="31044">ART</string>
 	<string id="31045">THUMB</string>
 	<string id="31046">PLOT</string>
