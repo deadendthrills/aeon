@@ -297,7 +297,7 @@
 			<onup>900</onup>
 			<ondown>900</ondown>
 			<orientation>horizontal</orientation>
-			<visible>Window.IsActive(28) | Window.IsActive(1) | Window.IsActive(24) | [Window.IsActive(25) + !Skin.HasSetting(videotv)]</visible>
+			<visible>Window.IsActive(28) | Window.IsActive(1) | Window.IsActive(24) | [Window.IsActive(25) + !Skin.HasSetting(videotv)] | [Window.IsActive(25) + Skin.HasSetting(videotv) + Skin.HasSetting(unlockTVviews)]</visible>
 			<itemlayout width="123" height="179" condition="!Skin.HasSetting(smallmoviewall)">
 				<control type="image">
 					<include>WallIconMovieDimensions</include>
