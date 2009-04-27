@@ -533,6 +533,8 @@
 					<fadetime>400</fadetime>
 					<aspectratio>scale</aspectratio>
 					<texture>$INFO[Container(52).listitem.property(fanart_image)]</texture>
+					<visible>!Skin.HasSetting(multiplextvbigthumb) | !Container.Content(episodes)</visible>					
+					<include>Animation_VisibleChange200</include>
 				</control>
 				<control type="largeimage">
 					<posx>2</posx>
@@ -542,7 +544,20 @@
 					<fadetime>400</fadetime>
 					<aspectratio>scale</aspectratio>
 					<texture>$INFO[Fanart.Image]</texture>
-				</control>					
+					<visible>!Skin.HasSetting(multiplextvbigthumb) | !Container.Content(episodes)</visible>
+					<include>Animation_VisibleChange200</include>
+				</control>
+				<control type="image">
+					<posx>2</posx>
+					<posy>2</posy>
+					<width>541</width>
+					<height>338</height>
+					<fadetime>400</fadetime>
+					<aspectratio>scale</aspectratio>
+					<texture>$INFO[Container(52).listitem.thumb]</texture>
+					<visible>Skin.HasSetting(multiplextvbigthumb) + Container.Content(episodes)</visible>
+					<include>Animation_VisibleChange200</include>					
+				</control>				
 			</control>
 			
 			<control type="group">
