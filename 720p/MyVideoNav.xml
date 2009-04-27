@@ -176,16 +176,6 @@
 					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + Skin.HasSetting(multiplexfanart)</visible>
 				</control>
 				
-				<control type="togglebutton" id="992">
-					<include>Objects_MediaMenuButton</include>				
-					<label>$LOCALIZE[31043]: $LOCALIZE[31077]</label>
-					<altlabel>$LOCALIZE[31043]: $LOCALIZE[31078]</altlabel>
-					<usealttexture>Skin.HasSetting(multiplexpanel)</usealttexture>
-					<onclick>Skin.ToggleSetting(multiplexpanel)</onclick>
-					<onclick>XBMC.ReloadSkin</onclick>
-					<visible>Window.IsActive(25) + Control.IsVisible(52)</visible>
-				</control>				
-				
 				<control type="togglebutton" id="940">
 					<include>Objects_MediaMenuButton</include>				
 					<include>Objects_ListLayoutStrings</include>
