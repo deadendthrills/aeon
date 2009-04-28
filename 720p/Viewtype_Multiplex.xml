@@ -264,7 +264,7 @@
 					<width>299</width>
 					<height>169</height>
 					<texture>common/black.png</texture>
-					<colordiffuse>d0FFFFFF</colordiffuse>
+					<colordiffuse>94FFFFFF</colordiffuse>
 				</control>				
 				<control type="largeimage">
 					<posx>2</posx>
@@ -282,7 +282,7 @@
 					<width>299</width>
 					<height>169</height>
 					<texture>common/black.png</texture>
-					<colordiffuse>d0FFFFFF</colordiffuse>
+					<colordiffuse>94FFFFFF</colordiffuse>
 				</control>				
 				<control type="largeimage">
 					<posx>2</posx>
@@ -305,7 +305,7 @@
 					<width>617</width>
 					<height>351</height>
 					<texture>common/black.png</texture>
-					<colordiffuse>d0FFFFFF</colordiffuse>
+					<colordiffuse>94FFFFFF</colordiffuse>
 				</control>				
 				<control type="multiimage">
 					<posx>2</posx>
@@ -329,7 +329,7 @@
 					<width>617</width>
 					<height>351</height>
 					<texture>common/black.png</texture>
-					<colordiffuse>d0FFFFFF</colordiffuse>
+					<colordiffuse>94FFFFFF</colordiffuse>
 				</control>				
 				<control type="largeimage">
 					<posx>2</posx>
@@ -526,7 +526,7 @@
 					<width>545</width>
 					<height>342</height>
 					<texture>common/black.png</texture>
-					<colordiffuse>d0FFFFFF</colordiffuse>
+					<colordiffuse>94FFFFFF</colordiffuse>
 				</control>				
 				<control type="largeimage">
 					<posx>2</posx>
