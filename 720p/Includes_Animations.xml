@@ -207,7 +207,7 @@
 
 <include name="Animation_BackgroundFade">
     <animation effect="fade" time="500">WindowOpen</animation>
-    <animation effect="fade" time="300">WindowClose</animation>
+    <animation effect="fade" time="200">WindowClose</animation>
     <animation effect="fade" time="800">Visible</animation>
     <animation effect="fade" delay = "300" time="800" condition="![Window.IsActive(2001) | Window.IsActive(2003)]">Hidden</animation>
 </include>
@@ -220,7 +220,7 @@
 <include name="Animation_WindowBackgroundFade">
 	<animation effect="fade" time="200">Hidden</animation>
 	<animation effect="fade" time="500">WindowOpen</animation>
-	<animation effect="fade" time="300">WindowClose</animation>
+	<animation effect="fade" time="200">WindowClose</animation>
 </include>
 
 <include name="Animation_FanartFade">
