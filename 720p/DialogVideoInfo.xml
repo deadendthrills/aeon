@@ -309,7 +309,7 @@
 			<align>left</align>
 			<font>Font_FSInfoPlot</font>
 			<label fallback="31414">$INFO[ListItem.Plot]</label>
-			<autoscroll delay="3000" time="1000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>			
+			<autoscroll delay="15000" time="1000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>			
 			<include>Colour_OffWhite</include>
 		</control>
 		
@@ -500,7 +500,7 @@
 			<height>212</height>
 			<align>left</align>
 			<font>Font_FSInfoPlot</font>
-			<autoscroll delay="3000" time="1000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>			
+			<autoscroll delay="15000" time="1000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>			
 			<label fallback="31414">$INFO[ListItem.Plot]</label>
 			<include>Colour_OffWhite</include>
 		</control>
@@ -667,7 +667,7 @@
 			<height>212</height>
 			<align>left</align>
 			<font>Font_FSInfoPlot</font>
-			<autoscroll delay="3000" time="1000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>			
+			<autoscroll delay="15000" time="1000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>			
 			<label fallback="31414">$INFO[ListItem.Plot]</label>
 			<include>Colour_OffWhite</include>
 		</control>

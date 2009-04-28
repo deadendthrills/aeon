@@ -236,7 +236,7 @@
 				<font>Font_MultiplexPlot</font>
 				<info>Container(52).ListItem.Plot</info>
 				<textcolor>d0FFFFFF</textcolor>
-				<autoscroll delay="10000" time="2000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>					
+				<autoscroll delay="15000" time="2000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>					
 				<visible>![Skin.HasSetting(multiplexfanart) | Skin.HasSetting(multiplexbigthumb)]</visible>	
 			</control>
 			
@@ -489,7 +489,7 @@
 				<font>Font_MultiplexPlot</font>
 				<info fallback="31414">Container(52).ListItem.Plot</info>
 				<textcolor>d0FFFFFF</textcolor>
-				<autoscroll delay="10000" time="2000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>					
+				<autoscroll delay="15000" time="2000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>					
 				<visible>!Container.Content(seasons)</visible>
 			</control>
 			
@@ -501,7 +501,7 @@
 				<font>Font_MultiplexPlot</font>
 				<info fallback="31414">Container(52).ShowPlot</info>
 				<textcolor>d0FFFFFF</textcolor>
-				<autoscroll delay="10000" time="2000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>					
+				<autoscroll delay="15000" time="2000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>					
 				<visible>Container.Content(seasons)</visible>
 			</control>			
 			
