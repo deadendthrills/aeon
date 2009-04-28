@@ -238,7 +238,7 @@
 				<animation effect="fade" start="0" end="100" time="200">Visible</animation>		
 			</control>
 			
-			<control type="label">
+			<control type="label" id="108">
 				<posx>1216</posx>
 				<posy>678</posy>
 				<align>right</align>
@@ -250,7 +250,7 @@
 				<animation effect="fade" start="0" end="100" time="200">Visible</animation>		
 			</control>			
 			
-			<control type="label">
+			<control type="label" id="108">
 				<posx>20</posx>
 				<posy>644</posy>
 				<font>Font_StripshowLabel</font>
@@ -260,7 +260,7 @@
 				<animation effect="fade" delay="600" start="0" end="100" time="200">Visible</animation>		
 			</control>
 			
-			<control type="label">
+			<control type="label" id="108">
 				<width>400</width>
 				<posx>1260</posx>
 				<posy>634</posy>
@@ -272,7 +272,7 @@
 				<animation effect="fade" delay="600" start="0" end="100" time="200">Visible</animation>
 			</control>
 			
-			<control type="label">
+			<control type="label" id="108">
 				<width>400</width>
 				<posx>1260</posx>
 				<posy>653</posy>
@@ -284,7 +284,7 @@
 				<animation effect="fade" delay="600" start="0" end="100" time="200">Visible</animation>
 			</control>			
 
-			<control type="label">
+			<control type="label" id="108">
 				<width>400</width>
 				<posx>1260</posx>
 				<posy>672</posy>
@@ -296,7 +296,7 @@
 				<animation effect="fade" delay="600" start="0" end="100" time="200">Visible</animation>
 			</control>		
 			
-			<control type="label">
+			<control type="label" id="108">
 				<width>400</width>
 				<posx>1260</posx>
 				<posy>691</posy>
