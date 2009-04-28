@@ -117,7 +117,7 @@
 
 	<include>ViewChange</include>
 	<include>Background_ContextBlack</include>
-	<include>Furniture_Debug</include>
+	<include condition="Skin.HasSetting(debug)">Furniture_Debug</include>
 	
 	</controls>
 </window>
