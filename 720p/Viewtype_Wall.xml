@@ -128,34 +128,7 @@
 		<height>585</height>
 	</include>	
 	
-	<include name="Viewtype_Wall">
-
-		<control type="image">
-			<posx>57</posx>
-			<posy>98</posy>
-			<width>20</width>
-			<height>524</height>
-			<texture>wall/wall_arrow.png</texture>
-			<visible>Control.IsVisible(53)</visible>
-			<animation effect="slide" start="-100" end="0" delay="800" time="400" easing="out" tween="cubic">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="400" condition="Container(53).Column(0) + !ControlGroup(7000).HasFocus()">Conditional</animation>			
-			<animation effect="slide" start="18" end="18" time="0" condition="Window.IsActive(2) | Window.IsActive(501) | Window.IsActive(502)">Conditional</animation>				
-		</control>
-		
-		<control type="image">
-			<posx>1203</posx>
-			<posy>98</posy>
-			<width>20</width>
-			<height>524</height>
-			<texture flipx="true">wall/wall_arrow.png</texture>
-			<visible>Control.IsVisible(53)</visible>
-			<animation effect="slide" start="100" end="0" delay="800" time="400" easing="out" tween="cubic">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="400" condition="[[Window.IsActive(2) | Window.IsActive(501) | Window.IsActive(502)] + Container(53).Column(7)] | [[Window.IsActive(1) | Window.IsActive(24) | Window.IsActive(25)] + Container(53).Column(8)] + !ControlGroup(7000).HasFocus()">Conditional</animation>				
-			<animation effect="slide" start="-18" end="-18" time="0" condition="Window.IsActive(2) | Window.IsActive(501) | Window.IsActive(502)">Conditional</animation>				
-		</control>	
-
-		<include>Furniture_WallVignette</include>
-		
+	<include name="MusicWall">
 		<control type="panel" id="53">
 			<viewtype label="31750">icon</viewtype>
 			<include condition="!Skin.HasSetting(smallmusicwall)">WallWidthBig</include>
@@ -284,8 +257,10 @@
 					</animation>
 				</control>					
 			</focusedlayout>
-		</control>
-		
+		</control>	
+	</include>
+	
+	<include name="MovieWall">
 		<control type="panel" id="53">
 			<viewtype label="Wall">icon</viewtype>
 			<include condition="!Skin.HasSetting(smallmoviewall)">MovieWallBig</include>
@@ -384,7 +359,43 @@
 					</animation>
 				</control>					
 			</focusedlayout>			
-		</control>		
+		</control>	
+	</include>
+	
+	<include name="Viewtype_Wall">
+
+		<include condition="Window.IsActive(20) | Window.IsActive(2) | Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)">MusicWall</include>
+		<include condition="Window.IsActive(28) | Window.IsActive(1) | Window.IsActive(24) | Window.IsActive(25)">MovieWall</include>
+	
+		<control type="image">
+			<posx>57</posx>
+			<posy>98</posy>
+			<width>20</width>
+			<height>524</height>
+			<texture>wall/wall_arrow.png</texture>
+			<visible>Control.IsVisible(53)</visible>
+			<animation effect="slide" start="-100" end="0" delay="800" time="400" easing="out" tween="cubic">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="400" condition="Container(53).Column(0) + !ControlGroup(7000).HasFocus()">Conditional</animation>			
+			<animation effect="slide" start="18" end="18" time="0" condition="Window.IsActive(2) | Window.IsActive(501) | Window.IsActive(502)">Conditional</animation>				
+		</control>
+		
+		<control type="image">
+			<posx>1203</posx>
+			<posy>98</posy>
+			<width>20</width>
+			<height>524</height>
+			<texture flipx="true">wall/wall_arrow.png</texture>
+			<visible>Control.IsVisible(53)</visible>
+			<animation effect="slide" start="100" end="0" delay="800" time="400" easing="out" tween="cubic">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="400" condition="[[Window.IsActive(2) | Window.IsActive(501) | Window.IsActive(502)] + Container(53).Column(7)] | [[Window.IsActive(1) | Window.IsActive(24) | Window.IsActive(25)] + Container(53).Column(8)] + !ControlGroup(7000).HasFocus()">Conditional</animation>				
+			<animation effect="slide" start="-18" end="-18" time="0" condition="Window.IsActive(2) | Window.IsActive(501) | Window.IsActive(502)">Conditional</animation>				
+		</control>	
+
+		<include>Furniture_WallVignette</include>
+		
+
+		
+		
 
 		<control type="group">
 			<posx>115</posx>
