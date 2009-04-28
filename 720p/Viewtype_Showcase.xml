@@ -2583,13 +2583,13 @@
 		
         <control type="group">
             <visible>Window.IsActive(28) | Window.IsActive(24) | [Window.IsActive(25) + !Container.Content(episodes)] | Window.IsActive(1)</visible>
-            <include>ShowcaseMovies</include>
+            <include condition="Window.IsActive(1) | Window.IsActive(24) | Window.IsActive(25)">ShowcaseMovies</include>
 			<include>Animation_HideShowcase</include>
         </control>
 		
         <control type="group">
             <visible>Window.IsActive(20) | Window.IsActive(502) | Window.IsActive(501) | Window.IsActive(500) | Window.IsActive(2)</visible>
-            <include>ShowcaseSquare</include>
+            <include condition="Window.IsActive(2) | Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)">ShowcaseSquare</include>
 			<include>Animation_HideShowcase</include>
         </control>
 		
@@ -2815,7 +2815,7 @@
 				<include>Animation_CommonFade</include>
             </control>
 
-			<include>Furniture_ShowcaseMediaFlags</include>
+			<include condition="Skin.HasSetting(videomovies)">Furniture_ShowcaseMediaFlags</include>
 			
             <control type="group">
 				<include>Animation_HideShowcase</include>
@@ -2886,10 +2886,7 @@
 		
         <control type="group">
             <include>ShowcaseVisible</include>
-            <include>CommonSortLetters</include>
         </control>
-		
-        <include>Info_ShowcaseInfoPanel</include>
 		
     </include>
 </includes>
