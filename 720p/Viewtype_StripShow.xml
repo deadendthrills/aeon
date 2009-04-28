@@ -238,7 +238,7 @@
 				<animation effect="fade" start="0" end="100" time="200">Visible</animation>		
 			</control>
 			
-			<control type="label" id="108">
+			<control type="label">
 				<posx>1216</posx>
 				<posy>678</posy>
 				<align>right</align>

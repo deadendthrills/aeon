@@ -77,8 +77,6 @@
 			<ondown>SetFocus(900)</ondown>		
 		</control>
 
-
-		
 		<control type="group">
 			<include>ViewChangeAnimTop</include>
 			<control type="image">

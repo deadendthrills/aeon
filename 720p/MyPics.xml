@@ -21,7 +21,7 @@
 		<texture>-</texture>
 		<visible>Control.HasFocus(51) + !Skin.HasSetting(nostripshowhide) + !Control.IsVisible(66) + Control.IsVisible(668) + [!Container(51).OnNext + !Container(51).OnPrevious]</visible>
 		<animation effect="fade" start="0" end="100" time="150" delay="3000">Visible</animation>
-	</control>	
+	</control>
 
 	<control type="image">
 		<include>FullscreenDimensions</include>
@@ -82,10 +82,10 @@
 		<include>Furniture_Time</include>
 		<include>Furniture_MediaPanel</include>
 
-		<include>Viewtype_Showcase</include>
-		<include>Viewtype_List</include>
 		<include>Viewtype_Wall</include>		
-		<include>Viewtype_StripShow</include>			
+		<include>Viewtype_StripShow</include>
+		<include>Viewtype_Showcase</include>
+		<include>Viewtype_List</include>		
 
 		<include>Objects_ShowcaseMenuPanel</include>
 		<include>Furniture_WallTime</include>
