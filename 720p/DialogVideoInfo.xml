@@ -84,7 +84,7 @@
 		<height>720</height>
 		<texture>info/movieinfogradient.png</texture>
 		<aspectratio>stretch</aspectratio>
-		<visible>!Container.Content(episodes)</visible>
+		<visible>!Skin.HasSetting(videotv)</visible>	
 	</control>
 
 	<control type="largeimage">
@@ -95,7 +95,7 @@
 		<height>720</height>
 		<texture>$INFO[listitem.thumb]</texture>
 		<aspectratio>stretch</aspectratio>
-		<visible>!Container.Content(episodes)</visible>		
+		<visible>!Skin.HasSetting(videotv)</visible>		
 	</control>
 	
 	<control type="largeimage">
@@ -107,8 +107,20 @@
 		<texture>$INFO[listitem.path]movie.tbn</texture>
 		<aspectratio>stretch</aspectratio>
 		<fadetime>500</fadetime>
-		<visible>!Container.Content(episodes)</visible>		
+		<visible>!Skin.HasSetting(videotv)</visible>		
 	</control>
+	
+	<control type="largeimage">
+		<description>Cover image</description>
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>486</width>
+		<height>720</height>
+		<texture>$INFO[listitem.path]poster.jpg</texture>
+		<aspectratio>stretch</aspectratio>
+		<fadetime>500</fadetime>
+		<visible>Skin.HasSetting(videotv)</visible>		
+	</control>	
 	
 	<control type="largeimage">
 		<description>Cover image</description>
@@ -119,7 +131,7 @@
 		<texture>$INFO[listitem.path]-big.png</texture>
 		<aspectratio>stretch</aspectratio>
 		<fadetime>500</fadetime>
-		<visible>!Container.Content(episodes)</visible>		
+		<visible>!Skin.HasSetting(videotv)</visible>		
 	</control>	
 
 	<control type="image">
@@ -129,7 +141,6 @@
 		<width>795</width>
 		<height>720</height>
 		<texture>info/info_rightpaneltop.png</texture>
-		<animation effect="slide" time="0" start="22,0" end="22,0" condition="Container.Content(episodes)">Conditional</animation>		
 	</control>
 
 <!-- Movie info -->
