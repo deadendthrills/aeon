@@ -921,7 +921,7 @@
 					<aligny>center</aligny>
 					<font>Font_MultiplexSeasonLabel</font>
 					<label>$INFO[ListItem.Label]</label>
-					<animation effect="zoom" center="115,100" start="80" end="100" time="200" easing="out" tween="cubic" reversible="false">Focus</animation>						
+					<animation effect="zoom" center="115,100" start="80" end="100" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>						
 					<visible>Container.Content(seasons)</visible>					
 				</control>
 				<control type="label">
@@ -933,7 +933,7 @@
 					<aligny>center</aligny>
 					<font>Font_MultiplexSeasonLabel</font>
 					<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
-					<animation effect="zoom" center="115,100" start="80" end="100" time="200" easing="out" tween="cubic" reversible="false">Focus</animation>						
+					<animation effect="zoom" center="115,100" start="80" end="100" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>						
 					<visible>Container.Content(episodes)</visible>					
 				</control>				
 				<control type="image">
