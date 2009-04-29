@@ -95,7 +95,6 @@
 		<height>720</height>
 		<texture>$INFO[listitem.thumb]</texture>
 		<aspectratio>stretch</aspectratio>
-		<visible>!Skin.HasSetting(videotv)</visible>		
 	</control>
 	
 	<control type="largeimage">
@@ -141,7 +140,18 @@
 		<width>795</width>
 		<height>720</height>
 		<texture>info/info_rightpaneltop.png</texture>
+		<visible>!Skin.HasSetting(lite)</visible>		
 	</control>
+	
+	<control type="image">
+		<description>background image</description>
+		<posx>486</posx>
+		<posy>0</posy>
+		<width>795</width>
+		<height>720</height>
+		<texture>info/lite/info_rightpaneltop.png</texture>
+		<visible>Skin.HasSetting(lite)</visible>
+	</control>	
 
 <!-- Movie info -->
 
