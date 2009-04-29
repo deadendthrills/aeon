@@ -845,26 +845,28 @@
 				</control>
 				<control type="label">
 					<posx>115</posx>
-					<posy>119</posy>
+					<posy>129</posy>
 					<width>229</width>
 					<height>30</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>Font_MultiplexSeasonLabel</font>
 					<label>$INFO[ListItem.Label]</label>
-					<visible>Container.Content(seasons)</visible>					
+					<visible>Container.Content(seasons)</visible>
+					<animation effect="zoom" center="115,100" start="80" end="80" time="0" condition="true">Conditional</animation>						
 				</control>
 				<control type="label">
 					<posx>115</posx>
-					<posy>119</posy>
+					<posy>129</posy>
 					<width>229</width>
 					<height>30</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>Font_MultiplexSeasonLabel</font>
 					<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
+					<animation effect="zoom" center="115,100" start="80" end="80" time="0" condition="true">Conditional</animation>						
 					<visible>Container.Content(episodes)</visible>					
-				</control>						
+				</control>							
 				<control type="image">
 					<include>MultiplexSeasonOverlayWrap</include>
 					<texture>multiplex/multiplex_seasongradient.png</texture>			
@@ -912,26 +914,26 @@
 				</control>
 				<control type="label">
 					<posx>115</posx>
-					<posy>119</posy>
+					<posy>129</posy>
 					<width>229</width>
 					<height>30</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>Font_MultiplexSeasonLabel</font>
 					<label>$INFO[ListItem.Label]</label>
-					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>						
+					<animation effect="zoom" center="115,100" start="80" end="100" time="200" easing="out" tween="cubic" reversible="false">Focus</animation>						
 					<visible>Container.Content(seasons)</visible>					
 				</control>
 				<control type="label">
 					<posx>115</posx>
-					<posy>119</posy>
+					<posy>129</posy>
 					<width>229</width>
 					<height>30</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>Font_MultiplexSeasonLabel</font>
 					<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
-					<animation effect="zoom" center="115,75" start="100" end="120" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>						
+					<animation effect="zoom" center="115,100" start="80" end="100" time="200" easing="out" tween="cubic" reversible="false">Focus</animation>						
 					<visible>Container.Content(episodes)</visible>					
 				</control>				
 				<control type="image">
