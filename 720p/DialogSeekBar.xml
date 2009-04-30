@@ -168,7 +168,7 @@
 		<height>25</height>
 		<font>Font_OSDTime</font>
 		<colordiffuse>d0FFFFFF</colordiffuse>
-		<label>$INFO[VideoPlayer.Time]</label>
+		<label>$INFO[VideoPlayer.Time] ($INFO[System.Time])</label>
 	</control>
 	
 	<control type="label">
@@ -179,7 +179,7 @@
 		<font>Font_OSDTime</font>
 		<align>right</align>
 		<colordiffuse>d0FFFFFF</colordiffuse>
-		<label>$INFO[VideoPlayer.Duration]</label>
+		<label>$INFO[VideoPlayer.Duration] ($INFO[Player.FinishTime])</label>
 	</control>
 	
 	</control>
