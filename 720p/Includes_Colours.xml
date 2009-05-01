@@ -46,4 +46,12 @@
 	<textcolor>FF5b6366</textcolor>
 </include>
 
+<include name="Colour_ShowcaseLabelLightShade">
+	<textcolor>d01a1a1c</textcolor>	
+</include>
+
+<include name="Colour_ShowcaseLabelNightShade">
+	<textcolor>FFe1e1e1</textcolor>	
+</include>	
+
 </includes>

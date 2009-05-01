@@ -4,6 +4,14 @@
         <visible>Control.IsVisible(57)</visible>
     </include>
 
+	<include name="ShowcaseSpotNight">
+	    <texture>showcase/showcase_spot.png</texture>
+	</include>
+	
+	<include name="ShowcaseSpotLight">
+	    <texture>showcase/lite/showcase_spot.png</texture>
+	</include>	
+	
 	<include name="MovieShowcaseGroupVars">
 		<posx>-83</posx>
 		<posy>380</posy>
@@ -60,8 +68,9 @@
         <colordiffuse>d0FFFFFF</colordiffuse>
         <texture flipy="true" diffuse="thumbs/movieposter_mask_reflect.png">defaultvideobig.png</texture>
         <aspectratio scalediffuse="false">scale</aspectratio>
+		<animation effect="fade" start="70" end="70" time="0" condition="Skin.HasSetting(darkshowcase)">Conditional</animation>			
     </include>
-
+	
 <!-- Movie Showcase Variables: Thumb glass overlays -->
 
     <include name="MovieShowcaseGlassOverlay">
@@ -111,6 +120,7 @@
         <colordiffuse>d0FFFFFF</colordiffuse>
         <texture flipy="true" diffuse="thumbs/cdcover_mask_reflect.png">defaultaudiobig.png</texture>
         <aspectratio>scale</aspectratio>
+		<animation effect="fade" start="50" end="50" time="0" condition="Skin.HasSetting(darkshowcase)">Conditional</animation>		
     </include>
 	
     <include name="MusicShowcaseThumbReflectionMain">
@@ -118,6 +128,7 @@
         <colordiffuse>52FFFFFF</colordiffuse>
         <texture flipy="true" diffuse="thumbs/cdcover_mask_reflect.png">defaultaudiobig.png</texture>
         <aspectratio>scale</aspectratio>
+		<animation effect="fade" start="50" end="50" time="0" condition="Skin.HasSetting(darkshowcase)">Conditional</animation>	
     </include>
 	
 <!-- Music Showcase Variables: Thumb glass overlays -->
@@ -176,7 +187,8 @@
         <posy>693</posy>
         <width>600</width>
         <font>Font_ShowcaseMainLabel</font>
-        <textcolor>d01a1a1c</textcolor>
+        <include condition="!Skin.HasSetting(darkshowcase)">Colour_ShowcaseLabelLightShade</include>
+        <include condition="Skin.HasSetting(darkshowcase)">Colour_ShowcaseLabelNightShade</include>
 		<visible>!ControlGroup(7000).HasFocus()</visible>		
         <animation effect="slide" end="0,-11" time="200" condition="[!Control.IsVisible(72) | IsEmpty(Control.GetLabel(72))] | Window.IsActive(24)">Conditional</animation>
     </include>
@@ -187,7 +199,8 @@
         <posy>693</posy>
         <width>880</width>
         <font>Font_ShowcaseMainLabel</font>
-        <textcolor>d01a1a1c</textcolor>
+        <include condition="!Skin.HasSetting(darkshowcase)">Colour_ShowcaseLabelLightShade</include>
+        <include condition="Skin.HasSetting(darkshowcase)">Colour_ShowcaseLabelNightShade</include>		
 		<visible>!ControlGroup(7000).HasFocus()</visible>
         <animation effect="slide" end="0,-11" time="200" condition="[!Control.IsVisible(72) | IsEmpty(Control.GetLabel(72))] | Window.IsActive(24)">Conditional</animation>
     </include>
@@ -198,7 +211,8 @@
         <posy>685</posy>
         <width>600</width>
         <font>Font_ShowcaseMainLabel</font>
-        <textcolor>d01a1a1c</textcolor>
+        <include condition="!Skin.HasSetting(darkshowcase)">Colour_ShowcaseLabelLightShade</include>
+        <include condition="Skin.HasSetting(darkshowcase)">Colour_ShowcaseLabelNightShade</include>
 		<visible>ControlGroup(7000).HasFocus()</visible>		
     </include>	
 	
@@ -209,7 +223,8 @@
         <width>600</width>
         <font>Font_ShowcaseDetailLabel</font>
 		<visible>!ControlGroup(7000).HasFocus()</visible>		
-        <textcolor>b91a1a1c</textcolor>
+        <include condition="!Skin.HasSetting(darkshowcase)">Colour_ShowcaseLabelLightShade</include>
+        <include condition="Skin.HasSetting(darkshowcase)">Colour_ShowcaseLabelNightShade</include>
     </include>
 	
     <include name="ShowcaseSpot">
@@ -217,11 +232,23 @@
         <posy>583</posy>
         <width>993</width>
         <height>137</height>
-        <texture>showcase/showcase_spot.png</texture>
+        <include condition="!Skin.HasSetting(darkshowcase)">ShowcaseSpotLight</include>
+		<include condition="Skin.HasSetting(darkshowcase)">ShowcaseSpotNight</include>
         <include>Animation_CommonFade</include>
 		<include>Animation_HideShowcase</include>
-        <visible>Control.IsVisible(57) | Control.IsVisible(50)</visible>
+        <visible>Control.IsVisible(57)</visible>
     </include>
+	
+    <include name="ShowcaseSpot">
+        <posx>144</posx>
+        <posy>583</posy>
+        <width>993</width>
+        <height>137</height>
+        <include>ShowcaseSpotLight</include>
+        <include>Animation_CommonFade</include>
+		<include>Animation_HideShowcase</include>
+        <visible>Control.IsVisible(50)</visible>
+    </include>	
 	
     <control type="image" id="82">
         <texture>-</texture>
@@ -1126,6 +1153,7 @@
                         <info>Container(57).ListItem(-7).Icon</info>
 						<visible>[Container.Content(seasons) | Container.Content(episodes)] | Skin.HasSetting(alternativerender)</visible>
                     </control>
+					
                 </control>
             </control>
             <control type="group">
@@ -2883,6 +2911,16 @@
                 </control>
             </control>
         </control>
+		
+		<control type="image">
+			<posx>0</posx>
+			<posy>675</posy>
+			<width>1280</width>
+			<height>48</height>
+			<texture>showcase/showcase_gradient.png</texture>
+			<visible>Skin.HasSetting(darkshowcase) + Control.IsVisible(57)</visible>
+			<include>Animation_CommonFade</include>
+		</control>
 		
         <control type="group">
             <include>ShowcaseVisible</include>

@@ -18,6 +18,14 @@
 		<animation effect="fade" start="0" end="100" time="200">Visible</animation>		
 	</include>	
 	
+	<include name="StripShowIconBackLight">
+		<texture>stripshow/lite/stripshow_iconback.png</texture>	
+	</include>
+	
+	<include name="StripShowIconBackNight">
+		<texture>stripshow/stripshow_iconback.png</texture>	
+	</include>
+
 	<include name="Viewtype_StripShow">
 
 		<control type="group">
@@ -30,7 +38,8 @@
 			<control type="image" id="304">
 				<width>1280</width>
 				<height>266</height>
-				<texture>stripshow/stripshow_iconback.png</texture>
+				<include condition="!Skin.HasSetting(darkstripshow)">StripShowIconBackLight</include>
+				<include condition="Skin.HasSetting(darkstripshow)">StripShowIconBackNight</include>				
 				<visible>!Control.IsVisible(105)</visible>
 				<animation effect="slide" start="0,0" end="0,176" time="600" easing="out" tween="cubic">Hidden</animation>		
 				<animation effect="fade" start="0" end="100" time="200">Visible</animation>	
@@ -40,7 +49,8 @@
 				<posy>176</posy>
 				<width>1280</width>
 				<height>266</height>
-				<texture>stripshow/stripshow_iconback.png</texture>
+				<include condition="!Skin.HasSetting(darkstripshow)">StripShowIconBackLight</include>
+				<include condition="Skin.HasSetting(darkstripshow)">StripShowIconBackNight</include>
 				<visible>Control.IsVisible(105) + !Control.IsVisible(304)</visible>
 				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 				<animation effect="slide" start="0,0" end="0,100" time="200" tween="cubic" easing="inout" delay="5000" condition="Control.IsVisible(108)">Conditional</animation>
@@ -53,6 +63,7 @@
 				<height>198</height>
 				<texture>stripshow/stripshow_iconframe.png</texture>
 				<visible>!Control.IsVisible(105)</visible>
+				<animation effect="fade" start="60" end="60" time="0" condition="!Skin.HasSetting(darkstripshow)">Conditional</animation>				
 				<animation effect="fade" start="0" end="100" time="200">Visible</animation>
 			</control>
 		</control>

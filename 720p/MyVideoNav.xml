@@ -215,6 +215,26 @@
 				</control>
 				
 				<include>Objects_FlagsButton</include>
+
+				<control type="togglebutton" id="996">
+					<include>Objects_MediaMenuButton</include>				
+					<label>$LOCALIZE[31042]</label>
+					<altlabel>$LOCALIZE[31043]</altlabel>
+					<usealttexture>Skin.HasSetting(darkshowcase)</usealttexture>
+					<onclick>Skin.ToggleSetting(darkshowcase)</onclick>
+					<onclick>XBMC.ReloadSkin</onclick>
+					<visible>Control.IsVisible(57)</visible>
+				</control>
+				
+				<control type="togglebutton" id="997">
+					<include>Objects_MediaMenuButton</include>				
+					<label>$LOCALIZE[31042]</label>
+					<altlabel>$LOCALIZE[31043]</altlabel>
+					<usealttexture>Skin.HasSetting(darkmultiplex)</usealttexture>
+					<onclick>Skin.ToggleSetting(darkmultiplex)</onclick>
+					<onclick>XBMC.ReloadSkin</onclick>
+					<visible>Control.IsVisible(52)</visible>
+				</control>				
 				
 				<include>Objects_WallGridButton</include>
 				

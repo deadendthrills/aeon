@@ -132,16 +132,6 @@
 		<fadetime>500</fadetime>
 		<visible>!Skin.HasSetting(videotv)</visible>		
 	</control>	
-
-	<control type="image">
-		<description>background image</description>
-		<posx>486</posx>
-		<posy>0</posy>
-		<width>795</width>
-		<height>720</height>
-		<texture>info/info_rightpaneltop.png</texture>
-		<visible>!Skin.HasSetting(lite)</visible>		
-	</control>
 	
 	<control type="image">
 		<description>background image</description>
@@ -150,7 +140,6 @@
 		<width>795</width>
 		<height>720</height>
 		<texture>info/lite/info_rightpaneltop.png</texture>
-		<visible>Skin.HasSetting(lite)</visible>
 	</control>	
 
 <!-- Movie info -->
@@ -169,6 +158,7 @@
 			<width>695</width>
 			<height>569</height>
 			<texture>info/info_panellines_movie.png</texture>
+			<animation effect="fade" start="70" end="70" time="0" condition="Skin.HasSetting(lite)">Conditional</animation>				
 		</control>
 
 		<control type="image">
@@ -406,6 +396,7 @@
 			<height>569</height>
 			<texture>info/info_tv_panellines.png</texture>
 			<visible>Container.Content(tvshows)</visible>
+			<animation effect="fade" start="70" end="70" time="0" condition="Skin.HasSetting(lite)">Conditional</animation>				
 		</control>
 		
 		<control type="label">
@@ -579,6 +570,7 @@
 			<width>695</width>
 			<height>569</height>
 			<texture>info/info_tv_panellines.png</texture>
+			<animation effect="fade" start="70" end="70" time="0" condition="Skin.HasSetting(lite)">Conditional</animation>				
 		</control>
 		
 		<control type="label">

@@ -659,6 +659,14 @@
 		<height>718</height>
 	</include>
 
+	<include name="ShowcaseFloorNight">
+		<texture>showcase/showcase_floor.png</texture>	
+	</include>
+	
+	<include name="ShowcaseFloorLight">
+		<texture>showcase/lite/showcase_floor.png</texture>		
+	</include>
+	
 	<include name="Furniture_MediaPanel">
 		<control type="image">
 			<include>FullscreenDimensions</include>
@@ -672,7 +680,8 @@
 			<posy>315</posy>
 			<width>1280</width>
 			<height>405</height>
-			<texture>showcase/showcase_floor.png</texture>
+			<include condition="!Skin.HasSetting(darkshowcase)">ShowcaseFloorLight</include>
+			<include condition="Skin.HasSetting(darkshowcase)">ShowcaseFloorNight</include>			
 			<visible>Control.IsVisible(57)</visible>
 			<include>Animation_CommonFade</include>
 			<include>Animation_HideShowcase</include>

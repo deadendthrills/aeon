@@ -374,6 +374,7 @@
 			<include>Objects_MediaMenuButton</include>
 			<visible>Skin.HasSetting(debug)</visible>
 		</control>
+		
 	</include>
 
 	<include name="Objects_ViewtypeClick">

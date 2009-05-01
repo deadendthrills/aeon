@@ -172,6 +172,16 @@
 					<include>Objects_MediaMenuButton</include>
 				</control>
 
+				<control type="togglebutton" id="996">
+					<include>Objects_MediaMenuButton</include>				
+					<label>$LOCALIZE[31042]</label>
+					<altlabel>$LOCALIZE[31043]</altlabel>
+					<usealttexture>Skin.HasSetting(darkstripshow)</usealttexture>
+					<onclick>Skin.ToggleSetting(darkstripshow)</onclick>
+					<onclick>XBMC.ReloadSkin</onclick>
+					<visible>Control.IsVisible(51)</visible>
+				</control>				
+				
 				<include>Objects_PicturesSetupButton</include>
 				
 				<include>Objects_MediaDebugButtons</include>

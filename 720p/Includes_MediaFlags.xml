@@ -1,5 +1,13 @@
 <includes>
 
+	<include name="ShowcaseMediaFlagLightShade">
+		<colordiffuse>74000000</colordiffuse>	
+	</include>
+	
+	<include name="ShowcaseMediaFlagNightShade">
+		<colordiffuse>FFe1e1e1</colordiffuse>	
+	</include>
+
 	<include name="Furniture_ShowcaseMediaFlagsVars">
 		<posy>647</posy>
 		<width>110</width>
@@ -7,7 +15,8 @@
 		<include>Animation_CommonFade</include>
 		<include>Animation_HideShowcase</include>
 		<visible>Control.IsVisible(57)</visible>
-		<colordiffuse>74000000</colordiffuse>
+		<include condition="!Skin.HasSetting(darkshowcase)">ShowcaseMediaFlagLightShade</include>
+		<include condition="Skin.HasSetting(darkshowcase)">ShowcaseMediaFlagNightShade</include>
 	</include>
 	
 	<include name="Furniture_ListMediaFlagsVars">
@@ -85,7 +94,8 @@
 		<posy>581</posy>		
 		<width>1</width>
 		<height>47</height>
-		<texture>info/info_flagupright.png</texture>	
+		<texture>info/info_flagupright.png</texture>
+		<animation effect="fade" start="70" end="70" time="0" condition="Skin.HasSetting(lite)">Conditional</animation>	
 	</include>
 	
 	<include name="Furniture_MovieInfoMediaFlags">
@@ -365,6 +375,7 @@
 				<height>151</height>
 				<texture>showcase/flagshade.png</texture>
 				<include>Animation_HideShowcase</include>
+				<visible>!Skin.HasSetting(darkshowcase)</visible>
 			</control>
 			<control type="image">
 				<posx>982</posx>
@@ -373,6 +384,7 @@
 				<height>151</height>
 				<texture flipx="true">showcase/flagshade.png</texture>
 				<include>Animation_HideShowcase</include>
+				<visible>!Skin.HasSetting(darkshowcase)</visible>				
 			</control>	
 		</control>
 		<control type="group">
