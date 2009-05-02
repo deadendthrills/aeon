@@ -374,7 +374,140 @@
 			<include>Objects_MediaMenuButton</include>
 			<visible>Skin.HasSetting(debug)</visible>
 		</control>
+	</include>
+
+	<include name="Objects_LightNightButtons">
+		<control type="togglebutton" id="996">
+			<include>Objects_MediaMenuButton</include>				
+			<label>$LOCALIZE[31042]</label>
+			<altlabel>$LOCALIZE[31043]</altlabel>
+			<usealttexture>Skin.HasSetting(darkshowcase)</usealttexture>
+			<onclick>Skin.ToggleSetting(darkshowcase)</onclick>
+			<onclick>XBMC.ReloadSkin</onclick>
+			<visible>Control.IsVisible(57)</visible>
+		</control>
 		
+		<control type="togglebutton" id="997">
+			<include>Objects_MediaMenuButton</include>				
+			<label>$LOCALIZE[31042]</label>
+			<altlabel>$LOCALIZE[31043]</altlabel>
+			<usealttexture>Skin.HasSetting(darkmultiplex)</usealttexture>
+			<onclick>Skin.ToggleSetting(darkmultiplex)</onclick>
+			<onclick>XBMC.ReloadSkin</onclick>
+			<visible>Control.IsVisible(52)</visible>
+		</control>		
+	</include>
+	
+	<include name="Objects_MultiplexInfoButtons">
+		<control type="button" id="980">
+			<include>Objects_MediaMenuButton</include>				
+			<label>$LOCALIZE[31070]: $LOCALIZE[31078]</label>
+			<onclick>Skin.SetBool(multiplexinfoauto)</onclick>
+			<onclick>Skin.Reset(multiplexinfooff)</onclick>
+			<onclick>XBMC.ReloadSkin</onclick>
+			<visible>Skin.HasSetting(Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + Skin.HasSetting(multiplexinfooff)</visible>
+		</control>
+		
+		<control type="button" id="981">
+			<include>Objects_MediaMenuButton</include>				
+			<label>$LOCALIZE[31070]: $LOCALIZE[31049]</label>
+			<onclick>Skin.SetBool(multiplexinfotrigger)</onclick>
+			<onclick>Skin.Reset(multiplexinfoauto)</onclick>
+			<onclick>XBMC.ReloadSkin</onclick>
+			<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + ![Skin.HasSetting(multiplexinfotrigger) | Skin.HasSetting(multiplexinfooff) | Skin.HasSetting(multiplexinfoon)]</visible>
+		</control>
+
+		<control type="button" id="982">
+			<include>Objects_MediaMenuButton</include>				
+			<label>$LOCALIZE[31070]: $LOCALIZE[31048]</label>
+			<onclick>Skin.SetBool(multiplexinfoon)</onclick>
+			<onclick>Skin.Reset(multiplexinfotrigger)</onclick>
+			<onclick>XBMC.ReloadSkin</onclick>
+			<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + Skin.HasSetting(multiplexinfotrigger)</visible>
+		</control>	
+
+		<control type="button" id="983">
+			<include>Objects_MediaMenuButton</include>				
+			<label>$LOCALIZE[31070]: $LOCALIZE[31077]</label>
+			<onclick>Skin.SetBool(multiplexinfooff)</onclick>
+			<onclick>Skin.Reset(multiplexinfoon)</onclick>
+			<onclick>XBMC.ReloadSkin</onclick>
+			<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + Skin.HasSetting(multiplexinfoon)</visible>
+		</control>
+
+		<control type="button" id="984">
+			<include>Objects_MediaMenuButton</include>				
+			<label>$LOCALIZE[31070]: $LOCALIZE[31078]</label>
+			<onclick>Skin.SetBool(multiplextvinfoauto)</onclick>
+			<onclick>Skin.Reset(multiplextvinfooff)</onclick>
+			<onclick>XBMC.ReloadSkin</onclick>
+			<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + Control.IsVisible(52) + Skin.HasSetting(multiplextvinfooff)</visible>
+		</control>
+		
+		<control type="button" id="985">
+			<include>Objects_MediaMenuButton</include>				
+			<label>$LOCALIZE[31070]: $LOCALIZE[31049]</label>
+			<onclick>Skin.SetBool(multiplextvinfotrigger)</onclick>
+			<onclick>Skin.Reset(multiplextvinfoauto)</onclick>
+			<onclick>XBMC.ReloadSkin</onclick>
+			<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + Control.IsVisible(52) + ![Skin.HasSetting(multiplextvinfotrigger) | Skin.HasSetting(multiplextvinfooff) | Skin.HasSetting(multiplextvinfoon)]</visible>
+		</control>
+
+		<control type="button" id="986">
+			<include>Objects_MediaMenuButton</include>				
+			<label>$LOCALIZE[31070]: $LOCALIZE[31048]</label>
+			<onclick>Skin.SetBool(multiplextvinfoon)</onclick>
+			<onclick>Skin.Reset(multiplextvinfotrigger)</onclick>
+			<onclick>XBMC.ReloadSkin</onclick>
+			<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + Control.IsVisible(52) + Skin.HasSetting(multiplextvinfotrigger)</visible>
+		</control>	
+
+		<control type="button" id="987">
+			<include>Objects_MediaMenuButton</include>				
+			<label>$LOCALIZE[31070]: $LOCALIZE[31077]</label>
+			<onclick>Skin.SetBool(multiplextvinfooff)</onclick>
+			<onclick>Skin.Reset(multiplextvinfoon)</onclick>
+			<onclick>XBMC.ReloadSkin</onclick>
+			<visible>Window.IsActive(25) + Skin.HasSetting(videotv) + Control.IsVisible(52) + Skin.HasSetting(multiplextvinfoon)</visible>
+		</control>		
+	</include>
+	
+	<include name="Objects_MultiplexStyleButtons">
+		<control type="button" id="988">
+			<include>Objects_MediaMenuButton</include>				
+			<label>$LOCALIZE[31047]: $LOCALIZE[31046]</label>
+			<onclick>Skin.SetBool(multiplexbigthumb)</onclick>
+			<onclick>Skin.Reset(multiplexplot)</onclick>
+			<onclick>XBMC.ReloadSkin</onclick>
+			<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + ![Skin.HasSetting(multiplexbigthumb) | Skin.HasSetting(multiplexfanart)]</visible>
+		</control>
+		
+		<control type="button" id="989">
+			<include>Objects_MediaMenuButton</include>				
+			<label>$LOCALIZE[31047]: $LOCALIZE[31045]</label>
+			<onclick>Skin.SetBool(multiplexfanart)</onclick>
+			<onclick>Skin.Reset(multiplexbigthumb)</onclick>
+			<onclick>XBMC.ReloadSkin</onclick>
+			<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + Skin.HasSetting(multiplexbigthumb)</visible>
+		</control>
+
+		<control type="button" id="990">
+			<include>Objects_MediaMenuButton</include>				
+			<label>$LOCALIZE[31047]: $LOCALIZE[31044]</label>
+			<onclick>Skin.SetBool(multiplexplot)</onclick>
+			<onclick>Skin.Reset(multiplexfanart)</onclick>
+			<onclick>XBMC.ReloadSkin</onclick>
+			<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + Skin.HasSetting(multiplexfanart)</visible>
+		</control>
+		
+		<control type="togglebutton" id="995">
+			<include>Objects_MediaMenuButton</include>				
+			<label>$LOCALIZE[31045]: $LOCALIZE[31063]</label>
+			<altlabel>$LOCALIZE[31045]: $LOCALIZE[31064]</altlabel>
+			<usealttexture>!Skin.HasSetting(multiplextvbigthumb)</usealttexture>
+			<onclick>Skin.ToggleSetting(multiplextvbigthumb)</onclick>
+			<visible>Container.Content(episodes) + Window.IsActive(25) + Skin.HasSetting(videotv) + Control.IsVisible(52)</visible>
+		</control>		
 	</include>
 
 	<include name="Objects_ViewtypeClick">

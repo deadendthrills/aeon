@@ -208,6 +208,9 @@
   
 <!-- Aeon Advanced options -->
 
+	<string id="31249">MEDIA FLAGS TOGGLE</string>
+	<string id="31250">MULTIPLEX LAYOUT (FANART, PLOT, THUMBSHOW)</string>
+	<string id="31251">MULTIPLEX INFO TOGGLE (ON, OFF, AUTO, TRIGGER)</string>
 	<string id="31252">GRADIENT EFFECT FOR HOME MAIN MENU</string>
 	<string id="31253">LINK GAMES SHORTCUT TO 'LAUNCHER' PLUGIN</string>
 	<string id="31258">SHOW RATINGS (IMDB, ETC.) IN MOVIE INFO PAGE</string>
@@ -237,7 +240,7 @@
 	<string id="31293">FILES VIEW SHORTCUT (MOVIE AND TV LIBRARIES)</string>
 	<string id="31294">LARGER KEYBOARD / NUMERIC KEYPAD</string>
 	<string id="31295">IMPROVED LEGIBILITY (LARGER TIME AND RSS)</string>
-	<string id="31296">SINGLE/MULTI THUMBNAILS TOGGLE</string>
+	<string id="31296">LIGHT / NIGHT THEME TOGGLE</string>
 	<string id="31297">USE SINGLE THUMBNAIL FOR MUSIC LIST</string>
 	<string id="31298">USE SINGLE THUMBNAIL FOR MOVIE LIST</string>
 	<string id="31299">SHOW RSS / NOW PLAYING IN SHOWCASE VIEW</string>

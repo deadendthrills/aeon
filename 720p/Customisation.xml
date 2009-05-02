@@ -328,9 +328,30 @@
 		<control type="radiobutton" id="806">
 			<include>Objects_SettingsDefaultRadioButton</include>
 			<label>31296</label>
-			<onclick>Skin.ToggleSetting(nomenuthumbs)</onclick>
-			<selected>!Skin.HasSetting(nomenuthumbs)</selected>
+			<onclick>Skin.ToggleSetting(nolightnightbuttons)</onclick>
+			<selected>!Skin.HasSetting(nolightnightbuttons)</selected>
 		</control>
+		
+		<control type="radiobutton" id="807">
+			<include>Objects_SettingsDefaultRadioButton</include>
+			<label>31251</label>
+			<onclick>Skin.ToggleSetting(nomultiplexinfobuttons)</onclick>
+			<selected>!Skin.HasSetting(nomultiplexinfobuttons)</selected>
+		</control>
+
+		<control type="radiobutton" id="808">
+			<include>Objects_SettingsDefaultRadioButton</include>
+			<label>31250</label>
+			<onclick>Skin.ToggleSetting(nomultiplexstylebuttons)</onclick>
+			<selected>!Skin.HasSetting(nomultiplexstylebuttons)</selected>
+		</control>		
+		
+		<control type="radiobutton" id="809">
+			<include>Objects_SettingsDefaultRadioButton</include>
+			<label>31249</label>
+			<onclick>Skin.ToggleSetting(nomediaflagsbutton)</onclick>
+			<selected>!Skin.HasSetting(nomediaflagsbutton)</selected>
+		</control>			
 		
 	</control>	
 
