@@ -775,7 +775,7 @@
 				<onclick>SetFocus(400)</onclick>
 				<onleft>400</onleft>
 				<onright>400</onright>
-				<onup>9</onup>
+				<onup>10</onup>
 				<ondown>7</ondown>
 				<visible allowhiddenfocus="true">![Control.HasFocus(6) | ControlGroup(20).HasFocus]</visible>
 			</control>
