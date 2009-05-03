@@ -6,3 +6,11 @@ Thumbs.db
 
 # fonts 
 /fonts
+
+# theme resources
+/720p (1280x720) Optimised
+/768p (1366x768) Optimised
+
+#XBMCTex
+XBMCTex.bat
+XBMCTex.exe
