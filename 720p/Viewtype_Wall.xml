@@ -146,16 +146,30 @@
 			<itemlayout width="133" height="133" condition="!Skin.HasSetting(smallmusicwall)">
 				<control type="image">
 					<include>WallIconDimensions</include>
-					<texture diffuse="wall/wall_mask.png">defaultpicturebig.png</texture>
+					<texture diffuse="wall/wall_mask.png">defaultAudioBig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | Container.Content(episodes)</visible>
+				</control>
+				<control type="image">
+					<include>WallIconDimensions</include>
+					<texture diffuse="wall/wall_mask.png">defaultPictureBig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<visible>Window.IsActive(2)</visible>
+				</control>					
+				<control type="image">
+					<include>WallIconDimensions</include>
+					<texture background="true" diffuse="wall/wall_mask.png">defaultpicturebig.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<info>ListItem.Icon</info>
+					<fadetime>500</fadetime>					
 					<visible>Window.IsActive(2)</visible>
 				</control>
 				<control type="image">
 					<include>WallIconDimensions</include>
-					<texture diffuse="wall/wall_mask.png">defaultaudiobig.png</texture>
+					<texture background="true" diffuse="wall/wall_mask.png">defaultAudioBig.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<info>ListItem.Icon</info>
+					<fadetime>500</fadetime>
 					<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | Container.Content(episodes)</visible>
 				</control>				
 				<control type="image">
@@ -169,15 +183,31 @@
 					<include>WallIconDimensions</include>
 					<texture diffuse="wall/wall_mask.png">defaultaudiobig.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<info>ListItem.Icon</info>
 					<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | Container.Content(episodes)</visible>
 					<animation effect="zoom" center="66,66" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
 				</control>
 				<control type="image">
 					<include>WallIconDimensions</include>
-					<texture diffuse="wall/wall_mask.png">defaultpicturebig.png</texture>
+					<texture diffuse="wall/wall_mask.png">defaultPictureBig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<visible>Window.IsActive(2)</visible>
+					<animation effect="zoom" center="66,66" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+				</control>					
+				<control type="image">
+					<include>WallIconDimensions</include>
+					<texture background="true" diffuse="wall/wall_mask.png">defaultaudiobig.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<info>ListItem.Icon</info>
+					<fadetime>500</fadetime>						
+					<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | Container.Content(episodes)</visible>
+					<animation effect="zoom" center="66,66" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+				</control>
+				<control type="image">
+					<include>WallIconDimensions</include>
+					<texture background="true" diffuse="wall/wall_mask.png">defaultpicturebig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<info>ListItem.Icon</info>
+					<fadetime>500</fadetime>						
 					<visible>Window.IsActive(2)</visible>
 					<animation effect="zoom" center="66,66" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
 				</control>
@@ -205,14 +235,28 @@
 					<include>WallIconDimensionsSmall</include>
 					<texture diffuse="wall/wall_mask.png">defaultpicturebig.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<info>ListItem.Icon</info>
 					<visible>Window.IsActive(2)</visible>
 				</control>
 				<control type="image">
 					<include>WallIconDimensionsSmall</include>
 					<texture diffuse="wall/wall_mask.png">defaultaudiobig.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
+					<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | Container.Content(episodes)</visible>
+				</control>	
+				<control type="image">
+					<include>WallIconDimensionsSmall</include>
+					<texture background="true" diffuse="wall/wall_mask.png">defaultpicturebig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
 					<info>ListItem.Icon</info>
+					<fadetime>500</fadetime>						
+					<visible>Window.IsActive(2)</visible>
+				</control>
+				<control type="image">
+					<include>WallIconDimensionsSmall</include>
+					<texture background="true" diffuse="wall/wall_mask.png">defaultaudiobig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<info>ListItem.Icon</info>
+					<fadetime>500</fadetime>						
 					<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | Container.Content(episodes)</visible>
 				</control>				
 				<control type="image">
@@ -226,7 +270,6 @@
 					<include>WallIconDimensionsSmall</include>
 					<texture diffuse="wall/wall_mask.png">defaultaudiobig.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<info>ListItem.Icon</info>
 					<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | Container.Content(episodes)</visible>
 					<animation effect="zoom" center="51,51" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
 				</control>
@@ -234,7 +277,24 @@
 					<include>WallIconDimensionsSmall</include>
 					<texture diffuse="wall/wall_mask.png">defaultpicturebig.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
+					<visible>Window.IsActive(2)</visible>
+					<animation effect="zoom" center="51,51" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+				</control>
+				<control type="image">
+					<include>WallIconDimensionsSmall</include>
+					<texture background="true" diffuse="wall/wall_mask.png">defaultaudiobig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
 					<info>ListItem.Icon</info>
+					<fadetime>500</fadetime>						
+					<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | Container.Content(episodes)</visible>
+					<animation effect="zoom" center="51,51" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+				</control>
+				<control type="image">
+					<include>WallIconDimensionsSmall</include>
+					<texture background="true" diffuse="wall/wall_mask.png">defaultpicturebig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<info>ListItem.Icon</info>
+					<fadetime>500</fadetime>						
 					<visible>Window.IsActive(2)</visible>
 					<animation effect="zoom" center="51,51" start="100" end="190" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
 				</control>
@@ -278,7 +338,13 @@
 					<include>WallIconMovieDimensions</include>
 					<texture diffuse="wall/wall_movie_mask.png">defaultvideobig.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
+				</control>
+				<control type="image">
+					<include>WallIconMovieDimensions</include>
+					<texture background="true" diffuse="wall/wall_movie_mask.png">defaultvideobig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
 					<info>ListItem.Icon</info>
+					<fadetime>500</fadetime>					
 				</control>
 
 				<control type="image">
@@ -292,7 +358,14 @@
 					<include>WallIconMovieDimensions</include>
 					<texture diffuse="wall/wall_movie_mask.png">defaultvideobig.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="zoom" center="62,90" start="100" end="160" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+				</control>
+				<control type="image">
+					<include>WallIconMovieDimensions</include>
+					<texture background="true" diffuse="wall/wall_movie_mask.png">defaultvideobig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
 					<info>ListItem.Icon</info>
+					<fadetime>500</fadetime>					
 					<animation effect="zoom" center="62,90" start="100" end="160" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
 				</control>
 
@@ -321,7 +394,13 @@
 					<include>WallIconMovieDimensionsSmall</include>
 					<texture diffuse="wall/wall_movie_mask.png">defaultvideobig.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
+				</control>
+				<control type="image">
+					<include>WallIconMovieDimensionsSmall</include>
+					<texture background="true" diffuse="wall/wall_movie_mask.png">defaultvideobig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
 					<info>ListItem.Icon</info>
+					<fadetime>500</fadetime>					
 				</control>
 
 				<control type="image">
@@ -335,6 +414,13 @@
 					<include>WallIconMovieDimensionsSmall</include>
 					<texture diffuse="wall/wall_movie_mask.png">defaultvideobig.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
+					<animation effect="zoom" center="44,71" start="100" end="160" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+				</control>
+				<control type="image">
+					<include>WallIconMovieDimensionsSmall</include>
+					<texture background="true" diffuse="wall/wall_movie_mask.png">defaultvideobig.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<fadetime>500</fadetime>
 					<info>ListItem.Icon</info>
 					<animation effect="zoom" center="44,71" start="100" end="160" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
 				</control>
@@ -364,6 +450,8 @@
 	
 	<include name="Viewtype_Wall">
 
+		<include>Furniture_WallVignette</include>
+	
 		<include condition="Window.IsActive(20) | Window.IsActive(2) | Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)">MusicWall</include>
 		<include condition="Window.IsActive(28) | Window.IsActive(1) | Window.IsActive(24) | Window.IsActive(25)">MovieWall</include>
 	
@@ -390,12 +478,6 @@
 			<animation effect="fade" start="100" end="0" time="400" condition="[[Window.IsActive(2) | Window.IsActive(501) | Window.IsActive(502)] + Container(53).Column(7)] | [[Window.IsActive(1) | Window.IsActive(24) | Window.IsActive(25)] + Container(53).Column(8)] + !ControlGroup(7000).HasFocus()">Conditional</animation>				
 			<animation effect="slide" start="-18" end="-18" time="0" condition="Window.IsActive(2) | Window.IsActive(501) | Window.IsActive(502)">Conditional</animation>				
 		</control>	
-
-		<include>Furniture_WallVignette</include>
-		
-
-		
-		
 
 		<control type="group">
 			<posx>115</posx>
