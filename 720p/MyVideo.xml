@@ -5,16 +5,8 @@
 	<controls>
 
 	<control type="multiimage">
-		<include>Background_SingleImage</include>
-		<imagepath>backdrops/default_movies</imagepath>
-		<info>Skin.String(CustomVideo)</info>
-		<visible>!Skin.String(CustomVideoFolder)</visible>
-	</control>
-
-	<control type="multiimage">
-		<include>Background_ImageFolder</include>
-		<info>Skin.String(CustomVideoFolder)</info>
-		<visible>Skin.String(CustomVideoFolder)</visible>
+		<include>BackgroundVarsGlobal</include>
+		<include>BackgroundVarsVideo</include>
 	</control>
 
 	<control type="largeimage">

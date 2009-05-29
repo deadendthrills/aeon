@@ -4,16 +4,8 @@
 	<controls>
 
 	<control type="multiimage">
-		<include>Background_SingleImage</include>
-		<imagepath>backdrops/default_games</imagepath>
-		<info>Skin.String(CustomGames)</info>
-		<visible>!Skin.String(CustomGamesFolder)</visible>
-	</control>
-
-	<control type="multiimage">
-		<include>Background_ImageFolder</include>
-		<info>Skin.String(CustomGamesFolder)</info>
-		<visible>Skin.String(CustomGamesFolder)</visible>
+		<include>BackgroundVarsGlobal</include>
+		<include>BackgroundVarsGames</include>
 	</control>
 
 	<include>Furniture_WallBackground</include>

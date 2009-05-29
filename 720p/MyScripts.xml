@@ -4,16 +4,8 @@
 	<controls>
 	
 	<control type="multiimage">
-		<include>Background_SingleImage</include>
-		<imagepath>backdrops/default_movies</imagepath>
-		<info>Skin.String(CustomScripts)</info>
-		<visible>!Skin.String(CustomScriptsFolder)</visible>
-	</control>
-
-	<control type="multiimage">
-		<include>Background_ImageFolder</include>
-		<info>Skin.String(CustomScriptsFolder)</info>
-		<visible>Skin.String(CustomScriptsFolder)</visible>
+		<include>BackgroundVarsGlobal</include>
+		<include>BackgroundVarsScripts</include>
 	</control>
 
 	<include>Furniture_WallBackground</include>

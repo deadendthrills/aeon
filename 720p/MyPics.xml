@@ -31,18 +31,9 @@
 	</control>
 	
 	<control type="multiimage">
-		<include>Background_SingleImage</include>
-		<imagepath>backdrops/default_pictures</imagepath>
-		<info>Skin.String(CustomPictures)</info>
-		<visible>!Skin.String(CustomPicturesFolder)</visible>
-		<visible>!Control.IsVisible(668)</visible>		
-	</control>
-
-	<control type="multiimage">
-		<include>Background_ImageFolder</include>
-		<info>Skin.String(CustomPicturesFolder)</info>
-		<visible>Skin.String(CustomPicturesFolder)</visible>
-		<visible>!Control.IsVisible(668)</visible>		
+		<include>BackgroundVarsGlobal</include>
+		<include>BackgroundVarsPictures</include>
+		<visible>!Control.IsVisible(668)</visible>
 	</control>
 
 	<control type="image">

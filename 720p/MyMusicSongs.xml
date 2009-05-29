@@ -4,16 +4,8 @@
 	<controls>
 	
 	<control type="multiimage">
-		<include>Background_SingleImage</include>
-		<imagepath>backdrops/default_music</imagepath>
-		<info>Skin.String(CustomMusic)</info>
-		<visible>!Skin.String(CustomMusicFolder)</visible>
-	</control>
-
-	<control type="multiimage">
-		<include>Background_ImageFolder</include>
-		<info>Skin.String(CustomMusicFolder)</info>
-		<visible>Skin.String(CustomMusicFolder)</visible>
+		<include>BackgroundVarsGlobal</include>
+		<include>BackgroundVarsMusic</include>
 	</control>
 	
 	<control type="largeimage" id="102">

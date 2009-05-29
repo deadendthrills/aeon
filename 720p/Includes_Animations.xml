@@ -206,8 +206,8 @@
 </include>
 
 <include name="Animation_BackgroundFade">
-    <animation effect="fade" time="500">WindowOpen</animation>
-    <animation effect="fade" time="200">WindowClose</animation>
+    <animation effect="fade" time="500" condition="!Window.Previous(4)">WindowOpen</animation>
+    <animation effect="fade" time="200" condition="!Window.Next(4)">WindowClose</animation>
     <animation effect="fade" time="800">Visible</animation>
     <animation effect="fade" delay = "300" time="800" condition="![Window.IsActive(2001) | Window.IsActive(2003)]">Hidden</animation>
 </include>
@@ -224,9 +224,9 @@
 </include>
 
 <include name="Animation_FanartFade">
-		<animation effect="fade" end="0" time="200">WindowClose</animation>
-		<animation effect="fade" start="0" delay="4000" end="100" time="800">WindowOpen</animation>
-		<animation effect="fade" start="0" end="100" time="800">Visible</animation>
+	<animation effect="fade" end="0" time="200">WindowClose</animation>
+	<animation effect="fade" start="0" delay="4000" end="100" time="800">WindowOpen</animation>
+	<animation effect="fade" start="0" end="100" time="800">Visible</animation>
 </include>
 
 

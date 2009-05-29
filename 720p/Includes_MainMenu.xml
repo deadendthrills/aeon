@@ -95,35 +95,41 @@
 		<content>
 			<item id="1">
 				<label>31010</label>
+				<include>BackgroundVarsMusic</include>
 				<onclick>XBMC.ActivateWindow(MyMusic,return)</onclick>
 				<visible>!Skin.HasSetting(nomusic)</visible>
 				<visible>[Skin.HasSetting(onetouch) + Skin.HasSetting(nosubmenumusic)] | !Skin.HasSetting(onetouch)</visible>
 			</item>
 			<item id="1">
 				<label>31010</label>
+				<include>BackgroundVarsMusic</include>			
 				<onclick>SetFocus(941)</onclick>
 				<visible>!Skin.HasSetting(nomusic)</visible>
 				<visible>Skin.HasSetting(onetouch) + !Skin.HasSetting(nosubmenumusic)</visible>
 			</item>
 			<item id="2">
 				<label>31011</label>
+				<include>BackgroundVarsGames</include>					
 				<onclick>XBMC.ActivateWindow(MyPrograms)</onclick>
 				<visible>!Skin.HasSetting(nogames)</visible>
 				<visible>!Skin.HasSetting(launcherforgames)</visible>
 			</item>
 			<item id="2">
 				<label>31011</label>
+				<include>BackgroundVarsGames</include>					
 				<onclick>XBMC.ActivateWindow(1,plugin://programs/Launcher/)</onclick>
 				<visible>!Skin.HasSetting(nogames)</visible>
 				<visible>Skin.HasSetting(launcherforgames)</visible>
 			</item>			
 			<item id="5">
 				<label>31012</label>
+				<include>BackgroundVarsPictures</include>				
 				<onclick>XBMC.ActivateWindow(MyPictures)</onclick>
 				<visible>!Skin.HasSetting(nopictures)</visible>
 			</item>
 			<item id="6">
 				<label>31013</label>
+				<include>BackgroundVarsMovies</include>				
 				<onclick>Skin.SetBool(videomovies)</onclick>
 				<onclick>Skin.Reset(videotv)</onclick>
 				<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles,return)</onclick>
@@ -133,6 +139,7 @@
 			<item id="7">
 				<description>My Videos</description>
 				<label>31014</label>
+				<include>BackgroundVarsTV</include>				
 				<onclick>Skin.SetBool(videotv)</onclick>
 				<onclick>Skin.Reset(videomovies)</onclick>
 				<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
@@ -141,6 +148,7 @@
 			</item>
 			<item id="8">
 				<label>31015</label>
+				<include>BackgroundVarsVideo</include>				
 				<onclick>XBMC.ActivateWindow(MyVideoFiles)</onclick>
 				<visible>!Skin.HasSetting(novideos)</visible>
 			</item>
@@ -152,42 +160,49 @@
 			</item>
 			<item id="9">
 				<label>31016</label>
+				<include>BackgroundVarsSettings</include>				
 				<onclick>Skin.Reset(settingsfade)</onclick>
 				<onclick>XBMC.ActivateWindow(4)</onclick>
 				<visible>!Skin.HasSetting(nosettings)</visible>
 			</item>
 			<item id="24">
 				<description>Scripts</description>
+				<include>BackgroundVarsScripts</include>					
 				<label>31020</label>
 				<onclick>XBMC.ActivateWindow(20)</onclick>
 				<visible>Skin.HasSetting(scripts)</visible>
 			</item>
 			<item id="13">
 				<description>Play DVD</description>
+				<include>BackgroundVarsPlayDVD</include>					
 				<label>31018</label>
 				<onclick>XBMC.PlayDVD</onclick>
 				<visible>System.HasMediadvd</visible>
 			</item>
 			<item id="20">
 				<description>Refresh</description>
+				<include>BackgroundVarsSettings</include>				
 				<label>31607</label>
 				<onclick>XBMC.ReloadSkin</onclick>
 				<visible>Skin.HasSetting(debug)</visible>
 			</item>
 			<item id="21">
 				<description>Assistant</description>
+				<include>BackgroundVarsAssistant</include>					
 				<label>31021</label>
 				<onclick>XBMC.ActivateWindow(605)</onclick>
 				<visible>Skin.HasSetting(assistant)</visible>
 			</item>
 			<item id="23">
 				<description>Sign out</description>
+				<include>BackgroundVarsSignOut</include>					
 				<label>31209</label>
 				<onclick>System.LogOff</onclick>
 				<visible>Skin.HasSetting(signout)</visible>
 			</item>				
 			<item id="22">
 				<description>Shutdown</description>
+				<include>BackgroundVarsShutdown</include>				
 				<label>31019</label>
 				<onclick>XBMC.Shutdown()</onclick>
 				<visible>Skin.HasSetting(shutdown)</visible>
@@ -241,58 +256,58 @@
 		<content>
 			<item id="1">
 				<label>31010</label>
-				<onclick>Skin.SetString(customsingle,CustomMusic)</onclick>
-				<onclick>Skin.SetString(customslideshow,CustomMusicFolder)</onclick>
+				<include>BackgroundVarsMusic</include>				
+				<onclick>Skin.SetString(custom,CustomMusic)</onclick>
 				<onclick>SetFocus(92)</onclick>
 				<visible>!Skin.HasSetting(nomusic)</visible>
 			</item>
 			<item id="2">
 				<label>31011</label>
-				<onclick>Skin.SetString(customsingle,CustomGames)</onclick>
-				<onclick>Skin.SetString(customslideshow,CustomGamesFolder)</onclick>
+				<include>BackgroundVarsGames</include>					
+				<onclick>Skin.SetString(custom,CustomGames)</onclick>
 				<onclick>SetFocus(92)</onclick>
 				<visible>!Skin.HasSetting(nogames)</visible>
 			</item>
 			<item id="5">
 				<label>31012</label>
-				<onclick>Skin.SetString(customsingle,CustomPictures)</onclick>
-				<onclick>Skin.SetString(customslideshow,CustomPicturesFolder)</onclick>
+				<include>BackgroundVarsPictures</include>						
+				<onclick>Skin.SetString(custom,CustomPictures)</onclick>
 				<onclick>SetFocus(92)</onclick>
 				<visible>!Skin.HasSetting(nopictures)</visible>
 			</item>
 			<item id="6">
 				<label>31013</label>
-				<onclick>Skin.SetString(customsingle,CustomMovies)</onclick>
-				<onclick>Skin.SetString(customslideshow,CustomMoviesFolder)</onclick>
+				<include>BackgroundVarsMovies</include>				
+				<onclick>Skin.SetString(custom,CustomMovies)</onclick>
 				<onclick>SetFocus(92)</onclick>
 				<visible>!Skin.HasSetting(nomovies)</visible>
 			</item>
 			<item id="7">
 				<description>My Videos</description>
 				<label>31014</label>
-				<onclick>Skin.SetString(customsingle,CustomTV)</onclick>
-				<onclick>Skin.SetString(customslideshow,CustomTVFolder)</onclick>
+				<include>BackgroundVarsTV</include>						
+				<onclick>Skin.SetString(custom,CustomTV)</onclick>
 				<onclick>SetFocus(92)</onclick>
 				<visible>!Skin.HasSetting(notvshows)</visible>
 			</item>
 			<item id="8">
 				<label>31015</label>
-				<onclick>Skin.SetString(customsingle,CustomVideo)</onclick>
-				<onclick>Skin.SetString(customslideshow,CustomVideoFolder)</onclick>
+				<include>BackgroundVarsVideo</include>					
+				<onclick>Skin.SetString(custom,CustomVideos)</onclick>
 				<onclick>SetFocus(92)</onclick>
 				<visible>!Skin.HasSetting(novideos)</visible>
 			</item>
 			<item id="24">
 				<label>31020</label>
-				<onclick>Skin.SetString(customsingle,CustomScripts)</onclick>
-				<onclick>Skin.SetString(customslideshow,CustomScriptsFolder)</onclick>
+				<include>BackgroundVarsScripts</include>						
+				<onclick>Skin.SetString(custom,CustomScripts)</onclick>
 				<onclick>SetFocus(92)</onclick>
 				<visible>Skin.HasSetting(scripts)</visible>
 			</item>			
 			<item id="9">
 				<description>Settings</description>
-				<onclick>Skin.SetString(customsingle,CustomSettings)</onclick>				
-				<onclick>Skin.SetImage(CustomSettings)</onclick>
+				<include>BackgroundVarsSettings</include>						
+				<onclick>Skin.SetString(custom,CustomSettings)</onclick>				
 				<onclick>SetFocus(300)</onclick>				
 				<label>31016</label>
 				<visible>!Skin.HasSetting(nosettings)</visible>
@@ -300,39 +315,40 @@
 			<item id="10">
 				<description>Weather</description>
 				<label>31017</label>
-				<onclick>Skin.SetString(customsingle,CustomWeather)</onclick>
-				<onclick>Skin.SetString(customslideshow,CustomWeatherFolder)</onclick>
+				<icon>special://skin/media/backdrops/summer/summer.png</icon>
+				<thumb>$INFO[Skin.String(CustomWeather)]</thumb>					
+				<onclick>Skin.SetString(custom,CustomWeather)</onclick>
 				<onclick>SetFocus(92)</onclick>
 				<visible>Skin.HasSetting(weather)</visible>
 			</item>			
 			<item id="13">
 				<description>Play DVD</description>
 				<label>31018</label>
-				<onclick>Skin.SetString(customsingle,CustomPlayDVD)</onclick>
-				<onclick>Skin.SetString(customslideshow,CustomPlayDVDFolder)</onclick>
+				<include>BackgroundVarsPlayDVD</include>						
+				<onclick>Skin.SetString(custom,CustomPlayDVD)</onclick>
 				<onclick>SetFocus(92)</onclick>
 			</item>
 			<item id="21">
 				<description>Assistant</description>
 				<label>31021</label>
-				<onclick>Skin.SetString(customsingle,CustomAssistant)</onclick>
-				<onclick>Skin.SetString(customslideshow,CustomAssistantFolder)</onclick>
+				<include>BackgroundVarsAssistant</include>					
+				<onclick>Skin.SetString(custom,CustomAssistant)</onclick>
 				<onclick>SetFocus(92)</onclick>
 				<visible>Skin.HasSetting(assistant)</visible>				
 			</item>
 			<item id="23">
 				<description>Sign Out</description>
 				<label>31209</label>
-				<onclick>Skin.SetString(customsingle,CustomSignOut)</onclick>
-				<onclick>Skin.SetString(customslideshow,CustomSignOutFolder)</onclick>
+				<include>BackgroundVarsSignOut</include>						
+				<onclick>Skin.SetString(custom,CustomSignOut)</onclick>
 				<onclick>SetFocus(92)</onclick>
 				<visible>Skin.HasSetting(signout)</visible>				
 			</item>
 			<item id="22">
 				<description>Shutdown</description>
 				<label>31019</label>
-				<onclick>Skin.SetString(customsingle,CustomShutdown)</onclick>
-				<onclick>Skin.SetString(customslideshow,CustomShutdownFolder)</onclick>
+				<include>BackgroundVarsShutdown</include>					
+				<onclick>Skin.SetString(custom,CustomShutdown)</onclick>
 				<onclick>SetFocus(92)</onclick>
 				<visible>Skin.HasSetting(shutdown)</visible>
 			</item>				
@@ -397,133 +413,159 @@
 		<content>
 			<item id="1">
 				<label>31010</label>
+				<include>BackgroundVarsMusic</include>						
 				<onclick>Skin.SetBool(nomusic)</onclick>
 				<visible>!Skin.HasSetting(nomusic)</visible>
 			</item>
 			<item id="1">
 				<label2>31010</label2>
+				<include>BackgroundVarsMusic</include>						
 				<onclick>Skin.Reset(nomusic)</onclick>
 				<visible>Skin.HasSetting(nomusic)</visible>
 			</item>
 			<item id="2">
 				<label>31011</label>
+				<include>BackgroundVarsGames</include>					
 				<onclick>Skin.SetBool(nogames)</onclick>
 				<visible>!Skin.HasSetting(nogames)</visible>
 			</item>
 			<item id="2">
 				<label2>31011</label2>
+				<include>BackgroundVarsGames</include>					
 				<onclick>Skin.Reset(nogames)</onclick>
 				<visible>Skin.HasSetting(nogames)</visible>
 			</item>
 			<item id="5">
 				<label>31012</label>
+				<include>BackgroundVarsPictures</include>					
 				<onclick>Skin.SetBool(nopictures)</onclick>
 				<visible>!Skin.HasSetting(nopictures)</visible>
 			</item>
 			<item id="5">
 				<label2>31012</label2>
+				<include>BackgroundVarsPictures</include>					
 				<onclick>Skin.Reset(nopictures)</onclick>
 				<visible>Skin.HasSetting(nopictures)</visible>
 			</item>
 			<item id="6">
 				<label>31013</label>
+				<include>BackgroundVarsMovies</include>					
 				<onclick>Skin.SetBool(nomovies)</onclick>
 				<visible>!Skin.HasSetting(nomovies)</visible>
 			</item>
 			<item id="6">
 				<label2>31013</label2>
+				<include>BackgroundVarsMovies</include>					
 				<onclick>Skin.Reset(nomovies)</onclick>
 				<visible>Skin.HasSetting(nomovies)</visible>
 			</item>
 			<item id="7">
 				<description>My Videos</description>
 				<label>31014</label>
+				<include>BackgroundVarsTV</include>					
 				<onclick>Skin.SetBool(notvshows)</onclick>
 				<visible>!Skin.HasSetting(notvshows)</visible>
 			</item>
 			<item id="7">
 				<description>My Videos</description>
 				<label2>31014</label2>
+				<include>BackgroundVarsTV</include>					
 				<onclick>Skin.Reset(notvshows)</onclick>
 				<visible>Skin.HasSetting(notvshows)</visible>
 			</item>
 			<item id="8">
 				<label>31015</label>
+				<include>BackgroundVarsVideo</include>					
 				<onclick>Skin.SetBool(novideos)</onclick>
 				<visible>!Skin.HasSetting(novideos)</visible>
 			</item>
 			<item id="8">
 				<label2>31015</label2>
+				<include>BackgroundVarsVideo</include>					
 				<onclick>Skin.Reset(novideos)</onclick>
 				<visible>Skin.HasSetting(novideos)</visible>
 			</item>
 			<item id="10">
 				<description>My Pictures</description>
 				<label>31017</label>
+				<icon>special://skin/media/backdrops/summer/summer.png</icon>
+				<thumb>$INFO[Skin.String(CustomWeather)]</thumb>				
 				<onclick>Skin.Reset(weather)</onclick>
 				<visible>Skin.HasSetting(weather)</visible>
 			</item>
 			<item id="10">
 				<description>My Pictures</description>
 				<label2>31017</label2>
+				<icon>special://skin/media/backdrops/summer/summer.png</icon>
+				<thumb>$INFO[Skin.String(CustomWeather)]</thumb>				
 				<onclick>Skin.SetBool(weather)</onclick>
 				<visible>!Skin.HasSetting(weather)</visible>
 			</item>
 			<item id="24">
 				<description>My Pictures</description>
 				<label>31020</label>
+				<include>BackgroundVarsScripts</include>					
 				<onclick>Skin.Reset(scripts)</onclick>
 				<visible>Skin.HasSetting(scripts)</visible>
 			</item>
 			<item id="24">
 				<description>My Pictures</description>
 				<label2>31020</label2>
+				<include>BackgroundVarsScripts</include>					
 				<onclick>Skin.SetBool(scripts)</onclick>
 				<visible>!Skin.HasSetting(scripts)</visible>
 			</item>			
 			<item id="9">
 				<label>31016</label>
+				<include>BackgroundVarsSettings</include>					
 				<onclick>Skin.SetBool(nosettings)</onclick>
 				<visible>!Skin.HasSetting(nosettings)</visible>
 			</item>
 			<item id="9">
 				<label2>31016</label2>
+				<include>BackgroundVarsSettings</include>					
 				<onclick>Skin.Reset(nosettings)</onclick>
 				<visible>Skin.HasSetting(nosettings)</visible>
 			</item>
 			<item id="22">
 				<description>Shutdown</description>
 				<label>31019</label>
+				<include>BackgroundVarsShutdown</include>					
 				<onclick>Skin.Reset(shutdown)</onclick>
 				<visible>Skin.HasSetting(shutdown)</visible>
 			</item>
 			<item id="22">
 				<description>Shutdown</description>
 				<label2>31019</label2>
+				<include>BackgroundVarsShutdown</include>					
 				<onclick>Skin.SetBool(shutdown)</onclick>
 				<visible>!Skin.HasSetting(shutdown)</visible>
 			</item>
 			<item id="21">
 				<description>Assistant</description>
 				<label>31021</label>
+				<include>BackgroundVarsAssistant</include>					
 				<onclick>Skin.Reset(assistant)</onclick>
 				<visible>Skin.HasSetting(assistant)</visible>
 			</item>
 			<item id="21">
 				<description>Assistant</description>
 				<label2>31021</label2>
+				<include>BackgroundVarsAssistant</include>					
 				<onclick>Skin.SetBool(assistant)</onclick>
 				<visible>!Skin.HasSetting(assistant)</visible>
 			</item>
 			<item id="23">
 				<description>Sign Out</description>
 				<label>31209</label>
+				<include>BackgroundVarsSignOut</include>					
 				<onclick>Skin.Reset(signout)</onclick>
 				<visible>Skin.HasSetting(signout)</visible>
 			</item>
 			<item id="23">
 				<description>Sign Out</description>
 				<label2>31209</label2>
+				<include>BackgroundVarsSignOut</include>					
 				<onclick>Skin.SetBool(signout)</onclick>
 				<visible>!Skin.HasSetting(signout)</visible>
 			</item>				

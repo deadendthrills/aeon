@@ -3,13 +3,6 @@
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 
-	<control type="multiimage">
-		<include>FullscreenDimensions</include>
-		<imagepath>backdrops/default</imagepath>
-		<info>Skin.String(CustomSettings)</info>
-		<visible>!Control.IsVisible(300) + Window.Previous(4)</visible>
-	</control>
-
 	<control type="label">
 		<description>Force Weather update on load</description>
 		<posx>0</posx>
@@ -36,7 +29,11 @@
 			<animation effect="fade" time="300">Hidden</animation>
 	</control>
 
-	<include>Background_Wallpaper</include>
+	<control type="multiimage">
+		<include>BackgroundVarsGlobal</include>
+		<imagepath background="true">$INFO[Container(300).ListItem.Icon]</imagepath>
+	</control>
+	
 	<include>Furniture_HomeNowPlaying</include>
 	<include>Objects_WeatherPopup</include>
 	<include>Furniture_Time</include>

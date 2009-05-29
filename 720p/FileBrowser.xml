@@ -323,8 +323,6 @@
 			<onup>451</onup>
 			<ondown>451</ondown>
 			<visible>Window.IsActive(604)</visible>
-			<onclick>Skin.Reset($INFO[Skin.String(customslideshow)])</onclick>
-			<onclick>Skin.Reset($INFO[Skin.String(customsingle)])</onclick>
 			<onclick>Dialog.Close(126)</onclick>
 		</control>
 		
