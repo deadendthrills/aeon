@@ -116,7 +116,7 @@
 				</control>				
 				<control type="image">
 					<include>StripShowIconDimensionsMax</include>
-					<texture>defaultpicturebig.png</texture>
+					<texture>defaultpicture.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<info>ListItem.Icon</info>
 					<visible>Window.IsActive(2)</visible>
@@ -140,7 +140,7 @@
 				</control>			
 				<control type="image">
 					<include>StripShowIconDimensionsMax</include>
-					<texture>defaultpicturebig.png</texture>
+					<texture>defaultpicture.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<info>ListItem.Icon</info>
 					<visible>Window.IsActive(2)</visible>
@@ -161,7 +161,7 @@
 				</control>			
 				<control type="image">
 					<include>StripShowIconDimensionsMin</include>
-					<texture>defaultpicturebig.png</texture>
+					<texture>defaultpicture.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<info>ListItem.Icon</info>
 					<visible>Window.IsActive(2)</visible>
@@ -180,7 +180,7 @@
 				</control>			
 				<control type="image">
 					<include>StripShowIconDimensionsMin</include>
-					<texture>defaultpicturebig.png</texture>
+					<texture>defaultpicture.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<info>ListItem.Icon</info>
 					<visible>Window.IsActive(2)</visible>

@@ -1044,7 +1044,7 @@
 				<width>346</width>
 				<height>511</height>
 				<fadetime>400</fadetime>
-				<texture diffuse="list/list_movieicon_mask.png">defaultvideobig.png</texture>
+				<texture diffuse="list/list_movieicon_mask.png">defaultVideo.png</texture>
 				<info>ListItem.Icon</info>
 				<bordertexture border="-28">list/list_movieicon_frame.png</bordertexture>
 				<visible>[Window.IsActive(1) + !Skin.HasSetting(listgamessquare)] | [Window.IsActive(24) + !Skin.HasSetting(listvideosquare)] | [Window.IsActive(25) + !Container.Content(episodes) + !Container.Content(musicvideos)]</visible>

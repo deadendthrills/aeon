@@ -113,7 +113,7 @@
 
     <include name="MusicShowcaseThumb">
         <include>MusicShowcaseThumbDimensions</include>
-        <texture background="true" diffuse="thumbs/cdcover_mask.png">defaultaudiobig.png</texture>
+        <texture background="true" diffuse="thumbs/cdcover_mask.png">defaultaudio.png</texture>
 		<include condition="Window.IsActive(2)">MusicShowcaseThumbKeep</include>
 		<include condition="!Window.IsActive(2)">MusicShowcaseThumbStretch</include>		
     </include>
@@ -136,7 +136,7 @@
 	
     <include name="MusicShowcaseThumbMain">
         <include>MusicShowcaseThumbDimensions</include>
-        <texture background="true" diffuse="thumbs/cdcover_mask.png">defaultaudiobig.png</texture>
+        <texture background="true" diffuse="thumbs/cdcover_mask.png">defaultaudio.png</texture>
 		<include condition="Window.IsActive(2)">MusicShowcaseThumbKeep</include>
 		<include condition="!Window.IsActive(2)">MusicShowcaseThumbStretch</include>	
     </include>
@@ -144,7 +144,7 @@
     <include name="MusicShowcaseThumbReflection">
         <include>MusicShowcaseThumbReflectionDimensions</include>
         <colordiffuse>d0FFFFFF</colordiffuse>
-        <texture background="true" flipy="true" diffuse="thumbs/cdcover_mask_reflect.png">defaultaudiobig.png</texture>
+        <texture background="true" flipy="true" diffuse="thumbs/cdcover_mask_reflect.png">defaultaudio.png</texture>
 		<include condition="Window.IsActive(2)">MusicShowcaseThumbKeep</include>
 		<include condition="!Window.IsActive(2)">MusicShowcaseThumbStretch</include>	
 		<animation effect="fade" start="50" end="50" time="0" condition="Skin.HasSetting(darkshowcase)">Conditional</animation>		
@@ -153,7 +153,7 @@
     <include name="MusicShowcaseThumbReflectionMain">
         <include>MusicShowcaseThumbReflectionDimensions</include>
         <colordiffuse>52FFFFFF</colordiffuse>
-        <texture background="true" flipy="true" diffuse="thumbs/cdcover_mask_reflect.png">defaultaudiobig.png</texture>
+        <texture background="true" flipy="true" diffuse="thumbs/cdcover_mask_reflect.png">defaultaudio.png</texture>
 		<include condition="Window.IsActive(2)">MusicShowcaseThumbKeep</include>
 		<include condition="!Window.IsActive(2)">MusicShowcaseThumbStretch</include>	
 		<animation effect="fade" start="50" end="50" time="0" condition="Skin.HasSetting(darkshowcase)">Conditional</animation>	

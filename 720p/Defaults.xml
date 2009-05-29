@@ -127,7 +127,7 @@
 		<texturefocus>Button-List.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<textureheight>26</textureheight>
-		<image>defaultFolderBig.png</image>
+		<image>defaultFolder.png</image>
 		<font>font12</font>
 		<include>selectedcolor</include>
 		<textcolor>d0ffffff</textcolor>

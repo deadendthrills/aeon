@@ -1093,7 +1093,7 @@
 	
 	<include name="LoginThumb">
 	    <include>LoginThumbDimensions</include>
-		<texture diffuse="thumbs/cdcover_mask.png">defaultaudiobig.png</texture>
+		<texture diffuse="thumbs/cdcover_mask.png">defaultAudio.png</texture>
 	    <aspectratio scalediffuse="false">scale</aspectratio>
 	</include>
 
