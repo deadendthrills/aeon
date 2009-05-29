@@ -1076,7 +1076,7 @@
 				<height>511</height>
 				<fadetime>400</fadetime>			
 				<texture diffuse="list/list_movieicon_mask.png">$INFO[listitem.path,,folder.jpg]</texture>
-				<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>				
+				<visible>[Container.Content(tvshows) + !Skin.HasSetting(listvideosquare)] | [Container.Content(seasons) + !Skin.HasSetting(listvideosquare)]</visible>			
 			</control>
 
 			<control type="image">
