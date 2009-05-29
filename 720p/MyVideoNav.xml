@@ -98,7 +98,7 @@
 					<usealttexture>Skin.HasSetting(nomoviefanart)</usealttexture>
 					<onclick>Skin.SetBool(nomoviefanart)</onclick>
 					<altclick>Skin.Reset(nomoviefanart)</altclick>
-					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + [Control.IsVisible(57) | Control.IsVisible(52)]</visible>
+					<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + [Control.IsVisible(50) | Control.IsVisible(57) | Control.IsVisible(52)]</visible>
 				</control>
 				
 				<control type="togglebutton" id="902">
