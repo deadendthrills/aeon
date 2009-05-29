@@ -1,5 +1,17 @@
 <includes>
 
+	<include name="ListFade">
+		<control type="image" id="102">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>0</width>
+			<height>0</height>
+			<texture>-</texture>
+			<visible>Control.HasFocus(50) + [!Container(50).OnNext + !Container(50).OnPrevious]</visible>
+			<animation effect="fade" start="0" end="100" time="150" >Visible</animation>
+		</control>
+	</include>
+
 	<include name="ListLabel_Width">
 		<width>520</width>	
 	</include>
@@ -1049,18 +1061,18 @@
 
 			<control type="largeimage">
 				<width>346</width>
-				<height>511</height>
-				<fadetime>400</fadetime>			
+				<height>511</height>			
 				<texture diffuse="list/list_movieicon_mask.png">$INFO[listitem.path,,movie.tbn]</texture>
-				<visible>Container.Content(movies)</visible>
+				<animation effect="fade" start="0" end="100" time="000">VisibleChange</animation>
+				<visible>Control.IsVisible(102) + Container.Content(movies)</visible>
 			</control>
 			
 			<control type="largeimage">
 				<width>346</width>
-				<height>511</height>
-				<fadetime>400</fadetime>			
+				<height>511</height>			
 				<texture diffuse="list/list_movieicon_mask.png">$INFO[listitem.path,,folder.jpg]</texture>
-				<visible>Container.Content(tvshows)</visible>
+				<animation effect="fade" start="0" end="100" time="000">VisibleChange</animation>
+				<visible>Control.IsVisible(102) + Container.Content(tvshows)</visible>
 			</control>			
 
 			<control type="image">
