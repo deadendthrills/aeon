@@ -744,12 +744,6 @@
 				</control>
 				<control type="image">
 					<include>MultiplexIconDimensionsWrap</include>
-					<texture>multiplex/multiplex_glass.png</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-					<colordiffuse>d0ffffff</colordiffuse>
-				</control>				
-				<control type="image">
-					<include>MultiplexIconDimensionsWrap</include>
 					<bordertexture border="-17">multiplex/multiplex_border.png</bordertexture>
 					<texture>common/blank.png</texture>
 				</control>
@@ -778,12 +772,6 @@
 					<include>MultiplexIconDimensionsWrap</include>
 					<bordertexture border="-17">multiplex/multiplex_border.png</bordertexture>
 					<texture>common/blank.png</texture>
-					<include>Animation_MultiplexFocusZoom</include>					
-				</control>
-				<control type="image">
-					<include>MultiplexIconDimensionsWrap</include>
-					<texture>multiplex/multiplex_glass.png</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
 					<include>Animation_MultiplexFocusZoom</include>					
 				</control>
 				<control type="image">
