@@ -395,7 +395,7 @@
 			<onclick>Skin.SetBool(multiplexinfoauto)</onclick>
 			<onclick>Skin.Reset(multiplexinfooff)</onclick>
 			<onclick>XBMC.ReloadSkin</onclick>
-			<visible>Skin.HasSetting(Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + Skin.HasSetting(multiplexinfooff)</visible>
+			<visible>Window.IsActive(25) + Skin.HasSetting(videomovies) + Control.IsVisible(52) + Skin.HasSetting(multiplexinfooff)</visible>
 		</control>
 		
 		<control type="button" id="981">
