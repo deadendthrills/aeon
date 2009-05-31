@@ -206,8 +206,8 @@
 </include>
 
 <include name="Animation_BackgroundFade">
-    <animation effect="fade" time="500" condition="!Window.Previous(4)">WindowOpen</animation>
-    <animation effect="fade" time="200" condition="!Window.Next(4)">WindowClose</animation>
+    <animation effect="fade" time="500" condition="![Window.Previous(4) + Container(300).HasFocus(9)]">WindowOpen</animation>
+    <animation effect="fade" time="200" condition="![Window.Next(4) + Container(300).HasFocus(9)]">WindowClose</animation>
     <animation effect="fade" time="800">Visible</animation>
     <animation effect="fade" delay = "300" time="800" condition="![Window.IsActive(2001) | Window.IsActive(2003)]">Hidden</animation>
 </include>
@@ -271,5 +271,21 @@
     <animation effect="fade" time="200">Visible</animation>
     <animation effect="fade" time="200">Hidden</animation>
 </include>
+
+<include name="Animation_MultiplexFocusZoom">
+	<animation effect="zoom" center="56,80" start="100" end="110" time="200" tween="cubic" easing="inout">Focus</animation> 
+	<animation effect="zoom" center="56,80" start="110" end="100" time="200" tween="cubic" easing="inout">Unfocus</animation> 	
+</include>
+
+<include name="Animation_MultiplexTVFocusZoom">
+	<animation effect="zoom" center="106,50" start="100" end="110" time="200" tween="cubic" easing="inout">Focus</animation> 
+</include>
 	
+<include name="Animation_MultiplexTVFocusZoomLabel">
+	<animation type="Focus">
+		<effect type="zoom" center="106,50" start="100" end="110" time="200" tween="cubic" easing="inout" /> 
+		<effect type="fade" start="100" end="0" time="100" />		
+	</animation>
+</include>	
+
 </includes>

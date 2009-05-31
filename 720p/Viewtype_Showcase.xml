@@ -230,7 +230,7 @@
         <include condition="!Skin.HasSetting(darkshowcase)">Colour_ShowcaseLabelLightShade</include>
         <include condition="Skin.HasSetting(darkshowcase)">Colour_ShowcaseLabelNightShade</include>		
 		<visible>!ControlGroup(7000).HasFocus()</visible>
-        <animation effect="slide" end="0,-11" time="200" condition="[!Control.IsVisible(72) | IsEmpty(Control.GetLabel(72))] | Window.IsActive(24)">Conditional</animation>
+        <animation effect="slide" end="0,-11" time="200" condition="!Container.Content(seasons) + [!Control.IsVisible(72) | IsEmpty(Control.GetLabel(72))] | Window.IsActive(24)">Conditional</animation>
     </include>
 
     <include name="ShowcaseItemsLabel">
@@ -254,29 +254,6 @@
         <include condition="!Skin.HasSetting(darkshowcase)">Colour_ShowcaseLabelLightShade</include>
         <include condition="Skin.HasSetting(darkshowcase)">Colour_ShowcaseLabelNightShade</include>
     </include>
-	
-    <include name="ShowcaseSpot">
-        <posx>144</posx>
-        <posy>583</posy>
-        <width>993</width>
-        <height>137</height>
-        <include condition="!Skin.HasSetting(darkshowcase)">ShowcaseSpotLight</include>
-		<include condition="Skin.HasSetting(darkshowcase)">ShowcaseSpotNight</include>
-        <include>Animation_CommonFade</include>
-		<include>Animation_HideShowcase</include>
-        <visible>Control.IsVisible(57)</visible>
-    </include>
-	
-    <include name="ShowcaseSpot">
-        <posx>144</posx>
-        <posy>583</posy>
-        <width>993</width>
-        <height>137</height>
-        <include>ShowcaseSpotLight</include>
-        <include>Animation_CommonFade</include>
-		<include>Animation_HideShowcase</include>
-        <visible>Control.IsVisible(50)</visible>
-    </include>	
 	
     <control type="image" id="82">
         <texture>-</texture>
@@ -2399,9 +2376,6 @@
     </include>
 	
     <include name="Viewtype_Showcase">
-        <control type="image">
-            <include>ShowcaseSpot</include>
-        </control>
 		
         <control type="group">
             <visible>Window.IsActive(28) | Window.IsActive(24) | [Window.IsActive(25) + !Container.Content(episodes)] | Window.IsActive(1)</visible>
@@ -2469,7 +2443,7 @@
         </control>		
 		
         <control type="group">
-            <include>ShowcaseVisible</include>
+            <visible>Control.IsVisible(57)</visible>
             <control type="wraplist" id="57">
 				<include condition="Window.IsActive(28) | Window.IsActive(24) | [Window.IsActive(25) + !Container.Content(episodes)] | Window.IsActive(1)">MovieShowcaseGroupVars</include>
 				<include condition="Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | Window.IsActive(2) | Window.IsActive(20)">MusicShowcaseGroupVars</include>
@@ -2637,9 +2611,8 @@
 				<include>Animation_CommonFade</include>
             </control>
 
-			<include condition="Skin.HasSetting(videomovies)">Furniture_ShowcaseMediaFlags</include>
-			
             <control type="group">
+				<visible>Control.IsVisible(57)</visible>
 				<include>Animation_HideShowcase</include>
                 <control type="fadelabel">
                     <label>31609</label>
@@ -2648,7 +2621,7 @@
 					<pauseatend>3000</pauseatend>
 					<scroll>false</scroll>
                     <include>ShowcaseMainLabel</include>
-					<visible>Window.IsActive(25) + stringcompare(container(57).numitems,0)</visible>
+					<visible>Window.IsActive(25) + Control.IsVisible(57) + stringcompare(container(57).numitems,0)</visible>
                 </control>
                 <control type="fadelabel">
                     <label>31609</label>
@@ -2657,7 +2630,7 @@
 					<pauseatend>3000</pauseatend>
 					<scroll>false</scroll>
                     <include>ShowcaseMainLabel</include>
-					<visible>Window.IsActive(502) + stringcompare(container(57).numitems,0)</visible>
+					<visible>Window.IsActive(502) + Control.IsVisible(57) + stringcompare(container(57).numitems,0)</visible>
                 </control>				
                 <control type="label">
                     <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>

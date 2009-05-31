@@ -685,6 +685,43 @@
 			<visible>Control.IsVisible(57)</visible>
 			<include>Animation_CommonFade</include>
 			<include>Animation_HideShowcase</include>
+			<include>Animation_HideMultiplex</include>			
+		</control>
+		
+		<control type="image">
+			<posx>0</posx>
+			<posy>315</posy>
+			<width>1280</width>
+			<height>405</height>
+			<texture>showcase/lite/showcase_floor.png</texture>		
+			<visible>Control.IsVisible(52)</visible>
+			<include>Animation_CommonFade</include>
+			<include>Animation_HideShowcase</include>
+			<include>Animation_HideMultiplex</include>				
+		</control>
+
+		<control type="image">
+			<posx>144</posx>
+			<posy>583</posy>
+			<width>993</width>
+			<height>137</height>
+			<include condition="!Skin.HasSetting(darkshowcase)">ShowcaseSpotLight</include>
+			<include condition="Skin.HasSetting(darkshowcase)">ShowcaseSpotNight</include>
+			<include>Animation_CommonFade</include>
+			<include>Animation_HideShowcase</include>
+			<include>Animation_HideMultiplex</include>
+			<visible>Control.IsVisible(57) | Control.IsVisible(52)</visible>
+		</control>
+	
+		<control type="image">
+			<posx>144</posx>
+			<posy>583</posy>
+			<width>993</width>
+			<height>137</height>
+			<include>ShowcaseSpotLight</include>
+			<include>Animation_CommonFade</include>
+			<include>Animation_HideShowcase</include>
+			<visible>Control.IsVisible(50)</visible>
 		</control>
 		
 		<control type="image">
@@ -697,6 +734,7 @@
 			<colordiffuse>c7FFFFFF</colordiffuse>
 			<include>Animation_CommonFade</include>
 			<include>Animation_HideShowcase</include>
+			<include>Animation_HideMultiplex</include>				
 		</control>		
 		
 		<control type="image">
@@ -705,7 +743,7 @@
 			<width>464</width>
 			<height>720</height>
 			<texture>showcase/showcase_vignette.png</texture>
-			<visible>[Control.IsVisible(57) | Control.IsVisible(50)] + ![Control.HasFocus(94) | Control.HasFocus(320) | Control.HasFocus(321) | Control.HasFocus(322)]</visible>
+			<visible>[Control.IsVisible(57) | Control.IsVisible(50) | Control.IsVisible(52)] + ![Control.HasFocus(94) | Control.HasFocus(197) | Control.HasFocus(320) | Control.HasFocus(321) | Control.HasFocus(322)]</visible>
 			<animation type="Visible">
 				<effect type="fade" start="0" end="100" time="400" easing="inout" tween="cubic" />
 				<effect type="slide" start="-464,0" end="0,0" time="400" easing="inout" tween="cubic" />
@@ -730,7 +768,7 @@
 			<width>464</width>
 			<height>720</height>
 			<texture flipx="true">showcase/showcase_vignette.png</texture>
-			<visible>[Control.IsVisible(57) | Control.IsVisible(50)] + ![Control.HasFocus(94) | Control.HasFocus(320) | Control.HasFocus(321) | Control.HasFocus(322)]</visible>
+			<visible>[Control.IsVisible(57) | Control.IsVisible(50) | Control.IsVisible(52)] + ![Control.HasFocus(94) | Control.HasFocus(197) | Control.HasFocus(320) | Control.HasFocus(321) | Control.HasFocus(322)]</visible>
 			<animation type="Visible">
 				<effect type="fade" start="0" end="100" time="400" easing="inout" tween="cubic" />
 				<effect type="slide" start="464,0" end="0,0" time="400" easing="inout" tween="cubic" />

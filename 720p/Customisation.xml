@@ -79,7 +79,7 @@
 			<label>UNLOCK ALL VIEWS FOR TV SHOWS</label>
 			<onclick>Skin.ToggleSetting(unlockTVviews)</onclick>
 			<selected>Skin.HasSetting(unlockTVviews)</selected>
-		</control>		
+		</control>
 		
 	</control>
 

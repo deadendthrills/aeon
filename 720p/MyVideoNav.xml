@@ -112,8 +112,6 @@
 				
 				<include condition="!Skin.HasSetting(nomediaflagsbutton)">Objects_FlagsButton</include>
 
-				<include condition="!Skin.HasSetting(nolightnightbuttons)">Objects_LightNightButtons</include>
-				
 				<include>Objects_WallGridButton</include>
 				
 				<include>Objects_WallBackdropButton</include>
@@ -160,6 +158,7 @@
 		
 	</control>
 
+	<include condition="Skin.HasSetting(videomovies)">Furniture_ShowcaseMediaFlags</include>	
 	<include>ViewChange</include>
 	<include>Background_ContextBlack</include>
 	<include condition="Skin.HasSetting(debug)">Furniture_Debug</include>

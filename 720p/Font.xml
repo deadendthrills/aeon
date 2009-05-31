@@ -352,21 +352,21 @@
 
     <font>
       <name>Font_MultiplexPlot</name>
-      <filename>aeon_sublist_cy.ttf</filename>
+      <filename>aeon_player.ttf</filename>
       <size>19</size>
-	  <linespacing>1</linespacing>	  
+	  <linespacing>1.28</linespacing>	  
     </font>
 	
     <font>
       <name>Font_MultiplexInfoLabel</name>
-      <filename>aeon_multiplex.ttf</filename>
-      <size>16</size>
+      <filename>aeon_rss.ttf</filename>
+      <size>15</size>
     </font>	
 	
     <font>
       <name>Font_MultiplexInfoValue</name>
-      <filename>aeon_multiplex.ttf</filename>
-      <size>17</size>
+      <filename>aeon_rss.ttf</filename>
+      <size>16</size>
     </font>	
 	
 <!-- Fullscreen Info pages -->
