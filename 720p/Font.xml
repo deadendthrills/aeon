@@ -353,6 +353,13 @@
     <font>
       <name>Font_MultiplexPlot</name>
       <filename>aeon_player.ttf</filename>
+      <size>21</size>
+	  <linespacing>1.36</linespacing>	  
+    </font>
+	
+    <font>
+      <name>Font_MultiplexPlotSmall</name>
+      <filename>aeon_player.ttf</filename>
       <size>19</size>
 	  <linespacing>1.28</linespacing>	  
     </font>

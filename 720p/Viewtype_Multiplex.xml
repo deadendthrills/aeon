@@ -260,7 +260,7 @@
 				<posy>213</posy>
 				<width>435</width>
 				<height>174</height>
-				<font>Font_MultiplexPlot</font>
+				<font>Font_MultiplexPlotSmall</font>
 				<info>Container(52).ListItem.Plot</info>
 				<textcolor>d0FFFFFF</textcolor>
 				<autoscroll delay="15000" time="2000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>					
@@ -542,7 +542,7 @@
 				<posy>224</posy>
 				<width>375</width>
 				<height>197</height>
-				<font>Font_MultiplexPlot</font>
+				<font>Font_MultiplexPlotSmall</font>
 				<info>Container(52).ListItem.Plot</info>
 				<textcolor>d0FFFFFF</textcolor>
 				<autoscroll delay="15000" time="2000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>					
@@ -554,7 +554,7 @@
 				<posy>224</posy>
 				<width>375</width>
 				<height>197</height>
-				<font>Font_MultiplexPlot</font>
+				<font>Font_MultiplexPlotSmall</font>
 				<info>Container(52).ShowPlot</info>
 				<textcolor>d0FFFFFF</textcolor>
 				<autoscroll delay="15000" time="2000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>					
