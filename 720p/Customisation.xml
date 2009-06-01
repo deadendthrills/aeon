@@ -81,6 +81,13 @@
 			<selected>Skin.HasSetting(unlockTVviews)</selected>
 		</control>
 		
+		<control type="radiobutton" id="407">
+			<include>Objects_SettingsDefaultRadioButton</include>
+			<label>USE LEGACY 'DARK' MULTIPLEX</label>
+			<onclick>Skin.ToggleSetting(oldmultiplex)</onclick>
+			<selected>Skin.HasSetting(oldmultiplex)</selected>
+		</control>		
+		
 	</control>
 
 	<control type="grouplist" id="11">

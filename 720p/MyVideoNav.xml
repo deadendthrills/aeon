@@ -154,7 +154,8 @@
 		
 		<include>Viewtype_Showcase</include>
 		<include>Viewtype_List</include>
-		<include>Viewtype_Multiplex</include>		
+		<include condition="!Skin.HasSetting(oldmultiplex)">Viewtype_Multiplex</include>
+		<include condition="Skin.HasSetting(oldmultiplex)">Viewtype_MultiplexOld</include>
 		
 	</control>
 

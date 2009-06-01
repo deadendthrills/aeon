@@ -748,6 +748,11 @@
 					<texture>common/blank.png</texture>
 				</control>
 				<control type="image">
+					<include>MultiplexIconDimensionsWrap</include>
+					<texture>multiplex/multiplex_glass.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+				</control>				
+				<control type="image">
 					<include>MultiplexIconDimensionsWrapReflect</include>
 					<texture background="true" flipy="true" diffuse="multiplex/multiplex_maskreflect.png">defaultvideo.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
@@ -774,6 +779,12 @@
 					<texture>common/blank.png</texture>
 					<include>Animation_MultiplexFocusZoom</include>					
 				</control>
+				<control type="image">
+					<include>MultiplexIconDimensionsWrap</include>
+					<texture>multiplex/multiplex_glass.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<include>Animation_MultiplexFocusZoom</include>						
+				</control>				
 				<control type="image">
 					<include>MultiplexIconDimensionsWrapReflect</include>
 					<texture background="true" flipy="true" diffuse="multiplex/multiplex_maskreflect.png">defaultvideo.png</texture>
