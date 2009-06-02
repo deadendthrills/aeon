@@ -155,6 +155,7 @@
 			<item id="10">
 				<description>Weather</description>
 				<label>31017</label>
+				<include>BackgroundVarsWeather</include>					
 				<onclick>xbmc.activatewindow(2600)</onclick>
 				<visible>Skin.HasSetting(weather)</visible>
 			</item>
@@ -314,8 +315,7 @@
 			<item id="10">
 				<description>Weather</description>
 				<label>31017</label>
-				<icon>special://skin/media/backdrops/summer/summer.png</icon>
-				<thumb>$INFO[Skin.String(CustomWeather)]</thumb>					
+				<include>BackgroundVarsVideo</include>						
 				<onclick>Skin.SetString(custom,CustomWeather)</onclick>
 				<onclick>SetFocus(92)</onclick>
 				<visible>Skin.HasSetting(weather)</visible>
@@ -485,10 +485,8 @@
 				<visible>Skin.HasSetting(novideos)</visible>
 			</item>
 			<item id="10">
-				<description>My Pictures</description>
 				<label>31017</label>
-				<icon>special://skin/media/backdrops/summer/summer.png</icon>
-				<thumb>$INFO[Skin.String(CustomWeather)]</thumb>				
+				<include>BackgroundVarsWeather</include>					
 				<onclick>Skin.Reset(weather)</onclick>
 				<visible>Skin.HasSetting(weather)</visible>
 			</item>

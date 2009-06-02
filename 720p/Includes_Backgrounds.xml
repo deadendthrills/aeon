@@ -137,6 +137,35 @@
 		<info>Skin.String(CustomShutdown)</info>		
 	</include>
 
+	<include name="BackgroundVarsWeatherSpring">
+		<icon>special://skin/media/backdrops/spring/spring.png</icon>
+		<imagepath>special://skin/media/backdrops/spring/spring.png</imagepath>		
+	</include>
+	
+	<include name="BackgroundVarsWeatherSummer">
+		<icon>special://skin/media/backdrops/summer/summer.png</icon>
+		<imagepath>special://skin/media/backdrops/summer/summer.png</imagepath>		
+	</include>
+
+	<include name="BackgroundVarsWeatherWinter">
+		<icon>special://skin/media/backdrops/winter/winter.png</icon>
+		<imagepath>special://skin/media/backdrops/winter/winter.png</imagepath>		
+	</include>
+
+	<include name="BackgroundVarsWeatherAutumn">
+		<icon>special://skin/media/backdrops/autumn/autumn.png</icon>
+		<imagepath>special://skin/media/backdrops/autumn/autumn.png</imagepath>		
+	</include>	
+	
+	<include name="BackgroundVarsWeather">
+		<include condition="System.Date(03-21,06-21)">BackgroundVarsWeatherSpring</include>
+		<include condition="System.Date(06-21,09-23)">BackgroundVarsWeatherSummer</include>
+		<include condition="System.Date(12-21,03-21)">BackgroundVarsWeatherWinter</include>
+		<include condition="System.Date(09-23,12-21)">BackgroundVarsWeatherAutumn</include>		
+		<thumb>$INFO[Skin.String(CustomWeather)]</thumb>
+		<info>Skin.String(CustomWeather)</info>		
+	</include>	
+
 	<include name="MediaBackdropsMovies">
 		<control type="multiimage">
 			<include>BackgroundVarsGlobal</include>
