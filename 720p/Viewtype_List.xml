@@ -46,7 +46,7 @@
 	
 	<include name="ListLabel_MainMusic">
 		<posx>105</posx>
-		<posy>0</posy>
+		<posy>2</posy>
 		<width>480</width>
 		<height>41</height>
 		<font>Font_List</font>
@@ -68,7 +68,7 @@
 	
 	<include name="ListLabel_SubMusic">
 		<posx>105</posx>
-		<posy>20</posy>
+		<posy>22</posy>
 		<width>470</width>
 		<height>41</height>
 		<font>Font_ListSub</font>
