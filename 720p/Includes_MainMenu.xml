@@ -305,10 +305,9 @@
 				<visible>Skin.HasSetting(scripts)</visible>
 			</item>			
 			<item id="9">
-				<description>Settings</description>
 				<include>BackgroundVarsSettings</include>						
 				<onclick>Skin.SetString(custom,CustomSettings)</onclick>				
-				<onclick>SetFocus(300)</onclick>				
+				<onclick>SetFocus(92)</onclick>				
 				<label>31016</label>
 				<visible>!Skin.HasSetting(nosettings)</visible>
 			</item>
