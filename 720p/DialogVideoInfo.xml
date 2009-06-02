@@ -308,6 +308,7 @@
 			<control type="button" id="11">
 			<label>31409</label>
 			<include>Objects_FSInfoButton</include>
+			<visible>!IsEmpty(ListItem.Trailer)</visible>
 			</control>
 		</control>
 
