@@ -25,6 +25,7 @@
 	</control>
 	
 	<include condition="Skin.HasSetting(videotv)">MediaBackdropsTVFanart</include>
+	<include>MediaBackdropsMultiplex</include>	
 
 	<include>Furniture_WallBackground</include>
 	
@@ -116,14 +117,6 @@
 				
 				<include>Objects_WallBackdropButton</include>
 
-				<control type="togglebutton" id="14">
-					<description>Watched Toggle Button</description>
-					<label>$LOCALIZE[31058]: $LOCALIZE[31078]</label>
-					<altlabel>$LOCALIZE[31058]: $LOCALIZE[31077]</altlabel>
-					<include>Objects_MediaMenuButton</include>
-					<visible>[Skin.HasSetting(videomovies) + !Skin.HasSetting(nomenumoviewatched)] | [Skin.HasSetting(videotv) + !Skin.HasSetting(nomenutvwatched)]</visible>
-				</control>
-				
 				<control type="togglebutton" id="991">
 					<include>Objects_MediaMenuButton</include>				
 					<label>$LOCALIZE[31066]: $LOCALIZE[31077]</label>
@@ -133,6 +126,18 @@
 					<visible>Window.IsActive(25) + Skin.HasSetting(videotv)</visible>
 				</control>				
 
+				<include>Objects_CurtainsButton</include>
+				
+				<include>Objects_LightNightButtons</include>
+
+				<control type="togglebutton" id="14">
+					<description>Watched Toggle Button</description>
+					<label>$LOCALIZE[31058]: $LOCALIZE[31078]</label>
+					<altlabel>$LOCALIZE[31058]: $LOCALIZE[31077]</altlabel>
+					<include>Objects_MediaMenuButton</include>
+					<visible>[Skin.HasSetting(videomovies) + !Skin.HasSetting(nomenumoviewatched)] | [Skin.HasSetting(videotv) + !Skin.HasSetting(nomenutvwatched)]</visible>
+				</control>
+				
 				<control type="button" id="8">
 					<label>137</label>
 					<include>Objects_MediaMenuButton</include>
@@ -145,8 +150,6 @@
 					<onclick>XBMC.ReplaceWindow(MyVideoFiles)</onclick>
 					<visible>!Skin.HasSetting(nomenufiles)</visible>
 				</control>
-
-				<include>Objects_LightNightButtons</include>
 				
 				<include>Objects_VideoSetupButton</include>				
 				

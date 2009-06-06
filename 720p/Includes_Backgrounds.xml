@@ -20,7 +20,17 @@
 		<randomize>true</randomize>
 		<fadetime>1000</fadetime>
 		<include>Animation_BackgroundFade</include>
+		<visible>!Control.IsVisible(52) | [Control.IsVisible(52) + Skin.HasSetting(nocurtains)]</visible>
 	</include>
+	
+	<include name="BackgroundVarsMultiplex">
+		<include>FullscreenDimensions</include>
+		<timeperimage>20000</timeperimage>
+		<randomize>true</randomize>
+		<fadetime>1000</fadetime>
+		<visible>Control.IsVisible(52) + !Skin.HasSetting(nocurtains)</visible>		
+		<include>Animation_BackgroundFade</include>
+	</include>	
 	
 	<include name="BackgroundVarsVirtual">
 		<include>VirtualDimensions</include>
@@ -80,6 +90,13 @@
 		<imagepath>special://skin/media/backdrops/default_movies/default.png</imagepath>
 		<info>Skin.String(CustomMovies)</info>			
 	</include>
+	
+	<include name="BackgroundVarsCurtains">
+		<icon>special://skin/media/backdrops/multiplex/curtains.png</icon>
+		<thumb>$INFO[Skin.String(CustomCurtains)]</thumb>
+		<imagepath>special://skin/media/backdrops/multiplex/curtains.png</imagepath>
+		<info>Skin.String(CustomCurtains)</info>			
+	</include>	
 
 	<include name="BackgroundVarsTV">
 		<icon>special://skin/media/backdrops/default_tvshows/default.png</icon>
@@ -186,7 +203,14 @@
 			<info>Fanart.Image</info>
 			<visible>!Skin.HasSetting(notvfanart) + [Container.Content(seasons) | Container.Content(episodes)]</visible>
 		</control>
-	</include>	
+	</include>
+
+	<include name="MediaBackdropsMultiplex">
+		<control type="multiimage">
+			<include>BackgroundVarsMultiplex</include>
+			<include>BackgroundVarsCurtains</include>
+		</control>
+	</include>		
 	
 	<include name="Background_Wallpaper">
 

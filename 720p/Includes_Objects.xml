@@ -392,9 +392,20 @@
 			<usealttexture>Skin.HasSetting(darkshowcase)</usealttexture>
 			<onclick>Skin.ToggleSetting(darkshowcase)</onclick>
 			<onclick>XBMC.ReloadSkin</onclick>
-			<visible>Control.IsVisible(57)</visible>
+			<visible>!Control.IsVisible(53)</visible>
 		</control>
 	</include>
+	
+	<include name="Objects_CurtainsButton">
+		<control type="togglebutton" id="997">
+			<include>Objects_MediaMenuButton</include>				
+			<label>$LOCALIZE[31067]S: $LOCALIZE[31078]</label>
+			<altlabel>$LOCALIZE[31067]S: $LOCALIZE[31077]</altlabel>
+			<usealttexture>Skin.HasSetting(nocurtains)</usealttexture>
+			<onclick>Skin.ToggleSetting(nocurtains)</onclick>
+			<visible>Control.IsVisible(52)</visible>
+		</control>
+	</include>	
 	
 	<include name="Objects_MultiplexInfoButtons">
 		<control type="button" id="980">
