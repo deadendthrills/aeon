@@ -178,6 +178,14 @@
 			<include>BackgroundVarsGlobal</include>
 			<include>BackgroundVarsTV</include>
 		</control>
+	</include>
+
+	<include name="MediaBackdropsTVFanart">
+		<control type="largeimage">
+			<include>FullscreenDimensions</include>
+			<info>Fanart.Image</info>
+			<visible>!Skin.HasSetting(notvfanart) + [Container.Content(seasons) | Container.Content(episodes)]</visible>
+		</control>
 	</include>	
 	
 	<include name="Background_Wallpaper">

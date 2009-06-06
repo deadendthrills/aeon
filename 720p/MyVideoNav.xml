@@ -145,6 +145,8 @@
 					<onclick>XBMC.ReplaceWindow(MyVideoFiles)</onclick>
 					<visible>!Skin.HasSetting(nomenufiles)</visible>
 				</control>
+
+				<include>Objects_LightNightButtons</include>
 				
 				<include>Objects_VideoSetupButton</include>				
 				
@@ -160,6 +162,17 @@
 	</control>
 
 	<include condition="Skin.HasSetting(videomovies)">Furniture_ShowcaseMediaFlags</include>	
+	
+		<control type="image">
+			<posx>0</posx>
+			<posy>675</posy>
+			<width>1280</width>
+			<height>48</height>
+			<texture>showcase/showcase_gradient.png</texture>
+			<visible>Skin.HasSetting(darkshowcase) + [Control.IsVisible(57) | Control.IsVisible(52)]</visible>
+			<include>Animation_CommonFade</include>
+		</control>	
+	
 	<include>ViewChange</include>
 	<include>Background_ContextBlack</include>
 	<include condition="Skin.HasSetting(debug)">Furniture_Debug</include>
