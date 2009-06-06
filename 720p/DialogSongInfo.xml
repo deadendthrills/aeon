@@ -1,5 +1,5 @@
 <window id="135">
-	<defaultcontrol>12</defaultcontrol>
+	<defaultcontrol>9000</defaultcontrol>
 	<zorder>2</zorder>
 	<coordinates>
 	<system>1</system>
@@ -61,7 +61,7 @@
 		<posy>0</posy>
 		<width>772</width>
 		<height>720</height>
-		<texture>info/info_rightpaneltop.png</texture>
+		<texture>info/lite/info_rightpaneltop.png</texture>
 	</control>
 
 	<control type="group">
