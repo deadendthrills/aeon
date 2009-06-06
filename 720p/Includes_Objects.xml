@@ -298,7 +298,7 @@
 			<altlabel>$LOCALIZE[31065]: $LOCALIZE[31053]</altlabel>
 			<usealttexture>Skin.HasSetting(multiplexthin)</usealttexture>
 			<onclick>Skin.ToggleSetting(multiplexthin)</onclick>
-			<visible>Control.IsVisible(52)</visible>
+			<visible>Control.IsVisible(52) + !Skin.HasSetting(oldmultiplex)</visible>
 		</control>			
 	</include>
 	
