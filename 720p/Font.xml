@@ -135,6 +135,12 @@
 		<filename>aeon_title.ttf</filename>
 		<size>16</size>
 	</font>	
+
+	<font>
+		<name>Font_ListTrack</name>
+		<filename>aeon_title.ttf</filename>
+		<size>47</size>
+	</font>
 	
 	<font>
 		<name>Font_ListSub</name>

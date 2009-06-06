@@ -139,16 +139,28 @@
 	</include>	
 	
 	<include name="ListLabel_Track">
-		<posx>68</posx>
+		<posx>62</posx>
 		<posy>0</posy>
-		<width>35</width>
+		<width>45</width>
+		<height>61</height>
+		<font>Font_ListTrack</font>
+		<align>center</align>
+		<aligny>center</aligny>
+		<animation effect="slide" start="0,-11" end="0,-11" time="0" condition="!Skin.HasSetting(musiclistfull)">Conditional</animation>
+		<animation effect="slide" start="0,10" end="0,10" time="0" condition="Window.IsActive(25) + Skin.HasSetting(videotv)">Conditional</animation>		
+	</include>
+
+	<include name="ListLabel_TrackSmall">
+		<posx>62</posx>
+		<posy>0</posy>
+		<width>45</width>
 		<height>61</height>
 		<font>Font_ListDetail</font>
 		<align>center</align>
 		<aligny>center</aligny>
 		<animation effect="slide" start="0,-11" end="0,-11" time="0" condition="!Skin.HasSetting(musiclistfull)">Conditional</animation>
 		<animation effect="slide" start="0,10" end="0,10" time="0" condition="Window.IsActive(25) + Skin.HasSetting(videotv)">Conditional</animation>		
-	</include>	
+	</include>		
 
 	<include name="List_Objects">
 		<posx>105</posx>
@@ -209,9 +221,9 @@
 			</control>
 
 			<control type="image">
-				<posx>110</posx>
+				<posx>96</posx>
 				<posy>82</posy>
-				<width>35</width>
+				<width>53</width>
 				<height>579</height>
 				<texture>list/listpanel_detailwide.png</texture>
 				<visible>[Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | [Window.IsActive(25) + Skin.HasSetting(videotv)]]</visible>
@@ -260,7 +272,7 @@
 						<texture>list/listpanel_line.png</texture>
 					</control>			
 					<control type="label">
-						<include>ListLabel_Track</include>
+						<include>ListLabel_TrackSmall</include>
 						<include>listcolornofocus</include>
 						<label>$INFO[ListItem.TrackNumber]</label>
 						<visible>[Window.IsActive(500) | Window.IsActive(501) | Container.Content(songs)]</visible>
@@ -321,7 +333,7 @@
 						<visible>[Window.IsActive(500) | Window.IsActive(501) | Container.Content(songs)] + !IsEmpty(ListItem.Artist)</visible>
 					</control>					
 					<control type="label">
-						<include>ListLabel_Track</include>
+						<include>ListLabel_TrackSmall</include>
 						<include>listcolornofocus</include>
 						<include>Animation_ButtonFocusFade_fix</include>						
 						<label>$INFO[ListItem.TrackNumber]</label>
@@ -364,7 +376,7 @@
 						<visible>[Window.IsActive(500) | Window.IsActive(501) | Container.Content(songs)] + !IsEmpty(ListItem.Artist)</visible>
 					</control>					
 					<control type="label">
-						<include>ListLabel_Track</include>
+						<include>ListLabel_TrackSmall</include>
 						<include>listcolorfocus</include>
 						<include>Animation_ButtonFocusFade</include>						
 						<label>$INFO[ListItem.TrackNumber]</label>
@@ -421,7 +433,7 @@
 					</control>					
 					<control type="label">
 						<include>ListLabel_Track</include>
-						<include>listcolornofocus</include>
+						<include>Colour_ListItemTrackUnfocused</include>
 						<label>$INFO[ListItem.TrackNumber]</label>
 						<visible>[Window.IsActive(500) | Window.IsActive(501) | [Window.IsActive(502) + Container.Content(songs)]]</visible>
 					</control>						
@@ -530,7 +542,7 @@
 					</control>							
 					<control type="label">
 						<include>ListLabel_Track</include>
-						<include>listcolornofocus</include>
+						<include>Colour_ListItemTrackUnfocused</include>
 						<label>$INFO[ListItem.TrackNumber]</label>
 						<visible>[Window.IsActive(500) | Window.IsActive(501) | [Window.IsActive(502) + Container.Content(songs)]]</visible>
 						<include>Animation_ButtonFocusFade_fix</include>						
@@ -725,7 +737,7 @@
 						<texture>list/listpanel_line.png</texture>
 					</control>
 					<control type="label">
-						<include>ListLabel_Track</include>
+						<include>ListLabel_TrackSmall</include>
 						<include>listcolornofocus</include>
 						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
 						<visible>Container.Content(episodes)</visible>
@@ -816,7 +828,7 @@
 					
 					
 					<control type="label">
-						<include>ListLabel_Track</include>
+						<include>ListLabel_TrackSmall</include>
 						<include>listcolornofocus</include>
 						<include>Animation_ButtonFocusFade_fix</include>						
 						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
@@ -900,7 +912,7 @@
 					
 					
 					<control type="label">
-						<include>ListLabel_Track</include>
+						<include>ListLabel_TrackSmall</include>
 						<include>listcolorfocus</include>
 						<include>Animation_ButtonFocusFade</include>						
 						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
