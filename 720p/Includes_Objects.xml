@@ -291,7 +291,15 @@
 			<onclick>Skin.SetBool(listpanelthin)</onclick>
 			<altclick>Skin.Reset(listpanelthin)</altclick>
 			<visible>Control.IsVisible(50)</visible>
-		</control>	
+		</control>
+		<control type="togglebutton" id="944">
+			<include>Objects_MediaMenuButton</include>				
+			<label>$LOCALIZE[31065]: $LOCALIZE[31052]</label>
+			<altlabel>$LOCALIZE[31065]: $LOCALIZE[31053]</altlabel>
+			<usealttexture>Skin.HasSetting(multiplexthin)</usealttexture>
+			<onclick>Skin.ToggleSetting(multiplexthin)</onclick>
+			<visible>Control.IsVisible(52)</visible>
+		</control>			
 	</include>
 	
 	<include name="Objects_ListLayoutStrings">
