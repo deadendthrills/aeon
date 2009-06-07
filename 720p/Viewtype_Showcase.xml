@@ -2679,16 +2679,6 @@
             </control>
         </control>
 		
-		<control type="image">
-			<posx>0</posx>
-			<posy>675</posy>
-			<width>1280</width>
-			<height>48</height>
-			<texture>showcase/showcase_gradient.png</texture>
-			<visible>Skin.HasSetting(darkshowcase) + Control.IsVisible(57)</visible>
-			<include>Animation_CommonFade</include>
-		</control>
-		
         <control type="group">
             <include>ShowcaseVisible</include>
         </control>
