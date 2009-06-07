@@ -9,58 +9,22 @@
 	<controls>
 
 	<control type="group">
-	<posx>287</posx>
-	<posy>520</posy>
-	<width>707</width>
-	<height>183</height>
-	<animation effect="slide" end="0,-225" time="400" easing="inout" tween="cubic" condition="Window.IsActive(Home) + Skin.HasSetting(lowermainmenu)">Conditional</animation>
-	<animation effect="slide" end="0,-400" time="200" easing="inout" tween="circle" condition="Control.IsVisible(57)">Conditional</animation>
+		<include>Dialogs_Group</include>
+		<include>Dialogs_Tablet</include>
 
-	<control type="progress" id="403">
-		<description>Progressbar</description>
-		<posx>10</posx>
-		<posy>10</posy>
-		<width>688</width>
-		<height>163</height>
-		<texturebg>dialogs/progress_clear.png</texturebg>
-		<lefttexture>dialogs/progress_lefty.png</lefttexture>
-		<midtexture>dialogs/progress_middle.png</midtexture>
-		<righttexture>dialogs/progress_righty.png</righttexture>
-		<overlaytexture>-</overlaytexture>
-	</control>
-	
-	<control type="image">
-		<posx>10</posx>
-		<posy>10</posy>
-		<width>688</width>
-		<height>163</height>
-		<texture>dialogs/progress_backg.png</texture>		
-	</control>	
-		
-	<control type="label" id="401">
-		<description>Heading Label</description>
-		<posx>40</posx>
-		<posy>50</posy>
-		<width>627</width>
-		<height>51</height>
-		<textcolor>a7ffffff</textcolor>
-		<align>center</align>
-		<font>Font_ProgressLabelSmall</font>
-	</control>
-		
-	<control type="label" id="402">
-		<posx>40</posx>
-		<posy>94</posy>
-		<width>627</width>
-		<height>51</height>
-		<align>center</align>
-		<font>Font_ProgressLabelBig</font>
-		<textcolor>d0ffffff</textcolor>
-		<label>-</label>
-		<include>DialogInfo</include>
-		<scroll>true</scroll>
-	</control>
+		<control type="progress" id="403">
+			<include>Dialogs_Progress</include>
+		</control>
 
+		<include>Dialogs_HardDrive</include>
+		
+		<control type="label" id="401">
+			<include>Dialogs_Label2</include>
+		</control>
+			
+		<control type="label" id="405">
+			<include>Dialogs_Label3</include>
+		</control>
 		
 	</control>
 

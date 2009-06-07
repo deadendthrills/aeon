@@ -1,0 +1,109 @@
+<includes>
+
+	<include name="Dialogs_Group">
+		<posx>386</posx>
+		<posy>600</posy>
+		<width>509</width>
+		<height>91</height>	
+	</include>
+
+	<include name="Dialogs_Tablet">
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>509</width>
+			<height>91</height>
+			<texture>dialogs/scan_backg.png</texture>		
+		</control>	
+	</include>
+
+	<include name="Dialogs_Exclam">
+		<control type="image">
+			<posx>9</posx>
+			<posy>9</posy>
+			<width>73</width>
+			<height>73</height>
+			<texture>dialogs/exclam_icon.png</texture>
+		</control>	
+	</include>
+	
+	<include name="Dialogs_HardDrive">
+		<control type="image">
+			<posx>12</posx>
+			<posy>4</posy>
+			<width>67</width>
+			<height>83</height>
+			<texture>dialogs/scan_icon.png</texture>
+		</control>
+	</include>
+	
+	<include name="Dialogs_VolumeIcon">
+		<control type="image">
+			<posx>6</posx>
+			<posy>4</posy>
+			<width>81</width>
+			<height>82</height>
+			<texture>dialogs/volume_icon.png</texture>
+		</control>	
+	</include>
+
+	<include name="Dialogs_Progress">
+		<description>Progressbar</description>
+		<posx>3</posx>
+		<posy>3</posy>
+		<width>85</width>
+		<height>85</height>
+		<reveal>true</reveal>
+		<texturebg>dialogs/scan_blank.png</texturebg>
+		<lefttexture>common/blank.png</lefttexture>
+		<midtexture>dialogs/scan_fill.png</midtexture>
+		<righttexture>common/blank.png</righttexture>
+		<overlaytexture>-</overlaytexture>
+	</include>
+	
+	<include name="Dialogs_LabelVars">
+		<posx>105</posx>
+		<width>390</width>
+		<height>21</height>
+		<textcolor>FF323232</textcolor>
+		<align>left</align>
+		<font>Font_ProgressLabel</font>		
+	</include>
+
+	<include name="Dialogs_Pos1">
+		<posy>8</posy>	
+	</include>
+	
+	<include name="Dialogs_Pos2">
+		<posy>26</posy>	
+	</include>
+
+	<include name="Dialogs_Pos3">
+		<posy>44</posy>	
+	</include>
+
+	<include name="Dialogs_Pos4">
+		<posy>62</posy>	
+	</include>	
+	
+	<include name="Dialogs_Label1">
+		<include>Dialogs_Pos1</include>
+		<include>Dialogs_LabelVars</include>
+	</include>
+	
+	<include name="Dialogs_Label2">
+		<include>Dialogs_Pos2</include>
+		<include>Dialogs_LabelVars</include>
+	</include>
+
+	<include name="Dialogs_Label3">
+		<include>Dialogs_Pos3</include>
+		<include>Dialogs_LabelVars</include>
+	</include>
+
+	<include name="Dialogs_Label4">
+		<include>Dialogs_Pos4</include>
+		<include>Dialogs_LabelVars</include>
+	</include>	
+	
+</includes>

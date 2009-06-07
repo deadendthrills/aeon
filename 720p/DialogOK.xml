@@ -9,81 +9,26 @@
 	<controls>
 
 	<control type="group">
-	<posx>287</posx>
-	<posy>520</posy>
-	<width>707</width>
-	<height>183</height>
-	<animation effect="slide" end="0,-225" time="400" easing="inout" tween="cubic" condition="Window.IsActive(Home) + Skin.HasSetting(lowermainmenu)">Conditional</animation>
-	<animation effect="slide" end="0,-400" time="200" easing="inout" tween="circle" condition="Control.IsVisible(57)">Conditional</animation>
+		<include>Dialogs_Group</include>
+		<include>Dialogs_Tablet</include>
+		<include>Dialogs_Exclam</include>
 
-		<control type="image">
-			<posx>10</posx>
-			<posy>10</posy>
-			<width>688</width>
-			<height>163</height>
-			<texture>dialogs/progress_backg.png</texture>		
+		<control type="label" id="1">
+			<include>Dialogs_Label1</include>
 		</control>
 	
 		<control type="label" id="2">
-			<posx>40</posx>
-			<posy>70</posy>
-			<width>627</width>
-			<height>51</height>
-			<textcolor>a7ffffff</textcolor>
-			<align>center</align>
-			<font>Font_ProgressLabelSmall</font>
+			<include>Dialogs_Label2</include>
 		</control>
 
 		<control type="label" id="3">
-			<description>dialog line 2</description>
-			<posx>190</posx>
-			<posy>260</posy>
-			<label>0</label>
-			<font>font10</font>
-			<align>center</align>
-			<textcolor>FFffffff</textcolor>
-			<include>DialogInfo</include>
+			<include>Dialogs_Label3</include>
 		</control>
 
 		<control type="label" id="4">
-			<description>dialog line 3</description>
-			<posx>190</posx>
-			<posy>280</posy>
-			<label>0</label>
-			<font>font10</font>
-			<align>center</align>
-			<textcolor>FFffffff</textcolor>
-			<include>DialogInfo</include>
+			<include>Dialogs_Label4</include>
 		</control>
 
-		<control type="button" id="10">
-			<description>OK button</description>
-			<posx>315</posx>
-			<posy>310</posy>
-			<width>90</width>
-			<height>32</height>
-			<texturefocus>Button-Home2.png</texturefocus>
-			<texturenofocus>Button-List.png</texturenofocus>
-			<label>186</label>
-			<onleft>10</onleft>
-			<align>center</align>
-			<onright>10</onright>
-			<onup>10</onup>
-			<ondown>10</ondown>
-			<include>DialogInfo</include>
-		</control>
-
-		<control type="label" id="1">
-			<description>Heading Label</description>
-			<posx>40</posx>
-			<posy>50</posy>
-			<width>627</width>
-			<height>51</height>
-			<textcolor>a7ffffff</textcolor>
-			<align>center</align>
-			<font>Font_ProgressLabelSmall</font>
-		</control>
-		
 	</control>
 
 	</controls>

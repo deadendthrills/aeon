@@ -682,24 +682,12 @@
 			<height>405</height>
 			<include condition="!Skin.HasSetting(darkshowcase)">ShowcaseFloorLight</include>
 			<include condition="Skin.HasSetting(darkshowcase)">ShowcaseFloorNight</include>			
-			<visible>Control.IsVisible(57)</visible>
+			<visible>Control.IsVisible(57) | Control.IsVisible(52)</visible>
 			<include>Animation_CommonFade</include>
 			<include>Animation_HideShowcase</include>
 			<include>Animation_HideMultiplex</include>			
 		</control>
 		
-		<control type="image">
-			<posx>0</posx>
-			<posy>315</posy>
-			<width>1280</width>
-			<height>405</height>
-			<texture>showcase/lite/showcase_floor.png</texture>		
-			<visible>Control.IsVisible(52)</visible>
-			<include>Animation_CommonFade</include>
-			<include>Animation_HideShowcase</include>
-			<include>Animation_HideMultiplex</include>				
-		</control>
-
 		<control type="image">
 			<posx>144</posx>
 			<posy>583</posy>
@@ -731,7 +719,7 @@
 			<height>405</height>
 			<texture>list/list_floor.png</texture>
 			<visible>Control.IsVisible(50)</visible>
-			<colordiffuse>c7FFFFFF</colordiffuse>
+
 			<include>Animation_CommonFade</include>
 			<include>Animation_HideShowcase</include>
 			<include>Animation_HideMultiplex</include>				
@@ -979,6 +967,46 @@
 
 	</include>
 
+	<include name="Furniture_NowPlayingWidget">
+		<control type="group">
+			<animation effect="fade" delay="1500" start="0" end="100" time="400">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="100">Hidden</animation>
+			<animation effect="slide" time="1000" start="0,300" end="0,0" tween="cubic" easing="out">WindowOpen</animation>			
+			<visible>Control.IsVisible(50) + Player.HasAudio</visible>
+			<control type="image">
+				<posx>870</posx>
+				<posy>570</posy>
+				<width>318</width>
+				<height>113</height>
+				<texture>list/list_nowplaying.png</texture>
+			</control>
+
+			<control type="progress" id="20">
+				<description>Progressbar</description>
+				<posx>855</posx>
+				<posy>650</posy>
+				<width>346</width>
+				<height>18</height>
+				<texturebg>list/progress_back.png</texturebg>
+				<lefttexture>list/progress_left.png</lefttexture>
+				<midtexture>list/progress_mid.png</midtexture>
+				<righttexture>list/progress_right.png</righttexture>
+				<overlaytexture>-</overlaytexture>
+				<info>Player.Progress</info>
+			</control>
+
+			<control type="label">
+				<include>List_NowPlaying</include>
+				<posy>595</posy>
+				<textcolor>a8FFFFFF</textcolor>
+				<scroll>true</scroll>
+				<label>[UPPERCASE][COLOR a8FFFFFF]$INFO[MusicPlayer.Artist][/COLOR][CR][COLOR FFFFFFFF]$INFO[MusicPlayer.Title][/COLOR][/UPPERCASE]</label>
+				<visible>true</visible>
+			</control>
+		</control>
+	</include>
+	
+	
 <!-- Settings windows -->
 
 	<include name="Furniture_SettingsBackPanel">

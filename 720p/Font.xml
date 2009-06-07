@@ -70,7 +70,8 @@
 	<font>
 	  <name>Font_ListPlaying</name>
 	  <filename>aeon_player.ttf</filename>
-	  <size>18</size>
+	  <size>17</size>
+	  <linespacing>1.05</linespacing>
 	</font>	
 	
 	<font>
@@ -242,6 +243,12 @@
 	  <name>Font_SetContentMenu</name>
 	  <filename>aeon_settings.ttf</filename>
 	  <size>20</size>
+	</font>
+
+	<font>
+	  <name>Font_ProgressLabel</name>
+	  <filename>aeon_title.ttf</filename>
+	  <size>16</size>
 	</font>
 	
 	<font>

@@ -8,61 +8,26 @@
 	<include>Animation_DialogPopup</include>
 	<controls>
 
-	<control type="group" id="901">
-	<posx>287</posx>
-	<posy>520</posy>
-	<width>707</width>
-	<height>183</height>
-	<animation effect="slide" end="0,-200" time="200" easing="inout" tween="circle" condition="Window.IsActive(Home) + Skin.HasSetting(lowermainmenu)">Conditional</animation>
-	<animation effect="slide" end="0,-400" time="200" easing="inout" tween="circle" condition="Control.IsVisible(57)">Conditional</animation>	
-	
-	<control type="progress" id="20">
-		<description>Progressbar</description>
-		<posx>10</posx>
-		<posy>10</posy>
-		<width>688</width>
-		<height>163</height>
-		<texturebg>dialogs/progress_clear.png</texturebg>
-		<lefttexture>dialogs/progress_lefty.png</lefttexture>
-		<midtexture>dialogs/progress_middle.png</midtexture>
-		<righttexture>dialogs/progress_righty.png</righttexture>
-		<info>Player.Volume</info>
-		<overlaytexture>-</overlaytexture>
-	</control>
+	<control type="group">
+		<include>Dialogs_Group</include>
+		<include>Dialogs_Tablet</include>
 
-	<control type="image">
-		<posx>10</posx>
-		<posy>10</posy>
-		<width>688</width>
-		<height>163</height>
-		<texture>dialogs/progress_backg.png</texture>		
-	</control>
+		<control type="progress" id="20">
+			<include>Dialogs_Progress</include>
+			<info>Player.Volume</info>			
+		</control>
 
-	<control type="label" id="1">
-		<description>Heading Label</description>
-		<posx>40</posx>
-		<posy>55</posy>
-		<width>627</width>
-		<height>51</height>
-		<textcolor>a7ffffff</textcolor>
-		<align>center</align>
-		<font>Font_ProgressLabelSmall</font>
-		<label>31707</label>
-	</control>
+		<include>Dialogs_VolumeIcon</include>	
+
+		<control type="label" id="1">
+			<include>Dialogs_Label2</include>
+			<label>31707</label>
+		</control>
 	
-	<control type="label">
-		<description>Path</description>
-		<posx>40</posx>
-		<posy>95</posy>
-		<width>627</width>
-		<height>51</height>
-		<align>center</align>
-		<font>Font_ProgressLabelBig</font>
-		<textcolor>d0ffffff</textcolor>
-		<label>-</label>
-		<scroll>true</scroll>
-		<label>$INFO[Player.Volume]</label>
-	</control>
+		<control type="label">
+			<include>Dialogs_Label3</include>
+			<label>$INFO[Player.Volume]</label>
+		</control>
 
 	</control>
 

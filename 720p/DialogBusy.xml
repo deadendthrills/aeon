@@ -5,30 +5,23 @@
 	<posx>0</posx>
 	<posy>0</posy>
 	</coordinates>
+	<include>Animation_DialogPopup</include>	
 	<controls>
 
 	<control type="group" id="901">
-		<posx>12</posx>
-		<posy>669</posy>
-		<width>1255</width>
-		<height>51</height>
-		<animation effect="slide" start="0,51" end="0,0" time="150">WindowOpen</animation>
-		<animation effect="slide" start="0,0" end="0,51" time="150">WindowClose</animation>
-		<control type="image" id="80">
-			<width>1255</width>
-			<height>51</height>
-			<texture>popup.png</texture>
-		</control>
+		<include>Dialogs_Group</include>
+		<include>Dialogs_Tablet</include>
+		<include>Dialogs_Exclam</include>		
+		
 		<control type="label" id="401">
-			<posx>0</posx>
-			<posy>13</posy>
-			<width>1255</width>
-			<height>51</height>
-			<align>center</align>
-			<font>font13s</font>
-			<textcolor>d0ffffff</textcolor>
-			<label>Please wait...</label>
+			<include>Dialogs_Label2</include>
+			<label>WORKING</label>
 		</control>
+		
+		<control type="label" id="401">
+			<include>Dialogs_Label3</include>
+			<label>PLEASE WAIT</label>
+		</control>		
 
 	</control>
 
