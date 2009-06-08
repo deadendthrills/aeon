@@ -206,8 +206,8 @@
 </include>
 
 <include name="Animation_BackgroundFade">
-    <animation effect="fade" time="500" condition="![Window.Previous(4) + Container(300).HasFocus(9)] + !Window.Previous(2600)">WindowOpen</animation>
-    <animation effect="fade" time="200" condition="![Window.Next(4) + Container(300).HasFocus(9)] + !Window.Next(2600)">WindowClose</animation>
+    <animation effect="fade" time="500" condition="![Window.Previous(4) + Container(300).HasFocus(9)] + ![[Window.Previous(12) | Window.Previous(13) | Window.Previous(14) | Window.Previous(15) | Window.Previous(16) | Window.Previous(17) | Window.Previous(18) | Window.Previous(19) | Window.Previous(34)] + Container(300).HasFocus(9)] + !Window.Previous(2600)">WindowOpen</animation>
+    <animation effect="fade" time="200" condition="![Window.Next(4) + Container(300).HasFocus(9)] + ![[Window.Next(12) | Window.Next(13) | Window.Next(14) | Window.Next(15) | Window.Next(16) | Window.Next(17) | Window.Next(18) | Window.Next(19) | Window.Next(34)] + ControlGroup(943).HasFocus()] + !Window.Next(2600)">WindowClose</animation>
     <animation effect="fade" time="800">Visible</animation>
     <animation effect="fade" delay = "300" time="800" condition="![Window.IsActive(2001) | Window.IsActive(2003)]">Hidden</animation>
 </include>

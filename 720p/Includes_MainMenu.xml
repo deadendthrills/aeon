@@ -54,6 +54,11 @@
 	<control type="button" id="351">
 		<onfocus>SetFocus(941)</onfocus>
 		<visible>Container(300).HasFocus(1)</visible>
+	</control>
+
+	<control type="button" id="351">
+		<onfocus>SetFocus(943)</onfocus>
+		<visible>Container(300).HasFocus(9)</visible>
 	</control>		
 
 	<control type="wraplist" id="300">

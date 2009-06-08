@@ -206,6 +206,69 @@
 				</control>
 			</control>			
 		</control>			
+
+		<control type="group">
+			<posx>79</posx>
+			<posy>406</posy>
+			<visible>ControlGroup(943).HasFocus()</visible>
+			<animation effect="slide" start="0,0" end="0,225" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>			
+			<include>Animation_CommonFade</include>			
+			<control type="image">
+				<width>1123</width>
+				<height>33</height>
+				<texture>home/submenubar_music.png</texture>
+			</control>
+			<control type="grouplist" id="943">
+				<posx>39</posx>
+				<width>1048</width>
+				<height>33</height>
+				<itemgap>0</itemgap>
+				<onup>300</onup>
+				<ondown>352</ondown>
+				<scroll>false</scroll>
+				<orientation>horizontal</orientation>
+				<control type="button" id="40">
+					<include>Submenu_Button</include>
+					<label>31140</label>
+					<onclick>XBMC.ActivateWindow(VideosSettings)</onclick>
+				</control>
+				<control type="button" id="41">
+					<include>Submenu_Button</include>
+					<label>31142</label>
+					<onclick>XBMC.ActivateWindow(MusicSettings)</onclick>
+				</control>
+				<control type="button" id="42">
+					<include>Submenu_Button</include>
+					<label>31144</label>
+					<onclick>XBMC.ActivateWindow(ProgramsSettings)</onclick>
+				</control>
+				<control type="button" id="43">
+					<include>Submenu_Button</include>
+					<label>31146</label>
+					<onclick>XBMC.ActivateWindow(PicturesSettings)</onclick>
+				</control>
+				<control type="button" id="44">
+					<include>Submenu_Button</include>
+					<label>31150</label>
+					<onclick>XBMC.ActivateWindow(NetworkSettings)</onclick>
+				</control>
+				<control type="button" id="45">
+					<include>Submenu_Button</include>
+					<label>31152</label>
+					<onclick>XBMC.ActivateWindow(SystemSettings)</onclick>
+				</control>
+				<control type="button" id="46">
+					<include>Submenu_Button</include>
+					<label>31154</label>
+					<onclick>XBMC.ActivateWindow(AppearanceSettings)</onclick>
+				</control>
+				<control type="button" id="47">
+					<include>Submenu_Button</include>
+					<label>31160</label>
+					<onclick>XBMC.ActivateWindow(Profiles)</onclick>
+				</control>
+			</control>			
+		</control>			
 		
 	</include>
 	

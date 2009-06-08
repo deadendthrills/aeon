@@ -714,14 +714,16 @@
 		<description>button template</description>
 		<posx>0</posx>
 		<posy>0</posy>
-		<height>37</height>
-		<width>280</width>
-		<textcolor>FFd4d4d4</textcolor>
-		<focusedcolor>FF000000</focusedcolor>
-		<texturenofocus>-</texturenofocus>
+		<height>39</height>
+		<width>308</width>
+		<textcolor>FF383838</textcolor>
+		<focusedcolor>FFdfdfdf</focusedcolor>
+		<texturenofocus>dialogs/context_nofocus.png</texturenofocus>
 		<texturefocus>dialogs/context_highlight.png</texturefocus>
 		<align>center</align>
+		<aligny>top</aligny>
 		<font>Font_ContextMenuButton</font>
+		<textoffsety>8</textoffsety>
 	</include>
 	
 	<include name="Objects_ContextMenuRadioButton">
@@ -1073,15 +1075,15 @@
 	</include>	
 
 	<include name="Objects_ButtonMenu10Group">
-			<height>370</height>	
+			<height>390</height>	
 	</include>
 	
 	<include name="Objects_ButtonMenu9Group">
-			<height>333</height>	
+			<height>351</height>	
 	</include>
 	
 	<include name="Objects_ButtonMenu8Group">
-			<height>296</height>	
+			<height>312</height>	
 	</include>
 
 <!-- Login Screen -->

@@ -76,7 +76,7 @@
 <include name="Settings_Welcome">
 
 	<control type="group" id="909">
-		<visible>![Window.Previous(4) | Window.Previous(11) | Window.Previous(24) | Window.Previous(25) | Window.Previous(1) | Window.Previous(2) | Window.Previous(500) | Window.Previous(501) | Window.Previous(502)]</visible>
+		<visible>![Window.Previous(4) | Window.Previous(11) | Window.Previous(24) | Window.Previous(25) | Window.Previous(1) | Window.Previous(2) | Window.Previous(500) | Window.Previous(501) | Window.Previous(502) | Window.Previous(Home)]</visible>
 
 		<control type="image">
 			<include>FullscreenDimensions</include>

@@ -7,8 +7,8 @@
 		<include>FullscreenDimensions</include>
 		<imagepath>backdrops/default_settings</imagepath>
 		<info>Skin.String(CustomSettings)</info>
-		<animation effect="fade" start="0" end="100" time="200" condition="!Window.Previous(4)">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="200" condition="!Window.Next(4)">WindowClose</animation>		
+		<animation effect="fade" start="0" end="100" time="200" condition="![Window.Previous(4) | Window.Previous(Home)]">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="200" condition="![Window.Next(4) | Window.Next(Home)]">WindowClose</animation>		
 	</control>
 
 	<control type="group">
@@ -44,7 +44,7 @@
 			<ondown>5</ondown>
 			<onleft>3</onleft>
 			<onright>3</onright>
-			<visible>Window.Previous(4) | Window.Previous(10) | Window.Previous(24) | Window.Previous(25) | Window.Previous(1) | Window.Previous(2) | Window.Previous(500) | Window.Previous(501) | Window.Previous(502) | Window.Previous(VideosSettings)</visible>
+			<visible>Window.Previous(4) | Window.Previous(10) | Window.Previous(24) | Window.Previous(25) | Window.Previous(1) | Window.Previous(2) | Window.Previous(500) | Window.Previous(501) | Window.Previous(502) | Window.Previous(VideosSettings) | Window.Previous(Home)</visible>
 		</control>
 	
 		<include>Settings_XBMCSettingsSubheadings</include>
