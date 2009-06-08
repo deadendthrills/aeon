@@ -14,41 +14,43 @@
 		<effect type="fade" start="100" end="0" time="300" />
 	</animation>
 	<controls>
-			<control type="image" id="997">
-				<description>background top image</description>
-				<posx>0</posx>
-				<posy>-31</posy>
-				<width>280</width>
-				<height>31</height>
-				<texture>dialogs/context_top.png</texture>
-			</control>
-			<control type="image" id="999">
-				<description>background image</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>280</width>
-				<texture>dialogs/context_middle.png</texture>
-			</control>
-			<control type="image" id="998">
-				<description>background bottom image</description>
-				<posx>0</posx>
-				<posy>390</posy>
-				<width>280</width>
-				<height>31</height>
-				<texture>dialogs/context_bottom.png</texture>
-			</control>
-			<control type="button" id="1000">
-				<description>button template</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<height>37</height>
-				<width>280</width>
-				<textcolor>FFd4d4d4</textcolor>
-				<focusedcolor>FF000000</focusedcolor>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>dialogs/context_highlight.png</texturefocus>
-				<align>center</align>
-				<font>Font_ContextMenuButton</font>
-			</control>
+		<control type="image" id="997">
+			<description>background top image</description>
+			<posx>0</posx>
+			<posy>-26</posy>
+			<width>308</width>
+			<height>26</height>
+			<texture>dialogs/context_top.png</texture>
+		</control>
+		<control type="image" id="999">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>308</width>
+			<texture>dialogs/context_middle.png</texture>
+		</control>
+		<control type="image" id="998">
+			<description>background bottom image</description>
+			<posx>0</posx>
+			<posy>390</posy>
+			<width>308</width>
+			<height>27</height>
+			<texture>dialogs/context_bottom.png</texture>
+		</control>
+		<control type="button" id="1000">
+			<description>button template</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<height>39</height>
+			<width>308</width>
+			<textcolor>FF383838</textcolor>
+			<focusedcolor>FFdfdfdf</focusedcolor>
+			<texturenofocus>dialogs/context_nofocus.png</texturenofocus>
+			<texturefocus>dialogs/context_highlight.png</texturefocus>
+			<align>center</align>
+			<aligny>top</aligny>
+			<font>Font_ContextMenuButton</font>
+			<textoffsety>8</textoffsety>
+		</control>
 	</controls>
 </window>

@@ -17,25 +17,25 @@
 	<controls>
 
 	<control type="group">
-	<posx>500</posx>
-	<posy>212</posy>
-	<width>280</width>
-	<height>385</height>
+	<posx>486</posx>
+	<posy>184</posy>
+	<width>308</width>
+	<height>404</height>
 	<animation effect="slide" start="0,-19" end="0,-19" time="0" condition="![system.hasloginscreen | System.HasMediaDVD]">Conditional</animation>
 	<animation effect="slide" start="0,-38" end="0,-38" time="0" condition="system.hasloginscreen + System.HasMediaDVD">Conditional</animation>	
 		<control type="image">
 			<description>background top image</description>
 			<posx>0</posx>
-			<posy>-31</posy>
-			<width>280</width>
-			<height>31</height>
+			<posy>-26</posy>
+			<width>308</width>
+			<height>26</height>
 			<texture>dialogs/context_top.png</texture>
 		</control>
 		<control type="image">
 			<description>background image</description>
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>280</width>
+			<width>308</width>
 			<include condition="![system.hasloginscreen | System.HasMediaDVD]">Objects_ButtonMenu8Group</include> 
 			<include condition="[system.hasloginscreen + !System.HasMediaDVD] | [!system.hasloginscreen + System.HasMediaDVD]">Objects_ButtonMenu9Group</include>			
 			<include condition="system.hasloginscreen + System.HasMediaDVD">Objects_ButtonMenu10Group</include>		
@@ -44,18 +44,18 @@
 		<control type="image">
 			<description>background bottom image</description>
 			<posx>0</posx>
-			<posy>333</posy>
-			<width>280</width>
-			<height>31</height>
-			<animation effect="slide" start="0,-37" end="0,-37" time="0" condition="![system.hasloginscreen | System.HasMediaDVD]">Conditional</animation>
-			<animation effect="slide" start="0,37" end="0,37" time="0" condition="system.hasloginscreen + System.HasMediaDVD">Conditional</animation>			
+			<posy>351</posy>
+			<width>308</width>
+			<height>27</height>
+			<animation effect="slide" start="0,-39" end="0,-39" time="0" condition="![system.hasloginscreen | System.HasMediaDVD]">Conditional</animation>
+			<animation effect="slide" start="0,39" end="0,39" time="0" condition="system.hasloginscreen + System.HasMediaDVD">Conditional</animation>			
 			<texture>dialogs/context_bottom.png</texture>
 		</control>
 		
 		<control type="grouplist" id="4112">
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>280</width>
+			<width>308</width>
 			<include condition="![system.hasloginscreen | System.HasMediaDVD]">Objects_ButtonMenu8Group</include> 
 			<include condition="[system.hasloginscreen + !System.HasMediaDVD] | [!system.hasloginscreen + System.HasMediaDVD]">Objects_ButtonMenu9Group</include>			
 			<include condition="system.hasloginscreen + System.HasMediaDVD">Objects_ButtonMenu10Group</include>			
