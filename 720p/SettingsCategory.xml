@@ -143,7 +143,7 @@
 		<onright>SetFocus(1)</onright>
 	</control>
 
-	<include>Background_ContextBlack</include>
+	<!--<include>Background_ContextBlack</include>-->
 
 	<include>Settings_Welcome</include>
 	

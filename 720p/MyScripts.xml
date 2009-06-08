@@ -68,7 +68,7 @@
 
 	<include>Furniture_DarkGradient</include>	
 	<include>ViewChange</include>
-	<include>Background_ContextBlack</include>
+	<!--<include>Background_ContextBlack</include>-->
 	<include>Furniture_Debug</include>
 </controls>
 </window>

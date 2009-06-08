@@ -364,7 +364,7 @@
 
 	<include>Furniture_SettingsFrontPanel</include>
 	
-	<include>Background_ContextBlack</include>
+	<!--<include>Background_ContextBlack</include>-->
 	<include>Furniture_Debug</include>
 	
 	</controls>
