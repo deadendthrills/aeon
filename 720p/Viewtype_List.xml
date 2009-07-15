@@ -196,9 +196,10 @@
 			<posx>693</posx>
 			<posy>583</posy>
 			<texture>list/list_spot.png</texture>
-			<visible>Control.IsVisible(50)</visible>				
+			<visible>Control.IsVisible(50)</visible>
+			<colordiffuse>66FFFFFF</colordiffuse>			
 		</control>
-	
+		
 		<control type="group">
 	
 			<control type="image">

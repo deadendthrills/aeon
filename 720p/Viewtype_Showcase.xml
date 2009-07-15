@@ -247,7 +247,7 @@
     <include name="ShowcaseDetailLabel">
 		<include>ShowcaseLabelVars</include>
         <posx>340</posx>
-        <posy>673</posy>
+        <posy>670</posy>
         <width>600</width>
         <font>Font_ShowcaseDetailLabel</font>
 		<visible>!ControlGroup(7000).HasFocus()</visible>		

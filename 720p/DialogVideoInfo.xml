@@ -219,7 +219,7 @@
 		
 		<control type="label">
 			<description>Directed by:</description>
-			<posy>112</posy>
+			<posy>113</posy>
 			<include>Objects_FSInfoLabel</include>
 			<label>31402</label>
 		</control>
@@ -233,7 +233,7 @@
 		
 		<control type="label">
 			<description>Duration:</description>
-			<posy>168</posy>
+			<posy>169</posy>
 			<include>Objects_FSInfoLabel</include>
 			<label>31434</label>
 		</control>		
@@ -247,21 +247,21 @@
 		
 		<control type="label">
 			<description>Director</description>
-			<posy>112</posy>
+			<posy>113</posy>
 			<include>Objects_FSInfoValue</include>
 			<label fallback="31425">$INFO[ListItem.Director]</label>
 		</control>
 		
 		<control type="label">
 			<description>Writer</description>
-			<posy>141</posy>
+			<posy>142</posy>
 			<include>Objects_FSInfoValue</include>
 			<label fallback="31425">$INFO[ListItem.Writer]</label>
 		</control>
 		
 		<control type="label">
 			<description>Writer</description>
-			<posy>169</posy>
+			<posy>170</posy>
 			<include>Objects_FSInfoValue</include>
 			<label fallback="31425">$INFO[ListItem.Duration]</label>
 		</control>		
@@ -269,7 +269,7 @@
 		<control type="textbox">
 			<description>Cast</description>
 			<posx>120</posx>
-			<posy>200</posy>
+			<posy>203</posy>
 			<width>500</width>
 			<height>110</height>
 			<align>left</align>
@@ -315,7 +315,7 @@
 		<control type="textbox">
 			<description>Plot</description>
 			<posx>3</posx>
-			<posy>354</posy>
+			<posy>356</posy>
 			<width>630</width>
 			<height>212</height>
 			<align>left</align>

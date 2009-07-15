@@ -306,7 +306,7 @@
 			
 			<control type="rss" id="1">
 			    <posx>110</posx>
-			    <posy>4</posy>
+			    <posy>5</posy>
 			    <width>1170</width>
 			    <visible>true</visible>
 			    <font>Font_RSS</font>
