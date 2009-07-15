@@ -248,8 +248,8 @@
 
 	<font>
 	  <name>Font_ProgressLabel</name>
-	  <filename>aeon_title.ttf</filename>
-	  <size>16</size>
+	  <filename>scout.ttf</filename>
+	  <size>22</size>
 	</font>
 	
 	<font>
