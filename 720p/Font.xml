@@ -115,7 +115,7 @@
 	
 	<font>
 		<name>Font_ListSmall</name>
-		<filename>scout.ttf</filename>
+		<filename>scoutlight.ttf</filename>
 		<size>19</size>
 	</font>	
 	
@@ -133,14 +133,14 @@
 	
 	<font>
 		<name>Font_ListDetailTV</name>
-		<filename>aeon_title.ttf</filename>
+		<filename>scout.ttf</filename>
 		<size>16</size>
 	</font>	
 
 	<font>
 		<name>Font_ListTrack</name>
 		<filename>scoutcond.ttf</filename>
-		<size>47</size>
+		<size>52</size>
 	</font>
 	
 	<font>

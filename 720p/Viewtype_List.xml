@@ -35,7 +35,7 @@
 	
 	<include name="ListLabel_MainSmall">
 		<posx>45</posx>
-		<posy>0</posy>
+		<posy>-2</posy>
 		<include condition="[Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | Container.Content(episodes)]">ListLabel_WidthMusic</include>
 		<include condition="![Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | Container.Content(episodes)]">ListLabel_Width</include>		
 		<height>39</height>
@@ -140,7 +140,7 @@
 	
 	<include name="ListLabel_Track">
 		<posx>62</posx>
-		<posy>0</posy>
+		<posy>1</posy>
 		<width>45</width>
 		<height>61</height>
 		<font>Font_ListTrack</font>
@@ -152,7 +152,7 @@
 
 	<include name="ListLabel_TrackSmall">
 		<posx>62</posx>
-		<posy>0</posy>
+		<posy>-2</posy>
 		<width>45</width>
 		<height>61</height>
 		<font>Font_ListDetail</font>
