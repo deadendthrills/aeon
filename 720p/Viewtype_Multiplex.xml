@@ -769,6 +769,7 @@
 					<include>MultiplexIconDimensionsWrap</include>
 					<texture>multiplex/multiplex_glass.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
+					<colordiffuse>66FFFFFF</colordiffuse>
 				</control>				
 				<control type="image">
 					<include>MultiplexIconDimensionsWrapReflect</include>
@@ -801,7 +802,8 @@
 					<include>MultiplexIconDimensionsWrap</include>
 					<texture>multiplex/multiplex_glass.png</texture>
 					<aspectratio scalediffuse="false">scale</aspectratio>
-					<include>Animation_MultiplexFocusZoom</include>						
+					<include>Animation_MultiplexFocusZoom</include>		
+					<colordiffuse>66FFFFFF</colordiffuse>					
 				</control>				
 				<control type="image">
 					<include>MultiplexIconDimensionsWrapReflect</include>
