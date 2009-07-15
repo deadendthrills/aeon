@@ -165,92 +165,50 @@
 		<control type="image" id="92">
 			<include>Furniture_MovieInfoFlagSound</include>
 			<texture>flags/info/dd51.png</texture>
-			<visible>substring(listitem.studio,6ch) + substring(listitem.studio,ac-3)</visible>
+			<visible>substring(ListItem.AudioChannels,6) + substring(ListItem.AudioCodec,ac3)</visible> 
 		</control>
 
 		<control type="image" id="92">
 			<include>Furniture_MovieInfoFlagSound</include>
 			<texture>flags/info/dd71.png</texture>
-			<visible>substring(listitem.studio,8ch) + substring(listitem.studio,ac-3)</visible>
+			<visible>substring(ListItem.AudioChannels,8) + substring(ListItem.AudioCodec,ac3)</visible>
 		</control>
 
 		<control type="image" id="92">
 			<include>Furniture_MovieInfoFlagSound</include>
 			<texture>flags/info/dts51.png</texture>
-			<visible>substring(listitem.studio,6ch) + substring(listitem.studio,dts)</visible>
+			<visible>substring(ListItem.AudioChannels,6) + substring(ListItem.AudioCodec,dca)</visible>
 		</control>
 
 		<control type="image" id="92">
 			<include>Furniture_MovieInfoFlagSound</include>
 			<texture>flags/info/dts71.png</texture>
-			<visible>substring(listitem.studio,8ch) + substring(listitem.studio,dts)</visible>
+			<visible>substring(ListItem.AudioChannels,8) + substring(ListItem.AudioCodec,dca)</visible>
 		</control>
 
 		<control type="image" id="92">
 			<include>Furniture_MovieInfoFlagSound</include>
 			<texture>flags/info/dolby20.png</texture>
-			<visible>substring(listitem.studio,2ch)</visible>
+			<visible>substring(ListItem.AudioChannels,2)</visible>
 		</control>
 
 		<control type="image" id="92">
 			<include>Furniture_MovieInfoFlagSound</include>
 			<texture>flags/info/mono.png</texture>
-			<visible>substring(listitem.studio,mono)</visible>
+			<visible>substring(ListItem.AudioChannels,1)</visible>
 		</control>
 
 		<control type="image" id="93">
 			<include>Furniture_MovieInfoFlagSubs</include>
 			<texture>flags/info/cc.png</texture>
-			<visible>substring(listitem.studio,sub)</visible>
+			<visible>!IsEmpty(ListItem.SubtitleLanguage)</visible>
 		</control>
 
 		<control type="image" id="94">
 			<include>Furniture_MovieInfoFlagRes</include>
-			<texture>flags/info/480i.png</texture>
-			<visible>substring(listitem.studio,480i)</visible>
+			<texture>$INFO[ListItem.VideoResolution,flags/info/,.png]</texture> 
 		</control>
-
-		<control type="image" id="94">
-			<include>Furniture_MovieInfoFlagRes</include>
-			<texture>flags/info/576i.png</texture>
-			<visible>substring(listitem.studio,576i)</visible>
-		</control>	
-
-		<control type="image" id="94">
-			<include>Furniture_MovieInfoFlagRes</include>
-			<texture>flags/info/720i.png</texture>
-			<visible>substring(listitem.studio,720i)</visible>
-		</control>
-
-		<control type="image" id="94">
-			<include>Furniture_MovieInfoFlagRes</include>
-			<texture>flags/info/1080i.png</texture>
-			<visible>substring(listitem.studio,1080i)</visible>
-		</control>
-
-		<control type="image" id="94">
-			<include>Furniture_MovieInfoFlagRes</include>
-			<texture>flags/info/480p.png</texture>
-			<visible>substring(listitem.studio,480p)</visible>
-		</control>
-
-		<control type="image" id="94">
-			<include>Furniture_MovieInfoFlagRes</include>
-			<texture>flags/info/576p.png</texture>
-			<visible>substring(listitem.studio,576p)</visible>
-		</control>	
-
-		<control type="image" id="94">
-			<include>Furniture_MovieInfoFlagRes</include>
-			<texture>flags/info/720p.png</texture>
-			<visible>substring(listitem.studio,720p)</visible>
-		</control>
-
-		<control type="image" id="94">
-			<include>Furniture_MovieInfoFlagRes</include>
-			<texture>flags/info/1080p.png</texture>
-			<visible>substring(listitem.studio,1080p)</visible>
-		</control>		
+		
 	</include>
 
 	<include name="Furniture_ListMediaFlags">
@@ -265,49 +223,8 @@
 				</control>
 				<control type="image" id="187">
 					<include>Furniture_ListMediaFlagsVars</include>
-					<texture>flags/sd.png</texture>
-					<visible>substring(listitem.studio,sd)</visible>
+					<texture>$INFO[ListItem.VideoResolution,flags/,.png]</texture> 
 				</control>
-				<control type="image" id="187">
-					<include>Furniture_ListMediaFlagsVars</include>
-					<texture>flags/480p.png</texture>
-					<visible>substring(listitem.studio,480p)</visible>
-				</control>
-				<control type="image" id="187">
-					<include>Furniture_ListMediaFlagsVars</include>
-					<texture>flags/576p.png</texture>
-					<visible>substring(listitem.studio,576p)</visible>
-				</control>				
-				<control type="image" id="187">
-					<include>Furniture_ListMediaFlagsVars</include>
-					<texture>flags/720p.png</texture>
-					<visible>substring(listitem.studio,720p)</visible>
-				</control>
-				<control type="image" id="187">
-					<include>Furniture_ListMediaFlagsVars</include>
-					<texture>flags/1080p.png</texture>
-					<visible>substring(listitem.studio,1080p)</visible>
-				</control>
-				<control type="image" id="187">
-					<include>Furniture_ListMediaFlagsVars</include>
-					<texture>flags/480i.png</texture>
-					<visible>substring(listitem.studio,480i)</visible>
-				</control>
-				<control type="image" id="187">
-					<include>Furniture_ListMediaFlagsVars</include>
-					<texture>flags/576i.png</texture>
-					<visible>substring(listitem.studio,576i)</visible>
-				</control>				
-				<control type="image" id="187">
-					<include>Furniture_ListMediaFlagsVars</include>
-					<texture>flags/720i.png</texture>
-					<visible>substring(listitem.studio,720i)</visible>
-				</control>
-				<control type="image" id="187">
-					<include>Furniture_ListMediaFlagsVars</include>
-					<texture>flags/1080i.png</texture>
-					<visible>substring(listitem.studio,1080i)</visible>
-				</control>				
 			</control>
 			<control type="group">
 				<posx>981</posx>
@@ -319,17 +236,17 @@
 				<control type="image" id="188">
 					<include>Furniture_ListMediaFlagsVars</include>
 					<texture>flags/dts.png</texture>
-					<visible>substring(listitem.studio,dts) + !substring(listitem.studio,ac-3)</visible>
+					<visible>substring(ListItem.AudioCodec,dca)</visible>
 				</control>			
 				<control type="image" id="188">
 					<include>Furniture_ListMediaFlagsVars</include>
 					<texture>flags/dolbydigital.png</texture>
-					<visible>substring(listitem.studio,ac-3)</visible>
+					<visible>substring(ListItem.AudioCodec,ac3)</visible>
 				</control>
 				<control type="image" id="188">
 					<include>Furniture_ListMediaFlagsVars</include>
 					<texture>flags/mp3.png</texture>
-					<visible>substring(listitem.studio,mp3) | substring(listitem.studio,MPEG Audio)</visible>
+					<visible>substring(ListItem.AudioCodec,mp3)</visible>
 				</control>				
 			</control>
 			<control type="group">
@@ -540,49 +457,8 @@
 				</control>
 				<control type="image" id="83">
 					<include>Furniture_ShowcaseMediaFlagsVars</include>
-					<texture>flags/sd.png</texture>
-					<visible>substring(listitem.studio,sd)</visible>
+					<texture>$INFO[ListItem.VideoResolution,flags/,.png]</texture>
 				</control>
-				<control type="image" id="83">
-					<include>Furniture_ShowcaseMediaFlagsVars</include>
-					<texture>flags/480p.png</texture>
-					<visible>substring(listitem.studio,480p)</visible>
-				</control>
-				<control type="image" id="83">
-					<include>Furniture_ShowcaseMediaFlagsVars</include>
-					<texture>flags/576p.png</texture>
-					<visible>substring(listitem.studio,576p)</visible>
-				</control>				
-				<control type="image" id="83">
-					<include>Furniture_ShowcaseMediaFlagsVars</include>
-					<texture>flags/720p.png</texture>
-					<visible>substring(listitem.studio,720p)</visible>
-				</control>
-				<control type="image" id="83">
-					<include>Furniture_ShowcaseMediaFlagsVars</include>
-					<texture>flags/1080p.png</texture>
-					<visible>substring(listitem.studio,1080p)</visible>
-				</control>
-				<control type="image" id="83">
-					<include>Furniture_ShowcaseMediaFlagsVars</include>
-					<texture>flags/480i.png</texture>
-					<visible>substring(listitem.studio,480i)</visible>
-				</control>
-				<control type="image" id="83">
-					<include>Furniture_ShowcaseMediaFlagsVars</include>
-					<texture>flags/576i.png</texture>
-					<visible>substring(listitem.studio,576i)</visible>
-				</control>				
-				<control type="image" id="83">
-					<include>Furniture_ShowcaseMediaFlagsVars</include>
-					<texture>flags/720i.png</texture>
-					<visible>substring(listitem.studio,720i)</visible>
-				</control>
-				<control type="image" id="83">
-					<include>Furniture_ShowcaseMediaFlagsVars</include>
-					<texture>flags/1080i.png</texture>
-					<visible>substring(listitem.studio,1080i)</visible>
-				</control>				
 			</control>
 			<control type="group">
 				<posx>1085</posx>
@@ -594,17 +470,17 @@
 				<control type="image" id="84">
 					<include>Furniture_ShowcaseMediaFlagsVars</include>
 					<texture>flags/dts.png</texture>
-					<visible>substring(listitem.studio,dts) + !substring(listitem.studio,ac-3)</visible>
+					<visible>substring(ListItem.AudioCodec,dca)</visible>
 				</control>			
 				<control type="image" id="84">
 					<include>Furniture_ShowcaseMediaFlagsVars</include>
 					<texture>flags/dolbydigital.png</texture>
-					<visible>substring(listitem.studio,ac-3)</visible>
+					<visible>substring(ListItem.AudioCodec,ac3)</visible> 
 				</control>
 				<control type="image" id="84">
 					<include>Furniture_ShowcaseMediaFlagsVars</include>
 					<texture>flags/mp3.png</texture>
-					<visible>substring(listitem.studio,mp3) | substring(listitem.studio,MPEG Audio)</visible>
+					<visible>substring(ListItem.AudioCodec,mp3)</visible>
 				</control>				
 			</control>
 			<control type="group">
@@ -795,49 +671,9 @@
 				</control>
 				<control type="image" id="93">
 					<include>Furniture_PanelMediaFlagsVars</include>
-					<texture>flags/sd.png</texture>
+					<texture>$INFO[ListItem.VideoResolution,flags/,.png]</texture> 
 					<visible>substring(listitem.studio,sd)</visible>
 				</control>
-				<control type="image" id="93">
-					<include>Furniture_PanelMediaFlagsVars</include>
-					<texture>flags/480p.png</texture>
-					<visible>substring(listitem.studio,480p)</visible>
-				</control>
-				<control type="image" id="93">
-					<include>Furniture_PanelMediaFlagsVars</include>
-					<texture>flags/576p.png</texture>
-					<visible>substring(listitem.studio,576p)</visible>
-				</control>				
-				<control type="image" id="93">
-					<include>Furniture_PanelMediaFlagsVars</include>
-					<texture>flags/720p.png</texture>
-					<visible>substring(listitem.studio,720p)</visible>
-				</control>
-				<control type="image" id="93">
-					<include>Furniture_PanelMediaFlagsVars</include>
-					<texture>flags/1080p.png</texture>
-					<visible>substring(listitem.studio,1080p)</visible>
-				</control>
-				<control type="image" id="93">
-					<include>Furniture_PanelMediaFlagsVars</include>
-					<texture>flags/480i.png</texture>
-					<visible>substring(listitem.studio,480i)</visible>
-				</control>
-				<control type="image" id="93">
-					<include>Furniture_PanelMediaFlagsVars</include>
-					<texture>flags/576i.png</texture>
-					<visible>substring(listitem.studio,576i)</visible>
-				</control>				
-				<control type="image" id="93">
-					<include>Furniture_PanelMediaFlagsVars</include>
-					<texture>flags/720i.png</texture>
-					<visible>substring(listitem.studio,720i)</visible>
-				</control>
-				<control type="image" id="93">
-					<include>Furniture_PanelMediaFlagsVars</include>
-					<texture>flags/1080i.png</texture>
-					<visible>substring(listitem.studio,1080i)</visible>
-				</control>				
 			</control>
 			<control type="group">
 				<posx>1115</posx>
@@ -849,12 +685,12 @@
 				<control type="image" id="94">
 					<include>Furniture_PanelMediaFlagsVars</include>
 					<texture>flags/dts.png</texture>
-					<visible>substring(listitem.studio,dts) + !substring(listitem.studio,ac-3)</visible>
+					<visible>substring(ListItem.AudioCodec,dca)</visible>
 				</control>			
 				<control type="image" id="94">
 					<include>Furniture_PanelMediaFlagsVars</include>
 					<texture>flags/dolbydigital.png</texture>
-					<visible>substring(listitem.studio,ac-3)</visible>
+					<visible>substring(ListItem.AudioCodec,ac3)</visible>
 				</control>	
 			</control>
 			<control type="group">
