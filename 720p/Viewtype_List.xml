@@ -1118,7 +1118,7 @@
 				<fadetime>400</fadetime>
 				<aspectratio scalediffuse="false">stretch</aspectratio>			
 				<texture diffuse="list/list_musicicon_mask.png">$INFO[ListItem.Icon]</texture>
-				<bordertexture border="-32">list/list_musicicon_frame.png</bordertexture>
+				<bordertexture border="-27">list/list_musicicon_frame.png</bordertexture>
 				<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)</visible>
 			</control>
 			
@@ -1138,7 +1138,8 @@
 				<height>346</height>
 				<fadetime>400</fadetime>			
 				<texture>list/list_musicicon_glass.png</texture>
-				<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)</visible>				
+				<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)</visible>
+				<colordiffuse>8eFFFFFF</colordiffuse>
 			</control>
 		</control>
 
